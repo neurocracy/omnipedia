@@ -1,0 +1,38 @@
+# Ignore development directories and files.
+sftp-config.json
+
+# This could pose a security risk if committed and the repository is later open
+# sourced.
+/drupal_hash_salt.txt
+
+# These are pulled in by the Drupal scaffold.
+/.gitattributes
+/.editorconfig
+
+# Ignore the root vendor directory as that's managed via Composer.
+/vendor/*
+
+# Ignore Drupal private files directory.
+/drupal_private_files/*
+
+# Ignore generated Drupal config directory .htaccess files.
+/drupal_config/*/.htaccess
+/drupal_config/splits/*/.htaccess
+
+# Ignore the whole drupal directory. Individual sub-directories are unignored
+# after this.
+/drupal/*
+
+# Unignore the modules directory, and then ignore all sub-items that aren't our
+# own modules.
+!/drupal/modules
+/drupal/modules/*
+!/drupal/modules/ambientimpact
+!/drupal/modules/omnipedia
+
+# Unignore the themes directory, and then ignore all sub-items that aren't our
+# own themes.
+!/drupal/themes
+/drupal/themes/*
+!/drupal/themes/ambientimpact
+!/drupal/themes/omnipedia
