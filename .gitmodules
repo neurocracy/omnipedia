@@ -4,3 +4,6 @@
 [submodule "drupal/themes/ambientimpact"]
 	path = drupal/themes/ambientimpact
 	url = git@gitlab.com:Ambient.Impact/drupal-themes.git
+[submodule "drupal/modules/omnipedia"]
+	path = drupal/modules/omnipedia
+	url = git@gitlab.com:neurocracy/omnipedia/drupal-modules.git
