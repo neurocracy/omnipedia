@@ -1803,16 +1803,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.8.1",
+            "version": "8.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "d339279f4c4b89477e0f4a8b775eb5dcb86b3087"
+                "reference": "f997857003276c2ae6d27db30f0eab9c7dd10e62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/d339279f4c4b89477e0f4a8b775eb5dcb86b3087",
-                "reference": "d339279f4c4b89477e0f4a8b775eb5dcb86b3087",
+                "url": "https://api.github.com/repos/drupal/core/zipball/f997857003276c2ae6d27db30f0eab9c7dd10e62",
+                "reference": "f997857003276c2ae6d27db30f0eab9c7dd10e62",
                 "shasum": ""
             },
             "require": {
@@ -2032,11 +2032,11 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2019-12-18T10:34:03+00:00"
+            "time": "2020-02-01T19:51:15+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "8.8.1",
+            "version": "8.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -2083,16 +2083,16 @@
         },
         {
             "name": "drupal/core-recommended",
-            "version": "8.8.1",
+            "version": "8.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "a2215237489ccb456219bd30b26649e6899b6f35"
+                "reference": "67ed5b68da2784ead5a55330c6c0fde6bb3cb9f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/a2215237489ccb456219bd30b26649e6899b6f35",
-                "reference": "a2215237489ccb456219bd30b26649e6899b6f35",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/67ed5b68da2784ead5a55330c6c0fde6bb3cb9f3",
+                "reference": "67ed5b68da2784ead5a55330c6c0fde6bb3cb9f3",
                 "shasum": ""
             },
             "require": {
@@ -2105,7 +2105,7 @@
                 "doctrine/common": "v2.7.3",
                 "doctrine/inflector": "v1.2.0",
                 "doctrine/lexer": "1.0.2",
-                "drupal/core": "8.8.1",
+                "drupal/core": "8.8.2",
                 "easyrdf/easyrdf": "0.9.1",
                 "egulias/email-validator": "2.1.11",
                 "guzzlehttp/guzzle": "6.3.3",
@@ -2159,7 +2159,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Locked core dependencies; require this project INSTEAD OF drupal/core.",
-            "time": "2019-12-18T10:34:03+00:00"
+            "time": "2020-02-01T19:51:15+00:00"
         },
         {
             "name": "drupal/ctools",
@@ -7447,20 +7447,20 @@
         },
         {
             "name": "drupal/config_delete",
-            "version": "1.7.0",
+            "version": "1.16.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/config_delete.git",
-                "reference": "8.x-1.07"
+                "reference": "8.x-1.16"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_delete-8.x-1.07.zip",
-                "reference": "8.x-1.07",
-                "shasum": "8a4b0da39c1e8cbae3c9ec747f340ad4d3bf817f"
+                "url": "https://ftp.drupal.org/files/projects/config_delete-8.x-1.16.zip",
+                "reference": "8.x-1.16",
+                "shasum": "5f904675925b421ad8a76fcd5476e9824a1dd4eb"
             },
             "require": {
-                "drupal/core": "~8.0"
+                "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
@@ -7468,8 +7468,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.07",
-                    "datestamp": "1570696684",
+                    "version": "8.x-1.16",
+                    "datestamp": "1580973553",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7483,8 +7483,8 @@
             "authors": [
                 {
                     "name": "Goran Nikolovski",
-                    "homepage": "http://gorannikolovski.com",
-                    "email": "nikolovski84@gmail.com",
+                    "homepage": "https://gorannikolovski.com",
+                    "email": "goran@gorannikolovski.com",
                     "role": "Developer"
                 }
             ],
@@ -7492,23 +7492,23 @@
             "homepage": "https://www.drupal.org/project/config_delete",
             "support": {
                 "source": "https://git.drupalcode.org/project/config_delete",
-                "issues": "https://www.drupal.org/node/add/project-issue/config_delete",
-                "email": "nikolovski84@gmail.com"
+                "issues": "https://www.drupal.org/project/issues/config_delete",
+                "email": "goran@gorannikolovski.com"
             }
         },
         {
             "name": "drupal/config_devel",
-            "version": "1.2.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/config_devel.git",
-                "reference": "8.x-1.2"
+                "reference": "8.x-1.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_devel-8.x-1.2.zip",
-                "reference": "8.x-1.2",
-                "shasum": "203bf299b1ad395d1451e22ea5a8f25ae462d880"
+                "url": "https://ftp.drupal.org/files/projects/config_devel-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "93cbecd4811cbf357cd0a8be19e480f7af32f756"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -7519,8 +7519,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.2",
-                    "datestamp": "1562862184",
+                    "version": "8.x-1.4",
+                    "datestamp": "1569934685",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7569,20 +7569,20 @@
         },
         {
             "name": "drupal/config_inspector",
-            "version": "1.0.0-beta2",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/config_inspector.git",
-                "reference": "8.x-1.0-beta2"
+                "reference": "8.x-1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_inspector-8.x-1.0-beta2.zip",
-                "reference": "8.x-1.0-beta2",
-                "shasum": "1f7b27c4b1c800a605a6d6583d0b1d120794658e"
+                "url": "https://ftp.drupal.org/files/projects/config_inspector-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "dc92ceb8fd3e289f9e5c058692346e4b9ef3fa74"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
@@ -7590,11 +7590,16 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta2",
+                    "version": "8.x-1.0",
                     "datestamp": "1569419586",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
                     }
                 }
             },
