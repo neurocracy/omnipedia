@@ -43,15 +43,15 @@
     "wikimedia/composer-merge-plugin": "^1.4.1"
   },
   "require-dev": {
-    "drupal/config_delete": "1.7",
-    "drupal/config_devel": "1.2",
-    "drupal/config_inspector": "1.0.0-beta2",
-    "drupal/devel": "2.0",
+    "drupal/config_delete": "^1.7",
+    "drupal/config_devel": "^1.2",
+    "drupal/config_inspector": "^1.0.0-beta2",
+    "drupal/devel": "^2.0",
     "drupal/examples": "1.x-dev",
-    "drupal/migrate_plus": "4.1.0",
-    "drupal/migrate_tools": "4.1.0",
-    "drupal/migrate_upgrade": "3.0.0",
-    "kint-php/kint": "3.3",
+    "drupal/migrate_plus": "^4.1.0",
+    "drupal/migrate_tools": "^4.1.0",
+    "drupal/migrate_upgrade": "^3.0.0",
+    "kint-php/kint": "^3.3",
     "symfony/var-dumper": "^3.4"
   },
   "conflict": {
