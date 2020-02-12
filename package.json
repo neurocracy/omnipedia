@@ -1,0 +1,12 @@
+{
+  "name": "omnipedia-drupal",
+  "version": "1.0.0",
+  "license": "GPL-2.0",
+  "repository": "gitlab:neurocracy/omnipedia/drupal",
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-shell": "^3.0.1",
+    "load-grunt-config": "^3.0.1"
+  },
+  "dependencies": {}
+}

@@ -1,5 +1,6 @@
 # Ignore development directories and files.
 sftp-config.json
+node_modules
 
 # This could pose a security risk if committed and the repository is later open
 # sourced.
