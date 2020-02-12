@@ -1,0 +1,43 @@
+uuid: 61b640e4-354d-41cb-aa78-977a838935b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_image
+    - media.type.gif
+  module:
+    - image
+_core:
+  default_config_hash: ydx0-YIbuUacS7DQpij-hAwcf2l8GkiQiiUqNzjSUs8
+id: media.gif.field_media_image
+field_name: field_media_image
+entity_type: media
+bundle: gif
+label: Image
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: media/gifs
+  file_extensions: gif
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+    caption: ''
+  caption_field: 1
+  caption_field_required: 0
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

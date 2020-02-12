@@ -1,0 +1,10 @@
+uuid: 563a55e6-2634-4924-bfde-2aa53fd54673
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+id: file.large
+label: large
+targetEntityType: file
+cache: true

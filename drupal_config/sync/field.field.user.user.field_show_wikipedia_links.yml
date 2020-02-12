@@ -1,0 +1,24 @@
+uuid: 3171bed4-94e2-43af-8662-934a1271ddbf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_show_wikipedia_links
+  module:
+    - user
+id: user.user.field_show_wikipedia_links
+field_name: field_show_wikipedia_links
+entity_type: user
+bundle: user
+label: 'Show Wikipedia links'
+description: 'If checked, Wikipedia links will be available in article text.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: ''
+  off_label: ''
+field_type: boolean

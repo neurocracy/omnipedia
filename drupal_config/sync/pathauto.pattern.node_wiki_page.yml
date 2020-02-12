@@ -1,0 +1,21 @@
+uuid: 37f16f5c-3fb0-4d05-b1dc-0be0a61bb39d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node_wiki_page
+label: 'Content - Wiki page'
+type: 'canonical_entities:node'
+pattern: 'wiki/[node:field-date:custom:Y]/[node:field-date:custom:m]/[node:field-date:custom:d]/[node:title]'
+selection_criteria:
+  -
+    id: node_type
+    bundles:
+      wiki_page: wiki_page
+    negate: false
+    context_mapping:
+      node: node
+selection_logic: and
+weight: 0
+relationships: {  }

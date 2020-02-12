@@ -1,0 +1,33 @@
+uuid: 7e7cc063-d6f7-4117-8a87-6a9b55befe50
+langcode: en
+status: false
+dependencies:
+  module:
+    - freelinking
+name: 'Wiki text'
+format: wiki_text
+weight: 0
+filters:
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: true
+    weight: -44
+    settings: {  }
+  filter_null:
+    id: filter_null
+    provider: filter
+    status: true
+    weight: -45
+    settings:
+      autotoc: '1'
+  freelinking:
+    id: freelinking
+    provider: freelinking
+    status: true
+    weight: -46
+    settings:
+      default: nodetitle
+      global_options:
+        ignore_upi: false
+      plugins: {  }

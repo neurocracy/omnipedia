@@ -1,0 +1,15 @@
+uuid: 46d09292-7e9a-4750-a925-63e9058ddb5b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: uNki9Zi9U8dmLiUa3nrVUn_YF7vUhOw27P0-Ya_aYLU
+id: gif
+label: GIF
+description: 'A locally hosted animated GIF image.'
+source: image
+queue_thumbnail_downloads: false
+new_revision: true
+source_configuration:
+  source_field: field_media_image
+field_map: {  }

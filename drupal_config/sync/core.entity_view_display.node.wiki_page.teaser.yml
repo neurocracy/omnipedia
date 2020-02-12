@@ -1,0 +1,37 @@
+uuid: 67968cb4-f74e-4b8e-bcfe-9feff11a5e36
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.wiki_page.body
+    - field.field.node.wiki_page.comment_node_wiki_page
+    - field.field.node.wiki_page.field_date
+    - field.field.node.wiki_page.field_hide_from_search
+    - node.type.wiki_page
+  module:
+    - text
+    - user
+id: node.wiki_page.teaser
+targetEntityType: node
+bundle: wiki_page
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_wiki_page: true
+  field_date: true
+  field_hide_from_search: true
+  search_api_excerpt: true

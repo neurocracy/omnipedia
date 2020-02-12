@@ -1,0 +1,22 @@
+uuid: 91cd20f1-b4e7-4b9a-943a-cafd99b6c968
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - omnipedia_site
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: omnipedia_site_omnipedia_theme_system_main
+theme: omnipedia_site
+region: content
+weight: -11
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

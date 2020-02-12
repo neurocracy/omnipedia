@@ -1,0 +1,10 @@
+uuid: 9da3def8-db10-431d-b905-4eb0d6a5354e
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+id: file.medium
+label: medium
+targetEntityType: file
+cache: true

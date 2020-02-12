@@ -1,0 +1,12 @@
+uuid: f6335451-8247-481e-a25f-1f8dc31a1bdd
+langcode: en
+status: true
+dependencies: {  }
+id: file
+label: 'File - default'
+type: 'canonical_entities:file'
+pattern: 'file/[file:name]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

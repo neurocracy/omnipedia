@@ -1,0 +1,32 @@
+uuid: 4979452b-fcc0-4e7b-8477-f0b1d916ed85
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.gif.field_media_image
+    - image.style.medium
+    - media.type.gif
+  module:
+    - ambientimpact_media
+_core:
+  default_config_hash: JkajnCFQLsJuPCDzcjn-MWKh76kV76a8nUD4-Ihuajo
+id: media.gif.media_library
+targetEntityType: media
+bundle: gif
+mode: media_library
+content:
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    weight: 0
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_media_image: true
+  name: true
+  uid: true

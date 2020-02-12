@@ -1,0 +1,87 @@
+uuid: 80888372-8057-4144-8cbc-a8ed021dfada
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_advagg_mod_settings
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+migration_group: migrate_drupal_7
+label: 'AdvAgg Modifier configuration'
+source:
+  plugin: variable
+  variables:
+    - advagg_mod_css_adjust_sort_browsers
+    - advagg_mod_css_adjust_sort_external
+    - advagg_mod_css_defer
+    - advagg_mod_css_defer_admin
+    - advagg_mod_css_defer_js_code
+    - advagg_mod_css_preprocess
+    - advagg_mod_js_adjust_sort_browsers
+    - advagg_mod_js_adjust_sort_external
+    - advagg_mod_js_async
+    - advagg_mod_js_async_in_header
+    - advagg_mod_js_defer
+    - advagg_mod_js_footer
+    - advagg_mod_js_preprocess
+process:
+  css_adjust_sort_browsers:
+    -
+      plugin: get
+      source: advagg_mod_css_adjust_sort_browsers
+  css_adjust_sort_external:
+    -
+      plugin: get
+      source: advagg_mod_css_adjust_sort_external
+  css_defer:
+    -
+      plugin: get
+      source: advagg_mod_css_defer
+  css_defer_admin:
+    -
+      plugin: get
+      source: advagg_mod_css_defer_admin
+  css_defer_js_code:
+    -
+      plugin: get
+      source: advagg_mod_css_defer_js_code
+  css_preprocess:
+    -
+      plugin: get
+      source: advagg_mod_css_preprocess
+  js_adjust_sort_browsers:
+    -
+      plugin: get
+      source: advagg_mod_js_adjust_sort_browsers
+  js_adjust_sort_external:
+    -
+      plugin: get
+      source: advagg_mod_js_adjust_sort_external
+  js_async:
+    -
+      plugin: get
+      source: advagg_mod_js_async
+  js_async_in_header:
+    -
+      plugin: get
+      source: advagg_mod_js_async_in_header
+  js_defer:
+    -
+      plugin: get
+      source: advagg_mod_js_defer
+  js_footer:
+    -
+      plugin: get
+      source: advagg_mod_js_footer
+  js_preprocess:
+    -
+      plugin: get
+      source: advagg_mod_js_preprocess
+destination:
+  plugin: config
+  config_name: advagg_mod.settings
+migration_dependencies:
+  required: {  }
+  optional: {  }

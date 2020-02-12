@@ -1,0 +1,34 @@
+uuid: 12dd76ef-0609-4101-ac84-79d510941992
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_content_density
+    - field.field.user.user.field_show_wikipedia_links
+    - field.field.user.user.user_picture
+  module:
+    - ambientimpact_media
+    - user
+_core:
+  default_config_hash: V51QPCKkgNREKtSmB9Iu2wmAMEpktVpnzklWaZV8UYo
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  member_for:
+    weight: 5
+    region: content
+  user_picture:
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: content
+    type: image
+    weight: 6
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_content_density: true
+  field_show_wikipedia_links: true
+  search_api_excerpt: true

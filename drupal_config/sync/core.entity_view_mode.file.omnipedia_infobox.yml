@@ -1,0 +1,10 @@
+uuid: 866d60bc-8cb0-45ff-88f3-1e2b35443b5b
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+id: file.omnipedia_infobox
+label: omnipedia_infobox
+targetEntityType: file
+cache: true

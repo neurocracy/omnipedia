@@ -1,0 +1,18 @@
+uuid: b567525d-dd1c-448b-be8f-f11dc53308c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.file.thumbnail
+    - field.field.file.image.field_file_image_alt_text
+    - field.field.file.image.field_file_image_title_text
+  module:
+    - file
+id: file.image.thumbnail
+targetEntityType: file
+bundle: image
+mode: thumbnail
+content: {  }
+hidden:
+  field_file_image_alt_text: true
+  field_file_image_title_text: true

@@ -1,0 +1,12 @@
+uuid: 96cd912f-f914-4bd4-8e2e-2d28fc81fe59
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: KY0bNIY8dPEtaz6aP7RvmIJJPz-csGJG4d86eSht2BQ
+id: media.compact
+label: Compact
+targetEntityType: media
+cache: true

@@ -1,0 +1,18 @@
+uuid: bc92c99b-3f85-4ad9-8fb3-cbffe4dc5e17
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.file.omnipedia_infobox
+    - field.field.file.image.field_file_image_alt_text
+    - field.field.file.image.field_file_image_title_text
+  module:
+    - file
+id: file.image.omnipedia_infobox
+targetEntityType: file
+bundle: image
+mode: omnipedia_infobox
+content: {  }
+hidden:
+  field_file_image_alt_text: true
+  field_file_image_title_text: true

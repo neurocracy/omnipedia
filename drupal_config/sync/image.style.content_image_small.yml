@@ -1,0 +1,17 @@
+uuid: ba3b2e1f-7ca4-47a1-a3a8-bb304a825d53
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: k8eJZnsP_0HDJqKmJVDw_VpCB4iGsnujnH0-VKpvetc
+name: content_image_small
+label: 'Content image (small)'
+effects:
+  2d9e67cf-61d5-4f64-aaf5-a8ab3700fdbf:
+    uuid: 2d9e67cf-61d5-4f64-aaf5-a8ab3700fdbf
+    id: image_scale
+    weight: 1
+    data:
+      width: 800
+      height: 800
+      upscale: false

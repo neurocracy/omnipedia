@@ -1,0 +1,34 @@
+uuid: c57f7f5f-d067-40b3-99e4-d58a900675bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.compact
+    - field.field.user.user.field_content_density
+    - field.field.user.user.field_show_wikipedia_links
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - ambientimpact_media
+    - user
+_core:
+  default_config_hash: '-cLsS3M3JycipXQt9rEb81_HxKneReoGuRh8ijcOPXs'
+id: user.user.compact
+targetEntityType: user
+bundle: user
+mode: compact
+content:
+  user_picture:
+    type: image
+    weight: 0
+    region: content
+    settings:
+      image_style: thumbnail
+      image_link: content
+    third_party_settings: {  }
+    label: hidden
+hidden:
+  field_content_density: true
+  field_show_wikipedia_links: true
+  member_for: true
+  search_api_excerpt: true

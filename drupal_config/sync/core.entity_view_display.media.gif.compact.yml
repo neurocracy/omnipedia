@@ -1,0 +1,37 @@
+uuid: c3400ec5-9112-4fe9-b4eb-fa663b9877c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.compact
+    - field.field.media.gif.field_media_image
+    - image.style.content_image_large
+    - media.type.gif
+  module:
+    - ambientimpact_media
+_core:
+  default_config_hash: K26nfbsPkkznJJ4eQgEpPc3a_dDTyPErRk9UTweRyfQ
+id: media.gif.compact
+targetEntityType: media
+bundle: gif
+mode: compact
+content:
+  field_media_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: content_image_large
+      image_link: ''
+    third_party_settings:
+      ambientimpact_media:
+        use_photoswipe_gallery: true
+        use_photoswipe: false
+        use_animated_gif_toggle: false
+    type: image
+    region: content
+hidden:
+  created: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

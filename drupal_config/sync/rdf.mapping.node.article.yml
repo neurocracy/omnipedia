@@ -1,0 +1,62 @@
+uuid: a3b158db-3fce-4ae8-8270-f6de8fb6ac26
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.article
+  module:
+    - node
+_core:
+  default_config_hash: IdobJe379eDudt7-bXFfJjF7pDqFl-kYxVFtpWrgkro
+id: node.article
+targetEntityType: node
+bundle: article
+types:
+  - 'sioc:Item'
+  - 'foaf:Document'
+fieldMappings:
+  field_image:
+    properties:
+      - 'og:image'
+      - 'rdfs:seeAlso'
+    mapping_type: rel
+  field_tags:
+    properties:
+      - 'dc:subject'
+    mapping_type: rel
+  title:
+    properties:
+      - 'dc:title'
+  created:
+    properties:
+      - 'dc:date'
+      - 'dc:created'
+    datatype: 'xsd:dateTime'
+    datatype_callback:
+      callable: 'Drupal\rdf\CommonDataConverter::dateIso8601Value'
+  changed:
+    properties:
+      - 'dc:modified'
+    datatype: 'xsd:dateTime'
+    datatype_callback:
+      callable: 'Drupal\rdf\CommonDataConverter::dateIso8601Value'
+  body:
+    properties:
+      - 'content:encoded'
+  uid:
+    properties:
+      - 'sioc:has_creator'
+    mapping_type: rel
+  name:
+    properties:
+      - 'foaf:name'
+  comment_count:
+    properties:
+      - 'sioc:num_replies'
+    datatype: 'xsd:integer'
+  last_activity:
+    properties:
+      - 'sioc:last_activity_date'
+    datatype: 'xsd:dateTime'
+    datatype_callback:
+      callable: 'Drupal\rdf\CommonDataConverter::dateIso8601Value'

@@ -1,0 +1,23 @@
+uuid: 78295e07-9fd8-4181-8b82-2829ec001113
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_content_density
+  module:
+    - options
+    - user
+id: user.user.field_content_density
+field_name: field_content_density
+entity_type: user
+bundle: user
+label: 'Content density'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: default
+default_value_callback: ''
+settings: {  }
+field_type: list_string

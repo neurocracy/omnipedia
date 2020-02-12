@@ -1,0 +1,22 @@
+uuid: 56cde592-7ebb-4a6a-b397-25a8c763a759
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - omnipedia_site
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: omnipedia_site_messages
+theme: omnipedia_site
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

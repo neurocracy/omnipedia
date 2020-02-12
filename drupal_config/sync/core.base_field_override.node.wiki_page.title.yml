@@ -1,0 +1,18 @@
+uuid: 27c8a721-8ac7-4f7a-a691-867957565e3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.wiki_page
+id: node.wiki_page.title
+field_name: title
+entity_type: node
+bundle: wiki_page
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

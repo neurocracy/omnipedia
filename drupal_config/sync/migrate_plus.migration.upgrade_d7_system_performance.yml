@@ -1,0 +1,40 @@
+uuid: f6ed4b3d-4f4b-4b8e-b04b-4e05de83fb86
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_system_performance
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: 'Drupal 7 performance configuration'
+source:
+  plugin: variable
+  variables:
+    - preprocess_css
+    - preprocess_js
+    - cache_lifetime
+    - page_compression
+  source_module: system
+process:
+  css/preprocess:
+    -
+      plugin: get
+      source: preprocess_css
+  js/preprocess:
+    -
+      plugin: get
+      source: preprocess_js
+  cache/page/max_age:
+    -
+      plugin: get
+      source: cache_lifetime
+destination:
+  plugin: config
+  config_name: system.performance
+migration_dependencies:
+  required: {  }
+  optional: {  }
