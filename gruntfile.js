@@ -2,8 +2,10 @@ module.exports = function(grunt) {
   'use strict';
 
   const gruntTargets = {
-    modules:  'drupal/modules/omnipedia',
-    themes:   'drupal/themes/omnipedia'
+    aimodules:  'drupal/modules/ambientimpact',
+    aithemes:   'drupal/themes/ambientimpact',
+    modules:    'drupal/modules/omnipedia',
+    themes:     'drupal/themes/omnipedia',
   };
 
   var config = {shell: {}};
