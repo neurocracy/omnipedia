@@ -3,8 +3,10 @@ langcode: en
 status: true
 dependencies:
   module:
+    - ambientimpact_core
     - freelinking
     - markdown
+    - media
     - toc_filter
 name: 'Wiki HTML'
 format: wiki_html
@@ -101,3 +103,18 @@ filters:
       type: default
       auto: ''
       block: '0'
+  ambientimpact_dom:
+    id: ambientimpact_dom
+    provider: ambientimpact_core
+    status: true
+    weight: 0
+    settings: {  }
+  media_embed:
+    id: media_embed
+    provider: media
+    status: false
+    weight: 100
+    settings:
+      default_view_mode: default
+      allowed_media_types: {  }
+      allowed_view_modes: {  }
