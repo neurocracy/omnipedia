@@ -3,14 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_display.comment.comment_node_wiki_page.default
     - field.field.node.wiki_page.body
-    - field.field.node.wiki_page.comment_node_wiki_page
     - field.field.node.wiki_page.field_date
     - field.field.node.wiki_page.field_hide_from_search
     - node.type.wiki_page
   module:
-    - comment
     - text
     - user
 id: node.wiki_page.default
@@ -23,15 +20,6 @@ content:
     weight: 0
     type: text_default
     settings: {  }
-    third_party_settings: {  }
-    region: content
-  comment_node_wiki_page:
-    label: hidden
-    type: comment_default
-    weight: 20
-    settings:
-      view_mode: default
-      pager_id: 0
     third_party_settings: {  }
     region: content
   links:

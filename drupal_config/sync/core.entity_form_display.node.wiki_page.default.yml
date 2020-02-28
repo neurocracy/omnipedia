@@ -4,12 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.wiki_page.body
-    - field.field.node.wiki_page.comment_node_wiki_page
     - field.field.node.wiki_page.field_date
     - field.field.node.wiki_page.field_hide_from_search
     - node.type.wiki_page
   module:
-    - comment
     - datetime
     - path
     - text
@@ -26,12 +24,6 @@ content:
       summary_rows: 3
       placeholder: ''
       show_summary: false
-    third_party_settings: {  }
-    region: content
-  comment_node_wiki_page:
-    type: comment_default
-    weight: 20
-    settings: {  }
     third_party_settings: {  }
     region: content
   created:
