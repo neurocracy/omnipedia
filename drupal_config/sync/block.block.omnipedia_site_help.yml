@@ -10,8 +10,8 @@ _core:
   default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
 id: omnipedia_site_help
 theme: omnipedia_site
-region: content
-weight: -30
+region: help
+weight: -5
 provider: null
 plugin: help_block
 settings:
