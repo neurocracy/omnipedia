@@ -71,13 +71,12 @@ filters:
           enabled: false
         nodetitle:
           plugin: nodetitle
-          enabled: false
+          enabled: true
           settings:
             nodetypes:
-              article: '0'
+              wiki_page: wiki_page
               page: '0'
-              wiki_page: '0'
-            failover: _none
+            failover: search
         path_alias:
           plugin: path_alias
           enabled: false
@@ -93,7 +92,7 @@ filters:
           enabled: false
         wiki:
           plugin: wiki
-          enabled: false
+          enabled: true
   toc_filter:
     id: toc_filter
     provider: toc_filter
