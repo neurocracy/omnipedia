@@ -1,0 +1,20 @@
+uuid: 23b5a953-ae45-45e0-87ae-46fe3a5b75ff
+langcode: en
+status: true
+dependencies:
+  module:
+    - omnipedia_core
+  theme:
+    - omnipedia_site
+id: page_revision_history
+theme: omnipedia_site
+region: sidebar_second
+weight: -6
+provider: null
+plugin: omnipedia_page_revision_history
+settings:
+  id: omnipedia_page_revision_history
+  label: 'Revision history'
+  provider: omnipedia_core
+  label_display: visible
+visibility: {  }
