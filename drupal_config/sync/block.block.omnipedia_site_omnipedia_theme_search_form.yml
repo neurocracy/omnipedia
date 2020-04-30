@@ -17,7 +17,7 @@ provider: null
 plugin: search_form_block
 settings:
   id: search_form_block
-  label: ''
+  label: 'Search form'
   provider: search
   label_display: '0'
   page_id: ''
@@ -25,4 +25,5 @@ visibility:
   request_path:
     id: request_path
     negate: true
-    pages: "/search\n/search/*\n/wiki/search"
+    pages: "/search\r\n/search/*\r\n/wiki/search"
+    context_mapping: {  }
