@@ -11,7 +11,7 @@ path:
     force_https: false
 cache_level: 2
 cron_frequency: 900
-enabled: true
+enabled: false
 global_counter: 0
 immutable: true
 js:
