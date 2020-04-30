@@ -8,5 +8,5 @@ type: 'canonical_entities:file'
 pattern: 'file/[file:name]'
 selection_criteria: {  }
 selection_logic: and
-weight: 0
+weight: -8
 relationships: {  }
