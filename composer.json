@@ -99,7 +99,8 @@
         "drupal/modules/ambientimpact/ambientimpact_icon/composer.json",
         "drupal/modules/ambientimpact/ambientimpact_media/composer.json",
         "drupal/modules/ambientimpact/ambientimpact_paragraphs/composer.json",
-        "drupal/modules/ambientimpact/ambientimpact_ux/composer.json"
+        "drupal/modules/ambientimpact/ambientimpact_ux/composer.json",
+        "drupal/modules/omnipedia/omnipedia_core/composer.json"
       ],
       "replace": false,
       "ignore-duplicates": true,
