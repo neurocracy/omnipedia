@@ -53,6 +53,7 @@ module:
   migrate_tools: 0
   migrate_upgrade: 0
   node: 0
+  omnipedia_block: 0
   omnipedia_core: 0
   omnipedia_menu: 0
   options: 0

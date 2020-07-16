@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   module:
-    - omnipedia_core
+    - omnipedia_block
   theme:
     - omnipedia_site
 id: page_revision_history
