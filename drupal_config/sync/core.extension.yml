@@ -17,6 +17,7 @@ module:
   config_devel: 0
   config_inspector: 0
   contextual: 0
+  core_event_dispatcher: 0
   ctools: 0
   datetime: 0
   dblog: 0
@@ -25,6 +26,7 @@ module:
   dynamic_page_cache: 0
   editor: 0
   field: 0
+  field_event_dispatcher: 0
   field_ui: 0
   file: 0
   filter: 0
@@ -39,6 +41,7 @@ module:
   login_destination: 0
   markdown: 0
   media: 0
+  media_event_dispatcher: 0
   media_library: 0
   menu_ui: 0
   metatag: 0
@@ -62,6 +65,7 @@ module:
   path: 0
   path_alias: 0
   path_alias_xt: 0
+  preprocess_event_dispatcher: 0
   rdf: 0
   search: 0
   search_api: 0
