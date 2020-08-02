@@ -2,8 +2,6 @@ uuid: b7f528f7-aea5-4027-a3f0-3c66bc8eae48
 langcode: en
 status: true
 dependencies:
-  module:
-    - system
   theme:
     - omnipedia_site
 _core:
@@ -19,9 +17,4 @@ settings:
   label: 'Page title'
   provider: core
   label_display: '0'
-visibility:
-  request_path:
-    id: request_path
-    pages: '/wiki/*/*/*/Main_Page'
-    negate: true
-    context_mapping: {  }
+visibility: {  }
