@@ -24,13 +24,9 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-  links:
-    weight: 100
-    settings: {  }
-    third_party_settings: {  }
-    region: content
 hidden:
   field_date: true
   field_episode_tier: true
   field_hide_from_search: true
+  links: true
   search_api_excerpt: true
