@@ -1,0 +1,14 @@
+uuid: 9a1cf7a6-e53d-4c17-b51d-a1ef2116fdcd
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.episode_2
+  module:
+    - user
+id: user_remove_role_action.episode_2
+label: 'Remove the episode 2 role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: episode_2

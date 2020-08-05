@@ -1,0 +1,9 @@
+uuid: a043852a-81f1-4868-9ef9-0dc81a7a73a2
+langcode: en
+status: true
+dependencies: {  }
+id: episode_1
+label: 'episode 1'
+weight: 3
+is_admin: null
+permissions: {  }

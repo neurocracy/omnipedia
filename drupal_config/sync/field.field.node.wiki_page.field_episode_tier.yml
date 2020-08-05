@@ -1,0 +1,32 @@
+uuid: f89f3620-4363-43c1-a504-992726714cf1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_episode_tier
+    - node.type.wiki_page
+    - taxonomy.vocabulary.episode_tiers
+  content:
+    - 'taxonomy_term:episode_tiers:b779e50f-219e-475a-94db-ec0bbd0e60f8'
+id: node.wiki_page.field_episode_tier
+field_name: field_episode_tier
+entity_type: node
+bundle: wiki_page
+label: 'Episode tier'
+description: 'The lowest episode tier that a user must have to have access to this wiki page.'
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: b779e50f-219e-475a-94db-ec0bbd0e60f8
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      episode_tiers: episode_tiers
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

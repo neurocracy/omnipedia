@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.wiki_page.body
     - field.field.node.wiki_page.field_date
+    - field.field.node.wiki_page.field_episode_tier
     - field.field.node.wiki_page.field_hide_from_search
     - node.type.wiki_page
   module:
@@ -16,12 +17,12 @@ bundle: wiki_page
 mode: default
 content:
   body:
-    label: hidden
-    weight: 0
     type: text_default
+    weight: 0
+    region: content
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    region: content
   links:
     weight: 100
     settings: {  }
@@ -29,5 +30,6 @@ content:
     region: content
 hidden:
   field_date: true
+  field_episode_tier: true
   field_hide_from_search: true
   search_api_excerpt: true
