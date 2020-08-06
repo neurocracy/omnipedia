@@ -37,7 +37,7 @@
     "drupal/pathauto": "^1.6",
     "drupal/search_api": "^1.15",
     "drupal/toc_filter": "^2.0",
-    "drush/drush": "^9.7.1",
+    "drush/drush": "^10",
     "oomphinc/composer-installers-extender": "^1.1",
     "wikimedia/composer-merge-plugin": "^1.4.1"
   },
