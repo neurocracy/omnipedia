@@ -27,6 +27,7 @@
     "drupal/advagg": "^4.0",
     "drupal/core-composer-scaffold": "^8.8",
     "drupal/core-recommended": "^8.8",
+    "drupal/devel": "^4.0",
     "drupal/diff": "^1.0",
     "drupal/freelinking": "^3.1",
     "drupal/login_destination": "^1.0",
@@ -39,19 +40,18 @@
     "drupal/toc_filter": "^2.0",
     "drush/drush": "^10",
     "oomphinc/composer-installers-extender": "^1.1",
+    "symfony/var-dumper": "^4.0",
     "wikimedia/composer-merge-plugin": "^1.4.1"
   },
   "require-dev": {
     "drupal/config_delete": "^1.7",
     "drupal/config_devel": "^1.2",
     "drupal/config_inspector": "^1.0.0-beta2",
-    "drupal/devel": "^2.0",
     "drupal/examples": "1.x-dev",
     "drupal/migrate_plus": "^4.1.0",
     "drupal/migrate_tools": "^4.1.0",
     "drupal/migrate_upgrade": "^3.0.0",
-    "kint-php/kint": "^3.3",
-    "symfony/var-dumper": "^3.4"
+    "kint-php/kint": "^3.3"
   },
   "conflict": {
     "drupal/drupal": "*"
