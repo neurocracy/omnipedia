@@ -4,6 +4,6 @@ status: true
 dependencies: {  }
 id: early_access
 label: 'early access'
-weight: 2
+weight: -8
 is_admin: null
 permissions: {  }
