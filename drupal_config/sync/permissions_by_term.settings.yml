@@ -1,0 +1,6 @@
+permission_mode: false
+require_all_terms_granted: false
+disable_node_access_records: false
+target_bundles: {  }
+_core:
+  default_config_hash: bOjsVB8oc_n5fLQ1dKqlZZUNecSpWcgN4Mq9GEtIKLI
