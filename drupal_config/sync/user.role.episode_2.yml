@@ -1,9 +1,0 @@
-uuid: c97e32b5-f0e1-492a-b163-62a49b137a0f
-langcode: en
-status: true
-dependencies: {  }
-id: episode_2
-label: 'episode 2'
-weight: -6
-is_admin: null
-permissions: {  }
