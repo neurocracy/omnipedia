@@ -102,7 +102,8 @@
         "drupal/modules/ambientimpact/ambientimpact_paragraphs/composer.json",
         "drupal/modules/ambientimpact/ambientimpact_ux/composer.json",
         "drupal/modules/omnipedia/omnipedia_core/composer.json",
-        "drupal/modules/omnipedia/omnipedia_block/composer.json"
+        "drupal/modules/omnipedia/omnipedia_block/composer.json",
+        "drupal/modules/omnipedia/omnipedia_content/composer.json"
       ],
       "replace": false,
       "ignore-duplicates": true,
