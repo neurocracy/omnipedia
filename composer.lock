@@ -3431,16 +3431,16 @@
         },
         {
             "name": "drush/drush",
-            "version": "10.3.3",
+            "version": "10.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "dddf70ef900757da1cfdd86e79867310d82bb584"
+                "reference": "802419a6eb0232bdb977788e6a828cd4fa5bdb11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/dddf70ef900757da1cfdd86e79867310d82bb584",
-                "reference": "dddf70ef900757da1cfdd86e79867310d82bb584",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/802419a6eb0232bdb977788e6a828cd4fa5bdb11",
+                "reference": "802419a6eb0232bdb977788e6a828cd4fa5bdb11",
                 "shasum": ""
             },
             "require": {
@@ -3564,7 +3564,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-08-19T21:08:35+00:00"
+            "time": "2020-08-20T19:27:28+00:00"
         },
         {
             "name": "easyrdf/easyrdf",
