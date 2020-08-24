@@ -28,7 +28,6 @@
     "drupal/core-composer-scaffold": "^8.8",
     "drupal/core-recommended": "^8.8",
     "drupal/diff": "^1.0",
-    "drupal/freelinking": "^3.1",
     "drupal/login_destination": "^1.0",
     "drupal/metatag": "^1.11",
     "drupal/passwordless": "^1.1",
@@ -101,7 +100,8 @@
         "drupal/modules/ambientimpact/ambientimpact_ux/composer.json",
         "drupal/modules/omnipedia/omnipedia_core/composer.json",
         "drupal/modules/omnipedia/omnipedia_block/composer.json",
-        "drupal/modules/omnipedia/omnipedia_content/composer.json"
+        "drupal/modules/omnipedia/omnipedia_content/composer.json",
+        "drupal/modules/omnipedia/omnipedia_content/omnipedia_content_legacy/composer.json"
       ],
       "replace": false,
       "ignore-duplicates": true,
