@@ -57,6 +57,8 @@ module:
   migrate_upgrade: 0
   node: 0
   omnipedia_block: 0
+  omnipedia_content: 0
+  omnipedia_content_legacy: 0
   omnipedia_core: 0
   omnipedia_menu: 0
   options: 0

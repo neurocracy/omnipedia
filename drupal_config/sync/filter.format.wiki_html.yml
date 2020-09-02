@@ -4,9 +4,13 @@ status: true
 dependencies:
   module:
     - ambientimpact_core
+    - ambientimpact_icon
+    - editor
     - freelinking
     - markdown
     - media
+    - omnipedia_content
+    - omnipedia_content_legacy
     - toc_filter
 name: 'Wiki HTML'
 format: wiki_html
@@ -15,8 +19,8 @@ filters:
   filter_html:
     id: filter_html
     provider: filter
-    status: true
-    weight: -48
+    status: false
+    weight: -44
     settings:
       allowed_html: '<a href hreflang> <em> <strong> <abbr> <cite> <blockquote cite> <small> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <img src alt height width> <p> <br> <table> <tbody> <tr> <th> <td> <h3 id> <h4 id> <h5 id> <h6 id> <sub> <sup>'
       filter_html_help: false
@@ -25,20 +29,13 @@ filters:
     id: filter_htmlcorrector
     provider: filter
     status: false
-    weight: -40
+    weight: -42
     settings: {  }
-  markdown:
-    id: markdown
-    provider: markdown
-    status: true
-    weight: -49
-    settings:
-      markdown_library: php-markdown
   freelinking:
     id: freelinking
     provider: freelinking
     status: true
-    weight: -47
+    weight: -50
     settings:
       default: nodetitle
       global_options:
@@ -97,8 +94,8 @@ filters:
   toc_filter:
     id: toc_filter
     provider: toc_filter
-    status: true
-    weight: -41
+    status: false
+    weight: -43
     settings:
       type: default
       auto: ''
@@ -107,14 +104,98 @@ filters:
     id: ambientimpact_dom
     provider: ambientimpact_core
     status: true
-    weight: 0
+    weight: -46
     settings: {  }
   media_embed:
     id: media_embed
     provider: media
     status: false
-    weight: 100
+    weight: -33
     settings:
       default_view_mode: default
       allowed_media_types: {  }
       allowed_view_modes: {  }
+  ambientimpact_icon:
+    id: ambientimpact_icon
+    provider: ambientimpact_icon
+    status: false
+    weight: -40
+    settings: {  }
+  editor_file_reference:
+    id: editor_file_reference
+    provider: editor
+    status: false
+    weight: -39
+    settings: {  }
+  filter_align:
+    id: filter_align
+    provider: filter
+    status: false
+    weight: -38
+    settings: {  }
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: false
+    weight: -37
+    settings: {  }
+  filter_caption:
+    id: filter_caption
+    provider: filter
+    status: false
+    weight: -36
+    settings: {  }
+  filter_html_escape:
+    id: filter_html_escape
+    provider: filter
+    status: false
+    weight: -41
+    settings: {  }
+  filter_html_image_secure:
+    id: filter_html_image_secure
+    provider: filter
+    status: false
+    weight: -34
+    settings: {  }
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: false
+    weight: -35
+    settings:
+      filter_url_length: 72
+  markdown:
+    id: markdown
+    provider: markdown
+    status: true
+    weight: -45
+    settings:
+      parser:
+        render_strategy:
+          type: filter_output
+          allowed_html: '<a href hreflang> <abbr> <blockquote cite> <br> <cite> <code> <div> <em> <h2> <h3> <h4> <h5> <h6> <hr> <img alt height src width> <li> <ol start type=''1 A I''> <p> <pre> <span> <strong> <ul type>'
+          plugins:
+            - league/commonmark-ext-heading-permalink
+            - league/commonmark-ext-strikethrough
+            - league/commonmark-ext-table
+            - league/commonmark-ext-task-list
+            - markdown
+    filterFormat: wiki_html
+  omnipedia_elements:
+    id: omnipedia_elements
+    provider: omnipedia_content
+    status: true
+    weight: -47
+    settings: {  }
+  omnipedia_freelinking_to_markdown:
+    id: omnipedia_freelinking_to_markdown
+    provider: omnipedia_content_legacy
+    status: true
+    weight: -49
+    settings: {  }
+  omnipedia_mustache_to_html:
+    id: omnipedia_mustache_to_html
+    provider: omnipedia_content_legacy
+    status: true
+    weight: -48
+    settings: {  }
