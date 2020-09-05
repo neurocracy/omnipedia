@@ -1,0 +1,14 @@
+uuid: efa96b09-c53c-4e47-a31e-c7a8171c83d5
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media_default
+label: 'Media - default'
+type: 'canonical_entities:media'
+pattern: 'media/[media:name]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }
