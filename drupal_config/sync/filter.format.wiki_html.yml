@@ -109,7 +109,7 @@ filters:
   media_embed:
     id: media_embed
     provider: media
-    status: true
+    status: false
     weight: -44
     settings:
       default_view_mode: default
@@ -180,7 +180,6 @@ filters:
             - league/commonmark-ext-table
             - league/commonmark-ext-task-list
             - filter_caption
-            - media_embed
             - markdown
     filterFormat: wiki_html
   omnipedia_elements:
