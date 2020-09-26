@@ -1,0 +1,8 @@
+uuid: a27f3465-cfbc-48c6-892b-c29270c1d21a
+langcode: en
+status: true
+dependencies: {  }
+id: omnipedia_short
+label: 'Omnipedia short'
+locked: true
+pattern: Y/m/d

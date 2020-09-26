@@ -1,0 +1,8 @@
+uuid: 740b7080-62a7-4b43-8e6d-eca2f8afbc2e
+langcode: en
+status: true
+dependencies: {  }
+id: omnipedia_long
+label: 'Omnipedia long'
+locked: true
+pattern: 'F jS Y'
