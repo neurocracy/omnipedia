@@ -24,15 +24,13 @@ parser:
     use_underscore: true
   extensions:
     -
-      id: league/commonmark-ext-autolink
-      enabled: true
-      settings: {  }
-    -
       id: league/commonmark-ext-disallowed-raw-html
       enabled: true
     -
-      id: league/commonmark-ext-table
+      id: league/commonmark-ext-smart-punctuation
       enabled: true
-    -
-      id: league/commonmark-ext-task-list
-      enabled: true
+      settings:
+        double_quote_closer: ”
+        double_quote_opener: “
+        single_quote_closer: ’
+        single_quote_opener: ‘
