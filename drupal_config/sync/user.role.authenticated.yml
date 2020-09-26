@@ -16,3 +16,4 @@ permissions:
   - 'skip comment approval'
   - 'use text format filtered_html'
   - 'view files'
+  - 'view media'
