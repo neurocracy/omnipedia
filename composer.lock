@@ -2667,16 +2667,16 @@
             "version": "1.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/sandbox/spoit-2806183.git",
+                "url": "https://git.drupalcode.org/project/image_field_caption.git",
                 "reference": "8.x-1.x"
             },
             "type": "drupal-module",
             "extra": {
                 "patches_applied": {
-                    "Fatal error fixes https://www.drupal.org/project/image_field_caption/issues/2413809#comment-13202041": "https://www.drupal.org/files/issues/2019-07-30/image_field_caption-fatal_error_fixes-2413809-9-8.x.patch"
+                    "Incorrect Drupal core module dependency https://www.drupal.org/project/image_field_caption/issues/3172898": "https://www.drupal.org/files/issues/2020-09-24/image_field_caption_8.x-1.x_composer_dependency_fix_3172898-3.patch"
                 }
             },
-            "time": "2016-11-18T14:29:18+00:00"
+            "time": "2020-01-14T18:50:55+00:00"
         },
         {
             "name": "drupal/login_destination",
