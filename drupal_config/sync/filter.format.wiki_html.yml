@@ -103,14 +103,14 @@ filters:
   ambientimpact_dom:
     id: ambientimpact_dom
     provider: ambientimpact_core
-    status: true
-    weight: -43
+    status: false
+    weight: -45
     settings: {  }
   media_embed:
     id: media_embed
     provider: media
     status: false
-    weight: -44
+    weight: -42
     settings:
       default_view_mode: default
       allowed_media_types: {  }
@@ -131,7 +131,7 @@ filters:
     id: filter_align
     provider: filter
     status: false
-    weight: -46
+    weight: -43
     settings: {  }
   filter_autop:
     id: filter_autop
@@ -143,7 +143,7 @@ filters:
     id: filter_caption
     provider: filter
     status: true
-    weight: -45
+    weight: -46
     settings: {  }
   filter_html_escape:
     id: filter_html_escape
@@ -168,7 +168,7 @@ filters:
     id: markdown
     provider: markdown
     status: true
-    weight: -42
+    weight: -44
     settings:
       parser:
         render_strategy:
