@@ -15,7 +15,9 @@ module:
   config: 0
   config_delete: 0
   config_devel: 0
+  config_filter: 0
   config_inspector: 0
+  config_split: 0
   contextual: 0
   core_event_dispatcher: 0
   csp: 0
