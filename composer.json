@@ -39,7 +39,7 @@
     "drupal/seckit": "^2.0",
     "drupal/toc_filter": "^2.0",
     "drush/drush": "^10",
-    "oomphinc/composer-installers-extender": "^1.1",
+    "oomphinc/composer-installers-extender": "^2.0",
     "wikimedia/composer-merge-plugin": "^1.4.1"
   },
   "require-dev": {
