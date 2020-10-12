@@ -18,6 +18,7 @@ module:
   config_inspector: 0
   contextual: 0
   core_event_dispatcher: 0
+  csp: 0
   ctools: 0
   datetime: 0
   dblog: 0

@@ -27,6 +27,7 @@
     "drupal/advagg": "^4.0",
     "drupal/core-composer-scaffold": "^8.8",
     "drupal/core-recommended": "^8.8",
+    "drupal/csp": "^1.13",
     "drupal/diff": "^1.0",
     "drupal/login_destination": "^1.0",
     "drupal/metatag": "^1.11",

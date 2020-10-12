@@ -1,0 +1,45 @@
+_core:
+  default_config_hash: o4-eDkmTmVdUICtL1VxWD3S9Ze8kNq_lHj6DskF8U8o
+report-only:
+  enable: false
+  directives:
+    script-src:
+      base: self
+    script-src-attr:
+      base: self
+    script-src-elem:
+      base: self
+    style-src:
+      base: self
+    style-src-attr:
+      base: self
+    style-src-elem:
+      base: self
+    frame-ancestors:
+      base: self
+  reporting:
+    plugin: none
+enforce:
+  enable: true
+  directives:
+    default-src:
+      base: self
+    img-src:
+      sources:
+        - 'data:'
+      base: self
+    object-src:
+      base: none
+    style-src:
+      flags:
+        - unsafe-inline
+      base: self
+    base-uri:
+      base: self
+    form-action:
+      base: self
+    frame-ancestors:
+      base: self
+    upgrade-insecure-requests: true
+  reporting:
+    plugin: sitelog
