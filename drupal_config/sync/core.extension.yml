@@ -71,6 +71,7 @@ module:
   permissions_by_term: 0
   preprocess_event_dispatcher: 0
   rdf: 0
+  remove_http_headers: 0
   search: 0
   search_api: 0
   search_api_db: 0

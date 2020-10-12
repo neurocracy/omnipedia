@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e72f2b78413110ea1c07c972d94e9054",
+    "content-hash": "ece0919f43ec0b740ecbc6e941364d22",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3241,6 +3241,64 @@
             "homepage": "https://www.drupal.org/project/permissions_by_term",
             "support": {
                 "source": "https://git.drupalcode.org/project/permissions_by_term"
+            }
+        },
+        {
+            "name": "drupal/remove_http_headers",
+            "version": "1.0.0-rc1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/remove_http_headers.git",
+                "reference": "8.x-1.0-rc1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/remove_http_headers-8.x-1.0-rc1.zip",
+                "reference": "8.x-1.0-rc1",
+                "shasum": "eb2156b9ba5200fe2518c3d42d33805d2866b91c"
+            },
+            "require": {
+                "drupal/core": "^8.6||^9.0"
+            },
+            "require-dev": {
+                "ekino/phpstan-banned-code": "^0.3.1",
+                "mglaman/phpstan-drupal": "^0.12.2",
+                "phpstan/phpstan": "^0.12.17",
+                "phpstan/phpstan-deprecation-rules": "^0.12.2",
+                "phpstan/phpstan-strict-rules": "^0.12.2"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-rc1",
+                    "datestamp": "1601979548",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Orlando Thöny",
+                    "homepage": "https://www.drupal.org/user/3558789",
+                    "email": "orlando.thoeny@gmail.com",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Removes configured HTTP Response headers.",
+            "homepage": "https://drupal.org/project/remove_http_headers",
+            "keywords": [
+                "Drupal",
+                "HTTP headers",
+                "Security"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/remove_http_headers"
             }
         },
         {

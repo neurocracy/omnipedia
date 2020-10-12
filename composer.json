@@ -35,6 +35,7 @@
     "drupal/path_alias_xt": "1.x-dev",
     "drupal/pathauto": "^1.6",
     "drupal/permissions_by_term": "^2.25",
+    "drupal/remove_http_headers": "^1.0",
     "drupal/search_api": "^1.15",
     "drupal/seckit": "^2.0",
     "drupal/toc_filter": "^2.0",
