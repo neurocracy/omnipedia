@@ -1,0 +1,16 @@
+uuid: 94885aed-cc13-4fbf-a0d6-a972f403aa9a
+langcode: en
+status: false
+dependencies: {  }
+id: staging
+label: Staging
+description: 'Staging site configuration split.'
+folder: ../drupal_config/splits/staging
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist:
+  - update.settings
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

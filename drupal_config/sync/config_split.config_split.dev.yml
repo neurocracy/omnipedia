@@ -1,0 +1,24 @@
+uuid: 5d461eb7-f3df-476c-935e-817301222fa4
+langcode: en
+status: false
+dependencies: {  }
+id: dev
+label: Development
+description: 'Local development site configuration split.'
+folder: ../drupal_config/splits/dev
+module:
+  config_delete: 0
+  config_devel: 0
+  config_inspector: 0
+  devel: 0
+theme: {  }
+blacklist: {  }
+graylist:
+  - advagg.settings
+  - remove_http_headers.settings
+  - system.logging
+  - system.performance
+  - update.settings
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

@@ -13,10 +13,7 @@ module:
   breakpoint: 0
   ckeditor: 0
   config: 0
-  config_delete: 0
-  config_devel: 0
   config_filter: 0
-  config_inspector: 0
   config_split: 0
   contextual: 0
   core_event_dispatcher: 0
@@ -24,7 +21,6 @@ module:
   ctools: 0
   datetime: 0
   dblog: 0
-  devel: 0
   diff: 0
   dynamic_page_cache: 0
   editor: 0
