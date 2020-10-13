@@ -2744,17 +2744,17 @@
         },
         {
             "name": "drupal/hook_event_dispatcher",
-            "version": "2.2.0",
+            "version": "2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/hook_event_dispatcher.git",
-                "reference": "8.x-2.02"
+                "reference": "8.x-2.04"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/hook_event_dispatcher-8.x-2.02.zip",
-                "reference": "8.x-2.02",
-                "shasum": "977d4ecf59042faf9814fa18e0c2c425255fae33"
+                "url": "https://ftp.drupal.org/files/projects/hook_event_dispatcher-8.x-2.04.zip",
+                "reference": "8.x-2.04",
+                "shasum": "f689478d1a749076b6cae34b72557990806c2484"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -2767,7 +2767,7 @@
                 "drupal/webform": "*",
                 "mockery/mockery": "^1.3",
                 "php-parallel-lint/php-parallel-lint": "^1.0",
-                "phpmd/phpmd": "2.7.0",
+                "phpmd/phpmd": "^2.8",
                 "phpunit/phpunit": "^7",
                 "squizlabs/php_codesniffer": "^3.4"
             },
@@ -2778,8 +2778,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.02",
-                    "datestamp": "1592812407",
+                    "version": "8.x-2.04",
+                    "datestamp": "1601714788",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2821,6 +2821,11 @@
             "notification-url": "https://packages.drupal.org/8/downloads",
             "scripts": {
                 "test": [
+                    "@phpunit",
+                    "@phpcbf",
+                    "@phpmd"
+                ],
+                "ci": [
                     "@phplint",
                     "@phpunit",
                     "@phpcs",
@@ -2833,10 +2838,10 @@
                     "vendor/bin/phpunit --configuration=phpunit.xml"
                 ],
                 "phpcs": [
-                    "vendor/bin/phpcs --ignore=vendor/,.idea/ --standard=vendor/drupal/coder/coder_sniffer/Drupal/ruleset.xml --extensions=php,module,inc,install,profile,theme --report=full --warning-severity=0 ."
+                    "vendor/bin/phpcs --ignore=vendor/,.idea/ --standard=phpcs.xml --extensions=php,module,inc,install,profile,theme,css,info,txt,md,yml --report=full ."
                 ],
                 "phpcbf": [
-                    "vendor/bin/phpcbf --ignore=vendor/,.idea/ --standard=vendor/drupal/coder/coder_sniffer/Drupal/ruleset.xml --extensions=php,module,inc,install,profile,theme ."
+                    "vendor/bin/phpcbf --ignore=vendor/,.idea/ --standard=phpcs.xml --extensions=php,module,inc,install,profile,theme,css,info,txt,md,yml ."
                 ],
                 "phpmd": [
                     "vendor/bin/phpmd --exclude vendor/,.idea/ --suffixes php,module,inc,install,profile,theme . text phpmd.xml"
@@ -8607,17 +8612,17 @@
         },
         {
             "name": "drupal/devel",
-            "version": "4.0.0",
+            "version": "4.0.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/devel.git",
-                "reference": "4.0.0"
+                "reference": "4.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/devel-4.0.0.zip",
-                "reference": "4.0.0",
-                "shasum": "6c01ef8dd4e926e63b08fe28dea5357c7caa49c9"
+                "url": "https://ftp.drupal.org/files/projects/devel-4.0.1.zip",
+                "reference": "4.0.1",
+                "shasum": "cf2458de1cbac00a88ed26ae3da2cf331e1bc047"
             },
             "require": {
                 "doctrine/common": "^2.7",
@@ -8645,8 +8650,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "4.0.0",
-                    "datestamp": "1592918748",
+                    "version": "4.0.1",
+                    "datestamp": "1600300079",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
