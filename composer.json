@@ -100,6 +100,7 @@
         "drupal/modules/ambientimpact/ambientimpact_core/composer.json",
         "drupal/modules/ambientimpact/ambientimpact_block/composer.json",
         "drupal/modules/ambientimpact/ambientimpact_icon/composer.json",
+        "drupal/modules/ambientimpact/ambientimpact_markdown/composer.json",
         "drupal/modules/ambientimpact/ambientimpact_media/composer.json",
         "drupal/modules/ambientimpact/ambientimpact_paragraphs/composer.json",
         "drupal/modules/ambientimpact/ambientimpact_ux/composer.json",

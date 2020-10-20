@@ -5,6 +5,7 @@ module:
   advagg_mod: 0
   ambientimpact_core: 0
   ambientimpact_icon: 0
+  ambientimpact_markdown: 0
   ambientimpact_media: 0
   ambientimpact_ux: 0
   automated_cron: 0
