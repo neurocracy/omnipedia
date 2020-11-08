@@ -105,6 +105,7 @@
         "drupal/modules/ambientimpact/ambientimpact_paragraphs/composer.json",
         "drupal/modules/ambientimpact/ambientimpact_ux/composer.json",
         "drupal/modules/omnipedia/omnipedia_core/composer.json",
+        "drupal/modules/omnipedia/omnipedia_attached_data/composer.json",
         "drupal/modules/omnipedia/omnipedia_block/composer.json",
         "drupal/modules/omnipedia/omnipedia_content/composer.json",
         "drupal/modules/omnipedia/omnipedia_content/omnipedia_content_legacy/composer.json"
