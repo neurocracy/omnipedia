@@ -1,0 +1,11 @@
+uuid: 138cc078-7508-4330-b7d8-b25c57b27ed6
+langcode: en
+status: true
+dependencies:
+  module:
+    - omnipedia_attached_data
+id: omnipedia_attached_data_delete_action
+label: 'Delete attached data'
+type: omnipedia_attached_data
+plugin: 'entity:delete_action:omnipedia_attached_data'
+configuration: {  }
