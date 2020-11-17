@@ -58,8 +58,14 @@ process:
     -
       plugin: get
       source: uid
+  field_metatag:
+    -
+      plugin: d7_metatag_entities
+      source: pseudo_metatag_entities
 destination:
   plugin: 'entity:file'
 migration_dependencies:
+  optional:
+    - upgrade_d7_metatag_field
+    - upgrade_d7_metatag_field_instance
   required: {  }
-  optional: {  }

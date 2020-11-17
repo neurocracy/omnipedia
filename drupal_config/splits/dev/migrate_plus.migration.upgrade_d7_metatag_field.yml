@@ -1,0 +1,47 @@
+uuid: ea7b7c3f-0785-4a7a-a6da-ba31c42ee1f3
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_metatag_field
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+migration_group: migrate_drupal_7
+label: 'Metatag field'
+source:
+  plugin: d7_metatag_field
+  source_module: metatag
+  ignore_map: true
+  constants:
+    field_name: field_metatag
+    langcode: und
+    type: metatag
+    status: true
+process:
+  entity_type:
+    -
+      plugin: get
+      source: entity_type
+  field_name:
+    -
+      plugin: get
+      source: constants/field_name
+  langcode:
+    -
+      plugin: get
+      source: constants/langcode
+  status:
+    -
+      plugin: get
+      source: constants/status
+  type:
+    -
+      plugin: get
+      source: constants/type
+destination:
+  plugin: 'entity:field_storage_config'
+migration_dependencies:
+  required: {  }
+  optional: {  }

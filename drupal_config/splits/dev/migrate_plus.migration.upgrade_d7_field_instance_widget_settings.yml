@@ -81,6 +81,7 @@ process:
         datetime: datetime_default
         datestamp: datetime_timestamp
         list: list_default
+        taxonomy_term_reference: taxonomy_term_reference_default
   options/settings:
     -
       plugin: field_instance_widget_settings

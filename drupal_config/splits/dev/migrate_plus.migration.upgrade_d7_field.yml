@@ -45,6 +45,8 @@ process:
           datetime: datetime
         list:
           list: list
+        taxonomy_term_reference:
+          taxonomy_term_reference: taxonomy_term_reference
   cardinality:
     -
       plugin: get

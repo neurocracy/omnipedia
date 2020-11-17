@@ -1,30 +1,29 @@
-uuid: 74674285-85e5-4739-964c-40046ef6ff76
+uuid: 5b3be0ba-4f62-45c0-86ac-87c9a0b63dae
 langcode: en
 status: true
 dependencies: {  }
-id: upgrade_user_picture_field_instance
+id: upgrade_user_picture_entity_form_display
 class: Drupal\migrate\Plugin\Migration
-field_plugin_method: alterFieldInstanceMigration
+field_plugin_method: null
 cck_plugin_method: null
 migration_tags:
   - 'Drupal 6'
   - 'Drupal 7'
   - Configuration
 migration_group: migrate_drupal_7
-label: 'User picture field instance configuration'
+label: 'User picture form display configuration'
 source:
   plugin: user_picture_instance
   constants:
     entity_type: user
     bundle: user
+    form_mode: default
     name: user_picture
-    settings:
-      file_extensions: 'png gif jpg jpeg'
-      alt_field: false
-      title_field: false
-      min_resolution: ''
-      alt_field_required: false
-      title_field_required: false
+    type: image_image
+    options:
+      settings:
+        progress_indicator: throbber
+        preview_image_style: thumbnail
 process:
   entity_type:
     -
@@ -38,25 +37,25 @@ process:
     -
       plugin: get
       source: constants/name
-  settings:
+  form_mode:
     -
       plugin: get
-      source: constants/settings
-  settings/file_directory:
+      source: constants/form_mode
+  type:
     -
       plugin: get
-      source: file_directory
-  settings/max_filesize:
+      source: constants/type
+  options:
     -
       plugin: get
-      source: max_filesize
-  settings/max_resolution:
+      source: constants/options
+  options/type:
     -
       plugin: get
-      source: max_resolution
+      source: '@type'
 destination:
-  plugin: 'entity:field_config'
+  plugin: component_entity_form_display
 migration_dependencies:
   required:
-    - upgrade_user_picture_field
+    - upgrade_user_picture_field_instance
   optional: {  }

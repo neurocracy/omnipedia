@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: upgrade_d7_node_title_label
 class: Drupal\migrate\Plugin\Migration
-field_plugin_method: alterFieldWidgetMigration
+field_plugin_method: null
 cck_plugin_method: null
 migration_tags:
   - 'Drupal 7'
@@ -17,6 +17,16 @@ source:
     entity_type: node
     field_name: title
 process:
+  label:
+    -
+      plugin: static_map
+      source: title_label
+      bypass: true
+      map:
+        Title: 0
+    -
+      plugin: skip_on_empty
+      method: row
   entity_type:
     -
       plugin: get
@@ -29,10 +39,6 @@ process:
     -
       plugin: get
       source: constants/field_name
-  label:
-    -
-      plugin: get
-      source: title_label
 destination:
   plugin: 'entity:base_field_override'
 migration_dependencies:

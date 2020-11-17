@@ -89,6 +89,12 @@ process:
       map:
         datetime:
           date_default: datetime_default
+        taxonomy_term_reference:
+          taxonomy_term_reference_link: entity_reference_label
+          taxonomy_term_reference_plain: entity_reference_label
+          taxonomy_term_reference_rss_category: entity_reference_label
+          i18n_taxonomy_term_reference_link: entity_reference_label
+          entityreference_entity_view: entity_reference_entity_view
     -
       plugin: d7_field_type_defaults
     -

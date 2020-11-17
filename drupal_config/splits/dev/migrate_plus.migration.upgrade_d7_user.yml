@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: upgrade_d7_user
 class: Drupal\user\Plugin\migrate\User
-field_plugin_method: alterFieldInstanceMigration
+field_plugin_method: null
 cck_plugin_method: null
 migration_tags:
   - 'Drupal 7'
@@ -82,6 +82,10 @@ process:
     -
       plugin: migration_lookup
       migration: upgrade_d7_file
+  field_metatag:
+    -
+      plugin: d7_metatag_entities
+      source: pseudo_metatag_entities
   field_content_density:
     -
       plugin: get
@@ -101,4 +105,6 @@ migration_dependencies:
     - upgrade_user_picture_field_instance
     - upgrade_user_picture_entity_display
     - upgrade_user_picture_entity_form_display
+    - upgrade_d7_metatag_field
+    - upgrade_d7_metatag_field_instance
     - upgrade_d7_user_role
