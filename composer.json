@@ -50,7 +50,7 @@
     "drupal/config_inspector": "^1.0.0-beta2",
     "drupal/devel": "^4.0",
     "drupal/devel_entity_updates": "^3.0",
-    "drupal/examples": "1.x-dev",
+    "drupal/examples": "^3.0",
     "drupal/migrate_plus": "^5.1",
     "drupal/migrate_tools": "^5.0",
     "drupal/migrate_upgrade": "^3.0.0",
