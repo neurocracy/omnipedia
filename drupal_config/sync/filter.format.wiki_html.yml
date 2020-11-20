@@ -207,3 +207,9 @@ filters:
     status: true
     weight: 0
     settings: {  }
+  omnipedia_attached_data_attachments:
+    id: omnipedia_attached_data_attachments
+    provider: omnipedia_attached_data
+    status: true
+    weight: 0
+    settings: {  }
