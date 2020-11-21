@@ -23,8 +23,12 @@ process:
   content/format: content_format
   langcode: language
   created: created
-  date_range/value: date_start
-  date_range/end_value: date_end
+  date_range/value:
+    plugin: omnipedia_attached_data_date
+    source: date_start
+  date_range/end_value:
+    plugin: omnipedia_attached_data_date
+    source: date_end
   uid:
     plugin: default_value
     default_value: 8
