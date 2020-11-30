@@ -1,5 +1,5 @@
 icon_base_uri: 'public://media-icons/generic'
-iframe_domain: 'https://oembed.omnipedia.app/'
+iframe_domain: 'https://staging-oembed.omnipedia.app/'
 oembed_providers_url: 'https://oembed.com/providers.json'
 standalone_url: true
 _core:

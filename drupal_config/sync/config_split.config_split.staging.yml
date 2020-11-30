@@ -10,6 +10,7 @@ module: {  }
 theme: {  }
 blacklist: {  }
 graylist:
+  - media.settings
   - update.settings
 graylist_dependents: true
 graylist_skip_equal: true
