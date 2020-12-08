@@ -5,7 +5,7 @@ dependencies:
   config:
     - image.style.thumbnail
   module:
-    - image
+    - ambientimpact_media
     - media
     - user
 _core:
@@ -867,6 +867,7 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      show_admin_links: false
     cache_metadata:
       max-age: 0
       contexts:

@@ -722,7 +722,7 @@ display:
           required: true
       arguments: {  }
       group_by: true
-      show_admin_links: true
+      show_admin_links: false
       display_extenders: {  }
     cache_metadata:
       contexts:
