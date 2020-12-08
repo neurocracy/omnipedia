@@ -372,7 +372,7 @@ display:
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
-          empty: 'First date'
+          empty: ''
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
@@ -436,7 +436,7 @@ display:
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
-          empty: 'Last date'
+          empty: ''
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
