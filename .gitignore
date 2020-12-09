@@ -2,13 +2,12 @@
 sftp-config.json
 node_modules
 
-# This could pose a security risk if committed and the repository is later open
-# sourced.
-/drupal_hash_salt.txt
-
 # These are pulled in by the Drupal scaffold.
 /.gitattributes
 /.editorconfig
+
+# Ignore security keys.
+/keys/*
 
 # Ignore the root vendor directory as that's managed via Composer.
 /vendor/*
