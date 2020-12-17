@@ -1,9 +1,11 @@
-uuid: 138cc078-7508-4330-b7d8-b25c57b27ed6
+uuid: 03877abd-f881-4d9b-9570-c805b82e6a91
 langcode: en
 status: true
 dependencies:
   module:
     - omnipedia_attached_data
+_core:
+  default_config_hash: 8f1r2vNSI9iDXgn3cc6OqycPO33AhUvmhiq5x08wkhY
 id: omnipedia_attached_data_delete_action
 label: 'Delete attached data'
 type: omnipedia_attached_data

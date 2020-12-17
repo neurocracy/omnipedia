@@ -1,4 +1,4 @@
-uuid: 34451bb8-e752-41ad-a973-bda20fe500b9
+uuid: 2437346e-a95b-4996-b8d9-1980c6016fe8
 langcode: en
 status: true
 dependencies:
@@ -9,6 +9,8 @@ dependencies:
     - omnipedia_content
     - options
     - user
+_core:
+  default_config_hash: 9qfH9RzeKaJfStwFoLyGW5giN_b4FtMiN1mkrrNUW6M
 id: attached_data
 label: 'Attached data'
 module: views

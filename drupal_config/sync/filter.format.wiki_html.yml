@@ -201,14 +201,14 @@ filters:
     status: true
     weight: -48
     settings: {  }
-  omnipedia_attached_data_wikimedia_strip:
-    id: omnipedia_attached_data_wikimedia_strip
+  omnipedia_attached_data_attachments:
+    id: omnipedia_attached_data_attachments
     provider: omnipedia_attached_data
     status: true
     weight: 0
     settings: {  }
-  omnipedia_attached_data_attachments:
-    id: omnipedia_attached_data_attachments
+  omnipedia_attached_data_wikimedia_strip:
+    id: omnipedia_attached_data_wikimedia_strip
     provider: omnipedia_attached_data
     status: true
     weight: 0

@@ -1,10 +1,12 @@
-uuid: 7cbfd5a0-3707-4bc2-80cf-97de5adcbdf5
+uuid: b3545ff6-bc46-4e36-8fe9-67075931c1b7
 langcode: en
 status: true
 dependencies:
   enforced:
     module:
       - omnipedia_attached_data_migrate
+_core:
+  default_config_hash: sUbKfYQbD3G4L88ONEltUzwFu9otFIbRGxdfLsS0X6Y
 id: d7_omnipedia_attached_data
 label: 'Omnipedia attached data Drupal 7 migration'
 description: 'Migration of Omnipedia attached data entities from Drupal 7.'

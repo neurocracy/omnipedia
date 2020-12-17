@@ -1,10 +1,12 @@
-uuid: d05a8004-eb6c-4d2b-a7af-4bf96794d79c
+uuid: 17efae18-1359-40ac-ac2a-2828e9209c4e
 langcode: en
 status: true
 dependencies:
   enforced:
     module:
       - omnipedia_attached_data_migrate
+_core:
+  default_config_hash: yGtJcmX8Ko3_i_VsxKz3GZ6h5FQGrDBBUtvnV-3-zLw
 id: d7_omnipedia_attached_data
 class: null
 field_plugin_method: null
