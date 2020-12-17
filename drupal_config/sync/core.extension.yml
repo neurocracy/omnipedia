@@ -67,7 +67,6 @@ module:
   preprocess_event_dispatcher: 0
   rdf: 0
   remove_http_headers: 0
-  search: 0
   search_api: 0
   search_api_db: 0
   seckit: 0
