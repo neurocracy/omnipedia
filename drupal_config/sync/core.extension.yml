@@ -32,6 +32,7 @@ module:
   file: 0
   filter: 0
   freelinking: 0
+  gin_toolbar: 0
   help: 0
   history: 0
   hook_event_dispatcher: 0
@@ -92,6 +93,7 @@ theme:
   claro: 0
   ambientimpact_base: 0
   omnipedia_site: 0
+  gin: 0
 profile: standard
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
