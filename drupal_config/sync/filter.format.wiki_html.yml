@@ -12,7 +12,6 @@ dependencies:
     - omnipedia_attached_data
     - omnipedia_content
     - omnipedia_content_legacy
-    - toc_filter
 name: 'Wiki HTML'
 format: wiki_html
 weight: -10
@@ -92,15 +91,6 @@ filters:
         wiki:
           plugin: wiki
           enabled: true
-  toc_filter:
-    id: toc_filter
-    provider: toc_filter
-    status: false
-    weight: -37
-    settings:
-      type: default
-      auto: ''
-      block: '0'
   ambientimpact_dom:
     id: ambientimpact_dom
     provider: ambientimpact_core

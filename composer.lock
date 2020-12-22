@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "705c9be70aadc2fba29bb8592e955309",
+    "content-hash": "47a43099c89b518a881dbcd3cd9a3571",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3934,103 +3934,6 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/seckit",
                 "issues": "http://drupal.org/project/issues/seckit"
-            }
-        },
-        {
-            "name": "drupal/toc_api",
-            "version": "1.0.0-beta1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/toc_api.git",
-                "reference": "8.x-1.0-beta1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/toc_api-8.x-1.0-beta1.zip",
-                "reference": "8.x-1.0-beta1",
-                "shasum": "8a56b27a2145c24fad5a1e04bf916ab0eab1667c"
-            },
-            "require": {
-                "drupal/core": "~8.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.0-beta1",
-                    "datestamp": "1463354339",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Jacob Rockowitz (jrockowitz)",
-                    "homepage": "https://www.drupal.org/u/jrockowitz",
-                    "role": "Maintainer"
-                }
-            ],
-            "description": "API for building a a hierarchical table of contents from header tags.",
-            "homepage": "https://drupal.org/project/toc_api",
-            "support": {
-                "source": "http://cgit.drupalcode.org/toc_api",
-                "issues": "https://drupal.org/project/issues/toc_api"
-            }
-        },
-        {
-            "name": "drupal/toc_filter",
-            "version": "2.0.0-beta1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/toc_filter.git",
-                "reference": "8.x-2.0-beta1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/toc_filter-8.x-2.0-beta1.zip",
-                "reference": "8.x-2.0-beta1",
-                "shasum": "01fe9ccb6e73d7bd9f8ba318e5e662739c8a60d9"
-            },
-            "require": {
-                "drupal/core": "^8",
-                "drupal/toc_api": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-2.0-beta1",
-                    "datestamp": "1463354639",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Jacob Rockowitz (jrockowitz)",
-                    "homepage": "https://www.drupal.org/u/jrockowitz",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "yukare",
-                    "homepage": "https://www.drupal.org/user/889254"
-                }
-            ],
-            "description": "Converts header tags into a hierarchical table of contents.",
-            "homepage": "https://drupal.org/project/toc_filter",
-            "support": {
-                "source": "http://cgit.drupalcode.org/toc_filter",
-                "issues": "https://drupal.org/project/issues/toc_filter"
             }
         },
         {
