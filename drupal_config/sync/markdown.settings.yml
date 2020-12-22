@@ -27,6 +27,15 @@ parser:
       id: league/commonmark-ext-disallowed-raw-html
       enabled: true
     -
+      id: league/commonmark-ext-heading-permalink
+      enabled: true
+      settings:
+        html_class: heading-permalink
+        id_prefix: ''
+        inner_contents: '[icon:libricons:link:Permalink]'
+        insert: after
+        title: Permalink
+    -
       id: league/commonmark-ext-smart-punctuation
       enabled: true
       settings:
@@ -34,3 +43,14 @@ parser:
         double_quote_opener: “
         single_quote_closer: ’
         single_quote_opener: ‘
+    -
+      id: league/commonmark-ext-toc
+      enabled: true
+      settings:
+        html_class: table-of-contents
+        max_heading_level: 6
+        min_heading_level: 1
+        normalize: relative
+        placeholder: '[toc]'
+        position: placeholder
+        style: ordered
