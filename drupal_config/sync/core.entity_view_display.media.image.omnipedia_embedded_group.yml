@@ -1,0 +1,37 @@
+uuid: ece2d95d-c6e2-4cb4-8cb9-c857d7f0f937
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.omnipedia_embedded_group
+    - field.field.media.image.field_media_image
+    - image.style.omnipedia_embedded_group
+    - media.type.image
+  module:
+    - ambientimpact_media
+_core:
+  default_config_hash: B1a2aBHmUulUZN6HrxITEH1tSResuVjXMBEv1lUBtOo
+id: media.image.omnipedia_embedded_group
+targetEntityType: media
+bundle: image
+mode: omnipedia_embedded_group
+content:
+  field_media_image:
+    label: visually_hidden
+    settings:
+      image_style: omnipedia_embedded_group
+      image_link: file
+    third_party_settings:
+      ambientimpact_media:
+        use_photoswipe: true
+        use_animated_gif_toggle: false
+        use_photoswipe_gallery: false
+    type: image
+    weight: 1
+    region: content
+hidden:
+  created: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

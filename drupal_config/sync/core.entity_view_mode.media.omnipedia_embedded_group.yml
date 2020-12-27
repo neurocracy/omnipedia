@@ -1,0 +1,10 @@
+uuid: a5214235-09db-4bb9-8a32-950850ec800f
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.omnipedia_embedded_group
+label: 'Omnipedia embedded group'
+targetEntityType: media
+cache: true
