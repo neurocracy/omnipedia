@@ -32,7 +32,7 @@ parser:
       settings:
         html_class: heading-permalink
         id_prefix: ''
-        inner_contents: '[icon:libricons:link:Permalink]'
+        inner_contents: '[icon:libricons:link:Permalink:standalone&text=hidden]'
         insert: after
         title: Permalink
     -
