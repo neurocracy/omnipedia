@@ -54,3 +54,6 @@ parser:
         placeholder: '[toc]'
         position: placeholder
         style: ordered
+    -
+      id: rezozero/commonmark-ext-footnotes
+      enabled: true
