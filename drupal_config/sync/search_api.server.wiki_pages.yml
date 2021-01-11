@@ -1,0 +1,14 @@
+uuid: ebdb7218-7eb2-468a-8bd9-7fae64a4d3fd
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_db
+id: wiki_pages
+name: 'Wiki pages'
+description: ''
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 3
+  matching: partial
