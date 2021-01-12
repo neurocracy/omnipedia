@@ -1,0 +1,29 @@
+uuid: 6190de4b-fe80-4cb8-b648-6cb75f5eb42d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.wiki_search
+  module:
+    - system
+    - views
+  theme:
+    - omnipedia_site
+id: wiki_search_footer
+theme: omnipedia_site
+region: footer
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:wiki_search-page'
+settings:
+  id: 'views_exposed_filter_block:wiki_search-page'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /wiki/search
+    negate: true
+    context_mapping: {  }
