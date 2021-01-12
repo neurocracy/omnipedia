@@ -10,7 +10,7 @@ dependencies:
 id: wiki_search
 label: 'Wiki search'
 module: views
-description: ''
+description: 'Omnipedia wiki search page and blocks.'
 tag: ''
 base_table: search_api_index_wiki_pages
 base_field: search_api_id
@@ -338,6 +338,7 @@ display:
     display_options:
       display_extenders: {  }
       path: wiki/search
+      exposed_block: true
     cache_metadata:
       max-age: -1
       contexts:
