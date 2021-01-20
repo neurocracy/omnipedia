@@ -2861,17 +2861,17 @@
         },
         {
             "name": "drupal/gin",
-            "version": "3.0.0-alpha32",
+            "version": "3.0.0-alpha33",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin.git",
-                "reference": "8.x-3.0-alpha32"
+                "reference": "8.x-3.0-alpha33"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/gin-8.x-3.0-alpha32.zip",
-                "reference": "8.x-3.0-alpha32",
-                "shasum": "8dddc61fba68ec5c8ce622eba1ffa63a1b32617a"
+                "url": "https://ftp.drupal.org/files/projects/gin-8.x-3.0-alpha33.zip",
+                "reference": "8.x-3.0-alpha33",
+                "shasum": "daca198d157a28f3a3ee89e3a1018d0bdc1c9b5c"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9",
@@ -2880,8 +2880,8 @@
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.0-alpha32",
-                    "datestamp": "1607370374",
+                    "version": "8.x-3.0-alpha33",
+                    "datestamp": "1611172829",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
