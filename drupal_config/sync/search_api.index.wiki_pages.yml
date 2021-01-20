@@ -10,6 +10,7 @@ dependencies:
   module:
     - node
     - search_api
+    - omnipedia_search
 id: wiki_pages
 name: 'Wiki pages'
 description: ''
@@ -27,7 +28,9 @@ field_settings:
     label: Date
     datasource_id: 'entity:node'
     property_path: field_date
-    type: date
+    type: string
+    indexed_locked: true
+    type_locked: true
     dependencies:
       config:
         - field.storage.node.field_date
@@ -124,6 +127,9 @@ processor_settings:
       preprocess_index: -20
       preprocess_query: -20
   language_with_fallback: {  }
+  omnipedia_current_date:
+    weights:
+      preprocess_query: -25
   rendered_item: {  }
   stemmer:
     all_fields: false
