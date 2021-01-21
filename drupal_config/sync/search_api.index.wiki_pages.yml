@@ -130,6 +130,7 @@ processor_settings:
   omnipedia_current_date:
     weights:
       preprocess_query: -25
+  omnipedia_hidden_wiki_nodes: {  }
   rendered_item: {  }
   stemmer:
     all_fields: false
