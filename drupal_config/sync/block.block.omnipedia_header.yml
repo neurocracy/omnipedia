@@ -1,4 +1,4 @@
-uuid: fc413d73-ddc9-41aa-8bf1-d82799389182
+uuid: 83310f8d-347c-4f5f-b995-71cce7e8328e
 langcode: en
 status: true
 dependencies:
@@ -6,15 +6,15 @@ dependencies:
     - omnipedia_block
   theme:
     - omnipedia_site
-id: current_date
+id: omnipedia_header
 theme: omnipedia_site
 region: primary_menu
 weight: 0
 provider: null
-plugin: omnipedia_current_date
+plugin: omnipedia_header
 settings:
-  id: omnipedia_current_date
-  label: 'Current date'
-  provider: omnipedia_core
+  id: omnipedia_header
+  label: Header
+  provider: omnipedia_block
   label_display: '0'
 visibility: {  }
