@@ -1,0 +1,23 @@
+uuid: 7ebf3d05-5b8f-4e4f-9f89-0775147fe67b
+langcode: en
+status: true
+dependencies: {  }
+id: contributor
+label: contributor
+weight: 6
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access media overview'
+  - 'access toolbar'
+  - 'administer nodes'
+  - 'delete media'
+  - 'edit own wiki_page content'
+  - 'update media'
+  - 'view all media revisions'
+  - 'view media'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view revisions'
+  - 'view the administration theme'
