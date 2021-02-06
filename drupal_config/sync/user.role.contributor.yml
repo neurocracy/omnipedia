@@ -4,17 +4,20 @@ status: true
 dependencies: {  }
 id: contributor
 label: contributor
-weight: 6
+weight: -8
 is_admin: null
 permissions:
   - 'access administration pages'
   - 'access content overview'
+  - 'access contextual links'
   - 'access media overview'
+  - 'access shortcuts'
   - 'access toolbar'
   - 'administer nodes'
   - 'delete media'
   - 'edit own wiki_page content'
   - 'update media'
+  - 'use text format wiki_html'
   - 'view all media revisions'
   - 'view media'
   - 'view own unpublished content'
