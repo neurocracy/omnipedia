@@ -1,0 +1,21 @@
+uuid: 43e36624-d3f0-45ca-93d1-c5e16a2c27a9
+langcode: en
+status: true
+dependencies: {  }
+id: moderator
+label: moderator
+weight: -7
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access contextual links'
+  - 'access pbt settings'
+  - 'access shortcuts'
+  - 'access site in maintenance mode'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'administer users'
+  - 'show term permission form on term page'
+  - 'show term permissions on node edit page'
+  - 'show term permissions on user edit page'
+  - 'view the administration theme'
