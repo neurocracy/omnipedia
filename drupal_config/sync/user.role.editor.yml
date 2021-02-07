@@ -22,6 +22,7 @@ permissions:
   - 'administer nodes'
   - 'administer omnipedia_attached_data entity'
   - 'bypass node access'
+  - 'configure omnipedia_attached_data entity'
   - 'create media'
   - 'create page content'
   - 'create terms in episode_tiers'
