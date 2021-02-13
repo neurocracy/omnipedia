@@ -1,6 +1,7 @@
 permission_mode: true
 require_all_terms_granted: false
 disable_node_access_records: false
-target_bundles: {  }
+target_bundles:
+  - episode_tiers
 _core:
   default_config_hash: bOjsVB8oc_n5fLQ1dKqlZZUNecSpWcgN4Mq9GEtIKLI
