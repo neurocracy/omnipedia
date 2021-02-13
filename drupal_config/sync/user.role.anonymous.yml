@@ -9,7 +9,6 @@ label: 'anonymous user'
 weight: -10
 is_admin: false
 permissions:
-  - 'access content'
   - 'diff view changes'
   - 'search content'
   - 'use text format filtered_html'
