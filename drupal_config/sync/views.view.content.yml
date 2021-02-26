@@ -4,10 +4,12 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_date
+    - taxonomy.vocabulary.episode_tiers
   module:
     - datetime
     - node
     - omnipedia_content
+    - taxonomy
     - user
     - views_bulk_operations
 _core:
@@ -549,6 +551,56 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           plugin_id: omnipedia_date
+        field_episode_tier_target_id:
+          id: field_episode_tier_target_id
+          table: node__field_episode_tier
+          field: field_episode_tier_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_episode_tier_target_id_op
+            label: 'Episode tier'
+            description: ''
+            use_operator: false
+            operator: field_episode_tier_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: episode_tier
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              contributor: '0'
+              moderator: '0'
+              editor: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: episode_tiers
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
         type:
           id: type
           table: node_field_data
