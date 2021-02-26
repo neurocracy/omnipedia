@@ -8,6 +8,7 @@ weight: -8
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'access content'
   - 'access content overview'
   - 'access contextual links'
   - 'access media overview'
