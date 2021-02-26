@@ -10,7 +10,7 @@ field_name: field_hide_from_search
 entity_type: node
 bundle: wiki_page
 label: 'Hide from search'
-description: 'If checked, this wiki page will not show up in search results.'
+description: 'If checked, this wiki page will not show up in search results.<br><em>Note that certain pages, such as main pages, are always hidden from search results.</em>'
 required: false
 translatable: false
 default_value:
