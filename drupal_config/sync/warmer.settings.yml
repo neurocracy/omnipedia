@@ -1,0 +1,13 @@
+warmers:
+  omnipedia_wiki_node_changes:
+    id: omnipedia_wiki_node_changes
+    frequency: '300'
+    batchSize: '5'
+  entity:
+    id: entity
+    frequency: 300
+    batchSize: 10
+    entity_types:
+      'node:wiki_page': 'node:wiki_page'
+_core:
+  default_config_hash: wLhhL58IKPWkAbhxcI6gpCna7d431Q7kM0y-Om92BUQ
