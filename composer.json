@@ -117,6 +117,7 @@
         "drupal/modules/omnipedia/omnipedia_attached_data/omnipedia_attached_data_migrate/composer.json",
         "drupal/modules/omnipedia/omnipedia_block/composer.json",
         "drupal/modules/omnipedia/omnipedia_content/composer.json",
+        "drupal/modules/omnipedia/omnipedia_content/omnipedia_content_changes/composer.json",
         "drupal/modules/omnipedia/omnipedia_content/omnipedia_content_legacy/composer.json",
         "drupal/modules/omnipedia/omnipedia_search/composer.json"
       ],

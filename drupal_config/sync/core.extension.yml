@@ -55,6 +55,7 @@ module:
   omnipedia_attached_data: 0
   omnipedia_block: 0
   omnipedia_content: 0
+  omnipedia_content_changes: 0
   omnipedia_content_legacy: 0
   omnipedia_core: 0
   omnipedia_menu: 0
