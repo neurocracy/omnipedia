@@ -8,7 +8,6 @@ module:
   ambientimpact_markdown: 0
   ambientimpact_media: 0
   ambientimpact_ux: 0
-  automated_cron: 0
   block: 0
   block_content: 0
   breakpoint: 0
