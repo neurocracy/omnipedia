@@ -6,11 +6,11 @@ definitions:
     weight: 0
     expanded: false
   standard__front_page:
-    enabled: false
+    weight: -49
     menu_name: main
     parent: ''
     expanded: false
-    weight: 0
+    enabled: false
   update__status:
     weight: -86
     menu_name: admin
@@ -75,6 +75,24 @@ definitions:
     weight: -76
     menu_name: admin
     parent: system.admin_reports
+    expanded: false
+    enabled: true
+  random_page:
+    weight: -46
+    menu_name: main
+    parent: ''
+    expanded: false
+    enabled: true
+  'omnipedia_wiki_node_menu_link:f4a32e60-809f-44e3-b394-2f7a754901e2':
+    weight: -47
+    menu_name: main
+    parent: ''
+    enabled: true
+    expanded: false
+  'omnipedia_wiki_node_menu_link:62bf9eac-5ab8-46f3-9910-5594d51eca11':
+    weight: -45
+    menu_name: main
+    parent: ''
     expanded: false
     enabled: true
 _core:
