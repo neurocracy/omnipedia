@@ -19,7 +19,7 @@ bundle: user
 mode: default
 content:
   account:
-    weight: -10
+    weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -27,26 +27,19 @@ content:
     weight: 5
     region: content
   field_content_density:
-    weight: 41
+    weight: 4
     type: options_buttons
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_show_wikipedia_links:
-    weight: 42
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    third_party_settings: {  }
-    region: content
   language:
-    weight: 0
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -58,7 +51,8 @@ content:
       progress_indicator: throbber
       preview_image_style: thumbnail
     type: image_image
-    weight: 31
+    weight: 3
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  field_show_wikipedia_links: true
