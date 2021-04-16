@@ -87,8 +87,8 @@ definitions:
     weight: -49
     menu_name: main
     parent: ''
-    expanded: false
     enabled: true
+    expanded: false
   'omnipedia_wiki_node_menu_link:62bf9eac-5ab8-46f3-9910-5594d51eca11':
     weight: -47
     menu_name: main
