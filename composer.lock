@@ -7,6 +7,61 @@
     "content-hash": "3b8921643d5e734ec23d094ce1768b86",
     "packages": [
         {
+            "name": "8fold/commonmark-abbreviations",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/8fold/commonmark-abbreviations.git",
+                "reference": "40757520fef1124b58d98fbc292c4ff015dcaa01"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/8fold/commonmark-abbreviations/zipball/40757520fef1124b58d98fbc292c4ff015dcaa01",
+                "reference": "40757520fef1124b58d98fbc292c4ff015dcaa01",
+                "shasum": ""
+            },
+            "require": {
+                "league/commonmark": "~1.5",
+                "php": "^7.2|^8.0"
+            },
+            "require-dev": {
+                "8fold/php-shoop": "^0.10.17@dev",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Eightfold\\CommonMarkAbbreviations\\": "./src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Josh Bruce",
+                    "email": "josh@8fold.pro"
+                }
+            ],
+            "description": "An extension of PHP League's CommonMark library to enable abbreviation usage.",
+            "support": {
+                "issues": "https://github.com/8fold/commonmark-abbreviations/issues",
+                "source": "https://github.com/8fold/commonmark-abbreviations/tree/1.0.4"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/8fold",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/joshbruce",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-04-21T15:25:02+00:00"
+        },
+        {
             "name": "asm89/stack-cors",
             "version": "1.3.0",
             "source": {
