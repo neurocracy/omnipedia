@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
-            "version": "1.0.4",
+            "version": "dev-ambientimpact-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/8fold/commonmark-abbreviations.git",
-                "reference": "40757520fef1124b58d98fbc292c4ff015dcaa01"
+                "url": "https://github.com/Ambient-Impact/commonmark-abbreviations.git",
+                "reference": "9c7a91eaced8e964e9261db8a42757270396b16a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/8fold/commonmark-abbreviations/zipball/40757520fef1124b58d98fbc292c4ff015dcaa01",
-                "reference": "40757520fef1124b58d98fbc292c4ff015dcaa01",
+                "url": "https://api.github.com/repos/Ambient-Impact/commonmark-abbreviations/zipball/9c7a91eaced8e964e9261db8a42757270396b16a",
+                "reference": "9c7a91eaced8e964e9261db8a42757270396b16a",
                 "shasum": ""
             },
             "require": {
@@ -34,7 +34,11 @@
                     "Eightfold\\CommonMarkAbbreviations\\": "./src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Eightfold\\CommonMarkAbbreviations\\Tests\\": "./tests/"
+                }
+            },
             "license": [
                 "MIT"
             ],
@@ -46,20 +50,19 @@
             ],
             "description": "An extension of PHP League's CommonMark library to enable abbreviation usage.",
             "support": {
-                "issues": "https://github.com/8fold/commonmark-abbreviations/issues",
-                "source": "https://github.com/8fold/commonmark-abbreviations/tree/1.0.4"
+                "source": "https://github.com/Ambient-Impact/commonmark-abbreviations/tree/ambientimpact-dev"
             },
             "funding": [
                 {
-                    "url": "https://github.com/8fold",
-                    "type": "github"
+                    "type": "github",
+                    "url": "https://github.com/joshbruce"
                 },
                 {
-                    "url": "https://github.com/joshbruce",
-                    "type": "github"
+                    "type": "github",
+                    "url": "https://github.com/8fold"
                 }
             ],
-            "time": "2021-04-21T15:25:02+00:00"
+            "time": "2021-04-27T20:23:48+00:00"
         },
         {
             "name": "asm89/stack-cors",
@@ -10009,7 +10012,8 @@
         "drupal/gin": 15,
         "drupal/gin_toolbar": 10,
         "drupal/path_alias_xt": 20,
-        "wikimedia/composer-merge-plugin": 20
+        "wikimedia/composer-merge-plugin": 20,
+        "8fold/commonmark-abbreviations": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
