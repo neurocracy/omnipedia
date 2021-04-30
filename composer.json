@@ -44,6 +44,7 @@
     "drupal/path_alias_xt": "1.x-dev",
     "drupal/pathauto": "^1.6",
     "drupal/permissions_by_term": "^2.25",
+    "drupal/redirect": "^1.6",
     "drupal/remove_http_headers": "^1.0",
     "drupal/seckit": "^2.0",
     "drupal/views_bulk_edit": "^2.5",
