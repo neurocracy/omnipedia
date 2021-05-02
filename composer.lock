@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
-            "version": "dev-ambientimpact-dev",
+            "version": "dev-abstract-string-container",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ambient-Impact/commonmark-abbreviations.git",
-                "reference": "9c7a91eaced8e964e9261db8a42757270396b16a"
+                "reference": "30c68c68f0749314b2f2061996c43a18c22cb7f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Ambient-Impact/commonmark-abbreviations/zipball/9c7a91eaced8e964e9261db8a42757270396b16a",
-                "reference": "9c7a91eaced8e964e9261db8a42757270396b16a",
+                "url": "https://api.github.com/repos/Ambient-Impact/commonmark-abbreviations/zipball/30c68c68f0749314b2f2061996c43a18c22cb7f4",
+                "reference": "30c68c68f0749314b2f2061996c43a18c22cb7f4",
                 "shasum": ""
             },
             "require": {
@@ -50,7 +50,7 @@
             ],
             "description": "An extension of PHP League's CommonMark library to enable abbreviation usage.",
             "support": {
-                "source": "https://github.com/Ambient-Impact/commonmark-abbreviations/tree/ambientimpact-dev"
+                "source": "https://github.com/Ambient-Impact/commonmark-abbreviations/tree/abstract-string-container"
             },
             "funding": [
                 {
@@ -62,7 +62,7 @@
                     "url": "https://github.com/8fold"
                 }
             ],
-            "time": "2021-04-27T20:23:48+00:00"
+            "time": "2021-05-02T22:52:13+00:00"
         },
         {
             "name": "asm89/stack-cors",
