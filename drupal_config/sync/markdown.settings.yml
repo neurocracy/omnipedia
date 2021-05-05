@@ -44,6 +44,9 @@ parser:
         single_quote_closer: ’
         single_quote_opener: ‘
     -
+      id: league/commonmark-ext-table
+      enabled: true
+    -
       id: league/commonmark-ext-toc
       enabled: true
       settings:
