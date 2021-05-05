@@ -57,3 +57,11 @@ parser:
     -
       id: rezozero/commonmark-ext-footnotes
       enabled: true
+      settings:
+        backref_class: references__backreference-link
+        container_add_hr: false
+        container_class: references
+        footnote_class: references__list-item
+        footnote_id_prefix: reference-
+        ref_class: reference__link
+        ref_id_prefix: backreference-
