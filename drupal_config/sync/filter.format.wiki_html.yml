@@ -20,7 +20,7 @@ filters:
     id: filter_html
     provider: filter
     status: false
-    weight: -36
+    weight: -35
     settings:
       allowed_html: '<a href hreflang> <em> <strong> <abbr> <cite> <blockquote cite> <small> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <img src alt height width> <p> <br> <table> <tbody> <tr> <th> <td> <h3 id> <h4 id> <h5 id> <h6 id> <sub> <sup>'
       filter_html_help: false
@@ -29,7 +29,7 @@ filters:
     id: filter_htmlcorrector
     provider: filter
     status: false
-    weight: -35
+    weight: -34
     settings: {  }
   freelinking:
     id: freelinking
@@ -95,13 +95,13 @@ filters:
     id: ambientimpact_dom
     provider: ambientimpact_core
     status: true
-    weight: -39
+    weight: -38
     settings: {  }
   media_embed:
     id: media_embed
     provider: media
     status: false
-    weight: -37
+    weight: -36
     settings:
       default_view_mode: default
       allowed_media_types: {  }
@@ -110,56 +110,56 @@ filters:
     id: ambientimpact_icon
     provider: ambientimpact_icon
     status: true
-    weight: -44
+    weight: -43
     settings: {  }
   editor_file_reference:
     id: editor_file_reference
     provider: editor
     status: false
-    weight: -33
+    weight: -32
     settings: {  }
   filter_align:
     id: filter_align
     provider: filter
     status: false
-    weight: -38
+    weight: -37
     settings: {  }
   filter_autop:
     id: filter_autop
     provider: filter
     status: false
-    weight: -32
+    weight: -31
     settings: {  }
   filter_caption:
     id: filter_caption
     provider: filter
     status: true
-    weight: -46
+    weight: -45
     settings: {  }
   filter_html_escape:
     id: filter_html_escape
     provider: filter
     status: false
-    weight: -34
+    weight: -33
     settings: {  }
   filter_html_image_secure:
     id: filter_html_image_secure
     provider: filter
     status: false
-    weight: -30
+    weight: -29
     settings: {  }
   filter_url:
     id: filter_url
     provider: filter
     status: false
-    weight: -31
+    weight: -30
     settings:
       filter_url_length: 72
   markdown:
     id: markdown
     provider: markdown
     status: true
-    weight: -45
+    weight: -44
     settings:
       parser:
         render_strategy:
@@ -176,7 +176,7 @@ filters:
     id: omnipedia_elements
     provider: omnipedia_content
     status: true
-    weight: -47
+    weight: -46
     settings: {  }
   omnipedia_freelinking_to_markdown:
     id: omnipedia_freelinking_to_markdown
@@ -194,23 +194,29 @@ filters:
     id: omnipedia_attached_data_attachments
     provider: omnipedia_attached_data
     status: true
-    weight: -41
+    weight: -40
     settings: {  }
   omnipedia_attached_data_wikimedia_strip:
     id: omnipedia_attached_data_wikimedia_strip
     provider: omnipedia_attached_data
     status: true
-    weight: -40
+    weight: -39
     settings: {  }
   omnipedia_markdown_attachments:
     id: omnipedia_markdown_attachments
     provider: omnipedia_content
     status: true
-    weight: -42
+    weight: -41
     settings: {  }
   omnipedia_markdown_alterations:
     id: omnipedia_markdown_alterations
     provider: omnipedia_content
     status: true
-    weight: -43
+    weight: -42
+    settings: {  }
+  omnipedia_markdown_preparer:
+    id: omnipedia_markdown_preparer
+    provider: omnipedia_content_legacy
+    status: true
+    weight: -47
     settings: {  }
