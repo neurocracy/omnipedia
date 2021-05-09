@@ -181,13 +181,13 @@ filters:
   omnipedia_freelinking_to_markdown:
     id: omnipedia_freelinking_to_markdown
     provider: omnipedia_content_legacy
-    status: true
+    status: false
     weight: -49
     settings: {  }
   omnipedia_mustache_to_html:
     id: omnipedia_mustache_to_html
     provider: omnipedia_content_legacy
-    status: true
+    status: false
     weight: -48
     settings: {  }
   omnipedia_attached_data_attachments:
@@ -217,6 +217,6 @@ filters:
   omnipedia_markdown_preparer:
     id: omnipedia_markdown_preparer
     provider: omnipedia_content_legacy
-    status: true
+    status: false
     weight: -47
     settings: {  }

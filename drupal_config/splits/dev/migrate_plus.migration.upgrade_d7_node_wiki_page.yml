@@ -74,7 +74,7 @@ process:
       source: comment
   body:
     -
-      plugin: get
+      plugin: wiki_html
       source: body
   field_date:
     -
