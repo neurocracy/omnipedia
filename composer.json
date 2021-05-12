@@ -80,7 +80,11 @@
     "patchLevel": {
       "drupal/core": "-p2"
     },
-    "patches": {},
+    "patches": {
+      "drupal/gin_toolbar": {
+        "WSOD/Error without admin_toolbar: https://www.drupal.org/project/gin_toolbar/issues/3209437 ": "https://git.drupalcode.org/project/gin_toolbar/-/merge_requests/7.patch"
+      }
+    },
     "drupal-scaffold": {
       "locations": {
         "web-root": "drupal/"
