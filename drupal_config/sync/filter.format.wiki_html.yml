@@ -34,7 +34,7 @@ filters:
   freelinking:
     id: freelinking
     provider: freelinking
-    status: true
+    status: false
     weight: -50
     settings:
       default: nodetitle
