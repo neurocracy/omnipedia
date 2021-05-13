@@ -36,6 +36,7 @@
     "drupal/core-recommended": "^8.8",
     "drupal/csp": "^1.13",
     "drupal/diff": "^1.0",
+    "drupal/fancy_file_delete": "^2.0",
     "drupal/gin": "^3.0@alpha",
     "drupal/gin_toolbar": "^1.0@beta",
     "drupal/login_destination": "^1.0",
