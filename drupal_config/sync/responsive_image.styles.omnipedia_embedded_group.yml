@@ -1,0 +1,16 @@
+uuid: 478a871f-4cc4-4c90-affc-4e5414fa0a4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.omnipedia_embedded_group
+id: omnipedia_embedded_group
+label: 'Omnipedia embedded group'
+image_style_mappings:
+  -
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: omnipedia_embedded_group
+breakpoint_group: responsive_image
+fallback_image_style: omnipedia_embedded_group

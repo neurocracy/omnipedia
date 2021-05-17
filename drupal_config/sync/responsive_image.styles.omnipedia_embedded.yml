@@ -1,0 +1,16 @@
+uuid: cf5047f4-5011-4e73-b4ba-f59d9c3c1b12
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.medium
+id: omnipedia_embedded
+label: 'Omnipedia embedded'
+image_style_mappings:
+  -
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: medium
+breakpoint_group: responsive_image
+fallback_image_style: medium
