@@ -72,6 +72,7 @@ module:
   rdf: 0
   redirect: 0
   remove_http_headers: 0
+  responsive_image: 0
   search_api: 0
   search_api_db: 0
   seckit: 0
@@ -89,6 +90,7 @@ module:
   views_ui: 0
   warmer: 0
   warmer_entity: 0
+  webp: 0
   menu_link_content: 1
   pathauto: 1
   views: 10
