@@ -43,6 +43,7 @@ module:
   login_destination: 0
   markdown: 0
   media: 0
+  media_entity_file_replace: 0
   media_event_dispatcher: 0
   media_library: 0
   menu_ui: 0
