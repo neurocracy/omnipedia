@@ -1,0 +1,12 @@
+uuid: 0c6ab6f7-1220-4803-8344-45b9ef510da3
+langcode: en
+status: true
+dependencies: {  }
+id: content_access
+label: 'Content access'
+description: ''
+variationType: default
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false
