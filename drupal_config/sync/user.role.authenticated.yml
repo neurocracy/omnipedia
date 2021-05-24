@@ -9,8 +9,12 @@ label: 'authenticated user'
 weight: -9
 is_admin: false
 permissions:
+  - 'access checkout'
   - 'access content'
   - 'diff view changes'
+  - 'manage own commerce_payment_method'
   - 'search content'
   - 'use text format filtered_html'
+  - 'view commerce_product'
   - 'view files'
+  - 'view own commerce_order'

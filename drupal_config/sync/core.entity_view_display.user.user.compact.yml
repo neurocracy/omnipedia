@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
+    - field.field.user.user.commerce_remote_id
     - field.field.user.user.field_content_density
     - field.field.user.user.field_show_wikipedia_links
     - field.field.user.user.user_picture
@@ -28,6 +29,8 @@ content:
     third_party_settings: {  }
     label: hidden
 hidden:
+  commerce_remote_id: true
+  customer_profiles: true
   field_content_density: true
   field_show_wikipedia_links: true
   member_for: true

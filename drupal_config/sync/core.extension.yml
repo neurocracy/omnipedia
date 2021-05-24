@@ -1,4 +1,5 @@
 module:
+  address: 0
   advagg: 0
   advagg_bundler: 0
   advagg_js_minify: 0
@@ -12,6 +13,15 @@ module:
   block_content: 0
   breakpoint: 0
   ckeditor: 0
+  commerce: 0
+  commerce_cart: 0
+  commerce_checkout: 0
+  commerce_number_pattern: 0
+  commerce_order: 0
+  commerce_payment: 0
+  commerce_price: 0
+  commerce_product: 0
+  commerce_store: 0
   config: 0
   config_filter: 0
   config_split: 0
@@ -25,6 +35,8 @@ module:
   diff: 0
   dynamic_page_cache: 0
   editor: 0
+  entity: 0
+  entity_reference_revisions: 0
   fancy_file_delete: 0
   field: 0
   field_event_dispatcher: 0
@@ -38,6 +50,7 @@ module:
   hook_event_dispatcher: 0
   image: 0
   image_field_caption: 0
+  inline_entity_form: 0
   inline_form_errors: 0
   link: 0
   login_destination: 0
@@ -69,6 +82,7 @@ module:
   path_alias_xt: 0
   permissions_by_term: 0
   preprocess_event_dispatcher: 0
+  profile: 0
   queue_ui: 0
   rdf: 0
   redirect: 0
@@ -78,6 +92,7 @@ module:
   search_api_db: 0
   seckit: 0
   shortcut: 0
+  state_machine: 0
   system: 0
   taxonomy: 0
   text: 0
