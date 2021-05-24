@@ -1,0 +1,29 @@
+uuid: 73b14b61-3db9-4fb0-aaa2-4a672f766d56
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_cart
+    - ctools
+  theme:
+    - omnipedia_site
+id: cart
+theme: omnipedia_site
+region: sidebar_second
+weight: 0
+provider: null
+plugin: commerce_cart
+settings:
+  id: commerce_cart
+  label: Cart
+  provider: commerce_cart
+  label_display: visible
+  dropdown: true
+visibility:
+  'entity_bundle:commerce_product':
+    id: 'entity_bundle:commerce_product'
+    bundles:
+      content_access: content_access
+    negate: false
+    context_mapping:
+      commerce_product: '@commerce_product.product_route_context:commerce_product'
