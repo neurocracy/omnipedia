@@ -34,6 +34,10 @@ enforce:
       flags:
         - unsafe-inline
       base: self
+    style-src-attr:
+      flags:
+        - unsafe-inline
+      base: self
     base-uri:
       base: self
     form-action:
