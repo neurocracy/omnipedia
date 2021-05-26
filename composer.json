@@ -31,6 +31,7 @@
     "cweagans/composer-patches": "^1.7",
     "drupal/advagg": "^4.0",
     "drupal/commerce": "^2.24",
+    "drupal/commerce_paypal": "^1.0",
     "drupal/config_split": "^1.6",
     "drupal/core": "^8.9",
     "drupal/core-composer-scaffold": "^8.8",

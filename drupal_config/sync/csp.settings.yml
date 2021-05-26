@@ -24,12 +24,24 @@ enforce:
   directives:
     default-src:
       base: self
+    frame-src:
+      sources:
+        - 'https://*.paypal.com'
+      base: self
     img-src:
       sources:
         - 'data:'
       base: self
     object-src:
       base: none
+    script-src:
+      sources:
+        - 'https://*.paypal.com'
+      base: self
+    script-src-elem:
+      sources:
+        - 'https://*.paypal.com'
+      base: self
     style-src:
       flags:
         - unsafe-inline

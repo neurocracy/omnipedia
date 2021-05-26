@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: invoice
 label: Invoice
-weight: null
+weight: -9
 plugin: manual
 configuration:
   instructions:

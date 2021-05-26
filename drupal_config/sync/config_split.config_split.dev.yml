@@ -20,7 +20,8 @@ module:
   migrate_upgrade: 0
   omnipedia_attached_data_migrate: 0
 theme: {  }
-blacklist: {  }
+blacklist:
+  - commerce_payment.commerce_payment_gateway.paypal
 graylist:
   - advagg.settings
   - media.settings
