@@ -13,6 +13,7 @@ graylist:
   - commerce_payment.commerce_payment_gateway.paypal
   - media.settings
   - update.settings
+  - user.role.anonymous
 graylist_dependents: true
 graylist_skip_equal: true
 weight: 0
