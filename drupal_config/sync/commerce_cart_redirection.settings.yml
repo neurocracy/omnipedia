@@ -1,0 +1,6 @@
+product_bundles:
+  default: default
+negate_product_bundles: 0
+redirection_route_path: checkout
+redirection_route_path_other: ''
+add_to_cart_replacement_text: Buy
