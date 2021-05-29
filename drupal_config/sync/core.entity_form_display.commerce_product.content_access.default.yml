@@ -44,13 +44,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  status:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 90
-    region: content
-    third_party_settings: {  }
   stores:
     type: commerce_entity_select
     weight: 0
@@ -85,4 +78,5 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  status: true
