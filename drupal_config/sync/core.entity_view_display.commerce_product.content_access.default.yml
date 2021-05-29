@@ -5,6 +5,7 @@ dependencies:
   config:
     - commerce_product.commerce_product_type.content_access
     - field.field.commerce_product.content_access.body
+    - field.field.commerce_product.content_access.field_episode_tier
   module:
     - commerce_product
     - text
@@ -38,6 +39,7 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  field_episode_tier: true
   search_api_excerpt: true
   stores: true
   uid: true

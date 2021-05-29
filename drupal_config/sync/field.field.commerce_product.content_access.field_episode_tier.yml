@@ -1,0 +1,29 @@
+uuid: 955ed2f2-6423-49e5-a5a3-8d2cd8544ecd
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.content_access
+    - field.storage.commerce_product.field_episode_tier
+    - taxonomy.vocabulary.episode_tiers
+id: commerce_product.content_access.field_episode_tier
+field_name: field_episode_tier
+entity_type: commerce_product
+bundle: content_access
+label: 'Episode tier'
+description: 'The episode tiers that will be granted to a user who purchases this.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      episode_tiers: episode_tiers
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
