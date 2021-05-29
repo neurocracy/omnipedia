@@ -1,0 +1,34 @@
+uuid: df249ab0-4434-4499-bdab-5e898d16852f
+langcode: en
+status: true
+dependencies: {  }
+id: store_manager
+label: 'store manager'
+weight: -5
+is_admin: null
+permissions:
+  - 'access commerce administration pages'
+  - 'access commerce_order overview'
+  - 'access commerce_product overview'
+  - 'access commerce_store overview'
+  - 'administer commerce_currency'
+  - 'administer commerce_order'
+  - 'administer commerce_payment'
+  - 'administer commerce_product'
+  - 'create content_access commerce_product'
+  - 'create default commerce_order'
+  - 'delete any content_access commerce_product'
+  - 'delete default commerce_order'
+  - 'delete own content_access commerce_product'
+  - 'manage default commerce_order_item'
+  - 'update any content_access commerce_product'
+  - 'update any online commerce_store'
+  - 'update default commerce_order'
+  - 'update own content_access commerce_product'
+  - 'update own online commerce_store'
+  - 'view commerce_order'
+  - 'view commerce_store'
+  - 'view content_access commerce_product'
+  - 'view default commerce_order'
+  - 'view online commerce_store'
+  - 'view own unpublished commerce_product'
