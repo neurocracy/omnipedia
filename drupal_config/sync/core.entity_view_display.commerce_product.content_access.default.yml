@@ -17,21 +17,21 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 11
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     region: content
   title:
     label: hidden
     type: string
-    weight: -5
+    weight: 0
     region: content
     settings:
       link_to_entity: false
     third_party_settings: {  }
   variations:
     type: commerce_add_to_cart
-    weight: 10
+    weight: 2
     region: content
     label: hidden
     settings:
