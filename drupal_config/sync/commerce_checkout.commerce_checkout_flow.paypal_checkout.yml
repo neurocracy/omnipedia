@@ -13,6 +13,11 @@ configuration:
   display_checkout_progress: true
   display_checkout_progress_breadcrumb_links: false
   panes:
+    login:
+      allow_guest_checkout: false
+      allow_registration: true
+      step: order_information
+      weight: '0'
     review:
       step: review
       weight: '0'
@@ -27,11 +32,6 @@ configuration:
       view: ''
       step: _sidebar
       weight: '4'
-    login:
-      allow_guest_checkout: true
-      allow_registration: false
-      step: _disabled
-      weight: '8'
     completion_register:
       step: _disabled
       weight: '6'
