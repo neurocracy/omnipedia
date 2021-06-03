@@ -10,7 +10,6 @@ tags:
   canonical_url: '[current-page:url]'
   description: '[site:slogan]'
   generator: 'Drupal (https://www.drupal.org)'
-  shortlink: '[current-page:url:unaliased]'
   title: '[current-page:title] | [site:name]'
   apple_touch_icon: '[site:url]themes/omnipedia/omnipedia_site/images/icons/generated/apple-touch-icon-60x60-precomposed.png?v=1'
   apple_touch_icon_114x114: '[site:url]themes/omnipedia/omnipedia_site/images/icons/generated/apple-touch-icon-114x114-precomposed.png?v=1'
