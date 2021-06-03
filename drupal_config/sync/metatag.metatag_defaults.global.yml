@@ -9,7 +9,7 @@ label: Global
 tags:
   canonical_url: '[current-page:url]'
   description: '[site:slogan]'
-  generator: 'Drupal 8 (https://www.drupal.org)'
+  generator: 'Drupal (https://www.drupal.org)'
   shortlink: '[current-page:url:unaliased]'
   title: '[current-page:title] | [site:name]'
   apple_touch_icon: '[site:url]themes/omnipedia/omnipedia_site/images/icons/generated/apple-touch-icon-60x60-precomposed.png?v=1'
