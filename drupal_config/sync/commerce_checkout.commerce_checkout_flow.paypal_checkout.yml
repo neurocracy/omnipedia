@@ -11,7 +11,7 @@ label: 'PayPal Checkout'
 plugin: paypal_checkout
 configuration:
   display_checkout_progress: true
-  display_checkout_progress_breadcrumb_links: false
+  display_checkout_progress_breadcrumb_links: 0
   panes:
     login:
       allow_guest_checkout: false
@@ -20,18 +20,21 @@ configuration:
       weight: '0'
     review:
       step: review
-      weight: '0'
+      weight: '1'
     paypal_checkout_payment_process:
       capture: true
       step: payment
-      weight: '1'
-    completion_message:
-      step: complete
       weight: '2'
+    completion_message:
+      message:
+        value: "Your order number is [commerce_order:order_number].\r\nYou can view your order on your account page when logged in."
+        format: plain_text
+      step: complete
+      weight: '3'
     order_summary:
       view: ''
       step: _sidebar
       weight: '4'
     completion_register:
       step: _disabled
-      weight: '6'
+      weight: '5'
