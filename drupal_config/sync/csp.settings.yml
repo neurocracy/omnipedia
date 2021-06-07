@@ -27,6 +27,7 @@ enforce:
     frame-src:
       sources:
         - 'https://*.paypal.com'
+        - 'https://js.stripe.com'
       base: self
     img-src:
       sources:
