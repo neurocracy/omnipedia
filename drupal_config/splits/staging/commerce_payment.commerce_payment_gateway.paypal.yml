@@ -10,8 +10,8 @@ weight: -10
 plugin: paypal_checkout
 configuration:
   payment_solution: smart_payment_buttons
-  client_id: AefkVEcULPHbVDmT0lDXoXVjBnhEc4PBBlEtBXM7b3hL4JUmzdz2Xy_dXogbhwYDdO2DfrnArNbMsDBb
-  secret: ECqhLXYiaPY5AKRY8ISkWl5kXD2VoYn0OaO4q8VmNzOeWCFogTEUiH9ZdscfWQGvse0aqNt_CyhEIJwu
+  client_id: null
+  secret: null
   intent: capture
   disable_funding: {  }
   disable_card: {  }

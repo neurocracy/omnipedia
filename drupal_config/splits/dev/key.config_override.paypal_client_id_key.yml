@@ -1,0 +1,14 @@
+uuid: e0f8148d-2555-434c-a25a-4c4724468766
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_payment.commerce_payment_gateway.paypal
+    - key.key.paypal_test_client_id
+id: paypal_client_id_key
+label: 'PayPal client ID key'
+config_type: commerce_payment_gateway
+config_prefix: commerce_payment.commerce_payment_gateway
+config_name: paypal
+config_item: configuration.client_id
+key_id: paypal_test_client_id
