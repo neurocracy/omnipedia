@@ -9,8 +9,8 @@ label: Stripe
 weight: null
 plugin: stripe
 configuration:
-  publishable_key: pk_test_51IxFDXJHfxwIE8MigOLAWZRF5OyZNuPnO7nnGknXrCvc4MwS69f0GS4IruHQnSE6TD0Z7SUzU1kRxjZgpv2Xg4tq00DO5GKHD6
-  secret_key: sk_test_51IxFDXJHfxwIE8MiiI2a8zjccvUc6ClSEP473TPaxFclc2roewfRFBMDAU1cplgj6nZmDytniajrCa7zLOgdDaxS00IADeyYgu
+  publishable_key: null
+  secret_key: null
   display_label: Stripe
   mode: test
   payment_method_types:

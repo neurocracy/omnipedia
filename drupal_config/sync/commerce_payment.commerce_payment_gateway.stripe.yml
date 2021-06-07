@@ -12,7 +12,7 @@ configuration:
   publishable_key: null
   secret_key: null
   display_label: Stripe
-  mode: test
+  mode: live
   payment_method_types:
     - credit_card
   collect_billing_information: false

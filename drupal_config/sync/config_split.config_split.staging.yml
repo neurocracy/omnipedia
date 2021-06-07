@@ -12,6 +12,8 @@ blacklist: {  }
 graylist:
   - commerce_payment.commerce_payment_gateway.paypal
   - commerce_payment.commerce_payment_gateway.stripe
+  - key.config_override.stripe_publishable_key
+  - key.config_override.stripe_secret_key
   - media.settings
   - update.settings
   - user.role.anonymous
