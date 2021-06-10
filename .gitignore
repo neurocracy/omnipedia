@@ -7,13 +7,13 @@ node_modules
 /.editorconfig
 
 # Ignore security keys.
-/keys/*
+/keys
 
 # Ignore the root vendor directory as that's managed via Composer.
-/vendor/*
+/vendor
 
 # Ignore Drupal private files directory.
-/drupal_private_files/*
+/drupal_private_files
 
 # Ignore generated Drupal config directory .htaccess files.
 /drupal_config/*/.htaccess
@@ -21,7 +21,7 @@ node_modules
 
 # Ignore the whole drupal directory. Individual sub-directories are unignored
 # after this.
-/drupal/*
+/drupal
 
 # Unignore the modules directory, and then ignore all sub-items that aren't our
 # own modules.
