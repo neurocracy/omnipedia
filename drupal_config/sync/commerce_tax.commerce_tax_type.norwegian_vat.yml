@@ -1,0 +1,9 @@
+uuid: c2f4dc35-e2b4-4750-b49f-bc5ea117ffcd
+langcode: en
+status: true
+dependencies: {  }
+id: norwegian_vat
+label: 'Norwegian VAT'
+plugin: norwegian_vat
+configuration:
+  display_inclusive: true
