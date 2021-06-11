@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.profile.customer.address
+    - field.field.profile.customer.tax_number
     - profile.type.customer
   enforced:
     module:
@@ -25,3 +26,4 @@ content:
     region: content
 hidden:
   is_default: true
+  tax_number: true

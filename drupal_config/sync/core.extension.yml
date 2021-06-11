@@ -25,6 +25,7 @@ module:
   commerce_product: 0
   commerce_store: 0
   commerce_stripe: 0
+  commerce_tax: 0
   config: 0
   config_filter: 0
   config_split: 0

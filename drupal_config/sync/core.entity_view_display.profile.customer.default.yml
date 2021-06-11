@@ -4,12 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.profile.customer.address
+    - field.field.profile.customer.tax_number
     - profile.type.customer
   enforced:
     module:
       - commerce_order
   module:
     - address
+    - commerce_tax
 _core:
   default_config_hash: zA0MBGUGdWqnBBoC762uDcH92qRZHC8KllbkpOjNUcs
 id: profile.customer.default
@@ -22,6 +24,14 @@ content:
     weight: 0
     label: hidden
     settings: {  }
+    third_party_settings: {  }
+    region: content
+  tax_number:
+    type: commerce_tax_number_default
+    settings:
+      show_verification: false
+    weight: 1
+    label: above
     third_party_settings: {  }
     region: content
 hidden:
