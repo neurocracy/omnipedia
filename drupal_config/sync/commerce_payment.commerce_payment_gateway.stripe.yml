@@ -15,6 +15,6 @@ configuration:
   mode: live
   payment_method_types:
     - credit_card
-  collect_billing_information: false
+  collect_billing_information: true
 conditions: {  }
 conditionOperator: AND
