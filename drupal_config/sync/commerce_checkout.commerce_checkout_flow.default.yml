@@ -5,6 +5,8 @@ dependencies:
   module:
     - commerce_payment
     - commerce_paypal
+    - commerce_stripe
+    - omnipedia_commerce
 _core:
   default_config_hash: 5BYvSDemm8xYwB9rMGFuEuGK6FxVheqtXEUxnpKO2N4
 id: default
@@ -23,30 +25,37 @@ configuration:
       double_entry: true
       step: order_information
       weight: 1
-    payment_information:
+    omnipedia_billing_information_message:
       step: order_information
       weight: 2
+    payment_information:
+      step: order_information
+      weight: 3
     review:
       step: review
-      weight: 3
+      weight: 4
+    stripe_review:
+      button_id: edit-actions-next
+      step: payment
+      weight: 5
     payment_process:
       capture: true
       step: payment
-      weight: 4
+      weight: 6
     paypal_checkout_payment_process:
       capture: true
       step: payment
-      weight: 5
+      weight: 7
     completion_message:
       message:
         value: "Your order number is [commerce_order:order_number].\r\nYou can view your order on your account page when logged in."
         format: plain_text
       step: complete
-      weight: 6
+      weight: 8
     order_summary:
-      view: null
+      view: ''
       step: _sidebar
-      weight: 7
+      weight: 9
     completion_register:
       step: _disabled
-      weight: 8
+      weight: 10
