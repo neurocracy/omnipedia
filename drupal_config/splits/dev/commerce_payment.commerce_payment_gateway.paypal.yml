@@ -18,7 +18,12 @@ configuration:
   shipping_preference: get_from_file
   update_billing_profile: true
   update_shipping_profile: true
-  style: {  }
+  style:
+    layout: horizontal
+    color: gold
+    shape: rect
+    label: paypal
+    tagline: false
   enable_on_cart: true
   collect_billing_information: false
   display_label: PayPal
