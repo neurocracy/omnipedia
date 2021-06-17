@@ -31,7 +31,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     region: content
   title:
