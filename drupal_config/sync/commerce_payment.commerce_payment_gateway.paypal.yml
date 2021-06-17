@@ -24,7 +24,7 @@ configuration:
     shape: rect
     label: paypal
     tagline: false
-  enable_on_cart: true
+  enable_on_cart: false
   collect_billing_information: false
   display_label: PayPal
   mode: live
