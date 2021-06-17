@@ -18,9 +18,9 @@ bundle: default
 mode: summary
 content:
   list_price:
-    label: above
+    label: hidden
     type: commerce_price_default
-    weight: -1
+    weight: 1
     region: content
     settings:
       strip_trailing_zeroes: false
