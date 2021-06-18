@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - commerce_paypal
+    - commerce_stripe
+    - omnipedia_commerce
 _core:
   default_config_hash: lNJaUt8IZZTPVkYvR4MvoYxYJCbPx10KeynMhXpYV24
 id: paypal_checkout
@@ -18,23 +20,33 @@ configuration:
       allow_registration: true
       step: order_information
       weight: '0'
+    omnipedia_billing_information_message:
+      step: order_information
+      weight: '1'
     review:
       step: review
-      weight: '1'
+      weight: '2'
+    stripe_review:
+      button_id: edit-actions-next
+      step: review
+      weight: '3'
     paypal_checkout_payment_process:
       capture: true
       step: payment
-      weight: '2'
+      weight: '4'
+    order_summary:
+      view: ''
+      step: _sidebar
+      weight: '7'
     completion_message:
       message:
         value: "Your order number is [commerce_order:order_number].\r\nYou can view your order on your account page when logged in."
         format: plain_text
       step: complete
-      weight: '3'
-    order_summary:
-      view: ''
-      step: _sidebar
-      weight: '4'
+      weight: '5'
     completion_register:
       step: _disabled
-      weight: '5'
+      weight: '8'
+    omnipedia_redirect_to_wiki_node:
+      step: complete
+      weight: '6'

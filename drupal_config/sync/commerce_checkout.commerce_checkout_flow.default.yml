@@ -46,16 +46,19 @@ configuration:
       capture: true
       step: payment
       weight: 7
+    order_summary:
+      view: ''
+      step: _sidebar
+      weight: 10
     completion_message:
       message:
         value: "Your order number is [commerce_order:order_number].\r\nYou can view your order on your account page when logged in."
         format: plain_text
       step: complete
       weight: 8
-    order_summary:
-      view: ''
-      step: _sidebar
+    omnipedia_redirect_to_wiki_node:
+      step: complete
       weight: 9
     completion_register:
       step: _disabled
-      weight: 10
+      weight: 11
