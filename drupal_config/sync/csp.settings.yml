@@ -33,6 +33,7 @@ enforce:
     img-src:
       sources:
         - 'data:'
+        - 'https://www.paypalobjects.com'
       base: self
     object-src:
       base: none
