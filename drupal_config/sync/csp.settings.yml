@@ -26,7 +26,8 @@ enforce:
       base: self
     frame-src:
       sources:
-        - 'https://*.paypal.com'
+        - 'https://www.paypal.com'
+        - 'https://www.sandbox.paypal.com'
         - 'https://js.stripe.com'
       base: self
     img-src:
@@ -37,11 +38,13 @@ enforce:
       base: none
     script-src:
       sources:
-        - 'https://*.paypal.com'
+        - 'https://www.paypal.com'
+        - 'https://www.sandbox.paypal.com'
       base: self
     script-src-elem:
       sources:
-        - 'https://*.paypal.com'
+        - 'https://www.paypal.com'
+        - 'https://www.sandbox.paypal.com'
       base: self
     style-src:
       flags:
