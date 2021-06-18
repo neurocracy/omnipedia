@@ -1,0 +1,28 @@
+uuid: f4792ac9-dd25-4cbb-bdbd-a406d9ce1450
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.content_access
+    - field.storage.commerce_product.field_redirect_wiki_page
+    - node.type.wiki_page
+id: commerce_product.content_access.field_redirect_wiki_page
+field_name: field_redirect_wiki_page
+entity_type: commerce_product
+bundle: content_access
+label: 'Redirect to wiki page'
+description: 'A wiki page to redirect the user to upon order completion. If this is left empty, the user will be redirected to the default main page.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      wiki_page: wiki_page
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

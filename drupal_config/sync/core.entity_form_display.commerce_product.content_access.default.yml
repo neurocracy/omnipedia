@@ -6,6 +6,8 @@ dependencies:
     - commerce_product.commerce_product_type.content_access
     - field.field.commerce_product.content_access.body
     - field.field.commerce_product.content_access.field_episode_tier
+    - field.field.commerce_product.content_access.field_redirect_message
+    - field.field.commerce_product.content_access.field_redirect_wiki_page
   module:
     - commerce
     - commerce_product
@@ -37,6 +39,24 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
+    region: content
+  field_redirect_message:
+    weight: 9
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_redirect_wiki_page:
+    weight: 8
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: 'Wiki page title'
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   path:
     type: path
