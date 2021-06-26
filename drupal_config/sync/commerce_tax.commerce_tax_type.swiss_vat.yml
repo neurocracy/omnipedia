@@ -1,6 +1,6 @@
 uuid: 7a50e7b7-e1a4-4fdb-b9b3-251789e3d61f
 langcode: en
-status: true
+status: false
 dependencies: {  }
 id: swiss_vat
 label: 'Swiss VAT'
