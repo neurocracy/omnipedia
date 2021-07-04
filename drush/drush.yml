@@ -1,0 +1,7 @@
+command:
+  user:
+    login:
+      options:
+        # This prevents Drush automatically trying to launch the default browser
+        # when generating a log in link.
+        browser: 0
