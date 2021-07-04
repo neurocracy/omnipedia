@@ -12,6 +12,7 @@ permissions:
   - 'access checkout'
   - 'access content'
   - 'diff view changes'
+  - 'display eu cookie compliance popup'
   - 'manage own commerce_payment_method'
   - 'search content'
   - 'use text format filtered_html'

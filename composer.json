@@ -37,6 +37,7 @@
     "drupal/csp": "^1.13",
     "drupal/diff": "^1.0",
     "drupal/disable_link_rel": "^1.0",
+    "drupal/eu_cookie_compliance": "^1.14",
     "drupal/fancy_file_delete": "^2.0",
     "drupal/gin": "^3.0@alpha",
     "drupal/gin_toolbar": "^1.0@beta",

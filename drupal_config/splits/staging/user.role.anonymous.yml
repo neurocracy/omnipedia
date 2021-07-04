@@ -10,6 +10,7 @@ weight: -10
 is_admin: false
 permissions:
   - 'diff view changes'
+  - 'display eu cookie compliance popup'
   - 'search content'
   - 'use text format filtered_html'
   - 'view files'

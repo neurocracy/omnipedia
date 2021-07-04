@@ -117,6 +117,7 @@ module:
   pathauto: 1
   views: 10
   standard: 1000
+  eu_cookie_compliance: 1001
 theme:
   stable: 0
   classy: 0
