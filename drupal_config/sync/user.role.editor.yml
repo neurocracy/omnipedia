@@ -18,6 +18,7 @@ permissions:
   - 'access taxonomy overview'
   - 'access toolbar'
   - 'add omnipedia_attached_data entity'
+  - 'administer eu cookie compliance categories'
   - 'administer media'
   - 'administer menu'
   - 'administer nodes'
