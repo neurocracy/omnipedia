@@ -14,7 +14,7 @@ _core:
 id: omnipedia_site_account_menu
 theme: omnipedia_site
 region: sidebar_second
-weight: -5
+weight: -6
 provider: null
 plugin: 'system_menu_block:account'
 settings:
