@@ -44,7 +44,7 @@ disagree_do_not_show_popup: false
 reload_page: false
 cookie_name: ''
 exclude_uid_1: false
-better_support_for_screen_readers: false
+better_support_for_screen_readers: true
 use_mobile_message: false
 method: categories
 disagree_button_label: 'No, thanks'
