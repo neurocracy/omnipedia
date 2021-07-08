@@ -57,13 +57,13 @@ withdraw_message:
   format: wiki_html
 withdraw_action_button_label: 'Withdraw consent'
 withdraw_tab_button_label: 'Privacy settings'
-withdraw_enabled: false
+withdraw_enabled: true
 enable_save_preferences_button: true
 save_preferences_button_label: 'Save preferences'
 accept_all_categories_button_label: 'Accept all'
-withdraw_button_on_info_popup: false
+withdraw_button_on_info_popup: true
 domain_all_sites: false
-settings_tab_enabled: false
+settings_tab_enabled: true
 reload_options: 0
 reload_routes_list: ''
 cookie_policy_version: 1.0.0
