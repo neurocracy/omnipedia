@@ -14,7 +14,7 @@ popup_agreed:
   format: wiki_html
 popup_agree_button_message: Accept
 popup_agreed_enabled: false
-popup_bg_hex: 0d47a1
+popup_bg_hex: ''
 popup_clicking_confirmation: false
 popup_scrolling_confirmation: false
 popup_delay: 300
@@ -37,9 +37,9 @@ popup_link: /privacy
 popup_link_new_window: false
 popup_position: false
 fixed_top_position: true
-popup_text_hex: ffffff
-popup_width: 100%
-use_bare_css: false
+popup_text_hex: ''
+popup_width: ''
+use_bare_css: true
 disagree_do_not_show_popup: false
 reload_page: false
 cookie_name: ''
