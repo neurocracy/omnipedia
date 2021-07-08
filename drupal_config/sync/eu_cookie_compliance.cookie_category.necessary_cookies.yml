@@ -1,0 +1,9 @@
+uuid: 294e8b34-152b-4a79-9d31-0bd453675aca
+langcode: en
+status: true
+dependencies: {  }
+id: necessary_cookies
+label: 'Necessary cookies'
+description: 'Session cookies necessary for basic functionality.'
+checkbox_default_state: required
+weight: -10

@@ -1,0 +1,9 @@
+uuid: 200c2a2f-86d8-424a-9f0a-52750d5eb6f2
+langcode: en
+status: true
+dependencies: {  }
+id: neurometric_montages
+label: 'Neurometric montages'
+description: 'If you are equipped with a neurometric colloid, such as those administered with a membership of G6, Omnipedia may use this function to authenticate your login automatically and continuously for up to eight hours.'
+checkbox_default_state: unchecked
+weight: -8

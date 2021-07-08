@@ -19,14 +19,14 @@ popup_clicking_confirmation: false
 popup_scrolling_confirmation: false
 popup_delay: 300
 show_more_info: true
-popup_more_info_button_message: 'More info'
+popup_more_info_button_message: 'Privacy policy'
 popup_enabled: true
 popup_find_more_button_message: 'More info'
 popup_height: null
 popup_hide_agreed: false
 popup_hide_button_message: Hide
 popup_info:
-  value: '<h2>We use cookies on this site to enhance your user experience</h2><p>By clicking the Accept button, you agree to us doing so.</p>'
+  value: '<h2>This web application makes use of cookies and montages to optimise your user experience</h2><p>You can review your options or agree to all and continue to Omnipedia.</p>'
   format: wiki_html
 mobile_popup_info:
   value: ''
@@ -46,7 +46,7 @@ cookie_name: ''
 exclude_uid_1: false
 better_support_for_screen_readers: false
 use_mobile_message: false
-method: opt_in
+method: categories
 disagree_button_label: 'No, thanks'
 disabled_javascripts: ''
 automatic_cookies_removal: true
@@ -60,7 +60,7 @@ withdraw_tab_button_label: 'Privacy settings'
 withdraw_enabled: false
 enable_save_preferences_button: true
 save_preferences_button_label: 'Save preferences'
-accept_all_categories_button_label: 'Accept all cookies'
+accept_all_categories_button_label: 'Accept all'
 withdraw_button_on_info_popup: false
 domain_all_sites: false
 settings_tab_enabled: false
