@@ -1,5 +1,5 @@
 live:
-  root: /home/ambientimpact/domain_omnipedia/root/drupal
+  root: /home/omnipedia/domain_omnipedia/root/drupal
   uri: https://omnipedia.app
 
 staging:
