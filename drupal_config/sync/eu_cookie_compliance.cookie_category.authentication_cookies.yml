@@ -1,9 +1,0 @@
-uuid: 54a39853-9213-42b5-b00b-9c70519106b2
-langcode: en
-status: true
-dependencies: {  }
-id: authentication_cookies
-label: 'Authentication cookies'
-description: 'Omnipedia downloads minute data blocks known as cookies to your viewing device to record pages visited, information entered into form fields, and other user-specific activities.'
-checkbox_default_state: checked
-weight: -9

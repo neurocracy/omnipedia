@@ -1,0 +1,9 @@
+uuid: 54a39853-9213-42b5-b00b-9c70519106b2
+langcode: en
+status: true
+dependencies: {  }
+id: preference_cookies
+label: 'Preference cookies'
+description: 'Omnipedia offers the use of additional cookies to record pages visited, information entered into form fields, and other user-specific settings and activities. Enabling these cookies ensures the best possible browsing experience.'
+checkbox_default_state: checked
+weight: -9
