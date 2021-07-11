@@ -12,6 +12,7 @@ module:
   config_inspector: 0
   devel: 0
   devel_entity_updates: 0
+  development_environment: 0
   migrate: 0
   migrate_drupal: 0
   migrate_drupal_ui: 0
