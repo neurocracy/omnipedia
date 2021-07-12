@@ -60,6 +60,7 @@ module:
   key: 0
   link: 0
   login_destination: 0
+  mailsystem: 0
   markdown: 0
   media: 0
   media_entity_file_replace: 0
@@ -99,6 +100,7 @@ module:
   seckit: 0
   shortcut: 0
   state_machine: 0
+  swiftmailer: 0
   system: 0
   taxonomy: 0
   text: 0

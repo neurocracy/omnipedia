@@ -52,6 +52,7 @@
     "drupal/redirect": "^1.6",
     "drupal/remove_http_headers": "^1.0",
     "drupal/seckit": "^2.0",
+    "drupal/swiftmailer": "^2.0",
     "drupal/views_bulk_edit": "^2.5",
     "drupal/views_bulk_operations": "^3.10",
     "drupal/webp": "^1.0",
