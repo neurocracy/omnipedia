@@ -9,3 +9,7 @@ modules:
     none:
       formatter: swiftmailer
       sender: swiftmailer
+  commerce:
+    none:
+      formatter: swiftmailer
+      sender: swiftmailer
