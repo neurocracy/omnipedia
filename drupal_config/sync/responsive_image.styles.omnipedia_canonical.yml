@@ -4,13 +4,21 @@ status: true
 dependencies:
   config:
     - image.style.large
+    - image.style.max_1300x1300
+    - image.style.max_325x325
+    - image.style.max_650x650
 id: omnipedia_canonical
 label: 'Omnipedia canonical'
 image_style_mappings:
   -
     breakpoint_id: responsive_image.viewport_sizing
     multiplier: 1x
-    image_mapping_type: image_style
-    image_mapping: large
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: '(max-width: 53em) 95vw, (min-width: 53em) 25vw'
+      sizes_image_styles:
+        - max_1300x1300
+        - max_325x325
+        - max_650x650
 breakpoint_group: responsive_image
 fallback_image_style: large

@@ -2,8 +2,8 @@ uuid: 37b838bd-b930-43b4-8602-310e4a457227
 langcode: en
 status: true
 dependencies: {  }
-name: omnipedia_embedded_group
-label: 'Omnipedia embedded group'
+name: omnipedia_embedded_group_1x
+label: 'Omnipedia embedded group 1x'
 effects:
   ff1d2cb0-f8f5-4a7a-ba82-1b34416c0ae3:
     uuid: ff1d2cb0-f8f5-4a7a-ba82-1b34416c0ae3

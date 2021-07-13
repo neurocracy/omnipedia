@@ -1,0 +1,15 @@
+uuid: 3b5676db-dfa1-46b7-ad95-333db8886896
+langcode: en
+status: true
+dependencies: {  }
+name: omnipedia_embedded_group_2x
+label: 'Omnipedia embedded group 2x'
+effects:
+  2516b4a0-46f8-4c64-a3a0-fd92e3789e87:
+    uuid: 2516b4a0-46f8-4c64-a3a0-fd92e3789e87
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 300
+      upscale: true

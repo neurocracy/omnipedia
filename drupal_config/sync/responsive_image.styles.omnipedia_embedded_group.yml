@@ -3,14 +3,19 @@ langcode: en
 status: true
 dependencies:
   config:
-    - image.style.omnipedia_embedded_group
+    - image.style.omnipedia_embedded_group_1x
+    - image.style.omnipedia_embedded_group_2x
 id: omnipedia_embedded_group
 label: 'Omnipedia embedded group'
 image_style_mappings:
   -
     breakpoint_id: responsive_image.viewport_sizing
     multiplier: 1x
-    image_mapping_type: image_style
-    image_mapping: omnipedia_embedded_group
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: '(max-width: 30em) 45vw, (min-width: 30em) 20vw'
+      sizes_image_styles:
+        - omnipedia_embedded_group_1x
+        - omnipedia_embedded_group_2x
 breakpoint_group: responsive_image
-fallback_image_style: omnipedia_embedded_group
+fallback_image_style: omnipedia_embedded_group_1x
