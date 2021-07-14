@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.wiki_page.field_date
     - field.field.node.wiki_page.field_episode_tier
     - field.field.node.wiki_page.field_hide_from_search
+    - field.field.node.wiki_page.field_warning
     - node.type.wiki_page
   module:
     - text
@@ -28,5 +29,6 @@ hidden:
   field_date: true
   field_episode_tier: true
   field_hide_from_search: true
+  field_warning: true
   links: true
   search_api_excerpt: true

@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.wiki_page.field_date
     - field.field.node.wiki_page.field_episode_tier
     - field.field.node.wiki_page.field_hide_from_search
+    - field.field.node.wiki_page.field_warning
     - node.type.wiki_page
   module:
     - datetime
@@ -52,6 +53,14 @@ content:
     settings:
       display_label: true
     third_party_settings: {  }
+  field_warning:
+    weight: 51
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
   path:
     type: path
     weight: 6
@@ -97,4 +106,9 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden: {  }
