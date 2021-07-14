@@ -9,7 +9,7 @@ dependencies:
 id: founder_message
 theme: omnipedia_site
 region: content
-weight: -5
+weight: -6
 provider: null
 plugin: omnipedia_founder_message
 settings:

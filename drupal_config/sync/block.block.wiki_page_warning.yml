@@ -1,0 +1,22 @@
+uuid: 9e484aab-f7d0-45b5-ba47-b19c7ed1ace3
+langcode: en
+status: true
+dependencies:
+  module:
+    - omnipedia_block
+  theme:
+    - omnipedia_site
+id: wiki_page_warning
+theme: omnipedia_site
+region: content
+weight: -2
+provider: null
+plugin: omnipedia_wiki_node_warning
+settings:
+  id: omnipedia_wiki_node_warning
+  label: 'Wiki page warning message'
+  provider: omnipedia_block
+  label_display: '0'
+  context_mapping:
+    node: '@node.node_route_context:node'
+visibility: {  }
