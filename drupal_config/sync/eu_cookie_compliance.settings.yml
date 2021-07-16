@@ -26,7 +26,7 @@ popup_height: null
 popup_hide_agreed: false
 popup_hide_button_message: Hide
 popup_info:
-  value: '<h2>This web application makes use of cookies and montages to optimise your user experience</h2><p>You can review your options or agree to all and continue to Omnipedia.</p>'
+  value: '<h2>This web application makes use of cookies and montages to optimise your user experience</h2><p>You can review your options below, or accept all and continue to Omnipedia.</p>'
   format: wiki_html
 mobile_popup_info:
   value: ''
