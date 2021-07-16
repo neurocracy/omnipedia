@@ -18,4 +18,5 @@ permissions:
   - 'use text format filtered_html'
   - 'view commerce_product'
   - 'view files'
+  - 'view media'
   - 'view own commerce_order'
