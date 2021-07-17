@@ -1,4 +1,5 @@
 module:
+  action: 0
   address: 0
   advagg: 0
   advagg_bundler: 0

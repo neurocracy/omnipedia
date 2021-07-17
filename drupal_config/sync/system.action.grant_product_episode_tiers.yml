@@ -1,0 +1,12 @@
+uuid: 65eefc25-845d-4c27-be4e-ee39b622f7d8
+langcode: en
+status: true
+dependencies:
+  module:
+    - omnipedia_commerce
+id: grant_product_episode_tiers
+label: 'Grant Neurocracy Season Pass'
+type: user
+plugin: omnipedia_commerce_user_grant_product_episode_tiers
+configuration:
+  product_id: '1'
