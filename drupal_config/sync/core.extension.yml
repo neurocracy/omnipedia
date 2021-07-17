@@ -49,6 +49,7 @@ module:
   field_ui: 0
   file: 0
   filter: 0
+  flood_control: 0
   freelinking: 0
   gin_toolbar: 0
   help: 0
