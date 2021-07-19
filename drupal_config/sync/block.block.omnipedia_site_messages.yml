@@ -11,7 +11,7 @@ _core:
 id: omnipedia_site_messages
 theme: omnipedia_site
 region: content
-weight: -7
+weight: -8
 provider: null
 plugin: system_messages_block
 settings:

@@ -4,12 +4,13 @@ status: true
 dependencies:
   module:
     - omnipedia_block
+    - system
   theme:
     - omnipedia_site
 id: founder_message
 theme: omnipedia_site
 region: content
-weight: -6
+weight: -7
 provider: null
 plugin: omnipedia_founder_message
 settings:
@@ -20,4 +21,9 @@ settings:
   body:
     value: 'We live in a world where knowledge is fractured, diffuse, negotiable. That''s why I decided to resurrect an old paradigm with **Omnipedia**, a newly created reference work that aims to be a trusted source of information at your fingertips. With more articles added each and every day, I hope you will bear with me as my team of contributors, both human and artificial, works tirelessly to help build your world.'
     format: wiki_html
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "/wiki/2049/09/28/Main_Page\r\n/wiki/2049/09/29/Main_Page\r\n/wiki/2049/09/30/Main_Page"
+    negate: false
+    context_mapping: {  }
