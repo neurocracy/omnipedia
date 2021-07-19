@@ -69,9 +69,6 @@
     "drupal/devel_entity_updates": "^3.0",
     "drupal/development_environment": "^2.0",
     "drupal/examples": "^3.0",
-    "drupal/migrate_plus": "^5.1",
-    "drupal/migrate_tools": "^5.0",
-    "drupal/migrate_upgrade": "^3.0.0",
     "kint-php/kint": "^3.3",
     "symfony/var-dumper": "^4.0"
   },
@@ -131,7 +128,6 @@
         "drupal/modules/ambientimpact/ambientimpact_ux/composer.json",
         "drupal/modules/omnipedia/omnipedia_core/composer.json",
         "drupal/modules/omnipedia/omnipedia_attached_data/composer.json",
-        "drupal/modules/omnipedia/omnipedia_attached_data/omnipedia_attached_data_migrate/composer.json",
         "drupal/modules/omnipedia/omnipedia_block/composer.json",
         "drupal/modules/omnipedia/omnipedia_commerce/composer.json",
         "drupal/modules/omnipedia/omnipedia_content/composer.json",
