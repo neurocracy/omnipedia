@@ -95,5 +95,41 @@ definitions:
     parent: ''
     expanded: false
     enabled: true
+  system__admin_reports:
+    weight: -3
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  system__themes_page:
+    weight: -7
+    menu_name: admin
+    parent: system.admin
+    enabled: true
+    expanded: false
+  system__modules_list:
+    weight: -6
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  system__admin_config:
+    weight: -4
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  entity__user__collection:
+    weight: -5
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  help__main:
+    weight: -2
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
 _core:
   default_config_hash: o4bYR9ZupWb3AsOIizTUG4g-nu1mdJqA59UB7QT-ifQ
