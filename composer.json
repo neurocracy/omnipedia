@@ -87,6 +87,9 @@
       "drupal/core": "-p2"
     },
     "patches": {
+      "drupal/gin_toolbar": {
+        "Gin Toolbar not displayed in frontend theme [#3222155]: https://www.drupal.org/project/gin_toolbar/issues/3222155#comment-14161074 ": "https://www.drupal.org/files/issues/2021-07-12/gin_toolbar_not_loaded_in_frontend-3222155.patch"
+      },
       "drupal/passwordless": {
         "passwordless_sent_page_text config value not used if set to display confirmation message rather than page: https://www.drupal.org/project/passwordless/issues/3214667 ": "https://git.drupalcode.org/project/passwordless/-/merge_requests/1.diff"
       },
