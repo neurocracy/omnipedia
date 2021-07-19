@@ -137,7 +137,8 @@
         "drupal/modules/omnipedia/omnipedia_content/composer.json",
         "drupal/modules/omnipedia/omnipedia_content/omnipedia_content_changes/composer.json",
         "drupal/modules/omnipedia/omnipedia_content/omnipedia_content_legacy/composer.json",
-        "drupal/modules/omnipedia/omnipedia_search/composer.json"
+        "drupal/modules/omnipedia/omnipedia_search/composer.json",
+        "drupal/modules/omnipedia/omnipedia_user/omnipedia_user_import/composer.json"
       ],
       "replace": false,
       "ignore-duplicates": true,
