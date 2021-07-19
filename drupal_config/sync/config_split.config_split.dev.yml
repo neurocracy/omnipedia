@@ -31,6 +31,7 @@ graylist:
   - system.performance
   - update.settings
   - user.role.anonymous
+  - user.role.authenticated
 graylist_dependents: true
 graylist_skip_equal: true
 weight: 0

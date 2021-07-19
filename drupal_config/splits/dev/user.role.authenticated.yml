@@ -1,0 +1,23 @@
+uuid: 8ececdc4-5d28-4535-bd83-7639aa508c86
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+id: authenticated
+label: 'authenticated user'
+weight: -9
+is_admin: false
+permissions:
+  - 'access checkout'
+  - 'access content'
+  - 'access devel information'
+  - 'diff view changes'
+  - 'display eu cookie compliance popup'
+  - 'manage own commerce_payment_method'
+  - 'search content'
+  - 'use text format filtered_html'
+  - 'view commerce_product'
+  - 'view files'
+  - 'view media'
+  - 'view own commerce_order'
