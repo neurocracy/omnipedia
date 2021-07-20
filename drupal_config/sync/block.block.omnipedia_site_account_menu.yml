@@ -6,7 +6,6 @@ dependencies:
     - system.menu.account
   module:
     - system
-    - user
   theme:
     - omnipedia_site
 _core:
@@ -25,11 +24,4 @@ settings:
   level: 1
   depth: 1
   expand_all_items: false
-visibility:
-  user_role:
-    id: user_role
-    roles:
-      authenticated: authenticated
-    negate: false
-    context_mapping:
-      user: '@user.current_user_context:current_user'
+visibility: {  }
