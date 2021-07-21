@@ -5,6 +5,8 @@ dependencies:
   config:
     - commerce_product.commerce_product_variation_type.default
     - core.entity_view_mode.commerce_product_variation.summary
+    - field.field.commerce_product_variation.default.maximum_order_quantity
+    - field.field.commerce_product_variation.default.minimum_order_quantity
   enforced:
     module:
       - commerce_checkout
@@ -35,6 +37,8 @@ content:
       link: false
     third_party_settings: {  }
 hidden:
+  maximum_order_quantity: true
+  minimum_order_quantity: true
   price: true
   search_api_excerpt: true
   sku: true

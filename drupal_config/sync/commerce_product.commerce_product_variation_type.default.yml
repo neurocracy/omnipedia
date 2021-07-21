@@ -8,5 +8,7 @@ id: default
 label: Default
 orderItemType: default
 generateTitle: true
-traits: {  }
+traits:
+  - maximum_order_quantity
+  - minimum_order_quantity
 locked: false
