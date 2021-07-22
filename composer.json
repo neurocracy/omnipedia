@@ -97,6 +97,11 @@
     "drupal-scaffold": {
       "locations": {
         "web-root": "drupal/"
+      },
+      "file-mapping": {
+        "[web-root]/robots.txt": {
+          "append": "drupal_scaffold/robots_append.txt"
+        }
       }
     },
     "installer-types": [

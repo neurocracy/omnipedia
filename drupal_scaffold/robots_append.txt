@@ -1,0 +1,9 @@
+# Intended as a partial fix for various services (email and otherwise) following
+# reset links to provide a preview for the user and thus invalidating the links
+# before a user can use it.
+#
+# @see https://www.drupal.org/project/passwordless/issues/3062482
+# @see https://www.drupal.org/project/drupal/issues/2828034
+# @see https://www.drupal.org/project/drupal/issues/3097238
+Disallow: /user/reset/
+Disallow: /index.php/user/reset/
