@@ -25,7 +25,7 @@ configuration:
     label: paypal
     tagline: false
   enable_on_cart: false
-  collect_billing_information: false
+  collect_billing_information: true
   display_label: PayPal
   mode: test
   payment_method_types:
