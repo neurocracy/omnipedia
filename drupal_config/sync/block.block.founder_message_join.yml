@@ -1,0 +1,30 @@
+uuid: 219e0092-d9e0-42e7-990b-ed420c9c7ef8
+langcode: en
+status: true
+dependencies:
+  module:
+    - omnipedia_block
+    - system
+  theme:
+    - omnipedia_site
+id: founder_message_join
+theme: omnipedia_site
+region: content
+weight: -6
+provider: null
+plugin: omnipedia_founder_message_join
+settings:
+  id: omnipedia_founder_message_join
+  label: 'A personal appeal from Omnipedia founder Tony Hsiung'
+  provider: omnipedia_block
+  label_display: visible
+  body:
+    value: 'We find ourselves in unprecedented times, navigating a crisis that has shaken the world to its very core. Now more than ever, we need an accessible and reliable source of information as it comes in. **Omnipedia** can be that source, but not without your help. If you are able, please donate now. I promise you, there is a light at the end of this tunnel, and we will guide you there.'
+    format: wiki_html
+  join_label: 'Donate now'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/wiki/2049/09/28/Main_Page\r\n/wiki/2049/09/29/Main_Page\r\n/wiki/2049/09/30/Main_Page"
+    negate: true
+    context_mapping: {  }
