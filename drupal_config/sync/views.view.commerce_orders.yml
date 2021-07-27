@@ -1104,7 +1104,7 @@ display:
               store_manager: '0'
               administrator: '0'
             placeholder: ''
-          is_grouped: false
+          is_grouped: true
           group_info:
             label: 'Payment gateway'
             description: ''
@@ -1124,10 +1124,6 @@ display:
                 title: Stripe
                 operator: '='
                 value: stripe
-              3:
-                title: ''
-                operator: '='
-                value: ''
           entity_type: commerce_order
           entity_field: payment_gateway
           plugin_id: string
