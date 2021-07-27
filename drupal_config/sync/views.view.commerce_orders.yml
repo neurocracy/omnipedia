@@ -5,6 +5,7 @@ dependencies:
   module:
     - commerce
     - commerce_order
+    - commerce_payment
     - commerce_price
     - commerce_store
     - options
@@ -94,6 +95,7 @@ display:
             state: state
             total_price__number: total_price__number
             payment_gateway: payment_gateway
+            completed: completed
             operations: operations
           info:
             commerce_order_bulk_form:
@@ -158,6 +160,13 @@ display:
               empty_column: false
               responsive: ''
             payment_gateway:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: priority-medium
+            completed:
               sortable: true
               default_sort_order: asc
               align: ''
@@ -815,6 +824,73 @@ display:
           entity_type: commerce_order
           entity_field: payment_gateway
           plugin_id: field
+        completed:
+          id: completed
+          table: commerce_payment
+          field: completed
+          relationship: reverse__commerce_payment__order_id
+          group_type: group
+          admin_label: ''
+          label: 'Payment completed'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: timestamp
+          settings:
+            date_format: medium
+            custom_date_format: ''
+            timezone: ''
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: commerce_payment
+          entity_field: completed
+          plugin_id: field
         operations:
           id: operations
           table: commerce_order
@@ -1055,6 +1131,75 @@ display:
           entity_type: commerce_order
           entity_field: payment_gateway
           plugin_id: string
+        completed:
+          id: completed
+          table: commerce_payment
+          field: completed
+          relationship: reverse__commerce_payment__order_id
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+            type: date
+          group: 1
+          exposed: true
+          expose:
+            operator_id: completed_op
+            label: 'Payment completed'
+            description: ''
+            use_operator: false
+            operator: completed_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: payment-completed
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              contributor: '0'
+              moderator: '0'
+              editor: '0'
+              store_manager: '0'
+              administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: true
+          group_info:
+            label: 'Payment completed'
+            description: ''
+            identifier: payment-completed
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: 'Yes'
+                operator: 'not empty'
+                value:
+                  type: date
+                  value: ''
+                  min: ''
+                  max: ''
+              2:
+                title: 'No'
+                operator: empty
+                value:
+                  type: date
+                  value: ''
+                  min: ''
+                  max: ''
+          entity_type: commerce_payment
+          entity_field: completed
+          plugin_id: date
       sorts: {  }
       title: Orders
       header: {  }
@@ -1071,7 +1216,17 @@ display:
           tokenize: false
           content: 'No orders available.'
           plugin_id: text_custom
-      relationships: {  }
+      relationships:
+        reverse__commerce_payment__order_id:
+          id: reverse__commerce_payment__order_id
+          table: commerce_order
+          field: reverse__commerce_payment__order_id
+          relationship: none
+          group_type: group
+          admin_label: Payment
+          required: false
+          entity_type: commerce_order
+          plugin_id: standard
       arguments: {  }
       display_extenders: {  }
       use_ajax: false
