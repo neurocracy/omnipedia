@@ -956,20 +956,25 @@ display:
           exposed: true
           expose:
             operator_id: order_number_op
-            operator_limit_selection: false
             label: 'Order number'
             description: ''
             use_operator: false
             operator: order_number_op
-            identifier: order_number
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: order-number
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
+              contributor: '0'
+              moderator: '0'
+              editor: '0'
+              store_manager: '0'
               administrator: '0'
-            operator_list: {  }
+            placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -998,11 +1003,12 @@ display:
           exposed: true
           expose:
             operator_id: type_op
-            operator_limit_selection: false
-            label: Type
+            label: 'Type'
             description: ''
             use_operator: false
             operator: type_op
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: type
             required: false
             remember: false
@@ -1010,10 +1016,13 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
+              contributor: '0'
+              moderator: '0'
+              editor: '0'
+              store_manager: '0'
               administrator: '0'
             reduce: false
             hide_single_bundle: true
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -1112,7 +1121,7 @@ display:
           group_info:
             label: 'Payment gateway'
             description: ''
-            identifier: payment_gateway
+            identifier: payment-gateway
             optional: true
             widget: select
             multiple: false
