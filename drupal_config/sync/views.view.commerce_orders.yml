@@ -1003,13 +1003,13 @@ display:
           exposed: true
           expose:
             operator_id: type_op
-            label: 'Type'
+            label: 'Order type'
             description: ''
             use_operator: false
             operator: type_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: type
+            identifier: order-type
             required: false
             remember: false
             multiple: false
