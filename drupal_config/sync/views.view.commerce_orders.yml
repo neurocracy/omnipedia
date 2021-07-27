@@ -1042,21 +1042,25 @@ display:
           exposed: true
           expose:
             operator_id: state_op
-            operator_limit_selection: false
-            label: State
+            label: 'Order state'
             description: ''
             use_operator: false
             operator: state_op
-            identifier: state
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: order-state
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
+              contributor: '0'
+              moderator: '0'
+              editor: '0'
+              store_manager: '0'
               administrator: '0'
             reduce: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
