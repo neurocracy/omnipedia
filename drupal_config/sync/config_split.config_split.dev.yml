@@ -7,14 +7,12 @@ label: Development
 description: 'Local development site configuration split.'
 folder: ../drupal_config/splits/dev
 module:
-  bulk_user_registration: 0
   config_delete: 0
   config_devel: 0
   config_inspector: 0
   devel: 0
   devel_entity_updates: 0
   development_environment: 0
-  omnipedia_user_import: 0
 theme: {  }
 blacklist: {  }
 graylist:
