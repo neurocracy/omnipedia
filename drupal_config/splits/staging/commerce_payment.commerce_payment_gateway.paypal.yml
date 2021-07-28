@@ -26,6 +26,7 @@ configuration:
     tagline: false
   enable_on_cart: false
   collect_billing_information: true
+  webhook_id: null
   display_label: PayPal
   mode: test
   payment_method_types:

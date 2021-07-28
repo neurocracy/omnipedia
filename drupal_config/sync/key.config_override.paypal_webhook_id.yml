@@ -1,0 +1,14 @@
+uuid: c11145ad-a61d-4b37-8a1a-5b76e0cde9f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_payment.commerce_payment_gateway.paypal
+    - key.key.paypal_live_webhook_id
+id: paypal_webhook_id
+label: 'PayPal webhook ID'
+config_type: commerce_payment_gateway
+config_prefix: commerce_payment.commerce_payment_gateway
+config_name: paypal
+config_item: configuration.webhook_id
+key_id: paypal_live_webhook_id
