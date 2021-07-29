@@ -10,6 +10,7 @@ module:
   ambientimpact_markdown: 0
   ambientimpact_media: 0
   ambientimpact_ux: 0
+  ban: 0
   block: 0
   block_content: 0
   breakpoint: 0
@@ -63,6 +64,7 @@ module:
   key: 0
   link: 0
   login_destination: 0
+  login_security: 0
   mailsystem: 0
   markdown: 0
   media: 0
