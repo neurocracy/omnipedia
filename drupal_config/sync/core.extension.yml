@@ -43,6 +43,7 @@ module:
   disable_link_rel: 0
   dynamic_page_cache: 0
   editor: 0
+  encrypt: 0
   entity: 0
   entity_reference_revisions: 0
   fancy_file_delete: 0
@@ -53,6 +54,7 @@ module:
   filter: 0
   flood_control: 0
   freelinking: 0
+  ga_login: 0
   gin_toolbar: 0
   help: 0
   history: 0
@@ -106,11 +108,13 @@ module:
   search_api_db: 0
   seckit: 0
   shortcut: 0
+  sodium: 0
   state_machine: 0
   swiftmailer: 0
   system: 0
   taxonomy: 0
   text: 0
+  tfa: 0
   token: 0
   toolbar: 0
   update: 0

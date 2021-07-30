@@ -1,0 +1,13 @@
+uuid: fac85f14-27e7-4b14-9882-3bb4656534a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - key.key.two_factor_secret
+  module:
+    - sodium
+id: two_factor
+label: 'Two factor'
+encryption_method: sodium
+encryption_key: two_factor_secret
+encryption_method_configuration: {  }
