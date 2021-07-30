@@ -2,8 +2,8 @@ cancel_confirm:
   body: "[user:name],\r\n\r\nYour account on [site:name] has been canceled.\r\n\r\n--  [site:name] team"
   subject: 'Account details for [user:name] at [site:name] (canceled)'
 password_reset:
-  body: "[user:name],\r\n\r\nA login request has been made at [site:name].\r\n\r\nYou may now log in by clicking this link or copying and pasting it to your browser:\r\n\r\n[user:one-time-login-url]\r\n\r\nThis link can only be used once to log in. It expires after one day and nothing will happen if it's not used.\r\n\r\n--  [site:name] team"
-  subject: 'One-time login link at [site:name]'
+  body: "[user:display-name],\n\nA request to reset the password for your account has been made at [site:name].\n\nYou may now log in by clicking this link or copying and pasting it into your browser:\n\n[user:one-time-login-url]\n\nThis link can only be used once to log in and will lead you to a page where you can set your password. It expires after one day and nothing will happen if it's not used.\n\n--  [site:name] team"
+  subject: 'Replacement login information for [user:display-name] at [site:name]'
 register_admin_created:
   body: "[user:name],\r\n\r\nA site administrator at [site:name] has created an account for you. You may now log in by clicking this link or copying and pasting it to your browser:\r\n\r\n[user:one-time-login-url]\r\n\r\n--  [site:name] team"
   subject: 'An administrator created an account for you at [site:name]'

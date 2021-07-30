@@ -92,7 +92,6 @@ module:
   omnipedia_user: 0
   options: 0
   page_cache: 0
-  passwordless: 0
   path: 0
   path_alias: 0
   path_alias_xt: 0
