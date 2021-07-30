@@ -17,6 +17,7 @@ permissions:
   - 'administer nodes'
   - 'delete media'
   - 'edit own wiki_page content'
+  - 'setup own tfa'
   - 'update media'
   - 'use text format wiki_html'
   - 'view all media revisions'

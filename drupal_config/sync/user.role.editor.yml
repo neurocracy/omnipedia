@@ -50,6 +50,7 @@ permissions:
   - 'revert all revisions'
   - 'revert page revisions'
   - 'revert wiki_page revisions'
+  - 'setup own tfa'
   - 'update any media'
   - 'update media'
   - 'use text format wiki_html'

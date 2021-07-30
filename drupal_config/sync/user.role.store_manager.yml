@@ -21,6 +21,7 @@ permissions:
   - 'delete default commerce_order'
   - 'delete own content_access commerce_product'
   - 'manage default commerce_order_item'
+  - 'setup own tfa'
   - 'update any content_access commerce_product'
   - 'update any online commerce_store'
   - 'update default commerce_order'
