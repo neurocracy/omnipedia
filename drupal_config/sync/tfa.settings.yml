@@ -1,11 +1,11 @@
 enabled: 1
 required_roles:
+  administrator: administrator
   authenticated: '0'
   contributor: '0'
   moderator: '0'
   editor: '0'
   store_manager: '0'
-  administrator: '0'
 send_plugins: {  }
 login_plugins: {  }
 default_validation_plugin: ga_login_totp
