@@ -27,12 +27,6 @@ content:
   contact:
     weight: 5
     region: content
-  field_content_density:
-    weight: 4
-    type: options_buttons
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   language:
     weight: 1
     region: content
@@ -45,7 +39,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   timezone:
-    weight: 6
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -60,4 +54,5 @@ content:
 hidden:
   commerce_remote_id: true
   customer_profiles: true
+  field_content_density: true
   field_show_wikipedia_links: true
