@@ -21,7 +21,7 @@ default_value: {  }
 default_value_callback: ''
 settings:
   file_directory: 'users/[current-user:uid]/user_picture'
-  file_extensions: 'png gif jpg jpeg'
+  file_extensions: 'png gif jpg jpeg webp'
   max_filesize: '800KB'
   max_resolution: 1024x1024
   min_resolution: ''
