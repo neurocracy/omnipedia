@@ -92,6 +92,12 @@ module:
   omnipedia_user: 0
   options: 0
   page_cache: 0
+  password_policy_character_types: 0
+  password_policy_characters: 0
+  password_policy_consecutive: 0
+  password_policy_history: 0
+  password_policy_length: 0
+  password_policy_username: 0
   path: 0
   path_alias: 0
   path_alias_xt: 0
@@ -127,6 +133,7 @@ module:
   webp: 0
   menu_link_content: 1
   pathauto: 1
+  password_policy: 10
   views: 10
   standard: 1000
   eu_cookie_compliance: 1001

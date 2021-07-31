@@ -5,10 +5,13 @@ dependencies:
   config:
     - field.field.user.user.commerce_remote_id
     - field.field.user.user.field_content_density
+    - field.field.user.user.field_last_password_reset
+    - field.field.user.user.field_password_expiration
     - field.field.user.user.field_show_wikipedia_links
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
+    - datetime
     - image
     - path
     - user
@@ -26,6 +29,19 @@ content:
     third_party_settings: {  }
   contact:
     weight: 5
+    region: content
+  field_last_password_reset:
+    type: datetime_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_password_expiration:
+    type: boolean_checkbox
+    weight: 1
+    settings:
+      display_label: true
+    third_party_settings: {  }
     region: content
   language:
     weight: 1

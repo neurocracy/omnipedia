@@ -6,6 +6,8 @@ dependencies:
     - core.entity_form_mode.user.register
     - field.field.user.user.commerce_remote_id
     - field.field.user.user.field_content_density
+    - field.field.user.user.field_last_password_reset
+    - field.field.user.user.field_password_expiration
     - field.field.user.user.field_show_wikipedia_links
     - field.field.user.user.user_picture
   module:
@@ -39,6 +41,8 @@ hidden:
   commerce_remote_id: true
   customer_profiles: true
   field_content_density: true
+  field_last_password_reset: true
+  field_password_expiration: true
   field_show_wikipedia_links: true
   path: true
   user_picture: true
