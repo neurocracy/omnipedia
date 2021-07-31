@@ -8,3 +8,4 @@ id: omnipedia_commerce_grant_order_product_episode_tiers
 label: 'Grant product episode tiers'
 type: commerce_order
 plugin: omnipedia_commerce_grant_order_product_episode_tiers
+configuration: {  }
