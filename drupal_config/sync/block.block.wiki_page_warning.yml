@@ -1,6 +1,6 @@
 uuid: 9e484aab-f7d0-45b5-ba47-b19c7ed1ace3
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - omnipedia_block
