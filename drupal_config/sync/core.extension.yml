@@ -53,7 +53,6 @@ module:
   file: 0
   filter: 0
   flood_control: 0
-  freelinking: 0
   ga_login: 0
   gin_toolbar: 0
   help: 0
@@ -85,7 +84,6 @@ module:
   omnipedia_commerce: 0
   omnipedia_content: 0
   omnipedia_content_changes: 0
-  omnipedia_content_legacy: 0
   omnipedia_core: 0
   omnipedia_menu: 0
   omnipedia_search: 0

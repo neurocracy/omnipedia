@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b1529bbddf4aac6e93bf28c6cbb29e7e",
+    "content-hash": "32d877a42587e8c7d13d68ba0b3bcfaf",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -4235,80 +4235,6 @@
             }
         },
         {
-            "name": "drupal/freelinking",
-            "version": "3.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/freelinking.git",
-                "reference": "8.x-3.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/freelinking-8.x-3.1.zip",
-                "reference": "8.x-3.1",
-                "shasum": "3cef6d006f31998810e83de6395c44beae44825c"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9"
-            },
-            "require-dev": {
-                "drupal/advanced_help": "*",
-                "drupal/advanced_help_hint": "*",
-                "drupal/prepopulate": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-3.1",
-                    "datestamp": "1578514083",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPLv2"
-            ],
-            "authors": [
-                {
-                    "name": "eafarris",
-                    "homepage": "http://oif.eafarris.com",
-                    "email": "eafarris@812.no-reply.drupal.org",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Adam Ross",
-                    "homepage": "http://grayside.org",
-                    "email": "Grayside@346868.no-reply.drupal.org",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Juampy NR",
-                    "email": "juampynr@682736.no-reply.drupal.org",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Gisle Hannemyr",
-                    "email": "gisle@409554.no-reply.drupal.org",
-                    "homepage": "http://hannemyr.no",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Matthew Radcliffe",
-                    "email": "mradcliffe@2823497.no-reply.drupal.org",
-                    "homepage": "http://softpixel.com/~mradcliffe/",
-                    "role": "Developer"
-                }
-            ],
-            "description": "A filter that provides flexible, extensible, wiki-style linking of content.",
-            "homepage": "https://www.drupal.org/project/freelinking",
-            "support": {
-                "source": "https://git.drupalcode.org/project/freelinking"
-            }
-        },
-        {
             "name": "drupal/ga_login",
             "version": "1.0.0-alpha6",
             "source": {
@@ -8045,56 +7971,6 @@
                 "source": "https://github.com/mkalkbrenner/php-htmldiff/tree/master"
             },
             "time": "2016-07-25T17:07:32+00:00"
-        },
-        {
-            "name": "mustache/mustache",
-            "version": "v2.13.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/bobthecow/mustache.php.git",
-                "reference": "e95c5a008c23d3151d59ea72484d4f72049ab7f4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/mustache.php/zipball/e95c5a008c23d3151d59ea72484d4f72049ab7f4",
-                "reference": "e95c5a008c23d3151d59ea72484d4f72049ab7f4",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.2.4"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "~1.11",
-                "phpunit/phpunit": "~3.7|~4.0|~5.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Mustache": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Justin Hileman",
-                    "email": "justin@justinhileman.info",
-                    "homepage": "http://justinhileman.com"
-                }
-            ],
-            "description": "A Mustache implementation in PHP.",
-            "homepage": "https://github.com/bobthecow/mustache.php",
-            "keywords": [
-                "mustache",
-                "templating"
-            ],
-            "support": {
-                "issues": "https://github.com/bobthecow/mustache.php/issues",
-                "source": "https://github.com/bobthecow/mustache.php/tree/master"
-            },
-            "time": "2019-11-23T21:40:31+00:00"
         },
         {
             "name": "nikic/php-parser",

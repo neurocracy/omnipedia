@@ -6,12 +6,10 @@ dependencies:
     - ambientimpact_core
     - ambientimpact_icon
     - editor
-    - freelinking
     - markdown
     - media
     - omnipedia_attached_data
     - omnipedia_content
-    - omnipedia_content_legacy
 name: 'Wiki HTML'
 format: wiki_html
 weight: -10
@@ -31,66 +29,6 @@ filters:
     status: false
     weight: -34
     settings: {  }
-  freelinking:
-    id: freelinking
-    provider: freelinking
-    status: false
-    weight: -50
-    settings:
-      default: nodetitle
-      global_options:
-        ignore_upi: false
-      plugins:
-        builtin:
-          plugin: builtin
-          enabled: true
-        drupalorg:
-          plugin: drupalorg
-          enabled: false
-          settings:
-            scrape: '1'
-            node: '1'
-            project: '1'
-        external:
-          plugin: external
-          enabled: false
-          settings:
-            scrape: '1'
-        file:
-          plugin: file
-          enabled: false
-          settings:
-            scheme: public
-        google:
-          plugin: google
-          enabled: false
-        nid:
-          plugin: nid
-          enabled: false
-        nodetitle:
-          plugin: nodetitle
-          enabled: true
-          settings:
-            nodetypes:
-              wiki_page: wiki_page
-              page: '0'
-            failover: _none
-        path_alias:
-          plugin: path_alias
-          enabled: false
-          settings:
-            failover: error
-        search:
-          plugin: search
-          enabled: false
-          settings:
-            failover: error
-        user:
-          plugin: user
-          enabled: false
-        wiki:
-          plugin: wiki
-          enabled: true
   ambientimpact_dom:
     id: ambientimpact_dom
     provider: ambientimpact_core
@@ -104,8 +42,8 @@ filters:
     weight: -36
     settings:
       default_view_mode: default
-      allowed_media_types: {  }
       allowed_view_modes: {  }
+      allowed_media_types: {  }
   ambientimpact_icon:
     id: ambientimpact_icon
     provider: ambientimpact_icon
@@ -178,18 +116,6 @@ filters:
     status: true
     weight: -46
     settings: {  }
-  omnipedia_freelinking_to_markdown:
-    id: omnipedia_freelinking_to_markdown
-    provider: omnipedia_content_legacy
-    status: false
-    weight: -49
-    settings: {  }
-  omnipedia_mustache_to_html:
-    id: omnipedia_mustache_to_html
-    provider: omnipedia_content_legacy
-    status: false
-    weight: -48
-    settings: {  }
   omnipedia_attached_data_attachments:
     id: omnipedia_attached_data_attachments
     provider: omnipedia_attached_data
@@ -213,10 +139,4 @@ filters:
     provider: omnipedia_content
     status: true
     weight: -42
-    settings: {  }
-  omnipedia_markdown_preparer:
-    id: omnipedia_markdown_preparer
-    provider: omnipedia_content_legacy
-    status: false
-    weight: -47
     settings: {  }
