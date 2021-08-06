@@ -1,0 +1,18 @@
+uuid: 2ce10512-58be-4bb9-897d-b0c982a760d5
+langcode: en
+status: true
+dependencies: {  }
+name: main_page
+label: 'Main Page'
+triggers:
+  registration: registration
+  login: login
+  one-time-login: one-time-login
+  logout: logout
+destination_path: 'internal:/'
+pages_type: 0
+pages: ''
+language: ''
+roles: {  }
+weight: 0
+enabled: true
