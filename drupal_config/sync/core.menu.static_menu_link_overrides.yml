@@ -131,5 +131,11 @@ definitions:
     parent: system.admin
     expanded: false
     enabled: true
+  omnipedia_commerce__content_access_base_product__main:
+    enabled: false
+    menu_name: main
+    parent: ''
+    expanded: false
+    weight: 0
 _core:
   default_config_hash: o4bYR9ZupWb3AsOIizTUG4g-nu1mdJqA59UB7QT-ifQ
