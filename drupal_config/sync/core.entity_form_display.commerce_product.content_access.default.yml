@@ -6,6 +6,7 @@ dependencies:
     - commerce_product.commerce_product_type.content_access
     - field.field.commerce_product.content_access.body
     - field.field.commerce_product.content_access.field_episode_tier
+    - field.field.commerce_product.content_access.field_menu_link_title
     - field.field.commerce_product.content_access.field_redirect_message
     - field.field.commerce_product.content_access.field_redirect_wiki_page
   module:
@@ -39,6 +40,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
+    region: content
+  field_menu_link_title:
+    weight: 10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   field_redirect_message:
     weight: 9

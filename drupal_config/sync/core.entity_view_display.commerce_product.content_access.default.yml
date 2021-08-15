@@ -6,6 +6,7 @@ dependencies:
     - commerce_product.commerce_product_type.content_access
     - field.field.commerce_product.content_access.body
     - field.field.commerce_product.content_access.field_episode_tier
+    - field.field.commerce_product.content_access.field_menu_link_title
     - field.field.commerce_product.content_access.field_redirect_message
     - field.field.commerce_product.content_access.field_redirect_wiki_page
   module:
@@ -42,6 +43,7 @@ content:
 hidden:
   created: true
   field_episode_tier: true
+  field_menu_link_title: true
   field_redirect_message: true
   field_redirect_wiki_page: true
   search_api_excerpt: true
