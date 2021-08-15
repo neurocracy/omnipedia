@@ -24,6 +24,16 @@ enforce:
   directives:
     default-src:
       base: self
+    child-src:
+      sources:
+        - 'https://www.paypal.com'
+        - 'https://www.sandbox.paypal.com'
+        - 'https://js.stripe.com'
+      base: self
+    connect-src:
+      sources:
+        - 'https://www.paypal.com'
+      base: self
     frame-src:
       sources:
         - 'https://www.paypal.com'
@@ -34,6 +44,7 @@ enforce:
       sources:
         - 'data:'
         - 'https://www.paypalobjects.com'
+        - 'https://t.paypal.com/'
       base: self
     object-src:
       base: none
