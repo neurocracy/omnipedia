@@ -1,6 +1,7 @@
 headers_to_remove:
   - X-Drupal-Dynamic-Cache
   - X-Drupal-Cache
+  - X-Generator
 dependencies:
   enforced:
     module:
