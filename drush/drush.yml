@@ -5,3 +5,13 @@ command:
         # This prevents Drush automatically trying to launch the default browser
         # when generating a log in link.
         browser: 0
+
+  ambientimpact:
+    rsync:
+      options:
+        exclude-paths:
+          - 'sites/*/settings.database.php'
+          - 'sites/*/settings.local.php'
+          # Added to prevent site-specific Drush config getting synced from
+          # staging to live.
+          - 'sites/all/drush/drush.yml'
