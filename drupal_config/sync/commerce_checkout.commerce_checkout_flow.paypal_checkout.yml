@@ -22,31 +22,34 @@ configuration:
       weight: '0'
     omnipedia_billing_information_message:
       step: order_information
-      weight: '1'
+      weight: '2'
     review:
       step: review
-      weight: '2'
+      weight: '3'
     stripe_review:
       button_id: edit-actions-next
       step: review
-      weight: '3'
+      weight: '4'
     paypal_checkout_payment_process:
       capture: true
       step: payment
-      weight: '4'
-    order_summary:
-      view: ''
-      step: _sidebar
-      weight: '7'
+      weight: '5'
     completion_message:
       message:
         value: "Your order number is [commerce_order:order_number].\r\nYou can view your order on your account page when logged in."
         format: plain_text
       step: complete
-      weight: '5'
-    completion_register:
-      step: _disabled
-      weight: '8'
+      weight: '6'
     omnipedia_redirect_to_wiki_node:
       step: complete
-      weight: '6'
+      weight: '7'
+    order_summary:
+      view: ''
+      step: _sidebar
+      weight: '8'
+    completion_register:
+      step: _disabled
+      weight: '9'
+    omnipedia_paypal_warning:
+      step: order_information
+      weight: '1'
