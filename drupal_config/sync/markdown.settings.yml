@@ -68,3 +68,6 @@ parser:
         footnote_id_prefix: reference-
         ref_class: reference__link
         ref_id_prefix: backreference-
+    -
+      id: webuni/commonmark-attributes-extension
+      enabled: true
