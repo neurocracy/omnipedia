@@ -7,7 +7,7 @@ dependencies:
 id: media_default
 label: 'Media - default'
 type: 'canonical_entities:media'
-pattern: 'media/[media:name]'
+pattern: 'wiki/File:[media:name]'
 selection_criteria: {  }
 selection_logic: and
 weight: 0
