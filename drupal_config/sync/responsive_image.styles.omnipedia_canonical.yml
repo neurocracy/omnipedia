@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - image.style.large
     - image.style.max_1300x1300
     - image.style.max_325x325
     - image.style.max_650x650
@@ -21,4 +20,4 @@ image_style_mappings:
         - max_325x325
         - max_650x650
 breakpoint_group: responsive_image
-fallback_image_style: large
+fallback_image_style: max_650x650
