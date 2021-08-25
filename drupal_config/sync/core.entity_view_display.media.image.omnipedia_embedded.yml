@@ -20,11 +20,12 @@ content:
     label: visually_hidden
     settings:
       responsive_image_style: omnipedia_embedded
-      image_link: file
+      image_link: content
     third_party_settings:
       ambientimpact_media:
         use_photoswipe: true
         use_photoswipe_gallery: true
+        use_photoswipe_image_style: content_image_large
     type: responsive_image
     weight: 1
     region: content
