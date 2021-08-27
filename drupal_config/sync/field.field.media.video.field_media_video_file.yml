@@ -21,7 +21,7 @@ default_value: {  }
 default_value_callback: ''
 settings:
   file_directory: media/video
-  file_extensions: mp4
+  file_extensions: 'webm mp4'
   max_filesize: ''
   description_field: false
   handler: 'default:file'
