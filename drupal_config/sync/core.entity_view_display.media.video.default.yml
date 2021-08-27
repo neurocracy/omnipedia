@@ -20,7 +20,7 @@ content:
     label: visually_hidden
     settings:
       controls: true
-      multiple_file_display_type: tags
+      multiple_file_display_type: sources
       width: 1280
       height: 720
       autoplay: false
