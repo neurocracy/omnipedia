@@ -11,7 +11,7 @@ triggers:
   logout: logout
 destination_path: 'internal:/'
 pages_type: 0
-pages: ''
+pages: '/checkout/*'
 language: ''
 roles: {  }
 weight: 0
