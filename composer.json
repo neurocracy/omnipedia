@@ -43,6 +43,7 @@
     "drupal/ga_login": "^1.0@alpha",
     "drupal/gin": "^3.0@alpha",
     "drupal/gin_toolbar": "^1.0@beta",
+    "drupal/honeypot": "^2.0",
     "drupal/key": "^1.14",
     "drupal/login_destination": "^2.0",
     "drupal/login_security": "^2.0",

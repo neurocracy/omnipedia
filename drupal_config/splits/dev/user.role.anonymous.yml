@@ -12,6 +12,7 @@ permissions:
   - 'access checkout'
   - 'access content'
   - 'access devel information'
+  - 'access site-wide contact form'
   - 'diff view changes'
   - 'display eu cookie compliance popup'
   - 'search content'

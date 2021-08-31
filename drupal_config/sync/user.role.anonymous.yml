@@ -11,6 +11,7 @@ is_admin: false
 permissions:
   - 'access checkout'
   - 'access content'
+  - 'access site-wide contact form'
   - 'diff view changes'
   - 'display eu cookie compliance popup'
   - 'search content'

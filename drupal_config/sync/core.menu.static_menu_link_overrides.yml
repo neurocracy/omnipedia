@@ -1,10 +1,10 @@
 definitions:
   contact__site_page:
-    enabled: true
+    weight: -46
     menu_name: footer
     parent: ''
-    weight: 0
     expanded: false
+    enabled: false
   standard__front_page:
     weight: -50
     menu_name: main
@@ -137,5 +137,11 @@ definitions:
     parent: ''
     expanded: false
     weight: 0
+  omnipedia_commerce__content_access_base_product__footer:
+    weight: -45
+    menu_name: footer
+    parent: ''
+    expanded: false
+    enabled: true
 _core:
   default_config_hash: o4bYR9ZupWb3AsOIizTUG4g-nu1mdJqA59UB7QT-ifQ

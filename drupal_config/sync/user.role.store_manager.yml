@@ -11,6 +11,7 @@ permissions:
   - 'access commerce_order overview'
   - 'access commerce_product overview'
   - 'access commerce_store overview'
+  - 'access user contact forms'
   - 'administer commerce_currency'
   - 'administer commerce_order'
   - 'administer commerce_payment'

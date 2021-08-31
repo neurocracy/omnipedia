@@ -1,0 +1,12 @@
+uuid: c1b819c2-0eb5-4c04-82e0-b7329eb650c8
+langcode: en
+status: true
+dependencies: {  }
+id: contact
+label: Contact
+recipients:
+  - joannes@playthroughline.com
+reply: ''
+weight: 0
+message: 'Your message has been sent. We''ll get back to you as soon as we can. Please make sure you check your spam folder for emails ending in "@playthroughline.com".'
+redirect: /contact

@@ -32,6 +32,7 @@ module:
   config: 0
   config_filter: 0
   config_split: 0
+  contact: 0
   contextual: 0
   core_event_dispatcher: 0
   csp: 0
@@ -57,6 +58,7 @@ module:
   gin_toolbar: 0
   help: 0
   history: 0
+  honeypot: 0
   hook_event_dispatcher: 0
   image: 0
   image_field_caption: 0
