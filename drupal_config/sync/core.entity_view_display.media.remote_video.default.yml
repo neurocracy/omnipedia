@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.media.remote_video.field_episode_tier
     - field.field.media.remote_video.field_media_oembed_video
     - media.type.remote_video
   module:
@@ -25,6 +26,8 @@ content:
     region: content
 hidden:
   created: true
+  field_episode_tier: true
   name: true
+  search_api_excerpt: true
   thumbnail: true
   uid: true

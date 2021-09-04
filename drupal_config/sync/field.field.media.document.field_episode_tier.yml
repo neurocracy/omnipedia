@@ -1,0 +1,33 @@
+uuid: 9a534228-1d4c-4550-8947-5be15408c682
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_episode_tier
+    - media.type.document
+    - taxonomy.vocabulary.episode_tiers
+  content:
+    - 'taxonomy_term:episode_tiers:b779e50f-219e-475a-94db-ec0bbd0e60f8'
+id: media.document.field_episode_tier
+field_name: field_episode_tier
+entity_type: media
+bundle: document
+label: 'Episode tier'
+description: 'The lowest episode tier that a user must have to have access to this media.'
+required: true
+translatable: true
+default_value:
+  -
+    target_uuid: b779e50f-219e-475a-94db-ec0bbd0e60f8
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      episode_tiers: episode_tiers
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

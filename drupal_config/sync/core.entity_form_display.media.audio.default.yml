@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.media.audio.field_episode_tier
     - field.field.media.audio.field_media_audio_file
     - media.type.audio
   module:
@@ -21,6 +22,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_episode_tier:
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
   field_media_audio_file:
     weight: 0
     settings:
@@ -53,3 +60,4 @@ content:
     third_party_settings: {  }
 hidden:
   name: true
+  replace_file: true

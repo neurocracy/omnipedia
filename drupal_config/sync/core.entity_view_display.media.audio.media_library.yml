@@ -4,11 +4,12 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.media.media_library
+    - field.field.media.audio.field_episode_tier
     - field.field.media.audio.field_media_audio_file
     - image.style.thumbnail
     - media.type.audio
   module:
-    - image
+    - ambientimpact_media
 _core:
   default_config_hash: bluLijrv0ELGIq1uFR777kImy6ZH6VLl8mBCOwvuLg4
 id: media.audio.media_library
@@ -27,6 +28,8 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  field_episode_tier: true
   field_media_audio_file: true
   name: true
+  search_api_excerpt: true
   uid: true

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.media.media_library
+    - field.field.media.document.field_episode_tier
     - field.field.media.document.field_media_document
     - media.type.document
 _core:
@@ -15,8 +16,10 @@ mode: media_library
 content: {  }
 hidden:
   created: true
+  field_episode_tier: true
   field_media_document: true
   name: true
   path: true
+  replace_file: true
   status: true
   uid: true

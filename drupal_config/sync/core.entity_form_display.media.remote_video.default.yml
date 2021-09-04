@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.media.remote_video.field_episode_tier
     - field.field.media.remote_video.field_media_oembed_video
     - media.type.remote_video
   module:
@@ -21,6 +22,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_episode_tier:
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
   field_media_oembed_video:
     type: oembed_textfield
     weight: 0

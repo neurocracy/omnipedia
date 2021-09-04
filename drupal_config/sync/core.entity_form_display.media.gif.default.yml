@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.media.gif.field_episode_tier
     - field.field.media.gif.field_media_image
     - image.style.thumbnail
     - media.type.gif
@@ -22,6 +23,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_episode_tier:
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
   field_media_image:
     weight: 0
     settings:
@@ -61,4 +68,5 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  replace_file: true

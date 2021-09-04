@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.media.image.field_episode_tier
     - field.field.media.image.field_media_image
     - image.style.thumbnail
     - media.type.image
@@ -22,6 +23,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_episode_tier:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
   field_media_image:
     settings:
       progress_indicator: throbber

@@ -4,11 +4,12 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.media.media_library
+    - field.field.media.image.field_episode_tier
     - field.field.media.image.field_media_image
     - image.style.medium
     - media.type.image
   module:
-    - image
+    - ambientimpact_media
 _core:
   default_config_hash: PaGXvzRcL9eII--JV4eCVfObjrNo0l-u1dB_WJtB9ig
 id: media.image.media_library
@@ -27,6 +28,7 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  field_episode_tier: true
   field_media_image: true
   name: true
   search_api_excerpt: true

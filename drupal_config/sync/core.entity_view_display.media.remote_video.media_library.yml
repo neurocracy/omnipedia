@@ -4,11 +4,12 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.media.media_library
+    - field.field.media.remote_video.field_episode_tier
     - field.field.media.remote_video.field_media_oembed_video
     - image.style.medium
     - media.type.remote_video
   module:
-    - image
+    - ambientimpact_media
 _core:
   default_config_hash: sLyo3lc_eX4-C1Jv0ivqjuORGfdclLsX09tZf7K3EVM
 id: media.remote_video.media_library
@@ -27,6 +28,8 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  field_episode_tier: true
   field_media_oembed_video: true
   name: true
+  search_api_excerpt: true
   uid: true
