@@ -8,7 +8,8 @@ description: 'Staging site configuration split.'
 folder: ../drupal_config/splits/staging
 module: {  }
 theme: {  }
-blacklist: {  }
+blacklist:
+  - dblog.settings
 graylist:
   - commerce_payment.commerce_payment_gateway.paypal
   - commerce_payment.commerce_payment_gateway.stripe
