@@ -25,9 +25,6 @@ configuration:
       double_entry: true
       step: order_information
       weight: 1
-    omnipedia_paypal_warning:
-      step: _disabled
-      weight: 12
     omnipedia_billing_information_message:
       step: order_information
       weight: 2
@@ -55,16 +52,19 @@ configuration:
     order_summary:
       view: ''
       step: _sidebar
-      weight: 9
+      weight: 10
     completion_message:
       message:
         value: "Your order number is [commerce_order:order_number].\r\nYou can view your order on your account page when logged in."
         format: plain_text
       step: _disabled
-      weight: 10
+      weight: 11
     completion_register:
       step: _disabled
-      weight: 11
-    omnipedia_redirect_to_wiki_node:
+      weight: 12
+    omnipedia_paypal_warning:
       step: _disabled
       weight: 13
+    omnipedia_redirect_to_wiki_node:
+      step: complete
+      weight: 9
