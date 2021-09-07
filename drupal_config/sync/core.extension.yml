@@ -81,6 +81,7 @@ module:
   metatag_open_graph: 0
   metatag_twitter_cards: 0
   node: 0
+  omnipedia_access: 0
   omnipedia_attached_data: 0
   omnipedia_block: 0
   omnipedia_commerce: 0
