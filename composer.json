@@ -52,7 +52,6 @@
     "drupal/password_policy": "^3.0",
     "drupal/path_alias_xt": "1.x-dev",
     "drupal/pathauto": "^1.6",
-    "drupal/permissions_by_term": "^2.25",
     "drupal/redirect": "^1.6",
     "drupal/remove_http_headers": "^1.0",
     "drupal/seckit": "^2.0",
@@ -93,10 +92,6 @@
       "drupal/core": "-p2"
     },
     "patches": {
-      "drupal/permissions_by_term": {
-        "Respect the Require all terms granted and Permission mode settings in Permission by entity module: https://www.drupal.org/project/permissions_by_term/issues/3072171 ": "https://git.drupalcode.org/project/permissions_by_term/-/merge_requests/8.patch",
-        "Permissions by Entity PHP notice for Commerce Product entities: https://www.drupal.org/project/permissions_by_term/issues/3231188 ": "https://git.drupalcode.org/project/permissions_by_term/-/merge_requests/9.patch"
-      },
       "drupal/webp": {
         "A recent commit causes image generation to fail on Windows platforms: https://www.drupal.org/project/webp/issues/3161795#comment-14096421 ": "https://www.drupal.org/files/issues/2021-05-07/webp-replace-file-exists-call-with-entity-load-to-fix-image-generation-3161795-16.patch"
       }
@@ -137,6 +132,7 @@
         "drupal/modules/ambientimpact/ambientimpact_media/composer.json",
         "drupal/modules/ambientimpact/ambientimpact_ux/composer.json",
         "drupal/modules/omnipedia/omnipedia_core/composer.json",
+        "drupal/modules/omnipedia/omnipedia_access/composer.json",
         "drupal/modules/omnipedia/omnipedia_attached_data/composer.json",
         "drupal/modules/omnipedia/omnipedia_block/composer.json",
         "drupal/modules/omnipedia/omnipedia_commerce/composer.json",
