@@ -1,4 +1,9 @@
 user_special: true
-regex_pattern: '{(^node|^user|^taxonomy/term)/([0-9]+)/(.+)}'
+regex_pattern: '{(^node|^user|^taxonomy/term|^media|^product)/([0-9]+)/(.+)}'
 _core:
   default_config_hash: Eee2yPxbx-GtTowlxw6bfEtn5JdpohybL_OOCy3aUEE
+submit: 'Save configuration'
+form_build_id: form-DQe2pNcqlyfetKvSbGqXbXIPjOUVUSNCp5TU7yFsqCM
+form_token: bEIMH0VVc6WRUB-uYB5s7YMQgH-B3BiPRpiUjLwrLvA
+form_id: path_alias_xt_settings_form
+op: 'Save configuration'
