@@ -35,6 +35,7 @@
     "drupal/core-composer-scaffold": "^8.9",
     "drupal/core-recommended": "^8.9",
     "drupal/csp": "^1.13",
+    "drupal/development_environment": "^2.0",
     "drupal/diff": "^1.0",
     "drupal/disable_link_rel": "^1.0",
     "drupal/eu_cookie_compliance": "^1.14",
@@ -72,7 +73,6 @@
     "drupal/config_inspector": "^1.0.0-beta2",
     "drupal/devel": "^4.0",
     "drupal/devel_entity_updates": "^3.0",
-    "drupal/development_environment": "^2.0",
     "drupal/examples": "^3.0",
     "kint-php/kint": "^3.3",
     "symfony/var-dumper": "^4.0"
