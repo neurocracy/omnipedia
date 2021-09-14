@@ -21,6 +21,7 @@ permissions:
   - 'access checkout'
   - 'access content'
   - 'access devel information'
+  - 'access pwa'
   - 'access site-wide contact form'
   - 'build omnipedia_content_changes'
   - 'display eu cookie compliance popup'

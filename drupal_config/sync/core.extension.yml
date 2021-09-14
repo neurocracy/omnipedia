@@ -98,6 +98,7 @@ module:
   omnipedia_logger: 0
   omnipedia_media: 0
   omnipedia_menu: 0
+  omnipedia_pwa: 0
   omnipedia_search: 0
   omnipedia_user: 0
   options: 0
@@ -115,6 +116,7 @@ module:
   permissions_by_term: 0
   preprocess_event_dispatcher: 0
   profile: 0
+  pwa: 0
   queue_ui: 0
   rdf: 0
   redirect: 0
