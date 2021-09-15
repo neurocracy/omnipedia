@@ -4119,17 +4119,17 @@
         },
         {
             "name": "drupal/fancy_file_delete",
-            "version": "2.0.5",
+            "version": "2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/fancy_file_delete.git",
-                "reference": "2.0.5"
+                "reference": "2.0.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/fancy_file_delete-2.0.5.zip",
-                "reference": "2.0.5",
-                "shasum": "ffab66ee1b5213283a05910de187821fd986535c"
+                "url": "https://ftp.drupal.org/files/projects/fancy_file_delete-2.0.6.zip",
+                "reference": "2.0.6",
+                "shasum": "ed8c2e3ce6a9335620c4912692880989d4a3268f"
             },
             "require": {
                 "drupal/core": "^8.7.7 || ^9",
@@ -4138,8 +4138,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.5",
-                    "datestamp": "1628621547",
+                    "version": "2.0.6",
+                    "datestamp": "1631043100",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
