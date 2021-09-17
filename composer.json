@@ -42,7 +42,7 @@
     "drupal/fancy_file_delete": "^2.0",
     "drupal/flood_control": "^2.1",
     "drupal/ga_login": "^1.0@alpha",
-    "drupal/gin": "^3.0@alpha",
+    "drupal/gin": "3.x-dev@dev",
     "drupal/gin_toolbar": "^1.0@beta",
     "drupal/honeypot": "^2.0",
     "drupal/key": "^1.14",
@@ -92,6 +92,12 @@
       "drupal/core": "-p2"
     },
     "patches": {
+      "drupal/gin": {
+        "Added automatic dark mode toggling based on prefers-color-scheme @media: https://www.drupal.org/project/gin/issues/3161904 ": "https://git.drupalcode.org/project/gin/-/merge_requests/51.diff"
+      },
+      "drupal/gin_toolbar": {
+        "Automatic dark mode support: https://www.drupal.org/project/gin_toolbar/issues/3233393 ": "https://git.drupalcode.org/issue/gin_toolbar-3233393/-/merge_requests/1.patch"
+      },
       "drupal/webp": {
         "A recent commit causes image generation to fail on Windows platforms: https://www.drupal.org/project/webp/issues/3161795#comment-14096421 ": "https://www.drupal.org/files/issues/2021-05-07/webp-replace-file-exists-call-with-entity-load-to-fix-image-generation-3161795-16.patch"
       }

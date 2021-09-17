@@ -4308,17 +4308,11 @@
         },
         {
             "name": "drupal/gin",
-            "version": "3.0.0-alpha36",
+            "version": "dev-3.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin.git",
-                "reference": "8.x-3.0-alpha36"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/gin-8.x-3.0-alpha36.zip",
-                "reference": "8.x-3.0-alpha36",
-                "shasum": "e0a412e12b000d92e1200c825abaf8ba33df9396"
+                "reference": "e0b688a5255697ca11b97190ce4ff0148e47d3b6"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9",
@@ -4326,12 +4320,15 @@
             },
             "type": "drupal-theme",
             "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
                 "drupal": {
-                    "version": "8.x-3.0-alpha36",
-                    "datestamp": "1625232245",
+                    "version": "8.x-3.0-alpha36+18-dev",
+                    "datestamp": "1631549331",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -12686,7 +12683,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/ga_login": 15,
-        "drupal/gin": 15,
+        "drupal/gin": 20,
         "drupal/gin_toolbar": 10,
         "drupal/path_alias_xt": 20,
         "drupal/tfa": 15,
