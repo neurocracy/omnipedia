@@ -1,0 +1,27 @@
+uuid: 612eb329-49a4-4960-a277-a410fedfcb7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_subtitles
+    - media.type.video
+  module:
+    - file
+id: media.video.field_subtitles
+field_name: field_subtitles
+entity_type: media
+bundle: video
+label: Subtitles
+description: 'A subtitles file for the video, in <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API" target="_blank">WebVTT format</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: media/video
+  file_extensions: vtt
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

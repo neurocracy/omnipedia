@@ -6,6 +6,7 @@ dependencies:
     - core.entity_form_mode.media.media_library
     - field.field.media.video.field_episode_tier
     - field.field.media.video.field_media_video_file
+    - field.field.media.video.field_subtitles
     - media.type.video
 _core:
   default_config_hash: kGv8YsopqHvzTzb7QTINWcv0fnNa5ZDQyZxpOQR2vro
@@ -18,6 +19,7 @@ hidden:
   created: true
   field_episode_tier: true
   field_media_video_file: true
+  field_subtitles: true
   name: true
   path: true
   replace_file: true
