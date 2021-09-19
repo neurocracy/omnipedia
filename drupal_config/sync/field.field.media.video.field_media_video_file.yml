@@ -14,7 +14,7 @@ field_name: field_media_video_file
 entity_type: media
 bundle: video
 label: 'Video file'
-description: ''
+description: 'Please include a <a href="https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Containers#webm" target="_blank">WebM</a> file (encoded with the <a href="https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Video_codecs#vp9" target="_blank">VP9 codec</a>) and an <a href="https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Containers#mpeg-4_mp4" target="_blank">MP4</a> file (encoded with the <a href="https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Video_codecs#avc_h.264" target="_blank">AVC (H.264) codec</a>), in that order, for the widest browser compatibility.'
 required: true
 translatable: true
 default_value: {  }
