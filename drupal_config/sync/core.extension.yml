@@ -88,6 +88,7 @@ module:
   omnipedia_content: 0
   omnipedia_content_changes: 0
   omnipedia_core: 0
+  omnipedia_media: 0
   omnipedia_menu: 0
   omnipedia_search: 0
   omnipedia_user: 0
