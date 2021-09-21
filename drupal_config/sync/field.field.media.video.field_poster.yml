@@ -1,0 +1,41 @@
+uuid: f865eaba-e7c5-4225-ac27-673f2fbb7b08
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_poster
+    - media.type.video
+  module:
+    - image
+id: media.video.field_poster
+field_name: field_poster
+entity_type: media
+bundle: video
+label: Poster
+description: 'An image to be shown when the video has not been downloaded yet, and as a thumbnail in the media library.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: media/video
+  file_extensions: 'png gif jpg jpeg webp'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+    caption: ''
+  caption_field: 0
+  caption_field_required: 0
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

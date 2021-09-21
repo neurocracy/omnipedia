@@ -6,6 +6,7 @@ dependencies:
     - core.entity_form_mode.media.media_library
     - field.field.media.video.field_episode_tier
     - field.field.media.video.field_media_video_file
+    - field.field.media.video.field_poster
     - field.field.media.video.field_subtitles
     - media.type.video
 _core:
@@ -19,6 +20,7 @@ hidden:
   created: true
   field_episode_tier: true
   field_media_video_file: true
+  field_poster: true
   field_subtitles: true
   name: true
   path: true
