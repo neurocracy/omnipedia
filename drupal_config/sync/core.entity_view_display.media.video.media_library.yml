@@ -8,7 +8,7 @@ dependencies:
     - field.field.media.video.field_media_video_file
     - field.field.media.video.field_poster
     - field.field.media.video.field_subtitles
-    - image.style.thumbnail
+    - image.style.media_library_square_thumbnail_220
     - media.type.video
   module:
     - ambientimpact_media
@@ -25,9 +25,14 @@ content:
     region: content
     label: hidden
     settings:
-      image_style: thumbnail
+      image_style: media_library_square_thumbnail_220
       image_link: ''
-    third_party_settings: {  }
+    third_party_settings:
+      ambientimpact_media:
+        use_animated_gif_toggle: true
+        use_photoswipe_gallery: true
+        use_photoswipe_image_style: ''
+        use_photoswipe: false
 hidden:
   created: true
   field_episode_tier: true
