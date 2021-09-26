@@ -1,0 +1,26 @@
+dependencies:
+  module:
+    - markdown
+id: commonmark-pecl
+weight: 10
+enabled: true
+render_strategy:
+  type: none
+  custom_allowed_html: null
+  plugins: {  }
+settings:
+  allow_unsafe_links: true
+  enable_em: true
+  enable_strong: true
+  html_input: allow
+  max_nesting_level: 0
+  renderer:
+    block_separator: \n
+    inner_separator: \n
+    soft_break: \n
+  unordered_list_markers:
+    - '-'
+    - '*'
+    - +
+  use_asterisk: true
+  use_underscore: true

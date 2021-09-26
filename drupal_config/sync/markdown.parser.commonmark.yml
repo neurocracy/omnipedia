@@ -1,0 +1,93 @@
+dependencies:
+  module:
+    - ambientimpact_markdown
+    - markdown
+id: commonmark
+weight: 0
+enabled: true
+render_strategy:
+  type: none
+  custom_allowed_html: ''
+  plugins:
+    commonmark: true
+    commonmark-external-links: false
+    commonmark-footnotes: false
+    commonmark-heading-permalink: false
+    commonmark-strikethrough: false
+    commonmark-table: false
+    commonmark-task-list: false
+settings:
+  allow_unsafe_links: true
+  enable_em: true
+  enable_strong: true
+  html_input: allow
+  max_nesting_level: 0
+  use_asterisk: true
+  use_underscore: true
+extensions:
+  -
+    id: commonmark-attributes
+    weight: 0
+    enabled: true
+  -
+    id: commonmark-autolink
+    weight: 0
+    enabled: false
+  -
+    id: commonmark-disallowed-raw-html
+    weight: 0
+    enabled: false
+  -
+    id: commonmark-emoji
+    weight: 0
+    enabled: false
+    settings: {  }
+  -
+    id: commonmark-external-links
+    weight: 0
+    enabled: false
+    settings: {  }
+  -
+    id: commonmark-footnotes
+    weight: 0
+    enabled: true
+    settings:
+      container_add_hr: 0
+  -
+    id: commonmark-heading-permalink
+    weight: 0
+    enabled: true
+    settings:
+      id_prefix: ''
+      inner_contents: '[icon:libricons:link:Permalink:standalone&text=hidden]'
+      insert: after
+  -
+    id: commonmark-mention
+    weight: 0
+    enabled: false
+  -
+    id: commonmark-smart-punctuation
+    weight: 0
+    enabled: true
+    settings: {  }
+  -
+    id: commonmark-strikethrough
+    weight: 0
+    enabled: false
+  -
+    id: commonmark-table
+    weight: 0
+    enabled: true
+  -
+    id: commonmark-table-of-contents
+    weight: 0
+    enabled: true
+    settings:
+      max_heading_level: 6
+      min_heading_level: 1
+      placeholder: '[toc]'
+      style: ordered
+  -
+    id: commonmark-task-list
+    weight: 0
+    enabled: false

@@ -100,16 +100,23 @@ filters:
     status: true
     weight: -47
     settings:
-      parser:
-        render_strategy:
-          type: filter_output
-          allowed_html: '<a href hreflang> <abbr> <blockquote cite> <br> <cite> <code> <div> <em> <h2> <h3> <h4> <h5> <h6> <hr> <img alt height src width> <li> <ol start type=''1 A I''> <p> <pre> <span> <strong> <ul type>'
-          plugins:
-            - league/commonmark-ext-strikethrough
-            - league/commonmark-ext-table
-            - league/commonmark-ext-task-list
-            - filter_caption
-            - markdown
+      override: false
+      id: commonmark
+      enabled: true
+      render_strategy:
+        type: none
+        custom_allowed_html: ''
+        plugins:
+          commonmark: true
+          commonmark-external-links: false
+          commonmark-footnotes: true
+          commonmark-heading-permalink: false
+          commonmark-strikethrough: false
+          commonmark-table: true
+          commonmark-task-list: false
+          filter_align: false
+          filter_caption: true
+          media_embed: false
     filterFormat: wiki_html
   omnipedia_elements:
     id: omnipedia_elements
