@@ -4,7 +4,7 @@ dependencies:
     - markdown
 id: commonmark-gfm
 weight: 0
-enabled: true
+enabled: false
 render_strategy:
   type: none
   custom_allowed_html: null
