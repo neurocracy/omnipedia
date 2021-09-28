@@ -31,7 +31,6 @@
     "cweagans/composer-patches": "^1.7",
     "drupal/advagg": "^4.0",
     "drupal/config_split": "^1.6",
-    "drupal/core": "^9.2",
     "drupal/core-composer-scaffold": "^9.2",
     "drupal/core-recommended": "^9.2",
     "drupal/csp": "^1.13",
