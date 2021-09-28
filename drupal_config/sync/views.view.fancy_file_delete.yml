@@ -399,7 +399,9 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "<h2>Warning, this will delete all files that have been orphaned.</h2>\n  <h5><em>Orphaned = not attached the node table and file_usage table usually as a result from old deleted nodes</em>  <strong>There is no turning back once you delete these files!</strong></h5>"
+            value: |-
+              <h2>Warning, this will delete all files that have been orphaned.</h2>
+                <h5><em>Orphaned = not attached the node table and file_usage table usually as a result from old deleted nodes</em>  <strong>There is no turning back once you delete these files!</strong></h5>
             format: full_html
           plugin_id: text
       footer: {  }
