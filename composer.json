@@ -92,6 +92,9 @@
       "drupal/core": "-p2"
     },
     "patches": {
+      "drupal/development_environment": {
+        "Duplicate key in menu links YAML file [#3218169]: https://www.drupal.org/project/development_environment/issues/3218169 ": "https://www.drupal.org/files/issues/2021-09-09/duplicate-key-3218169-2.patch"
+      },
       "drupal/gin": {
         "Added automatic dark mode toggling based on prefers-color-scheme @media: https://www.drupal.org/project/gin/issues/3161904 ": "https://git.drupalcode.org/project/gin/-/merge_requests/51.diff"
       },
