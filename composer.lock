@@ -4036,10 +4036,10 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin.git",
-                "reference": "e0b688a5255697ca11b97190ce4ff0148e47d3b6"
+                "reference": "547277637810ac95397bdfcc3a0756961a9157a5"
             },
             "require": {
-                "drupal/core": "^8.8 || ^9",
+                "drupal/core": "^8.8 || ^9 || ^10",
                 "drupal/gin_toolbar": "^1.0@beta"
             },
             "type": "drupal-theme",
@@ -4048,8 +4048,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-alpha36+18-dev",
-                    "datestamp": "1631549331",
+                    "version": "8.x-3.0-alpha36+24-dev",
+                    "datestamp": "1632767291",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -5605,29 +5605,29 @@
         },
         {
             "name": "drupal/sodium",
-            "version": "2.1.0",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/sodium.git",
-                "reference": "8.x-2.1"
+                "reference": "8.x-2.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/sodium-8.x-2.1.zip",
-                "reference": "8.x-2.1",
-                "shasum": "53f765e19b6c87cfe1cd27ed45d7c34e8e1c337d"
+                "url": "https://ftp.drupal.org/files/projects/sodium-8.x-2.2.zip",
+                "reference": "8.x-2.2",
+                "shasum": "ad0d85b82a00ef65a2206060bd8dd92ab088d675"
             },
             "require": {
                 "drupal/core": "^8.9.0 || ^9.0",
                 "drupal/encrypt": "*",
                 "paragonie/halite": "^4.1",
-                "php": "^7.2"
+                "php": ">=7.2"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.1",
-                    "datestamp": "1603940736",
+                    "version": "8.x-2.2",
+                    "datestamp": "1632925517",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -13208,20 +13208,20 @@
         },
         {
             "name": "drupal/examples",
-            "version": "3.0.1",
+            "version": "3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/examples.git",
-                "reference": "3.0.1"
+                "reference": "3.0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/examples-3.0.1.zip",
-                "reference": "3.0.1",
-                "shasum": "b17fa7f2e65d70511973090f65efa8403bf71e3c"
+                "url": "https://ftp.drupal.org/files/projects/examples-3.0.2.zip",
+                "reference": "3.0.2",
+                "shasum": "bcf42d40e7b4ee3dda180c053e9218d6e5e7988c"
             },
             "require": {
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^9"
             },
             "require-dev": {
                 "drupal/stream_wrapper_example": "*"
@@ -13232,7 +13232,7 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.1",
+                    "version": "3.0.2",
                     "datestamp": "1605722150",
                     "security-coverage": {
                         "status": "covered",
@@ -13272,10 +13272,6 @@
                 {
                     "name": "ilo",
                     "homepage": "https://www.drupal.org/user/118449"
-                },
-                {
-                    "name": "jhodgdon",
-                    "homepage": "https://www.drupal.org/user/155601"
                 },
                 {
                     "name": "jn2",
@@ -13321,7 +13317,7 @@
             "description": "The Examples for Developers project aims to provide high-quality, well-documented API examples for a broad range of Drupal core functionality.",
             "homepage": "https://www.drupal.org/project/examples",
             "support": {
-                "source": "http://cgit.drupalcode.org/examples",
+                "source": "https://git.drupalcode.org/project/examples",
                 "issues": "https://www.drupal.org/project/issues/examples",
                 "documentation": "https://api.drupal.org/api/examples"
             }
