@@ -7767,6 +7767,21 @@
             ]
         },
         {
+            "name": "npm-asset/fastdom",
+            "version": "1.0.10",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/fastdom/-/fastdom-1.0.10.tgz"
+            },
+            "require": {
+                "npm-asset/strictdom": ">=1.0.1,<2.0.0"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
             "name": "npm-asset/fontfaceobserver",
             "version": "2.1.0",
             "dist": {
@@ -7871,6 +7886,18 @@
             "dist": {
                 "type": "tar",
                 "url": "https://registry.npmjs.org/popper.js/-/popper.js-1.15.0.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/strictdom",
+            "version": "1.0.1",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/strictdom/-/strictdom-1.0.1.tgz"
             },
             "type": "npm-asset",
             "license": [
