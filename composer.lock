@@ -4036,7 +4036,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin.git",
-                "reference": "547277637810ac95397bdfcc3a0756961a9157a5"
+                "reference": "62f5d56fd39fb84bd61d603b4ab6e02073711e8d"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9 || ^10",
@@ -4048,8 +4048,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-alpha36+24-dev",
-                    "datestamp": "1632767291",
+                    "version": "8.x-3.0-alpha37+8-dev",
+                    "datestamp": "1634628917",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -4761,7 +4761,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/issue/markdown-3103679.git",
-                "reference": "95aba79078683e38e9d256f0b5a31006d1998aa0"
+                "reference": "9a55ddf43a15e0a22f585a483157981b7716b51c"
             },
             "require": {
                 "composer/semver": "^1.0 || ^2.0 || ^3.0",
@@ -4799,7 +4799,7 @@
                 "issues": "https://www.drupal.org/project/markdown",
                 "source": "https://git.drupalcode.org/project/markdown"
             },
-            "time": "2021-07-28T18:34:59+00:00"
+            "time": "2021-10-02T00:13:00+00:00"
         },
         {
             "name": "drupal/media_entity_file_replace",
