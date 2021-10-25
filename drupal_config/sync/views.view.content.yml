@@ -184,26 +184,27 @@ display:
           clear_on_exposed: true
           action_title: Action
           selected_actions:
-            0:
+            2:
               action_id: node_assign_owner_action
-            1:
-              action_id: node_delete_action
-            4:
-              action_id: node_publish_action
-            5:
-              action_id: node_save_action
-            7:
-              action_id: node_unpublish_by_keyword_action
+              preconfiguration:
+                label_override: 'Change author'
+                add_confirmation: 0
             8:
-              action_id: node_unpublish_action
-            10:
               action_id: views_bulk_edit
               preconfiguration:
+                add_confirmation: 0
                 get_bundles_from_results: 1
-            12:
-              action_id: pathauto_update_alias
+            10:
+              action_id: 'entity:publish_action:node'
               preconfiguration:
-                label_override: 'Update URL alias'
+                label_override: Publish
+                add_confirmation: 0
+            12:
+              action_id: 'entity:unpublish_action:node'
+              preconfiguration:
+                label_override: Unpublish
+                add_confirmation: 0
+          force_selection_info: false
           plugin_id: views_bulk_operations_bulk_form
         title:
           id: title
