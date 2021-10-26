@@ -190,16 +190,20 @@ display:
                 label_override: 'Change author'
                 add_confirmation: 0
             8:
+              action_id: omnipedia_access_rebuild_node_access
+              preconfiguration:
+                add_confirmation: 0
+            9:
               action_id: views_bulk_edit
               preconfiguration:
                 add_confirmation: 0
                 get_bundles_from_results: 1
-            10:
+            11:
               action_id: 'entity:publish_action:node'
               preconfiguration:
                 label_override: Publish
                 add_confirmation: 0
-            12:
+            13:
               action_id: 'entity:unpublish_action:node'
               preconfiguration:
                 label_override: Unpublish
