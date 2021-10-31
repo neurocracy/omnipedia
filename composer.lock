@@ -12379,21 +12379,6 @@
             ]
         },
         {
-            "name": "bower-asset/sassy-math",
-            "version": "v1.5.1",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:Team-Sass/Sassy-math.git",
-                "reference": "60d130108bcd20c5cd5aa50b52505afab9a40519"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Team-Sass/Sassy-math/zipball/60d130108bcd20c5cd5aa50b52505afab9a40519",
-                "reference": "60d130108bcd20c5cd5aa50b52505afab9a40519"
-            },
-            "type": "bower-asset"
-        },
-        {
             "name": "doctrine/cache",
             "version": "1.12.1",
             "source": {
