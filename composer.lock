@@ -4737,7 +4737,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/issue/markdown-3103679.git",
-                "reference": "9a55ddf43a15e0a22f585a483157981b7716b51c"
+                "reference": "d4ad0862c9dda03bc938d69a8a174514db435ae7"
             },
             "require": {
                 "composer/semver": "^1.0 || ^2.0 || ^3.0",
@@ -4775,7 +4775,7 @@
                 "issues": "https://www.drupal.org/project/markdown",
                 "source": "https://git.drupalcode.org/project/markdown"
             },
-            "time": "2021-10-02T00:13:00+00:00"
+            "time": "2021-12-04T14:22:03+00:00"
         },
         {
             "name": "drupal/media_entity_file_replace",
