@@ -20,6 +20,8 @@ translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
+  handler: 'default:file'
+  handler_settings: {  }
   file_directory: 'users/[current-user:uid]/user_picture'
   file_extensions: 'png gif jpg jpeg webp'
   max_filesize: '800 KB'
@@ -38,6 +40,4 @@ settings:
     caption: ''
   caption_field: 0
   caption_field_required: 0
-  handler: 'default:file'
-  handler_settings: {  }
 field_type: image

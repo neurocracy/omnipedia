@@ -1,147 +1,147 @@
+_core:
+  default_config_hash: o4bYR9ZupWb3AsOIizTUG4g-nu1mdJqA59UB7QT-ifQ
 definitions:
   contact__site_page:
-    weight: -46
     menu_name: footer
     parent: ''
+    weight: -46
     expanded: false
     enabled: false
   standard__front_page:
-    weight: -50
     menu_name: main
     parent: ''
+    weight: -50
+    expanded: false
     enabled: false
-    expanded: false
   update__status:
+    menu_name: admin
+    parent: system.admin_reports
     weight: -86
-    menu_name: admin
-    parent: system.admin_reports
-    enabled: true
     expanded: false
+    enabled: true
   dblog__overview:
-    weight: -84
     menu_name: admin
     parent: system.admin_reports
+    weight: -84
     expanded: false
     enabled: true
   config_inspector__inspect:
-    weight: -83
     menu_name: admin
     parent: system.admin_reports
+    weight: -83
     expanded: false
     enabled: true
   entity__field_storage_config__collection:
-    weight: -82
     menu_name: admin
     parent: system.admin_reports
+    weight: -82
     expanded: false
     enabled: true
   metatag__reports_plugins:
-    weight: -81
     menu_name: admin
     parent: system.admin_reports
+    weight: -81
     expanded: false
     enabled: true
   system__status:
-    weight: -85
     menu_name: admin
     parent: system.admin_reports
+    weight: -85
     expanded: false
     enabled: true
   dblog__access_denied:
-    weight: -80
     menu_name: admin
     parent: system.admin_reports
+    weight: -80
     expanded: false
     enabled: true
   dblog__page_not_found:
-    weight: -79
     menu_name: admin
     parent: system.admin_reports
+    weight: -79
     expanded: false
     enabled: true
   dblog__search:
-    weight: -78
     menu_name: admin
     parent: system.admin_reports
+    weight: -78
     expanded: false
     enabled: true
   migrate_drupal_ui__log:
-    weight: -77
     menu_name: admin
     parent: system.admin_reports
+    weight: -77
     expanded: false
     enabled: true
   views_ui__reports_plugins:
-    weight: -76
     menu_name: admin
     parent: system.admin_reports
+    weight: -76
     expanded: false
     enabled: true
   omnipedia_random_page:
-    weight: -48
     menu_name: main
     parent: ''
+    weight: -48
     expanded: false
     enabled: true
   'omnipedia_wiki_node_menu_link:f4a32e60-809f-44e3-b394-2f7a754901e2':
+    menu_name: main
+    parent: ''
     weight: -49
-    menu_name: main
-    parent: ''
-    enabled: true
     expanded: false
+    enabled: true
   'omnipedia_wiki_node_menu_link:62bf9eac-5ab8-46f3-9910-5594d51eca11':
-    weight: -47
     menu_name: main
     parent: ''
+    weight: -47
     expanded: false
     enabled: true
   system__admin_reports:
-    weight: -3
     menu_name: admin
     parent: system.admin
+    weight: -3
     expanded: false
     enabled: true
   system__themes_page:
+    menu_name: admin
+    parent: system.admin
     weight: -7
-    menu_name: admin
-    parent: system.admin
-    enabled: true
     expanded: false
+    enabled: true
   system__modules_list:
-    weight: -6
     menu_name: admin
     parent: system.admin
+    weight: -6
     expanded: false
     enabled: true
   system__admin_config:
-    weight: -4
     menu_name: admin
     parent: system.admin
+    weight: -4
     expanded: false
     enabled: true
   entity__user__collection:
-    weight: -5
     menu_name: admin
     parent: system.admin
+    weight: -5
     expanded: false
     enabled: true
   help__main:
-    weight: -2
     menu_name: admin
     parent: system.admin
+    weight: -2
     expanded: false
     enabled: true
   omnipedia_commerce__content_access_base_product__main:
-    enabled: false
     menu_name: main
     parent: ''
-    expanded: false
     weight: 0
+    expanded: false
+    enabled: false
   omnipedia_commerce__content_access_base_product__footer:
-    weight: -45
     menu_name: footer
     parent: ''
+    weight: -45
     expanded: false
     enabled: true
-_core:
-  default_config_hash: o4bYR9ZupWb3AsOIizTUG4g-nu1mdJqA59UB7QT-ifQ

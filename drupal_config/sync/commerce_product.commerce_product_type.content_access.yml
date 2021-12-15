@@ -4,9 +4,9 @@ status: true
 dependencies: {  }
 id: content_access
 label: 'Content access'
+traits: {  }
+locked: false
 description: ''
 variationType: default
 multipleVariations: false
 injectVariationFields: true
-traits: {  }
-locked: false

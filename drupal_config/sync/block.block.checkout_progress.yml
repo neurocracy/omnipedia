@@ -16,11 +16,11 @@ plugin: commerce_checkout_progress
 settings:
   id: commerce_checkout_progress
   label: 'Checkout progress'
-  provider: commerce_checkout
   label_display: '0'
+  provider: commerce_checkout
 visibility:
   request_path:
     id: request_path
-    pages: '/checkout/*'
     negate: false
     context_mapping: {  }
+    pages: '/checkout/*'

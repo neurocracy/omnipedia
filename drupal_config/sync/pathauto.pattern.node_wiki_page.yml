@@ -11,12 +11,12 @@ pattern: 'wiki/[node:field_date:date:custom:Y]/[node:field_date:date:custom:m]/[
 selection_criteria:
   6b47fa75-c520-4b1f-b972-3ddd34840e33:
     id: node_type
-    bundles:
-      wiki_page: wiki_page
     negate: false
+    uuid: 6b47fa75-c520-4b1f-b972-3ddd34840e33
     context_mapping:
       node: node
-    uuid: 6b47fa75-c520-4b1f-b972-3ddd34840e33
+    bundles:
+      wiki_page: wiki_page
 selection_logic: and
 weight: -10
 relationships: {  }

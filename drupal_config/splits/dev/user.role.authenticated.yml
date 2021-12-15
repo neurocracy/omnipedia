@@ -1,7 +1,17 @@
 uuid: 8ececdc4-5d28-4535-bd83-7639aa508c86
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - commerce_checkout
+    - commerce_order
+    - commerce_payment
+    - commerce_product
+    - contact
+    - devel
+    - eu_cookie_compliance
+    - media
+    - system
 _core:
   default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
 id: authenticated
@@ -13,12 +23,8 @@ permissions:
   - 'access content'
   - 'access devel information'
   - 'access site-wide contact form'
-  - 'diff view changes'
   - 'display eu cookie compliance popup'
   - 'manage own commerce_payment_method'
-  - 'search content'
-  - 'use text format filtered_html'
   - 'view commerce_product'
-  - 'view files'
   - 'view media'
   - 'view own commerce_order'

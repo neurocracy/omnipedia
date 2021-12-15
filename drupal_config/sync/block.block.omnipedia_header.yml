@@ -15,6 +15,6 @@ plugin: omnipedia_header
 settings:
   id: omnipedia_header
   label: Header
-  provider: omnipedia_block
   label_display: '0'
+  provider: omnipedia_block
 visibility: {  }

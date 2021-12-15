@@ -4,12 +4,12 @@ status: true
 dependencies:
   config:
     - field.storage.user.commerce_remote_id
-  enforced:
-    module:
-      - commerce_payment
   module:
     - commerce
     - user
+  enforced:
+    module:
+      - commerce_payment
 _core:
   default_config_hash: Zu4REVGzMPlwpQVE7u1sM_74HqLCp0u42VNWlAwZcIw
 id: user.user.commerce_remote_id

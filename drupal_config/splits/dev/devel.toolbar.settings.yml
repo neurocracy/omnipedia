@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: IQjf_ytthngZTAk_MU8-74VecArWD3G5g0oEH6PM6GA
 toolbar_items:
   - devel.cache_clear
   - devel.configs_list
@@ -16,5 +18,3 @@ toolbar_items:
   - devel.state_system_page
   - devel.theme_registry
   - devel.session
-_core:
-  default_config_hash: IQjf_ytthngZTAk_MU8-74VecArWD3G5g0oEH6PM6GA

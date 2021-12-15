@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: r1PkPDtSv8uPbDtiuPH3x0ALdXOUHzuH7zp8mbp3zeA
 enabled: 1
 required_roles:
   administrator: administrator
@@ -8,6 +10,9 @@ required_roles:
   store_manager: '0'
 send_plugins: {  }
 login_plugins: {  }
+allowed_validation_plugins:
+  ga_login_totp: ga_login_totp
+  tfa_recovery_code: tfa_recovery_code
 default_validation_plugin: ga_login_totp
 validation_plugin_settings:
   ga_login_hotp:
@@ -22,10 +27,6 @@ validation_plugin_settings:
     issuer: Drupal
   tfa_recovery_code:
     recovery_codes_amount: 10
-allowed_validation_plugins:
-  ga_login_totp: ga_login_totp
-  tfa_recovery_code: tfa_recovery_code
-help_text: 'Contact support to reset your access'
 validation_skip: 3
 encryption: two_factor
 trust_cookie_expiration: 2592000
@@ -33,6 +34,7 @@ cookie_name: TFA
 tfa_flood_uid_only: 1
 tfa_flood_window: 300
 tfa_flood_threshold: 6
+help_text: 'Contact support to reset your access'
 mail:
   tfa_enabled_configuration:
     subject: 'Your [site:name] account now has two-factor authentication'
@@ -40,5 +42,3 @@ mail:
   tfa_disabled_configuration:
     subject: 'Your [site:name] account no longer has two-factor authentication'
     body: "[user:display-name],\r\n\r\nTwo-factor authentication has been disabled on your [site:name] account.\r\n\r\nIf you did not take this action, please contact a site administrator immediately.\r\n\r\n--\r\n[site:name] team"
-_core:
-  default_config_hash: r1PkPDtSv8uPbDtiuPH3x0ALdXOUHzuH7zp8mbp3zeA

@@ -18,28 +18,28 @@ bundle: content_access
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 1
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 1
     region: content
   title:
-    label: hidden
     type: string
-    weight: 0
-    region: content
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 0
+    region: content
   variations:
     type: commerce_add_to_cart
-    weight: 2
-    region: content
     label: hidden
     settings:
       combine: true
     third_party_settings: {  }
+    weight: 2
+    region: content
 hidden:
   created: true
   field_episode_tier: true

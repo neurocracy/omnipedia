@@ -9,12 +9,12 @@ label: Stripe
 weight: null
 plugin: stripe
 configuration:
-  publishable_key: null
-  secret_key: null
   display_label: Stripe
   mode: test
   payment_method_types:
     - credit_card
   collect_billing_information: true
+  publishable_key: null
+  secret_key: null
 conditions: {  }
 conditionOperator: AND

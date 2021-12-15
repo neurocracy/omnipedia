@@ -16,9 +16,9 @@ mode: default
 content:
   address:
     type: address_default
-    settings: {  }
     weight: 4
     region: content
+    settings: {  }
     third_party_settings: {  }
   billing_countries:
     type: options_select
@@ -34,18 +34,18 @@ content:
     third_party_settings: {  }
   is_default:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 9
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   mail:
     type: email_default
     weight: 1
     region: content
     settings:
-      size: 60
       placeholder: ''
+      size: 60
     third_party_settings: {  }
   name:
     type: string_textfield
@@ -63,10 +63,10 @@ content:
     third_party_settings: {  }
   prices_include_tax:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 6
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   tax_registrations:
     type: options_select

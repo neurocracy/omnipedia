@@ -5,12 +5,12 @@ dependencies:
   config:
     - commerce_order.commerce_order_item_type.default
     - core.entity_form_mode.commerce_order_item.add_to_cart
+  module:
+    - commerce_product
   enforced:
     module:
       - commerce_cart
       - commerce_product
-  module:
-    - commerce_product
 _core:
   default_config_hash: 8dIszGyXfy-kBaUEuUEQjWjRVtfq6f8cCI0QUHIlJdc
 id: commerce_order_item.default.add_to_cart
@@ -21,9 +21,9 @@ content:
   purchased_entity:
     type: commerce_product_variation_attributes
     weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   created: true
   quantity: true

@@ -5,11 +5,11 @@ dependencies:
   config:
     - field.storage.media.field_media_image
     - media.type.image
+  module:
+    - image
   enforced:
     module:
       - media
-  module:
-    - image
 _core:
   default_config_hash: pzPA-2JwyxlJ3qMb4L9viAnhNhbEhl2couH8A3FO020
 id: media.image.field_media_image
@@ -23,6 +23,8 @@ translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
+  handler: 'default:file'
+  handler_settings: {  }
   file_directory: media/images
   file_extensions: 'png gif jpg jpeg'
   max_filesize: ''
@@ -41,6 +43,4 @@ settings:
     caption: ''
   caption_field: 0
   caption_field_required: 0
-  handler: 'default:file'
-  handler_settings: {  }
 field_type: image

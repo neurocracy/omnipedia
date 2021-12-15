@@ -9,5 +9,5 @@ dependencies:
 id: two_factor
 label: 'Two factor'
 encryption_method: sodium
-encryption_key: two_factor_secret
 encryption_method_configuration: {  }
+encryption_key: two_factor_secret

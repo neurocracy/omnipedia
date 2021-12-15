@@ -5,6 +5,7 @@ dependencies: {  }
 id: dev
 label: Development
 description: 'Local development site configuration split.'
+weight: 0
 folder: ../drupal_config/splits/dev
 module:
   config_delete: 0
@@ -34,4 +35,3 @@ graylist:
   - user.role.authenticated
 graylist_dependents: true
 graylist_skip_equal: true
-weight: 0

@@ -2,12 +2,12 @@ uuid: 43798c3e-a521-4d41-a0ec-f2c7d870da1c
 langcode: en
 status: true
 dependencies:
-  enforced:
-    module:
-      - commerce_tax
   module:
     - commerce_tax
     - profile
+  enforced:
+    module:
+      - commerce_tax
 _core:
   default_config_hash: hrW9rW3rrusosIs_U2I_GY_pEL1hwdaG5BSizWnl2I4
 id: profile.tax_number

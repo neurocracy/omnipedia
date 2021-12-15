@@ -1,7 +1,19 @@
 uuid: 7ebf3d05-5b8f-4e4f-9f89-0775147fe67b
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.wiki_html
+    - node.type.wiki_page
+  module:
+    - contextual
+    - filter
+    - media
+    - node
+    - shortcut
+    - system
+    - tfa
+    - toolbar
 id: contributor
 label: contributor
 weight: -8
@@ -24,5 +36,4 @@ permissions:
   - 'view media'
   - 'view own unpublished content'
   - 'view own unpublished media'
-  - 'view revisions'
   - 'view the administration theme'

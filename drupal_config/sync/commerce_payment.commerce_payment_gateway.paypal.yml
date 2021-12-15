@@ -9,6 +9,11 @@ label: PayPal
 weight: -10
 plugin: paypal_checkout
 configuration:
+  display_label: PayPal
+  mode: live
+  payment_method_types:
+    - paypal_checkout
+  collect_billing_information: true
   payment_solution: smart_payment_buttons
   client_id: null
   secret: null
@@ -25,11 +30,6 @@ configuration:
     label: paypal
     tagline: false
   enable_on_cart: false
-  collect_billing_information: true
   webhook_id: null
-  display_label: PayPal
-  mode: live
-  payment_method_types:
-    - paypal_checkout
 conditions: {  }
 conditionOperator: AND

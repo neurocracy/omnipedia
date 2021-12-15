@@ -16,136 +16,12 @@ base_table: watchdog
 base_field: wid
 display:
   default:
-    display_plugin: default
     id: default
     display_title: Master
+    display_plugin: default
     position: 0
     display_options:
-      access:
-        type: perm
-        options:
-          perm: 'access site reports'
-      cache:
-        type: none
-        options: {  }
-      query:
-        type: views_query
-        options:
-          disable_sql_rewrite: false
-          distinct: false
-          replica: false
-          query_comment: ''
-          query_tags: {  }
-      exposed_form:
-        type: basic
-        options:
-          submit_button: Filter
-          reset_button: true
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          expose_sort_order: false
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        type: full
-        options:
-          items_per_page: 50
-          offset: 0
-          id: 0
-          total_pages: null
-          tags:
-            previous: ‹‹
-            next: ››
-            first: '« First'
-            last: 'Last »'
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-          quantity: 9
-      style:
-        type: table
-        options:
-          grouping: {  }
-          row_class: '{{ type }} {{ severity }}'
-          default_row_class: true
-          override: true
-          sticky: false
-          caption: ''
-          summary: ''
-          description: ''
-          columns:
-            nothing: nothing
-            wid: wid
-            severity: severity
-            type: type
-            timestamp: timestamp
-            message: message
-            name: name
-            link: link
-          info:
-            nothing:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: priority-medium
-            wid:
-              sortable: false
-              default_sort_order: desc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: priority-low
-            severity:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: priority-low
-            type:
-              sortable: true
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: priority-medium
-            timestamp:
-              sortable: true
-              default_sort_order: desc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: priority-low
-            message:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            name:
-              sortable: true
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: priority-medium
-            link:
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: priority-low
-          default: wid
-          empty_table: false
-      row:
-        type: fields
+      title: 'Recent log messages'
       fields:
         nothing:
           id: nothing
@@ -154,6 +30,7 @@ display:
           relationship: none
           group_type: group
           admin_label: Icon
+          plugin_id: custom
           label: ''
           exclude: false
           alter:
@@ -195,7 +72,6 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: false
-          plugin_id: custom
         wid:
           id: wid
           table: watchdog
@@ -203,6 +79,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: standard
           label: WID
           exclude: true
           alter:
@@ -244,7 +121,6 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          plugin_id: standard
         severity:
           id: severity
           table: watchdog
@@ -252,6 +128,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: machine_name
           label: Severity
           exclude: true
           alter:
@@ -294,7 +171,6 @@ display:
           empty_zero: false
           hide_alter_empty: true
           machine_name: false
-          plugin_id: machine_name
         type:
           id: type
           table: watchdog
@@ -302,6 +178,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: standard
           label: Type
           exclude: false
           alter:
@@ -343,7 +220,6 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          plugin_id: standard
         timestamp:
           id: timestamp
           table: watchdog
@@ -351,6 +227,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: date
           label: Date
           exclude: false
           alter:
@@ -395,7 +272,6 @@ display:
           date_format: short
           custom_date_format: ''
           timezone: ''
-          plugin_id: date
         message:
           id: message
           table: watchdog
@@ -403,6 +279,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: dblog_message
           label: Message
           exclude: false
           alter:
@@ -445,7 +322,6 @@ display:
           empty_zero: false
           hide_alter_empty: true
           replace_variables: true
-          plugin_id: dblog_message
         name:
           id: name
           table: users_field_data
@@ -453,6 +329,9 @@ display:
           relationship: uid
           group_type: group
           admin_label: ''
+          entity_type: user
+          entity_field: name
+          plugin_id: field
           label: User
           exclude: false
           alter:
@@ -508,9 +387,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: user
-          entity_field: name
-          plugin_id: field
         link:
           id: link
           table: watchdog
@@ -518,6 +394,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: dblog_operations
           label: Operations
           exclude: false
           alter:
@@ -559,7 +436,71 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          plugin_id: dblog_operations
+      pager:
+        type: full
+        options:
+          offset: 0
+          items_per_page: 50
+          total_pages: null
+          id: 0
+          tags:
+            next: ››
+            previous: ‹‹
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Filter
+          reset_button: true
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: false
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: perm
+        options:
+          perm: 'access site reports'
+      cache:
+        type: none
+        options: {  }
+      empty:
+        area:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: 'No log messages available.'
+          plugin_id: text_custom
+          empty: true
+          content: 'No log messages available.'
+          tokenize: false
+      sorts:
+        wid:
+          id: wid
+          table: watchdog
+          field: wid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: standard
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: wid
+          exposed: false
+      arguments: {  }
       filters:
         type:
           id: type
@@ -568,6 +509,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: dblog_types
           operator: in
           value: {  }
           group: 1
@@ -578,6 +520,8 @@ display:
             description: ''
             use_operator: false
             operator: type_op
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: type
             required: false
             remember: false
@@ -587,8 +531,6 @@ display:
               anonymous: '0'
               administrator: '0'
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -601,7 +543,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: dblog_types
         severity:
           id: severity
           table: watchdog
@@ -609,6 +550,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: in_operator
           operator: in
           value: {  }
           group: 1
@@ -619,6 +561,8 @@ display:
             description: ''
             use_operator: false
             operator: severity_op
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: severity
             required: false
             remember: false
@@ -628,8 +572,6 @@ display:
               anonymous: '0'
               administrator: '0'
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -642,7 +584,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: in_operator
         uid:
           id: uid
           table: users_field_data
@@ -650,6 +591,9 @@ display:
           relationship: uid
           group_type: group
           admin_label: ''
+          entity_type: user
+          entity_field: uid
+          plugin_id: user_name
           operator: in
           value: {  }
           group: 1
@@ -687,37 +631,97 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          entity_type: user
-          entity_field: uid
-          plugin_id: user_name
-      sorts:
-        wid:
-          id: wid
-          table: watchdog
-          field: wid
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: DESC
-          exposed: false
-          expose:
-            label: ''
-          plugin_id: standard
-      title: 'Recent log messages'
-      header: {  }
-      footer: {  }
-      empty:
-        area:
-          id: area_text_custom
-          table: views
-          field: area_text_custom
-          relationship: none
-          group_type: group
-          admin_label: 'No log messages available.'
-          empty: true
-          tokenize: false
-          content: 'No log messages available.'
-          plugin_id: text_custom
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: table
+        options:
+          grouping: {  }
+          row_class: '{{ type }} {{ severity }}'
+          default_row_class: true
+          columns:
+            nothing: nothing
+            wid: wid
+            severity: severity
+            type: type
+            timestamp: timestamp
+            message: message
+            name: name
+            link: link
+          default: wid
+          info:
+            nothing:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: priority-medium
+            wid:
+              sortable: false
+              default_sort_order: desc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: priority-low
+            severity:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: priority-low
+            type:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: priority-medium
+            timestamp:
+              sortable: true
+              default_sort_order: desc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: priority-low
+            message:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            name:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: priority-medium
+            link:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: priority-low
+          override: true
+          sticky: false
+          summary: ''
+          empty_table: false
+          caption: ''
+          description: ''
+      row:
+        type: fields
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_tags: {  }
       relationships:
         uid:
           id: uid
@@ -726,15 +730,12 @@ display:
           relationship: none
           group_type: group
           admin_label: User
-          required: false
           plugin_id: standard
-      arguments: {  }
-      display_extenders: {  }
-      filter_groups:
-        operator: AND
-        groups:
-          1: AND
+          required: false
       css_class: admin-dblog
+      header: {  }
+      footer: {  }
+      display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
@@ -745,9 +746,9 @@ display:
         - user.permissions
       tags: {  }
   page:
-    display_plugin: page
     id: page
     display_title: Page
+    display_plugin: page
     position: 1
     display_options:
       display_extenders: {  }

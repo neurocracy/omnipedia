@@ -13,19 +13,19 @@ bundle: image
 mode: default
 content:
   field_file_image_alt_text:
+    type: string_textfield
     weight: -4
-    type: string_textfield
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    region: content
   field_file_image_title_text:
-    weight: -3
     type: string_textfield
+    weight: -3
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    region: content
 hidden: {  }

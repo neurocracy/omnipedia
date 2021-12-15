@@ -3,8 +3,8 @@ dependencies:
     - ambientimpact_markdown
     - markdown
 id: commonmark
-weight: 0
 enabled: true
+weight: 0
 render_strategy:
   type: none
   custom_allowed_html: ''
@@ -27,61 +27,61 @@ settings:
 extensions:
   -
     id: commonmark-attributes
-    weight: 0
     enabled: true
+    weight: 0
   -
     id: commonmark-autolink
-    weight: 0
     enabled: false
+    weight: 0
   -
     id: commonmark-disallowed-raw-html
-    weight: 0
     enabled: false
+    weight: 0
   -
     id: commonmark-emoji
-    weight: 0
     enabled: false
+    weight: 0
     settings: {  }
   -
     id: commonmark-external-links
-    weight: 0
     enabled: false
+    weight: 0
     settings: {  }
   -
     id: commonmark-footnotes
-    weight: 0
     enabled: true
+    weight: 0
     settings:
       container_add_hr: 0
   -
     id: commonmark-heading-permalink
-    weight: 0
     enabled: true
+    weight: 0
     settings:
       id_prefix: ''
       inner_contents: '[icon:libricons:link:Permalink:standalone&text=hidden]'
       insert: after
   -
     id: commonmark-mention
-    weight: 0
     enabled: false
+    weight: 0
   -
     id: commonmark-smart-punctuation
-    weight: 0
     enabled: true
+    weight: 0
     settings: {  }
   -
     id: commonmark-strikethrough
-    weight: 0
     enabled: false
+    weight: 0
   -
     id: commonmark-table
-    weight: 0
     enabled: true
+    weight: 0
   -
     id: commonmark-table-of-contents
-    weight: 0
     enabled: true
+    weight: 0
     settings:
       max_heading_level: 6
       min_heading_level: 1
@@ -89,5 +89,5 @@ extensions:
       style: ordered
   -
     id: commonmark-task-list
-    weight: 0
     enabled: false
+    weight: 0

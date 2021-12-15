@@ -18,68 +18,68 @@ mode: user
 content:
   billing_profile:
     type: entity_reference_revisions_entity_view
-    weight: 0
     label: above
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    weight: 0
     region: content
   completed:
-    label: inline
     type: timestamp
-    weight: 2
+    label: inline
     settings:
       date_format: short
       custom_date_format: ''
       timezone: ''
     third_party_settings: {  }
+    weight: 2
     region: content
   mail:
-    label: inline
     type: basic_string
-    weight: 1
+    label: inline
     settings: {  }
     third_party_settings: {  }
+    weight: 1
     region: content
   order_items:
     type: commerce_order_item_table
-    weight: 5
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    label: hidden
+    weight: 5
     region: content
   order_number:
     type: string
-    weight: 0
     label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 0
     region: content
   placed:
-    label: inline
     type: timestamp
-    weight: 3
+    label: inline
     settings:
       date_format: short
       custom_date_format: ''
       timezone: ''
     third_party_settings: {  }
+    weight: 3
     region: content
   state:
     type: list_default
-    weight: 4
     label: inline
     settings: {  }
     third_party_settings: {  }
+    weight: 4
     region: content
   total_price:
     type: commerce_order_total_summary
-    weight: 6
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    label: hidden
+    weight: 6
     region: content
 hidden:
   balance: true

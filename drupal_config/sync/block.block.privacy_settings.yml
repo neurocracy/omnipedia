@@ -15,6 +15,6 @@ plugin: omnipedia_privacy_settings
 settings:
   id: omnipedia_privacy_settings
   label: 'Privacy settings'
-  provider: omnipedia_block
   label_display: '0'
+  provider: omnipedia_block
 visibility: {  }

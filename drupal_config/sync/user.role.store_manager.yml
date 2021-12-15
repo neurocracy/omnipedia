@@ -1,7 +1,16 @@
 uuid: df249ab0-4434-4499-bdab-5e898d16852f
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - commerce
+    - commerce_order
+    - commerce_payment
+    - commerce_price
+    - commerce_product
+    - commerce_store
+    - contact
+    - tfa
 id: store_manager
 label: 'store manager'
 weight: -5

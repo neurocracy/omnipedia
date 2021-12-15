@@ -2,8 +2,8 @@ dependencies:
   module:
     - markdown
 id: parsedown
-weight: 21
 enabled: true
+weight: 21
 render_strategy:
   type: none
   custom_allowed_html: null

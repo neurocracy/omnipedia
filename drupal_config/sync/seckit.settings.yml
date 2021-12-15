@@ -1,10 +1,16 @@
+_core:
+  default_config_hash: x6bhN6WZwfVUI_LLMvRJIUW_2c26VTaBozbfXmJWmro
 seckit_xss:
   csp:
     checkbox: false
+    vendor-prefix:
+      x: false
+      webkit: false
     report-only: false
     default-src: '''self'''
     script-src: '''self'' ''unsafe-inline'''
     object-src: '''self'' data:'
+    style-src: '''self'' ''unsafe-inline'''
     img-src: '''self'' data:'
     media-src: ''
     frame-src: ''
@@ -13,12 +19,8 @@ seckit_xss:
     font-src: ''
     connect-src: ''
     report-uri: /report-csp-violation
-    policy-uri: ''
-    vendor-prefix:
-      x: false
-      webkit: false
     upgrade-req: false
-    style-src: '''self'' ''unsafe-inline'''
+    policy-uri: ''
   x_xss:
     seckit_x_xss_option_disable: Disabled
     seckit_x_xss_option_0: '0'
@@ -52,5 +54,3 @@ seckit_various:
   referrer_policy: true
   referrer_policy_policy: strict-origin-when-cross-origin
   disable_autocomplete: false
-_core:
-  default_config_hash: x6bhN6WZwfVUI_LLMvRJIUW_2c26VTaBozbfXmJWmro

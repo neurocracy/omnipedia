@@ -15,6 +15,6 @@ plugin: omnipedia_page_revision_history
 settings:
   id: omnipedia_page_revision_history
   label: 'Revision history'
-  provider: omnipedia_block
   label_display: visible
+  provider: omnipedia_block
 visibility: {  }

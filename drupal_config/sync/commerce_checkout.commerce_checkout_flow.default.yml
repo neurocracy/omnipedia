@@ -9,22 +9,22 @@ dependencies:
     - omnipedia_commerce
 _core:
   default_config_hash: 5BYvSDemm8xYwB9rMGFuEuGK6FxVheqtXEUxnpKO2N4
-id: default
 label: Default
+id: default
 plugin: multistep_default
 configuration:
   display_checkout_progress: true
   display_checkout_progress_breadcrumb_links: false
   panes:
     login:
-      allow_guest_checkout: false
-      allow_registration: true
       step: login
       weight: 0
+      allow_guest_checkout: false
+      allow_registration: true
     contact_information:
-      double_entry: true
       step: order_information
       weight: 1
+      double_entry: true
     omnipedia_billing_information_message:
       step: order_information
       weight: 2
@@ -35,30 +35,30 @@ configuration:
       step: review
       weight: 4
     stripe_review:
-      button_id: edit-actions-next
       step: payment
       weight: 5
+      button_id: edit-actions-next
     payment_process:
-      capture: true
       step: payment
       weight: 6
-    paypal_checkout_payment_process:
       capture: true
+    paypal_checkout_payment_process:
       step: payment
       weight: 7
+      capture: true
     omnipedia_completion_message:
       step: complete
       weight: 8
     order_summary:
-      view: ''
       step: _sidebar
       weight: 10
+      view: ''
     completion_message:
+      step: _disabled
+      weight: 11
       message:
         value: "Your order number is [commerce_order:order_number].\r\nYou can view your order on your account page when logged in."
         format: plain_text
-      step: _disabled
-      weight: 11
     completion_register:
       step: _disabled
       weight: 12

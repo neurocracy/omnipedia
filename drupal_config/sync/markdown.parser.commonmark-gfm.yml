@@ -3,8 +3,8 @@ dependencies:
     - ambientimpact_markdown
     - markdown
 id: commonmark-gfm
-weight: 0
 enabled: false
+weight: 0
 render_strategy:
   type: none
   custom_allowed_html: null

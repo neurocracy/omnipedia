@@ -20,133 +20,12 @@ base_table: omnipedia_attached_data
 base_field: id
 display:
   default:
-    display_plugin: default
     id: default
     display_title: Master
+    display_plugin: default
     position: 0
     display_options:
-      access:
-        type: perm
-        options:
-          perm: 'administer omnipedia_attached_data entity'
-      cache:
-        type: tag
-        options: {  }
-      query:
-        type: views_query
-        options:
-          disable_sql_rewrite: false
-          distinct: false
-          replica: false
-          query_comment: ''
-          query_tags: {  }
-      exposed_form:
-        type: basic
-        options:
-          submit_button: Filter
-          reset_button: true
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        type: full
-        options:
-          items_per_page: 50
-          offset: 0
-          id: 0
-          total_pages: null
-          tags:
-            previous: ‹‹
-            next: ››
-            first: '« First'
-            last: 'Last »'
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-          quantity: 9
-      style:
-        type: table
-        options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: true
-          override: true
-          sticky: false
-          caption: ''
-          summary: ''
-          description: ''
-          columns:
-            target: target
-            type: type
-            uid: uid
-            changed: changed
-            date_range__value: date_range__value
-            date_range__end_value: date_range__end_value
-            operations: operations
-          info:
-            target:
-              sortable: true
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            type:
-              sortable: true
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            uid:
-              sortable: true
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: priority-low
-            changed:
-              sortable: true
-              default_sort_order: desc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: priority-low
-            date_range__value:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: priority-medium
-            date_range__end_value:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: priority-medium
-            operations:
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-          default: changed
-          empty_table: false
-      row:
-        type: fields
-        options:
-          inline: {  }
-          separator: ''
-          hide_empty: false
-          default_field_elements: true
+      title: 'Attached data'
       fields:
         omnipedia_attached_data_bulk_form:
           id: omnipedia_attached_data_bulk_form
@@ -155,6 +34,8 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: omnipedia_attached_data
+          plugin_id: omnipedia_attached_data_bulk_form
           label: ''
           exclude: false
           alter:
@@ -199,8 +80,6 @@ display:
           action_title: Action
           include_exclude: exclude
           selected_actions: {  }
-          entity_type: omnipedia_attached_data
-          plugin_id: omnipedia_attached_data_bulk_form
         target:
           id: target
           table: omnipedia_attached_data
@@ -208,6 +87,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: omnipedia_attached_data
+          entity_field: target
+          plugin_id: field
           label: Target
           exclude: false
           alter:
@@ -263,9 +145,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: omnipedia_attached_data
-          entity_field: target
-          plugin_id: field
         type:
           id: type
           table: omnipedia_attached_data
@@ -273,6 +152,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: omnipedia_attached_data
+          entity_field: type
+          plugin_id: field
           label: Type
           exclude: false
           alter:
@@ -327,9 +209,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: omnipedia_attached_data
-          entity_field: type
-          plugin_id: field
         date_range__value:
           id: date_range__value
           table: omnipedia_attached_data
@@ -337,6 +216,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: omnipedia_attached_data
+          entity_field: date_range
+          plugin_id: field
           label: 'Start date'
           exclude: false
           alter:
@@ -391,9 +273,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: omnipedia_attached_data
-          entity_field: date_range
-          plugin_id: field
         date_range__end_value:
           id: date_range__end_value
           table: omnipedia_attached_data
@@ -401,6 +280,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: omnipedia_attached_data
+          entity_field: date_range
+          plugin_id: field
           label: 'End date'
           exclude: false
           alter:
@@ -455,9 +337,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: omnipedia_attached_data
-          entity_field: date_range
-          plugin_id: field
         uid:
           id: uid
           table: omnipedia_attached_data
@@ -465,6 +344,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: omnipedia_attached_data
+          entity_field: uid
+          plugin_id: field
           label: Author
           exclude: false
           alter:
@@ -520,9 +402,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: omnipedia_attached_data
-          entity_field: uid
-          plugin_id: field
         changed:
           id: changed
           table: omnipedia_attached_data
@@ -530,6 +409,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: omnipedia_attached_data
+          entity_field: changed
+          plugin_id: field
           label: Updated
           exclude: false
           alter:
@@ -587,9 +469,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: omnipedia_attached_data
-          entity_field: changed
-          plugin_id: field
         operations:
           id: operations
           table: omnipedia_attached_data
@@ -597,6 +476,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: null
+          entity_field: null
+          plugin_id: entity_operations
           label: Operations
           exclude: false
           alter:
@@ -639,9 +521,58 @@ display:
           empty_zero: false
           hide_alter_empty: true
           destination: false
-          entity_type: null
-          entity_field: null
-          plugin_id: entity_operations
+      pager:
+        type: full
+        options:
+          offset: 0
+          items_per_page: 50
+          total_pages: null
+          id: 0
+          tags:
+            next: ››
+            previous: ‹‹
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Filter
+          reset_button: true
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: perm
+        options:
+          perm: 'administer omnipedia_attached_data entity'
+      cache:
+        type: tag
+        options: {  }
+      empty:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text_custom
+          empty: true
+          content: 'No attached data available.'
+          tokenize: false
+      sorts: {  }
+      arguments: {  }
       filters:
         type:
           id: type
@@ -650,6 +581,8 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: omnipedia_attached_data
+          plugin_id: omnipedia_attached_data_type
           operator: in
           value: {  }
           group: 1
@@ -683,8 +616,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          entity_type: omnipedia_attached_data
-          plugin_id: omnipedia_attached_data_type
         target:
           id: target
           table: omnipedia_attached_data
@@ -692,6 +623,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: omnipedia_attached_data
+          entity_field: target
+          plugin_id: string
           operator: contains
           value: ''
           group: 1
@@ -725,9 +659,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          entity_type: omnipedia_attached_data
-          entity_field: target
-          plugin_id: string
         date_range__value:
           id: date_range__value
           table: omnipedia_attached_data
@@ -735,6 +666,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: omnipedia_attached_data
+          entity_field: date_range
+          plugin_id: omnipedia_date_range_start
           operator: '>='
           value: '2049-09-28'
           group: 1
@@ -767,9 +701,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          entity_type: omnipedia_attached_data
-          entity_field: date_range
-          plugin_id: omnipedia_date_range_start
         date_range__end_value:
           id: date_range__end_value
           table: omnipedia_attached_data
@@ -777,6 +708,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: omnipedia_attached_data
+          entity_field: date_range
+          plugin_id: omnipedia_date_range_end
           operator: '<='
           value: '2049-09-28'
           group: 1
@@ -809,9 +743,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          entity_type: omnipedia_attached_data
-          entity_field: date_range
-          plugin_id: omnipedia_date_range_end
         uid:
           id: uid
           table: omnipedia_attached_data
@@ -819,6 +750,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: omnipedia_attached_data
+          entity_field: uid
+          plugin_id: user_name
           operator: in
           value: {  }
           group: 1
@@ -852,33 +786,99 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          entity_type: omnipedia_attached_data
-          entity_field: uid
-          plugin_id: user_name
-      sorts: {  }
-      header: {  }
-      footer: {  }
-      empty:
-        area_text_custom:
-          id: area_text_custom
-          table: views
-          field: area_text_custom
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: true
-          tokenize: false
-          content: 'No attached data available.'
-          plugin_id: text_custom
-      relationships: {  }
-      arguments: {  }
-      display_extenders: {  }
-      title: 'Attached data'
-      show_admin_links: false
       filter_groups:
         operator: AND
         groups:
           1: AND
+      style:
+        type: table
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          columns:
+            target: target
+            type: type
+            uid: uid
+            changed: changed
+            date_range__value: date_range__value
+            date_range__end_value: date_range__end_value
+            operations: operations
+          default: changed
+          info:
+            target:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            type:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            uid:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: priority-low
+            changed:
+              sortable: true
+              default_sort_order: desc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: priority-low
+            date_range__value:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: priority-medium
+            date_range__end_value:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: priority-medium
+            operations:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+          override: true
+          sticky: false
+          summary: ''
+          empty_table: false
+          caption: ''
+          description: ''
+      row:
+        type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_tags: {  }
+      relationships: {  }
+      show_admin_links: false
+      header: {  }
+      footer: {  }
+      display_extenders: {  }
     cache_metadata:
       max-age: 0
       contexts:
@@ -889,9 +889,9 @@ display:
         - user.permissions
       tags: {  }
   page:
-    display_plugin: page
     id: page
     display_title: Page
+    display_plugin: page
     position: 1
     display_options:
       display_extenders: {  }
@@ -900,11 +900,11 @@ display:
         type: normal
         title: 'Attached data'
         description: ''
-        expanded: false
-        parent: system.admin_content
         weight: 0
-        context: '0'
+        expanded: false
         menu_name: admin
+        parent: system.admin_content
+        context: '0'
     cache_metadata:
       max-age: 0
       contexts:

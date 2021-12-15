@@ -6,11 +6,11 @@ dependencies:
     - field.field.profile.customer.address
     - field.field.profile.customer.tax_number
     - profile.type.customer
+  module:
+    - address
   enforced:
     module:
       - commerce_order
-  module:
-    - address
 _core:
   default_config_hash: 3LyHGK7R4HxqejbxONet1S9j9ekqLJuFpwT-MNJygvo
 id: profile.customer.default
@@ -21,9 +21,9 @@ content:
   address:
     type: address_default
     weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   is_default: true
   tax_number: true

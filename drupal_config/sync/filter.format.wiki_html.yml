@@ -43,8 +43,8 @@ filters:
     weight: -39
     settings:
       default_view_mode: default
-      allowed_media_types: {  }
       allowed_view_modes: {  }
+      allowed_media_types: {  }
   ambientimpact_icon:
     id: ambientimpact_icon
     provider: ambientimpact_icon
@@ -137,7 +137,6 @@ filters:
     status: true
     weight: -47
     settings:
-      override: false
       id: commonmark
       enabled: true
       render_strategy:
@@ -154,4 +153,5 @@ filters:
           filter_align: false
           filter_caption: true
           media_embed: false
+      override: false
     filterFormat: wiki_html

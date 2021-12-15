@@ -5,11 +5,11 @@ dependencies:
   config:
     - field.storage.profile.tax_number
     - profile.type.customer
+  module:
+    - commerce_tax
   enforced:
     module:
       - commerce_tax
-  module:
-    - commerce_tax
 _core:
   default_config_hash: CGcN7vNeKKjcD0PjtvSXOchhJll9sHwastAFsjBsfqI
 id: profile.customer.tax_number

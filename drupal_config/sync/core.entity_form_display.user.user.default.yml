@@ -33,16 +33,16 @@ content:
   field_last_password_reset:
     type: datetime_default
     weight: 2
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   field_password_expiration:
     type: boolean_checkbox
     weight: 1
+    region: content
     settings:
       display_label: true
     third_party_settings: {  }
-    region: content
   language:
     weight: 4
     region: content
@@ -60,13 +60,13 @@ content:
     settings: {  }
     third_party_settings: {  }
   user_picture:
+    type: image_image
+    weight: 3
+    region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
-    type: image_image
-    weight: 3
     third_party_settings: {  }
-    region: content
 hidden:
   commerce_remote_id: true
   customer_profiles: true

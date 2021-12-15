@@ -1,7 +1,25 @@
 uuid: 9bcf6755-9941-4c1e-abf4-35e69f51f781
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.wiki_html
+    - node.type.page
+    - node.type.wiki_page
+    - taxonomy.vocabulary.episode_tiers
+  module:
+    - block
+    - contextual
+    - eu_cookie_compliance
+    - filter
+    - media
+    - node
+    - omnipedia_attached_data
+    - shortcut
+    - system
+    - taxonomy
+    - tfa
+    - toolbar
 id: editor
 label: editor
 weight: -6

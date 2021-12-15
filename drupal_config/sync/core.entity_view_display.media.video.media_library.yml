@@ -21,18 +21,18 @@ mode: media_library
 content:
   thumbnail:
     type: image
-    weight: 0
-    region: content
     label: hidden
     settings:
-      image_style: media_library_square_thumbnail_220
       image_link: ''
+      image_style: media_library_square_thumbnail_220
     third_party_settings:
       ambientimpact_media:
-        use_animated_gif_toggle: true
+        use_photoswipe: false
         use_photoswipe_gallery: true
         use_photoswipe_image_style: ''
-        use_photoswipe: false
+        use_animated_gif_toggle: true
+    weight: 0
+    region: content
 hidden:
   created: true
   field_episode_tier: true

@@ -2,8 +2,8 @@ dependencies:
   module:
     - markdown
 id: php-markdown-extra
-weight: 30
 enabled: true
+weight: 30
 render_strategy:
   type: none
   custom_allowed_html: null

@@ -17,35 +17,35 @@ content:
   adjustments:
     type: commerce_adjustment_default
     weight: 2
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   billing_profile:
     type: commerce_billing_profile
     weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   cart:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 20
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   order_items:
     type: inline_entity_form_complex
     weight: 1
+    region: content
     settings:
+      form_mode: default
       override_labels: true
       label_singular: 'order item'
       label_plural: 'order items'
       allow_new: true
-      match_operator: CONTAINS
       allow_existing: false
-      form_mode: default
+      match_operator: CONTAINS
     third_party_settings: {  }
-    region: content
 hidden:
   created: true
   ip_address: true

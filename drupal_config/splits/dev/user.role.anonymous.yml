@@ -1,7 +1,15 @@
 uuid: 950179d1-b220-48fa-849d-d835d4c2991c
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - commerce_checkout
+    - commerce_product
+    - contact
+    - devel
+    - eu_cookie_compliance
+    - media
+    - system
 _core:
   default_config_hash: pq_mEIu_B4widZN7Ap81iCJSjShFFdcL0jEiCi8VrDk
 id: anonymous
@@ -13,10 +21,6 @@ permissions:
   - 'access content'
   - 'access devel information'
   - 'access site-wide contact form'
-  - 'diff view changes'
   - 'display eu cookie compliance popup'
-  - 'search content'
-  - 'use text format filtered_html'
   - 'view commerce_product'
-  - 'view files'
   - 'view media'

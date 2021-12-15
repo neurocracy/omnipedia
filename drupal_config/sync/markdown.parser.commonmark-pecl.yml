@@ -2,8 +2,8 @@ dependencies:
   module:
     - markdown
 id: commonmark-pecl
-weight: 10
 enabled: true
+weight: 10
 render_strategy:
   type: none
   custom_allowed_html: null

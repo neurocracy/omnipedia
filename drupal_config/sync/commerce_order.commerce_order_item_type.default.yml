@@ -2,19 +2,19 @@ uuid: 9e9d329c-04b9-4eeb-8d9a-5288fa5493bd
 langcode: en
 status: true
 dependencies:
+  module:
+    - commerce_tax
   enforced:
     module:
       - commerce_product
-  module:
-    - commerce_tax
 third_party_settings:
   commerce_tax:
     taxable_type: digital_goods
 _core:
   default_config_hash: 6n6q97CDOCqHGs4Dun3BqVJE6e1o6TA-69qCwoUU-SY
-label: Default
 id: default
-purchasableEntityType: commerce_product_variation
-orderType: default
+label: Default
 traits: {  }
 locked: false
+purchasableEntityType: commerce_product_variation
+orderType: default

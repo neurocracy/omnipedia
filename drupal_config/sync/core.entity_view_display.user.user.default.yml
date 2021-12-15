@@ -23,13 +23,13 @@ content:
     weight: 5
     region: content
   user_picture:
+    type: image
     label: hidden
     settings:
-      image_style: ''
       image_link: content
-    type: image
-    weight: 7
+      image_style: ''
     third_party_settings: {  }
+    weight: 7
     region: content
 hidden:
   commerce_remote_id: true

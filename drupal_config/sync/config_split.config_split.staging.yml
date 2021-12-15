@@ -5,6 +5,7 @@ dependencies: {  }
 id: staging
 label: Staging
 description: 'Staging site configuration split.'
+weight: 0
 folder: ../drupal_config/splits/staging
 module:
   development_environment: 0
@@ -24,4 +25,3 @@ graylist:
   - user.role.anonymous
 graylist_dependents: true
 graylist_skip_equal: true
-weight: 0

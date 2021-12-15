@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: EcoLc85VhRBp0HrOvv3FwHG8zJCsYkGSHNhRc3dPvWA
 active: true
 css:
   max: 4
@@ -5,5 +7,3 @@ css:
 js:
   max: 4
   logic: 0
-_core:
-  default_config_hash: EcoLc85VhRBp0HrOvv3FwHG8zJCsYkGSHNhRc3dPvWA

@@ -18,16 +18,18 @@ bundle: image
 mode: omnipedia_embedded_group
 content:
   field_media_image:
+    type: responsive_image
     label: visually_hidden
     settings:
       responsive_image_style: omnipedia_embedded_group
       image_link: content
+      image_loading:
+        attribute: lazy
     third_party_settings:
       ambientimpact_media:
         use_photoswipe: true
         use_photoswipe_gallery: true
         use_photoswipe_image_style: content_image_large
-    type: responsive_image
     weight: 1
     region: content
 hidden:
