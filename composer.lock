@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "476de8be4696a05f72141f502ee9cc81",
+    "content-hash": "9d3ef808bb3bf8bf67dc144e95b9420e",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -4008,7 +4008,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin.git",
-                "reference": "d2e16a11c9fb7df9d7aac077d54611a51770bf78"
+                "reference": "9c91c8b9a63f6aa42e9cfde334a6cd3054c21ef8"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9 || ^10",
@@ -4020,8 +4020,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-alpha37+9-dev",
-                    "datestamp": "1634759366",
+                    "version": "8.x-3.0-alpha37+12-dev",
+                    "datestamp": "1636200888",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
