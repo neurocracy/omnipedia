@@ -94,30 +94,6 @@ filters:
     weight: -33
     settings:
       filter_url_length: 72
-  markdown:
-    id: markdown
-    provider: markdown
-    status: true
-    weight: -47
-    settings:
-      override: false
-      id: commonmark
-      enabled: true
-      render_strategy:
-        type: none
-        custom_allowed_html: ''
-        plugins:
-          commonmark: true
-          commonmark-external-links: false
-          commonmark-footnotes: true
-          commonmark-heading-permalink: false
-          commonmark-strikethrough: false
-          commonmark-table: true
-          commonmark-task-list: false
-          filter_align: false
-          filter_caption: true
-          media_embed: false
-    filterFormat: wiki_html
   omnipedia_elements:
     id: omnipedia_elements
     provider: omnipedia_content
@@ -155,3 +131,27 @@ filters:
     weight: -48
     settings:
       replace_empty: '0'
+  markdown:
+    id: markdown
+    provider: markdown
+    status: true
+    weight: -47
+    settings:
+      override: false
+      id: commonmark
+      enabled: true
+      render_strategy:
+        type: none
+        custom_allowed_html: ''
+        plugins:
+          commonmark: true
+          commonmark-external-links: false
+          commonmark-footnotes: true
+          commonmark-heading-permalink: false
+          commonmark-strikethrough: false
+          commonmark-table: true
+          commonmark-task-list: false
+          filter_align: false
+          filter_caption: true
+          media_embed: false
+    filterFormat: wiki_html
