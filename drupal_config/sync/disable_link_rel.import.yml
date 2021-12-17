@@ -1,4 +1,4 @@
-links: 'canonical, shortlink, delete-form, delete-multiple-form, edit-form, version-history, revision, devel-load, devel-render, devel-definition, token-devel'
+links: 'canonical, shortlink, devel-load, devel-render, devel-definition, token-devel'
 enable: 1
 remove_link_attr: 1
 remove_link_attr_list: data-drupal-link-system-path
