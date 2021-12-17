@@ -7,6 +7,7 @@ dependencies:
     - field.field.user.user.field_content_density
     - field.field.user.user.field_last_password_reset
     - field.field.user.user.field_password_expiration
+    - field.field.user.user.field_pending_expire_sent
     - field.field.user.user.field_show_wikipedia_links
     - field.field.user.user.user_picture
     - image.style.thumbnail
@@ -71,4 +72,5 @@ hidden:
   commerce_remote_id: true
   customer_profiles: true
   field_content_density: true
+  field_pending_expire_sent: true
   field_show_wikipedia_links: true
