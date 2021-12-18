@@ -25,6 +25,7 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  adjustments: true
   created: true
   quantity: true
   status: true
