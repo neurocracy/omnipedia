@@ -31,8 +31,9 @@ tags:
   icon_192x192: '[site:url]themes/omnipedia/omnipedia_site/images/icons/generated/pwa-icon-192x192.png?v=1'
   icon_32x32: '[site:url]themes/omnipedia/omnipedia_site/images/icons/generated/favicon-32x32.png?v=1'
   icon_96x96: '[site:url]themes/omnipedia/omnipedia_site/images/icons/generated/pwa-icon-96x96.png?v=1'
-  mask-icon: '[site:url]themes/omnipedia/omnipedia_site/images/icons/icon_grayscale.svg?v=1'
   shortcut_icon: '[site:url]themes/omnipedia/omnipedia_site/images/icons/generated/favicon-32x32.png?v=1'
   msapplication_config: '[site:url]themes/omnipedia/omnipedia_site/windows.xml'
   theme_color: '#0d47a1'
   web_manifest: '[site:url]themes/omnipedia/omnipedia_site/manifest.json?v=1'
+  mask_icon:
+    href: '[site:url]themes/omnipedia/omnipedia_site/images/icons/icon_grayscale.svg?v=1'
