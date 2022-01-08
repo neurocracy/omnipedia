@@ -3238,17 +3238,17 @@
         },
         {
             "name": "drupal/csp",
-            "version": "1.15.0",
+            "version": "1.16.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/csp.git",
-                "reference": "8.x-1.15"
+                "reference": "8.x-1.16"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/csp-8.x-1.15.zip",
-                "reference": "8.x-1.15",
-                "shasum": "fbb6c4d2cb25c53758b7286f161c3c1a511ff8d1"
+                "url": "https://ftp.drupal.org/files/projects/csp-8.x-1.16.zip",
+                "reference": "8.x-1.16",
+                "shasum": "0d6568ff2b176497ff97a440bfae6b7135ad2d6b"
             },
             "require": {
                 "drupal/core": "^8.5 || ^9.0",
@@ -3258,8 +3258,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.15",
-                    "datestamp": "1618259686",
+                    "version": "8.x-1.16",
+                    "datestamp": "1641415148",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4010,10 +4010,10 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin.git",
-                "reference": "9c91c8b9a63f6aa42e9cfde334a6cd3054c21ef8"
+                "reference": "cb04d2830a0e0e16bb373c0db3a6b234c9b6b0a8"
             },
             "require": {
-                "drupal/core": "^8.8 || ^9 || ^10",
+                "drupal/core": "^8.9 || ^9 || ^10",
                 "drupal/gin_toolbar": "^1.0@beta"
             },
             "type": "drupal-theme",
@@ -4022,8 +4022,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-alpha37+12-dev",
-                    "datestamp": "1636200888",
+                    "version": "8.x-3.0-alpha37+39-dev",
+                    "datestamp": "1640278482",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -4825,17 +4825,17 @@
         },
         {
             "name": "drupal/metatag",
-            "version": "1.18.0",
+            "version": "1.19.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/metatag.git",
-                "reference": "8.x-1.18"
+                "reference": "8.x-1.19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/metatag-8.x-1.18.zip",
-                "reference": "8.x-1.18",
-                "shasum": "b35683715780a45f0809af5a612f28bc4fbb777e"
+                "url": "https://ftp.drupal.org/files/projects/metatag-8.x-1.19.zip",
+                "reference": "8.x-1.19",
+                "shasum": "d70f59c034e971885ed4969a11bb392f6ab447ee"
             },
             "require": {
                 "drupal/core": "^9",
@@ -4854,8 +4854,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.18",
-                    "datestamp": "1640098931",
+                    "version": "8.x-1.19",
+                    "datestamp": "1641496014",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5135,17 +5135,17 @@
         },
         {
             "name": "drupal/permissions_by_term",
-            "version": "3.1.16",
+            "version": "3.1.17",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/permissions_by_term.git",
-                "reference": "3.1.16"
+                "reference": "3.1.17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/permissions_by_term-3.1.16.zip",
-                "reference": "3.1.16",
-                "shasum": "4208c34a4399249052bd7b070cd51d7628c6b184"
+                "url": "https://ftp.drupal.org/files/projects/permissions_by_term-3.1.17.zip",
+                "reference": "3.1.17",
+                "shasum": "a392ff9bccbbc2218be2a035017a15782e1150e0"
             },
             "require": {
                 "drupal/core": "^9.0",
@@ -5154,8 +5154,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.1.16",
-                    "datestamp": "1626101110",
+                    "version": "3.1.17",
+                    "datestamp": "1641214540",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
