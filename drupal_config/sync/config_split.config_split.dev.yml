@@ -21,6 +21,7 @@ graylist:
   - commerce_payment.commerce_payment_gateway.paypal
   - commerce_payment.commerce_payment_gateway.stripe
   - dblog.settings
+  - gin.settings
   - key.config_override.paypal_client_id_key
   - key.config_override.paypal_secret_key
   - key.config_override.paypal_webhook_id
