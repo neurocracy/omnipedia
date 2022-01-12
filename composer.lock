@@ -4740,14 +4740,21 @@
         },
         {
             "name": "drupal/markdown",
-            "version": "dev-3103679-8.x-2.x",
+            "version": "3.0.0-rc2",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/issue/markdown-3103679.git",
-                "reference": "d4ad0862c9dda03bc938d69a8a174514db435ae7"
+                "url": "https://git.drupalcode.org/project/markdown.git",
+                "reference": "3.0.0-rc2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/markdown-3.0.0-rc2.zip",
+                "reference": "3.0.0-rc2",
+                "shasum": "ccbb84b03ce1f5d2fdb8511595dde0980653845f"
             },
             "require": {
                 "composer/semver": "^1.0 || ^2.0 || ^3.0",
+                "drupal/core": "^8 || ^9",
                 "php": ">=5.5.9"
             },
             "suggest": {
@@ -4755,12 +4762,21 @@
             },
             "type": "drupal-module",
             "extra": {
+                "drupal": {
+                    "version": "3.0.0-rc2",
+                    "datestamp": "1639560570",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                },
                 "drush": {
                     "services": {
-                        "drush.services.yml": "^8 || ^9 || ^10"
+                        "drush.services.yml": "^9 || ^10"
                     }
                 }
             },
+            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0-or-later"
             ],
@@ -4774,15 +4790,22 @@
                     "name": "Gisle Hannemyr (gisle)",
                     "homepage": "https://www.drupal.org/u/gisle",
                     "role": "D7 Maintainer"
+                },
+                {
+                    "name": "joelpittet",
+                    "homepage": "https://www.drupal.org/user/160302"
+                },
+                {
+                    "name": "markhalliwell",
+                    "homepage": "https://www.drupal.org/user/501638"
                 }
             ],
             "description": "Provides Markdown integration for Drupal and allows content to be formatted in a simple plain-text syntax that is transformed into valid HTML.",
             "homepage": "https://www.drupal.org/project/markdown",
             "support": {
-                "issues": "https://www.drupal.org/project/markdown",
-                "source": "https://git.drupalcode.org/project/markdown"
-            },
-            "time": "2021-12-04T14:22:03+00:00"
+                "source": "https://git.drupalcode.org/project/markdown",
+                "issues": "https://www.drupal.org/project/markdown"
+            }
         },
         {
             "name": "drupal/media_entity_file_replace",
@@ -13389,7 +13412,7 @@
         "drupal/path_alias_xt": 20,
         "drupal/tfa": 15,
         "wikimedia/composer-merge-plugin": 20,
-        "drupal/markdown": 20
+        "drupal/markdown": 5
     },
     "prefer-stable": true,
     "prefer-lowest": false,
