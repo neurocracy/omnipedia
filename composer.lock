@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9174eef7db57378d558fdb8e0f6678ec",
+    "content-hash": "2d1dc664f5486a1a04977351a5d42654",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -5408,59 +5408,6 @@
             "homepage": "http://drupal.org/project/profile",
             "support": {
                 "source": "https://git.drupalcode.org/project/profile"
-            }
-        },
-        {
-            "name": "drupal/pwa",
-            "version": "dev-1.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/pwa.git",
-                "reference": "73eded1d76e88c1a848c255cc755981a7d506d13"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.5+13-dev",
-                    "datestamp": "1640291976",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "AlexBorsody",
-                    "homepage": "https://www.drupal.org/user/473596"
-                },
-                {
-                    "name": "ChristophWeber",
-                    "homepage": "https://www.drupal.org/user/281751"
-                },
-                {
-                    "name": "nod_",
-                    "homepage": "https://www.drupal.org/user/598310"
-                },
-                {
-                    "name": "rupl",
-                    "homepage": "https://www.drupal.org/user/411999"
-                }
-            ],
-            "description": "Make the website installable on mobile.",
-            "homepage": "https://www.drupal.org/project/pwa",
-            "support": {
-                "source": "https://git.drupalcode.org/project/pwa"
             }
         },
         {
@@ -14056,8 +14003,7 @@
         "drupal/session_limit": 10,
         "drupal/tfa": 15,
         "wikimedia/composer-merge-plugin": 20,
-        "drupal/markdown": 20,
-        "drupal/pwa": 20
+        "drupal/markdown": 5
     },
     "prefer-stable": true,
     "prefer-lowest": false,

@@ -10,3 +10,7 @@
 [submodule "drupal/themes/omnipedia"]
 	path = drupal/themes/omnipedia
 	url = git@gitlab.com:neurocracy/omnipedia/drupal-themes.git
+[submodule "drupal/modules/pwa"]
+	path = drupal/modules/pwa
+	url = git@git.drupal.org:issue/pwa-3060760.git
+	branch = 3060760-use-google-workbox
