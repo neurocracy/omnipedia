@@ -74,4 +74,4 @@ enforce:
       base: self
     upgrade-insecure-requests: true
   reporting:
-    plugin: sitelog
+    plugin: none
