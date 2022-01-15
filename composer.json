@@ -30,6 +30,7 @@
     "composer/installers": "^1.2",
     "cweagans/composer-patches": "^1.7",
     "drupal/advagg": "^4.0",
+    "drupal/autoban": "^1.7",
     "drupal/config_split": "^1.6",
     "drupal/core-composer-scaffold": "^9.3",
     "drupal/core-recommended": "^9.3",
