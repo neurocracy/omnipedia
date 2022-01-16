@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1c065d3436339b3fe6ab5e62ecbe4da8",
+    "content-hash": "aafe02f68255244dd113ddd32ac6dde3",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -3429,6 +3429,57 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/ctools",
                 "issues": "https://www.drupal.org/project/issues/ctools"
+            }
+        },
+        {
+            "name": "drupal/dblog_persistent",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/dblog_persistent.git",
+                "reference": "2.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/dblog_persistent-2.0.1.zip",
+                "reference": "2.0.1",
+                "shasum": "0ed4436c1d8313c4f108f56908d7611e73fcbb4b"
+            },
+            "require": {
+                "drupal/core": "^8.6 || ^9",
+                "php": "^7.1 || ^8"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.1",
+                    "datestamp": "1637964385",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christoph Burschka",
+                    "homepage": "https://github.com/cburschka",
+                    "email": "christoph@burschka.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Copies selected log messages to a non-expiring storage.",
+            "homepage": "https://www.drupal.org/project/dblog_persistent",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/dblog_persistent",
+                "issues": "https://www.drupal.org/project/issues/dblog_persistent"
             }
         },
         {

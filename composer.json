@@ -35,6 +35,7 @@
     "drupal/core-composer-scaffold": "^9.3",
     "drupal/core-recommended": "^9.3",
     "drupal/csp": "^1.13",
+    "drupal/dblog_persistent": "^2.0",
     "drupal/development_environment": "^2.0",
     "drupal/diff": "^1.0",
     "drupal/disable_link_rel": "^1.0",
