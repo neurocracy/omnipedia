@@ -1,0 +1,10 @@
+uuid: 6a50143e-ba4b-4c4a-8ccd-caf74a5d01ca
+langcode: en
+status: true
+dependencies: {  }
+id: commerce_checkout_login_uid_constraint_violation
+label: 'Commerce checkout log in UID constraint violation'
+types:
+  php: php
+levels: {  }
+message: 'for key ''users.PRIMARY'': INSERT INTO "users"'
