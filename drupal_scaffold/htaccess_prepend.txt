@@ -1,0 +1,16 @@
+# Blocking of files that could be a security risk under certain circumstances,
+# in addition to the core .htaccess rules. This is primarily intended to prevent
+# access to core/install.php in the event that the database connection cannot be
+# established or some other reason causes Drupal believe it isn't installed yet.
+#
+# @see https://www.drupal.org/forum/support/post-installation/2011-03-04/can-i-delete-the-installphp-file#comment-4169662
+#
+# @see https://drupal.stackexchange.com/questions/269076/how-do-i-restrict-access-to-the-install-php-file#281116
+<FilesMatch "cron\.php|install\.php|update\.php|^(CHANGELOG|COPYRIGHT|INSTALL.*|LICENSE|MAINTAINERS|README|UPDATE).txt">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order allow,deny
+  </IfModule>
+</FilesMatch>
