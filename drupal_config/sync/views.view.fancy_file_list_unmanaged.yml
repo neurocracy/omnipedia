@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - fancy_file_delete
+    - user
     - views_bulk_operations
 _core:
   default_config_hash: UsDbNV4NuNfUXGdVJfQ779Qkqe83Dp3Dxh5tbjHNxYU
@@ -245,8 +246,9 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       access:
-        type: none
-        options: {  }
+        type: perm
+        options:
+          perm: 'administer unmanaged files entities'
       cache:
         type: none
         options: {  }
@@ -302,6 +304,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
+        - user.permissions
       tags: {  }
   page_1:
     id: page_1
@@ -326,4 +329,5 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
+        - user.permissions
       tags: {  }
