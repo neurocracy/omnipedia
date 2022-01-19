@@ -6,6 +6,7 @@ dependencies:
     - commerce_cart
     - commerce_order
     - commerce_price
+    - user
   enforced:
     module:
       - commerce_cart
@@ -339,8 +340,9 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       access:
-        type: none
-        options: {  }
+        type: perm
+        options:
+          perm: 'access checkout'
       cache:
         type: tag
         options: {  }
@@ -468,4 +470,5 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
+        - user.permissions
       tags: {  }

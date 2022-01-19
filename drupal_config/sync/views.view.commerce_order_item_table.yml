@@ -5,6 +5,7 @@ dependencies:
   module:
     - commerce_order
     - commerce_price
+    - user
 _core:
   default_config_hash: EZYKCbgxvY_dDDwK9piZCx6wll1ArPTjellGybiFv10
 id: commerce_order_item_table
@@ -302,8 +303,9 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       access:
-        type: none
-        options: {  }
+        type: perm
+        options:
+          perm: 'view own commerce_order'
       cache:
         type: tag
         options: {  }
@@ -431,4 +433,5 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
+        - user.permissions
       tags: {  }
