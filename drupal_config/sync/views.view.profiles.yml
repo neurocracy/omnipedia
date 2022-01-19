@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - profile
+    - user
 _core:
   default_config_hash: iDeLvK90ucO3Qc2NIH8ot0W1saUd7U_XThA3P1QvuMs
 id: profiles
@@ -139,8 +140,9 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       access:
-        type: none
-        options: {  }
+        type: perm
+        options:
+          perm: 'view any profile'
       cache:
         type: tag
         options: {  }
@@ -341,7 +343,10 @@ display:
       contexts:
         - 'languages:language_interface'
         - url
-      tags: {  }
+        - user.permissions
+      tags:
+        - 'config:core.entity_view_display.profile.customer.admin'
+        - 'config:core.entity_view_display.profile.customer.default'
   user_page:
     id: user_page
     display_title: 'User page'
@@ -355,4 +360,7 @@ display:
       contexts:
         - 'languages:language_interface'
         - url
-      tags: {  }
+        - user.permissions
+      tags:
+        - 'config:core.entity_view_display.profile.customer.admin'
+        - 'config:core.entity_view_display.profile.customer.default'
