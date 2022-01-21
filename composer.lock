@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ff87fbe8d4a21320fed87cd91196f37d",
+    "content-hash": "93c907139ac517b6a024a089540689d3",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -5768,6 +5768,58 @@
             "homepage": "https://www.drupal.org/project/security_review",
             "support": {
                 "source": "https://git.drupalcode.org/project/security_review"
+            }
+        },
+        {
+            "name": "drupal/session_limit",
+            "version": "2.0.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/session_limit.git",
+                "reference": "2.0.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/session_limit-2.0.0-beta2.zip",
+                "reference": "2.0.0-beta2",
+                "shasum": "05f6bb02c2d108212b7c2072e5596df919afd09d"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0-beta2",
+                    "datestamp": "1625122061",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "deekayen",
+                    "homepage": "https://www.drupal.org/user/972"
+                },
+                {
+                    "name": "johnennew",
+                    "homepage": "https://www.drupal.org/user/1150042"
+                },
+                {
+                    "name": "suzymasri",
+                    "homepage": "https://www.drupal.org/user/2428842"
+                }
+            ],
+            "description": "Limit simultaneous user sessions.",
+            "homepage": "https://www.drupal.org/project/session_limit",
+            "support": {
+                "source": "https://git.drupalcode.org/project/session_limit"
             }
         },
         {
@@ -13565,6 +13617,7 @@
         "drupal/gin_toolbar": 10,
         "drupal/path_alias_xt": 20,
         "drupal/security_review": 15,
+        "drupal/session_limit": 10,
         "drupal/tfa": 15,
         "wikimedia/composer-merge-plugin": 20,
         "drupal/markdown": 5
