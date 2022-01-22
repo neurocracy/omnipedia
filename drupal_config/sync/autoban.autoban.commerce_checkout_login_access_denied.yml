@@ -1,0 +1,12 @@
+id: commerce_checkout_login_access_denied
+uuid: 0a032433-bc17-4beb-9104-65d8ed3c44b5
+type: 'access denied'
+message: /checkout/%/login
+referer: ''
+threshold: '5'
+provider: ban
+user_type: '1'
+rule_type: 1
+langcode: en
+status: true
+dependencies: {  }

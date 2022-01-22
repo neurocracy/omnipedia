@@ -1,0 +1,12 @@
+id: phpunit_eval_stdin
+uuid: 2c4ef38d-db01-4665-a193-9e972a50dac4
+type: 'page not found'
+message: '%/eval-stdin.php%'
+referer: ''
+threshold: '1'
+provider: ban
+user_type: '0'
+rule_type: 1
+langcode: en
+status: true
+dependencies: {  }

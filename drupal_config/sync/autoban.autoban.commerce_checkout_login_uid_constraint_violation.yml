@@ -5,7 +5,7 @@ message: '%for key ''users.PRIMARY'': INSERT INTO "users"%'
 referer: ''
 threshold: '1'
 provider: ban
-user_type: '1'
+user_type: '0'
 rule_type: 1
 langcode: en
 status: true

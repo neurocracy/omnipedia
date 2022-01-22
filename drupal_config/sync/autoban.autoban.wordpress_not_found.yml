@@ -1,9 +1,9 @@
 id: wordpress_not_found
 uuid: 305971af-698e-46d1-84fa-bc9af4693a23
 type: 'page not found'
-message: '%/wp-includes/%|%/wp-login.php%'
+message: '%/wordpress/%|%/wp-admin/%|%/wp-content/%|%/wp-includes/%|%/wp-login.php%'
 referer: ''
-threshold: '1'
+threshold: '2'
 provider: ban
 user_type: '1'
 rule_type: 1
