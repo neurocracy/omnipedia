@@ -155,7 +155,7 @@
             "version": "1.1.4",
             "source": {
                 "type": "git",
-                "url": "git@github.com:wilddeer/stickyfill.git",
+                "url": "https://github.com/wilddeer/stickyfill.git",
                 "reference": "3e7c48898c4b469440f822e32ebd9160aa07415d"
             },
             "dist": {
@@ -170,16 +170,16 @@
         },
         {
             "name": "caxy/php-htmldiff",
-            "version": "v0.1.13",
+            "version": "v0.1.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/caxy/php-htmldiff.git",
-                "reference": "aca63d7da8c9cf3c0c3c27fb41af1ffb1b1d4b3a"
+                "reference": "3f8ee7edda3d7c6d2e58a02d70a12d3242c84ea5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/caxy/php-htmldiff/zipball/aca63d7da8c9cf3c0c3c27fb41af1ffb1b1d4b3a",
-                "reference": "aca63d7da8c9cf3c0c3c27fb41af1ffb1b1d4b3a",
+                "url": "https://api.github.com/repos/caxy/php-htmldiff/zipball/3f8ee7edda3d7c6d2e58a02d70a12d3242c84ea5",
+                "reference": "3f8ee7edda3d7c6d2e58a02d70a12d3242c84ea5",
                 "shasum": ""
             },
             "require": {
@@ -225,9 +225,9 @@
             ],
             "support": {
                 "issues": "https://github.com/caxy/php-htmldiff/issues",
-                "source": "https://github.com/caxy/php-htmldiff/tree/v0.1.13"
+                "source": "https://github.com/caxy/php-htmldiff/tree/v0.1.14"
             },
-            "time": "2021-09-27T22:01:33+00:00"
+            "time": "2022-01-19T11:09:59+00:00"
         },
         {
             "name": "chi-teck/drupal-code-generator",
@@ -283,26 +283,26 @@
         },
         {
             "name": "chillerlan/php-qrcode",
-            "version": "3.4.1",
+            "version": "4.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chillerlan/php-qrcode.git",
-                "reference": "468603b687a5fe75c1ff33857a45f1726c7b95a9"
+                "reference": "b625396e0752d79747a55205ae7e191eeb459dcd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chillerlan/php-qrcode/zipball/468603b687a5fe75c1ff33857a45f1726c7b95a9",
-                "reference": "468603b687a5fe75c1ff33857a45f1726c7b95a9",
+                "url": "https://api.github.com/repos/chillerlan/php-qrcode/zipball/b625396e0752d79747a55205ae7e191eeb459dcd",
+                "reference": "b625396e0752d79747a55205ae7e191eeb459dcd",
                 "shasum": ""
             },
             "require": {
-                "chillerlan/php-settings-container": "^1.2.2",
+                "chillerlan/php-settings-container": "^2.1",
                 "ext-mbstring": "*",
-                "php": "^7.2 || ^8.0"
+                "php": "^7.4 || ^8.0"
             },
             "require-dev": {
-                "phan/phan": "^3.2.2",
-                "phpunit/phpunit": "^8.5",
+                "phan/phan": "^5.3",
+                "phpunit/phpunit": "^9.5",
                 "setasign/fpdf": "^1.8.2"
             },
             "suggest": {
@@ -334,7 +334,7 @@
                     "homepage": "https://github.com/chillerlan/php-qrcode/graphs/contributors"
                 }
             ],
-            "description": "A QR code generator. PHP 7.2+",
+            "description": "A QR code generator. PHP 7.4+",
             "homepage": "https://github.com/chillerlan/php-qrcode",
             "keywords": [
                 "phpqrcode",
@@ -345,7 +345,7 @@
             ],
             "support": {
                 "issues": "https://github.com/chillerlan/php-qrcode/issues",
-                "source": "https://github.com/chillerlan/php-qrcode/tree/3.4.1"
+                "source": "https://github.com/chillerlan/php-qrcode/tree/4.3.2"
             },
             "funding": [
                 {
@@ -357,28 +357,29 @@
                     "type": "ko_fi"
                 }
             ],
-            "time": "2021-09-03T17:54:45+00:00"
+            "time": "2021-11-18T08:46:03+00:00"
         },
         {
             "name": "chillerlan/php-settings-container",
-            "version": "1.2.2",
+            "version": "2.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chillerlan/php-settings-container.git",
-                "reference": "d1b5284d6eb3a767459738bb0b20073f0cb3eeaf"
+                "reference": "ec834493a88682dd69652a1eeaf462789ed0c5f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chillerlan/php-settings-container/zipball/d1b5284d6eb3a767459738bb0b20073f0cb3eeaf",
-                "reference": "d1b5284d6eb3a767459738bb0b20073f0cb3eeaf",
+                "url": "https://api.github.com/repos/chillerlan/php-settings-container/zipball/ec834493a88682dd69652a1eeaf462789ed0c5f5",
+                "reference": "ec834493a88682dd69652a1eeaf462789ed0c5f5",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "php": "^7.2 || ^8.0"
+                "php": "^7.4 || ^8.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^8.4"
+                "phan/phan": "^4.0",
+                "phpunit/phpunit": "^9.5"
             },
             "type": "library",
             "autoload": {
@@ -397,7 +398,7 @@
                     "homepage": "https://github.com/codemasher"
                 }
             ],
-            "description": "A container class for immutable settings objects. Not a DI container. PHP 7.2+",
+            "description": "A container class for immutable settings objects. Not a DI container. PHP 7.4+",
             "homepage": "https://github.com/chillerlan/php-settings-container",
             "keywords": [
                 "PHP7",
@@ -419,7 +420,7 @@
                     "type": "ko_fi"
                 }
             ],
-            "time": "2021-09-03T17:33:25+00:00"
+            "time": "2021-09-06T15:17:01+00:00"
         },
         {
             "name": "christian-riesen/otp",
@@ -1362,16 +1363,16 @@
         },
         {
             "name": "consolidation/site-process",
-            "version": "4.1.1",
+            "version": "4.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/site-process.git",
-                "reference": "4817b35b2f98a2e3ad82956a968b49f7b257d26c"
+                "reference": "ca41dc82b280bccdf1b231d5599c7d506fba5c04"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/site-process/zipball/4817b35b2f98a2e3ad82956a968b49f7b257d26c",
-                "reference": "4817b35b2f98a2e3ad82956a968b49f7b257d26c",
+                "url": "https://api.github.com/repos/consolidation/site-process/zipball/ca41dc82b280bccdf1b231d5599c7d506fba5c04",
+                "reference": "ca41dc82b280bccdf1b231d5599c7d506fba5c04",
                 "shasum": ""
             },
             "require": {
@@ -1379,7 +1380,7 @@
                 "consolidation/site-alias": "^3",
                 "php": ">=7.1.3",
                 "symfony/console": "^2.8.52|^3|^4.4|^5",
-                "symfony/process": "^4.3.4"
+                "symfony/process": "^4.3.4|^5"
             },
             "require-dev": {
                 "phpunit/phpunit": "^7.5.20|^8.5.14",
@@ -1414,9 +1415,9 @@
             "description": "A thin wrapper around the Symfony Process Component that allows applications to use the Site Alias library to specify the target for a remote call.",
             "support": {
                 "issues": "https://github.com/consolidation/site-process/issues",
-                "source": "https://github.com/consolidation/site-process/tree/4.1.1"
+                "source": "https://github.com/consolidation/site-process/tree/4.1.3"
             },
-            "time": "2022-01-03T18:57:42+00:00"
+            "time": "2022-01-18T23:04:54+00:00"
         },
         {
             "name": "cweagans/composer-patches",
@@ -2086,7 +2087,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-2.28",
-                    "datestamp": "1636648407",
+                    "datestamp": "1639899120",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2138,7 +2139,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-2.28",
-                    "datestamp": "1636648407",
+                    "datestamp": "1639899120",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2241,7 +2242,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-2.28",
-                    "datestamp": "1636648407",
+                    "datestamp": "1639899120",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2297,7 +2298,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-2.28",
-                    "datestamp": "1636648407",
+                    "datestamp": "1639899120",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2349,7 +2350,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-2.28",
-                    "datestamp": "1636648407",
+                    "datestamp": "1639899120",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2462,7 +2463,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-2.28",
-                    "datestamp": "1636648407",
+                    "datestamp": "1639899120",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2514,7 +2515,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-2.28",
-                    "datestamp": "1636648407",
+                    "datestamp": "1639899120",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2627,7 +2628,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-2.28",
-                    "datestamp": "1636648407",
+                    "datestamp": "1639899120",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4182,7 +4183,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-1.0-beta20",
-                    "datestamp": "1635149590",
+                    "datestamp": "1635149692",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -4396,6 +4397,10 @@
             ],
             "authors": [
                 {
+                    "name": "el7cosmos",
+                    "homepage": "https://www.drupal.org/user/251087"
+                },
+                {
                     "name": "pdenooijer",
                     "homepage": "https://www.drupal.org/user/3175437"
                 },
@@ -4535,6 +4540,10 @@
                 {
                     "name": "oknate",
                     "homepage": "https://www.drupal.org/user/471638"
+                },
+                {
+                    "name": "ram4nd",
+                    "homepage": "https://www.drupal.org/user/601534"
                 },
                 {
                     "name": "rszrama",
@@ -7580,16 +7589,16 @@
         },
         {
             "name": "league/commonmark",
-            "version": "1.6.6",
+            "version": "1.6.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/commonmark.git",
-                "reference": "c4228d11e30d7493c6836d20872f9582d8ba6dcf"
+                "reference": "2b8185c13bc9578367a5bf901881d1c1b5bbd09b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/c4228d11e30d7493c6836d20872f9582d8ba6dcf",
-                "reference": "c4228d11e30d7493c6836d20872f9582d8ba6dcf",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/2b8185c13bc9578367a5bf901881d1c1b5bbd09b",
+                "reference": "2b8185c13bc9578367a5bf901881d1c1b5bbd09b",
                 "shasum": ""
             },
             "require": {
@@ -7653,10 +7662,6 @@
             },
             "funding": [
                 {
-                    "url": "https://enjoy.gitstore.app/repositories/thephpleague/commonmark",
-                    "type": "custom"
-                },
-                {
                     "url": "https://www.colinodell.com/sponsor",
                     "type": "custom"
                 },
@@ -7669,15 +7674,11 @@
                     "type": "github"
                 },
                 {
-                    "url": "https://www.patreon.com/colinodell",
-                    "type": "patreon"
-                },
-                {
                     "url": "https://tidelift.com/funding/github/packagist/league/commonmark",
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-07-17T17:13:23+00:00"
+            "time": "2022-01-13T17:18:13+00:00"
         },
         {
             "name": "league/container",
@@ -8188,16 +8189,16 @@
         },
         {
             "name": "paragonie/constant_time_encoding",
-            "version": "v2.4.0",
+            "version": "v2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/constant_time_encoding.git",
-                "reference": "f34c2b11eb9d2c9318e13540a1dbc2a3afbd939c"
+                "reference": "9229e15f2e6ba772f0c55dd6986c563b937170a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/constant_time_encoding/zipball/f34c2b11eb9d2c9318e13540a1dbc2a3afbd939c",
-                "reference": "f34c2b11eb9d2c9318e13540a1dbc2a3afbd939c",
+                "url": "https://api.github.com/repos/paragonie/constant_time_encoding/zipball/9229e15f2e6ba772f0c55dd6986c563b937170a8",
+                "reference": "9229e15f2e6ba772f0c55dd6986c563b937170a8",
                 "shasum": ""
             },
             "require": {
@@ -8251,7 +8252,7 @@
                 "issues": "https://github.com/paragonie/constant_time_encoding/issues",
                 "source": "https://github.com/paragonie/constant_time_encoding"
             },
-            "time": "2020-12-06T15:14:20+00:00"
+            "time": "2022-01-17T05:32:27+00:00"
         },
         {
             "name": "paragonie/halite",
@@ -8325,22 +8326,22 @@
         },
         {
             "name": "paragonie/hidden-string",
-            "version": "v1.1.0",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/hidden-string.git",
-                "reference": "1c30373ac2fce76fb57954010ef06e990f9a49b5"
+                "reference": "151e53d55bfc67dd58087cdf8762dd8177ea7575"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/hidden-string/zipball/1c30373ac2fce76fb57954010ef06e990f9a49b5",
-                "reference": "1c30373ac2fce76fb57954010ef06e990f9a49b5",
+                "url": "https://api.github.com/repos/paragonie/hidden-string/zipball/151e53d55bfc67dd58087cdf8762dd8177ea7575",
+                "reference": "151e53d55bfc67dd58087cdf8762dd8177ea7575",
                 "shasum": ""
             },
             "require": {
                 "paragonie/constant_time_encoding": "^2",
                 "paragonie/sodium_compat": "^1.6",
-                "php": "^7|^8"
+                "php": "^7.4|^8"
             },
             "require-dev": {
                 "phpunit/phpunit": "^6|^7|^8|^9",
@@ -8372,9 +8373,9 @@
             ],
             "support": {
                 "issues": "https://github.com/paragonie/hidden-string/issues",
-                "source": "https://github.com/paragonie/hidden-string/tree/v1.1.0"
+                "source": "https://github.com/paragonie/hidden-string/tree/v2.0.0"
             },
-            "time": "2020-12-03T14:24:26+00:00"
+            "time": "2020-12-06T15:07:44+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -9233,16 +9234,16 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v7.109.0",
+            "version": "v7.111.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "01d53390c0628cb2c702131f1854d76d2022fd25"
+                "reference": "374647b1079203ed7278ad4b58afc0fae3faaab9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/01d53390c0628cb2c702131f1854d76d2022fd25",
-                "reference": "01d53390c0628cb2c702131f1854d76d2022fd25",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/374647b1079203ed7278ad4b58afc0fae3faaab9",
+                "reference": "374647b1079203ed7278ad4b58afc0fae3faaab9",
                 "shasum": ""
             },
             "require": {
@@ -9252,7 +9253,7 @@
                 "php": ">=5.6.0"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "3.4.0",
+                "friendsofphp/php-cs-fixer": "3.5.0",
                 "phpstan/phpstan": "^1.2",
                 "phpunit/phpunit": "^5.7 || ^9.0",
                 "squizlabs/php_codesniffer": "^3.3"
@@ -9287,9 +9288,9 @@
             ],
             "support": {
                 "issues": "https://github.com/stripe/stripe-php/issues",
-                "source": "https://github.com/stripe/stripe-php/tree/v7.109.0"
+                "source": "https://github.com/stripe/stripe-php/tree/v7.111.0"
             },
-            "time": "2022-01-12T16:19:43+00:00"
+            "time": "2022-01-20T17:30:55+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -9364,6 +9365,7 @@
                     "type": "tidelift"
                 }
             ],
+            "abandoned": "symfony/mailer",
             "time": "2021-10-18T15:26:12+00:00"
         },
         {
