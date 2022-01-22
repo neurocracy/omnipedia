@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "877e1e4fe425814d528dbf09788c8e29",
+    "content-hash": "a2eef38b7b24084cd744fc811c398294",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -12668,16 +12668,16 @@
         },
         {
             "name": "wikimedia/composer-merge-plugin",
-            "version": "dev-feature/composer-v2",
+            "version": "v2.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/mcaskill/composer-merge-plugin.git",
-                "reference": "b8b8cb4db48720687997fb106ea2953374718450"
+                "url": "https://github.com/wikimedia/composer-merge-plugin.git",
+                "reference": "8ca2ed8ab97c8ebce6b39d9943e9909bb4f18912"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mcaskill/composer-merge-plugin/zipball/b8b8cb4db48720687997fb106ea2953374718450",
-                "reference": "b8b8cb4db48720687997fb106ea2953374718450",
+                "url": "https://api.github.com/repos/wikimedia/composer-merge-plugin/zipball/8ca2ed8ab97c8ebce6b39d9943e9909bb4f18912",
+                "reference": "8ca2ed8ab97c8ebce6b39d9943e9909bb4f18912",
                 "shasum": ""
             },
             "require": {
@@ -12693,27 +12693,16 @@
             "type": "composer-plugin",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.5.x-dev"
+                    "dev-master": "2.x-dev"
                 },
-                "class": "Wikimedia\\Composer\\MergePlugin"
+                "class": "Wikimedia\\Composer\\Merge\\V2\\MergePlugin"
             },
             "autoload": {
                 "psr-4": {
-                    "Wikimedia\\Composer\\": "src/"
+                    "Wikimedia\\Composer\\Merge\\V2\\": "src/"
                 }
             },
-            "scripts": {
-                "coverage": [
-                    "phpunit --log-junit=reports/unitreport.xml --coverage-text --coverage-html=reports/coverage --coverage-clover=reports/coverage.xml",
-                    "phpcs --encoding=utf-8 --standard=PSR2 --report-checkstyle=reports/checkstyle-phpcs.xml --report-full --extensions=php src/* tests/phpunit/*"
-                ],
-                "test": [
-                    "composer validate --no-interaction",
-                    "parallel-lint src tests",
-                    "phpunit",
-                    "phpcs --encoding=utf-8 --standard=PSR2 --extensions=php src/* tests/phpunit/*"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -12725,9 +12714,10 @@
             ],
             "description": "Composer plugin to merge multiple composer.json files",
             "support": {
-                "source": "https://github.com/mcaskill/composer-merge-plugin/tree/feature/composer-v2"
+                "issues": "https://github.com/wikimedia/composer-merge-plugin/issues",
+                "source": "https://github.com/wikimedia/composer-merge-plugin/tree/v2.0.1"
             },
-            "time": "2021-02-08T17:38:06+00:00"
+            "time": "2021-02-24T05:28:06+00:00"
         }
     ],
     "packages-dev": [
@@ -13727,14 +13717,7 @@
             "time": "2019-10-17T18:05:24+00:00"
         }
     ],
-    "aliases": [
-        {
-            "package": "wikimedia/composer-merge-plugin",
-            "version": "dev-feature/composer-v2",
-            "alias": "1.5.0",
-            "alias_normalized": "1.5.0.0"
-        }
-    ],
+    "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/ga_login": 15,
@@ -13744,7 +13727,6 @@
         "drupal/security_review": 15,
         "drupal/session_limit": 10,
         "drupal/tfa": 15,
-        "wikimedia/composer-merge-plugin": 20,
         "drupal/markdown": 5
     },
     "prefer-stable": true,
