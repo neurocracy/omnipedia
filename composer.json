@@ -109,6 +109,9 @@
         "Changes eu_cookie_compliance.js required for subsequent patch to succeed: https://www.drupal.org/project/eu_cookie_compliance/issues/3254209": "https://git.drupalcode.org/project/eu-cookie-compliance/-/merge_requests/48.patch",
         "Withdraw button not visible: https://www.drupal.org/project/eu_cookie_compliance/issues/3257088": "https://git.drupalcode.org/project/eu-cookie-compliance/-/merge_requests/49.patch"
       },
+      "drupal/rules": {
+        "Support upcasting entity IDs to full entity contexts: https://www.drupal.org/project/rules/issues/2800749#comment-14332836": "https://www.drupal.org/files/issues/2021-12-08/2800749-97.upcast.patch"
+      },
       "drupal/security_review": {
         "Refactor trusted hosts check: https://www.drupal.org/project/security_review/issues/3008957": "https://git.drupalcode.org/project/security_review/-/merge_requests/1.patch",
         "Checks\\PrivateFiles: mistakes adjacent \"drupal_private_files\" as being under \"drupal\": https://www.drupal.org/project/security_review/issues/3259051": "https://git.drupalcode.org/project/security_review/-/merge_requests/2.patch"
