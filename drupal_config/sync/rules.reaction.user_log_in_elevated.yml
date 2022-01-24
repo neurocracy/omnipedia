@@ -1,0 +1,98 @@
+uuid: 16761e41-4c00-460c-9e8f-657deb7d7418
+langcode: en
+status: true
+dependencies: {  }
+id: user_log_in_elevated
+label: 'User log in elevated'
+events:
+  -
+    event_name: rules_user_login
+description: 'This sends emails when a user with elevated permissions logs in to both that user and all site administrators.'
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 9f0319bf-7dd8-41ae-9e48-fe2546017826
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: 8dddb575-0ac0-4fac-aa42-3c6c69db6b0a
+    weight: 0
+    conditions:
+      -
+        id: rules_condition
+        uuid: de1fd892-7f56-4ea9-96ef-3691eb1d9501
+        weight: 0
+        condition_id: rules_user_has_role
+        negate: false
+        context_values:
+          roles:
+            - administrator
+            - contributor
+            - editor
+            - moderator
+            - store_manager
+          operation: OR
+        context_mapping:
+          user: '@user.current_user_context:current_user'
+        context_processors:
+          roles:
+            rules_tokens: {  }
+          operation:
+            rules_tokens: {  }
+        provides_mapping: {  }
+  actions:
+    id: rules_action_set
+    uuid: 363801a2-5e89-4922-aace-223ea092923a
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: 5da453a2-870c-4d34-9a1c-695b15d90d4d
+        weight: 0
+        action_id: rules_send_email
+        context_values:
+          to:
+            - '{{ @user.current_user_context:current_user.mail.value }}'
+          subject: 'Log in notification for your Omnipedia account'
+          message: 'Your Omnipedia account was logged in at {{ @rules.current_date_context:current_date | format_date(''long'') }}. If this was you, you can safely ignore this email. Log in page: {{ @rules.site_context:site.login-url }}'
+          reply: ''
+          language: ''
+        context_mapping: {  }
+        context_processors:
+          to:
+            rules_tokens: {  }
+          subject:
+            rules_tokens: {  }
+          message:
+            rules_tokens: {  }
+          reply:
+            rules_tokens: {  }
+          language:
+            rules_tokens: {  }
+        provides_mapping: {  }
+      -
+        id: rules_action
+        uuid: abadf617-253b-4466-aaed-110eda25d71b
+        weight: 0
+        action_id: rules_email_to_users_of_role
+        context_values:
+          roles:
+            - administrator
+          subject: 'Log in notification for elevated user account: {{ @user.current_user_context:current_user.name.value }}'
+          message: 'Logged in at {{ @rules.current_date_context:current_date | format_date(''long'') }}. {{ @user.current_user_context:current_user | entity_url }}'
+          reply: ''
+          language: ''
+        context_mapping: {  }
+        context_processors:
+          roles:
+            rules_tokens: {  }
+          subject:
+            rules_tokens: {  }
+          message:
+            rules_tokens: {  }
+          reply:
+            rules_tokens: {  }
+          language:
+            rules_tokens: {  }
+        provides_mapping: {  }
