@@ -2,12 +2,12 @@ _core:
   default_config_hash: r1PkPDtSv8uPbDtiuPH3x0ALdXOUHzuH7zp8mbp3zeA
 enabled: 1
 required_roles:
+  contributor: contributor
+  moderator: moderator
+  editor: editor
+  store_manager: store_manager
   administrator: administrator
   authenticated: '0'
-  contributor: '0'
-  moderator: '0'
-  editor: '0'
-  store_manager: '0'
 send_plugins: {  }
 login_plugins: {  }
 allowed_validation_plugins:
