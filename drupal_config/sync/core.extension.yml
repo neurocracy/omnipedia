@@ -119,6 +119,7 @@ module:
   redirect: 0
   remove_http_headers: 0
   responsive_image: 0
+  rules: 0
   search_api: 0
   search_api_db: 0
   seckit: 0
@@ -135,6 +136,7 @@ module:
   token: 0
   token_filter: 0
   toolbar: 0
+  typed_data: 0
   update: 0
   user: 0
   views_bulk_edit: 0

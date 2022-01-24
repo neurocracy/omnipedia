@@ -52,6 +52,7 @@
     "drupal/pathauto": "^1.6",
     "drupal/redirect": "^1.6",
     "drupal/remove_http_headers": "^1.0",
+    "drupal/rules": "^3.0@alpha",
     "drupal/seckit": "^2.0",
     "drupal/security_review": "^1.0@alpha",
     "drupal/session_limit": "^2.0@beta",
