@@ -9,6 +9,7 @@ dependencies:
     - devel
     - eu_cookie_compliance
     - media
+    - omnipedia_content_changes
     - system
 _core:
   default_config_hash: pq_mEIu_B4widZN7Ap81iCJSjShFFdcL0jEiCi8VrDk
@@ -21,6 +22,7 @@ permissions:
   - 'access content'
   - 'access devel information'
   - 'access site-wide contact form'
+  - 'build omnipedia_content_changes'
   - 'display eu cookie compliance popup'
   - 'view commerce_product'
   - 'view media'
