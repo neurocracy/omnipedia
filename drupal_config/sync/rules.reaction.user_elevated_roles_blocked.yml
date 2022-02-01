@@ -1,0 +1,80 @@
+uuid: 70c57c44-33d2-4cc8-a9b7-607933639256
+langcode: en
+status: true
+dependencies: {  }
+id: user_elevated_roles_blocked
+label: 'User with elevated role(s) blocked'
+events:
+  -
+    event_name: 'rules_entity_presave:user'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 2097f6eb-bdf8-4c8a-b46f-ccc81948cf10
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: 8dfc1353-63ec-420c-8aeb-4faab23aa8a5
+    weight: 0
+    conditions:
+      -
+        id: rules_condition
+        uuid: df847882-5211-4cc0-a73f-184cea6d8653
+        weight: -50
+        condition_id: rules_entity_is_new
+        negate: true
+        context_values: {  }
+        context_mapping:
+          entity: user
+        context_processors: {  }
+        provides_mapping: {  }
+      -
+        id: rules_condition
+        uuid: 05a69806-1f32-4759-943f-3dcc31c8296b
+        weight: -49
+        condition_id: omnipedia_user_has_elevated_roles
+        negate: false
+        context_values: {  }
+        context_mapping:
+          user: user
+        context_processors: {  }
+        provides_mapping: {  }
+      -
+        id: rules_condition
+        uuid: 565e856a-a323-42c0-8472-14a764387172
+        weight: -48
+        condition_id: rules_user_is_blocked
+        negate: true
+        context_values: {  }
+        context_mapping:
+          user: user_unchanged
+        context_processors: {  }
+        provides_mapping: {  }
+      -
+        id: rules_condition
+        uuid: 3aa46cc1-b4b7-4927-8cb5-22cd36aa6e1d
+        weight: -47
+        condition_id: rules_user_is_blocked
+        negate: false
+        context_values: {  }
+        context_mapping:
+          user: user
+        context_processors: {  }
+        provides_mapping: {  }
+  actions:
+    id: rules_action_set
+    uuid: 110d4512-8d9a-4ee4-a2c0-2fdeeacebae3
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: 631ef344-1959-4cb0-9050-90cb73df528a
+        weight: 0
+        action_id: omnipedia_user_elevated_roles_blocked_dispatch
+        context_values: {  }
+        context_mapping:
+          user: user
+        context_processors: {  }
+        provides_mapping: {  }

@@ -1,0 +1,47 @@
+uuid: 9a103bac-ea6a-414a-9837-603fc17e4a46
+langcode: en
+status: true
+dependencies: {  }
+id: user_elevated_roles_deleted
+label: 'User with elevated role(s) deleted'
+events:
+  -
+    event_name: 'rules_entity_delete:user'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: c23ddb84-9f97-4eee-a4d5-7b7469b7088c
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: ecc5af38-6520-4dc4-b989-48ded0f2c480
+    weight: 0
+    conditions:
+      -
+        id: rules_condition
+        uuid: 33629d50-59a2-4e9a-8aec-45f293cd0ef5
+        weight: 0
+        condition_id: omnipedia_user_has_elevated_roles
+        negate: false
+        context_values: {  }
+        context_mapping:
+          user: user
+        context_processors: {  }
+        provides_mapping: {  }
+  actions:
+    id: rules_action_set
+    uuid: 7630148a-ba58-4a75-bc0c-3f30f9bba0e3
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: 657f3ccf-c9e9-40e2-89bd-bd923d4fb41b
+        weight: 0
+        action_id: omnipedia_user_elevated_roles_deleted_dispatch
+        context_values: {  }
+        context_mapping:
+          user: user
+        context_processors: {  }
+        provides_mapping: {  }

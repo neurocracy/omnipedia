@@ -1,0 +1,47 @@
+uuid: 78f60fb3-604b-420f-99c4-488e55ff0c5c
+langcode: en
+status: true
+dependencies: {  }
+id: user_elevated_roles_created
+label: 'User created with elevated role(s)'
+events:
+  -
+    event_name: 'rules_entity_insert:user'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: f102420e-24d1-439a-ac7e-a991bd33ebec
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: d01344c0-ff27-480f-8984-1701e1ed66d9
+    weight: 0
+    conditions:
+      -
+        id: rules_condition
+        uuid: 79ce0f8b-954a-4f33-a122-3c9443d78714
+        weight: 0
+        condition_id: omnipedia_user_has_elevated_roles
+        negate: false
+        context_values: {  }
+        context_mapping:
+          user: user
+        context_processors: {  }
+        provides_mapping: {  }
+  actions:
+    id: rules_action_set
+    uuid: efba5cf3-b9ed-4157-8a65-a783b6aab015
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: b70df124-1e46-4400-b37d-858fecc6d3a0
+        weight: 0
+        action_id: omnipedia_user_elevated_roles_created_dispatch
+        context_values: {  }
+        context_mapping:
+          user: user
+        context_processors: {  }
+        provides_mapping: {  }

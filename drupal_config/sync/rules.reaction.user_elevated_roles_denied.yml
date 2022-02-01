@@ -1,0 +1,70 @@
+uuid: fb4e9e1a-a3dc-4e48-8ac4-a95c08ebc1ca
+langcode: en
+status: true
+dependencies: {  }
+id: user_elevated_roles_denied
+label: 'User denied elevated role(s)'
+events:
+  -
+    event_name: 'rules_entity_presave:user'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 63573f91-3eab-4bb9-9a82-d9fc29552cf4
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: 4f5ecf14-70a6-4fda-a916-802230364c0a
+    weight: 0
+    conditions:
+      -
+        id: rules_condition
+        uuid: 93316ea8-1a1f-4055-b0a4-5a4a311b0c64
+        weight: -50
+        condition_id: rules_entity_is_new
+        negate: true
+        context_values: {  }
+        context_mapping:
+          entity: user
+        context_processors: {  }
+        provides_mapping: {  }
+      -
+        id: rules_condition
+        uuid: 1ff04d46-010a-42da-8c68-98293b64f515
+        weight: -49
+        condition_id: omnipedia_user_has_elevated_roles
+        negate: false
+        context_values: {  }
+        context_mapping:
+          user: user_unchanged
+        context_processors: {  }
+        provides_mapping: {  }
+      -
+        id: rules_condition
+        uuid: 04b807c9-132b-4772-94b8-8b1b9c357325
+        weight: -48
+        condition_id: omnipedia_user_has_elevated_roles
+        negate: true
+        context_values: {  }
+        context_mapping:
+          user: user
+        context_processors: {  }
+        provides_mapping: {  }
+  actions:
+    id: rules_action_set
+    uuid: f930bdf0-67da-47ae-a48c-a8cb25aee2f7
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: 8318a8ab-a6f4-4efe-9ec7-c0312b67c9b8
+        weight: 0
+        action_id: omnipedia_user_elevated_roles_denied_dispatch
+        context_values: {  }
+        context_mapping:
+          user: user
+          user_unchanged: user_unchanged
+        context_processors: {  }
+        provides_mapping: {  }

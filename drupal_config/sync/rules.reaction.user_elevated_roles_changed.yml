@@ -1,0 +1,70 @@
+uuid: 1a34219e-e2be-4215-83b9-5c7668bc77cf
+langcode: en
+status: true
+dependencies: {  }
+id: user_elevated_roles_changed
+label: 'User with elevated role(s) changed'
+events:
+  -
+    event_name: 'rules_entity_presave:user'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 17eec984-1c4e-4f9c-acd4-d9126491807f
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: 289cabbb-ec87-4614-bc6b-e6efdb1dfb0e
+    weight: 0
+    conditions:
+      -
+        id: rules_condition
+        uuid: bb53c140-7d19-4519-95bd-bdcc871a5e1a
+        weight: -50
+        condition_id: rules_entity_is_new
+        negate: true
+        context_values: {  }
+        context_mapping:
+          entity: user
+        context_processors: {  }
+        provides_mapping: {  }
+      -
+        id: rules_condition
+        uuid: a595483c-35b6-4038-82b5-8421a6999d0c
+        weight: -49
+        condition_id: omnipedia_user_has_elevated_roles
+        negate: false
+        context_values: {  }
+        context_mapping:
+          user: user_unchanged
+        context_processors: {  }
+        provides_mapping: {  }
+      -
+        id: rules_condition
+        uuid: 60ad963c-9fbf-497d-b49f-d7c09ba56208
+        weight: -48
+        condition_id: omnipedia_user_has_elevated_roles
+        negate: false
+        context_values: {  }
+        context_mapping:
+          user: user
+        context_processors: {  }
+        provides_mapping: {  }
+  actions:
+    id: rules_action_set
+    uuid: 1104b097-6204-4eda-9a35-d33638a607ec
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: 42e7af5f-c2c6-4ca0-8e67-ed49d1f591ec
+        weight: 0
+        action_id: omnipedia_user_elevated_roles_changed_dispatch
+        context_values: {  }
+        context_mapping:
+          user: user
+          user_unchanged: user_unchanged
+        context_processors: {  }
+        provides_mapping: {  }
