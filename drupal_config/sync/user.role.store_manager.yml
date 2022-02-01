@@ -11,6 +11,7 @@ dependencies:
     - commerce_store
     - contact
     - contextual
+    - profile
     - shortcut
     - system
     - tfa
@@ -26,6 +27,7 @@ permissions:
   - 'access commerce_product overview'
   - 'access commerce_store overview'
   - 'access contextual links'
+  - 'access profile overview'
   - 'access shortcuts'
   - 'access site in maintenance mode'
   - 'access toolbar'
@@ -35,21 +37,31 @@ permissions:
   - 'administer commerce_payment'
   - 'administer commerce_product'
   - 'create content_access commerce_product'
+  - 'create customer profile'
   - 'create default commerce_order'
   - 'delete any content_access commerce_product'
+  - 'delete any customer profile'
   - 'delete default commerce_order'
   - 'delete own content_access commerce_product'
+  - 'delete own customer profile'
   - 'manage default commerce_order_item'
   - 'setup own tfa'
   - 'update any content_access commerce_product'
+  - 'update any customer profile'
   - 'update any online commerce_store'
   - 'update default commerce_order'
   - 'update own content_access commerce_product'
+  - 'update own customer profile'
   - 'update own online commerce_store'
+  - 'view any customer profile'
+  - 'view any profile'
   - 'view commerce_order'
   - 'view commerce_store'
   - 'view content_access commerce_product'
   - 'view default commerce_order'
   - 'view online commerce_store'
+  - 'view own customer profile'
+  - 'view own profile'
   - 'view own unpublished commerce_product'
+  - 'view own unpublished profile'
   - 'view the administration theme'
