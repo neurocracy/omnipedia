@@ -21,25 +21,14 @@ expression:
     conditions:
       -
         id: rules_condition
-        uuid: de1fd892-7f56-4ea9-96ef-3691eb1d9501
+        uuid: 6e791fdf-3c46-42e7-ac12-958bc1b60d88
         weight: 0
-        condition_id: rules_user_has_role
+        condition_id: omnipedia_user_has_elevated_roles
         negate: false
-        context_values:
-          roles:
-            - administrator
-            - contributor
-            - editor
-            - moderator
-            - store_manager
-          operation: OR
+        context_values: {  }
         context_mapping:
           user: '@user.current_user_context:current_user'
-        context_processors:
-          roles:
-            rules_tokens: {  }
-          operation:
-            rules_tokens: {  }
+        context_processors: {  }
         provides_mapping: {  }
   actions:
     id: rules_action_set
