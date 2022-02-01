@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   module:
+    - ban
     - contact
     - contextual
     - flood_control
@@ -26,6 +27,7 @@ permissions:
   - 'access user contact forms'
   - 'access user profiles'
   - 'administer users'
+  - 'ban IP addresses'
   - 'setup own tfa'
   - 'show term permission form on term page'
   - 'show term permissions on node edit page'
