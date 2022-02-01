@@ -2,8 +2,8 @@ uuid: 16761e41-4c00-460c-9e8f-657deb7d7418
 langcode: en
 status: true
 dependencies: {  }
-id: user_log_in_elevated
-label: 'User log in elevated'
+id: user_elevated_roles_logged_in
+label: 'User with elevated roles(s) logged in'
 events:
   -
     event_name: rules_user_login
