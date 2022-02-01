@@ -1,0 +1,10 @@
+uuid: 8b9a5a15-9069-4a68-b5e6-9767afae3915
+langcode: en
+status: true
+dependencies: {  }
+id: user_elevated_roles_events
+label: 'Users with elevated role(s) events'
+types:
+  omnipedia_user_roles_elevated: omnipedia_user_roles_elevated
+levels: {  }
+message: ''
