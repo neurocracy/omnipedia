@@ -10,16 +10,25 @@ dependencies:
     - commerce_product
     - commerce_store
     - contact
+    - contextual
+    - shortcut
+    - system
     - tfa
+    - toolbar
 id: store_manager
 label: 'store manager'
 weight: -5
 is_admin: null
 permissions:
+  - 'access administration pages'
   - 'access commerce administration pages'
   - 'access commerce_order overview'
   - 'access commerce_product overview'
   - 'access commerce_store overview'
+  - 'access contextual links'
+  - 'access shortcuts'
+  - 'access site in maintenance mode'
+  - 'access toolbar'
   - 'access user contact forms'
   - 'administer commerce_currency'
   - 'administer commerce_order'
@@ -43,3 +52,4 @@ permissions:
   - 'view default commerce_order'
   - 'view online commerce_store'
   - 'view own unpublished commerce_product'
+  - 'view the administration theme'
