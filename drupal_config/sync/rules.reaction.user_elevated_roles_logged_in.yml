@@ -85,3 +85,13 @@ expression:
           language:
             rules_tokens: {  }
         provides_mapping: {  }
+      -
+        id: rules_action
+        uuid: bfc90d80-6f12-41dc-8256-0d24c3df03f2
+        weight: 0
+        action_id: omnipedia_user_elevated_roles_logged_in_dispatch
+        context_values: {  }
+        context_mapping:
+          user: '@user.current_user_context:current_user'
+        context_processors: {  }
+        provides_mapping: {  }
