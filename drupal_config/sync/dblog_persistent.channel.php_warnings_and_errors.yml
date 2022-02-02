@@ -1,0 +1,16 @@
+uuid: c994fdc1-14cf-4b29-93ee-27a5ca6ad82f
+langcode: en
+status: true
+dependencies: {  }
+id: php_warnings_and_errors
+label: 'PHP warnings and errors'
+types:
+  php: php
+levels:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+message: ''
