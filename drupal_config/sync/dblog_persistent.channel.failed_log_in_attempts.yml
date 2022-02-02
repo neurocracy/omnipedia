@@ -1,0 +1,10 @@
+uuid: f0dce0eb-6039-4d2b-b2ce-a73fcf8d483f
+langcode: en
+status: true
+dependencies: {  }
+id: failed_log_in_attempts
+label: 'Failed log in attempts'
+types:
+  user: user
+levels: {  }
+message: 'Login attempt failed'
