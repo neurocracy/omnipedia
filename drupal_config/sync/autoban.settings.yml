@@ -16,6 +16,7 @@ autoban_dblog_type_exclude: |-
   autoban
   cron
   csp
+  search_api
   system
   user
 autoban_threshold_analyze: '5'
