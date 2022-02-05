@@ -86,6 +86,7 @@ module:
   metatag_mobile: 0
   metatag_open_graph: 0
   metatag_twitter_cards: 0
+  monolog: 0
   node: 0
   omnipedia_access: 0
   omnipedia_attached_data: 0
@@ -94,6 +95,7 @@ module:
   omnipedia_content: 0
   omnipedia_content_changes: 0
   omnipedia_core: 0
+  omnipedia_logger: 0
   omnipedia_media: 0
   omnipedia_menu: 0
   omnipedia_search: 0
