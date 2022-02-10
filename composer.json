@@ -63,7 +63,7 @@
     "drupal/views_bulk_edit": "^2.5",
     "drupal/views_bulk_operations": "^3.10",
     "drupal/webp": "^1.0",
-    "drush/drush": "11.0.0",
+    "drush/drush": "^11.0",
     "oomphinc/composer-installers-extender": "^2.0",
     "wikimedia/composer-merge-plugin": "^2.0"
   },
