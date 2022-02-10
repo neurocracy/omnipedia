@@ -1,0 +1,19 @@
+uuid: 702bb725-24de-4176-857f-86b6411e07c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_subject
+    - message.template.security_event
+id: message.security_event.field_subject
+field_name: field_subject
+entity_type: message
+bundle: security_event
+label: Subject
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

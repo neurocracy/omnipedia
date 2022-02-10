@@ -1,0 +1,20 @@
+uuid: f7208169-39de-4e4e-9fcc-cfe65c88ef2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.message.security_event.field_subject
+    - message.template.security_event
+id: message.security_event.default
+targetEntityType: message
+bundle: security_event
+mode: default
+content:
+  partial_0:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_subject: true
+  search_api_excerpt: true

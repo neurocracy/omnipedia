@@ -1,0 +1,25 @@
+uuid: 18db549c-3d42-43e7-af58-301f96aacea1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.message.mail_subject
+    - field.field.message.security_event.field_subject
+    - message.template.security_event
+id: message.security_event.mail_subject
+targetEntityType: message
+bundle: security_event
+mode: mail_subject
+content:
+  field_subject:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  partial_0: true
+  partial_1: true
+  search_api_excerpt: true

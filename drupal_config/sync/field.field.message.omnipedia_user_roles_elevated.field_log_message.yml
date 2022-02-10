@@ -1,0 +1,21 @@
+uuid: dd6785b5-f0e8-49c0-9363-4c3a54570f93
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_log_message
+    - message.template.omnipedia_user_roles_elevated
+  module:
+    - text
+id: message.omnipedia_user_roles_elevated.field_log_message
+field_name: field_log_message
+entity_type: message
+bundle: omnipedia_user_roles_elevated
+label: 'Log message'
+description: 'The message logged for this event.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

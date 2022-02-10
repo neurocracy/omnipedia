@@ -1,0 +1,15 @@
+uuid: e817a7f8-937c-45f0-8fed-58beccd16fb3
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.email_user
+  module:
+    - flag
+id: flag_action.email_user_flag
+label: 'Send email'
+type: user
+plugin: 'flag_action:email_user_flag'
+configuration:
+  flag_id: email_user
+  flag_action: flag

@@ -1,0 +1,28 @@
+uuid: 325af7f0-38a3-48e1-92ee-28814a81e571
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.message.mail_body
+    - field.field.message.omnipedia_user_roles_elevated.field_log_message
+    - field.field.message.omnipedia_user_roles_elevated.field_user_target
+    - field.field.message.omnipedia_user_roles_elevated.field_user_target_name
+    - message.template.omnipedia_user_roles_elevated
+id: message.omnipedia_user_roles_elevated.mail_body
+targetEntityType: message
+bundle: omnipedia_user_roles_elevated
+mode: mail_body
+content:
+  partial_0:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  partial_1:
+    weight: 0
+    region: content
+hidden:
+  field_log_message: true
+  field_user_target: true
+  field_user_target_name: true
+  search_api_excerpt: true

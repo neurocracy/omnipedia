@@ -1,0 +1,19 @@
+uuid: 9883291b-868a-4f12-a4f1-f2f3d21a1d49
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_user_target_name
+    - message.template.omnipedia_user_roles_elevated
+id: message.omnipedia_user_roles_elevated.field_user_target_name
+field_name: field_user_target_name
+entity_type: message
+bundle: omnipedia_user_roles_elevated
+label: 'User target name'
+description: 'The account name of the user that was changed.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

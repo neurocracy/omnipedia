@@ -10,6 +10,7 @@ dependencies:
     - field.field.user.user.field_password_expiration
     - field.field.user.user.field_pending_expire_sent
     - field.field.user.user.field_show_wikipedia_links
+    - field.field.user.user.message_subscribe_email
     - field.field.user.user.user_picture
   module:
     - user
@@ -46,5 +47,6 @@ hidden:
   field_password_expiration: true
   field_pending_expire_sent: true
   field_show_wikipedia_links: true
+  message_subscribe_email: true
   path: true
   user_picture: true

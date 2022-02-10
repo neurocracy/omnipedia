@@ -1,0 +1,24 @@
+uuid: 6c927cbe-a05e-4faf-9aa2-171fc1f5c438
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.message.mail_body
+    - field.field.message.security_event.field_subject
+    - message.template.security_event
+id: message.security_event.mail_body
+targetEntityType: message
+bundle: security_event
+mode: mail_body
+content:
+  partial_0:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  partial_1:
+    weight: 0
+    region: content
+hidden:
+  field_subject: true
+  search_api_excerpt: true

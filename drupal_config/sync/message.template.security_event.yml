@@ -1,0 +1,19 @@
+uuid: 0d4bcf87-03cf-4b01-a8c1-d4a8bb790cdd
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.wiki_html
+template: security_event
+label: 'Security event'
+description: ''
+text:
+  -
+    value: "The following events for [log-channel-name] have been logged:\r\n\r\n[log-channel-records]\r\n\r\nMore events may have been logged since. [log-channel-link]\r\n\r\n--  [site:name] team"
+    format: wiki_html
+settings:
+  'token options':
+    clear: false
+    'token replace': true
+  purge_override: false
+  purge_methods: {  }

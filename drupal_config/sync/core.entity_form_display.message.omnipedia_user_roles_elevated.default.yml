@@ -1,0 +1,43 @@
+uuid: 4b0d4f35-267d-4529-88da-f2455285bbd0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.message.omnipedia_user_roles_elevated.field_log_message
+    - field.field.message.omnipedia_user_roles_elevated.field_user_target
+    - field.field.message.omnipedia_user_roles_elevated.field_user_target_name
+    - message.template.omnipedia_user_roles_elevated
+  module:
+    - text
+id: message.omnipedia_user_roles_elevated.default
+targetEntityType: message
+bundle: omnipedia_user_roles_elevated
+mode: default
+content:
+  field_log_message:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_user_target:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_user_target_name:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

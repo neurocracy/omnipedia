@@ -1,0 +1,15 @@
+uuid: af04e439-5043-474e-9ac1-a541b96d6466
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.subscribe_node
+  module:
+    - flag
+id: flag_action.subscribe_node_flag
+label: Subscribe
+type: node
+plugin: 'flag_action:subscribe_node_flag'
+configuration:
+  flag_id: subscribe_node
+  flag_action: flag

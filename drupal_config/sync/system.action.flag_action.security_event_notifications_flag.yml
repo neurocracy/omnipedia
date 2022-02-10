@@ -1,0 +1,15 @@
+uuid: a5694cf2-c02d-4e7e-9289-98f449a9ce00
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.security_event_notifications
+  module:
+    - flag
+id: flag_action.security_event_notifications_flag
+label: Subscribe
+type: user
+plugin: 'flag_action:security_event_notifications_flag'
+configuration:
+  flag_id: security_event_notifications
+  flag_action: flag

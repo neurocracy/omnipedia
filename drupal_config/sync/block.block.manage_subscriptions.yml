@@ -1,0 +1,20 @@
+uuid: be48eafc-7874-4308-a044-d2a53b981191
+langcode: en
+status: true
+dependencies:
+  module:
+    - message_subscribe_ui
+  theme:
+    - omnipedia_site
+id: manage_subscriptions
+theme: omnipedia_site
+region: footer
+weight: 0
+provider: null
+plugin: message_subscribe_ui_block
+settings:
+  id: message_subscribe_ui_block
+  label: 'Manage subscriptions'
+  label_display: visible
+  provider: message_subscribe_ui
+visibility: {  }

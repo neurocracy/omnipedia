@@ -1,0 +1,21 @@
+uuid: 391f3f5f-d670-48ff-bbf9-79aabbfa2672
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.message.security_event.field_subject
+    - message.template.security_event
+id: message.security_event.default
+targetEntityType: message
+bundle: security_event
+mode: default
+content:
+  field_subject:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

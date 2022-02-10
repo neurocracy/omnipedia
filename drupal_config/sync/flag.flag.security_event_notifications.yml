@@ -1,0 +1,30 @@
+uuid: 868f75d6-4078-4801-bad2-0f29c84e1234
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: security_event_notifications
+label: 'Security event notifications'
+bundles: {  }
+entity_type: user
+global: false
+flag_short: Subscribe
+flag_long: ''
+flag_message: ''
+unflag_short: Unsubscribe
+unflag_long: ''
+unflag_message: ''
+unflag_denied_text: ''
+weight: 0
+flag_type: 'entity:user'
+link_type: ajax_link
+flagTypeConfig:
+  show_in_links: {  }
+  show_as_field: true
+  show_on_form: true
+  show_contextual_link: false
+  extra_permissions:
+    owner: owner
+  show_on_profile: true
+linkTypeConfig: {  }

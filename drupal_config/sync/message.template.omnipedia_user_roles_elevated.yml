@@ -1,0 +1,19 @@
+uuid: d7986e12-11e2-4d12-a11e-b0f49a4e9c70
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.wiki_html
+template: omnipedia_user_roles_elevated
+label: 'User with elevated role(s) event'
+description: ''
+text:
+  -
+    value: '[message:field_log_message]'
+    format: wiki_html
+settings:
+  'token options':
+    clear: false
+    'token replace': true
+  purge_override: false
+  purge_methods: {  }

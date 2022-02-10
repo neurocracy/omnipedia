@@ -1,0 +1,15 @@
+uuid: 08c2cd2a-de1f-49fa-bbcf-9161d63395d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.security_event_notifications
+  module:
+    - flag
+id: flag_action.security_event_notifications_unflag
+label: Unsubscribe
+type: user
+plugin: 'flag_action:security_event_notifications_unflag'
+configuration:
+  flag_id: security_event_notifications
+  flag_action: unflag

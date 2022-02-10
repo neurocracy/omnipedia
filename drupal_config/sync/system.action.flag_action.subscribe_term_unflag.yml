@@ -1,0 +1,15 @@
+uuid: 86841fdf-9816-435a-8731-40fe214bf08a
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.subscribe_term
+  module:
+    - flag
+id: flag_action.subscribe_term_unflag
+label: Unsubscribe
+type: taxonomy_term
+plugin: 'flag_action:subscribe_term_unflag'
+configuration:
+  flag_id: subscribe_term
+  flag_action: unflag
