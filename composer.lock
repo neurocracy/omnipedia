@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f197072c8ae3ff4b19f9fb8cf75a86fd",
+    "content-hash": "1d1f47e586e4f5c93db77e7c25787648",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -6105,6 +6105,54 @@
             "homepage": "http://drupal.org/project/state_machine",
             "support": {
                 "source": "https://git.drupalcode.org/project/state_machine"
+            }
+        },
+        {
+            "name": "drupal/subpathauto",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/subpathauto.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/subpathauto-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "58d9107beffe5d4c43a4c6dd6cbb2e043d5b4d1e"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1637313101",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "lauriii",
+                    "homepage": "https://www.drupal.org/user/1078742"
+                }
+            ],
+            "description": "Provides support for extending sub-paths of URL aliases.",
+            "homepage": "https://www.drupal.org/project/subpathauto",
+            "support": {
+                "source": "https://git.drupalcode.org/project/subpathauto"
             }
         },
         {

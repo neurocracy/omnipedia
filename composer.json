@@ -57,6 +57,7 @@
     "drupal/security_review": "^1.0@alpha",
     "drupal/session_limit": "^2.0@beta",
     "drupal/sodium": "^2.1",
+    "drupal/subpathauto": "^1.2",
     "drupal/swiftmailer": "^2.0",
     "drupal/tfa": "^1.0@alpha",
     "drupal/token_filter": "^1.2",

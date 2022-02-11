@@ -130,6 +130,7 @@ module:
   shortcut: 0
   sodium: 0
   state_machine: 0
+  subpathauto: 0
   swiftmailer: 0
   system: 0
   taxonomy: 0
