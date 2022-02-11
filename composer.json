@@ -48,7 +48,6 @@
     "drupal/media_entity_file_replace": "^1.0",
     "drupal/metatag": "^1.11",
     "drupal/password_policy": "^3.0",
-    "drupal/path_alias_xt": "1.x-dev",
     "drupal/pathauto": "^1.6",
     "drupal/redirect": "^1.6",
     "drupal/remove_http_headers": "^1.0",

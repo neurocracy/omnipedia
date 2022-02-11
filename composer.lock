@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1d1f47e586e4f5c93db77e7c25787648",
+    "content-hash": "d221fcbb3e3bcc8818d7803318741f85",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -5157,55 +5157,6 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/password_policy",
                 "issues": "https://www.drupal.org/project/issues/password_policy"
-            }
-        },
-        {
-            "name": "drupal/path_alias_xt",
-            "version": "dev-1.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/path_alias_xt.git",
-                "reference": "10ef76dd3eb25bc1342195336291ded3f2d8cc7e"
-            },
-            "require": {
-                "drupal/core": "^8.7.7 || ^9"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.x-dev",
-                    "datestamp": "1590299862",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "RdeBoer",
-                    "homepage": "https://www.drupal.org/user/404007"
-                },
-                {
-                    "name": "adriancid",
-                    "homepage": "https://www.drupal.org/user/1962106"
-                },
-                {
-                    "name": "sdstyles",
-                    "homepage": "https://www.drupal.org/user/1420228"
-                }
-            ],
-            "description": "Automatically extend path aliases to include tabs, like <em>about-us/edit</em> for <em>node/123/edit</em>.<br> Allow these aliases to be entered in page specification wild-cards, <em>about-us*</em>, e.g for block visibility.",
-            "homepage": "https://www.drupal.org/project/path_alias_xt",
-            "support": {
-                "source": "https://git.drupalcode.org/project/path_alias_xt"
             }
         },
         {
@@ -14047,7 +13998,6 @@
         "drupal/ga_login": 15,
         "drupal/gin": 20,
         "drupal/gin_toolbar": 10,
-        "drupal/path_alias_xt": 20,
         "drupal/rules": 15,
         "drupal/security_review": 15,
         "drupal/session_limit": 10,
