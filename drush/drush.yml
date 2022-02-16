@@ -1,4 +1,12 @@
 command:
+
+  updatedb:
+    options:
+      # Don't clear the cache by default to avoid unnecessary work.
+      #
+      # @see https://www.bounteous.com/insights/2020/03/12/automated-drupal-deployment-and-rollback-recipes/#don%E2%80%99t-clear-all-caches-instead-selectively-clear-what-you-need
+      cache-clear: 0
+
   user:
     login:
       options:
