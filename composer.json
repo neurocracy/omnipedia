@@ -171,7 +171,8 @@
         "drupal/modules/omnipedia/omnipedia_logger/composer.json",
         "drupal/modules/omnipedia/omnipedia_media/composer.json",
         "drupal/modules/omnipedia/omnipedia_search/composer.json",
-        "drupal/modules/omnipedia/omnipedia_user/composer.json"
+        "drupal/modules/omnipedia/omnipedia_user/composer.json",
+        "drupal/themes/omnipedia/omnipedia_site/composer.json"
       ],
       "replace": false,
       "ignore-duplicates": true,
