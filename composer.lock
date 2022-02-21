@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2d1dc664f5486a1a04977351a5d42654",
+    "content-hash": "d79dd9a66488cab52e979550242a5a08",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -8365,6 +8365,64 @@
             ]
         },
         {
+            "name": "npm-asset/workbox-core",
+            "version": "5.1.4",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/workbox-core/-/workbox-core-5.1.4.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/workbox-precaching",
+            "version": "5.1.4",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/workbox-precaching/-/workbox-precaching-5.1.4.tgz"
+            },
+            "require": {
+                "npm-asset/workbox-core": ">=5.1.4,<6.0.0"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/workbox-routing",
+            "version": "5.1.4",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/workbox-routing/-/workbox-routing-5.1.4.tgz"
+            },
+            "require": {
+                "npm-asset/workbox-core": ">=5.1.4,<6.0.0"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/workbox-strategies",
+            "version": "5.1.4",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/workbox-strategies/-/workbox-strategies-5.1.4.tgz"
+            },
+            "require": {
+                "npm-asset/workbox-core": ">=5.1.4,<6.0.0",
+                "npm-asset/workbox-routing": ">=5.1.4,<6.0.0"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
             "name": "oomphinc/composer-installers-extender",
             "version": "2.0.1",
             "source": {
@@ -14002,7 +14060,6 @@
         "drupal/security_review": 15,
         "drupal/session_limit": 10,
         "drupal/tfa": 15,
-        "wikimedia/composer-merge-plugin": 20,
         "drupal/markdown": 5
     },
     "prefer-stable": true,
