@@ -3,15 +3,48 @@ _core:
 site_name: Omnipedia
 short_name: Omnipedia
 description: ''
-start_url: /
+start_url: '/?source=pwa'
+scope: /
 lang: en
 theme_color: '#0d47a1'
 background_color: '#000000'
 display: standalone
 default_image: '0'
-urls_to_cache: ''
-urls_to_exclude: "admin/.*\r\nuser/.*"
 offline_page: /offline
 cache_version: '1'
 cross_origin: false
 skip_waiting: false
+cache_assets:
+  image:
+    label: Images
+    strategy: CacheFirst
+    limit_max_size: true
+    max_size: 350
+    external: false
+  script:
+    label: 'Scripts (JavaScript)'
+    strategy: StaleWhileRevalidate
+    limit_max_size: false
+    max_size: 500
+    external: true
+  style:
+    label: 'Stylesheets (CSS)'
+    strategy: StaleWhileRevalidate
+    limit_max_size: false
+    max_size: 300
+    external: true
+  font:
+    label: Fonts
+    strategy: CacheFirst
+    limit_max_size: false
+    max_size: 1000
+    external: true
+cache_exclude:
+  - '^/admin/.*'
+  - '^/user/reset/.*'
+cache_strategies_pages: {  }
+debug: true
+phone_home: true
+precache_assets: {  }
+precache_pages: {  }
+preprocess_serviceworker: true

@@ -8366,10 +8366,10 @@
         },
         {
             "name": "npm-asset/workbox-core",
-            "version": "5.1.4",
+            "version": "6.5.1",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/workbox-core/-/workbox-core-5.1.4.tgz"
+                "url": "https://registry.npmjs.org/workbox-core/-/workbox-core-6.5.1.tgz"
             },
             "type": "npm-asset",
             "license": [
@@ -8378,13 +8378,15 @@
         },
         {
             "name": "npm-asset/workbox-precaching",
-            "version": "5.1.4",
+            "version": "6.5.1",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/workbox-precaching/-/workbox-precaching-5.1.4.tgz"
+                "url": "https://registry.npmjs.org/workbox-precaching/-/workbox-precaching-6.5.1.tgz"
             },
             "require": {
-                "npm-asset/workbox-core": ">=5.1.4,<6.0.0"
+                "npm-asset/workbox-core": "6.5.1",
+                "npm-asset/workbox-routing": "6.5.1",
+                "npm-asset/workbox-strategies": "6.5.1"
             },
             "type": "npm-asset",
             "license": [
@@ -8393,13 +8395,13 @@
         },
         {
             "name": "npm-asset/workbox-routing",
-            "version": "5.1.4",
+            "version": "6.5.1",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/workbox-routing/-/workbox-routing-5.1.4.tgz"
+                "url": "https://registry.npmjs.org/workbox-routing/-/workbox-routing-6.5.1.tgz"
             },
             "require": {
-                "npm-asset/workbox-core": ">=5.1.4,<6.0.0"
+                "npm-asset/workbox-core": "6.5.1"
             },
             "type": "npm-asset",
             "license": [
@@ -8408,14 +8410,13 @@
         },
         {
             "name": "npm-asset/workbox-strategies",
-            "version": "5.1.4",
+            "version": "6.5.1",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/workbox-strategies/-/workbox-strategies-5.1.4.tgz"
+                "url": "https://registry.npmjs.org/workbox-strategies/-/workbox-strategies-6.5.1.tgz"
             },
             "require": {
-                "npm-asset/workbox-core": ">=5.1.4,<6.0.0",
-                "npm-asset/workbox-routing": ">=5.1.4,<6.0.0"
+                "npm-asset/workbox-core": "6.5.1"
             },
             "type": "npm-asset",
             "license": [
