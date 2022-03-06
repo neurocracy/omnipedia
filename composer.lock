@@ -293,16 +293,16 @@
         },
         {
             "name": "chillerlan/php-qrcode",
-            "version": "4.3.2",
+            "version": "4.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chillerlan/php-qrcode.git",
-                "reference": "b625396e0752d79747a55205ae7e191eeb459dcd"
+                "reference": "6356b246948ac1025882b3f55e7c68ebd4515ae3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chillerlan/php-qrcode/zipball/b625396e0752d79747a55205ae7e191eeb459dcd",
-                "reference": "b625396e0752d79747a55205ae7e191eeb459dcd",
+                "url": "https://api.github.com/repos/chillerlan/php-qrcode/zipball/6356b246948ac1025882b3f55e7c68ebd4515ae3",
+                "reference": "6356b246948ac1025882b3f55e7c68ebd4515ae3",
                 "shasum": ""
             },
             "require": {
@@ -355,7 +355,7 @@
             ],
             "support": {
                 "issues": "https://github.com/chillerlan/php-qrcode/issues",
-                "source": "https://github.com/chillerlan/php-qrcode/tree/4.3.2"
+                "source": "https://github.com/chillerlan/php-qrcode/tree/4.3.3"
             },
             "funding": [
                 {
@@ -367,7 +367,7 @@
                     "type": "ko_fi"
                 }
             ],
-            "time": "2021-11-18T08:46:03+00:00"
+            "time": "2021-11-25T22:38:09+00:00"
         },
         {
             "name": "chillerlan/php-settings-container",
@@ -6946,12 +6946,12 @@
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
-                    "HTMLPurifier": "library/"
-                },
                 "files": [
                     "library/HTMLPurifier.composer.php"
                 ],
+                "psr-0": {
+                    "HTMLPurifier": "library/"
+                },
                 "exclude-from-classmap": [
                     "/library/HTMLPurifier/Language/"
                 ]
@@ -6980,16 +6980,16 @@
         },
         {
             "name": "firebase/php-jwt",
-            "version": "v5.5.1",
+            "version": "v6.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/firebase/php-jwt.git",
-                "reference": "83b609028194aa042ea33b5af2d41a7427de80e6"
+                "reference": "0541cba75ab108ef901985e68055a92646c73534"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/83b609028194aa042ea33b5af2d41a7427de80e6",
-                "reference": "83b609028194aa042ea33b5af2d41a7427de80e6",
+                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/0541cba75ab108ef901985e68055a92646c73534",
+                "reference": "0541cba75ab108ef901985e68055a92646c73534",
                 "shasum": ""
             },
             "require": {
@@ -7031,9 +7031,9 @@
             ],
             "support": {
                 "issues": "https://github.com/firebase/php-jwt/issues",
-                "source": "https://github.com/firebase/php-jwt/tree/v5.5.1"
+                "source": "https://github.com/firebase/php-jwt/tree/v6.0.0"
             },
-            "time": "2021-11-08T20:18:51+00:00"
+            "time": "2022-01-24T15:18:34+00:00"
         },
         {
             "name": "grasmash/expander",
@@ -7123,12 +7123,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\": "src/"
-                },
                 "files": [
                     "src/functions_include.php"
-                ]
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -9335,25 +9335,25 @@
         },
         {
             "name": "sainsburys/guzzle-oauth2-plugin",
-            "version": "v3.0.5",
+            "version": "v3.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sainsburys/guzzle-oauth2-plugin.git",
-                "reference": "485edd64870dd951f8fc6ec362296f11787194bf"
+                "reference": "6d660f80c4d0b38bc3c49c581632170a31a58adb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sainsburys/guzzle-oauth2-plugin/zipball/485edd64870dd951f8fc6ec362296f11787194bf",
-                "reference": "485edd64870dd951f8fc6ec362296f11787194bf",
+                "url": "https://api.github.com/repos/Sainsburys/guzzle-oauth2-plugin/zipball/6d660f80c4d0b38bc3c49c581632170a31a58adb",
+                "reference": "6d660f80c4d0b38bc3c49c581632170a31a58adb",
                 "shasum": ""
             },
             "require": {
-                "firebase/php-jwt": "^3.0|^4.0|^5.0",
+                "firebase/php-jwt": "^3.0|^4.0|^5.0|^6.0",
                 "guzzlehttp/guzzle": "^6.0",
                 "php": ">=5.6"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8"
+                "phpunit/phpunit": "^5.7"
             },
             "type": "library",
             "autoload": {
@@ -9382,9 +9382,9 @@
             "description": "An OAuth2 middleware for Guzzle",
             "support": {
                 "issues": "https://github.com/Sainsburys/guzzle-oauth2-plugin/issues",
-                "source": "https://github.com/Sainsburys/guzzle-oauth2-plugin/tree/master"
+                "source": "https://github.com/Sainsburys/guzzle-oauth2-plugin/tree/v3.0.6"
             },
-            "time": "2017-11-07T13:08:06+00:00"
+            "time": "2022-02-08T10:15:15+00:00"
         },
         {
             "name": "stack/builder",
@@ -9442,16 +9442,16 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v7.114.0",
+            "version": "v7.116.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "63be231686c6874befb5b3a47fb8effb4c30b78b"
+                "reference": "7a39f594f213ed3f443a95adf769d1ecbc8393e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/63be231686c6874befb5b3a47fb8effb4c30b78b",
-                "reference": "63be231686c6874befb5b3a47fb8effb4c30b78b",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/7a39f594f213ed3f443a95adf769d1ecbc8393e7",
+                "reference": "7a39f594f213ed3f443a95adf769d1ecbc8393e7",
                 "shasum": ""
             },
             "require": {
@@ -9496,9 +9496,9 @@
             ],
             "support": {
                 "issues": "https://github.com/stripe/stripe-php/issues",
-                "source": "https://github.com/stripe/stripe-php/tree/v7.114.0"
+                "source": "https://github.com/stripe/stripe-php/tree/v7.116.0"
             },
-            "time": "2022-02-15T22:48:31+00:00"
+            "time": "2022-03-02T15:51:15+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -10018,16 +10018,16 @@
         },
         {
             "name": "symfony/dom-crawler",
-            "version": "v4.4.37",
+            "version": "v4.4.39",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dom-crawler.git",
-                "reference": "60d36408a3a48500bcc6e30d9f831e51d04d7fa4"
+                "reference": "4e9215a8b533802ba84a3cc5bd3c43103e7a6dc3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/60d36408a3a48500bcc6e30d9f831e51d04d7fa4",
-                "reference": "60d36408a3a48500bcc6e30d9f831e51d04d7fa4",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/4e9215a8b533802ba84a3cc5bd3c43103e7a6dc3",
+                "reference": "4e9215a8b533802ba84a3cc5bd3c43103e7a6dc3",
                 "shasum": ""
             },
             "require": {
@@ -10072,7 +10072,7 @@
             "description": "Eases DOM navigation for HTML and XML documents",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/dom-crawler/tree/v4.4.37"
+                "source": "https://github.com/symfony/dom-crawler/tree/v4.4.39"
             },
             "funding": [
                 {
@@ -10088,7 +10088,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-01-02T09:41:36+00:00"
+            "time": "2022-02-25T10:38:15+00:00"
         },
         {
             "name": "symfony/error-handler",
