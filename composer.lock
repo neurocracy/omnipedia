@@ -4124,7 +4124,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin.git",
-                "reference": "a57798837fc980a4a8687de5cf1230cdcc23b59b"
+                "reference": "290b044538ed37d5d117636a721621a109c6e7fc"
             },
             "require": {
                 "drupal/core": "^8.9 || ^9 || ^10",
@@ -4136,8 +4136,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-alpha37+59-dev",
-                    "datestamp": "1644779597",
+                    "version": "8.x-3.0-alpha37+68-dev",
+                    "datestamp": "1645556720",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
