@@ -19,7 +19,7 @@ cache_assets:
     label: Images
     strategy: CacheFirst
     limit_max_size: true
-    max_size: 350
+    max_size: 1000
     external: false
   script:
     label: 'Scripts (JavaScript)'
