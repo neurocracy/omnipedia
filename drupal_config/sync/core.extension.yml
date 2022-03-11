@@ -98,6 +98,7 @@ module:
   omnipedia_logger: 0
   omnipedia_media: 0
   omnipedia_menu: 0
+  omnipedia_pwa: 0
   omnipedia_search: 0
   omnipedia_user: 0
   options: 0
