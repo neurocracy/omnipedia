@@ -44,7 +44,10 @@ cache_exclude:
   - '^/user/reset/.*'
 cache_strategies_pages: {  }
 debug: true
-phone_home: true
+phone_home:
+  enable: true
+  wait_idle: 600
+  wait_requests: 10
 precache_assets: {  }
 precache_pages: {  }
 preprocess_serviceworker: true
