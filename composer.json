@@ -39,7 +39,7 @@
     "drupal/fancy_file_delete": "^2.0",
     "drupal/flood_control": "^2.1",
     "drupal/ga_login": "^1.0@alpha",
-    "drupal/gin": "3.x-dev@dev",
+    "drupal/gin": "^3.0@beta",
     "drupal/gin_toolbar": "^1.0@beta",
     "drupal/honeypot": "^2.0",
     "drupal/key": "^1.14",
