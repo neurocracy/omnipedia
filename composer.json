@@ -118,9 +118,6 @@
       },
       "drupal/session_limit": {
         "Displayed message should be configurable: https://www.drupal.org/project/session_limit/issues/2794553": "https://www.drupal.org/files/issues/2022-01-12/session_limit-configurable-message-2794553-19.patch"
-      },
-      "drupal/webp": {
-        "A recent commit causes image generation to fail on Windows platforms: https://www.drupal.org/project/webp/issues/3161795#comment-14096421 ": "https://www.drupal.org/files/issues/2021-05-07/webp-replace-file-exists-call-with-entity-load-to-fix-image-generation-3161795-16.patch"
       }
     },
     "drupal-scaffold": {
