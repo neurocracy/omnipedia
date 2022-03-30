@@ -1,0 +1,35 @@
+From 57d075a7a7eafde45e0f572ebb883a242c9b2a43 Mon Sep 17 00:00:00 2001
+From: Matei Stanca <i@ambientimpact.com>
+Date: Sun, 9 Jan 2022 15:37:56 -0500
+Subject: [PATCH] Fixed withdraw consent button never being shown due to
+ .visually-hidden
+
+---
+ js/eu_cookie_compliance.js | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/js/eu_cookie_compliance.js b/js/eu_cookie_compliance.js
+index d38cb05..8d73057 100644
+--- a/js/eu_cookie_compliance.js
++++ b/js/eu_cookie_compliance.js
+@@ -159,7 +159,7 @@
+     if (drupalSettings.eu_cookie_compliance.withdraw_enabled) {
+       Drupal.eu_cookie_compliance.attachWithdrawEvents();
+       if (_euccCurrentStatus === cookieValueAgreedShowThankYou || _euccCurrentStatus === cookieValueAgreed) {
+-        $('.eu-cookie-withdraw-button').show();
++        $('.eu-cookie-withdraw-button').removeClass('visually-hidden');
+       }
+     }
+   }
+@@ -463,7 +463,7 @@
+     if (drupalSettings.eu_cookie_compliance.withdraw_enabled && drupalSettings.eu_cookie_compliance.withdraw_button_on_info_popup) {
+       Drupal.eu_cookie_compliance.attachWithdrawEvents();
+       if (_euccCurrentStatus === cookieValueAgreedShowThankYou || _euccCurrentStatus === cookieValueAgreed) {
+-        $('.eu-cookie-withdraw-button').show();
++        $('.eu-cookie-withdraw-button').removeClass('visually-hidden');
+       }
+     }
+   };
+-- 
+GitLab
+

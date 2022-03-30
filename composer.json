@@ -100,24 +100,24 @@
     },
     "patches": {
       "consolidation/site-process": {
-        "Windows: ProcessBase.php line 172: Unable to decode output into JSON: Syntax error: https://github.com/consolidation/site-process/issues/56": "patches/consolidation-site-process-windows-fix.patch"
+        "Windows: ProcessBase.php line 172: Unable to decode output into JSON: Syntax error: https://github.com/consolidation/site-process/issues/56": "patches/consolidation/site-process/windows-unable-to-decode-json.patch"
       },
       "drupal/development_environment": {
-        "Duplicate key in menu links YAML file [#3218169]: https://www.drupal.org/project/development_environment/issues/3218169 ": "https://www.drupal.org/files/issues/2021-09-09/duplicate-key-3218169-2.patch"
+        "Duplicate key in menu links YAML file [#3218169]: https://www.drupal.org/project/development_environment/issues/3218169": "patches/drupal/development_environment/duplicate-key-3218169-2.patch"
       },
       "drupal/eu_cookie_compliance": {
-        "Changes eu_cookie_compliance.js required for subsequent patch to succeed: https://www.drupal.org/project/eu_cookie_compliance/issues/3254209": "https://git.drupalcode.org/project/eu-cookie-compliance/-/merge_requests/48.patch",
-        "Withdraw button not visible: https://www.drupal.org/project/eu_cookie_compliance/issues/3257088": "https://git.drupalcode.org/project/eu-cookie-compliance/-/merge_requests/49.patch"
+        "Changes eu_cookie_compliance.js required for subsequent patch to succeed: https://www.drupal.org/project/eu_cookie_compliance/issues/3254209#comment-14355307": "patches/drupal/eu_cookie_compliance/merge-request-48-required-for-merge-request-49.patch",
+        "Withdraw button not visible: https://www.drupal.org/project/eu_cookie_compliance/issues/3257088#mr49-note75081": "patches/drupal/eu_cookie_compliance/merge-request-49-withdraw-button-not-visible.patch"
       },
       "drupal/rules": {
-        "Support upcasting entity IDs to full entity contexts: https://www.drupal.org/project/rules/issues/2800749#comment-14332836": "https://www.drupal.org/files/issues/2021-12-08/2800749-97.upcast.patch"
+        "Support upcasting entity IDs to full entity contexts: https://www.drupal.org/project/rules/issues/2800749#comment-14332836": "patches/drupal/rules/2800749-97.upcast.patch"
       },
       "drupal/security_review": {
-        "Refactor trusted hosts check: https://www.drupal.org/project/security_review/issues/3008957": "https://git.drupalcode.org/project/security_review/-/merge_requests/1.patch",
-        "Checks\\PrivateFiles: mistakes adjacent \"drupal_private_files\" as being under \"drupal\": https://www.drupal.org/project/security_review/issues/3259051": "https://git.drupalcode.org/project/security_review/-/merge_requests/2.patch"
+        "Refactor trusted hosts check: https://www.drupal.org/project/security_review/issues/3008957": "patches/drupal/security_review/merge-request-1-refactor-trusted-hosts-check.patch",
+        "Checks\\PrivateFiles: mistakes adjacent \"drupal_private_files\" as being under \"drupal\": https://www.drupal.org/project/security_review/issues/3259051": "patches/drupal/security_review/merge-request-2-private-files-check-more-robust.patch"
       },
       "drupal/session_limit": {
-        "Displayed message should be configurable: https://www.drupal.org/project/session_limit/issues/2794553": "https://www.drupal.org/files/issues/2022-01-12/session_limit-configurable-message-2794553-19.patch"
+        "Displayed message should be configurable: https://www.drupal.org/project/session_limit/issues/2794553#comment-14364480": "patches/drupal/session_limit/session_limit-configurable-message-2794553-19.patch"
       }
     },
     "drupal-scaffold": {
@@ -174,7 +174,8 @@
       "replace": false,
       "ignore-duplicates": true,
       "merge-extra": true,
-      "merge-extra-deep": true
+      "merge-extra-deep": true,
+      "merge-scripts": true
     }
   }
 }

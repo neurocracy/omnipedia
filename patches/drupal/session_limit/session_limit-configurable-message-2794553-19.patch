@@ -1,0 +1,81 @@
+diff --git a/config/install/session_limit.settings.yml b/config/install/session_limit.settings.yml
+index c36d839..15c14ef 100644
+--- a/config/install/session_limit.settings.yml
++++ b/config/install/session_limit.settings.yml
+@@ -3,4 +3,5 @@ session_limit_masquerade_ignore: false
+ session_limit_behaviour: 0
+ session_limit_logged_out_message_severity: warning
+ session_limit_roles: []
+-session_limit_admin_inclusion: 0
+\ No newline at end of file
++session_limit_logged_out_display_message: "You have been automatically logged out. Someone else has logged in with your username and password and the maximum number of @number simultaneous session(s) was exceeded. This may indicate that your account has been compromised or that account sharing is not allowed on this site. Please contact the site administrator if you suspect your account has been compromised."
++session_limit_admin_inclusion: 0
+diff --git a/config/schema/session_limit.schema.yml b/config/schema/session_limit.schema.yml
+index 9f1568e..70ad611 100644
+--- a/config/schema/session_limit.schema.yml
++++ b/config/schema/session_limit.schema.yml
+@@ -16,3 +16,5 @@ session_limit.settings:
+       type: sequence
+       sequence:
+         type: integer
++    session_limit_logged_out_display_message:
++      type: label
+diff --git a/session_limit.install b/session_limit.install
+index edf8a35..290a650 100644
+--- a/session_limit.install
++++ b/session_limit.install
+@@ -4,3 +4,13 @@
+  * @file
+  * Contains install and update functions for Session Limit.
+  */
++
++/**
++ * Sets default for the new display message config for users who already have the module installed.
++ */
++function session_limit_update_8001() {
++  $config_factory = \Drupal::configFactory();
++  $config = $config_factory->getEditable('session_limit.settings');
++  $config->set('session_limit_logged_out_display_message', t('You have been automatically logged out. Someone else has logged in with your username and password and the maximum number of @number simultaneous session(s) was exceeded. This may indicate that your account has been compromised or that account sharing is not allowed on this site. Please contact the site administrator if you suspect your account has been compromised.'));
++  $config->save(TRUE);
++}
+diff --git a/src/Form/SettingsForm.php b/src/Form/SettingsForm.php
+index 2ca7bda..e11b0e1 100644
+--- a/src/Form/SettingsForm.php
++++ b/src/Form/SettingsForm.php
+@@ -92,6 +92,13 @@ class SettingsForm extends ConfigFormBase {
+       ];
+     }
+ 
++    $form['session_limit_logged_out_display_message'] = [
++      '#type' => 'textarea',
++      '#title' => $this->t('Logged out display message'),
++      '#default_value' => $config->get('session_limit_logged_out_display_message'),
++      '#description' => $this->t('This is the message that is displayed to a user whose session was automatically ended due to Session Limit.'),
++    ];
++
+     $form['session_limit_logged_out_message_severity'] = [
+       '#type' => 'select',
+       '#title' => $this->t('Logged out message severity'),
+@@ -159,6 +166,7 @@ class SettingsForm extends ConfigFormBase {
+     $config = $this->config('session_limit.settings');
+     $config->set('session_limit_max', $form_state->getValue($form['session_limit_max']['#parents']));
+     $config->set('session_limit_behaviour', $form_state->getValue($form['session_limit_behaviour']['#parents']));
++    $config->set('session_limit_logged_out_display_message', $form_state->getValue($form['session_limit_logged_out_display_message']['#parents']));
+     $config->set('session_limit_logged_out_message_severity', $form_state->getValue($form['session_limit_logged_out_message_severity']['#parents']));
+     $config->set('session_limit_admin_inclusion', $form_state->getValue($form['session_limit_admin_inclusion']['#parents']));
+ 
+diff --git a/src/Services/SessionLimit.php b/src/Services/SessionLimit.php
+index 7c8cf91..022186b 100644
+--- a/src/Services/SessionLimit.php
++++ b/src/Services/SessionLimit.php
+@@ -517,8 +517,7 @@ class SessionLimit implements EventSubscriberInterface {
+    * @return string
+    */
+   public function getMessage(AccountInterface $account) {
+-    return t('You have been automatically logged out. Someone else has logged in with your username and password and the maximum number of @number simultaneous session(s) was exceeded. This may indicate that your account has been compromised or that account sharing is not allowed on this site. Please contact the site administrator if you suspect your account has been compromised.', [
+-      '@number' => $this->getUserMaxSessions($account),
+-    ]);
++    return $this->configFactory->get('session_limit.settings')
++      ->get('session_limit_logged_out_display_message');
+   }
+ }

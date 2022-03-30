@@ -1,0 +1,17 @@
+diff --git a/development_environment.links.menu.yml b/development_environment.links.menu.yml
+index 99b46ac..deef73c 100644
+--- a/development_environment.links.menu.yml
++++ b/development_environment.links.menu.yml
+@@ -4,12 +4,6 @@ development_environment.email_log:
+   parent: 'system.admin_reports'
+   description: 'View log of emails suppressed by the Development Environment module'
+ 
+-development_environment.email_log:
+-  title: 'Suppressed Email Log'
+-  route_name: 'development_environment.suppressed_email_log_list'
+-  parent: 'system.admin_reports'
+-  description: 'View log of emails suppressed by the Development Environment module'
+-
+ development_environment.settings_page:
+   title: 'Development Environment'
+   route_name: 'development_environment.settings_page'

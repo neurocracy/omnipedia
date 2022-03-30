@@ -1,0 +1,144 @@
+From c5f195946206a64c7f1b666bae33e0bb960fe8d9 Mon Sep 17 00:00:00 2001
+From: svenryen <svenryen@667244.no-reply.drupal.org>
+Date: Sun, 2 Jan 2022 14:05:40 +0100
+Subject: [PATCH] Issue #3254209 by Driskell, svenryen, IT-Cru: Changing cookie
+ policy version will mean the banner can never be dismissed
+
+---
+ js/eu_cookie_compliance.js | 41 +++++++++++++++-----------------------
+ 1 file changed, 16 insertions(+), 25 deletions(-)
+
+diff --git a/js/eu_cookie_compliance.js b/js/eu_cookie_compliance.js
+index c22f164..1f61f79 100644
+--- a/js/eu_cookie_compliance.js
++++ b/js/eu_cookie_compliance.js
+@@ -92,7 +92,7 @@
+         return;
+       }
+ 
+-      Drupal.eu_cookie_compliance.getCurrentStatus();
++      _euccCurrentStatus = Drupal.eu_cookie_compliance.getCurrentStatus();
+ 
+       if (typeof Drupal.eu_cookie_compliance.getVersion() === 'undefined') {
+         // If version doesn't exist as a cookie, set it to the current one.
+@@ -109,15 +109,15 @@
+ 
+       // Closed if status has a value and the version hasn't changed or user has not agreed.
+       var closed = !drupalSettings.eu_cookie_compliance.open_by_default ||
+-        (_euccCurrentStatus !== null && (!versionChanged || !Drupal.eu_cookie_compliance.hasAgreed()));
++        (_euccCurrentStatus !== null && !versionChanged);
+ 
+       // Only worried about OPT_IN / GDPR method at present for the perm. settings tab.
+-      if (_euccCurrentStatus == 0 && drupalSettings.eu_cookie_compliance.settings_tab_enabled && drupalSettings.eu_cookie_compliance.method === 'opt_in' && !versionChanged) {
++      if (_euccCurrentStatus === cookieValueDisagreed && drupalSettings.eu_cookie_compliance.settings_tab_enabled && drupalSettings.eu_cookie_compliance.method === 'opt_in' && !versionChanged) {
+          Drupal.eu_cookie_compliance.createPopup(drupalSettings.eu_cookie_compliance.popup_html_info, (_euccCurrentStatus !== null));
+          $('.eu-cookie-withdraw-tab').click(Drupal.eu_cookie_compliance.toggleWithdrawBanner);
+          Drupal.eu_cookie_compliance.attachAgreeEvents();
+       }
+-      else if ((_euccCurrentStatus === 0 && drupalSettings.eu_cookie_compliance.method === 'default') || _euccCurrentStatus === null || (_euccCurrentStatus !== 1 && drupalSettings.eu_cookie_compliance.withdraw_enabled && drupalSettings.eu_cookie_compliance.withdraw_button_on_info_popup) || (_euccCurrentStatus !== 1 && versionChanged)) {
++      else if ((_euccCurrentStatus === cookieValueDisagreed && drupalSettings.eu_cookie_compliance.method === 'default') || _euccCurrentStatus === null || (_euccCurrentStatus !== cookieValueDisagreed && drupalSettings.eu_cookie_compliance.withdraw_enabled && drupalSettings.eu_cookie_compliance.withdraw_button_on_info_popup) || (_euccCurrentStatus !== cookieValueDisagreed && versionChanged)) {
+         if (drupalSettings.eu_cookie_compliance.withdraw_enabled || !drupalSettings.eu_cookie_compliance.disagree_do_not_show_popup || _euccCurrentStatus === null) {
+           // Detect mobile here and use mobile_popup_html_info, if we have a mobile device.
+           if (window.matchMedia('(max-width: ' + drupalSettings.eu_cookie_compliance.mobile_breakpoint + 'px)').matches && drupalSettings.eu_cookie_compliance.use_mobile_message) {
+@@ -130,12 +130,12 @@
+           Drupal.eu_cookie_compliance.resizeListener();
+         }
+       }
+-      else if (_euccCurrentStatus === 1 && drupalSettings.eu_cookie_compliance.popup_agreed_enabled) {
++      else if (_euccCurrentStatus === cookieValueAgreedShowThankYou && drupalSettings.eu_cookie_compliance.popup_agreed_enabled) {
+         // Thank you banner.
+         Drupal.eu_cookie_compliance.createPopup(drupalSettings.eu_cookie_compliance.popup_html_agreed);
+         Drupal.eu_cookie_compliance.attachHideEvents();
+       }
+-      else if (_euccCurrentStatus === 2 && drupalSettings.eu_cookie_compliance.withdraw_enabled) {
++      else if (_euccCurrentStatus === cookieValueAgreed && drupalSettings.eu_cookie_compliance.withdraw_enabled) {
+         if (!drupalSettings.eu_cookie_compliance.withdraw_button_on_info_popup) {
+           Drupal.eu_cookie_compliance.createWithdrawBanner(drupalSettings.eu_cookie_compliance.withdraw_markup);
+           Drupal.eu_cookie_compliance.initPopup();
+@@ -157,7 +157,7 @@
+ 
+     if (drupalSettings.eu_cookie_compliance.withdraw_enabled) {
+       Drupal.eu_cookie_compliance.attachWithdrawEvents();
+-      if (_euccCurrentStatus === 1 || _euccCurrentStatus === 2) {
++      if (_euccCurrentStatus === cookieValueAgreedShowThankYou || _euccCurrentStatus === cookieValueAgreed) {
+         $('.eu-cookie-withdraw-button').show();
+       }
+     }
+@@ -461,7 +461,7 @@
+ 
+     if (drupalSettings.eu_cookie_compliance.withdraw_enabled && drupalSettings.eu_cookie_compliance.withdraw_button_on_info_popup) {
+       Drupal.eu_cookie_compliance.attachWithdrawEvents();
+-      if (_euccCurrentStatus === 1 || _euccCurrentStatus === 2) {
++      if (_euccCurrentStatus === cookieValueAgreedShowThankYou || _euccCurrentStatus === cookieValueAgreed) {
+         $('.eu-cookie-withdraw-button').show();
+       }
+     }
+@@ -572,17 +572,8 @@
+ 
+   Drupal.eu_cookie_compliance.getCookieStatus = function () {
+     var cookieName = (typeof drupalSettings.eu_cookie_compliance.cookie_name === 'undefined' || drupalSettings.eu_cookie_compliance.cookie_name === '') ? 'cookie-agreed' : drupalSettings.eu_cookie_compliance.cookie_name;
+-    var numericalStatus = null;
+-    if (cookies.get(cookieName) === cookieValueDisagreed) {
+-      numericalStatus = '0';
+-    } else if (cookies.get(cookieName) === cookieValueAgreedShowThankYou) {
+-      numericalStatus = '1';
+-    } else if (cookies.get(cookieName) === cookieValueAgreed) {
+-      numericalStatus = '2';
+-    }
+-    var storedStatus = numericalStatus;
+-    var currentStatus = parseInt(storedStatus);
+-    if (isNaN(currentStatus)) {
++    var currentStatus = cookies.get(cookieName);
++    if (typeof currentStatus === 'undefined') {
+       currentStatus = null;
+     }
+     return currentStatus;
+@@ -603,7 +594,7 @@
+   };
+ 
+   Drupal.eu_cookie_compliance.setPreferenceCheckboxes = function (categories) {
+-    if ((categories.length && Drupal.eu_cookie_compliance.getCookieStatus() !== null) || Drupal.eu_cookie_compliance.getCookieStatus() === 0) {
++    if ((categories.length && Drupal.eu_cookie_compliance.getCookieStatus() !== null) || Drupal.eu_cookie_compliance.getCookieStatus() === cookieValueDisagreed) {
+       // Unset all categories to prevent a problem where the checkboxes with a
+       // default state set would always show up as checked.
+       $("#eu-cookie-compliance-categories input:checkbox").removeAttr("checked");
+@@ -840,7 +831,7 @@
+   };
+ 
+   Drupal.eu_cookie_compliance.hasAgreed = function (category) {
+-    var agreed = (_euccCurrentStatus === 1 || _euccCurrentStatus === 2);
++    var agreed = (_euccCurrentStatus === cookieValueAgreedShowThankYou || _euccCurrentStatus === cookieValueAgreed);
+ 
+     if (category !== undefined && agreed) {
+       agreed = Drupal.eu_cookie_compliance.hasAgreedWithCategory(category);
+@@ -855,15 +846,15 @@
+ 
+   Drupal.eu_cookie_compliance.showBanner = function () {
+     var showBanner = false;
+-    if ((_euccCurrentStatus === 0 && drupalSettings.eu_cookie_compliance.method === 'default') || _euccCurrentStatus === null) {
++    if ((_euccCurrentStatus === cookieValueDisagreed && drupalSettings.eu_cookie_compliance.method === 'default') || _euccCurrentStatus === null) {
+       if (!drupalSettings.eu_cookie_compliance.disagree_do_not_show_popup || _euccCurrentStatus === null) {
+         showBanner = true;
+       }
+     }
+-    else if (_euccCurrentStatus === 1 && drupalSettings.eu_cookie_compliance.popup_agreed_enabled) {
++    else if (_euccCurrentStatus === cookieValueAgreedShowThankYou && drupalSettings.eu_cookie_compliance.popup_agreed_enabled) {
+       showBanner = true;
+     }
+-    else if (_euccCurrentStatus === 2 && drupalSettings.eu_cookie_compliance.withdraw_enabled) {
++    else if (_euccCurrentStatus === cookieValueAgreed && drupalSettings.eu_cookie_compliance.withdraw_enabled) {
+       showBanner = true;
+     }
+ 
+@@ -994,7 +985,7 @@
+ 
+   Drupal.eu_cookie_compliance.BlockCookies = function () {
+     var cookieStatus = Drupal.eu_cookie_compliance.getCookieStatus();
+-    if ((cookieStatus === 1 || cookieStatus === 2)
++    if ((cookieStatus === cookieValueAgreedShowThankYou || cookieStatus === cookieValueAgreed)
+       && drupalSettings.eu_cookie_compliance.method !== 'categories') {
+       // Stop blocking the cookies if it's already been agreed to (e.g. in a different tab).
+       if (typeof euCookieComplianceBlockCookies !== 'undefined') {
+-- 
+GitLab
+
