@@ -80,6 +80,19 @@
       "type": "path",
       "url": "drupal/modules/omnipedia/omnipedia_user"
     },
+    "drupal-library/jquery.onfontresize": {
+      "type": "package",
+      "package": {
+        "name": "drupal-library/jquery.onfontresize",
+        "type": "drupal-library",
+        "version": "master",
+        "source": {
+          "url": "https://github.com/johnantoni/jquery.onfontresize.git",
+          "type": "git",
+          "reference": "master"
+        }
+      }
+    },
     "drupal": {
       "type": "composer",
       "url": "https://packages.drupal.org/8"
