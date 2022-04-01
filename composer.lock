@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9caad62c04114c474a9f3206a86af08e",
+    "content-hash": "8e820eaaded3cc8caaa477eb1e121597",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -5240,6 +5240,384 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/monolog",
                 "issues": "http://drupal.org/project/issues/monolog"
+            }
+        },
+        {
+            "name": "drupal/omnipedia_access",
+            "version": "2.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "drupal/modules/omnipedia/omnipedia_access",
+                "reference": "af42015072302f8c20e825ae09e79a58faf73f7c"
+            },
+            "require": {
+                "drupal/hook_event_dispatcher": "^2.0",
+                "drupal/permissions_by_term": "^2.34 || ^3.1"
+            },
+            "type": "project",
+            "extra": {
+                "patches": {
+                    "drupal/permissions_by_term": {
+                        "Respect the Require all terms granted and Permission mode settings in Permission by entity module: https://www.drupal.org/project/permissions_by_term/issues/3072171#comment-14209554": "drupal/modules/omnipedia/omnipedia_access/patches/drupal/permissions_by_term/merge-request-8-respect-require-all-terms-permission-by-entity.patch",
+                        "Permissions by Entity PHP notice for Commerce Product entities: https://www.drupal.org/project/permissions_by_term/issues/3231188#comment-14209558": "drupal/modules/omnipedia/omnipedia_access/patches/drupal/permissions_by_term/merge-request-9-commerce-product-notices.patch",
+                        "PbE: Add entityTypeId to cache tags: https://www.drupal.org/project/permissions_by_term/issues/3238759#comment-14234566": "drupal/modules/omnipedia/omnipedia_access/patches/drupal/permissions_by_term/3238759-PbE_respect_entity_type_id-4.patch"
+                    }
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ambient.Impact",
+                    "homepage": "https://ambientimpact.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Omnipedia - Access",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "drupal/omnipedia_attached_data",
+            "version": "2.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "drupal/modules/omnipedia/omnipedia_attached_data",
+                "reference": "25211c850255482f6df4daf218f5e6000d951ed5"
+            },
+            "require": {
+                "drupal/hook_event_dispatcher": "^2.0",
+                "symfony/css-selector": "^3.4 || ^4.4",
+                "symfony/dom-crawler": "^3.4 || ^4.4"
+            },
+            "type": "project",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ambient.Impact",
+                    "homepage": "https://ambientimpact.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Omnipedia - Attached data",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "drupal/omnipedia_block",
+            "version": "2.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "drupal/modules/omnipedia/omnipedia_block",
+                "reference": "190a88cca0733d4de5596a6da9ca37bfd75a3c08"
+            },
+            "require": {
+                "drupal/hook_event_dispatcher": "^2.0"
+            },
+            "type": "project",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ambient.Impact",
+                    "homepage": "https://ambientimpact.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Omnipedia - Blocks",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "drupal/omnipedia_commerce",
+            "version": "2.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "drupal/modules/omnipedia/omnipedia_commerce",
+                "reference": "932a42a25e434e1baf687c0361990b2351dde005"
+            },
+            "require": {
+                "drupal/commerce": "^2.24",
+                "drupal/commerce_cart_redirection": "^3.0",
+                "drupal/commerce_paypal": "^1.0",
+                "drupal/commerce_product_limits": "^1.0",
+                "drupal/commerce_stripe": "^1.0",
+                "drupal/hook_event_dispatcher": "^2.0"
+            },
+            "type": "project",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ambient.Impact",
+                    "homepage": "https://ambientimpact.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Omnipedia - Commerce",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "drupal/omnipedia_content",
+            "version": "2.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "drupal/modules/omnipedia/omnipedia_content",
+                "reference": "d637e3ad0b7c8cd9270a762c3f47a0b939de5a65"
+            },
+            "require": {
+                "8fold/commonmark-abbreviations": "^1.2",
+                "drupal/hook_event_dispatcher": "^2.0",
+                "drupal/markdown": "^3.0@RC",
+                "league/commonmark": "^1.6.1",
+                "symfony/css-selector": "^3.4 || ^4.4",
+                "symfony/dom-crawler": "^3.4 || ^4.4"
+            },
+            "type": "project",
+            "extra": {
+                "patches": {
+                    "drupal/core": {
+                        "UrlGenerator improperly escapes a colon in the path [#3165305]: https://www.drupal.org/project/drupal/issues/3165305#comment-14058586": "drupal/modules/omnipedia/omnipedia_content/patches/drupal/core/url_escaped-3165305-10.patch"
+                    }
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ambient.Impact",
+                    "homepage": "https://ambientimpact.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Omnipedia - Content",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "drupal/omnipedia_content_changes",
+            "version": "2.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "drupal/modules/omnipedia/omnipedia_content/omnipedia_content_changes",
+                "reference": "8ba9967b52d247bde589d1ed8abcc6922c4c1ed3"
+            },
+            "require": {
+                "caxy/php-htmldiff": "^0.1.12",
+                "drupal/diff": "^1.0",
+                "drupal/pcb": "^2.3",
+                "drupal/queue_ui": "^2.2",
+                "drupal/warmer": "^2.0",
+                "symfony/css-selector": "^3.4 || ^4.4",
+                "symfony/dom-crawler": "^3.4 || ^4.4"
+            },
+            "type": "project",
+            "extra": {
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^10"
+                    }
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ambient.Impact",
+                    "homepage": "https://ambientimpact.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Omnipedia - Content changes",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "drupal/omnipedia_core",
+            "version": "2.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "drupal/modules/omnipedia/omnipedia_core",
+                "reference": "1efd09984cb8d1b829096726eadd50a8e6a2cb43"
+            },
+            "require": {
+                "drupal/hook_event_dispatcher": "^2.0"
+            },
+            "type": "project",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ambient.Impact",
+                    "homepage": "https://ambientimpact.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Omnipedia - Core",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "drupal/omnipedia_logger",
+            "version": "2.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "drupal/modules/omnipedia/omnipedia_logger",
+                "reference": "28bf318ee910442d2f1d47e2497593d59d9fc7fd"
+            },
+            "require": {
+                "drupal/monolog": "^2.0",
+                "php": "^8"
+            },
+            "type": "project",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ambient.Impact",
+                    "homepage": "https://ambientimpact.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Omnipedia - Logger",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "drupal/omnipedia_media",
+            "version": "2.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "drupal/modules/omnipedia/omnipedia_media",
+                "reference": "cb731397f9eae58cf60096053f64c5fa9cc92001"
+            },
+            "require": {
+                "drupal/hook_event_dispatcher": "^2.0",
+                "drupal/webp": "^1.0"
+            },
+            "type": "project",
+            "extra": {
+                "patches": {
+                    "drupal/webp": {
+                        "A recent commit causes image generation to fail on Windows platforms: https://www.drupal.org/project/webp/issues/3161795#comment-14096421": "drupal/modules/omnipedia/omnipedia_media/patches/drupal/webp/webp-replace-file-exists-call-with-entity-load-to-fix-image-generation-3161795-16.patch"
+                    }
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ambient.Impact",
+                    "homepage": "https://ambientimpact.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Omnipedia - Media",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "drupal/omnipedia_search",
+            "version": "2.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "drupal/modules/omnipedia/omnipedia_search",
+                "reference": "1511c47a22b7bd0fba8db138b3b785f6c74ccb0a"
+            },
+            "require": {
+                "drupal/search_api": "^1.15"
+            },
+            "type": "project",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ambient.Impact",
+                    "homepage": "https://ambientimpact.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Omnipedia - Search",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "drupal/omnipedia_site",
+            "version": "2.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "drupal/themes/omnipedia/omnipedia_site",
+                "reference": "97d3112c8d4f70960f2ec27d3e39b9952febdb3e"
+            },
+            "require": {
+                "php": "^8",
+                "symfony/css-selector": "^3.4 || ^4.4",
+                "symfony/dom-crawler": "^3.4 || ^4.4"
+            },
+            "type": "project",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ambient.Impact",
+                    "homepage": "https://ambientimpact.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Omnipedia - Site theme",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "drupal/omnipedia_user",
+            "version": "2.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "drupal/modules/omnipedia/omnipedia_user",
+                "reference": "cc8a952a93a8129ba6995fc95154f80a919499bf"
+            },
+            "require": {
+                "drupal/hook_event_dispatcher": "^2.0",
+                "php": "^8"
+            },
+            "type": "project",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ambient.Impact",
+                    "homepage": "https://ambientimpact.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Omnipedia - User",
+            "transport-options": {
+                "relative": true
             }
         },
         {
@@ -14155,11 +14533,22 @@
         "drupal/ga_login": 15,
         "drupal/gin": 10,
         "drupal/gin_toolbar": 10,
+        "drupal/omnipedia_access": 20,
+        "drupal/omnipedia_attached_data": 20,
+        "drupal/omnipedia_block": 20,
+        "drupal/omnipedia_commerce": 20,
+        "drupal/omnipedia_content": 20,
+        "drupal/omnipedia_content_changes": 20,
+        "drupal/omnipedia_core": 20,
+        "drupal/omnipedia_logger": 20,
+        "drupal/omnipedia_media": 20,
+        "drupal/omnipedia_search": 20,
+        "drupal/omnipedia_site": 20,
+        "drupal/omnipedia_user": 20,
         "drupal/rules": 15,
         "drupal/security_review": 15,
         "drupal/session_limit": 10,
-        "drupal/tfa": 15,
-        "drupal/markdown": 5
+        "drupal/tfa": 15
     },
     "prefer-stable": true,
     "prefer-lowest": false,
