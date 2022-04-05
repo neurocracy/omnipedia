@@ -833,22 +833,22 @@
         },
         {
             "name": "consolidation/annotated-command",
-            "version": "4.5.2",
+            "version": "4.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/annotated-command.git",
-                "reference": "24c1529436b4f4beec3d19aab71fd127817f47ef"
+                "reference": "93398c3166d9026ab93219ce23b2092b4d7b7904"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/24c1529436b4f4beec3d19aab71fd127817f47ef",
-                "reference": "24c1529436b4f4beec3d19aab71fd127817f47ef",
+                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/93398c3166d9026ab93219ce23b2092b4d7b7904",
+                "reference": "93398c3166d9026ab93219ce23b2092b4d7b7904",
                 "shasum": ""
             },
             "require": {
                 "consolidation/output-formatters": "^4.1.1",
                 "php": ">=7.1.3",
-                "psr/log": "^1|^2",
+                "psr/log": "^1|^2|^3",
                 "symfony/console": "^4.4.8|^5|^6",
                 "symfony/event-dispatcher": "^4.4.8|^5|^6",
                 "symfony/finder": "^4.4.8|^5|^6"
@@ -883,9 +883,9 @@
             "description": "Initialize Symfony Console commands from annotated command class methods.",
             "support": {
                 "issues": "https://github.com/consolidation/annotated-command/issues",
-                "source": "https://github.com/consolidation/annotated-command/tree/4.5.2"
+                "source": "https://github.com/consolidation/annotated-command/tree/4.5.4"
             },
-            "time": "2022-02-20T16:36:18+00:00"
+            "time": "2022-04-05T17:58:10+00:00"
         },
         {
             "name": "consolidation/config",
@@ -10882,16 +10882,16 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v6.0.6",
+            "version": "v6.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "52b888523545b0b4049ab9ce48766802484d7046"
+                "reference": "6c9e4c41f2c51dfde3db298594ed9cba55dbf5ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/52b888523545b0b4049ab9ce48766802484d7046",
-                "reference": "52b888523545b0b4049ab9ce48766802484d7046",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/6c9e4c41f2c51dfde3db298594ed9cba55dbf5ff",
+                "reference": "6c9e4c41f2c51dfde3db298594ed9cba55dbf5ff",
                 "shasum": ""
             },
             "require": {
@@ -10925,7 +10925,7 @@
             "description": "Provides basic utilities for the filesystem",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/filesystem/tree/v6.0.6"
+                "source": "https://github.com/symfony/filesystem/tree/v6.0.7"
             },
             "funding": [
                 {
@@ -10941,7 +10941,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-03-02T12:58:14+00:00"
+            "time": "2022-04-01T12:54:51+00:00"
         },
         {
             "name": "symfony/finder",
