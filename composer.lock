@@ -4266,17 +4266,17 @@
         },
         {
             "name": "drupal/gin",
-            "version": "3.0.0-beta1",
+            "version": "3.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin.git",
-                "reference": "8.x-3.0-beta1"
+                "reference": "8.x-3.0-beta2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/gin-8.x-3.0-beta1.zip",
-                "reference": "8.x-3.0-beta1",
-                "shasum": "dbe47c411408c6877b8b4c04e45f82b7c229a786"
+                "url": "https://ftp.drupal.org/files/projects/gin-8.x-3.0-beta2.zip",
+                "reference": "8.x-3.0-beta2",
+                "shasum": "5f38fab22d33ec4ec5e696f5bc804d8accb456a2"
             },
             "require": {
                 "drupal/core": "^8.9 || ^9 || ^10",
@@ -4285,8 +4285,8 @@
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.0-beta1",
-                    "datestamp": "1646929485",
+                    "version": "8.x-3.0-beta2",
+                    "datestamp": "1649709347",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -4323,17 +4323,17 @@
         },
         {
             "name": "drupal/gin_toolbar",
-            "version": "1.0.0-beta21",
+            "version": "1.0.0-beta22",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin_toolbar.git",
-                "reference": "8.x-1.0-beta21"
+                "reference": "8.x-1.0-beta22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/gin_toolbar-8.x-1.0-beta21.zip",
-                "reference": "8.x-1.0-beta21",
-                "shasum": "25522839cc22b25410cd478902096a649fd9ab61"
+                "url": "https://ftp.drupal.org/files/projects/gin_toolbar-8.x-1.0-beta22.zip",
+                "reference": "8.x-1.0-beta22",
+                "shasum": "630b4acb208411b78c61d83c9a27741c546202de"
             },
             "require": {
                 "drupal/core": "^8 || ^9 || ^10"
@@ -4341,8 +4341,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0-beta21",
-                    "datestamp": "1646929714",
+                    "version": "8.x-1.0-beta22",
+                    "datestamp": "1649709351",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
