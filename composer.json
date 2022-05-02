@@ -173,6 +173,7 @@
     "drupal/devel_entity_updates": "^3.0",
     "drupal/examples": "^3.0",
     "kint-php/kint": "^3.3",
+    "phpspec/prophecy-phpunit": "^2",
     "symfony/var-dumper": "^5.0"
   },
   "conflict": {
