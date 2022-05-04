@@ -2332,26 +2332,26 @@
         },
         {
             "name": "drupal/commerce_cart_redirection",
-            "version": "3.0.5",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/commerce_cart_redirection.git",
-                "reference": "3.0.5"
+                "reference": "3.1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/commerce_cart_redirection-3.0.5.zip",
-                "reference": "3.0.5",
-                "shasum": "362dcdf3a4a3e686dca238737d26e369d6b32190"
+                "url": "https://ftp.drupal.org/files/projects/commerce_cart_redirection-3.1.0.zip",
+                "reference": "3.1.0",
+                "shasum": "c9cda84af3eeff4a938de9f5793769e78aa86e4e"
             },
             "require": {
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^9"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.5",
-                    "datestamp": "1604876635",
+                    "version": "3.1.0",
+                    "datestamp": "1651436573",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4062,10 +4062,6 @@
                 {
                     "name": "See other contributors",
                     "homepage": "https://www.drupal.org/node/1538032/committers"
-                },
-                {
-                    "name": "svenryen",
-                    "homepage": "https://www.drupal.org/user/667244"
                 }
             ],
             "description": "This module aims at making the website compliant with the new EU cookie regulation.",
@@ -4145,17 +4141,17 @@
         },
         {
             "name": "drupal/flood_control",
-            "version": "2.2.2",
+            "version": "2.2.3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/flood_control.git",
-                "reference": "2.2.2"
+                "reference": "2.2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/flood_control-2.2.2.zip",
-                "reference": "2.2.2",
-                "shasum": "2061723bfb41af3c122ddff95716874e66f234c4"
+                "url": "https://ftp.drupal.org/files/projects/flood_control-2.2.3.zip",
+                "reference": "2.2.3",
+                "shasum": "52efedd04913889e7338d183c773af1a883f572f"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -4163,8 +4159,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.2.2",
-                    "datestamp": "1629899261",
+                    "version": "2.2.3",
+                    "datestamp": "1650976352",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4287,7 +4283,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-3.0-beta2",
-                    "datestamp": "1649709347",
+                    "datestamp": "1649710290",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -5689,17 +5685,17 @@
         },
         {
             "name": "drupal/pathauto",
-            "version": "1.9.0",
+            "version": "1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/pathauto.git",
-                "reference": "8.x-1.9"
+                "reference": "8.x-1.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.9.zip",
-                "reference": "8.x-1.9",
-                "shasum": "f075ebff595c9b8b62333d65ad29020330e0ea9d"
+                "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.10.zip",
+                "reference": "8.x-1.10",
+                "shasum": "f49d5fbcd7a2c1b4de1da07194fe01d9012237ec"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9",
@@ -5712,8 +5708,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.9",
-                    "datestamp": "1644822949",
+                    "version": "8.x-1.10",
+                    "datestamp": "1650806739",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7050,7 +7046,7 @@
             "extra": {
                 "drupal": {
                     "version": "4.1.2",
-                    "datestamp": "1647723469",
+                    "datestamp": "1647943086",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
