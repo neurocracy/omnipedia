@@ -5566,9 +5566,10 @@
             "dist": {
                 "type": "path",
                 "url": "drupal/themes/omnipedia/omnipedia_site",
-                "reference": "97d3112c8d4f70960f2ec27d3e39b9952febdb3e"
+                "reference": "fb122128d09b29a44977d8820631acfe81874ae7"
             },
             "require": {
+                "npm-asset/fontsource--exo-2": "^4.5",
                 "php": "^8",
                 "symfony/css-selector": "^3.4 || ^4.4",
                 "symfony/dom-crawler": "^3.4 || ^4.4"
@@ -8762,6 +8763,18 @@
             "type": "npm-asset",
             "license": [
                 "BSD-3-Clause"
+            ]
+        },
+        {
+            "name": "npm-asset/fontsource--exo-2",
+            "version": "4.5.8",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/@fontsource/exo-2/-/exo-2-4.5.8.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
             ]
         },
         {
