@@ -1,5 +1,6 @@
 # Ignore development directories and files.
 run-tests.bat
+run-phpcs.bat
 sftp-config.json
 node_modules
 
