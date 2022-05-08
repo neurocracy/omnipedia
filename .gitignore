@@ -2,6 +2,9 @@
 run-tests.bat
 run-phpcs.bat
 sftp-config.json
+test.sqlite
+test.sqlite-shm
+test.sqlite-wal
 node_modules
 
 # These are pulled in by the Drupal scaffold.
