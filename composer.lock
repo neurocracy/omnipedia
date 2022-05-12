@@ -10064,16 +10064,16 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v7.126.0",
+            "version": "v7.128.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "c36de62a89475e81d9c75ec08de19376466f67b7"
+                "reference": "c704949c49b72985c76cc61063aa26fefbd2724e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/c36de62a89475e81d9c75ec08de19376466f67b7",
-                "reference": "c36de62a89475e81d9c75ec08de19376466f67b7",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/c704949c49b72985c76cc61063aa26fefbd2724e",
+                "reference": "c704949c49b72985c76cc61063aa26fefbd2724e",
                 "shasum": ""
             },
             "require": {
@@ -10118,9 +10118,9 @@
             ],
             "support": {
                 "issues": "https://github.com/stripe/stripe-php/issues",
-                "source": "https://github.com/stripe/stripe-php/tree/v7.126.0"
+                "source": "https://github.com/stripe/stripe-php/tree/v7.128.0"
             },
-            "time": "2022-05-03T15:37:27+00:00"
+            "time": "2022-05-05T17:18:02+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
