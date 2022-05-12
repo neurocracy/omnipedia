@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b6861db595a4c09378aae2c928eea78a",
+    "content-hash": "18624d4473e5037be3fb78d757f3520c",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -6119,6 +6119,16 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/redirect"
             }
+        },
+        {
+            "name": "drupal/refreshless",
+            "version": "dev-3279394-composer.json-drupal-9-support",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/issue/refreshless-3279394.git",
+                "reference": "3279394-composer.json-drupal-9-support"
+            },
+            "type": "drupal-module"
         },
         {
             "name": "drupal/remove_http_headers",
@@ -18233,7 +18243,7 @@
         "drupal/omnipedia_search": 20,
         "drupal/omnipedia_site": 20,
         "drupal/omnipedia_user": 20,
-        "drupal/rebuilder": 5,
+        "drupal/refreshless": 20,
         "drupal/rules": 15,
         "drupal/security_review": 15,
         "drupal/session_limit": 10,

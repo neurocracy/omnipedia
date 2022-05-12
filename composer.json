@@ -93,6 +93,19 @@
         }
       }
     },
+    "drupal/refreshless": {
+      "type": "package",
+      "package": {
+        "name": "drupal/refreshless",
+        "type": "drupal-module",
+        "version": "dev-3279394-composer.json-drupal-9-support",
+        "source": {
+          "url": "https://git.drupalcode.org/issue/refreshless-3279394.git",
+          "type": "git",
+          "reference": "3279394-composer.json-drupal-9-support"
+        }
+      }
+    },
     "drupal": {
       "type": "composer",
       "url": "https://packages.drupal.org/8"
@@ -149,6 +162,7 @@
     "drupal/pathauto": "^1.6",
     "drupal/rebuilder": "^1.0@RC",
     "drupal/redirect": "^1.6",
+    "drupal/refreshless": "dev-3279394-composer.json-drupal-9-support",
     "drupal/remove_http_headers": "^1.0",
     "drupal/rules": "^3.0@alpha",
     "drupal/seckit": "^2.0",
@@ -199,6 +213,9 @@
       "drupal/core": "-p2"
     },
     "patches": {
+      "drupal/core": {
+        "RefreshLess core patch": "patches/drupal/core/refreshless_core_9.3.x.patch"
+      },
       "drupal/development_environment": {
         "Duplicate key in menu links YAML file [#3218169]: https://www.drupal.org/project/development_environment/issues/3218169": "patches/drupal/development_environment/duplicate-key-3218169-2.patch"
       },

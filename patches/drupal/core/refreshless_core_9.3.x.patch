@@ -1,0 +1,75 @@
+diff --git a/core/lib/Drupal/Core/Ajax/AjaxResponseAttachmentsProcessor.php b/core/lib/Drupal/Core/Ajax/AjaxResponseAttachmentsProcessor.php
+index 600a6dbd71..0011733c15 100644
+--- a/core/lib/Drupal/Core/Ajax/AjaxResponseAttachmentsProcessor.php
++++ b/core/lib/Drupal/Core/Ajax/AjaxResponseAttachmentsProcessor.php
+@@ -128,7 +128,7 @@ public function processAttachments(AttachmentsInterface $response) {
+    *   An array of commands ready to be returned as JSON.
+    */
+   protected function buildAttachmentsCommands(AjaxResponse $response, Request $request) {
+-    $ajax_page_state = $request->request->get('ajax_page_state');
++    $ajax_page_state = $request->get('ajax_page_state');
+ 
+     // Aggregate CSS/JS if necessary, but only during normal site operation.
+     $optimize_css = !defined('MAINTENANCE_MODE') && $this->config->get('css.preprocess');
+diff --git a/core/lib/Drupal/Core/Render/MainContent/HtmlRenderer.php b/core/lib/Drupal/Core/Render/MainContent/HtmlRenderer.php
+index 09d946d22f..2ffc358dcd 100644
+--- a/core/lib/Drupal/Core/Render/MainContent/HtmlRenderer.php
++++ b/core/lib/Drupal/Core/Render/MainContent/HtmlRenderer.php
+@@ -201,7 +201,7 @@ public function renderResponse(array $main_content, Request $request, RouteMatch
+    * @throws \LogicException
+    *   If the selected display variant does not implement PageVariantInterface.
+    */
+-  protected function prepare(array $main_content, Request $request, RouteMatchInterface $route_match) {
++  public function prepare(array $main_content, Request $request, RouteMatchInterface $route_match) {
+     // Determine the title: use the title provided by the main content if any,
+     // otherwise get it from the routing information.
+     $get_title = function (array $main_content) use ($request, $route_match) {
+diff --git a/core/modules/block/src/BlockRepository.php b/core/modules/block/src/BlockRepository.php
+index 146155717a..5d172d6db2 100644
+--- a/core/modules/block/src/BlockRepository.php
++++ b/core/modules/block/src/BlockRepository.php
+@@ -62,6 +62,18 @@ public function getVisibleBlocksPerRegion(array &$cacheable_metadata = []) {
+       /** @var \Drupal\block\BlockInterface $block */
+       $access = $block->access('view', NULL, TRUE);
+       $region = $block->getRegion();
++
++      // Ignore unplaced blocks.
++      //
++      // This value is equal to that of
++      // \Drupal\block\BlockInterface::BLOCK_REGION_NONE which was deprecated in
++      // Drupal 8.3.x and removed in Drupal 9.0.0.
++      //
++      // @todo Is there a better way to do this or is it even needed anymore?
++      if ($region === -1) {
++        continue;
++      }
++
+       if (!isset($cacheable_metadata[$region])) {
+         $cacheable_metadata[$region] = CacheableMetadata::createFromObject($access);
+       }
+diff --git a/core/modules/block/src/Plugin/DisplayVariant/BlockPageVariant.php b/core/modules/block/src/Plugin/DisplayVariant/BlockPageVariant.php
+index cab172faa2..7f3e02a87d 100644
+--- a/core/modules/block/src/Plugin/DisplayVariant/BlockPageVariant.php
++++ b/core/modules/block/src/Plugin/DisplayVariant/BlockPageVariant.php
+@@ -135,6 +135,8 @@ public function build() {
+     // Load all region content assigned via blocks.
+     $cacheable_metadata_list = [];
+     foreach ($this->blockRepository->getVisibleBlocksPerRegion($cacheable_metadata_list) as $region => $blocks) {
++      // Ensure there is an entry for every region.
++      $build[$region] = [];
+       /** @var \Drupal\block\BlockInterface[] $blocks */
+       foreach ($blocks as $key => $block) {
+         $block_plugin = $block->getPlugin();
+@@ -163,6 +165,12 @@ public function build() {
+         // returns the blocks in sorted order.
+         $build[$region]['#sorted'] = TRUE;
+       }
++      // Every region for which we have cacheability metadata, must contain that
++      // cacheability metadata, otherwise the contexts by which its contents
++      // vary are impossible to know.
++      if (isset($cacheable_metadata_list[$region])) {
++        $cacheable_metadata_list[$region]->applyTo($build[$region]);
++      }
+     }
+ 
+     // If no block that shows the main content is displayed, still show the main
