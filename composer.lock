@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b4cc7ee270e3fbf27f03e03c505993ed",
+    "content-hash": "d3a6cc10d5435851d909843ab3c6000d",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -6011,6 +6011,57 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/queue_ui",
                 "issues": "https://www.drupal.org/project/issues/queue_ui"
+            }
+        },
+        {
+            "name": "drupal/rebuilder",
+            "version": "1.0.0-rc2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/rebuilder.git",
+                "reference": "1.0.0-rc2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/rebuilder-1.0.0-rc2.zip",
+                "reference": "1.0.0-rc2",
+                "shasum": "d03ebbd20b9bbde1a9179c837354301722edc470"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10",
+                "php": "^8"
+            },
+            "type": "project",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0-rc2",
+                    "datestamp": "1652368765",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^11"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ambient.Impact",
+                    "homepage": "https://ambientimpact.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Rebuilder",
+            "homepage": "https://www.drupal.org/project/rebuilder",
+            "support": {
+                "source": "https://git.drupalcode.org/project/rebuilder"
             }
         },
         {
@@ -18175,6 +18226,7 @@
         "drupal/omnipedia_search": 20,
         "drupal/omnipedia_site": 20,
         "drupal/omnipedia_user": 20,
+        "drupal/rebuilder": 5,
         "drupal/rules": 15,
         "drupal/security_review": 15,
         "drupal/session_limit": 10,

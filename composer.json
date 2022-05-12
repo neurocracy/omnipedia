@@ -147,6 +147,7 @@
     "drupal/omnipedia_user": "^2.0@dev",
     "drupal/password_policy": "^3.0",
     "drupal/pathauto": "^1.6",
+    "drupal/rebuilder": "^1.0@RC",
     "drupal/redirect": "^1.6",
     "drupal/remove_http_headers": "^1.0",
     "drupal/rules": "^3.0@alpha",

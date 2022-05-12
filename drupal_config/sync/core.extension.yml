@@ -117,6 +117,8 @@ module:
   profile: 0
   queue_ui: 0
   rdf: 0
+  rebuilder: 0
+  rebuilder_ui: 0
   redirect: 0
   remove_http_headers: 0
   responsive_image: 0
