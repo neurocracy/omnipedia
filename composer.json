@@ -12,6 +12,10 @@
     }
   ],
   "repositories": {
+    "drupal/rebuilder": {
+      "type": "path",
+      "url": "../../Drupal/rebuilder_dev"
+    },
     "drupal/ambientimpact_core": {
       "type": "path",
       "url": "drupal/modules/ambientimpact/ambientimpact_core"
@@ -147,7 +151,7 @@
     "drupal/omnipedia_user": "^2.0@dev",
     "drupal/password_policy": "^3.0",
     "drupal/pathauto": "^1.6",
-    "drupal/rebuilder": "^1.0@RC",
+    "drupal/rebuilder": "^1.0@dev",
     "drupal/redirect": "^1.6",
     "drupal/remove_http_headers": "^1.0",
     "drupal/rules": "^3.0@alpha",
