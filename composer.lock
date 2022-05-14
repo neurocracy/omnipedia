@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ddeb69f57848bd4b50576ccd4f4454bb",
+    "content-hash": "e6677761c7dcc3188e5da669c3a0b64c",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -6018,37 +6018,13 @@
         },
         {
             "name": "drupal/rebuilder",
-            "version": "1.x-dev",
-            "dist": {
-                "type": "path",
-                "url": "../../Drupal/rebuilder_dev",
-                "reference": "cd90854fbf10fd7ba928d183aaabb9304fdb3547"
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/rebuilder.git",
+                "reference": "1.x"
             },
-            "require": {
-                "php": "^8"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drush": {
-                    "services": {
-                        "drush.services.yml": "^11"
-                    }
-                }
-            },
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Ambient.Impact",
-                    "homepage": "https://ambientimpact.com/",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Rebuilder",
-            "transport-options": {
-                "relative": true
-            }
+            "type": "drupal-module"
         },
         {
             "name": "drupal/redirect",
