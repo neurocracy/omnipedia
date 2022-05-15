@@ -5248,7 +5248,7 @@
             "dist": {
                 "type": "path",
                 "url": "drupal/modules/omnipedia/omnipedia_access",
-                "reference": "af42015072302f8c20e825ae09e79a58faf73f7c"
+                "reference": "82d779cb82fcea4bef1bd0698c0ed722b0ccf1ca"
             },
             "require": {
                 "drupal/hook_event_dispatcher": "^2.0",
@@ -5260,7 +5260,8 @@
                     "drupal/permissions_by_term": {
                         "Respect the Require all terms granted and Permission mode settings in Permission by entity module: https://www.drupal.org/project/permissions_by_term/issues/3072171#comment-14209554": "drupal/modules/omnipedia/omnipedia_access/patches/drupal/permissions_by_term/merge-request-8-respect-require-all-terms-permission-by-entity.patch",
                         "Permissions by Entity PHP notice for Commerce Product entities: https://www.drupal.org/project/permissions_by_term/issues/3231188#comment-14209558": "drupal/modules/omnipedia/omnipedia_access/patches/drupal/permissions_by_term/merge-request-9-commerce-product-notices.patch",
-                        "PbE: Add entityTypeId to cache tags: https://www.drupal.org/project/permissions_by_term/issues/3238759#comment-14234566": "drupal/modules/omnipedia/omnipedia_access/patches/drupal/permissions_by_term/3238759-PbE_respect_entity_type_id-4.patch"
+                        "PbE: Add entityTypeId to cache tags: https://www.drupal.org/project/permissions_by_term/issues/3238759#comment-14234566": "drupal/modules/omnipedia/omnipedia_access/patches/drupal/permissions_by_term/3238759-PbE_respect_entity_type_id-4.patch",
+                        "Node Access Rebuilt unnecessarily if no change to user terms: https://www.drupal.org/project/permissions_by_term/issues/3170389#comment-14242763": "drupal/modules/omnipedia/omnipedia_access/patches/drupal/permissions_by_term/Issue-3170389-4-Node-Access-Rebuilt-unnecessarily.patch"
                     }
                 }
             },
