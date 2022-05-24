@@ -1,5 +1,10 @@
 module.exports = function(grunt) {
+
   'use strict';
+
+  require('grunt-drupal-delegate')(grunt);
+
+  // ---- Legacy stuff below. ----
 
   const gruntTargets = {
     aimodules:  'drupal/modules/ambientimpact',
@@ -35,9 +40,11 @@ module.exports = function(grunt) {
     grunt.registerTask(targetName, function(gruntCommand) {
       grunt.task.run('shell:' + targetName + ':' + gruntCommand);
     });
+
   }
 
   grunt.loadNpmTasks('grunt-shell');
 
   grunt.initConfig(config);
+
 };

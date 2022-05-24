@@ -5,6 +5,7 @@
   "repository": "gitlab:neurocracy/omnipedia/drupal",
   "devDependencies": {
     "grunt": "^1.5.2",
+    "grunt-drupal-delegate": "^1.0.0",
     "grunt-shell": "^3.0.1"
   },
   "dependencies": {}
