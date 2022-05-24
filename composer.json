@@ -162,7 +162,7 @@
     "drupal/views_bulk_edit": "^2.5",
     "drupal/views_bulk_operations": "^4.1",
     "drupal/webp": "^1.0",
-    "drush/drush": "^11.0",
+    "drush/drush": "^11.0.6",
     "oomphinc/composer-installers-extender": "^2.0"
   },
   "require-dev": {
@@ -199,9 +199,6 @@
       "drupal/core": "-p2"
     },
     "patches": {
-      "consolidation/site-process": {
-        "Windows: ProcessBase.php line 172: Unable to decode output into JSON: Syntax error: https://github.com/consolidation/site-process/issues/56": "patches/consolidation/site-process/windows-unable-to-decode-json.patch"
-      },
       "drupal/development_environment": {
         "Duplicate key in menu links YAML file [#3218169]: https://www.drupal.org/project/development_environment/issues/3218169": "patches/drupal/development_environment/duplicate-key-3218169-2.patch"
       },
