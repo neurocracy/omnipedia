@@ -106,6 +106,19 @@
         }
       }
     },
+    "drupal/omnipedia_refreshless": {
+      "type": "package",
+      "package": {
+        "name": "drupal/omnipedia_refreshless",
+        "type": "drupal-custom-module",
+        "version": "dev-1.x",
+        "source": {
+          "url": "https://github.com/neurocracy/drupal-omnipedia-refreshless.git",
+          "type": "git",
+          "reference": "1.x"
+        }
+      }
+    },
     "drupal": {
       "type": "composer",
       "url": "https://packages.drupal.org/8"
@@ -155,6 +168,7 @@
     "drupal/omnipedia_core": "^2.0@dev",
     "drupal/omnipedia_logger": "^2.0@dev",
     "drupal/omnipedia_media": "^2.0@dev",
+    "drupal/omnipedia_refreshless": "dev-1.x",
     "drupal/omnipedia_search": "^2.0@dev",
     "drupal/omnipedia_site": "^2.0@dev",
     "drupal/omnipedia_user": "^2.0@dev",
@@ -213,9 +227,6 @@
       "drupal/core": "-p2"
     },
     "patches": {
-      "drupal/core": {
-        "RefreshLess core patch": "patches/drupal/core/refreshless_core_9.3.x.patch"
-      },
       "drupal/development_environment": {
         "Duplicate key in menu links YAML file [#3218169]: https://www.drupal.org/project/development_environment/issues/3218169": "patches/drupal/development_environment/duplicate-key-3218169-2.patch"
       },
