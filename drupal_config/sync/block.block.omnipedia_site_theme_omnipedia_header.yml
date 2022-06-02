@@ -1,13 +1,13 @@
-uuid: 83310f8d-347c-4f5f-b995-71cce7e8328e
+uuid: 87e39022-d884-4704-ac52-528c505c0f54
 langcode: en
 status: true
 dependencies:
   module:
     - omnipedia_block
   theme:
-    - omnipedia_site
-id: omnipedia_header
-theme: omnipedia_site
+    - omnipedia_site_theme
+id: omnipedia_site_theme_omnipedia_header
+theme: omnipedia_site_theme
 region: primary_menu
 weight: 0
 provider: null

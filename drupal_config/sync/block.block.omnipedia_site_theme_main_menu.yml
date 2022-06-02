@@ -1,4 +1,4 @@
-uuid: 72770edc-3439-48c0-ba87-19ac64fb8cd7
+uuid: dd73c175-c252-4ffb-b2ec-1ade44b10e8a
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   module:
     - system
   theme:
-    - omnipedia_site
+    - omnipedia_site_theme
 _core:
   default_config_hash: ChCx7DYNUrPTt5uiRdQAPDKJQMc-_SyAQTrZh8H0o-c
-id: omnipedia_site_main_menu
-theme: omnipedia_site
+id: omnipedia_site_theme_main_menu
+theme: omnipedia_site_theme
 region: sidebar_first
 weight: -8
 provider: null

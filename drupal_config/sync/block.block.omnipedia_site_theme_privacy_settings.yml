@@ -1,13 +1,13 @@
-uuid: 4c7e2c09-bdf6-4e42-acf7-2b02fe8f7ccc
+uuid: 733bfe5f-58ca-4e30-8d22-02e77abc3585
 langcode: en
 status: true
 dependencies:
   module:
     - omnipedia_block
   theme:
-    - omnipedia_site
-id: privacy_settings
-theme: omnipedia_site
+    - omnipedia_site_theme
+id: omnipedia_site_theme_privacy_settings
+theme: omnipedia_site_theme
 region: sidebar_second
 weight: -5
 provider: null

@@ -1,4 +1,4 @@
-uuid: 0738c870-6f30-433e-8d78-6c46106770ff
+uuid: 3b010205-09f3-4ac3-bcfb-295591cf2b28
 langcode: en
 status: true
 dependencies:
@@ -6,9 +6,9 @@ dependencies:
     - commerce_checkout
     - system
   theme:
-    - omnipedia_site
-id: checkout_progress
-theme: omnipedia_site
+    - omnipedia_site_theme
+id: omnipedia_site_theme_checkout_progress
+theme: omnipedia_site_theme
 region: breadcrumb
 weight: -7
 provider: null

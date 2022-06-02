@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b6861db595a4c09378aae2c928eea78a",
+    "content-hash": "8f730a64b1fa8405f8eee4ff97d44bcb",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -5509,12 +5509,18 @@
             }
         },
         {
-            "name": "drupal/omnipedia_site",
-            "version": "2.x-dev",
+            "name": "drupal/omnipedia_site_theme",
+            "version": "3.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/neurocracy/drupal-omnipedia-site-theme.git",
+                "reference": "6beca3defb430063e823d7665d363a7f462fe7c7"
+            },
             "dist": {
-                "type": "path",
-                "url": "drupal/themes/omnipedia/omnipedia_site",
-                "reference": "fb122128d09b29a44977d8820631acfe81874ae7"
+                "type": "zip",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-site-theme/zipball/6beca3defb430063e823d7665d363a7f462fe7c7",
+                "reference": "6beca3defb430063e823d7665d363a7f462fe7c7",
+                "shasum": ""
             },
             "require": {
                 "npm-asset/fontsource--exo-2": "^4.5",
@@ -5522,7 +5528,7 @@
                 "symfony/css-selector": "^3.4 || ^4.4",
                 "symfony/dom-crawler": "^3.4 || ^4.4"
             },
-            "type": "project",
+            "type": "drupal-custom-theme",
             "license": [
                 "GPL-2.0-or-later"
             ],
@@ -5534,9 +5540,11 @@
                 }
             ],
             "description": "Omnipedia - Site theme",
-            "transport-options": {
-                "relative": true
-            }
+            "support": {
+                "source": "https://github.com/neurocracy/drupal-omnipedia-site-theme/tree/3.x",
+                "issues": "https://github.com/neurocracy/drupal-omnipedia-site-theme/issues"
+            },
+            "time": "2022-06-02T22:13:11+00:00"
         },
         {
             "name": "drupal/omnipedia_user",
@@ -18224,7 +18232,7 @@
         "drupal/omnipedia_logger": 20,
         "drupal/omnipedia_media": 20,
         "drupal/omnipedia_search": 20,
-        "drupal/omnipedia_site": 20,
+        "drupal/omnipedia_site_theme": 20,
         "drupal/omnipedia_user": 20,
         "drupal/rebuilder": 5,
         "drupal/rules": 15,

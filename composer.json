@@ -76,6 +76,10 @@
       "type": "path",
       "url": "drupal/themes/omnipedia/omnipedia_site"
     },
+    "drupal/omnipedia_site_theme": {
+      "type": "vcs",
+      "url": "https://github.com/neurocracy/drupal-omnipedia-site-theme.git"
+    },
     "drupal/omnipedia_user": {
       "type": "path",
       "url": "drupal/modules/omnipedia/omnipedia_user"
@@ -143,7 +147,7 @@
     "drupal/omnipedia_logger": "^2.0@dev",
     "drupal/omnipedia_media": "^2.0@dev",
     "drupal/omnipedia_search": "^2.0@dev",
-    "drupal/omnipedia_site": "^2.0@dev",
+    "drupal/omnipedia_site_theme": "3.x-dev@dev",
     "drupal/omnipedia_user": "^2.0@dev",
     "drupal/password_policy": "^3.0",
     "drupal/pathauto": "^1.6",

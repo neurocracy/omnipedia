@@ -1,4 +1,4 @@
-uuid: 219e0092-d9e0-42e7-990b-ed420c9c7ef8
+uuid: 49cc32ef-313e-4075-b73a-5ec71b120219
 langcode: en
 status: true
 dependencies:
@@ -6,9 +6,9 @@ dependencies:
     - omnipedia_block
     - system
   theme:
-    - omnipedia_site
-id: founder_message_join
-theme: omnipedia_site
+    - omnipedia_site_theme
+id: omnipedia_site_theme_founder_message_join
+theme: omnipedia_site_theme
 region: content
 weight: -6
 provider: null
