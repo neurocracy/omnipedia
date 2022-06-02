@@ -72,10 +72,6 @@
       "type": "path",
       "url": "drupal/modules/omnipedia/omnipedia_search"
     },
-    "drupal/omnipedia_site": {
-      "type": "path",
-      "url": "drupal/themes/omnipedia/omnipedia_site"
-    },
     "drupal/omnipedia_site_theme": {
       "type": "vcs",
       "url": "https://github.com/neurocracy/drupal-omnipedia-site-theme.git"

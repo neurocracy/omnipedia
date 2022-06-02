@@ -7,6 +7,3 @@
 [submodule "drupal/modules/omnipedia"]
 	path = drupal/modules/omnipedia
 	url = git@gitlab.com:neurocracy/omnipedia/drupal-modules.git
-[submodule "drupal/themes/omnipedia"]
-	path = drupal/themes/omnipedia
-	url = git@gitlab.com:neurocracy/omnipedia/drupal-themes.git
