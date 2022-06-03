@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8f730a64b1fa8405f8eee4ff97d44bcb",
+    "content-hash": "a43d399184cb0d16e3766cb6d489ad2f",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -3046,16 +3046,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "9.3.14",
+            "version": "9.3.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "ea4c4780324c6ee6679823927e95601938d7f6a3"
+                "reference": "c29310a4d08d5072d7f713da744c0831636b4779"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/ea4c4780324c6ee6679823927e95601938d7f6a3",
-                "reference": "ea4c4780324c6ee6679823927e95601938d7f6a3",
+                "url": "https://api.github.com/repos/drupal/core/zipball/c29310a4d08d5072d7f713da744c0831636b4779",
+                "reference": "c29310a4d08d5072d7f713da744c0831636b4779",
                 "shasum": ""
             },
             "require": {
@@ -3297,13 +3297,13 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "support": {
-                "source": "https://github.com/drupal/core/tree/9.3.14"
+                "source": "https://github.com/drupal/core/tree/9.3.15"
             },
-            "time": "2022-05-25T18:43:19+00:00"
+            "time": "2022-06-01T15:45:43+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "9.3.14",
+            "version": "9.3.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -3347,22 +3347,22 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-composer-scaffold/tree/9.3.14"
+                "source": "https://github.com/drupal/core-composer-scaffold/tree/9.3.15"
             },
             "time": "2022-02-24T17:40:56+00:00"
         },
         {
             "name": "drupal/core-recommended",
-            "version": "9.3.14",
+            "version": "9.3.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "31f23ce0ae7cf3925f6fb6a3953762b259a0494e"
+                "reference": "36b1d9dbe4f946b3c19fb91831aa1994e1e38782"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/31f23ce0ae7cf3925f6fb6a3953762b259a0494e",
-                "reference": "31f23ce0ae7cf3925f6fb6a3953762b259a0494e",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/36b1d9dbe4f946b3c19fb91831aa1994e1e38782",
+                "reference": "36b1d9dbe4f946b3c19fb91831aa1994e1e38782",
                 "shasum": ""
             },
             "require": {
@@ -3371,7 +3371,7 @@
                 "doctrine/annotations": "1.13.2",
                 "doctrine/lexer": "1.2.1",
                 "doctrine/reflection": "1.2.2",
-                "drupal/core": "9.3.14",
+                "drupal/core": "9.3.15",
                 "egulias/email-validator": "3.1.2",
                 "guzzlehttp/guzzle": "6.5.6",
                 "guzzlehttp/promises": "1.5.1",
@@ -3433,9 +3433,9 @@
             ],
             "description": "Locked core dependencies; require this project INSTEAD OF drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-recommended/tree/9.3.14"
+                "source": "https://github.com/drupal/core-recommended/tree/9.3.15"
             },
-            "time": "2022-05-25T18:43:19+00:00"
+            "time": "2022-06-01T15:45:43+00:00"
         },
         {
             "name": "drupal/csp",
@@ -15002,7 +15002,7 @@
         },
         {
             "name": "drupal/core-dev",
-            "version": "9.3.14",
+            "version": "9.3.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-dev.git",
@@ -15046,7 +15046,7 @@
             ],
             "description": "require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-dev/tree/9.3.14"
+                "source": "https://github.com/drupal/core-dev/tree/9.3.15"
             },
             "time": "2021-11-30T05:41:29+00:00"
         },
