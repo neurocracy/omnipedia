@@ -33,11 +33,9 @@ node_modules
 !/drupal/modules
 /drupal/modules/*
 !/drupal/modules/ambientimpact
-!/drupal/modules/omnipedia
 
 # Unignore the themes directory, and then ignore all sub-items that aren't our
 # own themes.
 !/drupal/themes
 /drupal/themes/*
 !/drupal/themes/ambientimpact
-!/drupal/themes/omnipedia
