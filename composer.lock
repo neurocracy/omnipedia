@@ -4,8 +4,63 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "777b23516609a36ea6c6e25521ac5605",
+    "content-hash": "59f14f763449e36395deb47d761743a9",
     "packages": [
+        {
+            "name": "8fold/commonmark-abbreviations",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/8fold/commonmark-abbreviations.git",
+                "reference": "6b25eaa8281368cb9d96d56bc610ffb060cadf18"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/8fold/commonmark-abbreviations/zipball/6b25eaa8281368cb9d96d56bc610ffb060cadf18",
+                "reference": "6b25eaa8281368cb9d96d56bc610ffb060cadf18",
+                "shasum": ""
+            },
+            "require": {
+                "league/commonmark": "~1.5",
+                "php": "^7.2|^8.0"
+            },
+            "require-dev": {
+                "8fold/php-shoop": "^0.10.17@dev",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Eightfold\\CommonMarkAbbreviations\\": "./src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Josh Bruce",
+                    "email": "josh@8fold.pro"
+                }
+            ],
+            "description": "An extension of PHP League's CommonMark library to enable abbreviation usage.",
+            "support": {
+                "issues": "https://github.com/8fold/commonmark-abbreviations/issues",
+                "source": "https://github.com/8fold/commonmark-abbreviations/tree/1.2.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/8fold",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/joshbruce",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-05-11T00:23:49+00:00"
+        },
         {
             "name": "asm89/stack-cors",
             "version": "1.3.0",
@@ -439,6 +494,118 @@
                 "source": "https://github.com/ChristianRiesen/otp/tree/2.7.0"
             },
             "time": "2021-02-23T20:13:30+00:00"
+        },
+        {
+            "name": "commerceguys/addressing",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/commerceguys/addressing.git",
+                "reference": "566febd56ca71e31dd383b014c4e1bec680507bf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/566febd56ca71e31dd383b014c4e1bec680507bf",
+                "reference": "566febd56ca71e31dd383b014c4e1bec680507bf",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/collections": "~1.0",
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "ext-json": "*",
+                "mikey179/vfsstream": "1.*",
+                "phpunit/phpunit": "^9.5",
+                "squizlabs/php_codesniffer": "3.*",
+                "symfony/validator": "^4.4 || ^5.4"
+            },
+            "suggest": {
+                "symfony/validator": "to validate addresses"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "CommerceGuys\\Addressing\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bojan Zivanovic"
+                },
+                {
+                    "name": "Damien Tournoud"
+                }
+            ],
+            "description": "Addressing library powered by CLDR and Google's address data.",
+            "keywords": [
+                "address",
+                "internationalization",
+                "localization",
+                "postal"
+            ],
+            "support": {
+                "issues": "https://github.com/commerceguys/addressing/issues",
+                "source": "https://github.com/commerceguys/addressing/tree/v1.3.0"
+            },
+            "time": "2022-04-08T13:06:51+00:00"
+        },
+        {
+            "name": "commerceguys/intl",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/commerceguys/intl.git",
+                "reference": "cab3b55dbf8c1753fe54457404082c777a8c154f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/commerceguys/intl/zipball/cab3b55dbf8c1753fe54457404082c777a8c154f",
+                "reference": "cab3b55dbf8c1753fe54457404082c777a8c154f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.3"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "1.*",
+                "phpunit/phpunit": "^7.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "CommerceGuys\\Intl\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bojan Zivanovic"
+                }
+            ],
+            "description": "Internationalization library powered by CLDR data.",
+            "support": {
+                "issues": "https://github.com/commerceguys/intl/issues",
+                "source": "https://github.com/commerceguys/intl/tree/v1.1.1"
+            },
+            "time": "2021-10-30T18:07:14+00:00"
         },
         {
             "name": "composer/installers",
@@ -1408,6 +1575,75 @@
             "time": "2021-08-05T19:00:23+00:00"
         },
         {
+            "name": "doctrine/collections",
+            "version": "1.6.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/collections.git",
+                "reference": "1958a744696c6bb3bb0d28db2611dc11610e78af"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/collections/zipball/1958a744696c6bb3bb0d28db2611dc11610e78af",
+                "reference": "1958a744696c6bb3bb0d28db2611dc11610e78af",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3 || ^8.0"
+            },
+            "require-dev": {
+                "doctrine/coding-standard": "^9.0",
+                "phpstan/phpstan": "^0.12",
+                "phpunit/phpunit": "^7.5 || ^8.5 || ^9.1.5",
+                "vimeo/psalm": "^4.2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\Common\\Collections\\": "lib/Doctrine/Common/Collections"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "PHP Doctrine Collections library that adds additional functionality on top of PHP arrays.",
+            "homepage": "https://www.doctrine-project.org/projects/collections.html",
+            "keywords": [
+                "array",
+                "collections",
+                "iterators",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/doctrine/collections/issues",
+                "source": "https://github.com/doctrine/collections/tree/1.6.8"
+            },
+            "time": "2021-08-10T18:51:53+00:00"
+        },
+        {
             "name": "doctrine/lexer",
             "version": "1.2.1",
             "source": {
@@ -1579,6 +1815,79 @@
                 "reference": "master"
             },
             "type": "drupal-library"
+        },
+        {
+            "name": "drupal/address",
+            "version": "1.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/address.git",
+                "reference": "8.x-1.10"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/address-8.x-1.10.zip",
+                "reference": "8.x-1.10",
+                "shasum": "bbe61eb51da9d9b2a7ab247f90426836eb9b6f25"
+            },
+            "require": {
+                "commerceguys/addressing": "^1.2.0",
+                "drupal/core": "^9.2 || ^10",
+                "php": "^7.3 || ^8.0"
+            },
+            "require-dev": {
+                "drupal/token": "^1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.10",
+                    "datestamp": "1643715226",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Centarro",
+                    "homepage": "https://www.drupal.org/user/3661446"
+                },
+                {
+                    "name": "bojanz",
+                    "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "dww",
+                    "homepage": "https://www.drupal.org/user/46549"
+                },
+                {
+                    "name": "googletorp",
+                    "homepage": "https://www.drupal.org/user/386230"
+                },
+                {
+                    "name": "jsacksick",
+                    "homepage": "https://www.drupal.org/user/972218"
+                },
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
+                },
+                {
+                    "name": "rszrama",
+                    "homepage": "https://www.drupal.org/user/49344"
+                }
+            ],
+            "description": "Provides functionality for storing, validating and displaying international postal addresses.",
+            "homepage": "http://drupal.org/project/address",
+            "support": {
+                "source": "https://git.drupalcode.org/project/address"
+            }
         },
         {
             "name": "drupal/advagg",
@@ -1880,6 +2189,717 @@
             "homepage": "https://www.drupal.org/project/autoban",
             "support": {
                 "source": "https://git.drupalcode.org/project/autoban"
+            }
+        },
+        {
+            "name": "drupal/commerce",
+            "version": "2.30.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/commerce.git",
+                "reference": "8.x-2.30"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/commerce-8.x-2.30.zip",
+                "reference": "8.x-2.30",
+                "shasum": "45cf6a7e09b0aa318f3dce063254c1a8ed503e60"
+            },
+            "require": {
+                "commerceguys/intl": "^1.0.0",
+                "drupal/address": "^1.7",
+                "drupal/core": "^9.2 || ^10",
+                "drupal/entity": "^1.0",
+                "drupal/entity_reference_revisions": "~1.0",
+                "drupal/inline_entity_form": "^1.0@RC",
+                "drupal/profile": "^1.2",
+                "drupal/state_machine": "^1.5",
+                "drupal/token": "^1.7",
+                "ext-bcmath": "*",
+                "php": "^7.3 || ^8.0"
+            },
+            "conflict": {
+                "drupal/commerce_shipping": "<2.1"
+            },
+            "require-dev": {
+                "drupal/commerce_cart": "*",
+                "drupal/commerce_number_pattern": "*",
+                "drupal/commerce_order": "*",
+                "drupal/commerce_payment": "*",
+                "drupal/commerce_price": "*",
+                "drupal/commerce_product": "*",
+                "drupal/commerce_store": "*",
+                "drupal/entity_print": "^2.2",
+                "drupal/entity_reference_revisions": "*",
+                "drupal/mailsystem": "^4.3",
+                "drupal/profile": "*",
+                "drupal/state_machine": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.30",
+                    "datestamp": "1649341535",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Centarro",
+                    "homepage": "https://www.drupal.org/user/3661446"
+                },
+                {
+                    "name": "bojanz",
+                    "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "jsacksick",
+                    "homepage": "https://www.drupal.org/user/972218"
+                },
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
+                },
+                {
+                    "name": "rszrama",
+                    "homepage": "https://www.drupal.org/user/49344"
+                }
+            ],
+            "description": "Drupal Commerce is a flexible eCommerce solution.",
+            "homepage": "http://drupal.org/project/commerce",
+            "support": {
+                "source": "https://git.drupalcode.org/project/commerce"
+            }
+        },
+        {
+            "name": "drupal/commerce_cart",
+            "version": "2.30.0",
+            "require": {
+                "drupal/commerce": "*",
+                "drupal/commerce_order": "*",
+                "drupal/commerce_product": "*",
+                "drupal/core": "^9.2 || ^10"
+            },
+            "type": "metapackage",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.30",
+                    "datestamp": "1649341535",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Centarro",
+                    "homepage": "https://www.drupal.org/user/3661446"
+                },
+                {
+                    "name": "bojanz",
+                    "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "jsacksick",
+                    "homepage": "https://www.drupal.org/user/972218"
+                },
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
+                },
+                {
+                    "name": "rszrama",
+                    "homepage": "https://www.drupal.org/user/49344"
+                }
+            ],
+            "description": "Implements the shopping cart system and add to cart features.",
+            "homepage": "https://www.drupal.org/project/commerce",
+            "support": {
+                "source": "https://git.drupalcode.org/project/commerce"
+            }
+        },
+        {
+            "name": "drupal/commerce_cart_redirection",
+            "version": "3.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/commerce_cart_redirection.git",
+                "reference": "3.1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/commerce_cart_redirection-3.1.1.zip",
+                "reference": "3.1.1",
+                "shasum": "d73d9595a60a47e3fa8d87e5fbdffd70ffbc3e8a"
+            },
+            "require": {
+                "drupal/core": "^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.1.1",
+                    "datestamp": "1652210291",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "AndyD328",
+                    "homepage": "https://www.drupal.org/user/2261214"
+                },
+                {
+                    "name": "calbasi",
+                    "homepage": "https://www.drupal.org/user/318818"
+                }
+            ],
+            "description": "Redirect to your cart page after adding a product to it",
+            "homepage": "https://www.drupal.org/project/commerce_cart_redirection",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/commerce_cart_redirection",
+                "issues": "https://www.drupal.org/project/issues/commerce_cart_redirection"
+            }
+        },
+        {
+            "name": "drupal/commerce_number_pattern",
+            "version": "2.30.0",
+            "require": {
+                "drupal/commerce": "*",
+                "drupal/commerce_store": "*",
+                "drupal/core": "^9.2 || ^10"
+            },
+            "type": "metapackage",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.30",
+                    "datestamp": "1649341535",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Centarro",
+                    "homepage": "https://www.drupal.org/user/3661446"
+                },
+                {
+                    "name": "bojanz",
+                    "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "jsacksick",
+                    "homepage": "https://www.drupal.org/user/972218"
+                },
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
+                },
+                {
+                    "name": "rszrama",
+                    "homepage": "https://www.drupal.org/user/49344"
+                }
+            ],
+            "description": "Provides configurable patterns for generating sequential numbers.",
+            "homepage": "https://www.drupal.org/project/commerce",
+            "support": {
+                "source": "https://git.drupalcode.org/project/commerce"
+            }
+        },
+        {
+            "name": "drupal/commerce_order",
+            "version": "2.30.0",
+            "require": {
+                "drupal/commerce": "*",
+                "drupal/commerce_number_pattern": "*",
+                "drupal/commerce_price": "*",
+                "drupal/commerce_store": "*",
+                "drupal/core": "^9.2 || ^10",
+                "drupal/entity_reference_revisions": "*",
+                "drupal/profile": "*",
+                "drupal/state_machine": "*"
+            },
+            "type": "metapackage",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.30",
+                    "datestamp": "1649341535",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Centarro",
+                    "homepage": "https://www.drupal.org/user/3661446"
+                },
+                {
+                    "name": "bojanz",
+                    "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "jsacksick",
+                    "homepage": "https://www.drupal.org/user/972218"
+                },
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
+                },
+                {
+                    "name": "rszrama",
+                    "homepage": "https://www.drupal.org/user/49344"
+                }
+            ],
+            "description": "Defines the Order entity and associated features.",
+            "homepage": "https://www.drupal.org/project/commerce",
+            "support": {
+                "source": "https://git.drupalcode.org/project/commerce"
+            }
+        },
+        {
+            "name": "drupal/commerce_payment",
+            "version": "2.30.0",
+            "require": {
+                "drupal/commerce": "*",
+                "drupal/commerce_order": "*",
+                "drupal/core": "^9.2 || ^10",
+                "drupal/entity_reference_revisions": "*"
+            },
+            "type": "metapackage",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.30",
+                    "datestamp": "1649341535",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Centarro",
+                    "homepage": "https://www.drupal.org/user/3661446"
+                },
+                {
+                    "name": "bojanz",
+                    "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "jsacksick",
+                    "homepage": "https://www.drupal.org/user/972218"
+                },
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
+                },
+                {
+                    "name": "rszrama",
+                    "homepage": "https://www.drupal.org/user/49344"
+                }
+            ],
+            "description": "Provides payment functionality.",
+            "homepage": "https://www.drupal.org/project/commerce",
+            "support": {
+                "source": "https://git.drupalcode.org/project/commerce"
+            }
+        },
+        {
+            "name": "drupal/commerce_paypal",
+            "version": "1.0.0-rc6",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/commerce_paypal.git",
+                "reference": "8.x-1.0-rc6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/commerce_paypal-8.x-1.0-rc6.zip",
+                "reference": "8.x-1.0-rc6",
+                "shasum": "fe27e857cc8598288de1ac8c9bf2e09f986831b1"
+            },
+            "require": {
+                "drupal/commerce": "^2.19 || ^3",
+                "drupal/commerce_payment": "*",
+                "drupal/core": "^8.9 || ^9",
+                "sainsburys/guzzle-oauth2-plugin": "^3.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-rc6",
+                    "datestamp": "1635940642",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Centarro",
+                    "homepage": "https://www.drupal.org/user/3661446"
+                },
+                {
+                    "name": "bojanz",
+                    "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "jsacksick",
+                    "homepage": "https://www.drupal.org/user/972218"
+                },
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
+                },
+                {
+                    "name": "rszrama",
+                    "homepage": "https://www.drupal.org/user/49344"
+                }
+            ],
+            "description": "Provides Commerce integration for PayPal.",
+            "homepage": "http://drupal.org/project/commerce_paypal",
+            "support": {
+                "source": "https://git.drupalcode.org/project/commerce_paypal"
+            }
+        },
+        {
+            "name": "drupal/commerce_price",
+            "version": "2.30.0",
+            "require": {
+                "drupal/commerce": "*",
+                "drupal/core": "^9.2 || ^10"
+            },
+            "type": "metapackage",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.30",
+                    "datestamp": "1649341535",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Centarro",
+                    "homepage": "https://www.drupal.org/user/3661446"
+                },
+                {
+                    "name": "bojanz",
+                    "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "jsacksick",
+                    "homepage": "https://www.drupal.org/user/972218"
+                },
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
+                },
+                {
+                    "name": "rszrama",
+                    "homepage": "https://www.drupal.org/user/49344"
+                }
+            ],
+            "description": "Defines the Currency entity.",
+            "homepage": "https://www.drupal.org/project/commerce",
+            "support": {
+                "source": "https://git.drupalcode.org/project/commerce"
+            }
+        },
+        {
+            "name": "drupal/commerce_product",
+            "version": "2.30.0",
+            "require": {
+                "drupal/commerce": "*",
+                "drupal/commerce_price": "*",
+                "drupal/commerce_store": "*",
+                "drupal/core": "^9.2 || ^10"
+            },
+            "type": "metapackage",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.30",
+                    "datestamp": "1649341535",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Centarro",
+                    "homepage": "https://www.drupal.org/user/3661446"
+                },
+                {
+                    "name": "bojanz",
+                    "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "jsacksick",
+                    "homepage": "https://www.drupal.org/user/972218"
+                },
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
+                },
+                {
+                    "name": "rszrama",
+                    "homepage": "https://www.drupal.org/user/49344"
+                }
+            ],
+            "description": "Defines the Product entity and associated features.",
+            "homepage": "https://www.drupal.org/project/commerce",
+            "support": {
+                "source": "https://git.drupalcode.org/project/commerce"
+            }
+        },
+        {
+            "name": "drupal/commerce_product_limits",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/commerce_product_limits.git",
+                "reference": "1.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/commerce_product_limits-1.0.0.zip",
+                "reference": "1.0.0",
+                "shasum": "9904689f6104bc8b93e1b2dd9dc01d6481417c1f"
+            },
+            "require": {
+                "drupal/commerce_cart": "*",
+                "drupal/commerce_product": "*",
+                "drupal/core": "^8.8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0",
+                    "datestamp": "1614613179",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Centarro",
+                    "homepage": "https://www.drupal.org/user/3661446"
+                },
+                {
+                    "name": "danmer",
+                    "homepage": "https://www.drupal.org/user/3451739"
+                },
+                {
+                    "name": "dwkitchen",
+                    "homepage": "https://www.drupal.org/user/367701"
+                },
+                {
+                    "name": "jsacksick",
+                    "homepage": "https://www.drupal.org/user/972218"
+                },
+                {
+                    "name": "rszrama",
+                    "homepage": "https://www.drupal.org/user/49344"
+                }
+            ],
+            "description": "Adds minimum and maximum quantity purchase limits to product variations.",
+            "homepage": "https://www.drupal.org/project/commerce_product_limits",
+            "support": {
+                "source": "https://git.drupalcode.org/project/commerce_product_limits"
+            }
+        },
+        {
+            "name": "drupal/commerce_store",
+            "version": "2.30.0",
+            "require": {
+                "drupal/commerce": "*",
+                "drupal/commerce_price": "*",
+                "drupal/core": "^9.2 || ^10"
+            },
+            "type": "metapackage",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.30",
+                    "datestamp": "1649341535",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Centarro",
+                    "homepage": "https://www.drupal.org/user/3661446"
+                },
+                {
+                    "name": "bojanz",
+                    "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "jsacksick",
+                    "homepage": "https://www.drupal.org/user/972218"
+                },
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
+                },
+                {
+                    "name": "rszrama",
+                    "homepage": "https://www.drupal.org/user/49344"
+                }
+            ],
+            "description": "Defines the Store entity and associated features.",
+            "homepage": "https://www.drupal.org/project/commerce",
+            "support": {
+                "source": "https://git.drupalcode.org/project/commerce"
+            }
+        },
+        {
+            "name": "drupal/commerce_stripe",
+            "version": "1.0.0-rc6",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/commerce_stripe.git",
+                "reference": "8.x-1.0-rc6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/commerce_stripe-8.x-1.0-rc6.zip",
+                "reference": "8.x-1.0-rc6",
+                "shasum": "b4b89e7fa2bfc9435da63de61542e40d9bf2bbcb"
+            },
+            "require": {
+                "drupal/commerce": "^2.25 || ^3",
+                "drupal/commerce_payment": "*",
+                "drupal/core": "^8.9 || ^9",
+                "stripe/stripe-php": "^7.25"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-rc6",
+                    "datestamp": "1635837878",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Damien Tournoud",
+                    "homepage": "https://www.drupal.org/user/22211"
+                },
+                {
+                    "name": "GuGuss",
+                    "homepage": "https://www.drupal.org/user/1237516"
+                },
+                {
+                    "name": "aviindub",
+                    "homepage": "https://www.drupal.org/user/2565920"
+                },
+                {
+                    "name": "bojanz",
+                    "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "iler",
+                    "homepage": "https://www.drupal.org/user/726092"
+                },
+                {
+                    "name": "jsacksick",
+                    "homepage": "https://www.drupal.org/user/972218"
+                },
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
+                },
+                {
+                    "name": "rszrama",
+                    "homepage": "https://www.drupal.org/user/49344"
+                },
+                {
+                    "name": "torgosPizza",
+                    "homepage": "https://www.drupal.org/user/151333"
+                },
+                {
+                    "name": "vasike",
+                    "homepage": "https://www.drupal.org/user/156237"
+                }
+            ],
+            "description": "Provides Commerce integration for Stripe Payments.",
+            "homepage": "http://drupal.org/project/commerce_stripe",
+            "support": {
+                "source": "https://git.drupalcode.org/project/commerce_stripe"
             }
         },
         {
@@ -2864,6 +3884,134 @@
             }
         },
         {
+            "name": "drupal/entity",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/entity.git",
+                "reference": "8.x-1.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entity-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "9515e28a70448d369adf4199d08a01a5ab75792d"
+            },
+            "require": {
+                "drupal/core": "^8.8.2 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.3",
+                    "datestamp": "1646324539",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "TR",
+                    "homepage": "https://www.drupal.org/user/202830"
+                },
+                {
+                    "name": "bojanz",
+                    "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "dawehner",
+                    "homepage": "https://www.drupal.org/user/99340"
+                },
+                {
+                    "name": "dixon_",
+                    "homepage": "https://www.drupal.org/user/239911"
+                },
+                {
+                    "name": "fago",
+                    "homepage": "https://www.drupal.org/user/16747"
+                },
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
+                }
+            ],
+            "description": "Provides expanded entity APIs, which will be moved to Drupal core one day.",
+            "homepage": "https://www.drupal.org/project/entity",
+            "support": {
+                "source": "https://git.drupalcode.org/project/entity",
+                "issues": "https://www.drupal.org/project/issues/entity"
+            }
+        },
+        {
+            "name": "drupal/entity_reference_revisions",
+            "version": "1.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/entity_reference_revisions.git",
+                "reference": "8.x-1.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entity_reference_revisions-8.x-1.9.zip",
+                "reference": "8.x-1.9",
+                "shasum": "e1c51bdea495eb3b458130d6f0a00c347f5637df"
+            },
+            "require": {
+                "drupal/core": "^8.7.7 || ^9"
+            },
+            "require-dev": {
+                "drupal/diff": "1.x-dev"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.9",
+                    "datestamp": "1614805871",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "Frans",
+                    "homepage": "https://www.drupal.org/user/514222"
+                },
+                {
+                    "name": "jeroen.b",
+                    "homepage": "https://www.drupal.org/user/1853532"
+                },
+                {
+                    "name": "miro_dietiker",
+                    "homepage": "https://www.drupal.org/user/227761"
+                }
+            ],
+            "description": "Entity Reference Revisions",
+            "homepage": "https://www.drupal.org/project/entity_reference_revisions",
+            "support": {
+                "source": "https://git.drupalcode.org/project/entity_reference_revisions"
+            }
+        },
+        {
             "name": "drupal/eu_cookie_compliance",
             "version": "1.19.0",
             "source": {
@@ -3432,6 +4580,98 @@
             }
         },
         {
+            "name": "drupal/inline_entity_form",
+            "version": "1.0.0-rc11",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/inline_entity_form.git",
+                "reference": "8.x-1.0-rc11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/inline_entity_form-8.x-1.0-rc11.zip",
+                "reference": "8.x-1.0-rc11",
+                "shasum": "67a92ec1482be19b2f2091ca9498f585e34072b9"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "drupal/entity_reference_revisions": "^1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-rc11",
+                    "datestamp": "1648748863",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Centarro",
+                    "homepage": "https://www.drupal.org/user/3661446"
+                },
+                {
+                    "name": "bojanz",
+                    "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "dawehner",
+                    "homepage": "https://www.drupal.org/user/99340"
+                },
+                {
+                    "name": "geek-merlin",
+                    "homepage": "https://www.drupal.org/user/229048"
+                },
+                {
+                    "name": "joachim",
+                    "homepage": "https://www.drupal.org/user/107701"
+                },
+                {
+                    "name": "jsacksick",
+                    "homepage": "https://www.drupal.org/user/972218"
+                },
+                {
+                    "name": "kaythay",
+                    "homepage": "https://www.drupal.org/user/2182186"
+                },
+                {
+                    "name": "oknate",
+                    "homepage": "https://www.drupal.org/user/471638"
+                },
+                {
+                    "name": "ram4nd",
+                    "homepage": "https://www.drupal.org/user/601534"
+                },
+                {
+                    "name": "rszrama",
+                    "homepage": "https://www.drupal.org/user/49344"
+                },
+                {
+                    "name": "slashrsm",
+                    "homepage": "https://www.drupal.org/user/744628"
+                },
+                {
+                    "name": "webflo",
+                    "homepage": "https://www.drupal.org/user/254778"
+                }
+            ],
+            "description": "Provides a widget for inline management (creation, modification, removal) of referenced entities.",
+            "homepage": "https://www.drupal.org/project/inline_entity_form",
+            "support": {
+                "source": "https://git.drupalcode.org/project/inline_entity_form"
+            }
+        },
+        {
             "name": "drupal/key",
             "version": "1.15.0",
             "source": {
@@ -3884,6 +5124,517 @@
             }
         },
         {
+            "name": "drupal/monolog",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/monolog.git",
+                "reference": "2.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/monolog-2.0.1.zip",
+                "reference": "2.0.1",
+                "shasum": "2c631b8c8eec2fef7129e9ce2ff0b5db8c2471c7"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9",
+                "monolog/monolog": "^2.0.0",
+                "php": "^7.4|^8"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.1",
+                    "datestamp": "1640956692",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Drupal\\Monolog": "src/"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Pliakas",
+                    "homepage": "https://www.drupal.org/user/1011436",
+                    "email": "opensource@chrispliakas.com",
+                    "role": "Project Lead"
+                },
+                {
+                    "name": "See contributors",
+                    "homepage": "http://drupal.org/node/1937716/committers",
+                    "role": "Developer"
+                },
+                {
+                    "name": "lussoluca",
+                    "homepage": "https://www.drupal.org/user/138068"
+                }
+            ],
+            "description": "A Framework for integrating with the Monolog library.",
+            "homepage": "http://drupal.org/project/monolog",
+            "support": {
+                "source": "https://git.drupalcode.org/project/monolog",
+                "issues": "http://drupal.org/project/issues/monolog"
+            }
+        },
+        {
+            "name": "drupal/omnipedia_access",
+            "version": "3.x-dev",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:neurocracy/drupal-omnipedia-access.git",
+                "reference": "b85d903d5e1a5fe80b0f84d0e504cccfbfad64da"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-access/zipball/b85d903d5e1a5fe80b0f84d0e504cccfbfad64da",
+                "reference": "b85d903d5e1a5fe80b0f84d0e504cccfbfad64da",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/hook_event_dispatcher": "^2.0 || ^3.0",
+                "drupal/permissions_by_term": "^2.34 || ^3.1"
+            },
+            "default-branch": true,
+            "type": "drupal-custom-module",
+            "extra": {
+                "patches": {
+                    "drupal/permissions_by_term": {
+                        "Respect the Require all terms granted and Permission mode settings in Permission by entity module: https://www.drupal.org/project/permissions_by_term/issues/3072171#comment-14209554": "drupal/modules/custom/omnipedia_access/patches/drupal/permissions_by_term/merge-request-8-respect-require-all-terms-permission-by-entity.patch",
+                        "Permissions by Entity PHP notice for Commerce Product entities: https://www.drupal.org/project/permissions_by_term/issues/3231188#comment-14209558": "drupal/modules/custom/omnipedia_access/patches/drupal/permissions_by_term/merge-request-9-commerce-product-notices.patch",
+                        "PbE: Add entityTypeId to cache tags: https://www.drupal.org/project/permissions_by_term/issues/3238759#comment-14234566": "drupal/modules/custom/omnipedia_access/patches/drupal/permissions_by_term/3238759-PbE_respect_entity_type_id-4.patch",
+                        "Node Access Rebuilt unnecessarily if no change to user terms: https://www.drupal.org/project/permissions_by_term/issues/3170389#comment-14242763": "drupal/modules/custom/omnipedia_access/patches/drupal/permissions_by_term/Issue-3170389-4-Node-Access-Rebuilt-unnecessarily.patch"
+                    }
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ambient.Impact",
+                    "homepage": "https://ambientimpact.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Omnipedia - Access",
+            "support": {
+                "source": "https://github.com/neurocracy/drupal-omnipedia-access/tree/3.x",
+                "issues": "https://github.com/neurocracy/drupal-omnipedia-access/issues"
+            },
+            "time": "2022-06-05T23:29:34+00:00"
+        },
+        {
+            "name": "drupal/omnipedia_attached_data",
+            "version": "3.x-dev",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:neurocracy/drupal-omnipedia-attached-data.git",
+                "reference": "5080e562a803b831a909fd7383eb608239b9d237"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-attached-data/zipball/5080e562a803b831a909fd7383eb608239b9d237",
+                "reference": "5080e562a803b831a909fd7383eb608239b9d237",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/hook_event_dispatcher": "^2.0 || ^3.0",
+                "symfony/css-selector": "^3.4 || ^4.4",
+                "symfony/dom-crawler": "^3.4 || ^4.4"
+            },
+            "default-branch": true,
+            "type": "drupal-custom-module",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ambient.Impact",
+                    "homepage": "https://ambientimpact.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Omnipedia - Attached data",
+            "support": {
+                "source": "https://github.com/neurocracy/drupal-omnipedia-attached-data/tree/3.x",
+                "issues": "https://github.com/neurocracy/drupal-omnipedia-attached-data/issues"
+            },
+            "time": "2022-06-05T00:39:44+00:00"
+        },
+        {
+            "name": "drupal/omnipedia_block",
+            "version": "3.x-dev",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:neurocracy/drupal-omnipedia-block.git",
+                "reference": "e02f324ae31c4167a6226b8e0ba26d4d0ededcdc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-block/zipball/e02f324ae31c4167a6226b8e0ba26d4d0ededcdc",
+                "reference": "e02f324ae31c4167a6226b8e0ba26d4d0ededcdc",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/hook_event_dispatcher": "^2.0 || ^3.0"
+            },
+            "default-branch": true,
+            "type": "drupal-custom-module",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ambient.Impact",
+                    "homepage": "https://ambientimpact.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Omnipedia - Blocks",
+            "support": {
+                "source": "https://github.com/neurocracy/drupal-omnipedia-block/tree/3.x",
+                "issues": "https://github.com/neurocracy/drupal-omnipedia-block/issues"
+            },
+            "time": "2022-06-06T00:37:42+00:00"
+        },
+        {
+            "name": "drupal/omnipedia_changes",
+            "version": "3.x-dev",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:neurocracy/drupal-omnipedia-changes.git",
+                "reference": "c1adc4ec3470335ad6bc26dd7eb275c5590c6325"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-changes/zipball/c1adc4ec3470335ad6bc26dd7eb275c5590c6325",
+                "reference": "c1adc4ec3470335ad6bc26dd7eb275c5590c6325",
+                "shasum": ""
+            },
+            "require": {
+                "caxy/php-htmldiff": "^0.1.12",
+                "drupal/diff": "^1.0",
+                "drupal/pcb": "^2.3",
+                "drupal/queue_ui": "^2.2",
+                "drupal/warmer": "^2.0",
+                "symfony/css-selector": "^3.4 || ^4.4",
+                "symfony/dom-crawler": "^3.4 || ^4.4"
+            },
+            "default-branch": true,
+            "type": "drupal-custom-module",
+            "extra": {
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^10"
+                    }
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ambient.Impact",
+                    "homepage": "https://ambientimpact.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Omnipedia - Content changes",
+            "support": {
+                "source": "https://github.com/neurocracy/drupal-omnipedia-changes/tree/3.x",
+                "issues": "https://github.com/neurocracy/drupal-omnipedia-changes/issues"
+            },
+            "time": "2022-06-06T00:39:10+00:00"
+        },
+        {
+            "name": "drupal/omnipedia_commerce",
+            "version": "3.x-dev",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:neurocracy/drupal-omnipedia-commerce.git",
+                "reference": "9172588f05fb5e06c4d01ac119781cafac971547"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-commerce/zipball/9172588f05fb5e06c4d01ac119781cafac971547",
+                "reference": "9172588f05fb5e06c4d01ac119781cafac971547",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/commerce": "^2.24",
+                "drupal/commerce_cart_redirection": "^3.0",
+                "drupal/commerce_paypal": "^1.0",
+                "drupal/commerce_product_limits": "^1.0",
+                "drupal/commerce_stripe": "^1.0",
+                "drupal/hook_event_dispatcher": "^2.0 || ^3.0"
+            },
+            "default-branch": true,
+            "type": "drupal-custom-module",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ambient.Impact",
+                    "homepage": "https://ambientimpact.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Omnipedia - Commerce",
+            "support": {
+                "source": "https://github.com/neurocracy/drupal-omnipedia-commerce/tree/3.x",
+                "issues": "https://github.com/neurocracy/drupal-omnipedia-commerce/issues"
+            },
+            "time": "2022-06-05T00:46:30+00:00"
+        },
+        {
+            "name": "drupal/omnipedia_content",
+            "version": "3.x-dev",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:neurocracy/drupal-omnipedia-content.git",
+                "reference": "ff1f1068dd7dbacf2296e4149e11b0bed26359a8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-content/zipball/ff1f1068dd7dbacf2296e4149e11b0bed26359a8",
+                "reference": "ff1f1068dd7dbacf2296e4149e11b0bed26359a8",
+                "shasum": ""
+            },
+            "require": {
+                "8fold/commonmark-abbreviations": "^1.2",
+                "drupal/hook_event_dispatcher": "^2.0 || ^3.0",
+                "drupal/markdown": "^3.0@RC",
+                "league/commonmark": "^1.6.1",
+                "symfony/css-selector": "^3.4 || ^4.4",
+                "symfony/dom-crawler": "^3.4 || ^4.4"
+            },
+            "default-branch": true,
+            "type": "drupal-custom-module",
+            "extra": {
+                "patches": {
+                    "drupal/core": {
+                        "UrlGenerator improperly escapes a colon in the path [#3165305]: https://www.drupal.org/project/drupal/issues/3165305#comment-14058586": "drupal/modules/custom/omnipedia_content/patches/drupal/core/url_escaped-3165305-10.patch"
+                    }
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ambient.Impact",
+                    "homepage": "https://ambientimpact.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Omnipedia - Content",
+            "support": {
+                "source": "https://github.com/neurocracy/drupal-omnipedia-content/tree/3.x",
+                "issues": "https://github.com/neurocracy/drupal-omnipedia-content/issues"
+            },
+            "time": "2022-06-06T00:39:49+00:00"
+        },
+        {
+            "name": "drupal/omnipedia_core",
+            "version": "3.x-dev",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:neurocracy/drupal-omnipedia-core.git",
+                "reference": "20bbfcadbaa6f4f797b53ba53f880eb7ed349277"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-core/zipball/20bbfcadbaa6f4f797b53ba53f880eb7ed349277",
+                "reference": "20bbfcadbaa6f4f797b53ba53f880eb7ed349277",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/hook_event_dispatcher": "^2.0 || ^3.0"
+            },
+            "default-branch": true,
+            "type": "drupal-custom-module",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ambient.Impact",
+                    "homepage": "https://ambientimpact.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Omnipedia - Core",
+            "support": {
+                "source": "https://github.com/neurocracy/drupal-omnipedia-core/tree/3.x",
+                "issues": "https://github.com/neurocracy/drupal-omnipedia-core/issues"
+            },
+            "time": "2022-06-05T00:49:23+00:00"
+        },
+        {
+            "name": "drupal/omnipedia_logger",
+            "version": "3.x-dev",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:neurocracy/drupal-omnipedia-logger.git",
+                "reference": "8671ac77e4eca5b57943b4e2d8996e533a53a8ed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-logger/zipball/8671ac77e4eca5b57943b4e2d8996e533a53a8ed",
+                "reference": "8671ac77e4eca5b57943b4e2d8996e533a53a8ed",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/monolog": "^2.0",
+                "php": "^8"
+            },
+            "default-branch": true,
+            "type": "drupal-custom-module",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ambient.Impact",
+                    "homepage": "https://ambientimpact.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Omnipedia - Logger",
+            "support": {
+                "source": "https://github.com/neurocracy/drupal-omnipedia-logger/tree/3.x",
+                "issues": "https://github.com/neurocracy/drupal-omnipedia-logger/issues"
+            },
+            "time": "2022-06-05T00:48:48+00:00"
+        },
+        {
+            "name": "drupal/omnipedia_media",
+            "version": "3.x-dev",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:neurocracy/drupal-omnipedia-media.git",
+                "reference": "a73462bf59318134867b2dcb14e755db2c24ceba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-media/zipball/a73462bf59318134867b2dcb14e755db2c24ceba",
+                "reference": "a73462bf59318134867b2dcb14e755db2c24ceba",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/hook_event_dispatcher": "^2.0 || ^3.0",
+                "drupal/webp": "^1.0"
+            },
+            "default-branch": true,
+            "type": "drupal-custom-module",
+            "extra": {
+                "patches": {
+                    "drupal/webp": {
+                        "A recent commit causes image generation to fail on Windows platforms: https://www.drupal.org/project/webp/issues/3161795#comment-14096421": "drupal/modules/custom/omnipedia_media/patches/drupal/webp/webp-replace-file-exists-call-with-entity-load-to-fix-image-generation-3161795-16.patch"
+                    }
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ambient.Impact",
+                    "homepage": "https://ambientimpact.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Omnipedia - Media",
+            "support": {
+                "source": "https://github.com/neurocracy/drupal-omnipedia-media/tree/3.x",
+                "issues": "https://github.com/neurocracy/drupal-omnipedia-media/issues"
+            },
+            "time": "2022-06-06T00:40:27+00:00"
+        },
+        {
+            "name": "drupal/omnipedia_menu",
+            "version": "3.x-dev",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:neurocracy/drupal-omnipedia-menu.git",
+                "reference": "28c91ee5ac51232944e5695b6023f077848caf2f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-menu/zipball/28c91ee5ac51232944e5695b6023f077848caf2f",
+                "reference": "28c91ee5ac51232944e5695b6023f077848caf2f",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/hook_event_dispatcher": "^2.0 || ^3.0"
+            },
+            "default-branch": true,
+            "type": "drupal-custom-module",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ambient.Impact",
+                    "homepage": "https://ambientimpact.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Omnipedia - Menus",
+            "support": {
+                "source": "https://github.com/neurocracy/drupal-omnipedia-menu/tree/3.x",
+                "issues": "https://github.com/neurocracy/drupal-omnipedia-menu/issues"
+            },
+            "time": "2022-06-05T00:52:05+00:00"
+        },
+        {
+            "name": "drupal/omnipedia_search",
+            "version": "3.x-dev",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:neurocracy/drupal-omnipedia-search.git",
+                "reference": "bc9e68f9caa31ad4ee18271c318eda16d9d83ef4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-search/zipball/bc9e68f9caa31ad4ee18271c318eda16d9d83ef4",
+                "reference": "bc9e68f9caa31ad4ee18271c318eda16d9d83ef4",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/search_api": "^1.15"
+            },
+            "default-branch": true,
+            "type": "drupal-custom-module",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ambient.Impact",
+                    "homepage": "https://ambientimpact.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Omnipedia - Search",
+            "support": {
+                "source": "https://github.com/neurocracy/drupal-omnipedia-search/tree/3.x",
+                "issues": "https://github.com/neurocracy/drupal-omnipedia-search/issues"
+            },
+            "time": "2022-06-05T00:54:13+00:00"
+        },
+        {
             "name": "drupal/omnipedia_site_theme",
             "version": "3.x-dev",
             "source": {
@@ -3921,6 +5672,43 @@
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-site-theme/issues"
             },
             "time": "2022-06-02T23:51:10+00:00"
+        },
+        {
+            "name": "drupal/omnipedia_user",
+            "version": "3.x-dev",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:neurocracy/drupal-omnipedia-user.git",
+                "reference": "9a7aaf5c7661d0eab4c028168d113ae10cacaf3b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-user/zipball/9a7aaf5c7661d0eab4c028168d113ae10cacaf3b",
+                "reference": "9a7aaf5c7661d0eab4c028168d113ae10cacaf3b",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/hook_event_dispatcher": "^2.0 || ^3.0",
+                "php": "^8"
+            },
+            "default-branch": true,
+            "type": "drupal-custom-module",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ambient.Impact",
+                    "homepage": "https://ambientimpact.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Omnipedia - User",
+            "support": {
+                "source": "https://github.com/neurocracy/drupal-omnipedia-user/tree/3.x",
+                "issues": "https://github.com/neurocracy/drupal-omnipedia-user/issues"
+            },
+            "time": "2022-06-05T00:55:20+00:00"
         },
         {
             "name": "drupal/password_policy",
@@ -4054,6 +5842,267 @@
                 "source": "https://cgit.drupalcode.org/pathauto",
                 "issues": "https://www.drupal.org/project/issues/pathauto",
                 "documentation": "https://www.drupal.org/docs/8/modules/pathauto"
+            }
+        },
+        {
+            "name": "drupal/pcb",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/pcb.git",
+                "reference": "8.x-2.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/pcb-8.x-2.3.zip",
+                "reference": "8.x-2.3",
+                "shasum": "4dc102d0c3d102238c2e4e7cc480a0ab864353ad"
+            },
+            "require": {
+                "drupal/core": "^8.7.7||^9.0",
+                "php": ">=7.2.0"
+            },
+            "require-dev": {
+                "drupal/memcache": "^2.0",
+                "drupal/redis": "^1.4"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.3",
+                    "datestamp": "1625386216",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Drupal\\pcb\\": "src/"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Nikunj Kotecha (nikunjkotecha)",
+                    "homepage": "https://www.drupal.org/u/nikunjkotecha",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Permanent Cache Bin module adds support for cache bins which are not cleared during drush cr.",
+            "homepage": "https://drupal.org/project/pcb",
+            "support": {
+                "source": "https://cgit.drupalcode.org/pcb",
+                "issues": "https://drupal.org/project/issues/pcb"
+            }
+        },
+        {
+            "name": "drupal/permissions_by_term",
+            "version": "3.1.17",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/permissions_by_term.git",
+                "reference": "3.1.17"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/permissions_by_term-3.1.17.zip",
+                "reference": "3.1.17",
+                "shasum": "a392ff9bccbbc2218be2a035017a15782e1150e0"
+            },
+            "require": {
+                "drupal/core": "^9.0",
+                "php": ">=7.1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.1.17",
+                    "datestamp": "1641214540",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Peter Majmesku",
+                    "homepage": "https://www.drupal.org/user/786132",
+                    "email": "majmesku@publicplan.de"
+                },
+                {
+                    "name": "SaschaHannes",
+                    "homepage": "https://www.drupal.org/user/3536189"
+                },
+                {
+                    "name": "marcoliver",
+                    "homepage": "https://www.drupal.org/user/1529744"
+                }
+            ],
+            "description": "Restricts access to nodes by taxonomy terms in relation to users and their roles.",
+            "homepage": "https://www.drupal.org/project/permissions_by_term",
+            "support": {
+                "source": "https://git.drupalcode.org/project/permissions_by_term"
+            }
+        },
+        {
+            "name": "drupal/profile",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/profile.git",
+                "reference": "8.x-1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/profile-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "253fd577c3b791c93747bb910ad2ae8e67d71eed"
+            },
+            "require": {
+                "drupal/core": "^8.9 || ^9 || ^10",
+                "drupal/entity": "^1.0-rc2"
+            },
+            "require-dev": {
+                "drupal/token": "^1.7"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.4",
+                    "datestamp": "1652430373",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "bojanz",
+                    "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "daggerhart",
+                    "homepage": "https://www.drupal.org/user/167806"
+                },
+                {
+                    "name": "fago",
+                    "homepage": "https://www.drupal.org/user/16747"
+                },
+                {
+                    "name": "jsacksick",
+                    "homepage": "https://www.drupal.org/user/972218"
+                },
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
+                },
+                {
+                    "name": "pcambra",
+                    "homepage": "https://www.drupal.org/user/122101"
+                }
+            ],
+            "description": "Provides configurable user profiles.",
+            "homepage": "http://drupal.org/project/profile",
+            "support": {
+                "source": "https://git.drupalcode.org/project/profile"
+            }
+        },
+        {
+            "name": "drupal/queue_ui",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/queue_ui.git",
+                "reference": "8.x-2.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/queue_ui-8.x-2.2.zip",
+                "reference": "8.x-2.2",
+                "shasum": "a5ef0514c1371e42a71fdcfef01dc391cc7da0c3"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "require-dev": {
+                "drupal/queue_order": "^2"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.2",
+                    "datestamp": "1601619129",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "floretan",
+                    "homepage": "https://www.drupal.org/user/2743951",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "coltrane",
+                    "homepage": "https://www.drupal.org/user/91990",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "tsphethean",
+                    "homepage": "https://www.drupal.org/user/66163",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "bceyssens",
+                    "homepage": "https://www.drupal.org/user/2811585",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "voleger",
+                    "homepage": "https://www.drupal.org/user/881620",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "voleger",
+                    "homepage": "https://www.drupal.org/user/3260314"
+                }
+            ],
+            "description": "Interface and manager for Drupal queues.",
+            "homepage": "https://www.drupal.org/project/queue_ui",
+            "keywords": [
+                "drupal",
+                "php",
+                "queue"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/queue_ui",
+                "issues": "https://www.drupal.org/project/issues/queue_ui"
             }
         },
         {
@@ -4289,6 +6338,78 @@
             }
         },
         {
+            "name": "drupal/search_api",
+            "version": "1.23.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/search_api.git",
+                "reference": "8.x-1.23"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/search_api-8.x-1.23.zip",
+                "reference": "8.x-1.23",
+                "shasum": "7de5425bba5b8daa37e98d47b677459dfb1abbe7"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "conflict": {
+                "drupal/search_api_solr": "2.* || 3.0 || 3.1"
+            },
+            "require-dev": {
+                "drupal/language_fallback_fix": "@dev",
+                "drupal/search_api_autocomplete": "@dev",
+                "drupal/search_api_db": "*"
+            },
+            "suggest": {
+                "drupal/facets": "Adds the ability to create faceted searches.",
+                "drupal/search_api_autocomplete": "Allows adding autocomplete suggestions to search fields.",
+                "drupal/search_api_solr": "Adds support for using Apache Solr as a backend."
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.23",
+                    "datestamp": "1642935837",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9 || ^10"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Seidl",
+                    "homepage": "https://www.drupal.org/u/drunken-monkey"
+                },
+                {
+                    "name": "Nick Veenhof",
+                    "homepage": "https://www.drupal.org/u/nick_vh"
+                },
+                {
+                    "name": "See other contributors",
+                    "homepage": "https://www.drupal.org/node/790418/committers"
+                }
+            ],
+            "description": "Provides a generic framework for modules offering search capabilities.",
+            "homepage": "https://www.drupal.org/project/search_api",
+            "support": {
+                "source": "https://git.drupalcode.org/project/search_api",
+                "issues": "https://www.drupal.org/project/issues/search_api",
+                "irc": "irc://irc.freenode.org/drupal-search-api"
+            }
+        },
+        {
             "name": "drupal/seckit",
             "version": "2.0.0",
             "source": {
@@ -4506,6 +6627,103 @@
             "homepage": "https://www.drupal.org/project/sodium",
             "support": {
                 "source": "https://git.drupalcode.org/project/sodium"
+            }
+        },
+        {
+            "name": "drupal/state_machine",
+            "version": "1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/state_machine.git",
+                "reference": "8.x-1.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/state_machine-8.x-1.6.zip",
+                "reference": "8.x-1.6",
+                "shasum": "9a29e00e4c47202fd4b27be792d18d2026f733b2"
+            },
+            "require": {
+                "drupal/core": "^9.2 || ^10",
+                "php": ">=7.0.8"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.6",
+                    "datestamp": "1644836575",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Brandonian",
+                    "homepage": "https://www.drupal.org/user/77766"
+                },
+                {
+                    "name": "Elijah Lynn",
+                    "homepage": "https://www.drupal.org/user/353190"
+                },
+                {
+                    "name": "arithmetric",
+                    "homepage": "https://www.drupal.org/user/162305"
+                },
+                {
+                    "name": "bojanz",
+                    "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "das-peter",
+                    "homepage": "https://www.drupal.org/user/762870"
+                },
+                {
+                    "name": "e2thex",
+                    "homepage": "https://www.drupal.org/user/189123"
+                },
+                {
+                    "name": "ericduran",
+                    "homepage": "https://www.drupal.org/user/244460"
+                },
+                {
+                    "name": "fmitchell",
+                    "homepage": "https://www.drupal.org/user/213574"
+                },
+                {
+                    "name": "indytechcook",
+                    "homepage": "https://www.drupal.org/user/245817"
+                },
+                {
+                    "name": "jsacksick",
+                    "homepage": "https://www.drupal.org/user/972218"
+                },
+                {
+                    "name": "robeano",
+                    "homepage": "https://www.drupal.org/user/67660"
+                },
+                {
+                    "name": "stevector",
+                    "homepage": "https://www.drupal.org/user/179805"
+                },
+                {
+                    "name": "timcosgrove",
+                    "homepage": "https://www.drupal.org/user/118452"
+                },
+                {
+                    "name": "zroger",
+                    "homepage": "https://www.drupal.org/user/67977"
+                }
+            ],
+            "description": "Provides code-driven workflow functionality.",
+            "homepage": "http://drupal.org/project/state_machine",
+            "support": {
+                "source": "https://git.drupalcode.org/project/state_machine"
             }
         },
         {
@@ -5019,6 +7237,62 @@
             }
         },
         {
+            "name": "drupal/warmer",
+            "version": "2.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/warmer.git",
+                "reference": "2.0.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/warmer-2.0.4.zip",
+                "reference": "2.0.4",
+                "shasum": "91f72508837a4cc6fe3a6a2aa1606804a67adabe"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9.0",
+                "php": ">=5.6.0",
+                "vipnytt/sitemapparser": "^1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.4",
+                    "datestamp": "1643363640",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Mateu Aguiló Bosch",
+                    "homepage": "https://www.drupal.org/user/550110",
+                    "email": "mateu@mateuaguilo.com"
+                },
+                {
+                    "name": "slv_",
+                    "homepage": "https://www.drupal.org/user/826088"
+                }
+            ],
+            "description": "Module that provides infrastructure for common cache warming/pre-fetching techniques.",
+            "homepage": "https://www.drupal.org/project/warmer",
+            "support": {
+                "source": "https://git.drupalcode.org/project/warmer"
+            }
+        },
+        {
             "name": "drupal/webp",
             "version": "1.0.0-beta6",
             "source": {
@@ -5403,6 +7677,68 @@
                 "source": "https://github.com/ezyang/htmlpurifier/tree/v4.14.0"
             },
             "time": "2021-12-25T01:21:49+00:00"
+        },
+        {
+            "name": "firebase/php-jwt",
+            "version": "v6.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/firebase/php-jwt.git",
+                "reference": "d28e6df83830252650da4623c78aaaf98fb385f3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/d28e6df83830252650da4623c78aaaf98fb385f3",
+                "reference": "d28e6df83830252650da4623c78aaaf98fb385f3",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1||^8.0"
+            },
+            "require-dev": {
+                "guzzlehttp/guzzle": "^6.5||^7.4",
+                "phpspec/prophecy-phpunit": "^1.1",
+                "phpunit/phpunit": "^7.5||^9.5",
+                "psr/cache": "^1.0||^2.0",
+                "psr/http-client": "^1.0",
+                "psr/http-factory": "^1.0"
+            },
+            "suggest": {
+                "paragonie/sodium_compat": "Support EdDSA (Ed25519) signatures when libsodium is not present"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Firebase\\JWT\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Neuman Vong",
+                    "email": "neuman+pear@twilio.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Anant Narayanan",
+                    "email": "anant@php.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple library to encode and decode JSON Web Tokens (JWT) in PHP. Should conform to the current spec.",
+            "homepage": "https://github.com/firebase/php-jwt",
+            "keywords": [
+                "jwt",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/firebase/php-jwt/issues",
+                "source": "https://github.com/firebase/php-jwt/tree/v6.2.0"
+            },
+            "time": "2022-05-13T20:54:50+00:00"
         },
         {
             "name": "grasmash/expander",
@@ -6386,6 +8722,110 @@
                 "source": "https://github.com/mkalkbrenner/php-htmldiff/tree/master"
             },
             "time": "2016-07-25T17:07:32+00:00"
+        },
+        {
+            "name": "monolog/monolog",
+            "version": "2.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/monolog.git",
+                "reference": "247918972acd74356b0a91dfaa5adcaec069b6c0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/247918972acd74356b0a91dfaa5adcaec069b6c0",
+                "reference": "247918972acd74356b0a91dfaa5adcaec069b6c0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "psr/log": "^1.0.1 || ^2.0 || ^3.0"
+            },
+            "provide": {
+                "psr/log-implementation": "1.0.0 || 2.0.0 || 3.0.0"
+            },
+            "require-dev": {
+                "aws/aws-sdk-php": "^2.4.9 || ^3.0",
+                "doctrine/couchdb": "~1.0@dev",
+                "elasticsearch/elasticsearch": "^7 || ^8",
+                "ext-json": "*",
+                "graylog2/gelf-php": "^1.4.2",
+                "guzzlehttp/guzzle": "^7.4",
+                "guzzlehttp/psr7": "^2.2",
+                "mongodb/mongodb": "^1.8",
+                "php-amqplib/php-amqplib": "~2.4 || ^3",
+                "php-console/php-console": "^3.1.3",
+                "phpspec/prophecy": "^1.15",
+                "phpstan/phpstan": "^0.12.91",
+                "phpunit/phpunit": "^8.5.14",
+                "predis/predis": "^1.1",
+                "rollbar/rollbar": "^1.3 || ^2 || ^3",
+                "ruflin/elastica": "^7",
+                "swiftmailer/swiftmailer": "^5.3|^6.0",
+                "symfony/mailer": "^5.4 || ^6",
+                "symfony/mime": "^5.4 || ^6"
+            },
+            "suggest": {
+                "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
+                "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
+                "elasticsearch/elasticsearch": "Allow sending log messages to an Elasticsearch server via official client",
+                "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
+                "ext-curl": "Required to send log messages using the IFTTTHandler, the LogglyHandler, the SendGridHandler, the SlackWebhookHandler or the TelegramBotHandler",
+                "ext-mbstring": "Allow to work properly with unicode symbols",
+                "ext-mongodb": "Allow sending log messages to a MongoDB server (via driver)",
+                "ext-openssl": "Required to send log messages using SSL",
+                "ext-sockets": "Allow sending log messages to a Syslog server (via UDP driver)",
+                "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
+                "mongodb/mongodb": "Allow sending log messages to a MongoDB server (via library)",
+                "php-amqplib/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib",
+                "php-console/php-console": "Allow sending log messages to Google Chrome",
+                "rollbar/rollbar": "Allow sending log messages to Rollbar",
+                "ruflin/elastica": "Allow sending log messages to an Elastic Search server"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Monolog\\": "src/Monolog"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "https://seld.be"
+                }
+            ],
+            "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
+            "homepage": "https://github.com/Seldaek/monolog",
+            "keywords": [
+                "log",
+                "logging",
+                "psr-3"
+            ],
+            "support": {
+                "issues": "https://github.com/Seldaek/monolog/issues",
+                "source": "https://github.com/Seldaek/monolog/tree/2.6.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Seldaek",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/monolog/monolog",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-05-10T09:36:00+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -7657,6 +10097,59 @@
             "time": "2019-03-08T08:55:37+00:00"
         },
         {
+            "name": "sainsburys/guzzle-oauth2-plugin",
+            "version": "v3.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Sainsburys/guzzle-oauth2-plugin.git",
+                "reference": "6d660f80c4d0b38bc3c49c581632170a31a58adb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Sainsburys/guzzle-oauth2-plugin/zipball/6d660f80c4d0b38bc3c49c581632170a31a58adb",
+                "reference": "6d660f80c4d0b38bc3c49c581632170a31a58adb",
+                "shasum": ""
+            },
+            "require": {
+                "firebase/php-jwt": "^3.0|^4.0|^5.0|^6.0",
+                "guzzlehttp/guzzle": "^6.0",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Sainsburys\\Guzzle\\Oauth2\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bojan Zivanovic"
+                },
+                {
+                    "name": "Damien Tournoud"
+                },
+                {
+                    "name": "Patrick Dawkins"
+                },
+                {
+                    "name": "Daniel Macedo"
+                }
+            ],
+            "description": "An OAuth2 middleware for Guzzle",
+            "support": {
+                "issues": "https://github.com/Sainsburys/guzzle-oauth2-plugin/issues",
+                "source": "https://github.com/Sainsburys/guzzle-oauth2-plugin/tree/v3.0.6"
+            },
+            "time": "2022-02-08T10:15:15+00:00"
+        },
+        {
             "name": "stack/builder",
             "version": "v1.0.6",
             "source": {
@@ -7709,6 +10202,66 @@
                 "source": "https://github.com/stackphp/builder/tree/v1.0.6"
             },
             "time": "2020-01-30T12:17:27+00:00"
+        },
+        {
+            "name": "stripe/stripe-php",
+            "version": "v7.128.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stripe/stripe-php.git",
+                "reference": "c704949c49b72985c76cc61063aa26fefbd2724e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/c704949c49b72985c76cc61063aa26fefbd2724e",
+                "reference": "c704949c49b72985c76cc61063aa26fefbd2724e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "3.5.0",
+                "phpstan/phpstan": "^1.2",
+                "phpunit/phpunit": "^5.7 || ^9.0",
+                "squizlabs/php_codesniffer": "^3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Stripe\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stripe and contributors",
+                    "homepage": "https://github.com/stripe/stripe-php/contributors"
+                }
+            ],
+            "description": "Stripe PHP Library",
+            "homepage": "https://stripe.com/",
+            "keywords": [
+                "api",
+                "payment processing",
+                "stripe"
+            ],
+            "support": {
+                "issues": "https://github.com/stripe/stripe-php/issues",
+                "source": "https://github.com/stripe/stripe-php/tree/v7.128.0"
+            },
+            "time": "2022-05-05T17:18:02+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -10909,6 +13462,68 @@
             "time": "2021-09-20T19:19:13+00:00"
         },
         {
+            "name": "vipnytt/sitemapparser",
+            "version": "v1.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/VIPnytt/SitemapParser.git",
+                "reference": "f05d00702304e35859ea524553a3229f27c00476"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/VIPnytt/SitemapParser/zipball/f05d00702304e35859ea524553a3229f27c00476",
+                "reference": "f05d00702304e35859ea524553a3229f27c00476",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "ext-simplexml": "*",
+                "guzzlehttp/guzzle": "^6.0 || ^7.0",
+                "lib-libxml": "*",
+                "php": "^5.6 || ^7.0 || ^8.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "^0",
+                "phpunit/phpunit": "^5.0 || ^6.0 || ^7.0 || ^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "vipnytt\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "VIP nytt",
+                    "email": "vipnytt@gmail.com",
+                    "role": "creator"
+                },
+                {
+                    "name": "Jan-Petter Gundersen",
+                    "email": "europe.jpg@gmail.com",
+                    "role": "developer"
+                }
+            ],
+            "description": "XML Sitemap parser class compliant with the Sitemaps.org protocol.",
+            "homepage": "https://github.com/VIPnytt/SitemapParser",
+            "keywords": [
+                "Sitemap",
+                "parser",
+                "robots.txt",
+                "sitemaps.org",
+                "xml"
+            ],
+            "support": {
+                "issues": "https://github.com/VIPnytt/SitemapParser/issues",
+                "source": "https://github.com/VIPnytt/SitemapParser/tree/v1.1.5"
+            },
+            "time": "2021-10-20T15:06:45+00:00"
+        },
+        {
             "name": "webflo/drupal-finder",
             "version": "1.2.2",
             "source": {
@@ -11829,75 +14444,6 @@
                 }
             ],
             "time": "2022-05-20T20:06:54+00:00"
-        },
-        {
-            "name": "doctrine/collections",
-            "version": "1.6.8",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doctrine/collections.git",
-                "reference": "1958a744696c6bb3bb0d28db2611dc11610e78af"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/collections/zipball/1958a744696c6bb3bb0d28db2611dc11610e78af",
-                "reference": "1958a744696c6bb3bb0d28db2611dc11610e78af",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1.3 || ^8.0"
-            },
-            "require-dev": {
-                "doctrine/coding-standard": "^9.0",
-                "phpstan/phpstan": "^0.12",
-                "phpunit/phpunit": "^7.5 || ^8.5 || ^9.1.5",
-                "vimeo/psalm": "^4.2.1"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Doctrine\\Common\\Collections\\": "lib/Doctrine/Common/Collections"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com"
-                },
-                {
-                    "name": "Roman Borschel",
-                    "email": "roman@code-factory.org"
-                },
-                {
-                    "name": "Benjamin Eberlei",
-                    "email": "kontakt@beberlei.de"
-                },
-                {
-                    "name": "Jonathan Wage",
-                    "email": "jonwage@gmail.com"
-                },
-                {
-                    "name": "Johannes Schmitt",
-                    "email": "schmittjoh@gmail.com"
-                }
-            ],
-            "description": "PHP Doctrine Collections library that adds additional functionality on top of PHP arrays.",
-            "homepage": "https://www.doctrine-project.org/projects/collections.html",
-            "keywords": [
-                "array",
-                "collections",
-                "iterators",
-                "php"
-            ],
-            "support": {
-                "issues": "https://github.com/doctrine/collections/issues",
-                "source": "https://github.com/doctrine/collections/tree/1.6.8"
-            },
-            "time": "2021-08-10T18:51:53+00:00"
         },
         {
             "name": "doctrine/common",
@@ -15812,7 +18358,19 @@
         "drupal/ga_login": 15,
         "drupal/gin": 10,
         "drupal/gin_toolbar": 10,
+        "drupal/omnipedia_access": 20,
+        "drupal/omnipedia_attached_data": 20,
+        "drupal/omnipedia_block": 20,
+        "drupal/omnipedia_changes": 20,
+        "drupal/omnipedia_commerce": 20,
+        "drupal/omnipedia_content": 20,
+        "drupal/omnipedia_core": 20,
+        "drupal/omnipedia_logger": 20,
+        "drupal/omnipedia_media": 20,
+        "drupal/omnipedia_menu": 20,
+        "drupal/omnipedia_search": 20,
         "drupal/omnipedia_site_theme": 20,
+        "drupal/omnipedia_user": 20,
         "drupal/rebuilder": 5,
         "drupal/rules": 15,
         "drupal/security_review": 15,

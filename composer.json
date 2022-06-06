@@ -33,52 +33,56 @@
       "url": "drupal/modules/ambientimpact/ambientimpact_ux"
     },
     "drupal/omnipedia_access": {
-      "type": "path",
-      "url": "drupal/modules/omnipedia/omnipedia_access"
+      "type": "vcs",
+      "url": "https://github.com/neurocracy/drupal-omnipedia-access.git"
     },
     "drupal/omnipedia_attached_data": {
-      "type": "path",
-      "url": "drupal/modules/omnipedia/omnipedia_attached_data"
+      "type": "vcs",
+      "url": "https://github.com/neurocracy/drupal-omnipedia-attached-data.git"
     },
     "drupal/omnipedia_block": {
-      "type": "path",
-      "url": "drupal/modules/omnipedia/omnipedia_block"
+      "type": "vcs",
+      "url": "https://github.com/neurocracy/drupal-omnipedia-block.git"
+    },
+    "drupal/omnipedia_changes": {
+      "type": "vcs",
+      "url": "https://github.com/neurocracy/drupal-omnipedia-changes.git"
     },
     "drupal/omnipedia_commerce": {
-      "type": "path",
-      "url": "drupal/modules/omnipedia/omnipedia_commerce"
+      "type": "vcs",
+      "url": "https://github.com/neurocracy/drupal-omnipedia-commerce.git"
     },
     "drupal/omnipedia_content": {
-      "type": "path",
-      "url": "drupal/modules/omnipedia/omnipedia_content"
-    },
-    "drupal/omnipedia_content_changes": {
-      "type": "path",
-      "url": "drupal/modules/omnipedia/omnipedia_content/omnipedia_content_changes"
+      "type": "vcs",
+      "url": "https://github.com/neurocracy/drupal-omnipedia-content.git"
     },
     "drupal/omnipedia_core": {
-      "type": "path",
-      "url": "drupal/modules/omnipedia/omnipedia_core"
+      "type": "vcs",
+      "url": "https://github.com/neurocracy/drupal-omnipedia-core.git"
     },
     "drupal/omnipedia_logger": {
-      "type": "path",
-      "url": "drupal/modules/omnipedia/omnipedia_logger"
+      "type": "vcs",
+      "url": "https://github.com/neurocracy/drupal-omnipedia-logger.git"
     },
     "drupal/omnipedia_media": {
-      "type": "path",
-      "url": "drupal/modules/omnipedia/omnipedia_media"
+      "type": "vcs",
+      "url": "https://github.com/neurocracy/drupal-omnipedia-media.git"
+    },
+    "drupal/omnipedia_menu": {
+      "type": "vcs",
+      "url": "https://github.com/neurocracy/drupal-omnipedia-menu.git"
     },
     "drupal/omnipedia_search": {
-      "type": "path",
-      "url": "drupal/modules/omnipedia/omnipedia_search"
+      "type": "vcs",
+      "url": "https://github.com/neurocracy/drupal-omnipedia-search.git"
     },
     "drupal/omnipedia_site_theme": {
       "type": "vcs",
       "url": "https://github.com/neurocracy/drupal-omnipedia-site-theme.git"
     },
     "drupal/omnipedia_user": {
-      "type": "path",
-      "url": "drupal/modules/omnipedia/omnipedia_user"
+      "type": "vcs",
+      "url": "https://github.com/neurocracy/drupal-omnipedia-user.git"
     },
     "drupal-library/jquery.onfontresize": {
       "type": "package",
@@ -133,7 +137,19 @@
     "drupal/login_security": "^2.0",
     "drupal/media_entity_file_replace": "^1.0",
     "drupal/metatag": "^1.11",
+    "drupal/omnipedia_access": "3.x-dev@dev",
+    "drupal/omnipedia_attached_data": "3.x-dev@dev",
+    "drupal/omnipedia_block": "3.x-dev@dev",
+    "drupal/omnipedia_changes": "3.x-dev@dev",
+    "drupal/omnipedia_commerce": "3.x-dev@dev",
+    "drupal/omnipedia_content": "3.x-dev@dev",
+    "drupal/omnipedia_core": "3.x-dev@dev",
+    "drupal/omnipedia_logger": "3.x-dev@dev",
+    "drupal/omnipedia_media": "3.x-dev@dev",
+    "drupal/omnipedia_menu": "3.x-dev@dev",
+    "drupal/omnipedia_search": "3.x-dev@dev",
     "drupal/omnipedia_site_theme": "3.x-dev@dev",
+    "drupal/omnipedia_user": "3.x-dev@dev",
     "drupal/password_policy": "^3.0",
     "drupal/pathauto": "^1.6",
     "drupal/rebuilder": "^1.0@RC",
