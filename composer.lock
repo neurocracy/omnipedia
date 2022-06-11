@@ -5486,12 +5486,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:neurocracy/drupal-omnipedia-logger.git",
-                "reference": "7d89606eeefca72895e644ef35e44802e49f73b9"
+                "reference": "182732a446e496e5f567cda78fbc34ca6828ae61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-logger/zipball/7d89606eeefca72895e644ef35e44802e49f73b9",
-                "reference": "7d89606eeefca72895e644ef35e44802e49f73b9",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-logger/zipball/182732a446e496e5f567cda78fbc34ca6828ae61",
+                "reference": "182732a446e496e5f567cda78fbc34ca6828ae61",
                 "shasum": ""
             },
             "require": {
@@ -5500,6 +5500,13 @@
             },
             "default-branch": true,
             "type": "drupal-custom-module",
+            "extra": {
+                "patches": {
+                    "drupal/monolog": {
+                        "Argument add to addRecord upstream: https://www.drupal.org/project/monolog/issues/3284825": "drupal/modules/custom/omnipedia_logger/patches/drupal/monolog/3284825-fix-addRecord-method-compatibility-4.patch"
+                    }
+                }
+            },
             "license": [
                 "GPL-2.0-or-later"
             ],
@@ -5515,7 +5522,7 @@
                 "source": "https://github.com/neurocracy/drupal-omnipedia-logger/tree/3.x",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-logger/issues"
             },
-            "time": "2022-06-06T22:27:57+00:00"
+            "time": "2022-06-11T07:58:14+00:00"
         },
         {
             "name": "drupal/omnipedia_media",
