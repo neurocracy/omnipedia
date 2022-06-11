@@ -34,47 +34,47 @@
     },
     "drupal/omnipedia_access": {
       "type": "vcs",
-      "url": "https://github.com/neurocracy/drupal-omnipedia-access.git"
+      "url": "git@github.com:neurocracy/drupal-omnipedia-access.git"
     },
     "drupal/omnipedia_attached_data": {
       "type": "vcs",
-      "url": "https://github.com/neurocracy/drupal-omnipedia-attached-data.git"
+      "url": "git@github.com:neurocracy/drupal-omnipedia-attached-data.git"
     },
     "drupal/omnipedia_block": {
       "type": "vcs",
-      "url": "https://github.com/neurocracy/drupal-omnipedia-block.git"
+      "url": "git@github.com:neurocracy/drupal-omnipedia-block.git"
     },
     "drupal/omnipedia_changes": {
       "type": "vcs",
-      "url": "https://github.com/neurocracy/drupal-omnipedia-changes.git"
+      "url": "git@github.com:neurocracy/drupal-omnipedia-changes.git"
     },
     "drupal/omnipedia_commerce": {
       "type": "vcs",
-      "url": "https://github.com/neurocracy/drupal-omnipedia-commerce.git"
+      "url": "git@github.com:neurocracy/drupal-omnipedia-commerce.git"
     },
     "drupal/omnipedia_content": {
       "type": "vcs",
-      "url": "https://github.com/neurocracy/drupal-omnipedia-content.git"
+      "url": "git@github.com:neurocracy/drupal-omnipedia-content.git"
     },
     "drupal/omnipedia_core": {
       "type": "vcs",
-      "url": "https://github.com/neurocracy/drupal-omnipedia-core.git"
+      "url": "git@github.com:neurocracy/drupal-omnipedia-core.git"
     },
     "drupal/omnipedia_logger": {
       "type": "vcs",
-      "url": "https://github.com/neurocracy/drupal-omnipedia-logger.git"
+      "url": "git@github.com:neurocracy/drupal-omnipedia-logger.git"
     },
     "drupal/omnipedia_media": {
       "type": "vcs",
-      "url": "https://github.com/neurocracy/drupal-omnipedia-media.git"
+      "url": "git@github.com:neurocracy/drupal-omnipedia-media.git"
     },
     "drupal/omnipedia_menu": {
       "type": "vcs",
-      "url": "https://github.com/neurocracy/drupal-omnipedia-menu.git"
+      "url": "git@github.com:neurocracy/drupal-omnipedia-menu.git"
     },
     "drupal/omnipedia_search": {
       "type": "vcs",
-      "url": "https://github.com/neurocracy/drupal-omnipedia-search.git"
+      "url": "git@github.com:neurocracy/drupal-omnipedia-search.git"
     },
     "drupal/omnipedia_site_theme": {
       "type": "vcs",
@@ -82,7 +82,7 @@
     },
     "drupal/omnipedia_user": {
       "type": "vcs",
-      "url": "https://github.com/neurocracy/drupal-omnipedia-user.git"
+      "url": "git@github.com:neurocracy/drupal-omnipedia-user.git"
     },
     "drupal-library/jquery.onfontresize": {
       "type": "package",
