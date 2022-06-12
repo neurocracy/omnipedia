@@ -6115,17 +6115,17 @@
         },
         {
             "name": "drupal/rebuilder",
-            "version": "1.0.0-rc3",
+            "version": "1.0.0-rc4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/rebuilder.git",
-                "reference": "1.0.0-rc3"
+                "reference": "1.0.0-rc4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/rebuilder-1.0.0-rc3.zip",
-                "reference": "1.0.0-rc3",
-                "shasum": "fd43249ae4d760debad9ac6ea4f19cf4d127965c"
+                "url": "https://ftp.drupal.org/files/projects/rebuilder-1.0.0-rc4.zip",
+                "reference": "1.0.0-rc4",
+                "shasum": "1bb84d58c6f3a0995b34bb538675508340acad0b"
             },
             "require": {
                 "drupal/core": "^9 || ^10",
@@ -6134,11 +6134,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "1.0.0-rc3",
-                    "datestamp": "1652458832",
+                    "version": "1.0.0-rc4",
+                    "datestamp": "1655038327",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 },
                 "drush": {
