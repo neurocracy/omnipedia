@@ -60,6 +60,10 @@
       "type": "vcs",
       "url": "git@github.com:neurocracy/drupal-omnipedia-core.git"
     },
+    "drupal/omnipedia_date": {
+      "type": "vcs",
+      "url": "https://github.com/neurocracy/drupal-omnipedia-date.git"
+    },
     "drupal/omnipedia_logger": {
       "type": "vcs",
       "url": "git@github.com:neurocracy/drupal-omnipedia-logger.git"
@@ -144,6 +148,7 @@
     "drupal/omnipedia_commerce": "3.x-dev@dev",
     "drupal/omnipedia_content": "3.x-dev@dev",
     "drupal/omnipedia_core": "3.x-dev@dev",
+    "drupal/omnipedia_date": "3.x-dev@dev",
     "drupal/omnipedia_logger": "3.x-dev@dev",
     "drupal/omnipedia_media": "3.x-dev@dev",
     "drupal/omnipedia_menu": "3.x-dev@dev",
