@@ -5612,13 +5612,13 @@
             "version": "3.x-dev",
             "source": {
                 "type": "git",
-                "url": "git@github.com:neurocracy/drupal-omnipedia-menu.git",
-                "reference": "71cc07ded25f6fd5c93f44188f6131f12b1aee38"
+                "url": "https://github.com/neurocracy/drupal-omnipedia-menu.git",
+                "reference": "d0539ef43388405ce1d8896f3b40639cb94c7237"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-menu/zipball/71cc07ded25f6fd5c93f44188f6131f12b1aee38",
-                "reference": "71cc07ded25f6fd5c93f44188f6131f12b1aee38",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-menu/zipball/d0539ef43388405ce1d8896f3b40639cb94c7237",
+                "reference": "d0539ef43388405ce1d8896f3b40639cb94c7237",
                 "shasum": ""
             },
             "require": {
@@ -5639,10 +5639,10 @@
             ],
             "description": "Omnipedia - Menus",
             "support": {
-                "source": "https://github.com/neurocracy/drupal-omnipedia-menu/tree/3.x_timeline_move",
+                "source": "https://github.com/neurocracy/drupal-omnipedia-menu/tree/3.x",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-menu/issues"
             },
-            "time": "2022-06-15T17:27:32+00:00"
+            "time": "2022-06-16T18:15:22+00:00"
         },
         {
             "name": "drupal/omnipedia_search",
