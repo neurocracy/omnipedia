@@ -22,6 +22,8 @@ content:
     settings:
       image_link: file
       image_style: content_image_large
+      image_loading:
+        attribute: lazy
     third_party_settings:
       ambientimpact_media:
         use_photoswipe: false

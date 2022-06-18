@@ -25,6 +25,8 @@ content:
     settings:
       image_link: ''
       image_style: media_library_square_thumbnail_220
+      image_loading:
+        attribute: lazy
     third_party_settings:
       ambientimpact_media:
         use_photoswipe: false
