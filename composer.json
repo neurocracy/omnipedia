@@ -111,7 +111,7 @@
     }
   },
   "require": {
-    "php": "^7.3|^8",
+    "php": "^8",
     "composer/installers": "^2.0",
     "cweagans/composer-patches": "^1.7",
     "drupal/advagg": "^4.0",
