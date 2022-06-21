@@ -3038,16 +3038,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "9.4.0",
+            "version": "9.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "144db3a317317c4c2fb7d97ee62962a0b3647004"
+                "reference": "81489e8f0d5fdcd5d502b561f0f8cdf5ccdda614"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/144db3a317317c4c2fb7d97ee62962a0b3647004",
-                "reference": "144db3a317317c4c2fb7d97ee62962a0b3647004",
+                "url": "https://api.github.com/repos/drupal/core/zipball/81489e8f0d5fdcd5d502b561f0f8cdf5ccdda614",
+                "reference": "81489e8f0d5fdcd5d502b561f0f8cdf5ccdda614",
                 "shasum": ""
             },
             "require": {
@@ -3069,7 +3069,7 @@
                 "ext-spl": "*",
                 "ext-tokenizer": "*",
                 "ext-xml": "*",
-                "guzzlehttp/guzzle": "^6.5.7 || ^7.4.4",
+                "guzzlehttp/guzzle": "^6.5.8 || ^7.4.5",
                 "laminas/laminas-diactoros": "^2.11",
                 "laminas/laminas-feed": "^2.17",
                 "masterminds/html5": "^2.7",
@@ -3290,22 +3290,22 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "support": {
-                "source": "https://github.com/drupal/core/tree/9.4.0"
+                "source": "https://github.com/drupal/core/tree/9.4.1"
             },
-            "time": "2022-06-15T16:34:03+00:00"
+            "time": "2022-06-21T20:53:48+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "9.4.0",
+            "version": "9.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
-                "reference": "3286dbf43922b4eb8b51ef55572aa8f2e78ba7aa"
+                "reference": "5f37a9e4008b34e3e4f6bb34ce0b3f7e5ec8984f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/3286dbf43922b4eb8b51ef55572aa8f2e78ba7aa",
-                "reference": "3286dbf43922b4eb8b51ef55572aa8f2e78ba7aa",
+                "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/5f37a9e4008b34e3e4f6bb34ce0b3f7e5ec8984f",
+                "reference": "5f37a9e4008b34e3e4f6bb34ce0b3f7e5ec8984f",
                 "shasum": ""
             },
             "require": {
@@ -3340,22 +3340,22 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-composer-scaffold/tree/9.4.0"
+                "source": "https://github.com/drupal/core-composer-scaffold/tree/9.4.1"
             },
-            "time": "2022-02-24T17:40:53+00:00"
+            "time": "2022-06-19T16:14:23+00:00"
         },
         {
             "name": "drupal/core-recommended",
-            "version": "9.4.0",
+            "version": "9.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "bacfdd46a0ebef9bbd88362aaede3f2eeb2da9fa"
+                "reference": "a3ae54715ba7792fe596c2f6a73dfcef217b0577"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/bacfdd46a0ebef9bbd88362aaede3f2eeb2da9fa",
-                "reference": "bacfdd46a0ebef9bbd88362aaede3f2eeb2da9fa",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/a3ae54715ba7792fe596c2f6a73dfcef217b0577",
+                "reference": "a3ae54715ba7792fe596c2f6a73dfcef217b0577",
                 "shasum": ""
             },
             "require": {
@@ -3364,11 +3364,11 @@
                 "doctrine/annotations": "~1.13.2",
                 "doctrine/lexer": "~1.2.3",
                 "doctrine/reflection": "~1.2.3",
-                "drupal/core": "9.4.0",
+                "drupal/core": "9.4.1",
                 "egulias/email-validator": "~3.2",
-                "guzzlehttp/guzzle": "~6.5.7",
+                "guzzlehttp/guzzle": "~6.5.8",
                 "guzzlehttp/promises": "~1.5.1",
-                "guzzlehttp/psr7": "~1.8.5",
+                "guzzlehttp/psr7": "~1.9.0",
                 "laminas/laminas-diactoros": "~2.11.0",
                 "laminas/laminas-escaper": "~2.9.0",
                 "laminas/laminas-feed": "~2.17.0",
@@ -3426,9 +3426,9 @@
             ],
             "description": "Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-recommended/tree/9.4.0"
+                "source": "https://github.com/drupal/core-recommended/tree/9.4.1"
             },
-            "time": "2022-06-15T16:34:03+00:00"
+            "time": "2022-06-21T20:53:48+00:00"
         },
         {
             "name": "drupal/csp",
@@ -5256,7 +5256,7 @@
             ],
             "description": "Omnipedia - Attached data",
             "support": {
-                "source": "https://github.com/neurocracy/drupal-omnipedia-attached-data/tree/3.x_timeline_move",
+                "source": "https://github.com/neurocracy/drupal-omnipedia-attached-data/tree/3.x",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-attached-data/issues"
             },
             "time": "2022-06-15T17:27:32+00:00"
@@ -5292,7 +5292,7 @@
             ],
             "description": "Omnipedia - Blocks",
             "support": {
-                "source": "https://github.com/neurocracy/drupal-omnipedia-block/tree/3.x_timeline_move",
+                "source": "https://github.com/neurocracy/drupal-omnipedia-block/tree/3.x",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-block/issues"
             },
             "time": "2022-06-15T17:27:32+00:00"
@@ -5342,7 +5342,7 @@
             ],
             "description": "Omnipedia - Content changes",
             "support": {
-                "source": "https://github.com/neurocracy/drupal-omnipedia-changes/tree/3.x_timeline_move",
+                "source": "https://github.com/neurocracy/drupal-omnipedia-changes/tree/3.x",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-changes/issues"
             },
             "time": "2022-06-15T17:27:32+00:00"
@@ -5668,7 +5668,7 @@
             ],
             "description": "Omnipedia - Search",
             "support": {
-                "source": "https://github.com/neurocracy/drupal-omnipedia-search/tree/3.x_timeline_move",
+                "source": "https://github.com/neurocracy/drupal-omnipedia-search/tree/3.x",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-search/issues"
             },
             "time": "2022-06-15T17:27:32+00:00"
@@ -7832,24 +7832,24 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "6.5.7",
+            "version": "6.5.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "724562fa861e21a4071c652c8a159934e4f05592"
+                "reference": "a52f0440530b54fa079ce76e8c5d196a42cad981"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/724562fa861e21a4071c652c8a159934e4f05592",
-                "reference": "724562fa861e21a4071c652c8a159934e4f05592",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/a52f0440530b54fa079ce76e8c5d196a42cad981",
+                "reference": "a52f0440530b54fa079ce76e8c5d196a42cad981",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "guzzlehttp/promises": "^1.0",
-                "guzzlehttp/psr7": "^1.6.1",
+                "guzzlehttp/psr7": "^1.9",
                 "php": ">=5.5",
-                "symfony/polyfill-intl-idn": "^1.17.0"
+                "symfony/polyfill-intl-idn": "^1.17"
             },
             "require-dev": {
                 "ext-curl": "*",
@@ -7927,7 +7927,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/guzzle/issues",
-                "source": "https://github.com/guzzle/guzzle/tree/6.5.7"
+                "source": "https://github.com/guzzle/guzzle/tree/6.5.8"
             },
             "funding": [
                 {
@@ -7943,7 +7943,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-06-09T21:36:50+00:00"
+            "time": "2022-06-20T22:16:07+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -8031,16 +8031,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "1.8.5",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "337e3ad8e5716c15f9657bd214d16cc5e69df268"
+                "reference": "e98e3e6d4f86621a9b75f623996e6bbdeb4b9318"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/337e3ad8e5716c15f9657bd214d16cc5e69df268",
-                "reference": "337e3ad8e5716c15f9657bd214d16cc5e69df268",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/e98e3e6d4f86621a9b75f623996e6bbdeb4b9318",
+                "reference": "e98e3e6d4f86621a9b75f623996e6bbdeb4b9318",
                 "shasum": ""
             },
             "require": {
@@ -8061,7 +8061,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.7-dev"
+                    "dev-master": "1.9-dev"
                 }
             },
             "autoload": {
@@ -8121,7 +8121,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/1.8.5"
+                "source": "https://github.com/guzzle/psr7/tree/1.9.0"
             },
             "funding": [
                 {
@@ -8137,7 +8137,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-03-20T21:51:18+00:00"
+            "time": "2022-06-20T21:43:03+00:00"
         },
         {
             "name": "html2text/html2text",
@@ -15187,7 +15187,7 @@
         },
         {
             "name": "drupal/core-dev",
-            "version": "9.4.0",
+            "version": "9.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-dev.git",
@@ -15231,7 +15231,7 @@
             ],
             "description": "require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-dev/tree/9.4.0"
+                "source": "https://github.com/drupal/core-dev/tree/9.4.1"
             },
             "time": "2022-04-14T00:37:13+00:00"
         },
