@@ -237,7 +237,12 @@
         },
         "[web-root]/robots.txt": {
           "append": "drupal_scaffold/robots_append.txt"
-        }
+        },
+        "[web-root]/.ht.router.php": false,
+        "[web-root]/example.gitignore": false,
+        "[web-root]/INSTALL.txt": false,
+        "[web-root]/README.md": false,
+        "[web-root]/web.config": false
       }
     },
     "installer-types": [
