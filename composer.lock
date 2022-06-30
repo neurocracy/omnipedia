@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5012b36c9f9bacffa7e9334edda56da9",
+    "content-hash": "e26c0249cfa2c422070fcde20a2158f2",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -5634,6 +5634,50 @@
             "time": "2022-06-20T21:58:30+00:00"
         },
         {
+            "name": "drupal/omnipedia_refreshless",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/neurocracy/drupal-omnipedia-refreshless.git",
+                "reference": "64fead8e7d20e2595958cf4966677391b0202e6f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-refreshless/zipball/64fead8e7d20e2595958cf4966677391b0202e6f",
+                "reference": "64fead8e7d20e2595958cf4966677391b0202e6f",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/refreshless": "1.x-dev@dev",
+                "php": "^8"
+            },
+            "default-branch": true,
+            "type": "drupal-custom-module",
+            "extra": {
+                "patches": {
+                    "drupal/core": {
+                        "RefreshLess core patch": "https://raw.githubusercontent.com/neurocracy/drupal-omnipedia-refreshless/1.x/patches/drupal/core/refreshless_core_9.3.x.patch"
+                    }
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ambient.Impact",
+                    "homepage": "https://ambientimpact.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Omnipedia - RefreshLess",
+            "support": {
+                "source": "https://github.com/neurocracy/drupal-omnipedia-refreshless/tree/1.x",
+                "issues": "https://github.com/neurocracy/drupal-omnipedia-refreshless/issues"
+            },
+            "time": "2022-06-30T12:45:53+00:00"
+        },
+        {
             "name": "drupal/omnipedia_search",
             "version": "3.x-dev",
             "source": {
@@ -6242,6 +6286,78 @@
             "homepage": "https://www.drupal.org/project/redirect",
             "support": {
                 "source": "https://git.drupalcode.org/project/redirect"
+            }
+        },
+        {
+            "name": "drupal/refreshless",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/refreshless.git",
+                "reference": "6f9a6ae7b386d3e3839f371f313ce5cd48fefb62"
+            },
+            "require": {
+                "drupal/core": "~8.1 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha4+2-dev",
+                    "datestamp": "1656042910",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Wim Leers",
+                    "homepage": "https://www.drupal.org/u/wim-leers",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "See other contributors",
+                    "homepage": "https://www.drupal.org/node/2693129/committers"
+                },
+                {
+                    "name": "beautifulmind",
+                    "homepage": "https://www.drupal.org/user/219482"
+                },
+                {
+                    "name": "ganeshsurya11",
+                    "homepage": "https://www.drupal.org/user/3526791"
+                },
+                {
+                    "name": "handkerchief",
+                    "homepage": "https://www.drupal.org/user/3090607"
+                },
+                {
+                    "name": "renguer0",
+                    "homepage": "https://www.drupal.org/user/3623854"
+                },
+                {
+                    "name": "ronaldtebrake",
+                    "homepage": "https://www.drupal.org/user/2314038"
+                }
+            ],
+            "description": "RefreshLess makes navigating your web site faster by only loading the parts that change between pages.",
+            "homepage": "https://www.drupal.org/project/refreshless",
+            "keywords": [
+                "performance",
+                "scalability"
+            ],
+            "support": {
+                "source": "https://cgit.drupalcode.org/refreshless",
+                "issues": "https://www.drupal.org/project/issues/refreshless",
+                "irc": "irc://irc.freenode.org/drupal"
             }
         },
         {
@@ -18415,6 +18531,7 @@
         "drupal/omnipedia_logger": 20,
         "drupal/omnipedia_media": 20,
         "drupal/omnipedia_menu": 20,
+        "drupal/omnipedia_refreshless": 20,
         "drupal/omnipedia_search": 20,
         "drupal/omnipedia_site_theme": 20,
         "drupal/omnipedia_user": 20,
