@@ -2105,7 +2105,7 @@
             "dist": {
                 "type": "path",
                 "url": "drupal/modules/ambientimpact/ambientimpact_ux",
-                "reference": "fa6e0b1aa166458d566827754b0a1fed679bf103"
+                "reference": "3ded76daaf09d11167771e4fc363b70cb03ed11b"
             },
             "require": {
                 "bower-asset/smoothscroll": "^0.4.4",
@@ -2114,7 +2114,6 @@
                 "npm-asset/autosize": "4.0.2",
                 "npm-asset/fontfaceobserver": "2.1.0",
                 "npm-asset/fr-offcanvas": "1.1.1",
-                "npm-asset/gsap": "2.1.3",
                 "npm-asset/headroom.js": "0.10.4",
                 "npm-asset/jquery-hoverintent": "1.10.0",
                 "npm-asset/popper.js": "1.15.0",
@@ -9020,18 +9019,6 @@
             "type": "npm-asset",
             "license": [
                 "MIT"
-            ]
-        },
-        {
-            "name": "npm-asset/gsap",
-            "version": "2.1.3",
-            "dist": {
-                "type": "tar",
-                "url": "https://registry.npmjs.org/gsap/-/gsap-2.1.3.tgz"
-            },
-            "type": "npm-asset",
-            "license": [
-                "Standard 'no charge' license: https://greensock.com/standard-license. Club GreenSock members get more: https://greensock.com/licensing/. Why GreenSock doesn't employ an MIT license: https://greensock.com/why-license/"
             ]
         },
         {
