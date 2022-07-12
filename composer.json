@@ -153,7 +153,7 @@
     "drupal/omnipedia_media": "3.x-dev@dev",
     "drupal/omnipedia_menu": "3.x-dev@dev",
     "drupal/omnipedia_search": "3.x-dev@dev",
-    "drupal/omnipedia_site_theme": "3.x-dev@dev",
+    "drupal/omnipedia_site_theme": "dev-3.x_sticky_sidebars@dev",
     "drupal/omnipedia_user": "3.x-dev@dev",
     "drupal/password_policy": "^3.0",
     "drupal/pathauto": "^1.6",
