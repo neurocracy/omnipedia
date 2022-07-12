@@ -5,7 +5,6 @@ dependencies:
   config:
     - commerce_product.commerce_product_type.content_access
     - field.field.commerce_product.content_access.body
-    - field.field.commerce_product.content_access.field_episode_tier
     - field.field.commerce_product.content_access.field_menu_link_title
     - field.field.commerce_product.content_access.field_redirect_message
     - field.field.commerce_product.content_access.field_redirect_wiki_page
@@ -32,12 +31,6 @@ content:
   created:
     type: datetime_timestamp
     weight: 5
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_episode_tier:
-    type: options_buttons
-    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
