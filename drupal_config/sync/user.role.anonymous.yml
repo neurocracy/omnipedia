@@ -3,8 +3,6 @@ langcode: en
 status: true
 dependencies:
   module:
-    - commerce_checkout
-    - commerce_product
     - contact
     - eu_cookie_compliance
     - media
@@ -16,13 +14,11 @@ label: 'anonymous user'
 weight: -10
 is_admin: false
 permissions:
-  - 'access checkout'
   - 'access content'
   - 'access site-wide contact form'
   - 'diff view changes'
   - 'display eu cookie compliance popup'
   - 'search content'
   - 'use text format filtered_html'
-  - 'view commerce_product'
   - 'view files'
   - 'view media'

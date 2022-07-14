@@ -3,10 +3,8 @@ langcode: en
 status: true
 dependencies:
   module:
-    - commerce_checkout
     - commerce_order
     - commerce_payment
-    - commerce_product
     - contact
     - eu_cookie_compliance
     - media
@@ -18,11 +16,9 @@ label: 'authenticated user'
 weight: -9
 is_admin: false
 permissions:
-  - 'access checkout'
   - 'access content'
   - 'access site-wide contact form'
   - 'display eu cookie compliance popup'
   - 'manage own commerce_payment_method'
-  - 'view commerce_product'
   - 'view media'
   - 'view own commerce_order'
