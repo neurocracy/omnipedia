@@ -140,8 +140,8 @@ definitions:
     expanded: false
     enabled: false
   omnipedia_commerce__content_access_base_product__footer:
+    enabled: false
     menu_name: footer
     parent: ''
     weight: -45
     expanded: false
-    enabled: true
