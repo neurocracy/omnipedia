@@ -184,7 +184,7 @@ display:
         options:
           perm: 'access content'
       cache:
-        type: search_api_tag
+        type: none
         options: {  }
       empty:
         area:
@@ -289,7 +289,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - omnipedia_dates
         - url
         - url.query_args
         - 'user.node_grants:view'
@@ -310,7 +309,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - omnipedia_dates
         - url
         - url.query_args
         - 'user.node_grants:view'
