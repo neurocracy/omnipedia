@@ -5640,12 +5640,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neurocracy/drupal-omnipedia-search.git",
-                "reference": "a1d32dc40ddfb3f65ae889e605c7f0b1c7dbe29b"
+                "reference": "b7feb2cc23cf3b5ab990580716ab71bf9b6d142a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-search/zipball/a1d32dc40ddfb3f65ae889e605c7f0b1c7dbe29b",
-                "reference": "a1d32dc40ddfb3f65ae889e605c7f0b1c7dbe29b",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-search/zipball/b7feb2cc23cf3b5ab990580716ab71bf9b6d142a",
+                "reference": "b7feb2cc23cf3b5ab990580716ab71bf9b6d142a",
                 "shasum": ""
             },
             "require": {
@@ -5669,7 +5669,7 @@
                 "source": "https://github.com/neurocracy/drupal-omnipedia-search/tree/3.x",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-search/issues"
             },
-            "time": "2022-06-26T23:49:11+00:00"
+            "time": "2022-07-15T00:48:40+00:00"
         },
         {
             "name": "drupal/omnipedia_site_theme",
