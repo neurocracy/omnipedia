@@ -103,7 +103,6 @@ module:
   omnipedia_search: 0
   omnipedia_user: 0
   options: 0
-  page_cache: 0
   password_policy_character_types: 0
   password_policy_characters: 0
   password_policy_consecutive: 0
