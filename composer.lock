@@ -5305,19 +5305,19 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:neurocracy/drupal-omnipedia-changes.git",
-                "reference": "0060e9fc0f3fdbb26ec542f3b573cc7c05b1861a"
+                "reference": "8dea8f1bde95b8c8a2ac08f675a2714efe43369e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-changes/zipball/0060e9fc0f3fdbb26ec542f3b573cc7c05b1861a",
-                "reference": "0060e9fc0f3fdbb26ec542f3b573cc7c05b1861a",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-changes/zipball/8dea8f1bde95b8c8a2ac08f675a2714efe43369e",
+                "reference": "8dea8f1bde95b8c8a2ac08f675a2714efe43369e",
                 "shasum": ""
             },
             "require": {
                 "caxy/php-htmldiff": "^0.1.12",
                 "drupal/diff": "^1.0",
                 "drupal/pcb": "^3.0",
-                "drupal/queue_ui": "^2.2",
+                "drupal/queue_ui": "^3.1",
                 "drupal/warmer": "^2.0",
                 "php": "^8",
                 "symfony/css-selector": "^4.4",
@@ -5347,7 +5347,7 @@
                 "source": "https://github.com/neurocracy/drupal-omnipedia-changes/tree/3.x",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-changes/issues"
             },
-            "time": "2022-07-01T12:40:43+00:00"
+            "time": "2022-07-19T15:51:57+00:00"
         },
         {
             "name": "drupal/omnipedia_commerce",
@@ -6066,20 +6066,20 @@
         },
         {
             "name": "drupal/queue_ui",
-            "version": "2.2.0",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/queue_ui.git",
-                "reference": "8.x-2.2"
+                "reference": "3.1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/queue_ui-8.x-2.2.zip",
-                "reference": "8.x-2.2",
-                "shasum": "a5ef0514c1371e42a71fdcfef01dc391cc7da0c3"
+                "url": "https://ftp.drupal.org/files/projects/queue_ui-3.1.0.zip",
+                "reference": "3.1.0",
+                "shasum": "ac22f78dd8c8ad8b04430e26427995f63f070fdf"
             },
             "require": {
-                "drupal/core": "^8.8 || ^9"
+                "drupal/core": "^9.2 || ^10"
             },
             "require-dev": {
                 "drupal/queue_order": "^2"
@@ -6087,11 +6087,16 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.2",
-                    "datestamp": "1601619129",
+                    "version": "3.1.0",
+                    "datestamp": "1657697420",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9 || ^10 || ^11"
                     }
                 }
             },
