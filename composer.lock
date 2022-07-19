@@ -7717,16 +7717,16 @@
         },
         {
             "name": "firebase/php-jwt",
-            "version": "v6.2.0",
+            "version": "v6.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/firebase/php-jwt.git",
-                "reference": "d28e6df83830252650da4623c78aaaf98fb385f3"
+                "reference": "018dfc4e1da92ad8a1b90adc4893f476a3b41cb8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/d28e6df83830252650da4623c78aaaf98fb385f3",
-                "reference": "d28e6df83830252650da4623c78aaaf98fb385f3",
+                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/018dfc4e1da92ad8a1b90adc4893f476a3b41cb8",
+                "reference": "018dfc4e1da92ad8a1b90adc4893f476a3b41cb8",
                 "shasum": ""
             },
             "require": {
@@ -7773,9 +7773,9 @@
             ],
             "support": {
                 "issues": "https://github.com/firebase/php-jwt/issues",
-                "source": "https://github.com/firebase/php-jwt/tree/v6.2.0"
+                "source": "https://github.com/firebase/php-jwt/tree/v6.3.0"
             },
-            "time": "2022-05-13T20:54:50+00:00"
+            "time": "2022-07-15T16:48:45+00:00"
         },
         {
             "name": "grasmash/expander",
@@ -13923,16 +13923,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "2.2.16",
+            "version": "2.2.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "8c0ee53ff67399b0eec4eee2c5dc5189ec6938a6"
+                "reference": "a8ab5070fb99396e4710baee286478ad697724c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/8c0ee53ff67399b0eec4eee2c5dc5189ec6938a6",
-                "reference": "8c0ee53ff67399b0eec4eee2c5dc5189ec6938a6",
+                "url": "https://api.github.com/repos/composer/composer/zipball/a8ab5070fb99396e4710baee286478ad697724c2",
+                "reference": "a8ab5070fb99396e4710baee286478ad697724c2",
                 "shasum": ""
             },
             "require": {
@@ -14002,7 +14002,7 @@
             "support": {
                 "irc": "ircs://irc.libera.chat:6697/composer",
                 "issues": "https://github.com/composer/composer/issues",
-                "source": "https://github.com/composer/composer/tree/2.2.16"
+                "source": "https://github.com/composer/composer/tree/2.2.17"
             },
             "funding": [
                 {
@@ -14018,7 +14018,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-07-05T14:50:29+00:00"
+            "time": "2022-07-13T13:27:38+00:00"
         },
         {
             "name": "composer/metadata-minifier",
