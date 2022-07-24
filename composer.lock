@@ -5556,13 +5556,13 @@
             "version": "3.x-dev",
             "source": {
                 "type": "git",
-                "url": "git@github.com:neurocracy/drupal-omnipedia-media.git",
-                "reference": "4c888f54db405e8a03b0acc2bc7247f7379d24ce"
+                "url": "https://github.com/neurocracy/drupal-omnipedia-media.git",
+                "reference": "102a66f6f69d23df1036c853d5ec13dc44faa902"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-media/zipball/102a66f6f69d23df1036c853d5ec13dc44faa902",
-                "reference": "4c888f54db405e8a03b0acc2bc7247f7379d24ce",
+                "reference": "102a66f6f69d23df1036c853d5ec13dc44faa902",
                 "shasum": ""
             },
             "require": {
@@ -5576,7 +5576,7 @@
             "extra": {
                 "patches": {
                     "drupal/webp": {
-                        "A recent commit causes image generation to fail on Windows platforms: https://www.drupal.org/project/webp/issues/3161795#comment-14096421": "drupal/modules/custom/omnipedia_media/patches/drupal/webp/webp-replace-file-exists-call-with-entity-load-to-fix-image-generation-3161795-16.patch"
+                        "A recent commit causes image generation to fail on Windows platforms: https://www.drupal.org/project/webp/issues/3161795#comment-14096421": "https://raw.githubusercontent.com/neurocracy/drupal-omnipedia-media/3.x/patches/drupal/webp/webp-replace-file-exists-call-with-entity-load-to-fix-image-generation-3161795-16.patch"
                     }
                 }
             },
@@ -5595,7 +5595,7 @@
                 "source": "https://github.com/neurocracy/drupal-omnipedia-media/tree/3.x",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-media/issues"
             },
-            "time": "2022-07-24T18:33:46+00:00"
+            "time": "2022-07-24T18:43:38+00:00"
         },
         {
             "name": "drupal/omnipedia_menu",
