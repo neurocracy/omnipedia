@@ -5396,17 +5396,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neurocracy/drupal-omnipedia-content.git",
-                "reference": "a99cd1a466cc970c846ae98ccff87d918bb0e363"
+                "reference": "db1231ba673e18daa00d6f836fe957f1f80ad69a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-content/zipball/a99cd1a466cc970c846ae98ccff87d918bb0e363",
-                "reference": "a99cd1a466cc970c846ae98ccff87d918bb0e363",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-content/zipball/db1231ba673e18daa00d6f836fe957f1f80ad69a",
+                "reference": "db1231ba673e18daa00d6f836fe957f1f80ad69a",
                 "shasum": ""
             },
             "require": {
                 "8fold/commonmark-abbreviations": "^1.2",
-                "cweagans/composer-patches": "^1.7",
                 "drupal/hook_event_dispatcher": "^3.0",
                 "drupal/markdown": "^3.0@RC",
                 "league/commonmark": "^1.6.1",
@@ -5416,13 +5415,6 @@
             },
             "default-branch": true,
             "type": "drupal-custom-module",
-            "extra": {
-                "patches": {
-                    "drupal/core": {
-                        "UrlGenerator improperly escapes a colon in the path [#3165305]: https://www.drupal.org/project/drupal/issues/3165305#comment-14058586": "drupal/modules/custom/omnipedia_content/patches/drupal/core/url_escaped-3165305-10.patch"
-                    }
-                }
-            },
             "license": [
                 "GPL-2.0-or-later"
             ],
@@ -5438,7 +5430,7 @@
                 "source": "https://github.com/neurocracy/drupal-omnipedia-content/tree/3.x",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-content/issues"
             },
-            "time": "2022-07-24T16:34:31+00:00"
+            "time": "2022-07-24T18:56:42+00:00"
         },
         {
             "name": "drupal/omnipedia_core",
@@ -5603,20 +5595,28 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neurocracy/drupal-omnipedia-menu.git",
-                "reference": "8a4bd14580aff38e0452edb72d6e94709d89780e"
+                "reference": "fa8ce410f16d792db16546ba3134767a6e22b712"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-menu/zipball/8a4bd14580aff38e0452edb72d6e94709d89780e",
-                "reference": "8a4bd14580aff38e0452edb72d6e94709d89780e",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-menu/zipball/fa8ce410f16d792db16546ba3134767a6e22b712",
+                "reference": "fa8ce410f16d792db16546ba3134767a6e22b712",
                 "shasum": ""
             },
             "require": {
+                "cweagans/composer-patches": "^1.7",
                 "drupal/hook_event_dispatcher": "^3.0",
                 "php": "^8"
             },
             "default-branch": true,
             "type": "drupal-custom-module",
+            "extra": {
+                "patches": {
+                    "drupal/core": {
+                        "UrlGenerator improperly escapes a colon in the path [#3165305]: https://www.drupal.org/project/drupal/issues/3165305#comment-14058586": "https://raw.githubusercontent.com/neurocracy/drupal-omnipedia-menu/3.x/patches/drupal/core/url_escaped-3165305-10.patch"
+                    }
+                }
+            },
             "license": [
                 "GPL-2.0-or-later"
             ],
@@ -5632,7 +5632,7 @@
                 "source": "https://github.com/neurocracy/drupal-omnipedia-menu/tree/3.x",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-menu/issues"
             },
-            "time": "2022-07-24T16:46:40+00:00"
+            "time": "2022-07-24T18:58:17+00:00"
         },
         {
             "name": "drupal/omnipedia_search",
