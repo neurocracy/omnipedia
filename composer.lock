@@ -5305,12 +5305,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:neurocracy/drupal-omnipedia-changes.git",
-                "reference": "061e71fba3e3699148563e9c268b07853e228e02"
+                "reference": "90b3c4165edec4bbaa163edd1f326b3a7e5107ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-changes/zipball/061e71fba3e3699148563e9c268b07853e228e02",
-                "reference": "061e71fba3e3699148563e9c268b07853e228e02",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-changes/zipball/90b3c4165edec4bbaa163edd1f326b3a7e5107ff",
+                "reference": "90b3c4165edec4bbaa163edd1f326b3a7e5107ff",
                 "shasum": ""
             },
             "require": {
