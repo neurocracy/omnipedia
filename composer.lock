@@ -5631,16 +5631,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neurocracy/drupal-omnipedia-site-theme.git",
-                "reference": "77f10ff169101ee8596410e04ead43d4110ec8a3"
+                "reference": "7facd31ce9ce45ff453fdf62f17c422bab642090"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-site-theme/zipball/77f10ff169101ee8596410e04ead43d4110ec8a3",
-                "reference": "77f10ff169101ee8596410e04ead43d4110ec8a3",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-site-theme/zipball/7facd31ce9ce45ff453fdf62f17c422bab642090",
+                "reference": "7facd31ce9ce45ff453fdf62f17c422bab642090",
                 "shasum": ""
             },
             "require": {
-                "npm-asset/fontsource--exo-2": "^4.5",
+                "npm-asset/fontsource--exo-2": "^4.5.9",
                 "php": "^8",
                 "symfony/css-selector": "^4.4",
                 "symfony/dom-crawler": "^4.4"
@@ -5662,7 +5662,7 @@
                 "source": "https://github.com/neurocracy/drupal-omnipedia-site-theme/tree/3.x",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-site-theme/issues"
             },
-            "time": "2022-08-21T04:56:13+00:00"
+            "time": "2022-09-08T05:52:54+00:00"
         },
         {
             "name": "drupal/omnipedia_user",
@@ -8959,10 +8959,10 @@
         },
         {
             "name": "npm-asset/fontsource--exo-2",
-            "version": "4.5.8",
+            "version": "4.5.9",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/@fontsource/exo-2/-/exo-2-4.5.8.tgz"
+                "url": "https://registry.npmjs.org/@fontsource/exo-2/-/exo-2-4.5.9.tgz"
             },
             "type": "npm-asset",
             "license": [
