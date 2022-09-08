@@ -5090,18 +5090,18 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:neurocracy/drupal-omnipedia-access.git",
-                "reference": "ec8a4c401a2a84c7cc93a71ad99ff256cff9ea87"
+                "reference": "7a96b3dcd4a011da1bedf90b1dd37499edc7e443"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-access/zipball/ec8a4c401a2a84c7cc93a71ad99ff256cff9ea87",
-                "reference": "ec8a4c401a2a84c7cc93a71ad99ff256cff9ea87",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-access/zipball/7a96b3dcd4a011da1bedf90b1dd37499edc7e443",
+                "reference": "7a96b3dcd4a011da1bedf90b1dd37499edc7e443",
                 "shasum": ""
             },
             "require": {
                 "cweagans/composer-patches": "^1.7",
                 "drupal/hook_event_dispatcher": "^3.0",
-                "drupal/permissions_by_term": "^3.1"
+                "drupal/permissions_by_term": "^3.1.19"
             },
             "default-branch": true,
             "type": "drupal-custom-module",
@@ -5110,7 +5110,6 @@
                     "drupal/permissions_by_term": {
                         "Respect the Require all terms granted and Permission mode settings in Permission by entity module: https://www.drupal.org/project/permissions_by_term/issues/3072171#comment-14209554": "drupal/modules/custom/omnipedia_access/patches/drupal/permissions_by_term/merge-request-8-respect-require-all-terms-permission-by-entity.patch",
                         "Permissions by Entity PHP notice for Commerce Product entities: https://www.drupal.org/project/permissions_by_term/issues/3231188#comment-14209558": "drupal/modules/custom/omnipedia_access/patches/drupal/permissions_by_term/merge-request-9-commerce-product-notices.patch",
-                        "PbE: Add entityTypeId to cache tags: https://www.drupal.org/project/permissions_by_term/issues/3238759#comment-14234566": "drupal/modules/custom/omnipedia_access/patches/drupal/permissions_by_term/3238759-PbE_respect_entity_type_id-4.patch",
                         "Node Access Rebuilt unnecessarily if no change to user terms: https://www.drupal.org/project/permissions_by_term/issues/3170389#comment-14242763": "drupal/modules/custom/omnipedia_access/patches/drupal/permissions_by_term/Issue-3170389-4-Node-Access-Rebuilt-unnecessarily.patch"
                     }
                 }
@@ -5130,7 +5129,7 @@
                 "source": "https://github.com/neurocracy/drupal-omnipedia-access/tree/3.x",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-access/issues"
             },
-            "time": "2022-06-27T00:44:20+00:00"
+            "time": "2022-09-08T04:22:35+00:00"
         },
         {
             "name": "drupal/omnipedia_attached_data",
@@ -5853,17 +5852,17 @@
         },
         {
             "name": "drupal/permissions_by_term",
-            "version": "3.1.17",
+            "version": "3.1.19",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/permissions_by_term.git",
-                "reference": "3.1.17"
+                "reference": "3.1.19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/permissions_by_term-3.1.17.zip",
-                "reference": "3.1.17",
-                "shasum": "a392ff9bccbbc2218be2a035017a15782e1150e0"
+                "url": "https://ftp.drupal.org/files/projects/permissions_by_term-3.1.19.zip",
+                "reference": "3.1.19",
+                "shasum": "854232a8d2500ee86e3cc36bf5973ba3e4c653b8"
             },
             "require": {
                 "drupal/core": "^9.0",
@@ -5872,8 +5871,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.1.17",
-                    "datestamp": "1641214540",
+                    "version": "3.1.19",
+                    "datestamp": "1662572201",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5887,16 +5886,16 @@
             "authors": [
                 {
                     "name": "Peter Majmesku",
-                    "homepage": "https://www.drupal.org/user/786132",
+                    "homepage": "https://www.drupal.org/user/1529744",
                     "email": "majmesku@publicplan.de"
                 },
                 {
-                    "name": "SaschaHannes",
-                    "homepage": "https://www.drupal.org/user/3536189"
+                    "name": "Peter Majmesku",
+                    "homepage": "https://www.drupal.org/user/786132"
                 },
                 {
-                    "name": "marcoliver",
-                    "homepage": "https://www.drupal.org/user/1529744"
+                    "name": "Wassilissa Elrich",
+                    "homepage": "https://www.drupal.org/user/3729479"
                 }
             ],
             "description": "Restricts access to nodes by taxonomy terms in relation to users and their roles.",
