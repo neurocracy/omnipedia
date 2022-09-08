@@ -31,5 +31,6 @@ configuration:
     tagline: false
   enable_on_cart: false
   webhook_id: null
+  enable_credit_card_icons: true
 conditions: {  }
 conditionOperator: AND
