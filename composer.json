@@ -212,10 +212,6 @@
       "drupal/development_environment": {
         "Duplicate key in menu links YAML file [#3218169]: https://www.drupal.org/project/development_environment/issues/3218169": "patches/drupal/development_environment/duplicate-key-3218169-2.patch"
       },
-      "drupal/eu_cookie_compliance": {
-        "Changes eu_cookie_compliance.js required for subsequent patch to succeed: https://www.drupal.org/project/eu_cookie_compliance/issues/3254209#comment-14355307": "patches/drupal/eu_cookie_compliance/merge-request-48-required-for-merge-request-49.patch",
-        "Withdraw button not visible: https://www.drupal.org/project/eu_cookie_compliance/issues/3257088#mr49-note75081": "patches/drupal/eu_cookie_compliance/merge-request-49-withdraw-button-not-visible.patch"
-      },
       "drupal/rules": {
         "Support upcasting entity IDs to full entity contexts: https://www.drupal.org/project/rules/issues/2800749#comment-14332836": "patches/drupal/rules/2800749-97.upcast.patch"
       },
