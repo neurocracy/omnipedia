@@ -224,7 +224,8 @@
         "Checks\\PrivateFiles: mistakes adjacent \"drupal_private_files\" as being under \"drupal\": https://www.drupal.org/project/security_review/issues/3259051": "patches/drupal/security_review/merge-request-2-private-files-check-more-robust.patch"
       },
       "drupal/session_limit": {
-        "Displayed message should be configurable: https://www.drupal.org/project/session_limit/issues/2794553#comment-14364480": "patches/drupal/session_limit/session_limit-configurable-message-2794553-19.patch"
+        "Displayed message should be configurable: https://www.drupal.org/project/session_limit/issues/2794553#comment-14364480": "patches/drupal/session_limit/session_limit-configurable-message-2794553-19.patch",
+        "Services\\SessionLimit should type-hint ModuleHandlerInterface rather than a specific implementation [#3308506]: https://www.drupal.org/project/session_limit/issues/3308506": "patches/drupal/session_limit/3308506-typehint-module-handler-interface.patch"
       }
     },
     "drupal-scaffold": {

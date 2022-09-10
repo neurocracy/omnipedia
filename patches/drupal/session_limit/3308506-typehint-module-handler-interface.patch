@@ -1,0 +1,42 @@
+diff --git a/src/Services/SessionLimit.php b/src/Services/SessionLimit.php
+index 7c8cf9159dc2592f2b840927c949100feb87e019..f7250141be3a895059443c45ef76805d6e5e35b1 100644
+--- a/src/Services/SessionLimit.php
++++ b/src/Services/SessionLimit.php
+@@ -17,7 +17,7 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
+ use Drupal\Core\Database\Connection;
+ use Drupal\Core\Session\AccountProxy;
+ use Drupal\Core\Session\SessionManager;
+-use Drupal\Core\Extension\ModuleHandler;
++use Drupal\Core\Extension\ModuleHandlerInterface;
+ use Drupal\Core\Config\ConfigFactory;
+ 
+ class SessionLimit implements EventSubscriberInterface {
+@@ -80,7 +80,9 @@ class SessionLimit implements EventSubscriberInterface {
+   protected $sessionManager;
+ 
+   /**
+-   * @var ModuleHandler
++   * The module handler service.
++   *
++   * @var \Drupal\Core\Extension\ModuleHandlerInterface
+    */
+   protected $moduleHandler;
+ 
+@@ -109,14 +111,14 @@ class SessionLimit implements EventSubscriberInterface {
+    *   The current user.
+    * @param SessionManager $sessionManager
+    *   Session manager.
+-   * @param ModuleHandler $moduleHandler
+-   *   Module handler.
++   * @param \Drupal\Core\Extension\ModuleHandlerInterface $moduleHandler
++   *   The module handler service.
+    * @param ConfigFactory $configFactory
+    *   Config factory.
+    * @param \Drupal\Core\Messenger\MessengerInterface $messenger
+    *   The messenger.
+    */
+-  public function __construct(Connection $database, EventDispatcherInterface $eventDispatcher, RouteMatchInterface $routeMatch, AccountProxy $currentUser, SessionManager $sessionManager, ModuleHandler $moduleHandler, ConfigFactory $configFactory, MessengerInterface $messenger) {
++  public function __construct(Connection $database, EventDispatcherInterface $eventDispatcher, RouteMatchInterface $routeMatch, AccountProxy $currentUser, SessionManager $sessionManager, ModuleHandlerInterface $moduleHandler, ConfigFactory $configFactory, MessengerInterface $messenger) {
+     $this->routeMatch = $routeMatch;
+     $this->database = $database;
+     $this->eventDispatcher = $eventDispatcher;
