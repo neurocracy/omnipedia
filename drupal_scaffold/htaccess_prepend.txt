@@ -1,7 +1,8 @@
 # Blocking of files that could be a security risk under certain circumstances,
 # in addition to the core .htaccess rules. This is primarily intended to prevent
 # access to core/install.php in the event that the database connection cannot be
-# established or some other reason causes Drupal believe it isn't installed yet.
+# established or some other reason causes Drupal to believe it hasn't been
+# installed yet.
 #
 # @see https://www.drupal.org/forum/support/post-installation/2011-03-04/can-i-delete-the-installphp-file#comment-4169662
 #
