@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0a5c2d012fc696b9397ca8404730cd82",
+    "content-hash": "1c9b8c5600306372998d607409f42323",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",

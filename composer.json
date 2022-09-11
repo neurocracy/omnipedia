@@ -229,6 +229,7 @@
         "web-root": "drupal/"
       },
       "file-mapping": {
+        "[project-root]/.editorconfig": false,
         "[web-root]/.htaccess": {
           "prepend": "drupal_scaffold/htaccess_prepend.txt"
         },
