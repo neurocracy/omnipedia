@@ -24,15 +24,19 @@ command:
           # staging to live.
           - 'sites/all/drush/drush.yml'
 
-        # This removes the two 'cache:rebuild' as rebuilding various caches on
-        # Omnipedia is a big hit to the server and load time for the subsequent
-        # request. If newly added modules or themes need to be picked up by
-        # Drupal, run 'drush cc bootstrap' after the rsync. Other Drush commands
-        # can be run to rebuild various things if needed, or if a command is not
-        # available, use
+        # This removes the two 'cache:rebuild' as rebuilding various caches can
+        # be a big hit to the server and load time for the subsequent request.
+        # If newly added modules or themes need to be picked up by Drupal, run
+        # 'drush cc bootstrap' after the rsync. Other Drush commands can be run
+        # to rebuild various things if needed, and the Rebuilder module can help
+        # rebuild things that either don't have an existing Drush command or
+        # would require a difficult to remember service call using php:eval.
+        #
+        # @see https://www.drupal.org/project/rebuilder
+        #
+        # If you really want to do it manually, find the service, and run:
+        #
         # drush php:eval "\Drupal::service('service_name')->serviceMethod()"
-        # to perform other actions, such as rebuilding the router or library
-        # definitions.
         target-post-drush-commands:
           - 'config:import'
           - 'updb'
