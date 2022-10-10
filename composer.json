@@ -212,6 +212,9 @@
       "drupal/development_environment": {
         "Duplicate key in menu links YAML file [#3218169]: https://www.drupal.org/project/development_environment/issues/3218169": "patches/drupal/development_environment/duplicate-key-3218169-2.patch"
       },
+      "drupal/honeypot": {
+        "Missing primary key in table `honeypot_user` [#2943526]: https://www.drupal.org/project/honeypot/issues/2943526#comment-12712602": "patches/drupal/honeypot/honeypot-fix_missing_primary_key-8.x-2943526-6.patch"
+      },
       "drupal/rules": {
         "Support upcasting entity IDs to full entity contexts: https://www.drupal.org/project/rules/issues/2800749#comment-14332836": "patches/drupal/rules/2800749-97.upcast.patch"
       },

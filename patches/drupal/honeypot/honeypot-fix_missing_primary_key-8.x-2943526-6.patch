@@ -1,0 +1,46 @@
+diff --git i/honeypot.install w/honeypot.install
+index e924595..fd4d345 100644
+--- i/honeypot.install
++++ w/honeypot.install
+@@ -15,6 +15,12 @@ function honeypot_schema() {
+   $schema['honeypot_user'] = [
+     'description' => 'Table that stores failed attempts to submit a form.',
+     'fields' => [
++      'id' => [
++        'description' => 'Primary key.',
++        'type' => 'serial',
++        'unsigned' => TRUE,
++        'not null' => TRUE,
++      ],
+       'uid' => [
+         'description' => 'Foreign key to {users}.uid; uniquely identifies a Drupal user to whom this ACL data applies.',
+         'type' => 'int',
+@@ -34,6 +40,7 @@ function honeypot_schema() {
+         'not null' => TRUE,
+       ],
+     ],
++    'primary key' => ['id'],
+     'indexes' => [
+       'uid' => ['uid'],
+       'timestamp' => ['timestamp'],
+@@ -72,3 +79,20 @@ function honeypot_update_8100() {
+   $spec['initial'] = '';
+   \Drupal::database()->schema()->addField('honeypot_user', 'hostname', $spec);
+ }
++
++/**
++ * Adds the 'id' column to the {honeypot_user} table.
++ */
++function honeypot_update_8101() {
++  $schema = \Drupal::database()->schema();
++
++  if (!$schema->fieldExists('honeypot_user', 'id')) {
++    $spec = [
++      'description' => 'Primary key.',
++      'type' => 'serial',
++      'unsigned' => TRUE,
++      'not null' => TRUE,
++    ];
++    $schema->addField('honeypot_user', 'id', $spec, ['primary key' => ['id']]);
++  }
++}
