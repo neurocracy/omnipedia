@@ -3,9 +3,34 @@
   "version": "1.0.0",
   "license": "GPL-2.0",
   "repository": "gitlab:neurocracy/omnipedia/drupal",
+  "packageManager": "yarn@3.2.4",
+  "workspaces": [
+    "drupal/modules/ambientimpact",
+    "drupal/modules/custom/*",
+    "drupal/themes/ambientimpact",
+    "drupal/themes/custom/*"
+  ],
   "devDependencies": {
+    "@lodder/grunt-postcss": "^3.0.1",
+    "@yarnpkg/fslib": "^3.0.0-rc.26",
+    "@yarnpkg/libzip": "^3.0.0-rc.26",
+    "autoprefixer": "^10.2.6",
     "grunt": "^1.5.3",
-    "grunt-drupal-delegate": "^1.0.1"
-  },
-  "dependencies": {}
+    "grunt-favicons": "github:japrescott/grunt-favicons#f9b4f3d99a7d05632f6291564086bb72bd43cdcc",
+    "grunt-sass": "^3.1.0",
+    "grunt-shell": "^3.0.1",
+    "grunt-svgstore": "^2.0.0",
+    "include-media": "^1.4.10",
+    "js-yaml": "^4.1.0",
+    "load-grunt-config": "^4.0.1",
+    "postcss": "^8.3.5",
+    "postcss-easing-gradients": "^3.0.1",
+    "resolve": "1.1.7",
+    "resolve-bower": "0.0.1",
+    "sass": "^1.43.4",
+    "sass-module-importer": "^1.4.0",
+    "sass-pnp-importer": "^0.3.0",
+    "sassy-cast": "github:KittyGiraudel/SassyCast#2.0.0",
+    "sassy-lists": "^3.0.1"
+  }
 }

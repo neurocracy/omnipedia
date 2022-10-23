@@ -5,7 +5,27 @@ sftp-config.json
 test.sqlite
 test.sqlite-shm
 test.sqlite-wal
+
+# Ignore Node dependencies and some Yarn files.
 node_modules
+yarn-error.log
+yarn.build-error.log
+# Should not be present when using Yarn but excluded just to be sure.
+package-lock.json
+
+# Yarn cache and Plug-n-Play files. If we decide to switch over to the Yarn
+# zero-installs philosophy, these rules will need adjusting:
+#
+# @see https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
+#
+# @see https://yarnpkg.com/features/zero-installs
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
 
 # These are pulled in by the Drupal scaffold.
 /.gitattributes
