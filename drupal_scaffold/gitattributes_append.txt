@@ -1,0 +1,5 @@
+# Treat Yarn release/plug-in bundles as binary to avoid showing massives diffs:
+#
+# @see https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
+/.yarn/releases/** binary
+/.yarn/plugins/** binary

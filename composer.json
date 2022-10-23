@@ -230,6 +230,9 @@
       },
       "file-mapping": {
         "[project-root]/.editorconfig": false,
+        "[project-root]/.gitattributes": {
+          "append": "drupal_scaffold/gitattributes_append.txt"
+        },
         "[web-root]/.htaccess": {
           "prepend": "drupal_scaffold/htaccess_prepend.txt"
         },
