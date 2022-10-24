@@ -180,7 +180,7 @@
     "drupal/config_devel": "^1.2",
     "drupal/config_inspector": "^2.1",
     "drupal/core-dev": "^9.3",
-    "drupal/devel": "^4.0",
+    "drupal/devel": "^5.0",
     "drupal/devel_entity_updates": "^3.0",
     "drupal/examples": "^3.0",
     "kint-php/kint": "^3.3",
