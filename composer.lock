@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "88b9f98a4546acca9bc898ae67a3249d",
+    "content-hash": "087ae9c30c395da786de0808538e818e",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -4132,74 +4132,6 @@
             "homepage": "https://www.drupal.org/project/flood_control",
             "support": {
                 "source": "https://git.drupalcode.org/project/flood_control"
-            }
-        },
-        {
-            "name": "drupal/ga_login",
-            "version": "1.0.0-alpha7",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/ga_login.git",
-                "reference": "8.x-1.0-alpha7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ga_login-8.x-1.0-alpha7.zip",
-                "reference": "8.x-1.0-alpha7",
-                "shasum": "11a37203595763b7252c4fb685f68e1d47c48f69"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9",
-                "drupal/tfa": "^1.0"
-            },
-            "require-dev": {
-                "drupal/tfa": "1.x-dev"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.0-alpha7",
-                    "datestamp": "1666299034",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "attiks",
-                    "homepage": "https://www.drupal.org/user/105002"
-                },
-                {
-                    "name": "daggerhart",
-                    "homepage": "https://www.drupal.org/user/167806"
-                },
-                {
-                    "name": "jcnventura",
-                    "homepage": "https://www.drupal.org/user/122464"
-                },
-                {
-                    "name": "Jelle_S",
-                    "homepage": "https://www.drupal.org/user/829198"
-                },
-                {
-                    "name": "nerdstein",
-                    "homepage": "https://www.drupal.org/user/1557710"
-                },
-                {
-                    "name": "therealssj",
-                    "homepage": "https://www.drupal.org/user/3408074"
-                }
-            ],
-            "description": "TFA plugins for Hmac-Based One Time Passwords & Time Based One Time Password with recovery codes as fallback.",
-            "homepage": "https://www.drupal.org/project/ga_login",
-            "support": {
-                "source": "https://git.drupalcode.org/project/ga_login"
             }
         },
         {
@@ -18423,7 +18355,6 @@
         "drupal/ambientimpact_markdown": 20,
         "drupal/ambientimpact_media": 20,
         "drupal/ambientimpact_ux": 20,
-        "drupal/ga_login": 15,
         "drupal/gin": 10,
         "drupal/gin_toolbar": 10,
         "drupal/omnipedia_access": 20,
