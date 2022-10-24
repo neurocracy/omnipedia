@@ -1,0 +1,49 @@
+parameters:
+
+  monolog.channel_handlers:
+    default:
+      # This sets the Drupal core dblog as one of the default handlers.
+      - drupal.dblog
+      # This also adds the dblog_persistent module's logger as a default handler
+      # so that it gets a chance to capture log messages as configured.
+      - drupal.dblog_persistent
+
+    omnipedia_user_roles_elevated:
+      - drupal.dblog
+      - drupal.dblog_persistent
+      - mail_omnipedia_user_roles_elevated
+      # - mail_deduplicated_omnipedia_user_roles_elevated
+
+services:
+
+  monolog.handler.deduplication_base:
+    class: Monolog\Handler\DeduplicationHandler
+    arguments:
+      - ''
+      - 'private://logs/deduplication.log'
+      - '%monolog.level.error%'
+      - 3600 # 60 seconds x 60 minutes = 1 hour.
+    abstract: true
+
+  monolog.handler.mail_abstract:
+    class: Drupal\omnipedia_logger\Logger\Handler\DrupalMailHandler
+    abstract: true
+    calls:
+      -
+        - setDependencies
+        -
+          - '@language_manager'
+          - '@plugin.manager.mail'
+          - '@string_translation'
+
+  monolog.handler.mail_omnipedia_user_roles_elevated:
+    parent: monolog.handler.mail_abstract
+    arguments:
+      - 'i@ambientimpact.com'
+      - '%monolog.level.notice%'
+
+  # monolog.handler.mail_deduplicated_omnipedia_user_roles_elevated:
+  #   parent: monolog.handler.deduplication_base
+  #   arguments:
+  #     index_0: '@monolog.handler.mail_omnipedia_user_roles_elevated'
+  #     index_2: '%monolog.level.notice%'
