@@ -2230,22 +2230,22 @@
         },
         {
             "name": "drupal/commerce",
-            "version": "2.31.0",
+            "version": "2.32.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/commerce.git",
-                "reference": "8.x-2.31"
+                "reference": "8.x-2.32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/commerce-8.x-2.31.zip",
-                "reference": "8.x-2.31",
-                "shasum": "75d59b4007f07ce7dbfc31f88c1003e30a20584e"
+                "url": "https://ftp.drupal.org/files/projects/commerce-8.x-2.32.zip",
+                "reference": "8.x-2.32",
+                "shasum": "21e19c8751ed65447468cf72ff8401e3e461e954"
             },
             "require": {
                 "commerceguys/intl": "^1.0.0",
                 "drupal/address": "^1.7",
-                "drupal/core": "^9.2 || ^10",
+                "drupal/core": "^9.3 || ^10",
                 "drupal/entity": "^1.0",
                 "drupal/entity_reference_revisions": "~1.0",
                 "drupal/inline_entity_form": "^1.0@RC",
@@ -2275,8 +2275,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.31",
-                    "datestamp": "1660137900",
+                    "version": "8.x-2.32",
+                    "datestamp": "1666184508",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2285,7 +2285,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -2310,25 +2310,25 @@
                 }
             ],
             "description": "Drupal Commerce is a flexible eCommerce solution.",
-            "homepage": "http://drupal.org/project/commerce",
+            "homepage": "https://drupal.org/project/commerce",
             "support": {
                 "source": "https://git.drupalcode.org/project/commerce"
             }
         },
         {
             "name": "drupal/commerce_cart",
-            "version": "2.31.0",
+            "version": "2.32.0",
             "require": {
                 "drupal/commerce": "*",
                 "drupal/commerce_order": "*",
                 "drupal/commerce_product": "*",
-                "drupal/core": "^9.2 || ^10"
+                "drupal/core": "^9.3 || ^10"
             },
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.31",
-                    "datestamp": "1660137900",
+                    "version": "8.x-2.32",
+                    "datestamp": "1666184508",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2421,17 +2421,17 @@
         },
         {
             "name": "drupal/commerce_number_pattern",
-            "version": "2.31.0",
+            "version": "2.32.0",
             "require": {
                 "drupal/commerce": "*",
                 "drupal/commerce_store": "*",
-                "drupal/core": "^9.2 || ^10"
+                "drupal/core": "^9.3 || ^10"
             },
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.31",
-                    "datestamp": "1660137900",
+                    "version": "8.x-2.32",
+                    "datestamp": "1666184508",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2472,13 +2472,13 @@
         },
         {
             "name": "drupal/commerce_order",
-            "version": "2.31.0",
+            "version": "2.32.0",
             "require": {
                 "drupal/commerce": "*",
                 "drupal/commerce_number_pattern": "*",
                 "drupal/commerce_price": "*",
                 "drupal/commerce_store": "*",
-                "drupal/core": "^9.2 || ^10",
+                "drupal/core": "^9.3 || ^10",
                 "drupal/entity_reference_revisions": "*",
                 "drupal/profile": "*",
                 "drupal/state_machine": "*"
@@ -2486,8 +2486,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.31",
-                    "datestamp": "1660137900",
+                    "version": "8.x-2.32",
+                    "datestamp": "1666184508",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2528,18 +2528,18 @@
         },
         {
             "name": "drupal/commerce_payment",
-            "version": "2.31.0",
+            "version": "2.32.0",
             "require": {
                 "drupal/commerce": "*",
                 "drupal/commerce_order": "*",
-                "drupal/core": "^9.2 || ^10",
+                "drupal/core": "^9.3 || ^10",
                 "drupal/entity_reference_revisions": "*"
             },
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.31",
-                    "datestamp": "1660137900",
+                    "version": "8.x-2.32",
+                    "datestamp": "1666184508",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2580,32 +2580,32 @@
         },
         {
             "name": "drupal/commerce_paypal",
-            "version": "1.0.0-rc7",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/commerce_paypal.git",
-                "reference": "8.x-1.0-rc7"
+                "reference": "8.x-1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/commerce_paypal-8.x-1.0-rc7.zip",
-                "reference": "8.x-1.0-rc7",
-                "shasum": "5c63ba4fbf8d63a2bb5bb3f74b8f80ab251b6ce2"
+                "url": "https://ftp.drupal.org/files/projects/commerce_paypal-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "f0b2471b0b3374c9f08037c9ba4875582f5c2030"
             },
             "require": {
                 "drupal/commerce": "^2.19 || ^3",
                 "drupal/commerce_payment": "*",
-                "drupal/core": "^8.9 || ^9",
+                "drupal/core": "^9.3 || ^10",
                 "sainsburys/guzzle-oauth2-plugin": "^3.0"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0-rc7",
-                    "datestamp": "1660896279",
+                    "version": "8.x-1.1",
+                    "datestamp": "1665433276",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "RC releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -2615,10 +2615,6 @@
             ],
             "authors": [
                 {
-                    "name": "bojanz",
-                    "homepage": "https://www.drupal.org/user/86106"
-                },
-                {
                     "name": "Centarro",
                     "homepage": "https://www.drupal.org/user/3661446"
                 },
@@ -2627,32 +2623,28 @@
                     "homepage": "https://www.drupal.org/user/972218"
                 },
                 {
-                    "name": "mglaman",
-                    "homepage": "https://www.drupal.org/user/2416470"
-                },
-                {
                     "name": "rszrama",
                     "homepage": "https://www.drupal.org/user/49344"
                 }
             ],
             "description": "Provides Commerce integration for PayPal.",
-            "homepage": "http://drupal.org/project/commerce_paypal",
+            "homepage": "https://drupal.org/project/commerce_paypal",
             "support": {
                 "source": "https://git.drupalcode.org/project/commerce_paypal"
             }
         },
         {
             "name": "drupal/commerce_price",
-            "version": "2.31.0",
+            "version": "2.32.0",
             "require": {
                 "drupal/commerce": "*",
-                "drupal/core": "^9.2 || ^10"
+                "drupal/core": "^9.3 || ^10"
             },
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.31",
-                    "datestamp": "1660137900",
+                    "version": "8.x-2.32",
+                    "datestamp": "1666184508",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2693,18 +2685,18 @@
         },
         {
             "name": "drupal/commerce_product",
-            "version": "2.31.0",
+            "version": "2.32.0",
             "require": {
                 "drupal/commerce": "*",
                 "drupal/commerce_price": "*",
                 "drupal/commerce_store": "*",
-                "drupal/core": "^9.2 || ^10"
+                "drupal/core": "^9.3 || ^10"
             },
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.31",
-                    "datestamp": "1660137900",
+                    "version": "8.x-2.32",
+                    "datestamp": "1666184508",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2803,17 +2795,17 @@
         },
         {
             "name": "drupal/commerce_store",
-            "version": "2.31.0",
+            "version": "2.32.0",
             "require": {
                 "drupal/commerce": "*",
                 "drupal/commerce_price": "*",
-                "drupal/core": "^9.2 || ^10"
+                "drupal/core": "^9.3 || ^10"
             },
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.31",
-                    "datestamp": "1660137900",
+                    "version": "8.x-2.32",
+                    "datestamp": "1666184508",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4526,17 +4518,17 @@
         },
         {
             "name": "drupal/inline_entity_form",
-            "version": "1.0.0-rc12",
+            "version": "1.0.0-rc14",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/inline_entity_form.git",
-                "reference": "8.x-1.0-rc12"
+                "reference": "8.x-1.0-rc14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/inline_entity_form-8.x-1.0-rc12.zip",
-                "reference": "8.x-1.0-rc12",
-                "shasum": "eddee2964823b7da2ec7032ddb871f247ba7ed7a"
+                "url": "https://ftp.drupal.org/files/projects/inline_entity_form-8.x-1.0-rc14.zip",
+                "reference": "8.x-1.0-rc14",
+                "shasum": "2c9efd73332acfba43fe9b29e78e508ddc9d3664"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9 || ^10",
@@ -4548,8 +4540,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0-rc12",
-                    "datestamp": "1658308069",
+                    "version": "8.x-1.0-rc14",
+                    "datestamp": "1663701306",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -5953,21 +5945,21 @@
         },
         {
             "name": "drupal/profile",
-            "version": "1.4.0",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/profile.git",
-                "reference": "8.x-1.4"
+                "reference": "8.x-1.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/profile-8.x-1.4.zip",
-                "reference": "8.x-1.4",
-                "shasum": "253fd577c3b791c93747bb910ad2ae8e67d71eed"
+                "url": "https://ftp.drupal.org/files/projects/profile-8.x-1.7.zip",
+                "reference": "8.x-1.7",
+                "shasum": "f0236acff507aff2a1e2e11cb9c873a0b608ec1c"
             },
             "require": {
-                "drupal/core": "^8.9 || ^9 || ^10",
-                "drupal/entity": "^1.0-rc2"
+                "drupal/core": "^9 || ^10",
+                "drupal/entity": "^1.0"
             },
             "require-dev": {
                 "drupal/token": "^1.7"
@@ -5975,8 +5967,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.4",
-                    "datestamp": "1652430373",
+                    "version": "8.x-1.7",
+                    "datestamp": "1665131792",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6014,7 +6006,7 @@
                 }
             ],
             "description": "Provides configurable user profiles.",
-            "homepage": "http://drupal.org/project/profile",
+            "homepage": "https://drupal.org/project/profile",
             "support": {
                 "source": "https://git.drupalcode.org/project/profile"
             }
