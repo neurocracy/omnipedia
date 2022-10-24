@@ -1,6 +1,6 @@
 [submodule "drupal/modules/ambientimpact"]
 	path = drupal/modules/ambientimpact
-	url = git@gitlab.com:Ambient.Impact/drupal-modules.git
+	url = https://github.com/Ambient-Impact/drupal-modules.git
 [submodule "drupal/themes/ambientimpact"]
 	path = drupal/themes/ambientimpact
-	url = git@gitlab.com:Ambient.Impact/drupal-themes.git
+	url = https://github.com/Ambient-Impact/drupal-themes.git
