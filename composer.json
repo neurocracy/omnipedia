@@ -114,7 +114,7 @@
     "php": "^8",
     "composer/installers": "^2.0",
     "cweagans/composer-patches": "^1.7",
-    "drupal/advagg": "^4.0",
+    "drupal/advagg": "^5.0",
     "drupal/ambientimpact_core": "5.x-dev@dev",
     "drupal/ambientimpact_icon": "5.x-dev@dev",
     "drupal/ambientimpact_markdown": "5.x-dev@dev",
