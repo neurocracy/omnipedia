@@ -26,6 +26,7 @@ permissions:
   - 'access toolbar'
   - 'access user contact forms'
   - 'access user profiles'
+  - 'administer tfa for other users'
   - 'administer users'
   - 'ban IP addresses'
   - 'setup own tfa'

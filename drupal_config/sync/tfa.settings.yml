@@ -1,6 +1,6 @@
 _core:
   default_config_hash: r1PkPDtSv8uPbDtiuPH3x0ALdXOUHzuH7zp8mbp3zeA
-enabled: 1
+enabled: true
 required_roles:
   contributor: contributor
   moderator: moderator
@@ -10,27 +10,29 @@ required_roles:
   authenticated: '0'
 send_plugins: {  }
 login_plugins: {  }
+login_plugin_settings:
+  tfa_trusted_browser:
+    cookie_expiration: 30
+    cookie_name: tfa-trusted-browser
 allowed_validation_plugins:
-  ga_login_totp: ga_login_totp
   tfa_recovery_code: tfa_recovery_code
-default_validation_plugin: ga_login_totp
+  tfa_totp: tfa_totp
+default_validation_plugin: tfa_totp
 validation_plugin_settings:
-  ga_login_hotp:
+  tfa_recovery_code:
+    recovery_codes_amount: 10
+  tfa_hotp:
     counter_window: 10
     site_name_prefix: 1
     name_prefix: TFA
     issuer: Drupal
-  ga_login_totp:
+  tfa_totp:
     time_skew: 2
     site_name_prefix: 1
     name_prefix: TFA
     issuer: Drupal
-  tfa_recovery_code:
-    recovery_codes_amount: 10
 validation_skip: 3
 encryption: two_factor
-trust_cookie_expiration: 2592000
-cookie_name: TFA
 tfa_flood_uid_only: 1
 tfa_flood_window: 300
 tfa_flood_threshold: 6
