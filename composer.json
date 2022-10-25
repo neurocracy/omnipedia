@@ -34,31 +34,31 @@
     },
     "drupal/omnipedia_access": {
       "type": "vcs",
-      "url": "git@github.com:neurocracy/drupal-omnipedia-access.git"
+      "url": "https://github.com/neurocracy/drupal-omnipedia-access.git"
     },
     "drupal/omnipedia_attached_data": {
       "type": "vcs",
-      "url": "git@github.com:neurocracy/drupal-omnipedia-attached-data.git"
+      "url": "https://github.com/neurocracy/drupal-omnipedia-attached-data.git"
     },
     "drupal/omnipedia_block": {
       "type": "vcs",
-      "url": "git@github.com:neurocracy/drupal-omnipedia-block.git"
+      "url": "https://github.com/neurocracy/drupal-omnipedia-block.git"
     },
     "drupal/omnipedia_changes": {
       "type": "vcs",
-      "url": "git@github.com:neurocracy/drupal-omnipedia-changes.git"
+      "url": "https://github.com/neurocracy/drupal-omnipedia-changes.git"
     },
     "drupal/omnipedia_commerce": {
       "type": "vcs",
-      "url": "git@github.com:neurocracy/drupal-omnipedia-commerce.git"
+      "url": "https://github.com/neurocracy/drupal-omnipedia-commerce.git"
     },
     "drupal/omnipedia_content": {
       "type": "vcs",
-      "url": "git@github.com:neurocracy/drupal-omnipedia-content.git"
+      "url": "https://github.com/neurocracy/drupal-omnipedia-content.git"
     },
     "drupal/omnipedia_core": {
       "type": "vcs",
-      "url": "git@github.com:neurocracy/drupal-omnipedia-core.git"
+      "url": "https://github.com/neurocracy/drupal-omnipedia-core.git"
     },
     "drupal/omnipedia_date": {
       "type": "vcs",
@@ -66,19 +66,19 @@
     },
     "drupal/omnipedia_logger": {
       "type": "vcs",
-      "url": "git@github.com:neurocracy/drupal-omnipedia-logger.git"
+      "url": "https://github.com/neurocracy/drupal-omnipedia-logger.git"
     },
     "drupal/omnipedia_media": {
       "type": "vcs",
-      "url": "git@github.com:neurocracy/drupal-omnipedia-media.git"
+      "url": "https://github.com/neurocracy/drupal-omnipedia-media.git"
     },
     "drupal/omnipedia_menu": {
       "type": "vcs",
-      "url": "git@github.com:neurocracy/drupal-omnipedia-menu.git"
+      "url": "https://github.com/neurocracy/drupal-omnipedia-menu.git"
     },
     "drupal/omnipedia_search": {
       "type": "vcs",
-      "url": "git@github.com:neurocracy/drupal-omnipedia-search.git"
+      "url": "https://github.com/neurocracy/drupal-omnipedia-search.git"
     },
     "drupal/omnipedia_site_theme": {
       "type": "vcs",
@@ -86,7 +86,7 @@
     },
     "drupal/omnipedia_user": {
       "type": "vcs",
-      "url": "git@github.com:neurocracy/drupal-omnipedia-user.git"
+      "url": "https://github.com/neurocracy/drupal-omnipedia-user.git"
     },
     "drupal-library/jquery.onfontresize": {
       "type": "package",
@@ -114,7 +114,7 @@
     "php": "^8",
     "composer/installers": "^2.0",
     "cweagans/composer-patches": "^1.7",
-    "drupal/advagg": "^4.0",
+    "drupal/advagg": "^5.0",
     "drupal/ambientimpact_core": "5.x-dev@dev",
     "drupal/ambientimpact_icon": "5.x-dev@dev",
     "drupal/ambientimpact_markdown": "5.x-dev@dev",
@@ -132,7 +132,6 @@
     "drupal/eu_cookie_compliance": "^1.14",
     "drupal/fancy_file_delete": "^2.0",
     "drupal/flood_control": "^2.1",
-    "drupal/ga_login": "^1.0@alpha",
     "drupal/gin": "^3.0@beta",
     "drupal/gin_toolbar": "^1.0@beta",
     "drupal/honeypot": "^2.0",
@@ -180,8 +179,8 @@
     "drupal/config_devel": "^1.2",
     "drupal/config_inspector": "^2.1",
     "drupal/core-dev": "^9.3",
-    "drupal/devel": "^4.0",
-    "drupal/devel_entity_updates": "^3.0",
+    "drupal/devel": "^5.0",
+    "drupal/devel_entity_updates": "^4.0",
     "drupal/examples": "^3.0",
     "kint-php/kint": "^3.3",
     "phpspec/prophecy-phpunit": "^2",
@@ -211,6 +210,9 @@
     "patches": {
       "drupal/development_environment": {
         "Duplicate key in menu links YAML file [#3218169]: https://www.drupal.org/project/development_environment/issues/3218169": "patches/drupal/development_environment/duplicate-key-3218169-2.patch"
+      },
+      "drupal/honeypot": {
+        "Missing primary key in table `honeypot_user` [#2943526]: https://www.drupal.org/project/honeypot/issues/2943526#comment-12712602": "patches/drupal/honeypot/honeypot-fix_missing_primary_key-8.x-2943526-6.patch"
       },
       "drupal/rules": {
         "Support upcasting entity IDs to full entity contexts: https://www.drupal.org/project/rules/issues/2800749#comment-14332836": "patches/drupal/rules/2800749-97.upcast.patch"
