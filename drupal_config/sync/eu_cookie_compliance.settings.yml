@@ -75,3 +75,7 @@ cookie_value_disagreed: '0'
 cookie_value_agreed_show_thank_you: '1'
 cookie_value_agreed: '2'
 accessibility_focus: false
+close_button_action: close_banner
+reject_button_label: ''
+reject_button_enabled: false
+close_button_enabled: false
