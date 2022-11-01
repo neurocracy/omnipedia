@@ -11,12 +11,12 @@
     "drupal/themes/custom/*"
   ],
   "dependencies": {
-    "ambientimpact-drupal-modules": "^5",
-    "ambientimpact-drupal-themes": "^4",
-    "drupal-omnipedia-block": "^3",
-    "drupal-omnipedia-changes": "^3",
-    "drupal-omnipedia-content": "^3",
-    "drupal-omnipedia-media": "^3",
-    "drupal-omnipedia-site-theme": "^3"
+    "ambientimpact-drupal-modules": "workspace:^5",
+    "ambientimpact-drupal-themes": "workspace:^4",
+    "drupal-omnipedia-block": "workspace:^3",
+    "drupal-omnipedia-changes": "workspace:^3",
+    "drupal-omnipedia-content": "workspace:^3",
+    "drupal-omnipedia-media": "workspace:^3",
+    "drupal-omnipedia-site-theme": "workspace:^3"
   }
 }
