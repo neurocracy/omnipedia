@@ -568,7 +568,6 @@ __metadata:
     svg-spritemap-webpack-plugin: ^4.5.0
     webpack: ^5.74.0
     webpack-cli: ^4.10.0
-    webpack-manifest-plugin: ^5.0.0
     webpack-remove-empty-scripts: ^1.0.1
   languageName: unknown
   linkType: soft
@@ -1207,9 +1206,20 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "drupal-omnipedia-block@workspace:drupal/modules/custom/omnipedia_block"
   dependencies:
+    ambientimpact-drupal-modules: ^5
     autoprefixer: ^10.2.5
+    css-loader: ^6.7.1
+    glob: ^8.0.3
+    image-minimizer-webpack-plugin: ^3.8.0
+    mini-css-extract-plugin: ^2.6.1
     postcss: ^8.2.15
+    postcss-loader: ^7.0.1
     sass: ^1.43.4
+    sass-loader: ^13.1.0
+    sharp: ^0.31.1
+    webpack: ^5.74.0
+    webpack-cli: ^4.10.0
+    webpack-remove-empty-scripts: ^1.0.1
   languageName: unknown
   linkType: soft
 
@@ -1217,9 +1227,18 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "drupal-omnipedia-changes@workspace:drupal/modules/custom/omnipedia_changes"
   dependencies:
+    ambientimpact-drupal-modules: ^5
     autoprefixer: ^10.2.5
+    css-loader: ^6.7.1
+    glob: ^8.0.3
+    mini-css-extract-plugin: ^2.6.1
     postcss: ^8.2.15
+    postcss-loader: ^7.0.1
     sass: ^1.43.4
+    sass-loader: ^13.1.0
+    webpack: ^5.74.0
+    webpack-cli: ^4.10.0
+    webpack-remove-empty-scripts: ^1.0.1
   languageName: unknown
   linkType: soft
 
@@ -1227,9 +1246,18 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "drupal-omnipedia-content@workspace:drupal/modules/custom/omnipedia_content"
   dependencies:
+    ambientimpact-drupal-modules: ^5
     autoprefixer: ^10.2.5
+    css-loader: ^6.7.1
+    glob: ^8.0.3
+    mini-css-extract-plugin: ^2.6.1
     postcss: ^8.2.15
+    postcss-loader: ^7.0.1
     sass: ^1.43.4
+    sass-loader: ^13.1.0
+    webpack: ^5.74.0
+    webpack-cli: ^4.10.0
+    webpack-remove-empty-scripts: ^1.0.1
   languageName: unknown
   linkType: soft
 
@@ -1237,9 +1265,18 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "drupal-omnipedia-media@workspace:drupal/modules/custom/omnipedia_media"
   dependencies:
+    ambientimpact-drupal-modules: ^5
     autoprefixer: ^10.2.5
+    css-loader: ^6.7.1
+    glob: ^8.0.3
+    mini-css-extract-plugin: ^2.6.1
     postcss: ^8.2.15
+    postcss-loader: ^7.0.1
     sass: ^1.43.4
+    sass-loader: ^13.1.0
+    webpack: ^5.74.0
+    webpack-cli: ^4.10.0
+    webpack-remove-empty-scripts: ^1.0.1
   languageName: unknown
   linkType: soft
 
@@ -1247,10 +1284,22 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "drupal-omnipedia-site-theme@workspace:drupal/themes/custom/omnipedia_site_theme"
   dependencies:
+    ambientimpact-drupal-modules: ^5
+    ambientimpact-drupal-themes: ^4
     autoprefixer: ^10.2.6
+    css-loader: ^6.7.1
+    favicons: ^7.0.2
+    favicons-webpack-plugin: ^6.0.0-alpha.2
+    glob: ^8.0.3
+    mini-css-extract-plugin: ^2.6.1
     postcss: ^8.3.5
     postcss-easing-gradients: ^3.0.1
+    postcss-loader: ^7.0.1
     sass: ^1.43.4
+    sass-loader: ^13.1.0
+    webpack: ^5.74.0
+    webpack-cli: ^4.10.0
+    webpack-remove-empty-scripts: ^1.0.1
   languageName: unknown
   linkType: soft
 
@@ -1785,6 +1834,27 @@ __metadata:
   version: 1.2.1
   resolution: "ieee754@npm:1.2.1"
   checksum: 5144c0c9815e54ada181d80a0b810221a253562422e7c6c3a60b1901154184f49326ec239d618c416c1c5945a2e197107aee8d986a3dd836b53dffefd99b5e7e
+  languageName: node
+  linkType: hard
+
+"image-minimizer-webpack-plugin@npm:^3.8.0":
+  version: 3.8.0
+  resolution: "image-minimizer-webpack-plugin@npm:3.8.0"
+  dependencies:
+    schema-utils: ^4.0.0
+    serialize-javascript: ^6.0.0
+  peerDependencies:
+    webpack: ^5.1.0
+  peerDependenciesMeta:
+    "@squoosh/lib":
+      optional: true
+    imagemin:
+      optional: true
+    sharp:
+      optional: true
+    svgo:
+      optional: true
+  checksum: 5e533dd9e85fa9e9955cc979917ff830d014e3e84388499c16f996970cd4cf8d649582a50630dc653bec5c3437b31112d49e106838b0430280f28da0bc0b5373
   languageName: node
   linkType: hard
 
@@ -3184,13 +3254,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"source-list-map@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "source-list-map@npm:2.0.1"
-  checksum: 806efc6f75e7cd31e4815e7a3aaf75a45c704871ea4075cb2eb49882c6fca28998f44fc5ac91adb6de03b2882ee6fb02f951fdc85e6a22b338c32bfe19557938
-  languageName: node
-  linkType: hard
-
 "source-map-js@npm:>=0.6.2 <2.0.0, source-map-js@npm:^1.0.2":
   version: 1.0.2
   resolution: "source-map-js@npm:1.0.2"
@@ -3550,18 +3613,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack-manifest-plugin@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "webpack-manifest-plugin@npm:5.0.0"
-  dependencies:
-    tapable: ^2.0.0
-    webpack-sources: ^2.2.0
-  peerDependencies:
-    webpack: ^5.47.0
-  checksum: 864d68f90870e194074756e71caf3df36b777d687a50286ba27eb1958480642b125c2cf47a2787beac52eba4b1ccf1fe8141f017c81f1e87e953481f852a7c48
-  languageName: node
-  linkType: hard
-
 "webpack-merge@npm:^5.7.3, webpack-merge@npm:^5.8.0":
   version: 5.8.0
   resolution: "webpack-merge@npm:5.8.0"
@@ -3580,16 +3631,6 @@ __metadata:
   peerDependencies:
     webpack: ">=5.32.0"
   checksum: 4ed2817cb3ea05dbd5822e3a0a62e70e455077455ff33c994311b53b40ad68da045d132d27e75745f5d30ad23bd8ae28180ee07179c16ed1e7766823e458d412
-  languageName: node
-  linkType: hard
-
-"webpack-sources@npm:^2.2.0":
-  version: 2.3.1
-  resolution: "webpack-sources@npm:2.3.1"
-  dependencies:
-    source-list-map: ^2.0.1
-    source-map: ^0.6.1
-  checksum: 6fd67f2274a84c5f51ad89767112ec8b47727134bf0f2ba0cff458c970f18966939a24128bdbddba621cd66eeb2bef0552642a9333cd8e54514f7b2a71776346
   languageName: node
   linkType: hard
 
