@@ -4,6 +4,9 @@
   "license": "GPL-2.0",
   "repository": "gitlab:neurocracy/omnipedia/drupal",
   "packageManager": "yarn@3.2.4",
+  "scripts": {
+    "build:digitalOcean": "composer install --no-dev && yarn install && yarn build"
+  },
   "workspaces": [
     "drupal/modules/ambientimpact",
     "drupal/modules/custom/*",
