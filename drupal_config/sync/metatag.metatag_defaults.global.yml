@@ -34,6 +34,6 @@ tags:
   shortcut_icon: '[site:url]themes/custom/omnipedia_site_theme/images/icons/generated/favicon-32x32.png?v=1'
   msapplication_config: '[site:url]themes/custom/omnipedia_site_theme/windows.xml'
   theme_color: '#0d47a1'
-  web_manifest: '[site:url]themes/custom/omnipedia_site_theme/manifest.json?v=5'
+  web_manifest: '[site:url]themes/custom/omnipedia_site_theme/manifest.webmanifest?v=1'
   mask_icon:
     href: '[site:url]themes/custom/omnipedia_site_theme/images/icons/icon_grayscale.svg?v=1'
