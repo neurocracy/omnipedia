@@ -2407,6 +2407,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ambientimpact-drupal-modules@workspace:drupal/modules/ambientimpact"
   dependencies:
+    "@babel/core": ^7.20.2
+    "@babel/preset-env": ^7.20.2
+    "@symfony/webpack-encore": ^4.1.1
     autoprefixer: ^10.2.6
     css-loader: ^6.7.1
     glob: ^8.0.3
@@ -2428,6 +2431,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ambientimpact-drupal-themes@workspace:drupal/themes/ambientimpact"
   dependencies:
+    "@babel/core": ^7.20.2
+    "@babel/preset-env": ^7.20.2
+    "@symfony/webpack-encore": ^4.1.1
     ambientimpact-drupal-modules: "workspace:^5"
     autoprefixer: ^10.2.6
     css-loader: ^6.7.1
