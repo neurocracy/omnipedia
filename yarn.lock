@@ -2403,6 +2403,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ally.js@npm:^1.4.1":
+  version: 1.4.1
+  resolution: "ally.js@npm:1.4.1"
+  dependencies:
+    css.escape: ^1.5.0
+    platform: 1.3.3
+  checksum: 78c397235c9c063854e880757795ff181a0668d918d9c3d7cde1a5288c583a0a65842631a565582bd01f429e16e2a2942d8b810c3164fd2c48f90a2bf83f5841
+  languageName: node
+  linkType: hard
+
 "ambientimpact-drupal-modules@workspace:^5, ambientimpact-drupal-modules@workspace:drupal/modules/ambientimpact":
   version: 0.0.0-use.local
   resolution: "ambientimpact-drupal-modules@workspace:drupal/modules/ambientimpact"
@@ -2410,17 +2420,33 @@ __metadata:
     "@babel/core": ^7.20.2
     "@babel/preset-env": ^7.20.2
     "@symfony/webpack-encore": ^4.1.1
+    ally.js: ^1.4.1
     autoprefixer: ^10.2.6
+    autosize: ^4.0.2
+    chillout: ^3.1.7
     css-loader: ^6.7.1
+    fastdom: ^1.0.10
+    file-loader: ^6.0.0
+    fontfaceobserver: ^2.1.0
+    fr-offcanvas: ^1.1.1
     glob: ^8.0.3
+    headroom.js: ^0.10.4
     include-media: ^1.4.10
+    jquery-hoverintent: ^1.10.0
+    jquery.onfontresize: "github:Ambient-Impact/jquery.onfontresize"
+    js-cookie: ^2.1.2
     mini-css-extract-plugin: ^2.6.1
+    photoswipe: ^4.1.3
+    popper.js: ^1.15.0
     postcss: ^8.3.5
     postcss-loader: ^7.0.1
     sass: ^1.43.3
     sass-loader: ^13.1.0
     sassy-lists: ^3.0.1
+    smoothscroll-polyfill: ^0.4.4
+    strictdom: ^1.0.1
     svg-spritemap-webpack-plugin: ^4.5.0
+    tippy.js: ^2.6.0
     webpack: ^5.74.0
     webpack-cli: ^4.10.0
     webpack-remove-empty-scripts: ^1.0.1
@@ -2586,6 +2612,13 @@ __metadata:
   bin:
     autoprefixer: bin/autoprefixer
   checksum: 6ae79cbacd31fb3d464ec64eb6ad2600f4f689c3080bbe62c5536d539b41b472083a2e941ef99d14aa11142370d6c16e8b05a62f077374933ed991aceb5943d2
+  languageName: node
+  linkType: hard
+
+"autosize@npm:^4.0.2":
+  version: 4.0.4
+  resolution: "autosize@npm:4.0.4"
+  checksum: da3a53a699ef8a4cfea8f0eea2303459b3986754278d506f60c08084b3a0a34bd6fa525becaf1edcffe4eb9517b67a6442aacf6b02aee1d406e5a794ec47d4ce
   languageName: node
   linkType: hard
 
@@ -2902,6 +2935,13 @@ __metadata:
     ansi-styles: ^4.1.0
     supports-color: ^7.1.0
   checksum: fe75c9d5c76a7a98d45495b91b2172fa3b7a09e0cc9370e5c8feb1c567b85c4288e2b3fded7cfdd7359ac28d6b3844feb8b82b8686842e93d23c827c417e83fc
+  languageName: node
+  linkType: hard
+
+"chillout@npm:^3.1.7":
+  version: 3.1.9
+  resolution: "chillout@npm:3.1.9"
+  checksum: 084ffd5b41119e1398d4594d8e7e2d547f722cc14a78aad10f899bbdae84310736f2a7a2fd20fb3e6c3682426e4d29295eba9c07d86b69cb7afae804ff2ba16b
   languageName: node
   linkType: hard
 
@@ -3312,6 +3352,13 @@ __metadata:
   version: 6.1.0
   resolution: "css-what@npm:6.1.0"
   checksum: b975e547e1e90b79625918f84e67db5d33d896e6de846c9b584094e529f0c63e2ab85ee33b9daffd05bff3a146a1916bec664e18bb76dd5f66cbff9fc13b2bbe
+  languageName: node
+  linkType: hard
+
+"css.escape@npm:^1.5.0":
+  version: 1.5.1
+  resolution: "css.escape@npm:1.5.1"
+  checksum: f6d38088d870a961794a2580b2b2af1027731bb43261cfdce14f19238a88664b351cc8978abc20f06cc6bbde725699dec8deb6fe9816b139fc3f2af28719e774
   languageName: node
   linkType: hard
 
@@ -4001,6 +4048,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fastdom@npm:^1.0.10":
+  version: 1.0.11
+  resolution: "fastdom@npm:1.0.11"
+  dependencies:
+    strictdom: ^1.0.1
+  checksum: 5d85acc76769441556cc5c737ff0cf626f93e4ae99a9e5d6b095ea54863a343eca1bb0babb070021929ce31d22c5e83c269c401ce03e170f8c4db24ecd31864d
+  languageName: node
+  linkType: hard
+
 "fastest-levenshtein@npm:^1.0.12, fastest-levenshtein@npm:^1.0.7":
   version: 1.0.16
   resolution: "fastest-levenshtein@npm:1.0.16"
@@ -4043,6 +4099,18 @@ __metadata:
   dependencies:
     websocket-driver: ">=0.5.1"
   checksum: d49a62caf027f871149fc2b3f3c7104dc6d62744277eb6f9f36e2d5714e847d846b9f7f0d0b7169b25a012e24a594cde11a93034b30732e4c683f20b8a5019fa
+  languageName: node
+  linkType: hard
+
+"file-loader@npm:^6.0.0":
+  version: 6.2.0
+  resolution: "file-loader@npm:6.2.0"
+  dependencies:
+    loader-utils: ^2.0.0
+    schema-utils: ^3.0.0
+  peerDependencies:
+    webpack: ^4.0.0 || ^5.0.0
+  checksum: faf43eecf233f4897b0150aaa874eeeac214e4f9de49738a9e0ef734a30b5260059e85b7edadf852b98e415f875bd5f12587768a93fd52aaf2e479ecf95fab20
   languageName: node
   linkType: hard
 
@@ -4117,10 +4185,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fontfaceobserver@npm:^2.1.0":
+  version: 2.3.0
+  resolution: "fontfaceobserver@npm:2.3.0"
+  checksum: 5f14715974203b9d68f299f93a7623afd9d5701572d683e861cdbb7514573ac556f56e9b5d07d2d534e01aed19a3b0bbe568e735e0e5494cbea913fc3f12b856
+  languageName: node
+  linkType: hard
+
 "forwarded@npm:0.2.0":
   version: 0.2.0
   resolution: "forwarded@npm:0.2.0"
   checksum: fd27e2394d8887ebd16a66ffc889dc983fbbd797d5d3f01087c020283c0f019a7d05ee85669383d8e0d216b116d720fc0cef2f6e9b7eb9f4c90c6e0bc7fd28e6
+  languageName: node
+  linkType: hard
+
+"fr-offcanvas@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "fr-offcanvas@npm:1.1.1"
+  checksum: e0624ba8698552c53c508ce1c20e2c35656fcbfc67bf8667f95cab1fca15810cca512167c00b2a6ee737e5d065a9d909f5831121adb7fcabdefda5a94e6a7471
   languageName: node
   linkType: hard
 
@@ -4383,6 +4465,13 @@ __metadata:
   bin:
     he: bin/he
   checksum: 3d4d6babccccd79c5c5a3f929a68af33360d6445587d628087f39a965079d84f18ce9c3d3f917ee1e3978916fc833bb8b29377c3b403f919426f91bc6965e7a7
+  languageName: node
+  linkType: hard
+
+"headroom.js@npm:^0.10.4":
+  version: 0.10.4
+  resolution: "headroom.js@npm:0.10.4"
+  checksum: 34c907a7602c7d615974b5a194bae8823ca5e39be0989282435238e4cf89758aa56e5feac3756a3a7bef6d8b9ba014248d0aadc4b5c3bc2eddb88c3b32baa1c4
   languageName: node
   linkType: hard
 
@@ -4935,6 +5024,38 @@ __metadata:
     "@sideway/formula": ^3.0.0
     "@sideway/pinpoint": ^2.0.0
   checksum: f16243618f8c861bdcb7ccfdef7501d04e5c8ff93c4083a0ec907230c7bf427189c5894431f345d089a986f8e4b9efca8cc42e32663ded4d4f38edde6fda5315
+  languageName: node
+  linkType: hard
+
+"jquery-hoverintent@npm:^1.10.0":
+  version: 1.10.2
+  resolution: "jquery-hoverintent@npm:1.10.2"
+  dependencies:
+    jquery: ">=1.7.0"
+  peerDependencies:
+    jquery: ">=1.7.0"
+  checksum: acffcbd513e70a72ccafd10264ea8f8d3dc8ca0512ccf6786f37d7621ca1f874774917d73c21e2402de64b4ede11f20402d392cbbb6346fadad634d7670253fc
+  languageName: node
+  linkType: hard
+
+"jquery.onfontresize@github:Ambient-Impact/jquery.onfontresize":
+  version: 1.1.0
+  resolution: "jquery.onfontresize@https://github.com/Ambient-Impact/jquery.onfontresize.git#commit=62b032395750892c1088a195c50acd369731c6b2"
+  checksum: 26a78ac768fb5e2d8739b73717f10315024fa4867065f172968d65c12dbba5cc7220fdb1b7fe7b76d3e8783fc5a43248bddbb6121c37b0faec97fe9d5cf2814a
+  languageName: node
+  linkType: hard
+
+"jquery@npm:>=1.7.0":
+  version: 3.6.1
+  resolution: "jquery@npm:3.6.1"
+  checksum: 6177d866a74f1137cad800f142c7cdbd5ab19cd4282546f8bdb4890c9f933b1d542ab96f2aa15d007e43c98de7315b0513e849ec5359d3ac5640f720892fe547
+  languageName: node
+  linkType: hard
+
+"js-cookie@npm:^2.1.2":
+  version: 2.2.1
+  resolution: "js-cookie@npm:2.2.1"
+  checksum: 9b1fb980a1c5e624fd4b28ea4867bb30c71e04c4484bb3a42766344c533faa684de9498e443425479ec68609e96e27b60614bfe354877c449c631529b6d932f2
   languageName: node
   linkType: hard
 
@@ -5840,6 +5961,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"photoswipe@npm:^4.1.3":
+  version: 4.1.3
+  resolution: "photoswipe@npm:4.1.3"
+  checksum: 2eecc188d81642832cd5086e3954a6b5546b70651b6a76752625d9ff7b5e63ede9347316edc8110d7dba90acf55d2e8b2e917f454ed46c2594b09084c383aa37
+  languageName: node
+  linkType: hard
+
 "picocolors@npm:^1.0.0":
   version: 1.0.0
   resolution: "picocolors@npm:1.0.0"
@@ -5899,6 +6027,20 @@ __metadata:
   dependencies:
     find-up: ^3.0.0
   checksum: 5bac346b7c7c903613c057ae3ab722f320716199d753f4a7d053d38f2b5955460f3e6ab73b4762c62fd3e947f58e04f1343e92089e7bb6091c90877406fcd8c8
+  languageName: node
+  linkType: hard
+
+"platform@npm:1.3.3":
+  version: 1.3.3
+  resolution: "platform@npm:1.3.3"
+  checksum: e7a95273e0ec33b6fcf85ba1464bb8ae028f101530dc51f2ee3430fa0b93783511da874af75a5fc065084376619b2382aad7fce0377bcce82dd9f6d3c812183a
+  languageName: node
+  linkType: hard
+
+"popper.js@npm:^1.14.3, popper.js@npm:^1.15.0":
+  version: 1.16.1
+  resolution: "popper.js@npm:1.16.1"
+  checksum: c56ae5001ec50a77ee297a8061a0221d99d25c7348d2e6bcd3e45a0d0f32a1fd81bca29d46cb0d4bdf13efb77685bd6a0ce93f9eb3c608311a461f945fffedbe
   languageName: node
   linkType: hard
 
@@ -6785,7 +6927,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"schema-utils@npm:^3.1.0, schema-utils@npm:^3.1.1":
+"schema-utils@npm:^3.0.0, schema-utils@npm:^3.1.0, schema-utils@npm:^3.1.1":
   version: 3.1.1
   resolution: "schema-utils@npm:3.1.1"
   dependencies:
@@ -7016,6 +7158,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"smoothscroll-polyfill@npm:^0.4.4":
+  version: 0.4.4
+  resolution: "smoothscroll-polyfill@npm:0.4.4"
+  checksum: b99ff7d91689d563ec69cb1d29713b332a24c88ac3dc4ef9ef9fbe4137305336e67253211067c5f786478dbdabd2aa6c2033709d4d8feca327b09eca8d5a0e7b
+  languageName: node
+  linkType: hard
+
 "sockjs@npm:^0.3.24":
   version: 0.3.24
   resolution: "sockjs@npm:0.3.24"
@@ -7133,6 +7282,13 @@ __metadata:
   version: 1.5.0
   resolution: "statuses@npm:1.5.0"
   checksum: c469b9519de16a4bb19600205cffb39ee471a5f17b82589757ca7bd40a8d92ebb6ed9f98b5a540c5d302ccbc78f15dc03cc0280dd6e00df1335568a5d5758a5c
+  languageName: node
+  linkType: hard
+
+"strictdom@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "strictdom@npm:1.0.1"
+  checksum: 17ed6fc02e8f9b8d2349dc4dc945689280c8654d3560b314a2c5dd15f5ed29dd3a8a52a6b5228999ded127b4126957c32d1106e1c016804a06d300d64f6c0e6c
   languageName: node
   linkType: hard
 
@@ -7391,6 +7547,15 @@ __metadata:
   version: 1.1.0
   resolution: "thunky@npm:1.1.0"
   checksum: 993096c472b6b8f30e29dc777a8d17720e4cab448375041f20c0cb802a09a7fb2217f2a3e8cdc11851faa71c957e2db309357367fc9d7af3cb7a4d00f4b66034
+  languageName: node
+  linkType: hard
+
+"tippy.js@npm:^2.6.0":
+  version: 2.6.0
+  resolution: "tippy.js@npm:2.6.0"
+  dependencies:
+    popper.js: ^1.14.3
+  checksum: 62ee4b0d8f1faa4b1cdeadd597730def7698cebd489454de92b0f25594f2bf8a628b11235d47c0730ecd79b3d233c6274acc6460103827897dd5718f78568888
   languageName: node
   linkType: hard
 
