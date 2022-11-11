@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5ad26cefc30670a332e258018c57092a",
+    "content-hash": "bbb5470a0032845f9e6b8851f00638eb",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -1948,7 +1948,7 @@
         },
         {
             "name": "drupal/ambientimpact_core",
-            "version": "dev-5.x_yarn_webpack",
+            "version": "6.x-dev",
             "dist": {
                 "type": "path",
                 "url": "drupal/modules/ambientimpact/ambientimpact_core",
@@ -1984,7 +1984,7 @@
         },
         {
             "name": "drupal/ambientimpact_icon",
-            "version": "dev-5.x_yarn_webpack",
+            "version": "6.x-dev",
             "dist": {
                 "type": "path",
                 "url": "drupal/modules/ambientimpact/ambientimpact_icon",
@@ -2011,7 +2011,7 @@
         },
         {
             "name": "drupal/ambientimpact_markdown",
-            "version": "dev-5.x_yarn_webpack",
+            "version": "6.x-dev",
             "dist": {
                 "type": "path",
                 "url": "drupal/modules/ambientimpact/ambientimpact_markdown",
@@ -2039,7 +2039,7 @@
         },
         {
             "name": "drupal/ambientimpact_media",
-            "version": "dev-5.x_yarn_webpack",
+            "version": "6.x-dev",
             "dist": {
                 "type": "path",
                 "url": "drupal/modules/ambientimpact/ambientimpact_media",
@@ -2082,7 +2082,7 @@
         },
         {
             "name": "drupal/ambientimpact_ux",
-            "version": "dev-5.x_yarn_webpack",
+            "version": "6.x-dev",
             "dist": {
                 "type": "path",
                 "url": "drupal/modules/ambientimpact/ambientimpact_ux",
@@ -5076,22 +5076,23 @@
         },
         {
             "name": "drupal/omnipedia_block",
-            "version": "dev-3.x_yarn_webpack",
+            "version": "4.x-dev",
             "source": {
                 "type": "git",
                 "url": "git@github.com:neurocracy/drupal-omnipedia-block.git",
-                "reference": "6beefb53bb339f90cca76b1b32e184ca5cd70fc4"
+                "reference": "4068c7464fb6ca0e5e26b82760c207d6e6ff3ded"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-block/zipball/6beefb53bb339f90cca76b1b32e184ca5cd70fc4",
-                "reference": "6beefb53bb339f90cca76b1b32e184ca5cd70fc4",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-block/zipball/4068c7464fb6ca0e5e26b82760c207d6e6ff3ded",
+                "reference": "4068c7464fb6ca0e5e26b82760c207d6e6ff3ded",
                 "shasum": ""
             },
             "require": {
                 "drupal/hook_event_dispatcher": "^3.0",
                 "php": "^7.4 || ^8"
             },
+            "default-branch": true,
             "type": "drupal-custom-module",
             "license": [
                 "GPL-2.0-or-later"
@@ -5105,23 +5106,23 @@
             ],
             "description": "Omnipedia - Blocks",
             "support": {
-                "source": "https://github.com/neurocracy/drupal-omnipedia-block/tree/3.x_yarn_webpack",
+                "source": "https://github.com/neurocracy/drupal-omnipedia-block/tree/4.x",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-block/issues"
             },
-            "time": "2022-11-11T13:59:52+00:00"
+            "time": "2022-11-11T15:15:19+00:00"
         },
         {
             "name": "drupal/omnipedia_changes",
-            "version": "dev-3.x_yarn_webpack",
+            "version": "4.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neurocracy/drupal-omnipedia-changes.git",
-                "reference": "671560e4626b486204e584df6d9e24ecd4b3934d"
+                "reference": "679560738340fc02d4f3e0386205c59a91a42caa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-changes/zipball/671560e4626b486204e584df6d9e24ecd4b3934d",
-                "reference": "671560e4626b486204e584df6d9e24ecd4b3934d",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-changes/zipball/679560738340fc02d4f3e0386205c59a91a42caa",
+                "reference": "679560738340fc02d4f3e0386205c59a91a42caa",
                 "shasum": ""
             },
             "require": {
@@ -5134,6 +5135,7 @@
                 "symfony/css-selector": "^4.4",
                 "symfony/dom-crawler": "^4.4"
             },
+            "default-branch": true,
             "type": "drupal-custom-module",
             "extra": {
                 "drush": {
@@ -5154,10 +5156,10 @@
             ],
             "description": "Omnipedia - Content changes",
             "support": {
-                "source": "https://github.com/neurocracy/drupal-omnipedia-changes/tree/3.x_yarn_webpack",
+                "source": "https://github.com/neurocracy/drupal-omnipedia-changes/tree/4.x",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-changes/issues"
             },
-            "time": "2022-11-11T14:00:30+00:00"
+            "time": "2022-11-11T15:17:26+00:00"
         },
         {
             "name": "drupal/omnipedia_commerce",
@@ -5202,16 +5204,16 @@
         },
         {
             "name": "drupal/omnipedia_content",
-            "version": "dev-3.x_yarn_webpack",
+            "version": "4.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neurocracy/drupal-omnipedia-content.git",
-                "reference": "fa267d54af27c97f3d658b11cf10d5c341d6cf7d"
+                "reference": "8412c4751cc7e5416953078b36a8e2c821234a2a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-content/zipball/fa267d54af27c97f3d658b11cf10d5c341d6cf7d",
-                "reference": "fa267d54af27c97f3d658b11cf10d5c341d6cf7d",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-content/zipball/8412c4751cc7e5416953078b36a8e2c821234a2a",
+                "reference": "8412c4751cc7e5416953078b36a8e2c821234a2a",
                 "shasum": ""
             },
             "require": {
@@ -5223,6 +5225,7 @@
                 "symfony/css-selector": "^4.4",
                 "symfony/dom-crawler": "^4.4"
             },
+            "default-branch": true,
             "type": "drupal-custom-module",
             "license": [
                 "GPL-2.0-or-later"
@@ -5236,10 +5239,10 @@
             ],
             "description": "Omnipedia - Content",
             "support": {
-                "source": "https://github.com/neurocracy/drupal-omnipedia-content/tree/3.x_yarn_webpack",
+                "source": "https://github.com/neurocracy/drupal-omnipedia-content/tree/4.x",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-content/issues"
             },
-            "time": "2022-11-11T14:01:06+00:00"
+            "time": "2022-11-11T15:19:13+00:00"
         },
         {
             "name": "drupal/omnipedia_core",
@@ -5354,16 +5357,16 @@
         },
         {
             "name": "drupal/omnipedia_media",
-            "version": "dev-3.x_yarn_webpack",
+            "version": "4.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neurocracy/drupal-omnipedia-media.git",
-                "reference": "95f8d2f8b4f3d1cc9a3707a1790d1f59d42d1356"
+                "reference": "fd1b5df575ae52dca3bbacde585d2325718bd64e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-media/zipball/95f8d2f8b4f3d1cc9a3707a1790d1f59d42d1356",
-                "reference": "95f8d2f8b4f3d1cc9a3707a1790d1f59d42d1356",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-media/zipball/fd1b5df575ae52dca3bbacde585d2325718bd64e",
+                "reference": "fd1b5df575ae52dca3bbacde585d2325718bd64e",
                 "shasum": ""
             },
             "require": {
@@ -5372,6 +5375,7 @@
                 "drupal/webp": "^1.0",
                 "php": "^8"
             },
+            "default-branch": true,
             "type": "drupal-custom-module",
             "extra": {
                 "patches": {
@@ -5392,10 +5396,10 @@
             ],
             "description": "Omnipedia - Media",
             "support": {
-                "source": "https://github.com/neurocracy/drupal-omnipedia-media/tree/3.x_yarn_webpack",
+                "source": "https://github.com/neurocracy/drupal-omnipedia-media/tree/4.x",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-media/issues"
             },
-            "time": "2022-11-11T14:03:45+00:00"
+            "time": "2022-11-11T15:20:45+00:00"
         },
         {
             "name": "drupal/omnipedia_menu",
@@ -5481,16 +5485,16 @@
         },
         {
             "name": "drupal/omnipedia_site_theme",
-            "version": "dev-3.x_yarn_webpack",
+            "version": "4.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neurocracy/drupal-omnipedia-site-theme.git",
-                "reference": "4077140cac18803ecd50657d5b8212b9ddea4ad4"
+                "reference": "edae25e676d24ef302cdc76e4e5d2506b0e9524d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-site-theme/zipball/4077140cac18803ecd50657d5b8212b9ddea4ad4",
-                "reference": "4077140cac18803ecd50657d5b8212b9ddea4ad4",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-site-theme/zipball/edae25e676d24ef302cdc76e4e5d2506b0e9524d",
+                "reference": "edae25e676d24ef302cdc76e4e5d2506b0e9524d",
                 "shasum": ""
             },
             "require": {
@@ -5498,6 +5502,7 @@
                 "symfony/css-selector": "^4.4",
                 "symfony/dom-crawler": "^4.4"
             },
+            "default-branch": true,
             "type": "drupal-custom-theme",
             "license": [
                 "GPL-2.0-or-later"
@@ -5511,10 +5516,10 @@
             ],
             "description": "Omnipedia - Site theme",
             "support": {
-                "source": "https://github.com/neurocracy/drupal-omnipedia-site-theme/tree/3.x_yarn_webpack",
+                "source": "https://github.com/neurocracy/drupal-omnipedia-site-theme/tree/4.x",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-site-theme/issues"
             },
-            "time": "2022-11-11T14:05:53+00:00"
+            "time": "2022-11-11T15:24:32+00:00"
         },
         {
             "name": "drupal/omnipedia_user",
@@ -18060,68 +18065,7 @@
             "time": "2021-07-28T10:34:58+00:00"
         }
     ],
-    "aliases": [
-        {
-            "package": "drupal/ambientimpact_core",
-            "version": "dev-5.x_yarn_webpack",
-            "alias": "5.x-dev@dev",
-            "alias_normalized": "5.9999999.9999999.9999999-dev"
-        },
-        {
-            "package": "drupal/ambientimpact_icon",
-            "version": "dev-5.x_yarn_webpack",
-            "alias": "5.x-dev@dev",
-            "alias_normalized": "5.9999999.9999999.9999999-dev"
-        },
-        {
-            "package": "drupal/ambientimpact_markdown",
-            "version": "dev-5.x_yarn_webpack",
-            "alias": "5.x-dev@dev",
-            "alias_normalized": "5.9999999.9999999.9999999-dev"
-        },
-        {
-            "package": "drupal/ambientimpact_media",
-            "version": "dev-5.x_yarn_webpack",
-            "alias": "5.x-dev@dev",
-            "alias_normalized": "5.9999999.9999999.9999999-dev"
-        },
-        {
-            "package": "drupal/ambientimpact_ux",
-            "version": "dev-5.x_yarn_webpack",
-            "alias": "5.x-dev@dev",
-            "alias_normalized": "5.9999999.9999999.9999999-dev"
-        },
-        {
-            "package": "drupal/omnipedia_block",
-            "version": "dev-3.x_yarn_webpack",
-            "alias": "3.x-dev@dev",
-            "alias_normalized": "3.9999999.9999999.9999999-dev"
-        },
-        {
-            "package": "drupal/omnipedia_changes",
-            "version": "dev-3.x_yarn_webpack",
-            "alias": "3.x-dev@dev",
-            "alias_normalized": "3.9999999.9999999.9999999-dev"
-        },
-        {
-            "package": "drupal/omnipedia_content",
-            "version": "dev-3.x_yarn_webpack",
-            "alias": "3.x-dev@dev",
-            "alias_normalized": "3.9999999.9999999.9999999-dev"
-        },
-        {
-            "package": "drupal/omnipedia_media",
-            "version": "dev-3.x_yarn_webpack",
-            "alias": "3.x-dev@dev",
-            "alias_normalized": "3.9999999.9999999.9999999-dev"
-        },
-        {
-            "package": "drupal/omnipedia_site_theme",
-            "version": "dev-3.x_yarn_webpack",
-            "alias": "3.x-dev@dev",
-            "alias_normalized": "3.9999999.9999999.9999999-dev"
-        }
-    ],
+    "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/ambientimpact_core": 20,
