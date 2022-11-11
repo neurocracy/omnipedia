@@ -3726,6 +3726,9 @@ __metadata:
     ambientimpact-drupal-themes: "workspace:^5"
     autoprefixer: ^10.2.6
     css-loader: ^6.7.1
+    drupal-omnipedia-block: "workspace:^4"
+    drupal-omnipedia-content: "workspace:^4"
+    drupal-omnipedia-media: "workspace:^4"
     favicons: ^7.0.2
     favicons-webpack-plugin: ^6.0.0-alpha.2
     glob: ^8.0.3
