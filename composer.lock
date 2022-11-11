@@ -18062,6 +18062,36 @@
     ],
     "aliases": [
         {
+            "package": "drupal/ambientimpact_core",
+            "version": "dev-5.x_yarn_webpack",
+            "alias": "5.x-dev@dev",
+            "alias_normalized": "5.9999999.9999999.9999999-dev"
+        },
+        {
+            "package": "drupal/ambientimpact_icon",
+            "version": "dev-5.x_yarn_webpack",
+            "alias": "5.x-dev@dev",
+            "alias_normalized": "5.9999999.9999999.9999999-dev"
+        },
+        {
+            "package": "drupal/ambientimpact_markdown",
+            "version": "dev-5.x_yarn_webpack",
+            "alias": "5.x-dev@dev",
+            "alias_normalized": "5.9999999.9999999.9999999-dev"
+        },
+        {
+            "package": "drupal/ambientimpact_media",
+            "version": "dev-5.x_yarn_webpack",
+            "alias": "5.x-dev@dev",
+            "alias_normalized": "5.9999999.9999999.9999999-dev"
+        },
+        {
+            "package": "drupal/ambientimpact_ux",
+            "version": "dev-5.x_yarn_webpack",
+            "alias": "5.x-dev@dev",
+            "alias_normalized": "5.9999999.9999999.9999999-dev"
+        },
+        {
             "package": "drupal/omnipedia_block",
             "version": "dev-3.x_yarn_webpack",
             "alias": "3.x-dev@dev",
