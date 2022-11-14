@@ -4,6 +4,10 @@
   "license": "GPL-2.0",
   "repository": "gitlab:neurocracy/omnipedia/drupal",
   "packageManager": "yarn@3.2.4",
+  "engines": {
+    "node": "^18.9.1",
+    "yarn": "^3.2.4"
+  },
   "scripts": {
     "build:production": "cross-env NODE_ENV=production yarn build"
   },
