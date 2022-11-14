@@ -137,7 +137,7 @@
     "drupal/omnipedia_search": "3.x-dev@dev",
     "drupal/omnipedia_site_theme": "4.x-dev@dev",
     "drupal/omnipedia_user": "3.x-dev@dev",
-    "drupal/password_policy": "^3.0",
+    "drupal/password_policy": "^4.0",
     "drupal/pathauto": "^1.6",
     "drupal/rebuilder": "^1.0@RC",
     "drupal/redirect": "^1.6",
