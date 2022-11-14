@@ -5754,17 +5754,17 @@
         },
         {
             "name": "drupal/permissions_by_term",
-            "version": "3.1.20",
+            "version": "3.1.21",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/permissions_by_term.git",
-                "reference": "3.1.20"
+                "reference": "3.1.21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/permissions_by_term-3.1.20.zip",
-                "reference": "3.1.20",
-                "shasum": "772c26e6a5fcc2d61f5b095a3fe27613ee37583b"
+                "url": "https://ftp.drupal.org/files/projects/permissions_by_term-3.1.21.zip",
+                "reference": "3.1.21",
+                "shasum": "ecd9340f1aac1f183398a571415bb0859fcb6f4c"
             },
             "require": {
                 "drupal/core": "^9.0",
@@ -5773,8 +5773,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.1.20",
-                    "datestamp": "1665991089",
+                    "version": "3.1.21",
+                    "datestamp": "1668009531",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5876,17 +5876,17 @@
         },
         {
             "name": "drupal/queue_ui",
-            "version": "3.1.1",
+            "version": "3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/queue_ui.git",
-                "reference": "3.1.1"
+                "reference": "3.1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/queue_ui-3.1.1.zip",
-                "reference": "3.1.1",
-                "shasum": "5139d88c954e31d934916ab8af0473cc6b655ea2"
+                "url": "https://ftp.drupal.org/files/projects/queue_ui-3.1.2.zip",
+                "reference": "3.1.2",
+                "shasum": "732debb86301db5a2cf659d9f94e29907d0ea279"
             },
             "require": {
                 "drupal/core": "^9.2 || ^10"
@@ -5897,8 +5897,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.1.1",
-                    "datestamp": "1665756508",
+                    "version": "3.1.2",
+                    "datestamp": "1666877993",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6191,17 +6191,17 @@
         },
         {
             "name": "drupal/search_api",
-            "version": "1.27.0",
+            "version": "1.28.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/search_api.git",
-                "reference": "8.x-1.27"
+                "reference": "8.x-1.28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/search_api-8.x-1.27.zip",
-                "reference": "8.x-1.27",
-                "shasum": "b8c9a055fe43435c09231fd93d3e07c5d2863a46"
+                "url": "https://ftp.drupal.org/files/projects/search_api-8.x-1.28.zip",
+                "reference": "8.x-1.28",
+                "shasum": "d3ae0bb3cf17c986d5e0c6edb87aee6580b6fc1e"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10.0"
@@ -6222,8 +6222,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.27",
-                    "datestamp": "1666211720",
+                    "version": "8.x-1.28",
+                    "datestamp": "1667814116",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6324,17 +6324,17 @@
         },
         {
             "name": "drupal/security_review",
-            "version": "1.0.0-alpha2",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/security_review.git",
-                "reference": "8.x-1.0-alpha2"
+                "reference": "8.x-1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/security_review-8.x-1.0-alpha2.zip",
-                "reference": "8.x-1.0-alpha2",
-                "shasum": "d38845d9dcaefaad563b56a9eb326c39734d5103"
+                "url": "https://ftp.drupal.org/files/projects/security_review-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "10149beefaa90278967c9773e521d14855ed426c"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -6342,11 +6342,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0-alpha2",
-                    "datestamp": "1601391168",
+                    "version": "8.x-1.0",
+                    "datestamp": "1668092469",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -6370,6 +6370,10 @@
                 {
                     "name": "greggles",
                     "homepage": "https://www.drupal.org/user/36762"
+                },
+                {
+                    "name": "smustgrave",
+                    "homepage": "https://www.drupal.org/user/3252890"
                 }
             ],
             "description": "Site security and configuration review module.",
@@ -6699,17 +6703,17 @@
         },
         {
             "name": "drupal/tfa",
-            "version": "1.0.0-alpha10",
+            "version": "1.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/tfa.git",
-                "reference": "8.x-1.0-alpha10"
+                "reference": "8.x-1.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/tfa-8.x-1.0-alpha10.zip",
-                "reference": "8.x-1.0-alpha10",
-                "shasum": "823ad1c747b36ed6c46c1200fdafdc0b64dbfc12"
+                "url": "https://ftp.drupal.org/files/projects/tfa-8.x-1.0-rc1.zip",
+                "reference": "8.x-1.0-rc1",
+                "shasum": "458ef973f479e0af7f0184ebf69873236253a6ec"
             },
             "require": {
                 "chillerlan/php-qrcode": "^1.0.9 || ^2.0 || ^3.2 || ^4.0",
@@ -6726,11 +6730,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0-alpha10",
-                    "datestamp": "1666432469",
+                    "version": "8.x-1.0-rc1",
+                    "datestamp": "1667222801",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 },
                 "drush": {
