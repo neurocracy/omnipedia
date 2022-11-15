@@ -17,5 +17,12 @@
     "ambientimpact-drupal-modules": "workspace:^6",
     "ambientimpact-drupal-themes": "workspace:^5",
     "cross-env": "^7.0.3"
+  },
+  "devDependencies": {
+    "drupal-omnipedia-block": "workspace:^4",
+    "drupal-omnipedia-changes": "workspace:^4",
+    "drupal-omnipedia-content": "workspace:^4",
+    "drupal-omnipedia-media": "workspace:^4",
+    "drupal-omnipedia-site-theme": "workspace:^4"
   }
 }
