@@ -2,7 +2,7 @@ _core:
   default_config_hash: VV0HFGFvi0Pou7lakptNvL-oNLy6iIUp5m6b6gf4xos
 credentials_file: ''
 bucket: omnipedia-content
-region: us-east-1
+region: nyc3
 use_cname: false
 domain_root: none
 use_customhost: true
