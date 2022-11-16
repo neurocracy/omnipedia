@@ -37,6 +37,12 @@ package-lock.json
 # Ignore the root vendor directory as that's managed via Composer.
 /vendor
 
+# Ignore the storage directory. This is used for compiled Twig templates and
+# other PHP storage.
+#
+# @see \Drupal\Core\PhpStorage\PhpStorageFactory
+/storage
+
 # Ignore Drupal private files directory.
 /drupal_private_files
 

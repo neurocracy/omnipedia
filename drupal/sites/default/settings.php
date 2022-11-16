@@ -141,7 +141,13 @@ $settings['update_free_access'] = FALSE;
  * must exist and be writable by Drupal. This directory must be relative to
  * the Drupal installation directory and be accessible over the web.
  */
-$settings['file_public_path'] = 'sites/default/files';
+if (\getenv('SPACES_ACCESS') !== false) {
+  $settings['s3fs.use_s3_for_public'] = true;
+
+} else {
+  $settings['file_public_path'] = 'sites/default/files';
+}
+
 
 /**
  * Private file path:
@@ -156,7 +162,12 @@ $settings['file_public_path'] = 'sites/default/files';
  * See https://www.drupal.org/documentation/modules/file for more information
  * about securing private files.
  */
-$settings['file_private_path'] = $app_root . '/../drupal_private_files';
+if (\getenv('SPACES_ACCESS') !== false) {
+  $settings['s3fs.use_s3_for_private'] = true;
+
+} else {
+  $settings['file_private_path'] = $app_root . '/../drupal_private_files';
+}
 
 /**
  * Load services definition file.
@@ -192,6 +203,14 @@ $settings['file_scan_ignore_directories'] = [
   'node_modules',
   'bower_components',
 ];
+
+// Set the PHP storage locations outside of the web directory. This is more
+// secure, and also required when using DigitalOcean Spaces as we don't want
+// these to be in the public files, as recommended by the s3fs module.
+//
+// @see \Drupal\Core\PhpStorage\PhpStorageFactory
+$settings['php_storage']['twig']['directory'] = '../storage/php';
+$settings['php_storage']['html_purifier_serializer']['directory'] = '../storage/php';
 
 /**
  * The default number of entities to update in a batch process.
