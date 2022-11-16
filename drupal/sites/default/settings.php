@@ -107,6 +107,20 @@ if (file_exists($app_root . '/../keys/drupal_hash_salt.key')) {
   $settings['hash_salt'] = \getenv('DRUPAL_HASH_SALT');
 }
 
+// Quick and dirty two factor secret via environment variable if available.
+//
+// @todo Move this to a config split?
+if (\getenv('DRUPAL_TWO_FACTOR_SECRET') !== false) {
+
+  $config['encrypt.profile.two_factor']['encryption_key'] =
+    'two_factor_secret_environment';
+
+  $config['encrypt.profile.two_factor']['dependencies']['config'] = [
+    'key.key.two_factor_secret_environment'
+  ];
+
+}
+
 /**
  * Access control for update.php script.
  *
