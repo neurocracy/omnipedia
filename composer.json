@@ -208,6 +208,9 @@
       "drupal/session_limit": {
         "Displayed message should be configurable: https://www.drupal.org/project/session_limit/issues/2794553#comment-14364480": "patches/drupal/session_limit/session_limit-configurable-message-2794553-19.patch",
         "Services\\SessionLimit should type-hint ModuleHandlerInterface rather than a specific implementation [#3308506]: https://www.drupal.org/project/session_limit/issues/3308506": "patches/drupal/session_limit/3308506-typehint-module-handler-interface.patch"
+      },
+      "drupal/webp": {
+        "TypeError: Argument 5 passed to Drupal\\webp\\Webp::__construct() must be an instance of Drupal\\Core\\File\\FileSystem [#3229441]: https://www.drupal.org/project/webp/issues/3229441#comment-14547513": "patches/drupal/webp/use-file-system-interface-3229441-6.patch"
       }
     },
     "drupal-scaffold": {
