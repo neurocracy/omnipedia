@@ -51,21 +51,27 @@ enforce:
     script-src:
       base: self
       sources:
+        - 'https://omnipedia-content.nyc3.digitaloceanspaces.com'
         - 'https://www.paypal.com'
         - 'https://www.sandbox.paypal.com'
     script-src-elem:
       base: self
       sources:
+        - 'https://omnipedia-content.nyc3.digitaloceanspaces.com'
         - 'https://www.paypal.com'
         - 'https://www.sandbox.paypal.com'
     style-src:
       base: self
       flags:
         - unsafe-inline
+      sources:
+        - 'https://omnipedia-content.nyc3.digitaloceanspaces.com'
     style-src-attr:
       base: self
       flags:
         - unsafe-inline
+      sources:
+        - 'https://omnipedia-content.nyc3.digitaloceanspaces.com'
     base-uri:
       base: self
     form-action:
