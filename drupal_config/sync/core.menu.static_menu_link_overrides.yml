@@ -2,11 +2,11 @@ _core:
   default_config_hash: o4bYR9ZupWb3AsOIizTUG4g-nu1mdJqA59UB7QT-ifQ
 definitions:
   contact__site_page:
+    weight: -45
     menu_name: footer
     parent: ''
-    weight: -46
-    expanded: false
     enabled: false
+    expanded: false
   standard__front_page:
     menu_name: main
     parent: ''
@@ -140,8 +140,8 @@ definitions:
     expanded: false
     enabled: false
   omnipedia_commerce__content_access_base_product__footer:
-    enabled: false
+    weight: -43
     menu_name: footer
     parent: ''
-    weight: -45
     expanded: false
+    enabled: false
