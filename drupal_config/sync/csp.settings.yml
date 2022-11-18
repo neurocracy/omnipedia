@@ -44,6 +44,7 @@ enforce:
       base: self
       sources:
         - 'data:'
+        - 'https://omnipedia-content.nyc3.digitaloceanspaces.com'
         - 'https://www.paypalobjects.com'
         - 'https://t.paypal.com/'
     object-src:
