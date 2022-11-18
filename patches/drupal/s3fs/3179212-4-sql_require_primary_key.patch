@@ -1,0 +1,53 @@
+diff --git a/src/S3fsService.php b/src/S3fsService.php
+index 756660b..b772f1a 100644
+--- a/src/S3fsService.php
++++ b/src/S3fsService.php
+@@ -588,6 +588,23 @@ class S3fsService implements S3fsServiceInterface {
+    */
+   public function setupTempTable() {
+ 
++    /** @var array */
++    $options = $this->connection->getConnectionOptions();
++
++    if ($options['driver'] === 'mysql') {
++
++      try {
++
++        $initialRequirePrimaryKeyValue = $this->connection->query(
++          'SELECT @@SESSION.sql_require_primary_key;'
++        )->fetchAssoc()['@@SESSION.sql_require_primary_key'];
++
++      } catch (\Exception $exception) {
++        // The variable doesn't exist for whatever reason.
++      }
++
++    }
++
+     // Create the temp table, into which all the refreshed data will be written.
+     // After the full refresh is complete, the temp table will be swapped with
+     // the real one.
+@@ -595,6 +612,9 @@ class S3fsService implements S3fsServiceInterface {
+     $schema = s3fs_schema();
+     try {
+       \Drupal::database()->schema()->dropTable('s3fs_file_temp');
++
++      $this->connection->query('SET SESSION sql_require_primary_key=0;');
++
+       \Drupal::database()->schema()->createTable('s3fs_file_temp', $schema['s3fs_file']);
+       // Due to http://drupal.org/node/2193059, the temp table fails to pick up
+       // the primary key - fix things up manually.
+@@ -604,6 +624,14 @@ class S3fsService implements S3fsServiceInterface {
+       // The table already exists, so we can simply truncate it to start fresh.
+       \Drupal::database()->truncate('s3fs_file_temp')->execute();
+     }
++
++    // If a previous value for 'sql_require_primary_key' was found, restore it.
++    if (isset($initialRequirePrimaryKeyValue)) {
++      $this->connection->query('SET SESSION sql_require_primary_key=:value;', [
++        ':value' => $initialRequirePrimaryKeyValue,
++      ]);
++    }
++
+   }
+ 
+   /**
