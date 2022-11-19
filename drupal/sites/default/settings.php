@@ -174,6 +174,13 @@ if (\getenv('SPACES_ACCESS') !== false) {
  */
 $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
 
+// Include the CORS container configuration if on DigitalOcean so that
+// aggregated CSS and JS on Spaces can reference files (e.g images and SVG
+// files) that reside on the origin server.
+if (\getenv('SPACES_ACCESS') !== false) {
+  $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.cors.yml';
+}
+
 // Only include the Monolog services file if not running tests, by checking if
 // one of the test environment variables is set. This is necessary as Symfony
 // will throw an error about requesting a non-existent parameter
