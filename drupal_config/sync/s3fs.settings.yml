@@ -6,7 +6,7 @@ region: nyc3
 use_cname: false
 domain_root: none
 use_customhost: true
-hostname: nyc3.digitaloceanspaces.com
+hostname: 'https://nyc3.digitaloceanspaces.com'
 domain: ''
 use_path_style_endpoint: false
 disable_version_sync: false
