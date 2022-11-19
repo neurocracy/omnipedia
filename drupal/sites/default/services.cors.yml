@@ -6,12 +6,10 @@ parameters:
     enabled: true
     # Allow aggregated CSS and JS on DigitalOcean Spaces to reference files
     # (e.g. images) that reside on the origin server.
-    allowedOrigins:
-      - 'https://omnipedia-content.nyc3.digitaloceanspaces.com'
-      - 'https://omnipedia-content.nyc3.cdn.digitaloceanspaces.com'
+    allowedOrigins: ['*']
     # These have to be explicitly set as '*' will not work when trying to POST a
     # form as defined in the specification.
     #
     # @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Methods
-    allowedMethods: ['GET', 'POST']
+    allowedMethods: ['*']
     supportsCredentials: true
