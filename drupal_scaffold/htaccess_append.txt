@@ -1,3 +1,20 @@
+# Basic CORS headers.
+#
+# These are handled at the Apache level because doing so using Drupal core's
+# CORS support would only apply to requests handled by Drupal, which wouldn't be
+# applied for requests that are handled directly by Apache, i.e. to assets
+# served by Apache.
+#
+# @see https://stackoverflow.com/questions/32273606/how-to-enable-cors-for-apache-httpd-server-step-by-step-process
+#
+# @see https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+#
+# @see https://www.drupal.org/node/2715637
+#   Drupal core change record detailing opt-in CORS support.
+#
+# @see https://drupal.stackexchange.com/questions/245903/how-do-i-set-up-cors
+#   Setting up CORS correctly in Drupal core requires care and specific values
+#   to function.
 <IfModule mod_headers.c>
   Header set Access-Control-Allow-Origin "*"
 </IfModule>
