@@ -3,11 +3,11 @@ _core:
 credentials_file: ''
 bucket: omnipedia-content
 region: nyc3
-use_cname: false
+use_cname: true
 domain_root: none
 use_customhost: true
 hostname: 'https://nyc3.digitaloceanspaces.com'
-domain: ''
+domain: cdn.omnipedia.app
 use_path_style_endpoint: false
 disable_version_sync: false
 cache_control_header: ''
