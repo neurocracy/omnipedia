@@ -1,0 +1,22 @@
+diff --git a/src/S3fsService.php b/src/S3fsService.php
+index 756660b..644c33d 100644
+--- a/src/S3fsService.php
++++ b/src/S3fsService.php
+@@ -345,6 +345,17 @@ class S3fsService implements S3fsServiceInterface {
+       if (!empty($config['disable_shared_config_files'])) {
+         $client_config['use_aws_shared_config_files'] = FALSE;
+       }
++
++      // Debug logging for https://www.drupal.org/project/s3fs/issues/3274647
++      $client_config['debug'] = [
++        'logfn'        => function($msg) {
++          \file_put_contents('/workspace/awsS3.log', $msg . "\n", \FILE_APPEND);
++        },
++        'stream_size'  => 0,
++        'scrub_auth'   => true,
++        'http'         => true,
++      ];
++
+       // Create the Aws\S3\S3Client object.
+       $s3 = new S3Client($client_config);
+       $static_config = $config;
