@@ -44,7 +44,7 @@ enforce:
       base: self
       sources:
         - 'data:'
-        - 'https://omnipedia-content.nyc3.digitaloceanspaces.com'
+        - 'https://cdn.omnipedia.app'
         - 'https://www.paypalobjects.com'
         - 'https://t.paypal.com/'
     object-src:
@@ -52,13 +52,13 @@ enforce:
     script-src:
       base: self
       sources:
-        - 'https://omnipedia-content.nyc3.digitaloceanspaces.com'
+        - 'https://cdn.omnipedia.app'
         - 'https://www.paypal.com'
         - 'https://www.sandbox.paypal.com'
     script-src-elem:
       base: self
       sources:
-        - 'https://omnipedia-content.nyc3.digitaloceanspaces.com'
+        - 'https://cdn.omnipedia.app'
         - 'https://www.paypal.com'
         - 'https://www.sandbox.paypal.com'
     style-src:
@@ -66,13 +66,13 @@ enforce:
       flags:
         - unsafe-inline
       sources:
-        - 'https://omnipedia-content.nyc3.digitaloceanspaces.com'
+        - 'https://cdn.omnipedia.app'
     style-src-attr:
       base: self
       flags:
         - unsafe-inline
       sources:
-        - 'https://omnipedia-content.nyc3.digitaloceanspaces.com'
+        - 'https://cdn.omnipedia.app'
     base-uri:
       base: self
     form-action:
