@@ -201,7 +201,7 @@
       "drupal/rules": {
         "Support upcasting entity IDs to full entity contexts: https://www.drupal.org/project/rules/issues/2800749#comment-14332836": "patches/drupal/rules/2800749-97.upcast.patch"
       },
-      "drupal/s3fs": {
+      "drupal/s3fs-disabled": {
         "Performance extremely slow [#3274647]: https://www.drupal.org/project/s3fs/issues/3274647": "patches/drupal/s3fs/3274647-slow-debug.patch"
       },
       "drupal/security_review": {
