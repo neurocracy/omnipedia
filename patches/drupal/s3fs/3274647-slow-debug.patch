@@ -10,7 +10,7 @@ index 756660b..644c33d 100644
 +      // Debug logging for https://www.drupal.org/project/s3fs/issues/3274647
 +      $client_config['debug'] = [
 +        'logfn'        => function($msg) {
-+          \file_put_contents('/workspace/awsS3.log', $msg . "\n", \FILE_APPEND);
++          \file_put_contents('/workspace/drupal/awsS3.log', $msg . "\n", \FILE_APPEND);
 +        },
 +        'stream_size'  => 0,
 +        'scrub_auth'   => true,
