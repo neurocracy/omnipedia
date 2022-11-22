@@ -230,13 +230,18 @@ $settings['file_scan_ignore_directories'] = [
   'bower_components',
 ];
 
-// Set the PHP storage locations outside of the web directory. This is more
-// secure, and also required when using DigitalOcean Spaces as we don't want
-// these to be in the public files, as recommended by the s3fs module.
-//
-// @see \Drupal\Core\PhpStorage\PhpStorageFactory
+/**
+ * PHP storage location.
+ *
+ * These are set outside of the web root as that's more secure in case .htaccess
+ * rules get borked.
+ *
+ * @see \Drupal\Core\PhpStorage\PhpStorageFactory
+ */
 $settings['php_storage']['twig']['directory'] = '../storage/php';
-$settings['php_storage']['html_purifier_serializer']['directory'] = '../storage/php';
+$settings['php_storage'][
+  'html_purifier_serializer'
+]['directory'] = '../storage/php';
 
 /**
  * The default number of entities to update in a batch process.
