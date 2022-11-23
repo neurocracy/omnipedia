@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "962f4e7f38da04afccfee33aed8f45bf",
+    "content-hash": "f3c67814185cdaacddd8be1e45e28f2b",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -1945,6 +1945,39 @@
                 "issues": "https://drupal.org/project/issues/advagg",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             }
+        },
+        {
+            "name": "drupal/ambientimpact_base",
+            "version": "5.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-base.git",
+                "reference": "f8406ac3a22cad31e6d9ebcb66f492ed3d7ff8a3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-base/zipball/f8406ac3a22cad31e6d9ebcb66f492ed3d7ff8a3",
+                "reference": "f8406ac3a22cad31e6d9ebcb66f492ed3d7ff8a3",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "drupal-custom-theme",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ambient.Impact",
+                    "homepage": "https://ambientimpact.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Ambient.Impact - Base theme",
+            "support": {
+                "source": "https://github.com/Ambient-Impact/drupal-ambientimpact-base/tree/5.x",
+                "issues": "https://github.com/Ambient-Impact/drupal-ambientimpact-base/issues"
+            },
+            "time": "2022-11-23T06:30:07+00:00"
         },
         {
             "name": "drupal/ambientimpact_core",
@@ -5488,15 +5521,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neurocracy/drupal-omnipedia-site-theme.git",
-                "reference": "e3e3639ee5c68b03b53447f20ea1fcf5f88fba34"
+                "reference": "e881138678ad6da1b29b769f721f20223d6316b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-site-theme/zipball/e3e3639ee5c68b03b53447f20ea1fcf5f88fba34",
-                "reference": "e3e3639ee5c68b03b53447f20ea1fcf5f88fba34",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-site-theme/zipball/e881138678ad6da1b29b769f721f20223d6316b7",
+                "reference": "e881138678ad6da1b29b769f721f20223d6316b7",
                 "shasum": ""
             },
             "require": {
+                "drupal/ambientimpact_base": "5.x-dev@dev",
                 "php": "^8",
                 "symfony/css-selector": "^4.4",
                 "symfony/dom-crawler": "^4.4"
@@ -5518,7 +5552,7 @@
                 "source": "https://github.com/neurocracy/drupal-omnipedia-site-theme/tree/4.x",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-site-theme/issues"
             },
-            "time": "2022-11-14T13:31:47+00:00"
+            "time": "2022-11-23T06:53:47+00:00"
         },
         {
             "name": "drupal/omnipedia_user",
@@ -18075,6 +18109,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/ambientimpact_base": 20,
         "drupal/ambientimpact_core": 20,
         "drupal/ambientimpact_icon": 20,
         "drupal/ambientimpact_markdown": 20,

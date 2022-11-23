@@ -12,6 +12,10 @@
     }
   ],
   "repositories": {
+    "drupal/ambientimpact_base": {
+      "type": "vcs",
+      "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-base.git"
+    },
     "drupal/ambientimpact_core": {
       "type": "path",
       "url": "drupal/modules/ambientimpact/ambientimpact_core"
@@ -98,6 +102,7 @@
     "composer/installers": "^2.0",
     "cweagans/composer-patches": "^1.7",
     "drupal/advagg": "^5.0",
+    "drupal/ambientimpact_base": "5.x-dev@dev",
     "drupal/ambientimpact_core": "6.x-dev@dev",
     "drupal/ambientimpact_icon": "6.x-dev@dev",
     "drupal/ambientimpact_markdown": "6.x-dev@dev",

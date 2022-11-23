@@ -10,12 +10,10 @@
   "workspaces": [
     "drupal/modules/ambientimpact",
     "drupal/modules/custom/*",
-    "drupal/themes/ambientimpact",
     "drupal/themes/custom/*"
   ],
   "dependencies": {
     "ambientimpact-drupal-modules": "workspace:^6",
-    "ambientimpact-drupal-themes": "workspace:^5",
     "cross-env": "^7.0.3",
     "drupal-omnipedia-block": "workspace:^4",
     "drupal-omnipedia-changes": "workspace:^4",
