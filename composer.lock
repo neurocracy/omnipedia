@@ -2096,12 +2096,12 @@
             "dist": {
                 "type": "path",
                 "url": "drupal/modules/ambientimpact/ambientimpact_core",
-                "reference": "7433282a44950c493988c3ce5f146afa5bd4c55e"
+                "reference": "c4d8190f83271e1fd1ba7585491290df8f925e9e"
             },
             "require": {
                 "drupal/hook_event_dispatcher": "^2.0 || ^3.0",
-                "symfony/css-selector": "^3.4 || ^4.4",
-                "symfony/dom-crawler": "^3.4 || ^4.4"
+                "symfony/css-selector": "^3.4 || ^4.4 || ^5.0",
+                "symfony/dom-crawler": "^3.4 || ^4.4 || ^5.0"
             },
             "type": "project",
             "extra": {
@@ -2187,14 +2187,14 @@
             "dist": {
                 "type": "path",
                 "url": "drupal/modules/ambientimpact/ambientimpact_media",
-                "reference": "efca61896ab20a2165698e4decee6229d9d0aa93"
+                "reference": "55adce9c82e393182113eb7814ffc0ace69b8b49"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.5",
                 "drupal/core-recommended": "^9.4",
                 "drupal/hook_event_dispatcher": "^2.0 || ^3.0",
                 "drupal/image_field_caption": "^1.1",
-                "guzzlehttp/guzzle": "^6.3"
+                "guzzlehttp/guzzle": "^6.5.8 || ^7.4.5"
             },
             "type": "project",
             "extra": {
