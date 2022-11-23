@@ -180,6 +180,19 @@ $settings['file_scan_ignore_directories'] = [
 ];
 
 /**
+ * PHP storage location.
+ *
+ * These are set outside of the web root as that's more secure in case .htaccess
+ * rules get borked.
+ *
+ * @see \Drupal\Core\PhpStorage\PhpStorageFactory
+ */
+$settings['php_storage']['twig']['directory'] = '../storage/php';
+$settings['php_storage'][
+  'html_purifier_serializer'
+]['directory'] = '../storage/php';
+
+/**
  * The default number of entities to update in a batch process.
  *
  * This is used by update and post-update functions that need to go through and
