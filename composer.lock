@@ -1952,12 +1952,12 @@
             "dist": {
                 "type": "path",
                 "url": "drupal/modules/ambientimpact/ambientimpact_core",
-                "reference": "7433282a44950c493988c3ce5f146afa5bd4c55e"
+                "reference": "c4d8190f83271e1fd1ba7585491290df8f925e9e"
             },
             "require": {
                 "drupal/hook_event_dispatcher": "^2.0 || ^3.0",
-                "symfony/css-selector": "^3.4 || ^4.4",
-                "symfony/dom-crawler": "^3.4 || ^4.4"
+                "symfony/css-selector": "^3.4 || ^4.4 || ^5.0",
+                "symfony/dom-crawler": "^3.4 || ^4.4 || ^5.0"
             },
             "type": "project",
             "extra": {
@@ -2043,14 +2043,14 @@
             "dist": {
                 "type": "path",
                 "url": "drupal/modules/ambientimpact/ambientimpact_media",
-                "reference": "efca61896ab20a2165698e4decee6229d9d0aa93"
+                "reference": "55adce9c82e393182113eb7814ffc0ace69b8b49"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.5",
                 "drupal/core-recommended": "^9.4",
                 "drupal/hook_event_dispatcher": "^2.0 || ^3.0",
                 "drupal/image_field_caption": "^1.1",
-                "guzzlehttp/guzzle": "^6.3"
+                "guzzlehttp/guzzle": "^6.5.8 || ^7.4.5"
             },
             "type": "project",
             "extra": {
@@ -2506,17 +2506,17 @@
         },
         {
             "name": "drupal/commerce_paypal",
-            "version": "1.1.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/commerce_paypal.git",
-                "reference": "8.x-1.1"
+                "reference": "8.x-1.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/commerce_paypal-8.x-1.1.zip",
-                "reference": "8.x-1.1",
-                "shasum": "f0b2471b0b3374c9f08037c9ba4875582f5c2030"
+                "url": "https://ftp.drupal.org/files/projects/commerce_paypal-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "486b0a9e0beb90b765d30c984397cf514f982ae3"
             },
             "require": {
                 "drupal/commerce": "^2.19 || ^3",
@@ -2527,8 +2527,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.1",
-                    "datestamp": "1665433276",
+                    "version": "8.x-1.3",
+                    "datestamp": "1668697541",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3300,28 +3300,28 @@
         },
         {
             "name": "drupal/csp",
-            "version": "1.16.0",
+            "version": "1.17.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/csp.git",
-                "reference": "8.x-1.16"
+                "reference": "8.x-1.17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/csp-8.x-1.16.zip",
-                "reference": "8.x-1.16",
-                "shasum": "0d6568ff2b176497ff97a440bfae6b7135ad2d6b"
+                "url": "https://ftp.drupal.org/files/projects/csp-8.x-1.17.zip",
+                "reference": "8.x-1.17",
+                "shasum": "d7d9d330aa501b6b8f622de65ce93078bf5695aa"
             },
             "require": {
-                "drupal/core": "^8.5 || ^9.0",
+                "drupal/core": "^9.3 || ^10",
                 "ext-json": "*",
                 "php": ">=7.2"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.16",
-                    "datestamp": "1641415148",
+                    "version": "8.x-1.17",
+                    "datestamp": "1669172274",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3350,17 +3350,17 @@
         },
         {
             "name": "drupal/ctools",
-            "version": "4.0.1",
+            "version": "4.0.3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/ctools.git",
-                "reference": "4.0.1"
+                "reference": "4.0.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ctools-4.0.1.zip",
-                "reference": "4.0.1",
-                "shasum": "ac2373c13efd7d95da7230bd5a6627f16a6a5b6e"
+                "url": "https://ftp.drupal.org/files/projects/ctools-4.0.3.zip",
+                "reference": "4.0.3",
+                "shasum": "4f389b14bd2120069386c2f28f8c4cd49bd2ebfc"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10"
@@ -3368,15 +3368,15 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "4.0.1",
-                    "datestamp": "1660252593",
+                    "version": "4.0.3",
+                    "datestamp": "1668631947",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "branch-alias": {
-                    "dev-4.x": "4.x-dev"
+                    "dev-8.x-3.x": "3.x-dev"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3410,9 +3410,8 @@
                     "role": "Maintainer"
                 },
                 {
-                    "name": "Joël (joelpittet)",
-                    "homepage": "https://www.drupal.org/u/joelpittet",
-                    "role": "Maintainer"
+                    "name": "joelpittet",
+                    "homepage": "https://www.drupal.org/user/160302"
                 },
                 {
                     "name": "merlinofchaos",
@@ -6426,6 +6425,10 @@
                 {
                     "name": "suzymasri",
                     "homepage": "https://www.drupal.org/user/2428842"
+                },
+                {
+                    "name": "VladimirAus",
+                    "homepage": "https://www.drupal.org/user/673120"
                 }
             ],
             "description": "Limit simultaneous user sessions.",
