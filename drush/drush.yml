@@ -23,6 +23,8 @@ command:
           # Added to prevent site-specific Drush config getting synced from
           # staging to live.
           - 'sites/all/drush/drush.yml'
+          # Ignore PHP storage. This contains compiled Twig templates, etc.
+          - 'storage/*'
 
         # This removes the two 'cache:rebuild' as rebuilding various caches can
         # be a big hit to the server and load time for the subsequent request.

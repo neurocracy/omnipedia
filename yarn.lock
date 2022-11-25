@@ -2453,32 +2453,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"ambientimpact-drupal-themes@workspace:^5, ambientimpact-drupal-themes@workspace:drupal/themes/ambientimpact":
-  version: 0.0.0-use.local
-  resolution: "ambientimpact-drupal-themes@workspace:drupal/themes/ambientimpact"
-  dependencies:
-    "@babel/core": ^7.20.2
-    "@babel/preset-env": ^7.20.2
-    "@symfony/webpack-encore": ^4.1.1
-    ambientimpact-drupal-modules: "workspace:^6"
-    autoprefixer: ^10.2.6
-    css-loader: ^6.7.1
-    favicons: ^7.0.2
-    favicons-webpack-plugin: ^6.0.0-alpha.2
-    glob: ^8.0.3
-    mini-css-extract-plugin: ^2.6.1
-    postcss: ^8.3.5
-    postcss-easing-gradients: "github:Ambient-Impact/postcss-easing-gradients"
-    postcss-loader: ^7.0.1
-    sass: ^1.43.4
-    sass-loader: ^13.1.0
-    sassy-cast: "github:Ambient-Impact/SassyCast#adbbd499bb36eb0c7015ae6f23c00e3a78dc54b3"
-    webpack: ^5.74.0
-    webpack-cli: ^4.10.0
-    webpack-remove-empty-scripts: ^1.0.1
-  languageName: unknown
-  linkType: soft
-
 "ansi-html-community@npm:^0.0.8":
   version: 0.0.8
   resolution: "ansi-html-community@npm:0.0.8"
@@ -3636,6 +3610,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"drupal-ambientimpact-base@workspace:^5, drupal-ambientimpact-base@workspace:drupal/themes/custom/ambientimpact_base":
+  version: 0.0.0-use.local
+  resolution: "drupal-ambientimpact-base@workspace:drupal/themes/custom/ambientimpact_base"
+  dependencies:
+    ambientimpact-drupal-modules: "workspace:^6"
+    sassy-cast: "github:Ambient-Impact/SassyCast#adbbd499bb36eb0c7015ae6f23c00e3a78dc54b3"
+  languageName: unknown
+  linkType: soft
+
 "drupal-omnipedia-block@workspace:^4, drupal-omnipedia-block@workspace:drupal/modules/custom/omnipedia_block":
   version: 0.0.0-use.local
   resolution: "drupal-omnipedia-block@workspace:drupal/modules/custom/omnipedia_block"
@@ -3735,9 +3718,9 @@ __metadata:
     "@fontsource/exo-2": ^4.5.10
     "@symfony/webpack-encore": ^4.1.1
     ambientimpact-drupal-modules: "workspace:^6"
-    ambientimpact-drupal-themes: "workspace:^5"
     autoprefixer: ^10.2.6
     css-loader: ^6.7.1
+    drupal-ambientimpact-base: "workspace:^5"
     drupal-omnipedia-block: "workspace:^4"
     drupal-omnipedia-content: "workspace:^4"
     drupal-omnipedia-media: "workspace:^4"
@@ -5740,7 +5723,6 @@ __metadata:
   resolution: "omnipedia-drupal@workspace:."
   dependencies:
     ambientimpact-drupal-modules: "workspace:^6"
-    ambientimpact-drupal-themes: "workspace:^5"
     cross-env: ^7.0.3
   languageName: unknown
   linkType: soft

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b6f83ebc9dc93f7b698dfe281e01680e",
+    "content-hash": "cec22e6012bc48008c445d411cb38237",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -2091,6 +2091,39 @@
             }
         },
         {
+            "name": "drupal/ambientimpact_base",
+            "version": "5.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-base.git",
+                "reference": "a8d19759bf525fcc1fc6a14feefa3cdfdbcb7c1e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-base/zipball/a8d19759bf525fcc1fc6a14feefa3cdfdbcb7c1e",
+                "reference": "a8d19759bf525fcc1fc6a14feefa3cdfdbcb7c1e",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "drupal-custom-theme",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ambient.Impact",
+                    "homepage": "https://ambientimpact.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Ambient.Impact - Base theme",
+            "support": {
+                "source": "https://github.com/Ambient-Impact/drupal-ambientimpact-base/tree/5.x",
+                "issues": "https://github.com/Ambient-Impact/drupal-ambientimpact-base/issues"
+            },
+            "time": "2022-11-23T08:36:14+00:00"
+        },
+        {
             "name": "drupal/ambientimpact_core",
             "version": "6.x-dev",
             "dist": {
@@ -2650,17 +2683,17 @@
         },
         {
             "name": "drupal/commerce_paypal",
-            "version": "1.1.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/commerce_paypal.git",
-                "reference": "8.x-1.1"
+                "reference": "8.x-1.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/commerce_paypal-8.x-1.1.zip",
-                "reference": "8.x-1.1",
-                "shasum": "f0b2471b0b3374c9f08037c9ba4875582f5c2030"
+                "url": "https://ftp.drupal.org/files/projects/commerce_paypal-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "486b0a9e0beb90b765d30c984397cf514f982ae3"
             },
             "require": {
                 "drupal/commerce": "^2.19 || ^3",
@@ -2671,8 +2704,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.1",
-                    "datestamp": "1665433276",
+                    "version": "8.x-1.3",
+                    "datestamp": "1668697541",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3444,28 +3477,28 @@
         },
         {
             "name": "drupal/csp",
-            "version": "1.16.0",
+            "version": "1.17.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/csp.git",
-                "reference": "8.x-1.16"
+                "reference": "8.x-1.17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/csp-8.x-1.16.zip",
-                "reference": "8.x-1.16",
-                "shasum": "0d6568ff2b176497ff97a440bfae6b7135ad2d6b"
+                "url": "https://ftp.drupal.org/files/projects/csp-8.x-1.17.zip",
+                "reference": "8.x-1.17",
+                "shasum": "d7d9d330aa501b6b8f622de65ce93078bf5695aa"
             },
             "require": {
-                "drupal/core": "^8.5 || ^9.0",
+                "drupal/core": "^9.3 || ^10",
                 "ext-json": "*",
                 "php": ">=7.2"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.16",
-                    "datestamp": "1641415148",
+                    "version": "8.x-1.17",
+                    "datestamp": "1669172274",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3494,17 +3527,17 @@
         },
         {
             "name": "drupal/ctools",
-            "version": "4.0.1",
+            "version": "4.0.3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/ctools.git",
-                "reference": "4.0.1"
+                "reference": "4.0.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ctools-4.0.1.zip",
-                "reference": "4.0.1",
-                "shasum": "ac2373c13efd7d95da7230bd5a6627f16a6a5b6e"
+                "url": "https://ftp.drupal.org/files/projects/ctools-4.0.3.zip",
+                "reference": "4.0.3",
+                "shasum": "4f389b14bd2120069386c2f28f8c4cd49bd2ebfc"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10"
@@ -3512,15 +3545,15 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "4.0.1",
-                    "datestamp": "1660252593",
+                    "version": "4.0.3",
+                    "datestamp": "1668631947",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "branch-alias": {
-                    "dev-4.x": "4.x-dev"
+                    "dev-8.x-3.x": "3.x-dev"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3554,9 +3587,8 @@
                     "role": "Maintainer"
                 },
                 {
-                    "name": "Joël (joelpittet)",
-                    "homepage": "https://www.drupal.org/u/joelpittet",
-                    "role": "Maintainer"
+                    "name": "joelpittet",
+                    "homepage": "https://www.drupal.org/user/160302"
                 },
                 {
                     "name": "merlinofchaos",
@@ -5633,15 +5665,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neurocracy/drupal-omnipedia-site-theme.git",
-                "reference": "e3e3639ee5c68b03b53447f20ea1fcf5f88fba34"
+                "reference": "e881138678ad6da1b29b769f721f20223d6316b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-site-theme/zipball/e3e3639ee5c68b03b53447f20ea1fcf5f88fba34",
-                "reference": "e3e3639ee5c68b03b53447f20ea1fcf5f88fba34",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-site-theme/zipball/e881138678ad6da1b29b769f721f20223d6316b7",
+                "reference": "e881138678ad6da1b29b769f721f20223d6316b7",
                 "shasum": ""
             },
             "require": {
+                "drupal/ambientimpact_base": "5.x-dev@dev",
                 "php": "^8",
                 "symfony/css-selector": "^4.4",
                 "symfony/dom-crawler": "^4.4"
@@ -5663,7 +5696,7 @@
                 "source": "https://github.com/neurocracy/drupal-omnipedia-site-theme/tree/4.x",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-site-theme/issues"
             },
-            "time": "2022-11-14T13:31:47+00:00"
+            "time": "2022-11-23T06:53:47+00:00"
         },
         {
             "name": "drupal/omnipedia_user",
@@ -6647,6 +6680,10 @@
                 {
                     "name": "suzymasri",
                     "homepage": "https://www.drupal.org/user/2428842"
+                },
+                {
+                    "name": "VladimirAus",
+                    "homepage": "https://www.drupal.org/user/673120"
                 }
             ],
             "description": "Limit simultaneous user sessions.",
@@ -18354,6 +18391,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/ambientimpact_base": 20,
         "drupal/ambientimpact_core": 20,
         "drupal/ambientimpact_icon": 20,
         "drupal/ambientimpact_markdown": 20,
