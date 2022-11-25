@@ -123,6 +123,7 @@
     "drupal/gin": "^3.0@beta",
     "drupal/gin_toolbar": "^1.0@beta",
     "drupal/honeypot": "^2.0",
+    "drupal/image_style_warmer": "^1.2@RC",
     "drupal/key": "^1.14",
     "drupal/login_destination": "^2.0",
     "drupal/login_security": "^2.0",
