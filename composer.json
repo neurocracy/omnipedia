@@ -205,7 +205,7 @@
         "Missing primary key in table `honeypot_user` [#2943526]: https://www.drupal.org/project/honeypot/issues/2943526#comment-12712602": "patches/drupal/honeypot/honeypot-fix_missing_primary_key-8.x-2943526-6.patch"
       },
       "drupal/image_style_warmer": {
-        "Support webp images (edited) [#3319397]: https://www.drupal.org/project/image_style_warmer/issues/3319397#comment-14775157": "patches/drupal/image_style_warmer/webp-module-support-3319397-3.patch"
+        "Support webp images [#3319397]: https://www.drupal.org/project/image_style_warmer/issues/3319397#comment-14802527": "patches/drupal/image_style_warmer/webp-module-support-3319397-5.patch"
       },
       "drupal/rules": {
         "Support upcasting entity IDs to full entity contexts: https://www.drupal.org/project/rules/issues/2800749#comment-14332836": "patches/drupal/rules/2800749-97.upcast.patch"
