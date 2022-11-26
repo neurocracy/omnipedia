@@ -64,5 +64,6 @@ package-lock.json
 # info or other sensitive data, but includes them from external files or
 # environment variables.
 !/drupal/sites/default/settings.php
+
 # Unignore our Monolog services files.
 !/drupal/sites/default/monolog.services.yml
