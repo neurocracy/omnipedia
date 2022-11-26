@@ -166,7 +166,9 @@ $settings['file_assets_path'] = 'assets';
  * See https://www.drupal.org/documentation/modules/file for more information
  * about securing private files.
  */
-$settings['file_private_path'] = $app_root . '/../drupal_private_files';
+$settings['file_private_path'] = \realpath(
+  $app_root . '/../drupal_private_files'
+);
 
 /**
  * Enable S3 File System public/private if DigitalOcean Spaces env var found.
