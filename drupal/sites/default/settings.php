@@ -141,12 +141,7 @@ $settings['update_free_access'] = FALSE;
  * must exist and be writable by Drupal. This directory must be relative to
  * the Drupal installation directory and be accessible over the web.
  */
-if (\getenv('SPACES_ACCESS') !== false) {
-  $settings['s3fs.use_s3_for_public'] = true;
-
-} else {
-  $settings['file_public_path'] = 'sites/default/files';
-}
+$settings['file_public_path'] = 'sites/default/files';
 
 /**
  * Optimized assets path:
@@ -171,11 +166,18 @@ $settings['file_assets_path'] = 'assets';
  * See https://www.drupal.org/documentation/modules/file for more information
  * about securing private files.
  */
-if (\getenv('SPACES_ACCESS') !== false) {
-  $settings['s3fs.use_s3_for_private'] = true;
+$settings['file_private_path'] = $app_root . '/../drupal_private_files';
 
-} else {
-  $settings['file_private_path'] = $app_root . '/../drupal_private_files';
+/**
+ * Enable S3 File System public/private if DigitalOcean Spaces env var found.
+ *
+ * The public and private file paths should still be set above regardless so
+ * Drupal won't complain. The S3 module will still override them when the below
+ * are active.
+ */
+if (\getenv('SPACES_ACCESS') !== false) {
+  $settings['s3fs.use_s3_for_public']   = true;
+  $settings['s3fs.use_s3_for_private']  = true;
 }
 
 /**
