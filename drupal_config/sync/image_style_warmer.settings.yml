@@ -1,4 +1,17 @@
-initial_image_styles: {  }
+initial_image_styles:
+  content_image_large: content_image_large
+  content_image_small: content_image_small
+  large: large
+  max_1300x1300: max_1300x1300
+  max_2600x2600: max_2600x2600
+  max_325x325: max_325x325
+  max_650x650: max_650x650
+  media_library: media_library
+  media_library_square_thumbnail_220: media_library_square_thumbnail_220
+  medium: medium
+  omnipedia_embedded_group_1x: omnipedia_embedded_group_1x
+  omnipedia_embedded_group_2x: omnipedia_embedded_group_2x
+  thumbnail: thumbnail
 queue_image_styles:
   content_image_large: content_image_large
   content_image_small: content_image_small
