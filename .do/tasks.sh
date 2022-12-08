@@ -7,6 +7,20 @@
 # @todo Implement some way to run cron on a more predictable schedule, possibly
 #   via parallel execution?
 
+# Rebuild asset libraries as a temporary workaround for local aggregation.
+#
+# Since App Platform wipes the filesystem on every deploy, locally saved
+# aggregated assets get wiped as well, and neither Drupal nor AdvAgg clue in
+# that the files they'd previously aggregated no longer exist, which results in
+# a 404. This is a temporary workaround to invalidate all the aggregated assets
+# and cause them to be rebuilt so they exist in the new filesystem after a
+# deploy.
+#
+# @todo Implement backing up aggregated assets to DigitalOcean Spaces when they
+#   get created and attempt to pull them in after a deploy, only rebuilding
+#   assets if any of them are not found.
+drush rebuilder asset
+
 while true; do
 
   echo "=> Running cron"
