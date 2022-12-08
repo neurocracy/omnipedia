@@ -47,6 +47,10 @@ enforce:
         - 'https://cdn.omnipedia.app'
         - 'https://www.paypalobjects.com'
         - 'https://t.paypal.com/'
+    media-src:
+      base: self
+      sources:
+        - 'https://cdn.omnipedia.app'
     object-src:
       base: none
     script-src:
