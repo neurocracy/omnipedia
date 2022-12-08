@@ -7,4 +7,4 @@ yarn add \
   "drupal-omnipedia-media@workspace:^4" \
   "drupal-omnipedia-site-theme@workspace:^4"
 
-yarn build:production
+yarn build:deploy

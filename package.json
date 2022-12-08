@@ -5,7 +5,8 @@
   "repository": "gitlab:neurocracy/omnipedia/drupal",
   "packageManager": "yarn@3.2.4",
   "scripts": {
-    "build:production": "cross-env NODE_ENV=production yarn build"
+    "build:production": "cross-env NODE_ENV=production yarn build",
+    "build:deploy": "cross-env NODE_ENV=production CI=true yarn build"
   },
   "workspaces": [
     "drupal/modules/ambientimpact",
