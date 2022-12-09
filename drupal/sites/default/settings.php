@@ -130,6 +130,16 @@ $settings['update_free_access'] = FALSE;
 $settings['file_public_path'] = 'sites/default/files';
 
 /**
+ * Optimized assets path:
+ *
+ * A local file system path where optimized assets will be stored. This
+ * directory must exist and be writable by Drupal. This directory must be
+ * relative to the Drupal installation directory and be accessible over the
+ * web.
+ */
+$settings['file_assets_path'] = 'assets';
+
+/**
  * Private file path:
  *
  * A local file system path where private files will be stored. This directory

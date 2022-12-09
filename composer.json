@@ -191,11 +191,17 @@
   },
   "extra": {
     "enable-patching": true,
-    "composer-exit-on-patch-failure": true,
+    "composer-exit-on-patch-failure": false,
     "patchLevel": {
       "drupal/core": "-p2"
     },
     "patches": {
+      "drupal/advagg": {
+        "Support optimized assets path configurable [#3030974]: https://www.drupal.org/project/advagg/issues/3030974#comment-14457710": "patches/drupal/advagg/configurable-asset-paths-3030974-6.patch"
+      },
+      "drupal/core": {
+        "Make css/js optimized assets path configurable [#3027639] (NOTE: patch will fail on non-existent file in dist that exists in Drupal.org Git; this is expected and still works): https://www.drupal.org/project/drupal/issues/3027639#comment-14461882": "patches/drupal/core/configurable-asset-paths-3027639-49.patch"
+      },
       "drupal/development_environment": {
         "Duplicate key in menu links YAML file [#3218169]: https://www.drupal.org/project/development_environment/issues/3218169": "patches/drupal/development_environment/duplicate-key-3218169-2.patch"
       },
