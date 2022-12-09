@@ -149,7 +149,7 @@
     "drupal/remove_http_headers": "^1.0",
     "drupal/rules": "^3.0@alpha",
     "drupal/seckit": "^2.0",
-    "drupal/security_review": "^1.0@alpha",
+    "drupal/security_review": "^2.0",
     "drupal/session_limit": "^2.0@beta",
     "drupal/sodium": "^2.1",
     "drupal/subpathauto": "^1.2",
