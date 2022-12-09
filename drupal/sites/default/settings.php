@@ -142,7 +142,9 @@ $settings['file_public_path'] = 'sites/default/files';
  * See https://www.drupal.org/documentation/modules/file for more information
  * about securing private files.
  */
-$settings['file_private_path'] = $app_root . '/../drupal_private_files';
+$settings['file_private_path'] = \realpath(
+  $app_root . '/../drupal_private_files'
+);
 
 /**
  * Load services definition file.
