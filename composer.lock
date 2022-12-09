@@ -3706,30 +3706,35 @@
         },
         {
             "name": "drupal/encrypt",
-            "version": "3.0.0",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/encrypt.git",
-                "reference": "8.x-3.0"
+                "reference": "8.x-3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/encrypt-8.x-3.0.zip",
-                "reference": "8.x-3.0",
-                "shasum": "6916583be6d08c9684582358d7b7722fdeea8487"
+                "url": "https://ftp.drupal.org/files/projects/encrypt-8.x-3.1.zip",
+                "reference": "8.x-3.1",
+                "shasum": "357ca7fcf9879af66b5d0c5593da080f19664f17"
             },
             "require": {
-                "drupal/core": "^8 || ^9",
+                "drupal/core": "^8 || ^9 || ^10",
                 "drupal/key": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.0",
-                    "datestamp": "1602354427",
+                    "version": "8.x-3.1",
+                    "datestamp": "1669655248",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9 || ^10 || ^11"
                     }
                 }
             },
@@ -6740,17 +6745,17 @@
         },
         {
             "name": "drupal/tfa",
-            "version": "1.0.0-rc1",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/tfa.git",
-                "reference": "8.x-1.0-rc1"
+                "reference": "8.x-1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/tfa-8.x-1.0-rc1.zip",
-                "reference": "8.x-1.0-rc1",
-                "shasum": "458ef973f479e0af7f0184ebf69873236253a6ec"
+                "url": "https://ftp.drupal.org/files/projects/tfa-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "5f13121e04ba25cf07be27261269ecf1a1f07a89"
             },
             "require": {
                 "chillerlan/php-qrcode": "^1.0.9 || ^2.0 || ^3.2 || ^4.0",
@@ -6767,11 +6772,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0-rc1",
-                    "datestamp": "1667222801",
+                    "version": "8.x-1.0",
+                    "datestamp": "1669940340",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "RC releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "drush": {
