@@ -206,23 +206,3 @@ index 9d28c4b829..c76aaf4018 100644
      }
  
      $form['bandwidth_optimization'] = [
-diff --git a/sites/default/default.settings.php b/sites/default/default.settings.php
-index 72be7750b9..6acf3718f2 100644
---- a/sites/default/default.settings.php
-+++ b/sites/default/default.settings.php
-@@ -490,6 +490,15 @@
-  */
- # $settings['file_public_path'] = 'sites/default/files';
- 
-+/**
-+ * Optimized assets path:
-+ *
-+ * A local file system path where optimized assets will be stored. This directory
-+ * must exist and be writable by Drupal. This directory must be relative to
-+ * the Drupal installation directory and be accessible over the web.
-+ */
-+# $settings['file_assets_path'] = 'public://';
-+
- /**
-  * Private file path:
-  *
