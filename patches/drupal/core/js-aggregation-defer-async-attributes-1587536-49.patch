@@ -1,0 +1,41 @@
+diff --git a/core/lib/Drupal/Core/Asset/AssetResolver.php b/core/lib/Drupal/Core/Asset/AssetResolver.php
+index c52ee7ff..7d609f40 100644
+--- a/core/lib/Drupal/Core/Asset/AssetResolver.php
++++ b/core/lib/Drupal/Core/Asset/AssetResolver.php
+@@ -258,9 +258,8 @@ public function getJsAssets(AttachedAssetsInterface $assets, $optimize) {
+             // marked to be loaded from the header (see above).
+             $options['scope'] = in_array($library, $header_js_libraries) ? 'header' : 'footer';
+ 
+-            // Preprocess can only be set if caching is enabled and no
+-            // attributes are set.
+-            $options['preprocess'] = $options['cache'] && empty($options['attributes']) ? $options['preprocess'] : FALSE;
++            // Preprocess can only be set if caching is enabled.
++            $options['preprocess'] = $options['cache'] ? $options['preprocess'] : FALSE;
+ 
+             // Always add a tiny value to the weight, to conserve the insertion
+             // order.
+diff --git a/core/lib/Drupal/Core/Asset/JsCollectionGrouper.php b/core/lib/Drupal/Core/Asset/JsCollectionGrouper.php
+index 9d29c40f..5dc17d1f 100644
+--- a/core/lib/Drupal/Core/Asset/JsCollectionGrouper.php
++++ b/core/lib/Drupal/Core/Asset/JsCollectionGrouper.php
+@@ -39,6 +39,20 @@ public function group(array $js_assets) {
+           // Help ensure maximum reuse of aggregate files by only grouping
+           // together items that share the same 'group' value.
+           $group_keys = $item['preprocess'] ? [$item['type'], $item['group'], $item['browsers']] : FALSE;
++
++          // Enables aggregation for defer and async attributes only.
++          // @See: https://www.drupal.org/project/drupal/issues/1664602#comment-6683702
++          if ($group_keys && !empty($item['attributes'])) {
++            foreach (array_keys($item['attributes']) as $attribute_key) {
++              if (in_array($attribute_key, ['defer', 'async'])) {
++                $group_keys[] = $attribute_key;
++              }
++              else {
++                $group_keys = FALSE;
++              }
++            }
++          }
++
+           break;
+ 
+         case 'external':
