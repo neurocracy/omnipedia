@@ -18,7 +18,7 @@ module:
   block: 0
   block_content: 0
   breakpoint: 0
-  ckeditor: 0
+  ckeditor5: 0
   commerce: 0
   commerce_cart: 0
   commerce_cart_redirection: 0
@@ -116,7 +116,6 @@ module:
   preprocess_event_dispatcher: 0
   profile: 0
   queue_ui: 0
-  rdf: 0
   rebuilder: 0
   rebuilder_ui: 0
   redirect: 0
