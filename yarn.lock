@@ -2413,7 +2413,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ambientimpact-drupal-modules@workspace:^6, ambientimpact-drupal-modules@workspace:drupal/modules/ambientimpact":
+"ambientimpact-drupal-modules@workspace:^6 || ^7, ambientimpact-drupal-modules@workspace:^7, ambientimpact-drupal-modules@workspace:drupal/modules/ambientimpact":
   version: 0.0.0-use.local
   resolution: "ambientimpact-drupal-modules@workspace:drupal/modules/ambientimpact"
   dependencies:
@@ -3614,7 +3614,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "drupal-ambientimpact-base@workspace:drupal/themes/custom/ambientimpact_base"
   dependencies:
-    ambientimpact-drupal-modules: "workspace:^6"
+    ambientimpact-drupal-modules: "workspace:^6 || ^7"
     sassy-cast: "github:Ambient-Impact/SassyCast#adbbd499bb36eb0c7015ae6f23c00e3a78dc54b3"
   languageName: unknown
   linkType: soft
@@ -3626,7 +3626,7 @@ __metadata:
     "@babel/core": ^7.19.6
     "@babel/preset-env": ^7.19.4
     "@symfony/webpack-encore": ^4.1.1
-    ambientimpact-drupal-modules: "workspace:^6"
+    ambientimpact-drupal-modules: "workspace:^6 || ^7"
     autoprefixer: ^10.2.5
     css-loader: ^6.7.1
     glob: ^8.0.3
@@ -3650,7 +3650,7 @@ __metadata:
     "@babel/core": ^7.20.2
     "@babel/preset-env": ^7.20.2
     "@symfony/webpack-encore": ^4.1.1
-    ambientimpact-drupal-modules: "workspace:^6"
+    ambientimpact-drupal-modules: "workspace:^6 || ^7"
     autoprefixer: ^10.2.5
     css-loader: ^6.7.1
     glob: ^8.0.3
@@ -3672,7 +3672,7 @@ __metadata:
     "@babel/core": ^7.20.2
     "@babel/preset-env": ^7.20.2
     "@symfony/webpack-encore": ^4.1.1
-    ambientimpact-drupal-modules: "workspace:^6"
+    ambientimpact-drupal-modules: "workspace:^6 || ^7"
     autoprefixer: ^10.2.5
     css-loader: ^6.7.1
     glob: ^8.0.3
@@ -3694,7 +3694,7 @@ __metadata:
     "@babel/core": ^7.20.2
     "@babel/preset-env": ^7.20.2
     "@symfony/webpack-encore": ^4.1.1
-    ambientimpact-drupal-modules: "workspace:^6"
+    ambientimpact-drupal-modules: "workspace:^6 || ^7"
     autoprefixer: ^10.2.5
     css-loader: ^6.7.1
     glob: ^8.0.3
@@ -3717,7 +3717,7 @@ __metadata:
     "@babel/preset-env": ^7.20.2
     "@fontsource/exo-2": ^4.5.10
     "@symfony/webpack-encore": ^4.1.1
-    ambientimpact-drupal-modules: "workspace:^6"
+    ambientimpact-drupal-modules: "workspace:^6 || ^7"
     autoprefixer: ^10.2.6
     css-loader: ^6.7.1
     drupal-ambientimpact-base: "workspace:^5"
@@ -5722,7 +5722,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "omnipedia-drupal@workspace:."
   dependencies:
-    ambientimpact-drupal-modules: "workspace:^6"
+    ambientimpact-drupal-modules: "workspace:^7"
     cross-env: ^7.0.3
     drupal-omnipedia-block: "workspace:^4"
     drupal-omnipedia-changes: "workspace:^4"
