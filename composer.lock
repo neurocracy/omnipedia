@@ -169,16 +169,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.244.1",
+            "version": "3.253.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "b246cfd4a1ba91dbfc0d411c581edf5dba1be401"
+                "reference": "da3b60b090b2070bd452d8b87737ea1e00d8002f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/b246cfd4a1ba91dbfc0d411c581edf5dba1be401",
-                "reference": "b246cfd4a1ba91dbfc0d411c581edf5dba1be401",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/da3b60b090b2070bd452d8b87737ea1e00d8002f",
+                "reference": "da3b60b090b2070bd452d8b87737ea1e00d8002f",
                 "shasum": ""
             },
             "require": {
@@ -257,9 +257,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.244.1"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.253.4"
             },
-            "time": "2022-11-15T21:56:45+00:00"
+            "time": "2022-12-16T19:23:03+00:00"
         },
         {
             "name": "caxy/php-htmldiff",
@@ -6427,21 +6427,21 @@
         },
         {
             "name": "drupal/s3fs",
-            "version": "3.0.0",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/s3fs.git",
-                "reference": "8.x-3.0"
+                "reference": "8.x-3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/s3fs-8.x-3.0.zip",
-                "reference": "8.x-3.0",
-                "shasum": "e9618b24a1f8a7be1a7631636d8d1f5f617b7f1e"
+                "url": "https://ftp.drupal.org/files/projects/s3fs-8.x-3.1.zip",
+                "reference": "8.x-3.1",
+                "shasum": "8de42701f4ce25c2c16c9efe28e605a712f1be9e"
             },
             "require": {
                 "aws/aws-sdk-php": "^3.18",
-                "drupal/core": "^8.8 || ^9"
+                "drupal/core": "^8.8 || ^9 || ~10.0.0"
             },
             "require-dev": {
                 "drush/drush": "^10 || ^11"
@@ -6452,8 +6452,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.0",
-                    "datestamp": "1668140739",
+                    "version": "8.x-3.1",
+                    "datestamp": "1670992386",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
