@@ -67,6 +67,28 @@ if (
 }
 
 /**
+ * Set the MySQL transaction isolation level as recommended by Drupal.
+ *
+ * @see https://www.drupal.org/docs/system-requirements/setting-the-mysql-transaction-isolation-level
+ */
+foreach ($databases as $databaseKey => &$database) {
+
+  foreach ($databases[$databaseKey] as $targetKey => &$target) {
+
+    if ($target['driver'] !== 'mysql') {
+      continue;
+    }
+
+    $target = \array_merge_recursive($target, ['init_commands' => [
+      'isolation_level' =>
+        'SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED',
+    ]]);
+
+  }
+
+}
+
+/**
  * Location of the site configuration files.
  *
  * The $settings['config_sync_directory'] specifies the location of file system
