@@ -103,7 +103,6 @@
     "composer/installers": "^2.0",
     "cweagans/composer-patches": "^1.7",
     "drupal/advagg": "^5.0",
-    "drupal/ambientimpact_base": "5.x-dev@dev",
     "drupal/ambientimpact_core": "7.x-dev@dev",
     "drupal/ambientimpact_icon": "7.x-dev@dev",
     "drupal/ambientimpact_markdown": "7.x-dev@dev",
