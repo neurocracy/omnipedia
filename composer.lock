@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3613d818103b592a8e1c4d6592d8cc8e",
+    "content-hash": "184af577b33a5032a85b19c0e9e7b18d",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -17914,7 +17914,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/ambientimpact_base": 20,
         "drupal/ambientimpact_core": 20,
         "drupal/ambientimpact_icon": 20,
         "drupal/ambientimpact_markdown": 20,
