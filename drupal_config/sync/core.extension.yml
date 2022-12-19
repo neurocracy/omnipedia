@@ -129,6 +129,7 @@ module:
   security_review: 0
   session_limit: 0
   shortcut: 0
+  smtp: 0
   sodium: 0
   state_machine: 0
   subpathauto: 0

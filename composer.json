@@ -154,6 +154,7 @@
     "drupal/seckit": "^2.0",
     "drupal/security_review": "^2.0",
     "drupal/session_limit": "^2.0@beta",
+    "drupal/smtp": "^1.2",
     "drupal/sodium": "^2.1",
     "drupal/subpathauto": "^1.2",
     "drupal/swiftmailer": "^2.0",
