@@ -14,3 +14,5 @@ yarn add \
   "drupal-omnipedia-site-theme@workspace:^4"
 
 yarn build:deploy
+
+source secure-filesystem.sh
