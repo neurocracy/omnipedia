@@ -18,3 +18,8 @@ for d in /workspace/drupal/*
 do
   find $d -execdir chmod u-w,g-w,o= '{}' \; -print
 done
+
+# Restore write permissions to the default public files directory so that
+# /admin/reports/status doesn't complain, even though we're the S3 File System
+# module is configured to take over the public:// stream wrapper.
+chmod u+w /workspace/drupal/sites/default/files
