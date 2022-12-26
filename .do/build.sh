@@ -15,4 +15,5 @@ yarn add \
 
 yarn build:deploy
 
-source secure-filesystem.sh
+# @see https://stackoverflow.com/questions/6659689/referring-to-a-file-relative-to-executing-script#6659698
+source "${BASH_SOURCE%/*}/secure-filesystem.sh"
