@@ -4,6 +4,9 @@
 #
 # @see https://www.drupal.org/docs/security-in-drupal/securing-file-permissions-and-ownership
 #   Loosely based on this, adapted for DigitalOcean's App Platform.
+#
+# @see https://www.gnu.org/software/findutils/manual/html_mono/find.html
+#   GNU find documentation.
 
 # Set the version controlled default public files .htaccess to read-only so
 # Security Review won't complain, even though that directory isn't used since we
