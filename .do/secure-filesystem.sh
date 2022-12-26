@@ -11,7 +11,7 @@
 chmod u-w /workspace/drupal/sites/default/files/.htaccess
 
 echo "=> Removing write permissions:";
-for d in /workspace/drupal
+for d in /workspace/drupal/*
 do
   find $d -exec echo '{}' \; -execdir chmod u-w,g-w,o= '{}' \;
 done
