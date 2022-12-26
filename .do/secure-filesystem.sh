@@ -15,10 +15,3 @@ for d in /workspace/drupal
 do
   find $d -exec echo '{}' \; -execdir chmod u-w,g-w,o= '{}' \;
 done
-
-
-echo "=> Restoring owner write permissions for:";
-for d in /workspace/drupal/assets
-do
-  find $d -type d -exec echo '{}' \; -execdir chmod u+w '{}' \;
-done
