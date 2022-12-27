@@ -215,6 +215,9 @@
       "drupal/image_style_warmer": {
         "Support webp images [#3319397]: https://www.drupal.org/project/image_style_warmer/issues/3319397#comment-14802527": "patches/drupal/image_style_warmer/webp-module-support-3319397-5.patch"
       },
+      "drupal/permissions_by_term": {
+        "Remove the internal page cache uninstalled warning": "patches/drupal/permissions_by_term/internal-page-cache-warning-remove.patch"
+      },
       "drupal/rules": {
         "Support upcasting entity IDs to full entity contexts: https://www.drupal.org/project/rules/issues/2800749#comment-14332836": "patches/drupal/rules/2800749-97.upcast.patch"
       },
