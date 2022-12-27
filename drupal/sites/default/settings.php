@@ -229,7 +229,9 @@ if (\getenv('SIMPLETEST_BASE_URL') === false) {
  *
  * This attempts to load the 'DRUPAL_PRIMARY_HOST' and 'DRUPAL_OEMBED_HOST'
  * environment variables, if they exist, and parses and escapes them before
- * adding them to the trusted host configuration.
+ * adding them to the trusted host configuration. Note that this does not
+ * attempt to parse them so they must contain only the domain name without any
+ * scheme.
  *
  * @see https://www.drupal.org/docs/installing-drupal/trusted-host-settings
  *
@@ -247,16 +249,8 @@ foreach ([
     continue;
   }
 
-  $trustedHostParsed = \parse_url(
-    \getenv($envName), \PHP_URL_HOST
-  );
-
-  if (empty($trustedHostParsed)) {
-    continue;
-  }
-
   $settings['trusted_host_patterns'][] = '^' . \preg_quote(
-    $trustedHostParsed
+    \getenv($envName)
   ) . '$';
 
 }
