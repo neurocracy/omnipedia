@@ -227,26 +227,37 @@ if (\getenv('SIMPLETEST_BASE_URL') === false) {
 /**
  * Trusted host configuration.
  *
- * If a 'DRUPAL_TRUSTED_HOST' environment variable is found, this attempts to
- * parse it into a host string that has regular expression characters escaped,
- * which is then used as the first entry for the trusted hosts array.
+ * This attempts to load the 'DRUPAL_PRIMARY_HOST' and 'DRUPAL_OEMBED_HOST'
+ * environment variables, if they exist, and parses and escapes them before
+ * adding them to the trusted host configuration.
  *
  * @see https://www.drupal.org/docs/installing-drupal/trusted-host-settings
  *
  * @see default.settings.php
  *   Contains full documentation for this setting.
  */
-if (\getenv('DRUPAL_TRUSTED_HOST') !== false) {
+$settings['trusted_host_patterns'] = [];
+
+foreach ([
+  'DRUPAL_PRIMARY_HOST',
+  'DRUPAL_OEMBED_HOST',
+] as $envName) {
+
+  if (\getenv($envName) === false) {
+    continue;
+  }
 
   $trustedHostParsed = \parse_url(
-    \getenv('DRUPAL_TRUSTED_HOST'), \PHP_URL_HOST
+    \getenv($envName), \PHP_URL_HOST
   );
 
-  if (!empty($trustedHostParsed)) {
-    $settings['trusted_host_patterns'] = [
-      '^' . \preg_quote($trustedHostParsed) . '$',
-    ];
+  if (empty($trustedHostParsed)) {
+    continue;
   }
+
+  $settings['trusted_host_patterns'][] = '^' . \preg_quote(
+    $trustedHostParsed
+  ) . '$';
 
 }
 
