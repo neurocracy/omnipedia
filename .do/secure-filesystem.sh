@@ -20,6 +20,6 @@ do
 done
 
 # Restore write permissions to the default public files directory so that
-# /admin/reports/status doesn't complain, even though we're the S3 File System
-# module is configured to take over the public:// stream wrapper.
+# /admin/reports/status doesn't complain, even though the S3 File System module
+# is configured to take over the public:// stream wrapper.
 chmod u+w /workspace/drupal/sites/default/files
