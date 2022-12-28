@@ -143,6 +143,7 @@
     "drupal/omnipedia_user": "3.x-dev@dev",
     "drupal/password_policy": "^4.0",
     "drupal/pathauto": "^1.6",
+    "drupal/readonlymode": "^1.1",
     "drupal/rebuilder": "^1.0@RC",
     "drupal/redirect": "^1.6",
     "drupal/remove_http_headers": "^1.0",
@@ -210,6 +211,9 @@
       },
       "drupal/permissions_by_term": {
         "Permissions by Term complains about deactivated internal page cache when updating [#3254076]: https://www.drupal.org/project/permissions_by_term/issues/3254076#comment-14845306": "patches/drupal/permissions_by_term/3254076-internal-page-cache-warning-remove.patch"
+      },
+      "drupal/readonlymode": {
+        "Fatal error due to saved additional form IDs being strings and not arrays [#3115119]: https://www.drupal.org/project/readonlymode/issues/3115119": "patches/drupal/readonlymode/3115119-16-additional-forms-config-not-array.patch"
       },
       "drupal/rules": {
         "Support upcasting entity IDs to full entity contexts: https://www.drupal.org/project/rules/issues/2800749#comment-14332836": "patches/drupal/rules/2800749-97.upcast.patch"
