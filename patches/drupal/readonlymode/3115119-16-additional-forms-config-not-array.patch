@@ -1,0 +1,90 @@
+diff --git a/readonlymode.install b/readonlymode.install
+index b626bd777c9b2cce174e6ee869b6abaf6baa21f0..786ec2b802d166197c2eed16f8910a222e242548 100644
+--- a/readonlymode.install
++++ b/readonlymode.install
+@@ -27,3 +27,33 @@ function readonlymode_update_8001() {
+     'site_readonly_forms_viewonly' => 'forms.additional.view',
+   ]);
+ }
++
++/**
++ * Convert any existing additional form configuration from strings to arrays.
++ */
++function readonlymode_update_8002() {
++
++  /** @var \Drupal\Core\Config\Config */
++  $config = \Drupal::configFactory()->getEditable('readonlymode.settings');
++
++  foreach (['forms.additional.edit', 'forms.additional.view'] as $key) {
++
++    /** @var string|array */
++    $value = $config->get($key);
++
++    if (!\is_string($value)) {
++      continue;
++    }
++
++    $config->set($key, \preg_split('/\s+/m', $value));
++
++  }
++
++  $config->save();
++
++  // Delete the cached configuration in case updates were run via Drush with the
++  // '--no-cache-clear' flag so that the updated configuration gets used
++  // immediately.
++  \Drupal::cache('config')->delete('readonlymode.settings');
++
++}
+diff --git a/readonlymode.module b/readonlymode.module
+index e859239952223fe7dbd710998cb25ce9dfbb51cc..98dff0f9b97d4943e44682f1e7b588b965c681b8 100755
+--- a/readonlymode.module
++++ b/readonlymode.module
+@@ -80,7 +80,7 @@ function readonlymode_form_system_site_maintenance_mode_alter(&$form, FormStateI
+     '#description' => t("These forms are not restricted when in read only mode. Enter one form id per line. You may use the wildcard character '*' to use loose matches. For example: webform* will match all webforms. Note that the following forms will always be allowed: %allowed_forms.", [
+       '%allowed_forms' => empty($settings->get('forms.default.edit')) ? '' : implode(', ', $settings->get('forms.default.edit')),
+     ]),
+-    '#default_value' => $settings->get('forms.additional.edit'),
++    '#default_value' => \implode("\n", $settings->get('forms.additional.edit')),
+   ];
+   $form['read_only']['forms']['additional_view'] = [
+     '#type' => 'textarea',
+@@ -88,7 +88,7 @@ function readonlymode_form_system_site_maintenance_mode_alter(&$form, FormStateI
+     '#description' => t("These forms are allowed to be viewed but will not accept form submissions. Enter one form id per line. You may use the wildcard character '*' to use loose matches. For example: webform* will match all webforms. Note that the following forms will always be allowed: %allowed_forms.", [
+       '%allowed_forms' => empty($settings->get('forms.default.view')) ? '' : implode(', ', $settings->get('forms.default.view')),
+     ]),
+-    '#default_value' => $settings->get('forms.additional.view'),
++    '#default_value' => \implode("\n", $settings->get('forms.additional.view')),
+   ];
+   $form['#validate'][] = 'readonlymode_settings_form_validate';
+   $form['#submit'][] = 'readonlymode_settings_form_submit';
+@@ -117,6 +117,12 @@ function readonlymode_settings_form_validate(array &$form, FormStateInterface $f
+ function readonlymode_settings_form_submit(array &$form, FormStateInterface $form_state) {
+   $values = $form_state->getUserInput();
+ 
++  // Additional form ID fields need to be converted from newline-delimited to
++  // arrays before saving to configuration storage.
++  foreach (['additional_edit', 'additional_view'] as $key) {
++    $values[$key] = \preg_split('/\s+/m', $values[$key]);
++  }
++
+   \Drupal::configFactory()->getEditable('readonlymode.settings')
+     ->set('enabled', $values['enable_readonly'])
+     ->set('url', $values['url'])
+@@ -240,14 +246,13 @@ function _readonlymode_form_check(array &$form, $form_id, $submitted = TRUE) {
+  * Check for form_id in a given list.
+  *
+  * @param array $list
+- *   A string of form id's separated by newlines.
++ *   An array of form IDs.
+  *
+  * @return bool
+  *   TRUE when matched, FALSE otherwise.
+  */
+ function _readonlymode_form_list_check($form_id, array $list) {
+-  $l = preg_split('/(\r\n|\n|\r)/', $list);
+-  foreach ($l as $word) {
++  foreach ($list as $word) {
+     // Skip empty words.
+     if (empty($word)) {
+       continue;
