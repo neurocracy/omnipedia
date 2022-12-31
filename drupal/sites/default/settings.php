@@ -234,7 +234,17 @@ if (\getenv('SPACES_ACCESS') !== false) {
  * @see https://github.com/symfony/symfony/blob/6.2/src/Symfony/Component/HttpFoundation/Request.php#L1078
  */
 if (\getenv('DRUPAL_REVERSE_PROXY_ENABLED') !== false) {
+
   $settings['reverse_proxy'] = true;
+
+  // These are the only headers that the Symfony Request object supports out of
+  // the box that Cloudflare sends.
+  //
+  // @see https://developers.cloudflare.com/fundamentals/get-started/reference/http-request-headers/
+  $settings['reverse_proxy_trusted_headers'] =
+    \Symfony\Component\HttpFoundation\Request::HEADER_X_FORWARDED_FOR |
+    \Symfony\Component\HttpFoundation\Request::HEADER_X_FORWARDED_PROTO;
+
 }
 
 /**
