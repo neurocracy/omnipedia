@@ -1,3 +1,12 @@
+# If not currently HTTPS, force a redirect to HTTPS.
+#
+# @see https://cwiki.apache.org/confluence/display/httpd/RewriteSSL
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} !=on [NC]
+  RewriteRule ^ https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
+</IfModule>
+
 # Blocking of files that could be a security risk under certain circumstances,
 # in addition to the core .htaccess rules. This is primarily intended to prevent
 # access to core/install.php in the event that the database connection cannot be
