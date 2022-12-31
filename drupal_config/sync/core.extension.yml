@@ -141,6 +141,7 @@ module:
   token: 0
   token_filter: 0
   toolbar: 0
+  trusted_reverse_proxy: 0
   typed_data: 0
   update: 0
   user: 0
