@@ -160,6 +160,7 @@
     "drupal/swiftmailer": "^2.0",
     "drupal/tfa": "^1.0@alpha",
     "drupal/token_filter": "^1.2",
+    "drupal/trusted_reverse_proxy": "^1.0",
     "drupal/views_bulk_edit": "^2.5",
     "drupal/views_bulk_operations": "^4.1",
     "drupal/webp": "^1.0",

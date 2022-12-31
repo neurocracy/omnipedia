@@ -205,6 +205,39 @@ if (\getenv('SPACES_ACCESS') !== false) {
 }
 
 /**
+ * Reverse Proxy Configuration.
+ *
+ * If the environment variable is defined, we enable the reverse proxy
+ * functionality in Drupal core. This setting also instructs the Trusted
+ * Reverse Proxy module to autofill the required IP addresses that Drupal core
+ * requires in $settings['reverse_proxy_addresses'] for this to be enabled.
+ *
+ * This is necessary to enable secure session cookies on DigitalOcean App
+ * Platform. Why is this? In the web service, $_SERVER['REQUEST_SCHEME'] is
+ * 'http' and not 'https' in the app, very likely because the connections
+ * within the app itself are not encrypted between services running inside the
+ * app, but only get encrypted (and thus HTTPS) once they leave the app.
+ * Drupal and Symfony will only send an HTTP (non-secure) session cookie and
+ * not a secure session cookie, as they don't know the connection between the
+ * client and Cloudflare or even between the DigitalOcean data centre and
+ * Cloudflare are HTTPS.
+ *
+ * To have Symfony accept the "X-Forwarded-Proto" header which contains
+ * 'https' from Cloudflare, we need to also provide the IP addresses for the
+ * trusted reverse proxies. This is where the Trusted Reverse Proxy module
+ * comes in to automate the process.
+ *
+ * @see https://www.drupal.org/project/trusted_reverse_proxy
+ *
+ * @see https://drupal.stackexchange.com/questions/269640/where-to-use-settrustedproxies-or-how-to-set-new-trusted-proxies
+ *
+ * @see https://github.com/symfony/symfony/blob/6.2/src/Symfony/Component/HttpFoundation/Request.php#L1078
+ */
+if (\getenv('DRUPAL_REVERSE_PROXY_ENABLED') !== false) {
+  $settings['reverse_proxy'] = true;
+}
+
+/**
  * Load services definition file.
  */
 $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
