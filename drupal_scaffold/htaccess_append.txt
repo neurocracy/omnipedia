@@ -15,6 +15,6 @@
 # @see https://drupal.stackexchange.com/questions/245903/how-do-i-set-up-cors
 #   Setting up CORS correctly in Drupal core requires care and specific values
 #   to function.
-<IfModule mod_headers.c>
-  Header set Access-Control-Allow-Origin "*"
-</IfModule>
+# <IfModule mod_headers.c>
+#   Header set Access-Control-Allow-Origin "*"
+# </IfModule>
