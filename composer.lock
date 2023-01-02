@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "04afa7bc1e5012d584730d4a72845e86",
+    "content-hash": "2d8fc8eeadadcc2f0eacd1dcca0b5a9e",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -3806,29 +3806,29 @@
         },
         {
             "name": "drupal/disable_link_rel",
-            "version": "1.0.0-beta2",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/disable_link_rel.git",
-                "reference": "8.x-1.0-beta2"
+                "reference": "2.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/disable_link_rel-8.x-1.0-beta2.zip",
-                "reference": "8.x-1.0-beta2",
-                "shasum": "8a7a11b04734e395398290289cd41cb5af7af921"
+                "url": "https://ftp.drupal.org/files/projects/disable_link_rel-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "96d05035e10e38f462742fdafad753302314ce70"
             },
             "require": {
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^8 || ^9 || ^10"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0-beta2",
-                    "datestamp": "1596365547",
+                    "version": "2.0.0",
+                    "datestamp": "1672555325",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
