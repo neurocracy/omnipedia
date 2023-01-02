@@ -248,9 +248,15 @@ if (\getenv('DRUPAL_REVERSE_PROXY_ENABLED') !== false) {
 }
 
 /**
- * Load services definition file.
+ * Services definition file names.
+ *
+ * These have the site path prepended lower down into the full path expected by
+ * Drupal.
  */
-$settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
+$servicesYamls = [
+  'default.services.yml',
+  'services.security.yml',
+];
 
 // Only include the Monolog services file if not running tests, by checking if
 // one of the test environment variables is set. This is necessary as Symfony
@@ -259,12 +265,14 @@ $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
 // core's phpunit.xml.dist will be used so it isn't easy to set a custom
 // environment variable that way.
 //
-// @see https://www.php.net/manual/en/function.getenv.php
-//
 // @todo What if Monolog services are needed by a test?
 if (\getenv('SIMPLETEST_BASE_URL') === false) {
-// if (!\getenv('SETTINGS_PHP_EXCLUDE_MONOLOG')) {
-  $settings['container_yamls'][] = $app_root . '/' . $site_path . '/monolog.services.yml';
+  $servicesYamls[] = 'services.monolog.yml';
+}
+
+foreach ($servicesYamls as $fileName) {
+  $settings['container_yamls'][] =
+    $app_root . '/' . $site_path . '/' . $fileName;
 }
 
 /**
