@@ -185,7 +185,7 @@ $settings['file_private_path'] = \realpath(
  * Drupal.
  */
 $servicesYamls = [
-  'services.yml',
+  'default.services.yml',
   'services.security.yml',
 ];
 
