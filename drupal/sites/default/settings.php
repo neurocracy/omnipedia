@@ -196,11 +196,8 @@ $servicesYamls = [
 // core's phpunit.xml.dist will be used so it isn't easy to set a custom
 // environment variable that way.
 //
-// @see https://www.php.net/manual/en/function.getenv.php
-//
 // @todo What if Monolog services are needed by a test?
 if (\getenv('SIMPLETEST_BASE_URL') === false) {
-// if (!\getenv('SETTINGS_PHP_EXCLUDE_MONOLOG')) {
   $servicesYamls[] = 'services.monolog.yml';
 }
 
