@@ -206,7 +206,8 @@
       },
       "drupal/core": {
         "JS aggregation should account for \"defer\" and \"async\" attributes [#1587536]: https://www.drupal.org/project/drupal/issues/1587536#comment-13821084": "patches/drupal/core/js-aggregation-defer-async-attributes-1587536-49.patch",
-        "Make css/js optimized assets path configurable [#3027639] (NOTE: edited to remove failing block on non-existent file in dist that exists in Drupal.org Git): https://www.drupal.org/project/drupal/issues/3027639#comment-14461882": "patches/drupal/core/configurable-asset-paths-3027639-49.patch"
+        "Make css/js optimized assets path configurable [#3027639] (NOTE: edited to remove failing block on non-existent file in dist that exists in Drupal.org Git): https://www.drupal.org/project/drupal/issues/3027639#comment-14461882": "patches/drupal/core/configurable-asset-paths-3027639-49.patch",
+        "Allow configurable cookie prefix [#1361742] (NOTE: edited to remove failing block on non-existent file in dist that exists in Drupal.org Git): https://www.drupal.org/project/drupal/issues/1361742": "patches/drupal/core/1361742-allow-configurable-cookie-prefix.patch"
       },
       "drupal/development_environment": {
         "Duplicate key in menu links YAML file [#3218169]: https://www.drupal.org/project/development_environment/issues/3218169": "patches/drupal/development_environment/duplicate-key-3218169-2.patch"

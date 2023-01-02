@@ -248,6 +248,22 @@ if (\getenv('DRUPAL_REVERSE_PROXY_ENABLED') !== false) {
 }
 
 /**
+ * Drupal session cookie name prefix.
+ *
+ * This uses the '__Host-' prefix for security hardening.
+ *
+ * @see https://www.drupal.org/project/drupal/issues/1361742
+ *   Requires a patch from this merge request at time of writing.
+ *
+ * @see https://scotthelme.co.uk/tough-cookies/#cookieprefixes
+ *   Excellent article on cookie security hardening.
+ *
+ * @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie#attributes
+ *   Description of '__Secure-' and '__Host-' semantics.
+ */
+$settings['session_cookie_prefix'] = '__Host-';
+
+/**
  * Services definition file names.
  *
  * These have the site path prepended lower down into the full path expected by
