@@ -300,6 +300,10 @@ foreach ($servicesYamls as $fileName) {
  * attempt to parse them so they must contain only the domain name without any
  * scheme.
  *
+ * Note that this is only enabled if not behind a trusted proxy, as it isn't of
+ * much use in that case and the Trusted Reverse Proxy module will list this as
+ * a warning.
+ *
  * @see https://www.drupal.org/docs/installing-drupal/trusted-host-settings
  *
  * @see default.settings.php
@@ -307,18 +311,22 @@ foreach ($servicesYamls as $fileName) {
  */
 $settings['trusted_host_patterns'] = [];
 
-foreach ([
-  'DRUPAL_PRIMARY_HOST',
-  'DRUPAL_OEMBED_HOST',
-] as $envName) {
+if (\getenv('DRUPAL_REVERSE_PROXY_ENABLED') === false) {
 
-  if (\getenv($envName) === false) {
-    continue;
+  foreach ([
+    'DRUPAL_PRIMARY_HOST',
+    'DRUPAL_OEMBED_HOST',
+  ] as $envName) {
+
+    if (\getenv($envName) === false) {
+      continue;
+    }
+
+    $settings['trusted_host_patterns'][] = '^' . \preg_quote(
+      \getenv($envName)
+    ) . '$';
+
   }
-
-  $settings['trusted_host_patterns'][] = '^' . \preg_quote(
-    \getenv($envName)
-  ) . '$';
 
 }
 
