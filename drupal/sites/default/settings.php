@@ -201,7 +201,7 @@ $servicesYamls = [
 // @todo What if Monolog services are needed by a test?
 if (\getenv('SIMPLETEST_BASE_URL') === false) {
 // if (!\getenv('SETTINGS_PHP_EXCLUDE_MONOLOG')) {
-  $servicesYamls[] = 'monolog.services.yml';
+  $servicesYamls[] = 'services.monolog.yml';
 }
 
 foreach ($servicesYamls as $fileName) {
