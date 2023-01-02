@@ -186,6 +186,7 @@ $settings['file_private_path'] = \realpath(
  */
 $servicesYamls = [
   'services.yml',
+  'services.security.yml',
 ];
 
 // Only include the Monolog services file if not running tests, by checking if
