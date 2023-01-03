@@ -6,3 +6,12 @@ parameters:
     #
     # @see https://scotthelme.co.uk/tough-cookies/
     cookie_domain: ''
+
+  trusted_reverse_proxy:
+    # Override the severity of the message shown on the status page about an
+    # empty trusted host pattern.
+    #
+    # REQUIREMENT_ERROR: 2
+    # REQUIREMENT_WARNING: 1
+    # REQUIREMENT_INFO: -1
+    severity: -1
