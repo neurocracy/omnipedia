@@ -59,11 +59,3 @@ package-lock.json
 !/drupal/modules
 /drupal/modules/*
 !/drupal/modules/ambientimpact
-
-# Unignore our settings.php, as it's stripped down and does not contain database
-# info or other sensitive data, but includes them from external files or
-# environment variables.
-!/drupal/sites/default/settings.php
-
-# Unignore our Monolog services files.
-!/drupal/sites/default/monolog.services.yml
