@@ -7,5 +7,5 @@ _core:
 id: administrator
 label: administrator
 weight: -3
-is_admin: true
+is_admin: false
 permissions: {  }

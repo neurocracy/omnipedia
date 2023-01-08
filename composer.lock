@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "68dff17e00dfe8e731195d29ead71ed1",
+    "content-hash": "a8664222e794909544a0b37c0995f61f",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -5604,6 +5604,62 @@
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-user/issues"
             },
             "time": "2022-07-22T12:56:55+00:00"
+        },
+        {
+            "name": "drupal/paranoia",
+            "version": "1.0.0-rc1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/paranoia.git",
+                "reference": "8.x-1.0-rc1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/paranoia-8.x-1.0-rc1.zip",
+                "reference": "8.x-1.0-rc1",
+                "shasum": "a5a1a6d0d51d5ee93052299b2cceda207e205ee2"
+            },
+            "require": {
+                "drupal/core": "^8.9 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-rc1",
+                    "datestamp": "1619724399",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "banviktor",
+                    "homepage": "https://www.drupal.org/user/3176333"
+                },
+                {
+                    "name": "greggles",
+                    "homepage": "https://www.drupal.org/user/36762"
+                },
+                {
+                    "name": "killes@www.drop.org",
+                    "homepage": "https://www.drupal.org/user/227"
+                },
+                {
+                    "name": "nedjo",
+                    "homepage": "https://www.drupal.org/user/4481"
+                }
+            ],
+            "description": "Protects a site from some insecure configurations.",
+            "homepage": "https://www.drupal.org/project/paranoia",
+            "support": {
+                "source": "https://git.drupalcode.org/project/paranoia"
+            }
         },
         {
             "name": "drupal/password_policy",
@@ -17997,6 +18053,7 @@
         "drupal/omnipedia_search": 20,
         "drupal/omnipedia_site_theme": 20,
         "drupal/omnipedia_user": 20,
+        "drupal/paranoia": 5,
         "drupal/rebuilder": 5,
         "drupal/rules": 15,
         "drupal/session_limit": 10,
