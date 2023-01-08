@@ -101,6 +101,13 @@ foreach ($databases as $databaseKey => &$database) {
  */
 $settings['config_sync_directory'] = $app_root . '/../drupal_config/sync';
 
+// Enable the 'dev' configuration split in this environment.
+
+/**
+ * Enable the Paranoia configuration split by default.
+ */
+$config['config_split.config_split.paranoia']['status'] = true;
+
 /**
  * Salt for one-time login links, cancel links, form tokens, etc.
  *
