@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Build the web service.
+
 # Dump optimized Composer autoloader using APCu for production.
 #
 # @see https://getcomposer.org/doc/articles/autoloader-optimization.md
