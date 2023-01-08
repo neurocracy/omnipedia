@@ -143,6 +143,7 @@
     "drupal/omnipedia_search": "3.x-dev@dev",
     "drupal/omnipedia_site_theme": "4.x-dev@dev",
     "drupal/omnipedia_user": "3.x-dev@dev",
+    "drupal/paranoia": "^1.0@RC",
     "drupal/password_policy": "^4.0",
     "drupal/pathauto": "^1.6",
     "drupal/readonlymode": "^1.1",

@@ -1,0 +1,381 @@
+uuid: ef830958-2933-42dd-a6f8-63bf45007006
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.restricted_html
+    - filter.format.wiki_html
+    - media.type.audio
+    - media.type.document
+    - media.type.gif
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - node.type.page
+    - node.type.wiki_page
+    - taxonomy.vocabulary.episode_tiers
+  module:
+    - action
+    - advagg
+    - autoban
+    - ban
+    - block
+    - block_content
+    - commerce
+    - commerce_cart_redirection
+    - commerce_checkout
+    - commerce_number_pattern
+    - commerce_order
+    - commerce_payment
+    - commerce_price
+    - commerce_product
+    - commerce_store
+    - commerce_tax
+    - config
+    - config_delete
+    - config_inspector
+    - config_split
+    - contact
+    - contextual
+    - csp
+    - devel
+    - development_environment
+    - disable_link_rel
+    - encrypt
+    - entity_reference_revisions
+    - eu_cookie_compliance
+    - fancy_file_delete
+    - field_ui
+    - file
+    - filter
+    - flood_control
+    - honeypot
+    - image
+    - key
+    - login_destination
+    - mailsystem
+    - markdown
+    - media
+    - metatag
+    - node
+    - omnipedia_attached_data
+    - omnipedia_changes
+    - password_policy
+    - path
+    - pathauto
+    - permissions_by_term
+    - profile
+    - queue_ui
+    - readonlymode
+    - redirect
+    - remove_http_headers
+    - responsive_image
+    - rules
+    - search_api
+    - seckit
+    - security_review
+    - shortcut
+    - swiftmailer
+    - system
+    - taxonomy
+    - tfa
+    - toolbar
+    - update
+    - views_bulk_edit
+    - views_ui
+id: developer
+label: developer
+weight: -4
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access checkout'
+  - 'access commerce administration pages'
+  - 'access commerce_order overview'
+  - 'access commerce_product overview'
+  - 'access commerce_product_attribute overview'
+  - 'access commerce_store overview'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access devel information'
+  - 'access development environment email logs'
+  - 'access files overview'
+  - 'access flood control settings page'
+  - 'access flood unblock'
+  - 'access media overview'
+  - 'access pbt settings'
+  - 'access profile overview'
+  - 'access rules debug'
+  - 'access security review list'
+  - 'access shortcuts'
+  - 'access site in maintenance mode'
+  - 'access site reports'
+  - 'access site-wide contact form'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'access user contact forms'
+  - 'access user profiles'
+  - 'add omnipedia_attached_data entity'
+  - 'add unmanaged files entities'
+  - 'admin queue_ui'
+  - 'admin tfa settings'
+  - 'administer account settings'
+  - 'administer actions'
+  - 'administer autoban'
+  - 'administer block_content display'
+  - 'administer block_content fields'
+  - 'administer block_content form display'
+  - 'administer blocks'
+  - 'administer commerce_checkout_flow'
+  - 'administer commerce_currency'
+  - 'administer commerce_number_pattern'
+  - 'administer commerce_order'
+  - 'administer commerce_order display'
+  - 'administer commerce_order fields'
+  - 'administer commerce_order form display'
+  - 'administer commerce_order_item display'
+  - 'administer commerce_order_item fields'
+  - 'administer commerce_order_item form display'
+  - 'administer commerce_order_type'
+  - 'administer commerce_payment'
+  - 'administer commerce_payment_gateway'
+  - 'administer commerce_payment_method'
+  - 'administer commerce_product'
+  - 'administer commerce_product display'
+  - 'administer commerce_product fields'
+  - 'administer commerce_product form display'
+  - 'administer commerce_product_attribute'
+  - 'administer commerce_product_attribute_value display'
+  - 'administer commerce_product_attribute_value fields'
+  - 'administer commerce_product_attribute_value form display'
+  - 'administer commerce_product_type'
+  - 'administer commerce_product_variation display'
+  - 'administer commerce_product_variation fields'
+  - 'administer commerce_product_variation form display'
+  - 'administer commerce_store'
+  - 'administer commerce_store display'
+  - 'administer commerce_store fields'
+  - 'administer commerce_store form display'
+  - 'administer commerce_store_type'
+  - 'administer commerce_tax_type'
+  - 'administer configuration split'
+  - 'administer contact forms'
+  - 'administer contact_message display'
+  - 'administer contact_message fields'
+  - 'administer contact_message form display'
+  - 'administer content types'
+  - 'administer csp configuration'
+  - 'administer development environment settings'
+  - 'administer disable_link_rel configuration'
+  - 'administer display modes'
+  - 'administer encrypt'
+  - 'administer eu cookie compliance categories'
+  - 'administer eu cookie compliance popup'
+  - 'administer fancy file delete'
+  - 'administer filters'
+  - 'administer honeypot'
+  - 'administer image styles'
+  - 'administer key configuration overrides'
+  - 'administer keys'
+  - 'administer login destination settings'
+  - 'administer markdown'
+  - 'administer media'
+  - 'administer media display'
+  - 'administer media fields'
+  - 'administer media form display'
+  - 'administer media types'
+  - 'administer menu'
+  - 'administer meta tags'
+  - 'administer modules'
+  - 'administer node display'
+  - 'administer node fields'
+  - 'administer node form display'
+  - 'administer nodes'
+  - 'administer omnipedia_attached_data entity'
+  - 'administer pathauto'
+  - 'administer permissions'
+  - 'administer profile'
+  - 'administer profile display'
+  - 'administer profile fields'
+  - 'administer profile form display'
+  - 'administer profile types'
+  - 'administer redirect settings'
+  - 'administer redirects'
+  - 'administer responsive images'
+  - 'administer rules'
+  - 'administer rules components'
+  - 'administer rules reactions'
+  - 'administer search_api'
+  - 'administer seckit'
+  - 'administer shortcuts'
+  - 'administer site configuration'
+  - 'administer software updates'
+  - 'administer swiftmailer'
+  - 'administer taxonomy'
+  - 'administer taxonomy_term display'
+  - 'administer taxonomy_term fields'
+  - 'administer taxonomy_term form display'
+  - 'administer tfa for other users'
+  - 'administer themes'
+  - 'administer unmanaged files entities'
+  - 'administer url aliases'
+  - 'administer user display'
+  - 'administer user fields'
+  - 'administer user form display'
+  - 'administer users'
+  - 'administer views'
+  - administer_mailsystem
+  - 'ban IP addresses'
+  - 'build omnipedia_changes'
+  - 'bypass advanced aggregation'
+  - 'bypass honeypot protection'
+  - 'bypass node access'
+  - 'bypass rules access'
+  - 'cancel account'
+  - 'change own username'
+  - 'configure commerce_cart_redirection'
+  - 'configure omnipedia_attached_data entity'
+  - 'create audio media'
+  - 'create commerce_product_attribute'
+  - 'create content_access commerce_product'
+  - 'create customer profile'
+  - 'create default commerce_order'
+  - 'create document media'
+  - 'create gif media'
+  - 'create image media'
+  - 'create media'
+  - 'create online commerce_store'
+  - 'create page content'
+  - 'create remote_video media'
+  - 'create terms in episode_tiers'
+  - 'create url aliases'
+  - 'create video media'
+  - 'create wiki_page content'
+  - 'customize shortcut links'
+  - 'delete all revisions'
+  - 'delete any audio media'
+  - 'delete any commerce_payment_method'
+  - 'delete any content_access commerce_product'
+  - 'delete any customer profile'
+  - 'delete any document media'
+  - 'delete any gif media'
+  - 'delete any image media'
+  - 'delete any media'
+  - 'delete any online commerce_store'
+  - 'delete any page content'
+  - 'delete any remote_video media'
+  - 'delete any video media'
+  - 'delete any wiki_page content'
+  - 'delete commerce_product_attribute'
+  - 'delete configuration'
+  - 'delete default commerce_order'
+  - 'delete media'
+  - 'delete omnipedia_attached_data entity'
+  - 'delete orphan revisions'
+  - 'delete own audio media'
+  - 'delete own content_access commerce_product'
+  - 'delete own customer profile'
+  - 'delete own document media'
+  - 'delete own gif media'
+  - 'delete own image media'
+  - 'delete own online commerce_store'
+  - 'delete own page content'
+  - 'delete own remote_video media'
+  - 'delete own video media'
+  - 'delete own wiki_page content'
+  - 'delete page revisions'
+  - 'delete terms in episode_tiers'
+  - 'delete unmanaged files entities'
+  - 'delete wiki_page revisions'
+  - 'disable own tfa'
+  - 'duplicate any online commerce_store'
+  - 'duplicate own online commerce_store'
+  - 'edit any audio media'
+  - 'edit any document media'
+  - 'edit any gif media'
+  - 'edit any image media'
+  - 'edit any page content'
+  - 'edit any remote_video media'
+  - 'edit any video media'
+  - 'edit any wiki_page content'
+  - 'edit omnipedia_attached_data entity'
+  - 'edit own audio media'
+  - 'edit own document media'
+  - 'edit own gif media'
+  - 'edit own image media'
+  - 'edit own page content'
+  - 'edit own remote_video media'
+  - 'edit own video media'
+  - 'edit own wiki_page content'
+  - 'edit terms in episode_tiers'
+  - 'edit unmanaged files entities'
+  - 'export configuration'
+  - 'import configuration'
+  - 'inspect configuration'
+  - 'link to any page'
+  - 'manage default commerce_order_item'
+  - 'manage default commerce_product_variation'
+  - 'manage own commerce_payment_method'
+  - 'manage password reset'
+  - 'notify of path changes'
+  - 'process commerce_cart_expiration queue'
+  - 'process entity_reference_revisions_orphan_purger queue'
+  - 'process media_entity_thumbnail queue'
+  - 'process warmer queue'
+  - 'readonlymode access forms'
+  - 'remove_http_headers settings access'
+  - 'revert all revisions'
+  - 'revert page revisions'
+  - 'revert wiki_page revisions'
+  - 'run security checks'
+  - 'select account cancellation method'
+  - 'setup own tfa'
+  - 'show term permission form on term page'
+  - 'show term permissions on node edit page'
+  - 'show term permissions on user edit page'
+  - 'switch shortcut sets'
+  - 'switch users'
+  - 'synchronize configuration'
+  - 'update any commerce_payment_method'
+  - 'update any content_access commerce_product'
+  - 'update any customer profile'
+  - 'update any media'
+  - 'update any online commerce_store'
+  - 'update commerce_product_attribute'
+  - 'update default commerce_order'
+  - 'update media'
+  - 'update own content_access commerce_product'
+  - 'update own customer profile'
+  - 'update own online commerce_store'
+  - 'use text format basic_html'
+  - 'use text format full_html'
+  - 'use text format restricted_html'
+  - 'use text format wiki_html'
+  - 'use views bulk edit'
+  - 'view all media revisions'
+  - 'view all revisions'
+  - 'view any commerce_payment_method'
+  - 'view any customer profile'
+  - 'view any profile'
+  - 'view commerce_order'
+  - 'view commerce_product'
+  - 'view commerce_product_attribute'
+  - 'view commerce_store'
+  - 'view content_access commerce_product'
+  - 'view default commerce_order'
+  - 'view omnipedia_attached_data entity'
+  - 'view online commerce_store'
+  - 'view own customer profile'
+  - 'view own profile'
+  - 'view own unpublished commerce_product'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view own unpublished profile'
+  - 'view page revisions'
+  - 'view the administration theme'
+  - 'view unmanaged files entities'
+  - 'view update notifications'
+  - 'view user email addresses'
+  - 'view wiki_page revisions'
