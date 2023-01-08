@@ -33,5 +33,6 @@ graylist:
   - update.settings
   - user.role.anonymous
   - user.role.authenticated
+  - user.role.developer
 graylist_dependents: true
 graylist_skip_equal: true
