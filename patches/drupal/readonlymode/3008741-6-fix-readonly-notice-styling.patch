@@ -1,0 +1,24 @@
+diff --git a/readonlymode.module b/readonlymode.module
+index e859239952223fe7dbd710998cb25ce9dfbb51cc..6a6a79751c8911547ee41abf385938e6b38870df 100755
+--- a/readonlymode.module
++++ b/readonlymode.module
+@@ -154,10 +154,15 @@ function readonlymode_form_alter(&$form, FormStateInterface $form_state, $form_i
+         }
+       }
+       $form['readonly_notice'] = [
+-        '#markup' => \Drupal::token()
+-          ->replace($settings->get('messages.default')),
+-        '#prefix' => '<div class="messages warning">',
+-        '#suffix' => '</div>',
++        '#theme'        => 'status_messages',
++        '#message_list' => [
++          'warning' => [
++            \Drupal::token()->replace($settings->get('messages.default')),
++          ],
++        ],
++        '#status_headings' => [
++          'warning' => \t('Warning message'),
++        ],
+       ];
+     }
+   }
