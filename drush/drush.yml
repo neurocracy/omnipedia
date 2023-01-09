@@ -18,6 +18,8 @@ command:
     rsync:
       options:
         exclude-paths:
+          # Ignore aggregated assets.
+          - 'assets/*'
           - 'sites/*/settings.database.php'
           - 'sites/*/settings.local.php'
           # Added to prevent site-specific Drush config getting synced from
