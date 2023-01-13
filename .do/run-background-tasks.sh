@@ -32,7 +32,7 @@ while true; do
   echo "=> Image style warmer run completed"
 
   echo "=> Running entity warmer"
-  drush warmer:enqueue entity --run-queue --verbose || true;
+  drush warmer:enqueue view_mode --run-queue --verbose || true;
   echo "=> Entity warmer run completed"
 
   echo "=> Building wiki page changes"
