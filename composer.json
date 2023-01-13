@@ -164,6 +164,7 @@
     "drupal/trusted_reverse_proxy": "^1.0",
     "drupal/views_bulk_edit": "^2.5",
     "drupal/views_bulk_operations": "^4.1",
+    "drupal/warmer_view_mode": "^1.0@beta",
     "drupal/webp": "^1.0",
     "drush/drush": "^11.0.6",
     "oomphinc/composer-installers-extender": "^2.0"

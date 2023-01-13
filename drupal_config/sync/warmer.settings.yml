@@ -11,3 +11,10 @@ warmers:
     batchSize: 10
     entity_types:
       'node:wiki_page': 'node:wiki_page'
+  view_mode:
+    id: view_mode
+    frequency: 300
+    batchSize: 5
+    entity_view_modes:
+      'node:wiki_page:default': 'node:wiki_page:default'
+    published: false
