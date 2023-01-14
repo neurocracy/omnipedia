@@ -5630,13 +5630,13 @@
             "version": "3.x-dev",
             "source": {
                 "type": "git",
-                "url": "git@github.com:neurocracy/drupal-omnipedia-user.git",
-                "reference": "d5d2a2e57ec6a7a189abb16da1be5b91a82dd870"
+                "url": "https://github.com/neurocracy/drupal-omnipedia-user.git",
+                "reference": "f38c0929cb268af54ca95c0efb809a08b47d9da4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-user/zipball/d5d2a2e57ec6a7a189abb16da1be5b91a82dd870",
-                "reference": "d5d2a2e57ec6a7a189abb16da1be5b91a82dd870",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-user/zipball/f38c0929cb268af54ca95c0efb809a08b47d9da4",
+                "reference": "f38c0929cb268af54ca95c0efb809a08b47d9da4",
                 "shasum": ""
             },
             "require": {
@@ -5660,7 +5660,7 @@
                 "source": "https://github.com/neurocracy/drupal-omnipedia-user/tree/3.x",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-user/issues"
             },
-            "time": "2023-01-14T21:38:20+00:00"
+            "time": "2023-01-14T22:37:07+00:00"
         },
         {
             "name": "drupal/paranoia",
