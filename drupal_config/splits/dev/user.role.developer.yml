@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - filter.format.basic_html
+    - filter.format.email_html
     - filter.format.full_html
     - filter.format.restricted_html
     - filter.format.wiki_html
@@ -78,6 +79,7 @@ dependencies:
     - security_review
     - shortcut
     - swiftmailer
+    - symfony_mailer
     - system
     - taxonomy
     - tfa
@@ -180,6 +182,7 @@ permissions:
   - 'administer key configuration overrides'
   - 'administer keys'
   - 'administer login destination settings'
+  - 'administer mailer'
   - 'administer markdown'
   - 'administer media'
   - 'administer media display'
@@ -350,6 +353,7 @@ permissions:
   - 'update own customer profile'
   - 'update own online commerce_store'
   - 'use text format basic_html'
+  - 'use text format email_html'
   - 'use text format full_html'
   - 'use text format restricted_html'
   - 'use text format wiki_html'

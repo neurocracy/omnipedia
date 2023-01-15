@@ -1,0 +1,13 @@
+uuid: c32b2da4-739e-486f-9caf-4b73bd52ddf5
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce
+id: commerce
+configuration:
+  email_theme:
+    theme: _default
+  mailer_wrap_and_convert:
+    plain: false
+    swiftmailer: false

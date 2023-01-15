@@ -1,0 +1,14 @@
+uuid: 7c67673b-83ef-4a31-a1ff-11c3baf47813
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: oPhLVLkgeK3VS3GFB2k9i7bj6B47cTp6wWjnZPSKBY4
+id: symfony_mailer.test
+configuration:
+  email_body:
+    content:
+      value: '<p>This is a test email from <a href="[site:url]">[site:name]</a>.</p>'
+      format: email_html
+  email_subject:
+    value: 'Test email from [site:name]'

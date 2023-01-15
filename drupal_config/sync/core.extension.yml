@@ -132,6 +132,7 @@ module:
   state_machine: 0
   subpathauto: 0
   swiftmailer: 0
+  symfony_mailer: 0
   system: 0
   taxonomy: 0
   text: 0
