@@ -155,6 +155,7 @@
     "drupal/sodium": "^2.1",
     "drupal/subpathauto": "^1.2",
     "drupal/swiftmailer": "^2.0",
+    "drupal/symfony_mailer": "^1.2@beta",
     "drupal/tfa": "^1.0@alpha",
     "drupal/token_filter": "^1.2",
     "drupal/views_bulk_edit": "^2.5",
