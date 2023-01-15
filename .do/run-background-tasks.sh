@@ -31,9 +31,9 @@ while true; do
   drush queue:run image_style_warmer_pregenerator --verbose || true;
   echo "=> Image style warmer run completed"
 
-  echo "=> Running entity warmer"
-  drush warmer:enqueue view_mode --run-queue --verbose || true;
-  echo "=> Entity warmer run completed"
+  # echo "=> Running entity warmer"
+  # drush warmer:enqueue view_mode --run-queue --verbose || true;
+  # echo "=> Entity warmer run completed"
 
   echo "=> Building wiki page changes"
   drush omnipedia:changes-build --verbose || true;
