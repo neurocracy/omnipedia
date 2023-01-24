@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7ed5e7fc4654fefb74ae230b9ff0d03a",
+    "content-hash": "3c0179dad6e97ca2591635766e1a9a29",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -5216,16 +5216,16 @@
         },
         {
             "name": "drupal/omnipedia_changes",
-            "version": "4.x-dev",
+            "version": "5.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neurocracy/drupal-omnipedia-changes.git",
-                "reference": "98387e6fdff571947441fd296a5e0b4f63b13b48"
+                "reference": "79cbd25d31f38db974e4d49f81dc5a7fe7763ab6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-changes/zipball/98387e6fdff571947441fd296a5e0b4f63b13b48",
-                "reference": "98387e6fdff571947441fd296a5e0b4f63b13b48",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-changes/zipball/79cbd25d31f38db974e4d49f81dc5a7fe7763ab6",
+                "reference": "79cbd25d31f38db974e4d49f81dc5a7fe7763ab6",
                 "shasum": ""
             },
             "require": {
@@ -5259,10 +5259,10 @@
             ],
             "description": "Omnipedia - Changes",
             "support": {
-                "source": "https://github.com/neurocracy/drupal-omnipedia-changes/tree/4.x",
+                "source": "https://github.com/neurocracy/drupal-omnipedia-changes/tree/5.x",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-changes/issues"
             },
-            "time": "2023-01-14T22:47:25+00:00"
+            "time": "2023-01-24T13:26:47+00:00"
         },
         {
             "name": "drupal/omnipedia_commerce",
@@ -5631,12 +5631,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neurocracy/drupal-omnipedia-user.git",
-                "reference": "f38c0929cb268af54ca95c0efb809a08b47d9da4"
+                "reference": "858e58a8f40358a03ebf9d5ea06b3324c565286c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-user/zipball/f38c0929cb268af54ca95c0efb809a08b47d9da4",
-                "reference": "f38c0929cb268af54ca95c0efb809a08b47d9da4",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-user/zipball/858e58a8f40358a03ebf9d5ea06b3324c565286c",
+                "reference": "858e58a8f40358a03ebf9d5ea06b3324c565286c",
                 "shasum": ""
             },
             "require": {
@@ -5660,7 +5660,7 @@
                 "source": "https://github.com/neurocracy/drupal-omnipedia-user/tree/3.x",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-user/issues"
             },
-            "time": "2023-01-14T22:37:07+00:00"
+            "time": "2023-01-23T16:14:23+00:00"
         },
         {
             "name": "drupal/paranoia",

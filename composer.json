@@ -130,7 +130,7 @@
     "drupal/omnipedia_access": "3.x-dev@dev",
     "drupal/omnipedia_attached_data": "3.x-dev@dev",
     "drupal/omnipedia_block": "4.x-dev@dev",
-    "drupal/omnipedia_changes": "4.x-dev@dev",
+    "drupal/omnipedia_changes": "5.x-dev@dev",
     "drupal/omnipedia_commerce": "3.x-dev@dev",
     "drupal/omnipedia_content": "4.x-dev@dev",
     "drupal/omnipedia_core": "3.x-dev@dev",
