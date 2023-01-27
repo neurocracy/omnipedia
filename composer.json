@@ -221,8 +221,6 @@
         "Support upcasting entity IDs to full entity contexts: https://www.drupal.org/project/rules/issues/2800749#comment-14332836": "patches/drupal/rules/2800749-97.upcast.patch"
       },
       "drupal/security_review": {
-        "Refactor trusted hosts check: https://www.drupal.org/project/security_review/issues/3008957": "patches/drupal/security_review/merge-request-1-refactor-trusted-hosts-check.patch",
-        "Checks\\PrivateFiles: mistakes adjacent \"drupal_private_files\" as being under \"drupal\": https://www.drupal.org/project/security_review/issues/3259051": "patches/drupal/security_review/merge-request-2-private-files-check-more-robust.patch",
         "Add support for configurable asset paths and stream wrapper added in Drupal core 10.1 [#3329679]: https://www.drupal.org/project/security_review/issues/3329679": "patches/drupal/security_review/3329679-add-support-for-configurable-asset-paths.patch"
       },
       "drupal/session_limit": {

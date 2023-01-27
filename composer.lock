@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3c0179dad6e97ca2591635766e1a9a29",
+    "content-hash": "f60db56a0710c111d83352c6cce412d1",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -2145,20 +2145,20 @@
         },
         {
             "name": "drupal/autoban",
-            "version": "1.7.0",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/autoban.git",
-                "reference": "8.x-1.7"
+                "reference": "8.x-1.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/autoban-8.x-1.7.zip",
-                "reference": "8.x-1.7",
-                "shasum": "4ea355b8bb8dd5ce36c2d150eb73effb5051c8f8"
+                "url": "https://ftp.drupal.org/files/projects/autoban-8.x-1.8.zip",
+                "reference": "8.x-1.8",
+                "shasum": "483f266e6e3b6b4bb76e37618c9cd009101f87c7"
             },
             "require": {
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^8 || ^9 || ^10"
             },
             "require-dev": {
                 "drupal/advban": "*"
@@ -2166,8 +2166,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.7",
-                    "datestamp": "1591878307",
+                    "version": "8.x-1.8",
+                    "datestamp": "1674465188",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4565,17 +4565,17 @@
         },
         {
             "name": "drupal/key",
-            "version": "1.16.0",
+            "version": "1.17.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/key.git",
-                "reference": "8.x-1.16"
+                "reference": "8.x-1.17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/key-8.x-1.16.zip",
-                "reference": "8.x-1.16",
-                "shasum": "35a4476d7d52563bb26bd4dcc5fbf5fdd7c9391b"
+                "url": "https://ftp.drupal.org/files/projects/key-8.x-1.17.zip",
+                "reference": "8.x-1.17",
+                "shasum": "fa9f606d2ba0e20693e12040004e2ed31302ed03"
             },
             "require": {
                 "drupal/core": ">=8.9 <11"
@@ -4583,8 +4583,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.16",
-                    "datestamp": "1661968490",
+                    "version": "8.x-1.17",
+                    "datestamp": "1674343967",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6532,17 +6532,17 @@
         },
         {
             "name": "drupal/security_review",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/security_review.git",
-                "reference": "2.0.0"
+                "reference": "2.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/security_review-2.0.0.zip",
-                "reference": "2.0.0",
-                "shasum": "64f85dd6291d50952a19ece0e4bb5569d74fb193"
+                "url": "https://ftp.drupal.org/files/projects/security_review-2.0.1.zip",
+                "reference": "2.0.1",
+                "shasum": "48300cd86260f0debc5d90d5a6edaa61868da962"
             },
             "require": {
                 "drupal/core": "^9 || ^10"
@@ -6550,8 +6550,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.0",
-                    "datestamp": "1667955325",
+                    "version": "2.0.1",
+                    "datestamp": "1674672068",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6598,26 +6598,26 @@
         },
         {
             "name": "drupal/session_limit",
-            "version": "2.0.0-beta2",
+            "version": "2.0.0-beta3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/session_limit.git",
-                "reference": "2.0.0-beta2"
+                "reference": "2.0.0-beta3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/session_limit-2.0.0-beta2.zip",
-                "reference": "2.0.0-beta2",
-                "shasum": "05f6bb02c2d108212b7c2072e5596df919afd09d"
+                "url": "https://ftp.drupal.org/files/projects/session_limit-2.0.0-beta3.zip",
+                "reference": "2.0.0-beta3",
+                "shasum": "e3ba66c6eae0fa4882e614ae8e16458af575e787"
             },
             "require": {
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^8 || ^9 || ^10"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.0-beta2",
-                    "datestamp": "1625122061",
+                    "version": "2.0.0-beta3",
+                    "datestamp": "1674646135",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -6654,20 +6654,20 @@
         },
         {
             "name": "drupal/sodium",
-            "version": "2.3.0",
+            "version": "2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/sodium.git",
-                "reference": "8.x-2.3"
+                "reference": "8.x-2.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/sodium-8.x-2.3.zip",
-                "reference": "8.x-2.3",
-                "shasum": "23dea4c304848ef715a5f75f8a97bf4553238bcf"
+                "url": "https://ftp.drupal.org/files/projects/sodium-8.x-2.4.zip",
+                "reference": "8.x-2.4",
+                "shasum": "64e6a527797a8ed192e4e19e6abf288c104a64b5"
             },
             "require": {
-                "drupal/core": "^8.9.0 || ^9.0",
+                "drupal/core": "^8.9.0 || ^9.0 || ^10",
                 "drupal/encrypt": "^3.0",
                 "drupal/key": "^1.0",
                 "paragonie/halite": "^4.1 || ^5.0",
@@ -6676,8 +6676,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.3",
-                    "datestamp": "1661352382",
+                    "version": "8.x-2.4",
+                    "datestamp": "1674407491",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6727,8 +6727,8 @@
                     "version": "2.0.0",
                     "datestamp": "1663102967",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -12679,16 +12679,16 @@
         },
         {
             "name": "symfony/string",
-            "version": "v6.2.2",
+            "version": "v6.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "863219fd713fa41cbcd285a79723f94672faff4d"
+                "reference": "b2dac0fa27b1ac0f9c0c0b23b43977f12308d0b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/863219fd713fa41cbcd285a79723f94672faff4d",
-                "reference": "863219fd713fa41cbcd285a79723f94672faff4d",
+                "url": "https://api.github.com/repos/symfony/string/zipball/b2dac0fa27b1ac0f9c0c0b23b43977f12308d0b0",
+                "reference": "b2dac0fa27b1ac0f9c0c0b23b43977f12308d0b0",
                 "shasum": ""
             },
             "require": {
@@ -12745,7 +12745,7 @@
                 "utf8"
             ],
             "support": {
-                "source": "https://github.com/symfony/string/tree/v6.2.2"
+                "source": "https://github.com/symfony/string/tree/v6.2.5"
             },
             "funding": [
                 {
@@ -12761,7 +12761,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-12-14T16:11:27+00:00"
+            "time": "2023-01-01T08:38:09+00:00"
         },
         {
             "name": "symfony/translation",
@@ -14580,16 +14580,16 @@
         },
         {
             "name": "doctrine/persistence",
-            "version": "3.1.2",
+            "version": "3.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/persistence.git",
-                "reference": "b44d128311af55275dbed6a4558ca59a2b9f9387"
+                "reference": "920da294b4bb0bb527f2a91ed60c18213435880f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/persistence/zipball/b44d128311af55275dbed6a4558ca59a2b9f9387",
-                "reference": "b44d128311af55275dbed6a4558ca59a2b9f9387",
+                "url": "https://api.github.com/repos/doctrine/persistence/zipball/920da294b4bb0bb527f2a91ed60c18213435880f",
+                "reference": "920da294b4bb0bb527f2a91ed60c18213435880f",
                 "shasum": ""
             },
             "require": {
@@ -14658,7 +14658,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/persistence/issues",
-                "source": "https://github.com/doctrine/persistence/tree/3.1.2"
+                "source": "https://github.com/doctrine/persistence/tree/3.1.3"
             },
             "funding": [
                 {
@@ -14674,7 +14674,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-12-19T13:58:18+00:00"
+            "time": "2023-01-19T13:39:42+00:00"
         },
         {
             "name": "drupal/coder",
@@ -16097,16 +16097,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "9.2.23",
+            "version": "9.2.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "9f1f0f9a2fbb680b26d1cf9b61b6eac43a6e4e9c"
+                "reference": "2cf940ebc6355a9d430462811b5aaa308b174bed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/9f1f0f9a2fbb680b26d1cf9b61b6eac43a6e4e9c",
-                "reference": "9f1f0f9a2fbb680b26d1cf9b61b6eac43a6e4e9c",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/2cf940ebc6355a9d430462811b5aaa308b174bed",
+                "reference": "2cf940ebc6355a9d430462811b5aaa308b174bed",
                 "shasum": ""
             },
             "require": {
@@ -16162,7 +16162,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
-                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2.23"
+                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2.24"
             },
             "funding": [
                 {
@@ -16170,7 +16170,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-12-28T12:41:10+00:00"
+            "time": "2023-01-26T08:26:55+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -17998,16 +17998,16 @@
         },
         {
             "name": "symfony/phpunit-bridge",
-            "version": "v5.4.17",
+            "version": "v5.4.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/phpunit-bridge.git",
-                "reference": "2232d32115383602fd7702dfd51e81178364b679"
+                "reference": "3b213e88832612c5eee0f8a9b764897896b23bf0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/2232d32115383602fd7702dfd51e81178364b679",
-                "reference": "2232d32115383602fd7702dfd51e81178364b679",
+                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/3b213e88832612c5eee0f8a9b764897896b23bf0",
+                "reference": "3b213e88832612c5eee0f8a9b764897896b23bf0",
                 "shasum": ""
             },
             "require": {
@@ -18061,7 +18061,7 @@
             "description": "Provides utilities for PHPUnit, especially user deprecation notices management",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/phpunit-bridge/tree/v5.4.17"
+                "source": "https://github.com/symfony/phpunit-bridge/tree/v5.4.19"
             },
             "funding": [
                 {
@@ -18077,7 +18077,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-12-27T08:11:33+00:00"
+            "time": "2023-01-01T08:32:19+00:00"
         },
         {
             "name": "theseer/tokenizer",
