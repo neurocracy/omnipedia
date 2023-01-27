@@ -132,7 +132,7 @@
     "drupal/omnipedia_access": "3.x-dev@dev",
     "drupal/omnipedia_attached_data": "3.x-dev@dev",
     "drupal/omnipedia_block": "4.x-dev@dev",
-    "drupal/omnipedia_changes": "4.x-dev@dev",
+    "drupal/omnipedia_changes": "5.x-dev@dev",
     "drupal/omnipedia_commerce": "3.x-dev@dev",
     "drupal/omnipedia_content": "4.x-dev@dev",
     "drupal/omnipedia_core": "3.x-dev@dev",
@@ -234,8 +234,6 @@
         "Performance extremely slow [#3274647]: https://www.drupal.org/project/s3fs/issues/3274647": "patches/drupal/s3fs/3274647-slow-debug.patch"
       },
       "drupal/security_review": {
-        "Refactor trusted hosts check: https://www.drupal.org/project/security_review/issues/3008957": "patches/drupal/security_review/merge-request-1-refactor-trusted-hosts-check.patch",
-        "Checks\\PrivateFiles: mistakes adjacent \"drupal_private_files\" as being under \"drupal\": https://www.drupal.org/project/security_review/issues/3259051": "patches/drupal/security_review/merge-request-2-private-files-check-more-robust.patch",
         "Add support for configurable asset paths and stream wrapper added in Drupal core 10.1 [#3329679]: https://www.drupal.org/project/security_review/issues/3329679": "patches/drupal/security_review/3329679-add-support-for-configurable-asset-paths.patch"
       },
       "drupal/session_limit": {
