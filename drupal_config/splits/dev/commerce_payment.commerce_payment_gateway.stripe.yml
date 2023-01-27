@@ -16,5 +16,6 @@ configuration:
   collect_billing_information: true
   publishable_key: null
   secret_key: null
+  enable_credit_card_icons: false
 conditions: {  }
 conditionOperator: AND
