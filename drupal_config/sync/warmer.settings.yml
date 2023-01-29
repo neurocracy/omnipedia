@@ -12,9 +12,3 @@ warmers:
     verify: true
     max_concurrent_requests: 10
     sleep_between_batches: 5
-  entity:
-    id: entity
-    frequency: 300
-    batchSize: 10
-    entity_types:
-      'node:wiki_page': 'node:wiki_page'
