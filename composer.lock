@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c9d9ff61c055acb409c4cd4949dee89e",
+    "content-hash": "14d6a5bfd326453d80db8dd4fd22e19a",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -5864,6 +5864,43 @@
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-user/issues"
             },
             "time": "2023-01-23T16:14:23+00:00"
+        },
+        {
+            "name": "drupal/omnipedia_warmer",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/neurocracy/drupal-omnipedia-warmer.git",
+                "reference": "8411cc8ed776312006311d21550b26fef1cb793a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-warmer/zipball/8411cc8ed776312006311d21550b26fef1cb793a",
+                "reference": "8411cc8ed776312006311d21550b26fef1cb793a",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/warmer": "^2.0",
+                "php": "^8"
+            },
+            "default-branch": true,
+            "type": "drupal-custom-module",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ambient.Impact",
+                    "homepage": "https://ambientimpact.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Omnipedia - Warmer",
+            "support": {
+                "source": "https://github.com/neurocracy/drupal-omnipedia-warmer/tree/1.x",
+                "issues": "https://github.com/neurocracy/drupal-omnipedia-warmer/issues"
+            },
+            "time": "2023-01-29T22:51:02+00:00"
         },
         {
             "name": "drupal/paranoia",
@@ -18741,6 +18778,7 @@
         "drupal/omnipedia_search": 20,
         "drupal/omnipedia_site_theme": 20,
         "drupal/omnipedia_user": 20,
+        "drupal/omnipedia_warmer": 20,
         "drupal/paranoia": 5,
         "drupal/rebuilder": 5,
         "drupal/rules": 15,

@@ -101,6 +101,7 @@ module:
   omnipedia_menu: 0
   omnipedia_search: 0
   omnipedia_user: 0
+  omnipedia_warmer: 0
   options: 0
   password_policy_character_types: 0
   password_policy_characters: 0
@@ -150,7 +151,6 @@ module:
   views_event_dispatcher: 0
   views_ui: 0
   warmer: 0
-  warmer_entity: 0
   warmer_view_mode: 0
   webp: 0
   menu_link_content: 1
