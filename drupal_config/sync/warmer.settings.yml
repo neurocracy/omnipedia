@@ -12,10 +12,3 @@ warmers:
     verify: true
     max_concurrent_requests: 10
     sleep_between_batches: 5
-  view_mode:
-    id: view_mode
-    frequency: 300
-    batchSize: 5
-    entity_view_modes:
-      'node:wiki_page:default': 'node:wiki_page:default'
-    published: false
