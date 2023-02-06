@@ -10,6 +10,9 @@
 # This adds an initial delay before doing anything (e.g. rebuilding assets).
 #
 # This is to give the web component a little bit of lead time when deploying.
+#
+# @todo Implement a better way of doing this, ideally waiting for a signal from
+#   the web component.
 echo "Sleeping for 5 seconds to allow the web component to start."
 sleep 5;
 
