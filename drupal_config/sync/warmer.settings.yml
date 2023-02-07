@@ -10,5 +10,5 @@ warmers:
     frequency: 300
     batchSize: 5
     verify: true
-    max_concurrent_requests: 10
+    max_concurrent_requests: 2
     sleep_between_batches: 5
