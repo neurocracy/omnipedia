@@ -52,7 +52,7 @@ package-lock.json
 
 # Ignore the whole drupal directory. Individual sub-directories are unignored
 # after this.
-/drupal
+/drupal/*
 
 # Unignore the modules directory, and then ignore all sub-items that aren't our
 # own modules.
