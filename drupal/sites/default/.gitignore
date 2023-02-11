@@ -5,4 +5,5 @@
 
 # Unignore version-controlled services files.
 !services.monolog.yml
+!services.routing.yml
 !services.security.yml
