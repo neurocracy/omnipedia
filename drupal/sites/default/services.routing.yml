@@ -1,0 +1,2 @@
+parameters:
+  router.request_context.host: '%env(DRUPAL_PRIMARY_HOST)%'

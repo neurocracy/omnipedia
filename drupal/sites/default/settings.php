@@ -294,6 +294,10 @@ if (\getenv('SIMPLETEST_BASE_URL') === false) {
   $servicesYamls[] = 'services.monolog.yml';
 }
 
+if (\getenv('DRUPAL_PRIMARY_HOST') !== false) {
+  $servicesYamls[] = 'services.routing.yml';
+}
+
 foreach ($servicesYamls as $fileName) {
   $settings['container_yamls'][] =
     $app_root . '/' . $site_path . '/' . $fileName;
