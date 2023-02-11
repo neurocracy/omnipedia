@@ -3,12 +3,12 @@ _core:
 css:
   brotli: false
   combine_media: false
-  fix_type: true
+  fix_type: false
   preserve_external: false
 dns_prefetch: true
 path:
   convert:
-    absolute_to_protocol_relative: true
+    absolute_to_protocol_relative: false
     absolute: false
     force_https: false
 cache_level: 2
