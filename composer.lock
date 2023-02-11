@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "95dbe59bc9100bbf1a74aae28f3e9f2b",
+    "content-hash": "a9a62c5177e9c095722c82e572e357f7",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -5871,12 +5871,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neurocracy/drupal-omnipedia-warmer.git",
-                "reference": "efbb1984c37ebed3373f1ece5b51aae1baea8d90"
+                "reference": "e4d2c3a1461fdcf82a0a156a10e5b4c4ec7a8ec2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-warmer/zipball/efbb1984c37ebed3373f1ece5b51aae1baea8d90",
-                "reference": "efbb1984c37ebed3373f1ece5b51aae1baea8d90",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-warmer/zipball/e4d2c3a1461fdcf82a0a156a10e5b4c4ec7a8ec2",
+                "reference": "e4d2c3a1461fdcf82a0a156a10e5b4c4ec7a8ec2",
                 "shasum": ""
             },
             "require": {
@@ -5900,7 +5900,7 @@
                 "source": "https://github.com/neurocracy/drupal-omnipedia-warmer/tree/1.x",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-warmer/issues"
             },
-            "time": "2023-02-07T14:39:49+00:00"
+            "time": "2023-02-11T18:08:40+00:00"
         },
         {
             "name": "drupal/paranoia",
