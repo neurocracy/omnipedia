@@ -165,6 +165,13 @@ if (\getenv('DRUPAL_TWO_FACTOR_SECRET') !== false) {
 $settings['update_free_access'] = FALSE;
 
 /**
+ * Primary host name if set via the 'DRUPAL_PRIMARY_HOST' environment variable.
+ */
+if (\getenv('DRUPAL_PRIMARY_HOST') !== false) {
+  $settings['primary_host'] = \getenv('DRUPAL_PRIMARY_HOST');
+}
+
+/**
  * Public file path:
  *
  * A local file system path where public files will be stored. This directory
