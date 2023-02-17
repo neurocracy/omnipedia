@@ -89,6 +89,7 @@ module:
   mysql: 0
   node: 0
   omnipedia_access: 0
+  omnipedia_asset: 0
   omnipedia_attached_data: 0
   omnipedia_block: 0
   omnipedia_changes: 0
