@@ -250,9 +250,6 @@
       },
       "drupal/trusted_reverse_proxy": {
         "Notice: Undefined index: severity in trusted_reverse_proxy_preprocess_status_report_page() [#3267588]: https://www.drupal.org/project/trusted_reverse_proxy/issues/3267588": "patches/drupal/trusted_reverse_proxy/3267588-trusted_reverse_proxy-undefined-severity.patch"
-      },
-      "drupal/webp": {
-        "TypeError: Argument 5 passed to Drupal\\webp\\Webp::__construct() must be an instance of Drupal\\Core\\File\\FileSystem [#3229441]: https://www.drupal.org/project/webp/issues/3229441#comment-14547513": "patches/drupal/webp/use-file-system-interface-3229441-6.patch"
       }
     },
     "drupal-scaffold": {
