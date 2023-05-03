@@ -509,16 +509,16 @@
         },
         {
             "name": "commerceguys/intl",
-            "version": "v2.0.2",
+            "version": "v2.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/commerceguys/intl.git",
-                "reference": "36ed7bd48c26f90e1f9e49b83931ada037371609"
+                "reference": "f78fe7f9bdb239d1f4cf441f61c6f950b03720bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/commerceguys/intl/zipball/36ed7bd48c26f90e1f9e49b83931ada037371609",
-                "reference": "36ed7bd48c26f90e1f9e49b83931ada037371609",
+                "url": "https://api.github.com/repos/commerceguys/intl/zipball/f78fe7f9bdb239d1f4cf441f61c6f950b03720bb",
+                "reference": "f78fe7f9bdb239d1f4cf441f61c6f950b03720bb",
                 "shasum": ""
             },
             "require": {
@@ -554,9 +554,9 @@
             "description": "Internationalization library powered by CLDR data.",
             "support": {
                 "issues": "https://github.com/commerceguys/intl/issues",
-                "source": "https://github.com/commerceguys/intl/tree/v2.0.2"
+                "source": "https://github.com/commerceguys/intl/tree/v2.0.4"
             },
-            "time": "2023-03-03T09:19:13+00:00"
+            "time": "2023-04-17T12:17:15+00:00"
         },
         {
             "name": "composer/installers",
@@ -2881,17 +2881,17 @@
         },
         {
             "name": "drupal/commerce_stripe",
-            "version": "1.0.0-rc10",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/commerce_stripe.git",
-                "reference": "8.x-1.0-rc10"
+                "reference": "8.x-1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/commerce_stripe-8.x-1.0-rc10.zip",
-                "reference": "8.x-1.0-rc10",
-                "shasum": "e9a5594e1112274f09a81d8bf9f91a81bd488185"
+                "url": "https://ftp.drupal.org/files/projects/commerce_stripe-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "73c99d63019c60a65909a9051bb52131e1ada465"
             },
             "require": {
                 "drupal/commerce": "^2.25 || ^3",
@@ -2903,11 +2903,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0-rc10",
-                    "datestamp": "1678116949",
+                    "version": "8.x-1.0",
+                    "datestamp": "1681709992",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "RC releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -5941,27 +5941,27 @@
         },
         {
             "name": "drupal/permissions_by_term",
-            "version": "3.1.21",
+            "version": "3.1.22",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/permissions_by_term.git",
-                "reference": "3.1.21"
+                "reference": "3.1.22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/permissions_by_term-3.1.21.zip",
-                "reference": "3.1.21",
-                "shasum": "ecd9340f1aac1f183398a571415bb0859fcb6f4c"
+                "url": "https://ftp.drupal.org/files/projects/permissions_by_term-3.1.22.zip",
+                "reference": "3.1.22",
+                "shasum": "f6e04db74773c0c4093ad9284d15a057f40eddf2"
             },
             "require": {
-                "drupal/core": "^9.0",
+                "drupal/core": "^9 || ^10",
                 "php": ">=7.1.0"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.1.21",
-                    "datestamp": "1668009531",
+                    "version": "3.1.22",
+                    "datestamp": "1681402062",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5975,16 +5975,20 @@
             "authors": [
                 {
                     "name": "Peter Majmesku",
-                    "homepage": "https://www.drupal.org/user/1529744",
+                    "homepage": "https://www.drupal.org/user/3622664",
                     "email": "majmesku@publicplan.de"
+                },
+                {
+                    "name": "niko-",
+                    "homepage": "https://www.drupal.org/user/1409266"
                 },
                 {
                     "name": "Peter Majmesku",
                     "homepage": "https://www.drupal.org/user/786132"
                 },
                 {
-                    "name": "Wassilissa Elrich",
-                    "homepage": "https://www.drupal.org/user/3729479"
+                    "name": "sudesh.solaskar",
+                    "homepage": "https://www.drupal.org/user/3403952"
                 }
             ],
             "description": "Restricts access to nodes by taxonomy terms in relation to users and their roles.",
@@ -7411,28 +7415,28 @@
         },
         {
             "name": "drupal/warmer",
-            "version": "2.0.8",
+            "version": "2.0.9",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/warmer.git",
-                "reference": "2.0.8"
+                "reference": "2.0.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/warmer-2.0.8.zip",
-                "reference": "2.0.8",
-                "shasum": "3c15c351385ed85979921c0525639a608fed494d"
+                "url": "https://ftp.drupal.org/files/projects/warmer-2.0.9.zip",
+                "reference": "2.0.9",
+                "shasum": "d1be1a6eb31f4eb8301fa3ee2d67c9a894a16939"
             },
             "require": {
-                "drupal/core": "^8.8 || ^9.0",
+                "drupal/core": "^9 || ^10",
                 "php": ">=5.6.0",
                 "vipnytt/sitemapparser": "^1.0"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.8",
-                    "datestamp": "1664008095",
+                    "version": "2.0.9",
+                    "datestamp": "1682671763",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9938,16 +9942,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.11.15",
+            "version": "v0.11.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "5350ce0ec8ecf2c5b5cf554cd2496f97b444af85"
+                "reference": "151b145906804eea8e5d71fea23bfb470c904bfb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/5350ce0ec8ecf2c5b5cf554cd2496f97b444af85",
-                "reference": "5350ce0ec8ecf2c5b5cf554cd2496f97b444af85",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/151b145906804eea8e5d71fea23bfb470c904bfb",
+                "reference": "151b145906804eea8e5d71fea23bfb470c904bfb",
                 "shasum": ""
             },
             "require": {
@@ -10008,9 +10012,9 @@
             ],
             "support": {
                 "issues": "https://github.com/bobthecow/psysh/issues",
-                "source": "https://github.com/bobthecow/psysh/tree/v0.11.15"
+                "source": "https://github.com/bobthecow/psysh/tree/v0.11.16"
             },
-            "time": "2023-04-07T21:57:09+00:00"
+            "time": "2023-04-26T12:53:57+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -15076,22 +15080,22 @@
         },
         {
             "name": "drupal/devel_entity_updates",
-            "version": "4.1.0",
+            "version": "4.1.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/devel_entity_updates.git",
-                "reference": "4.1.0"
+                "reference": "4.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/devel_entity_updates-4.1.0.zip",
-                "reference": "4.1.0",
-                "shasum": "06159bf4ed26832eeeb2625297476bbc1188cbde"
+                "url": "https://ftp.drupal.org/files/projects/devel_entity_updates-4.1.1.zip",
+                "reference": "4.1.1",
+                "shasum": "ffcecdddac2b4c870801e022ee264ab58c51dff2"
             },
             "require": {
                 "drupal/core": "^9.2 || ^10",
                 "drupal/devel": "*",
-                "drush/drush": "^11"
+                "drush/drush": "^11 || ^12"
             },
             "require-dev": {
                 "drupal/devel": "*"
@@ -15099,8 +15103,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "4.1.0",
-                    "datestamp": "1671814425",
+                    "version": "4.1.1",
+                    "datestamp": "1682701896",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -15108,7 +15112,7 @@
                 },
                 "drush": {
                     "services": {
-                        "drush.services.yml": "^11"
+                        "drush.services.yml": "^11 || ^12"
                     }
                 }
             },
