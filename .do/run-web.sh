@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Force a configuration import on deploy to enforce various settings.
+drush -y config:import
+
 # Rebuild asset libraries as a temporary workaround for local aggregation.
 #
 # Since App Platform wipes the filesystem on every deploy, locally saved
