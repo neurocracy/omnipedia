@@ -6,28 +6,30 @@ required_roles:
   moderator: moderator
   editor: editor
   store_manager: store_manager
+  developer: developer
   administrator: administrator
   authenticated: '0'
 send_plugins: {  }
 login_plugins: {  }
 login_plugin_settings:
   tfa_trusted_browser:
+    cookie_allow_subdomains: true
     cookie_expiration: 30
     cookie_name: tfa-trusted-browser
 allowed_validation_plugins:
-  tfa_recovery_code: tfa_recovery_code
   tfa_totp: tfa_totp
+  tfa_recovery_code: tfa_recovery_code
 default_validation_plugin: tfa_totp
 validation_plugin_settings:
+  tfa_totp:
+    time_skew: 2
+    site_name_prefix: 1
+    name_prefix: TFA
+    issuer: Drupal
   tfa_recovery_code:
     recovery_codes_amount: 10
   tfa_hotp:
     counter_window: 10
-    site_name_prefix: 1
-    name_prefix: TFA
-    issuer: Drupal
-  tfa_totp:
-    time_skew: 2
     site_name_prefix: 1
     name_prefix: TFA
     issuer: Drupal
