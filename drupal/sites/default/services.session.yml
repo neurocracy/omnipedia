@@ -41,6 +41,10 @@ parameters:
     cookie_samesite: 'Strict'
 
     # Specifies whether cookies should only be sent over secure connections.
+    #
+    # @see https://scotthelme.co.uk/tough-cookies/#secure
+    #
+    # @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie#attributes
     cookie_secure: 1
 
     # Ensure garbage collection is enabled with default PHP value.
