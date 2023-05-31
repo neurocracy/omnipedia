@@ -1,13 +1,7 @@
 parameters:
-  session.storage.options:
-    # Prevents session cookies from being set with the 'Domain' attribute.
-    #
-    # @see https://www.drupal.org/project/drupal/issues/2940879#comment-14487443
-    #
-    # @see https://scotthelme.co.uk/tough-cookies/
-    cookie_domain: ''
 
   trusted_reverse_proxy:
+
     # Override the severity of the message shown on the status page about an
     # empty trusted host pattern.
     #

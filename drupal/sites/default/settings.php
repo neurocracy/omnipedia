@@ -286,6 +286,7 @@ $settings['session_cookie_prefix'] = '__Host-';
  */
 $servicesYamls = [
   'default.services.yml',
+  'services.session.yml',
   'services.security.yml',
 ];
 
