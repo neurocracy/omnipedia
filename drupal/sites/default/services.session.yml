@@ -1,0 +1,94 @@
+parameters:
+
+  # Customized session storage options for maximum security. Note we have to set
+  # the entire array because this doesn't seem to get merged on top of the
+  # defaults by Drupal/Symfony.
+  session.storage.options:
+
+    # Whether or not to add the httpOnly flag to the cookie, which makes it
+    # inaccessible to browser scripting languages such as JavaScript.
+    #
+    # Note that Drupal/Symfony seems to set this to 1 by default, so this value
+    # may be redundant, but set it here anyways just in case.
+    #
+    # @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie#attributes
+    #
+    # @see https://php.net/session.cookie-httponly
+    cookie_httponly: 1
+
+    # Session cookie lifetime in seconds.
+    #
+    # @default 2000000
+    #
+    # @see default.services.yml
+    #   Provides more details.
+    cookie_lifetime: 2000000
+
+    # Prevents session cookies from being set with the 'Domain' attribute.
+    #
+    # @see https://www.drupal.org/project/drupal/issues/2940879#comment-14487443
+    #
+    # @see https://scotthelme.co.uk/tough-cookies/#cookieprefixes
+    #
+    # @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie#attributes
+    cookie_domain: ''
+
+    # Sets the SameSite cookie attribute to 'Strict' for session cookies.
+    #
+    # @see https://scotthelme.co.uk/tough-cookies/#samesitecookies
+    #
+    # @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie#attributes
+    cookie_samesite: 'Strict'
+
+    # Specifies whether cookies should only be sent over secure connections.
+    cookie_secure: 1
+
+    # Ensure garbage collection is enabled with default PHP value.
+    #
+    # @default 1
+    #
+    # @see default.services.yml
+    #   Provides more details.
+    #
+    # @see https://php.net/session.gc-probability
+    gc_probability: 1
+
+    # Ensure garbage collection is enabled with default PHP value.
+    #
+    # @default 100
+    #
+    # @see default.services.yml
+    #   Provides more details.
+    #
+    # @see https://php.net/session.gc-divisor
+    gc_divisor: 100
+
+    # Set session lifetime in seconds.
+    #
+    # @default 200000
+    #
+    # @see default.services.yml
+    #   Provides more details.
+    #
+    # @see https://php.net/session.gc-maxlifetime
+    gc_maxlifetime: 200000
+
+    # Set the session ID string length.
+    #
+    # @default 48
+    #
+    # @see default.services.yml
+    #   Provides more details.
+    #
+    # @see https://php.net/session.sid-length
+    sid_length: 48
+
+    # Set the number of bits in encoded session ID character.
+    #
+    # @default 6
+    #
+    # @see default.services.yml
+    #   Provides more details.
+    #
+    # @see https://www.php.net/manual/en/session.configuration.php#ini.session.sid-bits-per-character
+    sid_bits_per_character: 6
