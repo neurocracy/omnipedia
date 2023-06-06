@@ -2,6 +2,8 @@
 
 // phpcs:ignoreFile
 
+declare(strict_types=1);
+
 /**
  * @file
  * Customized and stripped down Drupal configuration file.
