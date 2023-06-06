@@ -180,13 +180,13 @@ $settings['file_private_path'] = \realpath(
 );
 
 /**
- * Enable S3 File System public/private if DigitalOcean Spaces env var found.
+ * Enable S3 File System public/private takeover if environment variable exists.
  *
  * The public and private file paths should still be set above regardless so
  * Drupal won't complain. The S3 module will still override them when the below
  * are active.
  */
-if (\getenv('SPACES_ACCESS') !== false) {
+if (\getenv('S3FS_TAKEOVER') !== false) {
   $settings['s3fs.use_s3_for_public']   = true;
   $settings['s3fs.use_s3_for_private']  = true;
 }
