@@ -237,7 +237,13 @@ if (\getenv('DRUPAL_REVERSE_PROXY_ENABLED') !== false) {
 /**
  * Drupal session cookie name prefix.
  *
- * This uses the '__Host-' prefix for security hardening.
+ * This uses the '__Host-' prefix for security hardening by default. If the
+ * 'DRUPAL_SESSION_COOKIE_PREFIX' environment variable is set, it will use that
+ * instead.
+ *
+ * Note that '__Host-' will be rejected by browsers if on a subdomain, in which
+ * case setting the provided environment variable to '__Secure-' is the next
+ * best thing.
  *
  * @see https://www.drupal.org/project/drupal/issues/1361742
  *   Requires a patch from this merge request at time of writing.
@@ -248,7 +254,11 @@ if (\getenv('DRUPAL_REVERSE_PROXY_ENABLED') !== false) {
  * @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie#attributes
  *   Description of '__Secure-' and '__Host-' semantics.
  */
-$settings['session_cookie_prefix'] = '__Host-';
+if (\getenv('DRUPAL_SESSION_COOKIE_PREFIX') !== false) {
+  $settings['session_cookie_prefix'] = \getenv('DRUPAL_SESSION_COOKIE_PREFIX');
+} else {
+  $settings['session_cookie_prefix'] = '__Host-';
+}
 
 /**
  * Services definition file names.
