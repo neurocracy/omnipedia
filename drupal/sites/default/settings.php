@@ -2,6 +2,8 @@
 
 // phpcs:ignoreFile
 
+declare(strict_types=1);
+
 /**
  * @file
  * Customized and stripped down Drupal configuration file.
@@ -11,42 +13,14 @@
  */
 
 /**
- * Database settings:
+ * Database connection settings.
  *
- * The $databases array specifies the database connection or
- * connections that Drupal may use.  Drupal is able to connect
- * to multiple databases, including multiple types of databases,
- * during the same request.
- *
- * One example of the simplest connection array is shown below. To use the
- * sample settings, copy and uncomment the code below between the @code and
- * @endcode lines and paste it after the $databases declaration. You will need
- * to replace the database username and password and possibly the host and port
- * with the appropriate credentials for your database system.
- *
- * The next section describes how to customize the $databases array for more
- * specific needs.
- *
- * @code
- * $databases['default']['default'] = [
- *   'database' => 'databasename',
- *   'username' => 'sqlusername',
- *   'password' => 'sqlpassword',
- *   'host' => 'localhost',
- *   'port' => '3306',
- *   'driver' => 'mysql',
- *   'prefix' => '',
- *   'collation' => 'utf8mb4_general_ci',
- * ];
- * @endcode
+ * This first attempts to use 'DRUPAL_DATABASE_*' environment variables to build
+ * the primary/default connection if they're all available, falling back to
+ * requiring a settings.database.php file in the site directory if not a DDEV
+ * project.
  */
 if (
-  file_exists($app_root . '/' . $site_path . '/settings.database.php')
-) {
-  include $app_root . '/' . $site_path . '/settings.database.php';
-
-// Check for DigitalOcean App Platform database environment variables.
-} else if (
   \getenv('DRUPAL_DATABASE_NAME')     !== false &&
   \getenv('DRUPAL_DATABASE_USERNAME') !== false &&
   \getenv('DRUPAL_DATABASE_PASSWORD') !== false &&
@@ -64,6 +38,11 @@ if (
     'prefix'    => '',
   ];
 
+} else if (
+  \getenv('IS_DDEV_PROJECT') === false &&
+  \file_exists($app_root . '/' . $site_path . '/settings.database.php')
+) {
+  require $app_root . '/' . $site_path . '/settings.database.php';
 }
 
 /**
@@ -112,75 +91,68 @@ $config['config_split.config_split.paranoia']['status'] = true;
 /**
  * Salt for one-time login links, cancel links, form tokens, etc.
  *
- * This variable will be set to a random value by the installer. All one-time
- * login links will be invalidated if the value is changed. Note that if your
- * site is deployed on a cluster of web servers, you must ensure that this
- * variable has the same value on each server.
- *
- * For enhanced security, you may set this variable to the contents of a file
- * outside your document root; you should also ensure that this file is not
- * stored with backups of your database.
- *
- * Example:
- * @code
- *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
- * @endcode
+ * This first tries to use the 'DRUPAL_HASH_SALT' environment variable if it
+ * exists, falling back to a file-based key in ../keys/drupal_hash_salt.key if
+ * it exists.
  */
-if (file_exists($app_root . '/../keys/drupal_hash_salt.key')) {
+if (\getenv('DRUPAL_HASH_SALT') !== false) {
+
+  $settings['hash_salt'] = \getenv('DRUPAL_HASH_SALT');
+
+} else if (\file_exists($app_root . '/../keys/drupal_hash_salt.key')) {
 
   $settings['hash_salt'] = \file_get_contents(
     $app_root . '/../keys/drupal_hash_salt.key'
   );
 
-// Fall back to the the environment variable if it exists.
-} else if (\getenv('DRUPAL_HASH_SALT') !== false) {
-  $settings['hash_salt'] = \getenv('DRUPAL_HASH_SALT');
 }
 
 /**
  * Access control for update.php script.
  *
- * If you are updating your Drupal installation using the update.php script but
- * are not logged in using either an account with the "Administer software
- * updates" permission or the site maintenance account (the account that was
- * created during installation), you will need to modify the access check
- * statement below. Change the FALSE to a TRUE to disable the access check.
- * After finishing the upgrade, be sure to open this file again and change the
- * TRUE back to a FALSE!
+ * Under almost all circumstances, this should be left as false as updating
+ * should be done via much more secure means - preferably via Drush and not
+ * update.php. Note that web access to update.php is also blocked via .htaccess
+ * rules prepended through the Drupal scaffolding process.
  */
-$settings['update_free_access'] = FALSE;
+$settings['update_free_access'] = false;
 
 /**
- * Public file path:
+ * Public file path.
  *
  * A local file system path where public files will be stored. This directory
  * must exist and be writable by Drupal. This directory must be relative to
  * the Drupal installation directory and be accessible over the web.
+ *
+ * Note that this still needs to be set when the S3 File System public/private
+ * takeover is enabled to prevent warnings on the status report page.
  */
 $settings['file_public_path'] = 'sites/default/files';
 
 /**
- * Optimized assets path:
+ * Optimized assets path.
  *
  * A local file system path where optimized assets will be stored. This
  * directory must exist and be writable by Drupal. This directory must be
  * relative to the Drupal installation directory and be accessible over the
  * web.
+ *
+ * @see https://www.drupal.org/project/drupal/issues/3027639
+ *   Requires this patch to use in Drupal core older than 10.1
  */
 $settings['file_assets_path'] = 'assets';
 
 /**
- * Private file path:
+ * Private file path.
  *
  * A local file system path where private files will be stored. This directory
  * must be absolute, outside of the Drupal installation directory and not
  * accessible over the web.
  *
- * Note: Caches need to be cleared when this value is changed to make the
- * private:// stream wrapper available to the system.
+ * Note that this still needs to be set when the S3 File System public/private
+ * takeover is enabled to prevent warnings on the status report page.
  *
- * See https://www.drupal.org/documentation/modules/file for more information
- * about securing private files.
+ * @see https://www.drupal.org/documentation/modules/file
  */
 $settings['file_private_path'] = \realpath(
   $app_root . '/../drupal_private_files'
@@ -259,7 +231,7 @@ $settings['entity_update_batch_size'] = 50;
  * well as the original entity type and field storage definitions should be
  * retained after a successful entity update process.
  */
-$settings['entity_update_backup'] = TRUE;
+$settings['entity_update_backup'] = true;
 
 /**
  * Suppress PHP deprecation warnings.
@@ -270,22 +242,17 @@ $settings['entity_update_backup'] = TRUE;
 
 /**
  * Load local development override configuration, if available.
- *
- * Use settings.local.php to override variables on secondary (staging,
- * development, etc) installations of this site. Typically used to disable
- * caching, JavaScript/CSS compression, re-routing of outgoing emails, and
- * other things that should not happen on development and testing sites.
- *
- * Keep this code block at the end of this file to take full effect.
  */
-if (
-  file_exists($app_root . '/' . $site_path . '/settings.local.php')
-) {
-  include $app_root . '/' . $site_path . '/settings.local.php';
+if (\file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+  require $app_root . '/' . $site_path . '/settings.local.php';
 }
 
-// Automatically generated include for settings managed by ddev.
-$ddev_settings = dirname(__FILE__) . '/settings.ddev.php';
-if (getenv('IS_DDEV_PROJECT') == 'true' && is_readable($ddev_settings)) {
-  require $ddev_settings;
+/**
+ * Load DDEV settings file if this is a DDEV project.
+ */
+if (
+  \getenv('IS_DDEV_PROJECT') === 'true' &&
+  \file_exists($app_root . '/' . $site_path . '/settings.ddev.php')
+) {
+  require $app_root . '/' . $site_path . '/settings.ddev.php';
 }
