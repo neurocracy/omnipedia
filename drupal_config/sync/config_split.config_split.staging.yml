@@ -21,7 +21,6 @@ graylist:
   - key.config_override.stripe_publishable_key
   - key.config_override.stripe_secret_key
   - media.settings
-  - update.settings
   - user.role.anonymous
 graylist_dependents: true
 graylist_skip_equal: true
