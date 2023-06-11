@@ -5247,12 +5247,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neurocracy/drupal-omnipedia-changes.git",
-                "reference": "79cbd25d31f38db974e4d49f81dc5a7fe7763ab6"
+                "reference": "757a50140f0b36e61fa05dff0954034fed2c0c28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-changes/zipball/79cbd25d31f38db974e4d49f81dc5a7fe7763ab6",
-                "reference": "79cbd25d31f38db974e4d49f81dc5a7fe7763ab6",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-changes/zipball/757a50140f0b36e61fa05dff0954034fed2c0c28",
+                "reference": "757a50140f0b36e61fa05dff0954034fed2c0c28",
                 "shasum": ""
             },
             "require": {
@@ -5289,7 +5289,7 @@
                 "source": "https://github.com/neurocracy/drupal-omnipedia-changes/tree/5.x",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-changes/issues"
             },
-            "time": "2023-01-24T13:26:47+00:00"
+            "time": "2023-06-11T12:44:09+00:00"
         },
         {
             "name": "drupal/omnipedia_commerce",
