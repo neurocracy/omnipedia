@@ -19,7 +19,6 @@ is_admin: null
 permissions:
   - 'access administration pages'
   - 'access contextual links'
-  - 'access flood unblock'
   - 'access pbt settings'
   - 'access shortcuts'
   - 'access site in maintenance mode'

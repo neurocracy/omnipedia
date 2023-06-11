@@ -25,7 +25,6 @@ graylist:
   - remove_http_headers.settings
   - system.logging
   - system.performance
-  - update.settings
   - user.role.anonymous
   - user.role.authenticated
   - user.role.developer
