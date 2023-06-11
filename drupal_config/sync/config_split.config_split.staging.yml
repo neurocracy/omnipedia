@@ -16,7 +16,6 @@ graylist:
   - dblog.settings
   - gin.settings
   - media.settings
-  - update.settings
   - user.role.anonymous
 graylist_dependents: true
 graylist_skip_equal: true

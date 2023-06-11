@@ -104,8 +104,6 @@ permissions:
   - 'access devel information'
   - 'access development environment email logs'
   - 'access files overview'
-  - 'access flood control settings page'
-  - 'access flood unblock'
   - 'access media overview'
   - 'access pbt settings'
   - 'access profile overview'
