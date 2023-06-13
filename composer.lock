@@ -2054,15 +2054,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-icon.git",
-                "reference": "2d24183c68377fae33bfbbbc406f8ddb0931a442"
+                "reference": "11bd94bf99386e9c4c31b233347e3998bb2635ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-icon/zipball/2d24183c68377fae33bfbbbc406f8ddb0931a442",
-                "reference": "2d24183c68377fae33bfbbbc406f8ddb0931a442",
+                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-icon/zipball/11bd94bf99386e9c4c31b233347e3998bb2635ac",
+                "reference": "11bd94bf99386e9c4c31b233347e3998bb2635ac",
                 "shasum": ""
             },
             "require": {
+                "drupal/ambientimpact_core": "1.x-dev@dev",
                 "drupal/hook_event_dispatcher": "^2.0 || ^3.0"
             },
             "default-branch": true,
@@ -2082,7 +2083,7 @@
                 "source": "https://github.com/Ambient-Impact/drupal-ambientimpact-icon/tree/1.x",
                 "issues": "https://github.com/Ambient-Impact/drupal-ambientimpact-icon/issues"
             },
-            "time": "2023-06-13T15:20:56+00:00"
+            "time": "2023-06-13T19:11:55+00:00"
         },
         {
             "name": "drupal/ambientimpact_markdown",
@@ -2127,16 +2128,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-media.git",
-                "reference": "38d12ca084cc03776363c2f5a5e4e5cffe2e0247"
+                "reference": "2a3f38449361e9984c33168381e952f3b82a9940"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-media/zipball/38d12ca084cc03776363c2f5a5e4e5cffe2e0247",
-                "reference": "38d12ca084cc03776363c2f5a5e4e5cffe2e0247",
+                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-media/zipball/2a3f38449361e9984c33168381e952f3b82a9940",
+                "reference": "2a3f38449361e9984c33168381e952f3b82a9940",
                 "shasum": ""
             },
             "require": {
                 "cweagans/composer-patches": "^1.7.0",
+                "drupal/ambientimpact_core": "1.x-dev@dev",
+                "drupal/ambientimpact_icon": "1.x-dev@dev",
+                "drupal/ambientimpact_ux": "1.x-dev@dev",
                 "drupal/core-recommended": "^9.5.3",
                 "drupal/hook_event_dispatcher": "^2.0 || ^3.0",
                 "drupal/image_field_caption": "^1.1",
@@ -2147,12 +2151,12 @@
             "extra": {
                 "patches": {
                     "drupal/core": {
-                        "Add a hook to modify oEmbed resource data (core 9.5.3 and up) [#3042423]: https://www.drupal.org/project/drupal/issues/3042423#comment-14902126": "https://raw.githubusercontent.com/Ambient-Impact/drupal-modules/7.x/ambientimpact_media/patches/drupal/core/3042423-72.patch",
-                        "Order image mappings by breakpoint ID and numeric multiplier [#3267870] (required for subsequent patch): https://www.drupal.org/project/drupal/issues/3267870": "https://raw.githubusercontent.com/Ambient-Impact/drupal-modules/7.x/ambientimpact_media/patches/drupal/core/3267870-9.5.x-47.patch",
-                        "Apply width and height attributes to responsive image tag (core 9.5.x) [#3192234]: https://www.drupal.org/project/drupal/issues/3192234#comment-14510278": "https://raw.githubusercontent.com/Ambient-Impact/drupal-modules/7.x/ambientimpact_media/patches/drupal/core/3192234-228-9.5.x.patch"
+                        "Add a hook to modify oEmbed resource data (core 9.5.3 and up) [#3042423]: https://www.drupal.org/project/drupal/issues/3042423#comment-14902126": "https://raw.githubusercontent.com/Ambient-Impact/drupal-ambientimpact-media/1.x/patches/drupal/core/3042423-72.patch",
+                        "Order image mappings by breakpoint ID and numeric multiplier [#3267870] (required for subsequent patch): https://www.drupal.org/project/drupal/issues/3267870": "https://raw.githubusercontent.com/Ambient-Impact/drupal-ambientimpact-media/1.x/patches/drupal/core/3267870-9.5.x-47.patch",
+                        "Apply width and height attributes to responsive image tag (core 9.5.x) [#3192234]: https://www.drupal.org/project/drupal/issues/3192234#comment-14510278": "https://raw.githubusercontent.com/Ambient-Impact/drupal-ambientimpact-media/1.x/patches/drupal/core/3192234-228-9.5.x.patch"
                     },
                     "drupal/image_field_caption": {
-                        "Caption required incorrectly based on alt field required [#3181263]: https://www.drupal.org/project/image_field_caption/issues/3181263#comment-13895775": "https://raw.githubusercontent.com/Ambient-Impact/drupal-modules/7.x/ambientimpact_media/patches/drupal/image_field_caption/image_field_caption_caption_required_alt_required_3181263-1.patch"
+                        "Caption required incorrectly based on alt field required [#3181263]: https://www.drupal.org/project/image_field_caption/issues/3181263#comment-13895775": "https://raw.githubusercontent.com/Ambient-Impact/drupal-ambientimpact-media/1.x/patches/drupal/image_field_caption/image_field_caption_caption_required_alt_required_3181263-1.patch"
                     }
                 }
             },
@@ -2171,7 +2175,7 @@
                 "source": "https://github.com/Ambient-Impact/drupal-ambientimpact-media/tree/1.x",
                 "issues": "https://github.com/Ambient-Impact/drupal-ambientimpact-media/issues"
             },
-            "time": "2023-06-13T15:20:56+00:00"
+            "time": "2023-06-13T19:12:48+00:00"
         },
         {
             "name": "drupal/ambientimpact_ux",
@@ -2179,15 +2183,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-ux.git",
-                "reference": "63799991ca009dbdf6a8efd92427e6a53f516f4b"
+                "reference": "97920569d469a7345b9865251f392e6a415741a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-ux/zipball/63799991ca009dbdf6a8efd92427e6a53f516f4b",
-                "reference": "63799991ca009dbdf6a8efd92427e6a53f516f4b",
+                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-ux/zipball/97920569d469a7345b9865251f392e6a415741a6",
+                "reference": "97920569d469a7345b9865251f392e6a415741a6",
                 "shasum": ""
             },
             "require": {
+                "drupal/ambientimpact_core": "1.x-dev@dev",
+                "drupal/ambientimpact_icon": "1.x-dev@dev",
                 "drupal/hook_event_dispatcher": "^2.0 || ^3.0"
             },
             "default-branch": true,
@@ -2207,7 +2213,7 @@
                 "source": "https://github.com/Ambient-Impact/drupal-ambientimpact-ux/tree/1.x",
                 "issues": "https://github.com/Ambient-Impact/drupal-ambientimpact-ux/issues"
             },
-            "time": "2023-06-13T15:20:56+00:00"
+            "time": "2023-06-13T19:13:50+00:00"
         },
         {
             "name": "drupal/autoban",
