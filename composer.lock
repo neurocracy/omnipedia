@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "747f2d539ac5d8b1c7de49ee158c1018",
+    "content-hash": "9192cfe9030a174909e6c68f5bdff1eb",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -5196,6 +5196,7 @@
                 "drupal/hook_event_dispatcher": "^3.1 || ^4.0",
                 "drupal/permissions_by_term": "^3.1.19"
             },
+            "default-branch": true,
             "type": "drupal-custom-module",
             "extra": {
                 "patches": {
@@ -5246,6 +5247,7 @@
                 "symfony/css-selector": "^4.4 || ^6.2",
                 "symfony/dom-crawler": "^4.4 || ^6.2"
             },
+            "default-branch": true,
             "type": "drupal-custom-module",
             "license": [
                 "GPL-2.0-or-later"
@@ -5270,12 +5272,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neurocracy/drupal-omnipedia-block.git",
-                "reference": "3f175b4bc0c795c8b6b99298f8713f30bcea4618"
+                "reference": "b44e3ca5e3bb57db2c01e2a9d2fc1b49691db2da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-block/zipball/3f175b4bc0c795c8b6b99298f8713f30bcea4618",
-                "reference": "3f175b4bc0c795c8b6b99298f8713f30bcea4618",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-block/zipball/b44e3ca5e3bb57db2c01e2a9d2fc1b49691db2da",
+                "reference": "b44e3ca5e3bb57db2c01e2a9d2fc1b49691db2da",
                 "shasum": ""
             },
             "require": {
@@ -5284,13 +5286,14 @@
                 "drupal/hook_event_dispatcher": "^3.1 || ^4.0",
                 "drupal/omnipedia_access": "4.x-dev@dev",
                 "drupal/omnipedia_changes": "6.x-dev@dev",
-                "drupal/omnipedia_commerce": "3.x-dev@dev",
+                "drupal/omnipedia_commerce": "4.x-dev@dev",
                 "drupal/omnipedia_content": "5.x-dev@dev",
                 "drupal/omnipedia_core": "4.x-dev@dev",
                 "drupal/omnipedia_date": "4.x-dev@dev",
                 "drupal/omnipedia_search": "4.x-dev@dev",
                 "php": "^7.4 || ^8"
             },
+            "default-branch": true,
             "type": "drupal-custom-module",
             "license": [
                 "GPL-2.0-or-later"
@@ -5307,7 +5310,7 @@
                 "source": "https://github.com/neurocracy/drupal-omnipedia-block/tree/5.x",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-block/issues"
             },
-            "time": "2023-06-13T18:42:05+00:00"
+            "time": "2023-06-14T20:55:10+00:00"
         },
         {
             "name": "drupal/omnipedia_changes",
@@ -5338,6 +5341,7 @@
                 "symfony/css-selector": "^4.4 || ^6.2",
                 "symfony/dom-crawler": "^4.4 || ^6.2"
             },
+            "default-branch": true,
             "type": "drupal-custom-module",
             "extra": {
                 "drush": {
@@ -5365,16 +5369,16 @@
         },
         {
             "name": "drupal/omnipedia_commerce",
-            "version": "3.x-dev",
+            "version": "4.x-dev",
             "source": {
                 "type": "git",
                 "url": "git@github.com:neurocracy/drupal-omnipedia-commerce.git",
-                "reference": "626e78e599c31e5dad438754d7a0a6631f0870d4"
+                "reference": "e9bf32d6cf45efb1b60c36026f4860d972b733ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-commerce/zipball/626e78e599c31e5dad438754d7a0a6631f0870d4",
-                "reference": "626e78e599c31e5dad438754d7a0a6631f0870d4",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-commerce/zipball/e9bf32d6cf45efb1b60c36026f4860d972b733ce",
+                "reference": "e9bf32d6cf45efb1b60c36026f4860d972b733ce",
                 "shasum": ""
             },
             "require": {
@@ -5383,7 +5387,8 @@
                 "drupal/commerce_paypal": "^1.0",
                 "drupal/commerce_product_limits": "^1.0",
                 "drupal/commerce_stripe": "^1.0",
-                "drupal/hook_event_dispatcher": "^3.0"
+                "drupal/core": "^9.5 || ^10.0",
+                "drupal/hook_event_dispatcher": "^3.1 || ^4.0"
             },
             "default-branch": true,
             "type": "drupal-custom-module",
@@ -5399,10 +5404,10 @@
             ],
             "description": "Omnipedia - Commerce",
             "support": {
-                "source": "https://github.com/neurocracy/drupal-omnipedia-commerce/tree/3.x",
+                "source": "https://github.com/neurocracy/drupal-omnipedia-commerce/tree/4.x",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-commerce/issues"
             },
-            "time": "2022-06-13T14:08:51+00:00"
+            "time": "2023-06-14T20:40:59+00:00"
         },
         {
             "name": "drupal/omnipedia_content",
@@ -5433,6 +5438,7 @@
                 "symfony/css-selector": "^4.4 || ^6.2",
                 "symfony/dom-crawler": "^4.4 || ^6.2"
             },
+            "default-branch": true,
             "type": "drupal-custom-module",
             "license": [
                 "GPL-2.0-or-later"
@@ -5470,6 +5476,7 @@
                 "drupal/hook_event_dispatcher": "^3.1 || ^4.0",
                 "php": "^8"
             },
+            "default-branch": true,
             "type": "drupal-custom-module",
             "license": [
                 "GPL-2.0-or-later"
@@ -5507,6 +5514,7 @@
                 "drupal/hook_event_dispatcher": "^3.1 || ^4.0",
                 "php": "^8"
             },
+            "default-branch": true,
             "type": "drupal-custom-module",
             "license": [
                 "GPL-2.0-or-later"
@@ -5544,6 +5552,7 @@
                 "drupal/monolog": "^2.0.2",
                 "php": "^8"
             },
+            "default-branch": true,
             "type": "drupal-custom-module",
             "license": [
                 "GPL-2.0-or-later"
@@ -5587,6 +5596,7 @@
                 "drupal/webp": "^1.0",
                 "php": "^8"
             },
+            "default-branch": true,
             "type": "drupal-custom-module",
             "extra": {
                 "patches": {
@@ -5632,6 +5642,7 @@
                 "drupal/hook_event_dispatcher": "^3.1 || ^4.0",
                 "php": "^8"
             },
+            "default-branch": true,
             "type": "drupal-custom-module",
             "extra": {
                 "patches": {
@@ -5676,6 +5687,7 @@
                 "drupal/search_api": "^1.15",
                 "php": "^7.4 || ^8"
             },
+            "default-branch": true,
             "type": "drupal-custom-module",
             "license": [
                 "GPL-2.0-or-later"
@@ -5759,6 +5771,7 @@
                 "drupal/hook_event_dispatcher": "^3.1 || ^4.0",
                 "php": "^8"
             },
+            "default-branch": true,
             "type": "drupal-custom-module",
             "license": [
                 "GPL-2.0-or-later"
