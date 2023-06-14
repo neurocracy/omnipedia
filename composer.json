@@ -153,7 +153,7 @@
     "drupal/rebuilder": "^1.0@RC",
     "drupal/redirect": "^1.6",
     "drupal/remove_http_headers": "^1.0",
-    "drupal/rules": "^3.0@alpha",
+    "drupal/rules": "3.x-dev@dev",
     "drupal/seckit": "^2.0",
     "drupal/security_review": "^2.0",
     "drupal/session_limit": "^2.0@beta",
@@ -223,9 +223,6 @@
       "drupal/readonlymode": {
         "Fix readonly notice message styling [#3008741]: https://www.drupal.org/project/readonlymode/issues/3008741": "patches/drupal/readonlymode/3008741-6-fix-readonly-notice-styling.patch",
         "Fatal error due to saved additional form IDs being strings and not arrays [#3115119]: https://www.drupal.org/project/readonlymode/issues/3115119": "patches/drupal/readonlymode/3115119-16-additional-forms-config-not-array.patch"
-      },
-      "drupal/rules": {
-        "Support upcasting entity IDs to full entity contexts: https://www.drupal.org/project/rules/issues/2800749#comment-14332836": "patches/drupal/rules/2800749-97.upcast.patch"
       },
       "drupal/session_limit": {
         "Displayed message should be configurable: https://www.drupal.org/project/session_limit/issues/2794553#comment-14364480": "patches/drupal/session_limit/session_limit-configurable-message-2794553-19.patch",
