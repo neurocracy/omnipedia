@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a21d7d421ba918a3c24160fdd60c8fe6",
+    "content-hash": "3546af596da7e28db6b23b8140353a82",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -4498,64 +4498,23 @@
         },
         {
             "name": "drupal/image_field_caption",
-            "version": "1.2.0",
+            "version": "dev-3355337-support-drupal-10",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/image_field_caption.git",
-                "reference": "8.x-1.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/image_field_caption-8.x-1.2.zip",
-                "reference": "8.x-1.2",
-                "shasum": "ea4705e97d8b13257507f2013e16a7ba244a4298"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9"
+                "url": "https://git.drupalcode.org/issue/image_field_caption-3355337.git",
+                "reference": "9dc3c61ba7974a4a8ce805c41247011614fe65bd"
             },
             "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.2",
-                    "datestamp": "1651684811",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "awm",
-                    "homepage": "https://www.drupal.org/user/1059398"
-                },
-                {
-                    "name": "hanoii",
-                    "homepage": "https://www.drupal.org/user/23157"
-                },
-                {
-                    "name": "iStryker",
-                    "homepage": "https://www.drupal.org/user/303676"
-                },
-                {
-                    "name": "ironsizide",
-                    "homepage": "https://www.drupal.org/user/787980"
-                },
-                {
-                    "name": "tyler.frankenstein",
-                    "homepage": "https://www.drupal.org/user/150680"
-                }
             ],
             "description": "Add caption to image field.",
             "homepage": "https://www.drupal.org/project/image_field_caption",
             "support": {
-                "source": "https://git.drupalcode.org/project/image_field_caption",
-                "issues": "https://www.drupal.org/project/issues/image_field_caption"
-            }
+                "issues": "https://www.drupal.org/project/issues/image_field_caption",
+                "source": "https://git.drupalcode.org/project/image_field_caption"
+            },
+            "time": "2023-06-14T22:12:49+00:00"
         },
         {
             "name": "drupal/inline_entity_form",
@@ -18229,6 +18188,12 @@
         }
     ],
     "aliases": [
+        {
+            "package": "drupal/image_field_caption",
+            "version": "dev-3355337-support-drupal-10",
+            "alias": "1.2",
+            "alias_normalized": "1.2.0.0"
+        },
         {
             "package": "drupal/markdown",
             "version": "dev-3288447-automated-drupal-10",

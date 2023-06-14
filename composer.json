@@ -36,6 +36,10 @@
       "type": "vcs",
       "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-ux.git"
     },
+    "drupal/image_field_caption": {
+      "type": "vcs",
+      "url": "https://git.drupalcode.org/issue/image_field_caption-3355337.git"
+    },
     "drupal/markdown": {
       "type": "vcs",
       "url": "https://git.drupalcode.org/issue/markdown-3288447.git"
@@ -136,6 +140,7 @@
     "drupal/login_security": "^2.0",
     "drupal/media_entity_file_replace": "^1.0",
     "drupal/metatag": "^1.11",
+    "drupal/image_field_caption": "dev-3355337-support-drupal-10@dev as 1.2",
     "drupal/markdown": "dev-3288447-automated-drupal-10@dev as 3.0@RC",
     "drupal/omnipedia_access": "4.x-dev@dev",
     "drupal/omnipedia_attached_data": "4.x-dev@dev",
