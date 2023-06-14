@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "107b93cd3e859df7530583ca56ef975b",
+    "content-hash": "be659f05d97ee2060363f4fe34c3d681",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -14866,26 +14866,26 @@
         },
         {
             "name": "drupal/config_delete",
-            "version": "1.18.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/config_delete.git",
-                "reference": "8.x-1.18"
+                "reference": "2.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_delete-8.x-1.18.zip",
-                "reference": "8.x-1.18",
-                "shasum": "d791ce345fd3700b36abdb9347611af1978f4ef0"
+                "url": "https://ftp.drupal.org/files/projects/config_delete-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "396475ad2a24c0e7ff690eb7d29e117a2b897cb8"
             },
             "require": {
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^9 || ^10"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.18",
-                    "datestamp": "1675152194",
+                    "version": "2.0.0",
+                    "datestamp": "1682487051",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"

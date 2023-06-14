@@ -164,7 +164,7 @@
     "oomphinc/composer-installers-extender": "^2.0"
   },
   "require-dev": {
-    "drupal/config_delete": "^1.7",
+    "drupal/config_delete": "^2.0",
     "drupal/config_devel": "^1.2",
     "drupal/config_inspector": "^2.1",
     "drupal/core-dev": "^9.5",
