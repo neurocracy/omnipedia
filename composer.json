@@ -17,24 +17,24 @@
       "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-base.git"
     },
     "drupal/ambientimpact_core": {
-      "type": "path",
-      "url": "drupal/modules/ambientimpact/ambientimpact_core"
+      "type": "vcs",
+      "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-core.git"
     },
     "drupal/ambientimpact_icon": {
-      "type": "path",
-      "url": "drupal/modules/ambientimpact/ambientimpact_icon"
+      "type": "vcs",
+      "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-icon.git"
     },
     "drupal/ambientimpact_markdown": {
-      "type": "path",
-      "url": "drupal/modules/ambientimpact/ambientimpact_markdown"
+      "type": "vcs",
+      "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-markdown.git"
     },
     "drupal/ambientimpact_media": {
-      "type": "path",
-      "url": "drupal/modules/ambientimpact/ambientimpact_media"
+      "type": "vcs",
+      "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-media.git"
     },
     "drupal/ambientimpact_ux": {
-      "type": "path",
-      "url": "drupal/modules/ambientimpact/ambientimpact_ux"
+      "type": "vcs",
+      "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-ux.git"
     },
     "drupal/omnipedia_access": {
       "type": "vcs",
@@ -102,11 +102,11 @@
     "composer/installers": "^2.0",
     "cweagans/composer-patches": "^1.7",
     "drupal/advagg": "^5.0",
-    "drupal/ambientimpact_core": "7.x-dev@dev",
-    "drupal/ambientimpact_icon": "7.x-dev@dev",
-    "drupal/ambientimpact_markdown": "7.x-dev@dev",
-    "drupal/ambientimpact_media": "7.x-dev@dev",
-    "drupal/ambientimpact_ux": "7.x-dev@dev",
+    "drupal/ambientimpact_core": "1.x-dev@dev",
+    "drupal/ambientimpact_icon": "1.x-dev@dev",
+    "drupal/ambientimpact_markdown": "1.x-dev@dev",
+    "drupal/ambientimpact_media": "1.x-dev@dev",
+    "drupal/ambientimpact_ux": "1.x-dev@dev",
     "drupal/autoban": "^1.7",
     "drupal/config_split": "^1.6",
     "drupal/core-composer-scaffold": "^9.5",
