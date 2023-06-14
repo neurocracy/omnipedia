@@ -122,6 +122,7 @@
     "drupal/gin": "^3.0@beta",
     "drupal/gin_toolbar": "^1.0@beta",
     "drupal/honeypot": "^2.0",
+    "drupal/hook_event_dispatcher": "^4.0@beta",
     "drupal/key": "^1.14",
     "drupal/login_destination": "^2.0",
     "drupal/login_security": "^2.0",
