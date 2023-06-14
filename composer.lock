@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3546af596da7e28db6b23b8140353a82",
+    "content-hash": "1df0ce7859ca6263c630283a405e2ad0",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -3662,51 +3662,29 @@
         },
         {
             "name": "drupal/development_environment",
-            "version": "2.0.0",
+            "version": "2.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/development_environment.git",
-                "reference": "2.0.0"
+                "url": "https://github.com/Ambient-Impact/drupal-development-environment.git",
+                "reference": "0ed9fcd9100261f5237b0e311bc651d47d68e26a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/development_environment-2.0.0.zip",
-                "reference": "2.0.0",
-                "shasum": "2a615193a5fe2cf89a282b4555d84ed01f008061"
+                "url": "https://api.github.com/repos/Ambient-Impact/drupal-development-environment/zipball/0ed9fcd9100261f5237b0e311bc651d47d68e26a",
+                "reference": "0ed9fcd9100261f5237b0e311bc651d47d68e26a",
+                "shasum": ""
             },
-            "require": {
-                "drupal/core": "^8 || ^9"
-            },
+            "default-branch": true,
             "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "2.0.0",
-                    "datestamp": "1607026487",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0-or-later"
             ],
-            "authors": [
-                {
-                    "name": "Jaypan",
-                    "homepage": "https://www.drupal.org/user/324696"
-                },
-                {
-                    "name": "Noe_",
-                    "homepage": "https://www.drupal.org/user/845380"
-                }
-            ],
-            "description": "When this module is enabled, the system it is enabled on is marked as a development environment, logging emails to the watchdog instead of sending them out",
-            "homepage": "https://www.drupal.org/project/development_environment",
+            "description": "When this module is enabled, the system it is enabled on is marked as a development environment, logging emails to the watchdog instead of sending them out.",
             "support": {
-                "source": "https://git.drupalcode.org/project/development_environment"
-            }
+                "source": "https://github.com/Ambient-Impact/drupal-development-environment/tree/2.x",
+                "issues": "https://github.com/Ambient-Impact/drupal-development-environment/issues"
+            },
+            "time": "2023-06-14T22:47:55+00:00"
         },
         {
             "name": "drupal/diff",
@@ -18209,6 +18187,7 @@
         "drupal/ambientimpact_markdown": 20,
         "drupal/ambientimpact_media": 20,
         "drupal/ambientimpact_ux": 20,
+        "drupal/development_environment": 20,
         "drupal/gin": 10,
         "drupal/gin_toolbar": 10,
         "drupal/hook_event_dispatcher": 10,

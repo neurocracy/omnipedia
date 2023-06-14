@@ -36,6 +36,10 @@
       "type": "vcs",
       "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-ux.git"
     },
+    "drupal/development_environment": {
+      "type": "vcs",
+      "url": "https://github.com/Ambient-Impact/drupal-development-environment.git"
+    },
     "drupal/image_field_caption": {
       "type": "vcs",
       "url": "https://git.drupalcode.org/issue/image_field_caption-3355337.git"
@@ -125,7 +129,7 @@
     "drupal/core-recommended": "^9.5",
     "drupal/csp": "^1.13",
     "drupal/dblog_persistent": "^2.0",
-    "drupal/development_environment": "^2.0",
+    "drupal/development_environment": "2.x-dev@dev",
     "drupal/diff": "^1.0",
     "drupal/disable_link_rel": "^2.0",
     "drupal/eu_cookie_compliance": "^1.14",
@@ -218,9 +222,6 @@
       "drupal/core": {
         "JS aggregation should account for \"defer\" and \"async\" attributes [#1587536]: https://www.drupal.org/project/drupal/issues/1587536#comment-13821084": "patches/drupal/core/js-aggregation-defer-async-attributes-1587536-49.patch",
         "Make css/js optimized assets path configurable [#3027639] (NOTE: edited to remove failing block on non-existent file in dist that exists in Drupal.org Git): https://www.drupal.org/project/drupal/issues/3027639#comment-14461882": "patches/drupal/core/configurable-asset-paths-3027639-49.patch"
-      },
-      "drupal/development_environment": {
-        "Duplicate key in menu links YAML file [#3218169]: https://www.drupal.org/project/development_environment/issues/3218169": "patches/drupal/development_environment/duplicate-key-3218169-2.patch"
       },
       "drupal/honeypot": {
         "Missing primary key in table `honeypot_user` [#2943526]: https://www.drupal.org/project/honeypot/issues/2943526#comment-12712602": "patches/drupal/honeypot/honeypot-fix_missing_primary_key-8.x-2943526-6.patch"
