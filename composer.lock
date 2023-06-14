@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "70a9e815d2d80ff0da5b1f2286a332e2",
+    "content-hash": "78f06c6d948e9dba771333db9171cce3",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -3662,51 +3662,29 @@
         },
         {
             "name": "drupal/development_environment",
-            "version": "2.0.0",
+            "version": "2.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/development_environment.git",
-                "reference": "2.0.0"
+                "url": "https://github.com/Ambient-Impact/drupal-development-environment.git",
+                "reference": "0ed9fcd9100261f5237b0e311bc651d47d68e26a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/development_environment-2.0.0.zip",
-                "reference": "2.0.0",
-                "shasum": "2a615193a5fe2cf89a282b4555d84ed01f008061"
+                "url": "https://api.github.com/repos/Ambient-Impact/drupal-development-environment/zipball/0ed9fcd9100261f5237b0e311bc651d47d68e26a",
+                "reference": "0ed9fcd9100261f5237b0e311bc651d47d68e26a",
+                "shasum": ""
             },
-            "require": {
-                "drupal/core": "^8 || ^9"
-            },
+            "default-branch": true,
             "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "2.0.0",
-                    "datestamp": "1607026487",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0-or-later"
             ],
-            "authors": [
-                {
-                    "name": "Jaypan",
-                    "homepage": "https://www.drupal.org/user/324696"
-                },
-                {
-                    "name": "Noe_",
-                    "homepage": "https://www.drupal.org/user/845380"
-                }
-            ],
-            "description": "When this module is enabled, the system it is enabled on is marked as a development environment, logging emails to the watchdog instead of sending them out",
-            "homepage": "https://www.drupal.org/project/development_environment",
+            "description": "When this module is enabled, the system it is enabled on is marked as a development environment, logging emails to the watchdog instead of sending them out.",
             "support": {
-                "source": "https://git.drupalcode.org/project/development_environment"
-            }
+                "source": "https://github.com/Ambient-Impact/drupal-development-environment/tree/2.x",
+                "issues": "https://github.com/Ambient-Impact/drupal-development-environment/issues"
+            },
+            "time": "2023-06-14T22:47:55+00:00"
         },
         {
             "name": "drupal/diff",
@@ -4498,64 +4476,23 @@
         },
         {
             "name": "drupal/image_field_caption",
-            "version": "1.2.0",
+            "version": "dev-3355337-support-drupal-10",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/image_field_caption.git",
-                "reference": "8.x-1.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/image_field_caption-8.x-1.2.zip",
-                "reference": "8.x-1.2",
-                "shasum": "ea4705e97d8b13257507f2013e16a7ba244a4298"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9"
+                "url": "https://git.drupalcode.org/issue/image_field_caption-3355337.git",
+                "reference": "9dc3c61ba7974a4a8ce805c41247011614fe65bd"
             },
             "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.2",
-                    "datestamp": "1651684811",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "awm",
-                    "homepage": "https://www.drupal.org/user/1059398"
-                },
-                {
-                    "name": "hanoii",
-                    "homepage": "https://www.drupal.org/user/23157"
-                },
-                {
-                    "name": "iStryker",
-                    "homepage": "https://www.drupal.org/user/303676"
-                },
-                {
-                    "name": "ironsizide",
-                    "homepage": "https://www.drupal.org/user/787980"
-                },
-                {
-                    "name": "tyler.frankenstein",
-                    "homepage": "https://www.drupal.org/user/150680"
-                }
             ],
             "description": "Add caption to image field.",
             "homepage": "https://www.drupal.org/project/image_field_caption",
             "support": {
-                "source": "https://git.drupalcode.org/project/image_field_caption",
-                "issues": "https://www.drupal.org/project/issues/image_field_caption"
-            }
+                "issues": "https://www.drupal.org/project/issues/image_field_caption",
+                "source": "https://git.drupalcode.org/project/image_field_caption"
+            },
+            "time": "2023-06-14T22:12:49+00:00"
         },
         {
             "name": "drupal/inline_entity_form",
@@ -4940,21 +4877,14 @@
         },
         {
             "name": "drupal/markdown",
-            "version": "3.0.0-rc2",
+            "version": "dev-3288447-automated-drupal-10",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/markdown.git",
-                "reference": "3.0.0-rc2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/markdown-3.0.0-rc2.zip",
-                "reference": "3.0.0-rc2",
-                "shasum": "ccbb84b03ce1f5d2fdb8511595dde0980653845f"
+                "url": "https://git.drupalcode.org/issue/markdown-3288447.git",
+                "reference": "c1b88fd5cd3fe93464a14fac5f5b28fe592e0a29"
             },
             "require": {
                 "composer/semver": "^1.0 || ^2.0 || ^3.0",
-                "drupal/core": "^8 || ^9",
                 "php": ">=5.5.9"
             },
             "suggest": {
@@ -4962,21 +4892,12 @@
             },
             "type": "drupal-module",
             "extra": {
-                "drupal": {
-                    "version": "3.0.0-rc2",
-                    "datestamp": "1639560570",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "RC releases are not covered by Drupal security advisories."
-                    }
-                },
                 "drush": {
                     "services": {
                         "drush.services.yml": "^9 || ^10"
                     }
                 }
             },
-            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0-or-later"
             ],
@@ -4990,18 +4911,15 @@
                     "name": "Gisle Hannemyr (gisle)",
                     "homepage": "https://www.drupal.org/u/gisle",
                     "role": "D7 Maintainer"
-                },
-                {
-                    "name": "joelpittet",
-                    "homepage": "https://www.drupal.org/user/160302"
                 }
             ],
             "description": "Provides Markdown integration for Drupal and allows content to be formatted in a simple plain-text syntax that is transformed into valid HTML.",
             "homepage": "https://www.drupal.org/project/markdown",
             "support": {
-                "source": "https://git.drupalcode.org/project/markdown",
-                "issues": "https://www.drupal.org/project/markdown"
-            }
+                "issues": "https://www.drupal.org/project/markdown",
+                "source": "https://git.drupalcode.org/project/markdown"
+            },
+            "time": "2023-01-08T20:57:07+00:00"
         },
         {
             "name": "drupal/media_entity_file_replace",
@@ -18737,7 +18655,20 @@
             "time": "2021-07-28T10:34:58+00:00"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "package": "drupal/image_field_caption",
+            "version": "dev-3355337-support-drupal-10",
+            "alias": "1.2",
+            "alias_normalized": "1.2.0.0"
+        },
+        {
+            "package": "drupal/markdown",
+            "version": "dev-3288447-automated-drupal-10",
+            "alias": "3.0@RC",
+            "alias_normalized": "3.0.0.0"
+        }
+    ],
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/advagg": 15,
@@ -18746,6 +18677,7 @@
         "drupal/ambientimpact_markdown": 20,
         "drupal/ambientimpact_media": 20,
         "drupal/ambientimpact_ux": 20,
+        "drupal/development_environment": 20,
         "drupal/gin": 10,
         "drupal/gin_toolbar": 10,
         "drupal/hook_event_dispatcher": 10,
