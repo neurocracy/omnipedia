@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "94174e98e89052e852e5dc565663c36d",
+    "content-hash": "18f2c12ede8de6f13c76fb0336663cfd",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -1886,35 +1886,35 @@
         },
         {
             "name": "drupal/advagg",
-            "version": "5.0.0",
+            "version": "6.0.0-alpha1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/advagg.git",
-                "reference": "5.0.0"
+                "reference": "6.0.0-alpha1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/advagg-5.0.0.zip",
-                "reference": "5.0.0",
-                "shasum": "d4529b409e70206b87282a460dde4ab2c07c47b2"
+                "url": "https://ftp.drupal.org/files/projects/advagg-6.0.0-alpha1.zip",
+                "reference": "6.0.0-alpha1",
+                "shasum": "cadfe490b2b0c3fe099087f1c767ab7eaa73160a"
             },
             "require": {
-                "drupal/core": "^9",
+                "drupal/core": "^9.3 || ^10",
                 "tubalmartin/cssmin": "^4.1"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "5.0.0",
-                    "datestamp": "1672697815",
+                    "version": "6.0.0-alpha1",
+                    "datestamp": "1672698356",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
                     }
                 },
                 "drush": {
                     "services": {
-                        "drush.services.yml": "^9"
+                        "drush.services.yml": "^9 || ^10 || ^11"
                     }
                 }
             },
@@ -2186,12 +2186,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-ux.git",
-                "reference": "b807390a6be54b6847728bef1f9e3a196ed7654f"
+                "reference": "6f9e2a39d6241a304ab6a46516ce05afc1375452"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-ux/zipball/b807390a6be54b6847728bef1f9e3a196ed7654f",
-                "reference": "b807390a6be54b6847728bef1f9e3a196ed7654f",
+                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-ux/zipball/6f9e2a39d6241a304ab6a46516ce05afc1375452",
+                "reference": "6f9e2a39d6241a304ab6a46516ce05afc1375452",
                 "shasum": ""
             },
             "require": {
@@ -2217,7 +2217,7 @@
                 "source": "https://github.com/Ambient-Impact/drupal-ambientimpact-ux/tree/1.x",
                 "issues": "https://github.com/Ambient-Impact/drupal-ambientimpact-ux/issues"
             },
-            "time": "2023-06-14T16:05:03+00:00"
+            "time": "2023-06-14T20:20:15+00:00"
         },
         {
             "name": "drupal/autoban",
@@ -7116,23 +7116,23 @@
         },
         {
             "name": "drupal/tfa",
-            "version": "1.0.0",
+            "version": "2.0.0-alpha2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/tfa.git",
-                "reference": "8.x-1.0"
+                "reference": "2.0.0-alpha2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/tfa-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "5f13121e04ba25cf07be27261269ecf1a1f07a89"
+                "url": "https://ftp.drupal.org/files/projects/tfa-2.0.0-alpha2.zip",
+                "reference": "2.0.0-alpha2",
+                "shasum": "ae5834b3b28aabdf6e9fb5bcdc112a4392db29fa"
             },
             "require": {
                 "chillerlan/php-qrcode": "^1.0.9 || ^2.0 || ^3.2 || ^4.0",
                 "christian-riesen/otp": "^2.1",
-                "drupal/core": "^8 || ^9",
-                "drupal/encrypt": "~3.0",
+                "drupal/core": "^9.1 || ^10",
+                "drupal/encrypt": "^3.1",
                 "php": ">=7.0"
             },
             "require-dev": {
@@ -7143,16 +7143,16 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1669940340",
+                    "version": "2.0.0-alpha2",
+                    "datestamp": "1669821038",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
                     }
                 },
                 "drush": {
                     "services": {
-                        "drush.services.yml": "^9 || ^10 || ^11"
+                        "drush.services.yml": "^10 || ^11"
                     }
                 }
             },
@@ -7259,27 +7259,27 @@
         },
         {
             "name": "drupal/token_filter",
-            "version": "1.4.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/token_filter.git",
-                "reference": "8.x-1.4"
+                "reference": "2.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/token_filter-8.x-1.4.zip",
-                "reference": "8.x-1.4",
-                "shasum": "d0d4ddc098c8e8002a0aefb066cb6cd7481a4658"
+                "url": "https://ftp.drupal.org/files/projects/token_filter-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "73a4dc759ed78d634d4414ec81febc3428ebd2a5"
             },
             "require": {
-                "drupal/core": "^8 || ^9",
+                "drupal/core": "^9.4 || ^10",
                 "drupal/token": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.4",
-                    "datestamp": "1649114304",
+                    "version": "2.0.0",
+                    "datestamp": "1675762777",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -15356,26 +15356,26 @@
         },
         {
             "name": "drupal/config_delete",
-            "version": "1.18.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/config_delete.git",
-                "reference": "8.x-1.18"
+                "reference": "2.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_delete-8.x-1.18.zip",
-                "reference": "8.x-1.18",
-                "shasum": "d791ce345fd3700b36abdb9347611af1978f4ef0"
+                "url": "https://ftp.drupal.org/files/projects/config_delete-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "396475ad2a24c0e7ff690eb7d29e117a2b897cb8"
             },
             "require": {
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^9 || ^10"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.18",
-                    "datestamp": "1675152194",
+                    "version": "2.0.0",
+                    "datestamp": "1682487051",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -18763,6 +18763,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/advagg": 15,
         "drupal/ambientimpact_core": 20,
         "drupal/ambientimpact_icon": 20,
         "drupal/ambientimpact_markdown": 20,

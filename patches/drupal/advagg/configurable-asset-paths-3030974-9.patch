@@ -16,7 +16,7 @@ index 1bc8028..1a4dd9d 100644
        $file_system->deleteRecursive($path);
      }
 diff --git a/advagg.install b/advagg.install
-index 7e02706..6ee1587 100644
+index 80c6b00..b8146ce 100644
 --- a/advagg.install
 +++ b/advagg.install
 @@ -14,17 +14,17 @@ use Drupal\advagg\Form\OperationsForm;
@@ -45,15 +45,12 @@ index 7e02706..6ee1587 100644
      if (isset($stat_css['uid']) && $stat_public['uid'] != $stat_css['uid']) {
        @chown($stat_css[0], $stat_public['uid']);
 diff --git a/advagg.module b/advagg.module
-index 2798a1f..23ecaa9 100644
+index e8c2870..1b2062c 100644
 --- a/advagg.module
 +++ b/advagg.module
-@@ -62,9 +62,9 @@ function advagg_cron($bypass = FALSE) {
-   $file_system = \Drupal::service('file_system');
-   $cache = \Drupal::cache('advagg');
+@@ -64,7 +64,7 @@ function advagg_cron($bypass = FALSE) {
    $stale_file_threshold = \Drupal::config('system.performance')->get('stale_file_threshold');
--  
-+
+ 
    foreach (['css', 'js'] as $type) {
 -    $path = $file_system->realpath("public://{$type}/optimized");
 +    $path = $file_system->realpath("assets://{$type}/optimized");
@@ -61,11 +58,11 @@ index 2798a1f..23ecaa9 100644
        foreach ($files as $file) {
          // Only delete files older than stale file threshold defined under Cron Options.
 diff --git a/advagg_ext_minify/src/Asset/Minifier.php b/advagg_ext_minify/src/Asset/Minifier.php
-index 155068f..0cd8747 100644
+index 2514467..9867e91 100644
 --- a/advagg_ext_minify/src/Asset/Minifier.php
 +++ b/advagg_ext_minify/src/Asset/Minifier.php
-@@ -56,8 +56,8 @@ class Minifier extends SingleAssetOptimizerBase {
-     parent::__construct($logger);
+@@ -59,8 +59,8 @@ class Minifier extends SingleAssetOptimizerBase {
+     parent::__construct($logger, $file_url_generator);
      $this->config = $config_factory->get('advagg_ext_minify.settings');
      $this->file = $file;
 -    $this->in = $file->realpath($file->tempnam('public://js/optimized', 'advagg_in'));
@@ -73,10 +70,10 @@ index 155068f..0cd8747 100644
 +    $this->in = $file->realpath($file->tempnam('assets://js/optimized', 'advagg_in'));
 +    $this->out = $file->realpath($file->tempnam('assets://js/optimized', 'advagg_out'));
      $this->root = $root;
+     $this->fileUrlGenerator = $file_url_generator;
    }
- 
 diff --git a/src/Asset/AssetOptimizer.php b/src/Asset/AssetOptimizer.php
-index b080e0c..03f9f0c 100644
+index 776c0ea..d9f5936 100644
 --- a/src/Asset/AssetOptimizer.php
 +++ b/src/Asset/AssetOptimizer.php
 @@ -281,7 +281,7 @@ abstract class AssetOptimizer {
@@ -115,10 +112,10 @@ index 663e287..b38328b 100644
          $this->fileSystem->deleteRecursive($path);
        }
 diff --git a/src/Form/InfoForm.php b/src/Form/InfoForm.php
-index 86884a0..52bf36a 100644
+index 83c736a..912dbcd 100644
 --- a/src/Form/InfoForm.php
 +++ b/src/Form/InfoForm.php
-@@ -255,7 +255,7 @@ class InfoForm extends ConfigFormBase {
+@@ -234,7 +234,7 @@ class InfoForm extends ConfigFormBase {
     */
    private function getRandomFile() {
      // Ensure the directory exists.

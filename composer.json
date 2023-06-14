@@ -101,7 +101,7 @@
     "php": "^8",
     "composer/installers": "^2.0",
     "cweagans/composer-patches": "^1.7",
-    "drupal/advagg": "^5.0",
+    "drupal/advagg": "^6.0@alpha",
     "drupal/ambientimpact_core": "1.x-dev@dev",
     "drupal/ambientimpact_icon": "1.x-dev@dev",
     "drupal/ambientimpact_markdown": "1.x-dev@dev",
@@ -155,8 +155,8 @@
     "drupal/sodium": "^2.1",
     "drupal/subpathauto": "^1.2",
     "drupal/swiftmailer": "^2.0",
-    "drupal/tfa": "^1.0@alpha",
-    "drupal/token_filter": "^1.2",
+    "drupal/tfa": "^2.0@alpha",
+    "drupal/token_filter": "^2.0",
     "drupal/upgrade_status": "^4.0",
     "drupal/views_bulk_edit": "^2.5",
     "drupal/views_bulk_operations": "^4.1",
@@ -165,7 +165,7 @@
     "oomphinc/composer-installers-extender": "^2.0"
   },
   "require-dev": {
-    "drupal/config_delete": "^1.7",
+    "drupal/config_delete": "^2.0",
     "drupal/config_devel": "^1.2",
     "drupal/config_inspector": "^2.1",
     "drupal/core-dev": "^9.5",
@@ -199,7 +199,7 @@
     },
     "patches": {
       "drupal/advagg": {
-        "Support optimized assets path configurable [#3030974]: https://www.drupal.org/project/advagg/issues/3030974#comment-14457710": "patches/drupal/advagg/configurable-asset-paths-3030974-6.patch"
+        "Support optimized assets path configurable [#3030974]: https://www.drupal.org/project/advagg/issues/3030974#comment-15015494": "patches/drupal/advagg/configurable-asset-paths-3030974-9.patch"
       },
       "drupal/core": {
         "JS aggregation should account for \"defer\" and \"async\" attributes [#1587536]: https://www.drupal.org/project/drupal/issues/1587536#comment-13821084": "patches/drupal/core/js-aggregation-defer-async-attributes-1587536-49.patch",
