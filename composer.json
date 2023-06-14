@@ -92,6 +92,10 @@
       "type": "vcs",
       "url": "https://github.com/neurocracy/drupal-omnipedia-user.git"
     },
+    "drupal/paranoia": {
+      "type": "vcs",
+      "url": "https://git.drupalcode.org/issue/paranoia-3289009.git"
+    },
     "drupal": {
       "type": "composer",
       "url": "https://packages.drupal.org/8"
@@ -122,6 +126,7 @@
     "drupal/gin": "^3.0@beta",
     "drupal/gin_toolbar": "^1.0@beta",
     "drupal/honeypot": "^2.0",
+    "drupal/hook_event_dispatcher": "^4.0@beta",
     "drupal/key": "^1.14",
     "drupal/login_destination": "^2.0",
     "drupal/login_security": "^2.0",
@@ -141,7 +146,7 @@
     "drupal/omnipedia_search": "4.x-dev@dev",
     "drupal/omnipedia_site_theme": "5.x-dev@dev",
     "drupal/omnipedia_user": "4.x-dev@dev",
-    "drupal/paranoia": "^1.0@RC",
+    "drupal/paranoia": "3289009-automated-drupal-10-dev@dev",
     "drupal/password_policy": "^4.0",
     "drupal/pathauto": "^1.6",
     "drupal/readonlymode": "^1.1",
