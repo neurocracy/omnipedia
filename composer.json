@@ -117,7 +117,6 @@
     "php": "^8",
     "composer/installers": "^2.0",
     "cweagans/composer-patches": "^1.7",
-    "drupal/advagg": "^6.0@alpha",
     "drupal/ambientimpact_core": "2.x-dev@dev",
     "drupal/ambientimpact_icon": "1.x-dev@dev",
     "drupal/ambientimpact_markdown": "2.x-dev@dev",
@@ -217,9 +216,6 @@
       "drupal/core": "-p2"
     },
     "patches": {
-      "drupal/advagg": {
-        "Support optimized assets path configurable [#3030974]: https://www.drupal.org/project/advagg/issues/3030974#comment-15015494": "patches/drupal/advagg/configurable-asset-paths-3030974-9.patch"
-      },
       "drupal/core": {
         "JS aggregation should account for \"defer\" and \"async\" attributes [#1587536]: https://www.drupal.org/project/drupal/issues/1587536#comment-14924944": "patches/drupal/core/js-aggregation-defer-async-attributes-1587536-61.patch",
         "Make css/js optimized assets path configurable [#3027639] (NOTE: edited to remove failing block on non-existent file in dist that exists in Drupal.org Git): https://www.drupal.org/project/drupal/issues/3027639#comment-14461882": "patches/drupal/core/configurable-asset-paths-3027639-49.patch"

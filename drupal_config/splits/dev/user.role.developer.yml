@@ -18,7 +18,6 @@ dependencies:
     - taxonomy.vocabulary.episode_tiers
   module:
     - action
-    - advagg
     - autoban
     - ban
     - block
@@ -227,7 +226,6 @@ permissions:
   - administer_mailsystem
   - 'ban IP addresses'
   - 'build omnipedia_changes'
-  - 'bypass advanced aggregation'
   - 'bypass honeypot protection'
   - 'bypass node access'
   - 'bypass rules access'
