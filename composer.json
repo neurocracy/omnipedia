@@ -216,7 +216,7 @@
     },
     "patches": {
       "drupal/core": {
-        "JS aggregation should account for \"defer\" and \"async\" attributes [#1587536]: https://www.drupal.org/project/drupal/issues/1587536#comment-14924944": "patches/drupal/core/js-aggregation-defer-async-attributes-1587536-61.patch"
+        "JS aggregation should account for \"defer\" and \"async\" attributes [#1587536]: https://www.drupal.org/project/drupal/issues/1587536#comment-15106596": "patches/drupal/core/js-aggregation-defer-async-attributes-1587536-65.patch"
       },
       "drupal/honeypot": {
         "Missing primary key in table `honeypot_user` [#2943526]: https://www.drupal.org/project/honeypot/issues/2943526#comment-12712602": "patches/drupal/honeypot/honeypot-fix_missing_primary_key-8.x-2943526-6.patch"
