@@ -87,6 +87,7 @@ weight: -4
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'access block library'
   - 'access checkout'
   - 'access commerce administration pages'
   - 'access commerce_order overview'
@@ -118,6 +119,8 @@ permissions:
   - 'administer account settings'
   - 'administer actions'
   - 'administer autoban'
+  - 'administer block content'
+  - 'administer block types'
   - 'administer block_content display'
   - 'administer block_content fields'
   - 'administer block_content form display'
@@ -269,6 +272,7 @@ permissions:
   - 'delete own content_access commerce_product'
   - 'delete own customer profile'
   - 'delete own document media'
+  - 'delete own files'
   - 'delete own gif media'
   - 'delete own image media'
   - 'delete own online commerce_store'

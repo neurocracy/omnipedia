@@ -108,6 +108,7 @@ module:
   pcb: 0
   permissions_by_entity: 0
   permissions_by_term: 0
+  phpass: 0
   preprocess_event_dispatcher: 0
   profile: 0
   queue_ui: 0

@@ -8,6 +8,7 @@ dependencies:
     - contact
     - devel
     - eu_cookie_compliance
+    - file
     - media
     - omnipedia_changes
     - system
@@ -22,6 +23,7 @@ permissions:
   - 'access devel information'
   - 'access site-wide contact form'
   - 'build omnipedia_changes'
+  - 'delete own files'
   - 'display eu cookie compliance popup'
   - 'manage own commerce_payment_method'
   - 'view media'

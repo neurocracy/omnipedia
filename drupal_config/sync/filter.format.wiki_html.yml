@@ -155,3 +155,9 @@ filters:
           media_embed: false
       override: false
     filterFormat: wiki_html
+  filter_image_lazy_load:
+    id: filter_image_lazy_load
+    provider: filter
+    status: true
+    weight: -34
+    settings: {  }

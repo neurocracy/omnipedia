@@ -7,6 +7,7 @@ dependencies:
     - node.type.wiki_page
   module:
     - contextual
+    - file
     - filter
     - media
     - node
@@ -28,6 +29,7 @@ permissions:
   - 'access toolbar'
   - 'administer nodes'
   - 'delete media'
+  - 'delete own files'
   - 'edit own wiki_page content'
   - 'setup own tfa'
   - 'update media'
