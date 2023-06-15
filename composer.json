@@ -125,8 +125,8 @@
     "drupal/ambientimpact_ux": "1.x-dev@dev",
     "drupal/autoban": "^1.7",
     "drupal/config_split": "^1.6",
-    "drupal/core-composer-scaffold": "^9.5",
-    "drupal/core-recommended": "^9.5",
+    "drupal/core-composer-scaffold": "^10.0",
+    "drupal/core-recommended": "^10.0",
     "drupal/csp": "^1.13",
     "drupal/dblog_persistent": "^2.0",
     "drupal/development_environment": "2.x-dev@dev",
@@ -166,7 +166,7 @@
     "drupal/readonlymode": "^1.1",
     "drupal/rebuilder": "^1.0@RC",
     "drupal/redirect": "^1.6",
-    "drupal/remove_http_headers": "^1.0",
+    "drupal/remove_http_headers": "^2.0",
     "drupal/rules": "3.x-dev@dev",
     "drupal/seckit": "^2.0",
     "drupal/security_review": "^2.0",
@@ -186,7 +186,7 @@
     "drupal/config_delete": "^2.0",
     "drupal/config_devel": "^1.2",
     "drupal/config_inspector": "^2.1",
-    "drupal/core-dev": "^9.5",
+    "drupal/core-dev": "^10.0",
     "drupal/devel": "^5.0",
     "drupal/devel_entity_updates": "^4.0",
     "drupal/examples": "^4.0",
@@ -206,7 +206,8 @@
       "cweagans/composer-patches": true,
       "drupal/core-composer-scaffold": true,
       "oomphinc/composer-installers-extender": true,
-      "dealerdirect/phpcodesniffer-composer-installer": true
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "phpstan/extension-installer": true
     }
   },
   "extra": {
