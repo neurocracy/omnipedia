@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "857709b8806440f5402793ea07180b37",
+    "content-hash": "e810c88a29c6dd7ff8d12cfa22f0d934",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -3188,88 +3188,6 @@
                 "source": "https://github.com/drupal/core-composer-scaffold/tree/10.1.0-rc1"
             },
             "time": "2023-04-30T16:15:32+00:00"
-        },
-        {
-            "name": "drupal/core-recommended",
-            "version": "10.1.0-rc1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "eca536183e1c0760d0de2107c8b5050980e5dc3e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/eca536183e1c0760d0de2107c8b5050980e5dc3e",
-                "reference": "eca536183e1c0760d0de2107c8b5050980e5dc3e",
-                "shasum": ""
-            },
-            "require": {
-                "asm89/stack-cors": "~v2.1.1",
-                "composer/semver": "~3.3.2",
-                "doctrine/annotations": "~1.14.3",
-                "doctrine/deprecations": "~v1.1.1",
-                "doctrine/lexer": "~2.1.0",
-                "drupal/core": "10.1.0-rc1",
-                "egulias/email-validator": "~4.0.1",
-                "guzzlehttp/guzzle": "~7.7.0",
-                "guzzlehttp/promises": "~2.0.0",
-                "guzzlehttp/psr7": "~2.5.0",
-                "masterminds/html5": "~2.8.0",
-                "mck89/peast": "~v1.15.1",
-                "pear/archive_tar": "~1.4.14",
-                "pear/console_getopt": "~v1.4.3",
-                "pear/pear-core-minimal": "~v1.10.13",
-                "pear/pear_exception": "~v1.0.2",
-                "psr/cache": "~3.0.0",
-                "psr/container": "~2.0.2",
-                "psr/event-dispatcher": "~1.0.0",
-                "psr/http-client": "~1.0.2",
-                "psr/http-factory": "~1.0.2",
-                "psr/log": "~3.0.0",
-                "ralouphie/getallheaders": "~3.0.3",
-                "sebastian/diff": "~4.0.5",
-                "symfony/console": "~v6.3.0",
-                "symfony/dependency-injection": "~v6.3.0",
-                "symfony/deprecation-contracts": "~v3.3.0",
-                "symfony/error-handler": "~v6.3.0",
-                "symfony/event-dispatcher": "~v6.3.0",
-                "symfony/event-dispatcher-contracts": "~v3.3.0",
-                "symfony/http-foundation": "~v6.3.0",
-                "symfony/http-kernel": "~v6.3.0",
-                "symfony/mime": "~v6.3.0",
-                "symfony/polyfill-ctype": "~v1.27.0",
-                "symfony/polyfill-iconv": "~v1.27.0",
-                "symfony/polyfill-intl-grapheme": "~v1.27.0",
-                "symfony/polyfill-intl-idn": "~v1.27.0",
-                "symfony/polyfill-intl-normalizer": "~v1.27.0",
-                "symfony/polyfill-mbstring": "~v1.27.0",
-                "symfony/polyfill-php83": "~v1.27.0",
-                "symfony/process": "~v6.3.0",
-                "symfony/psr-http-message-bridge": "~v2.2.0",
-                "symfony/routing": "~v6.3.0",
-                "symfony/serializer": "~v6.3.0",
-                "symfony/service-contracts": "~v3.3.0",
-                "symfony/string": "~v6.3.0",
-                "symfony/translation-contracts": "~v3.3.0",
-                "symfony/validator": "~v6.3.0",
-                "symfony/var-dumper": "~v6.3.0",
-                "symfony/var-exporter": "~v6.3.0",
-                "symfony/yaml": "~v6.3.0",
-                "twig/twig": "~v3.6.0"
-            },
-            "conflict": {
-                "webflo/drupal-core-strict": "*"
-            },
-            "type": "metapackage",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "description": "Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core.",
-            "support": {
-                "source": "https://github.com/drupal/core-recommended/tree/10.1.0-rc1"
-            },
-            "time": "2023-06-08T17:04:03+00:00"
         },
         {
             "name": "drupal/csp",
@@ -18038,8 +17956,8 @@
         "drupal/ambientimpact_markdown": 20,
         "drupal/ambientimpact_media": 20,
         "drupal/ambientimpact_ux": 20,
+        "drupal/core": 5,
         "drupal/core-composer-scaffold": 5,
-        "drupal/core-recommended": 5,
         "drupal/development_environment": 20,
         "drupal/gin": 10,
         "drupal/gin_toolbar": 10,
