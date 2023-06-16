@@ -73,7 +73,6 @@ dependencies:
     - security_review
     - shortcut
     - smtp
-    - swiftmailer
     - system
     - taxonomy
     - tfa
