@@ -215,7 +215,7 @@
       "drupal/core": "-p2"
     },
     "patches": {
-      "drupal/core": {
+      "drupal/core-disabled": {
         "JS aggregation should account for \"defer\" and \"async\" attributes [#1587536]: https://www.drupal.org/project/drupal/issues/1587536#comment-15106596": "patches/drupal/core/js-aggregation-defer-async-attributes-1587536-65.patch"
       },
       "drupal/honeypot": {
