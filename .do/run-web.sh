@@ -1,13 +1,13 @@
 #!/bin/bash
 
-drush cr
+# drush cr
 
-drush -y updb
+# drush -y updb
 
-# Force a configuration import on deploy to enforce various settings.
-drush -y config:import
+# # Force a configuration import on deploy to enforce various settings.
+# drush -y config:import
 
-drush cr
+# drush cr
 
 # Rebuild asset libraries as a temporary workaround for local aggregation.
 #
