@@ -174,7 +174,7 @@
     "drupal/omnipedia_search": "4.x-dev@dev",
     "drupal/omnipedia_site_theme": "6.x-dev@dev",
     "drupal/omnipedia_user": "5.x-dev@dev",
-    "drupal/omnipedia_warmer": "1.x-dev@dev",
+    "drupal/omnipedia_warmer": "2.x-dev@dev",
     "drupal/paranoia": "3289009-automated-drupal-10-dev@dev",
     "drupal/password_policy": "^4.0",
     "drupal/pathauto": "^1.6",
