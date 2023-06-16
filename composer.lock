@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "428e59cc042855fbeb91bafee6bfcf7e",
+    "content-hash": "29e531f628968668cb3727a3bc095e6d",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -5004,6 +5004,42 @@
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-access/issues"
             },
             "time": "2023-06-12T17:13:37+00:00"
+        },
+        {
+            "name": "drupal/omnipedia_asset",
+            "version": "2.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/neurocracy/drupal-omnipedia-asset.git",
+                "reference": "c9d09dfae11c79f8bc38efc0bed312a94c58e7da"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-asset/zipball/c9d09dfae11c79f8bc38efc0bed312a94c58e7da",
+                "reference": "c9d09dfae11c79f8bc38efc0bed312a94c58e7da",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/core": "^10.1",
+                "php": "^8"
+            },
+            "type": "drupal-custom-module",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ambient.Impact",
+                    "homepage": "https://ambientimpact.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Omnipedia - Asset",
+            "support": {
+                "source": "https://github.com/neurocracy/drupal-omnipedia-asset/tree/2.x",
+                "issues": "https://github.com/neurocracy/drupal-omnipedia-asset/issues"
+            },
+            "time": "2023-06-16T19:36:42+00:00"
         },
         {
             "name": "drupal/omnipedia_attached_data",
@@ -18273,6 +18309,7 @@
         "drupal/hook_event_dispatcher": 10,
         "drupal/image_style_warmer": 5,
         "drupal/omnipedia_access": 20,
+        "drupal/omnipedia_asset": 20,
         "drupal/omnipedia_attached_data": 20,
         "drupal/omnipedia_block": 20,
         "drupal/omnipedia_changes": 20,
