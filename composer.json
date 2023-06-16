@@ -52,6 +52,10 @@
       "type": "vcs",
       "url": "https://github.com/neurocracy/drupal-omnipedia-access.git"
     },
+    "drupal/omnipedia_asset": {
+      "type": "vcs",
+      "url": "https://github.com/neurocracy/drupal-omnipedia-asset.git"
+    },
     "drupal/omnipedia_attached_data": {
       "type": "vcs",
       "url": "https://github.com/neurocracy/drupal-omnipedia-attached-data.git"
@@ -104,6 +108,10 @@
       "type": "vcs",
       "url": "https://github.com/neurocracy/drupal-omnipedia-user.git"
     },
+    "drupal/omnipedia_warmer": {
+      "type": "vcs",
+      "url": "https://github.com/neurocracy/drupal-omnipedia-warmer.git"
+    },
     "drupal/paranoia": {
       "type": "vcs",
       "url": "https://git.drupalcode.org/issue/paranoia-3289009.git"
@@ -115,6 +123,7 @@
   },
   "require": {
     "php": "^8",
+    "ext-apcu": "*",
     "composer/installers": "^2.0",
     "cweagans/composer-patches": "^1.7",
     "drupal/ambientimpact_core": "2.x-dev@dev",
@@ -138,6 +147,7 @@
     "drupal/gin_toolbar": "^1.0@beta",
     "drupal/honeypot": "^2.0",
     "drupal/hook_event_dispatcher": "^4.0@beta",
+    "drupal/image_style_warmer": "^1.2@RC",
     "drupal/key": "^1.14",
     "drupal/login_destination": "^2.0",
     "drupal/login_security": "^2.0",
@@ -146,6 +156,7 @@
     "drupal/image_field_caption": "dev-3355337-support-drupal-10@dev as 1.2",
     "drupal/markdown": "dev-3288447-automated-drupal-10@dev as 3.0@RC",
     "drupal/omnipedia_access": "4.x-dev@dev",
+    "drupal/omnipedia_asset": "1.x-dev@dev",
     "drupal/omnipedia_attached_data": "4.x-dev@dev",
     "drupal/omnipedia_block": "5.x-dev@dev",
     "drupal/omnipedia_changes": "7.x-dev@dev",
@@ -159,6 +170,7 @@
     "drupal/omnipedia_search": "4.x-dev@dev",
     "drupal/omnipedia_site_theme": "6.x-dev@dev",
     "drupal/omnipedia_user": "5.x-dev@dev",
+    "drupal/omnipedia_warmer": "1.x-dev@dev",
     "drupal/paranoia": "3289009-automated-drupal-10-dev@dev",
     "drupal/password_policy": "^4.0",
     "drupal/pathauto": "^1.6",
@@ -167,13 +179,16 @@
     "drupal/redirect": "^1.6",
     "drupal/remove_http_headers": "^2.0",
     "drupal/rules": "3.x-dev@dev",
+    "drupal/s3fs": "^3.0",
     "drupal/seckit": "^2.0",
     "drupal/security_review": "^2.0",
     "drupal/session_limit": "^2.0@beta",
+    "drupal/smtp": "^1.2",
     "drupal/sodium": "^2.1",
     "drupal/subpathauto": "^1.2",
     "drupal/tfa": "^2.0@alpha",
     "drupal/token_filter": "^2.0",
+    "drupal/trusted_reverse_proxy": "^1.0",
     "drupal/views_bulk_edit": "^2.5",
     "drupal/views_bulk_operations": "^4.1",
     "drupal/webp": "^1.0",
@@ -216,10 +231,16 @@
     },
     "patches": {
       "drupal/core": {
-        "JS aggregation should account for \"defer\" and \"async\" attributes [#1587536]: https://www.drupal.org/project/drupal/issues/1587536#comment-15106596": "patches/drupal/core/js-aggregation-defer-async-attributes-1587536-65.patch"
+        "JS aggregation should account for \"defer\" and \"async\" attributes [#1587536]: https://www.drupal.org/project/drupal/issues/1587536#comment-15106596": "patches/drupal/core/js-aggregation-defer-async-attributes-1587536-65.patch",
+        "Allow configurable cookie prefix [#1361742] (NOTE: edited to remove failing block on non-existent file in dist that exists in Drupal.org Git): https://www.drupal.org/project/drupal/issues/1361742": "patches/drupal/core/1361742-allow-configurable-cookie-prefix.patch",
+        "Support setting service parameters via environment variables [#3249970]: https://www.drupal.org/project/drupal/issues/3249970#comment-14294955": "patches/drupal/core/3249970-2-support-service-parameter-env.patch",
+        "Fix mismatch of $base_url with Symfony request object [#2753591]: https://www.drupal.org/project/drupal/issues/2753591": "patches/drupal/core/2753591-fix-mismatch-of-base-url.patch"
       },
       "drupal/honeypot": {
         "Missing primary key in table `honeypot_user` [#2943526]: https://www.drupal.org/project/honeypot/issues/2943526#comment-12712602": "patches/drupal/honeypot/honeypot-fix_missing_primary_key-8.x-2943526-6.patch"
+      },
+      "drupal/image_style_warmer": {
+        "Support webp images [#3319397]: https://www.drupal.org/project/image_style_warmer/issues/3319397#comment-14802527": "patches/drupal/image_style_warmer/webp-module-support-3319397-5.patch"
       },
       "drupal/permissions_by_term": {
         "Permissions by Term complains about deactivated internal page cache when updating [#3254076]: https://www.drupal.org/project/permissions_by_term/issues/3254076#comment-14845306": "patches/drupal/permissions_by_term/3254076-internal-page-cache-warning-remove.patch",
@@ -229,9 +250,15 @@
         "Fix readonly notice message styling [#3008741]: https://www.drupal.org/project/readonlymode/issues/3008741": "patches/drupal/readonlymode/3008741-6-fix-readonly-notice-styling.patch",
         "Fatal error due to saved additional form IDs being strings and not arrays [#3115119]: https://www.drupal.org/project/readonlymode/issues/3115119": "patches/drupal/readonlymode/3115119-16-additional-forms-config-not-array.patch"
       },
+      "drupal/s3fs-disabled": {
+        "Performance extremely slow [#3274647]: https://www.drupal.org/project/s3fs/issues/3274647": "patches/drupal/s3fs/3274647-slow-debug.patch"
+      },
       "drupal/session_limit": {
         "Displayed message should be configurable: https://www.drupal.org/project/session_limit/issues/2794553#comment-14364480": "patches/drupal/session_limit/session_limit-configurable-message-2794553-19.patch",
         "Services\\SessionLimit should type-hint ModuleHandlerInterface rather than a specific implementation [#3308506]: https://www.drupal.org/project/session_limit/issues/3308506": "patches/drupal/session_limit/3308506-typehint-module-handler-interface.patch"
+      },
+      "drupal/trusted_reverse_proxy": {
+        "Notice: Undefined index: severity in trusted_reverse_proxy_preprocess_status_report_page() [#3267588]: https://www.drupal.org/project/trusted_reverse_proxy/issues/3267588": "patches/drupal/trusted_reverse_proxy/3267588-trusted_reverse_proxy-undefined-severity.patch"
       }
     },
     "drupal-scaffold": {
