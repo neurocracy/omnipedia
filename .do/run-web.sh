@@ -15,7 +15,7 @@ drush -y config:import
 # @todo Implement backing up aggregated assets to DigitalOcean Spaces when they
 #   get created and attempt to pull them in after a deploy, only rebuilding
 #   assets if any of them are not found.
-drush rebuilder asset
+# drush rebuilder asset
 
 # Run the Heroku PHP buildpack PHP-FPM with our custom config appended.
 #
