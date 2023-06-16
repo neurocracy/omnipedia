@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4382e5831e78da44581777697c88ec10",
+    "content-hash": "428e59cc042855fbeb91bafee6bfcf7e",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -7158,6 +7158,32 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/token_filter"
             }
+        },
+        {
+            "name": "drupal/trusted_reverse_proxy",
+            "version": "1.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Ambient-Impact/drupal-trusted-reverse-proxy.git",
+                "reference": "6ecd3ce71b258815d66969b1c562f0492242ec78"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Ambient-Impact/drupal-trusted-reverse-proxy/zipball/6ecd3ce71b258815d66969b1c562f0492242ec78",
+                "reference": "6ecd3ce71b258815d66969b1c562f0492242ec78",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "drupal-module",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Provides sensible defaults for sites running behind known trusted reverse proxies.",
+            "support": {
+                "source": "https://github.com/Ambient-Impact/drupal-trusted-reverse-proxy/tree/1.0.x",
+                "issues": "https://github.com/Ambient-Impact/drupal-trusted-reverse-proxy/issues"
+            },
+            "time": "2023-05-07T01:36:58+00:00"
         },
         {
             "name": "drupal/typed_data",
@@ -18265,6 +18291,7 @@
         "drupal/rules": 20,
         "drupal/session_limit": 10,
         "drupal/tfa": 15,
+        "drupal/trusted_reverse_proxy": 20,
         "drupal/core-dev": 5
     },
     "prefer-stable": true,
