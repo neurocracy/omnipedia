@@ -190,6 +190,7 @@
     "drupal/subpathauto": "^1.2",
     "drupal/tfa": "^2.0@alpha",
     "drupal/token_filter": "^2.0",
+    "drupal/trusted_reverse_proxy": "1.0.x-dev@dev",
     "drupal/views_bulk_edit": "^2.5",
     "drupal/views_bulk_operations": "^4.1",
     "drupal/webp": "^1.0",
