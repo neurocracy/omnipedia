@@ -3,10 +3,6 @@ _core:
 module:
   action: 0
   address: 0
-  advagg: 0
-  advagg_bundler: 0
-  advagg_js_minify: 0
-  advagg_mod: 0
   ambientimpact_core: 0
   ambientimpact_icon: 0
   ambientimpact_markdown: 0
@@ -73,7 +69,6 @@ module:
   link: 0
   login_destination: 0
   login_security: 0
-  mailsystem: 0
   markdown: 0
   media: 0
   media_entity_file_replace: 0
@@ -115,6 +110,7 @@ module:
   pcb: 0
   permissions_by_entity: 0
   permissions_by_term: 0
+  phpass: 0
   preprocess_event_dispatcher: 0
   profile: 0
   queue_ui: 0
@@ -135,7 +131,6 @@ module:
   sodium: 0
   state_machine: 0
   subpathauto: 0
-  swiftmailer: 0
   system: 0
   taxonomy: 0
   text: 0

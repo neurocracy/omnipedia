@@ -7,11 +7,11 @@ seckit_xss:
       x: false
       webkit: false
     report-only: false
-    default-src: '''self'''
-    script-src: '''self'' ''unsafe-inline'''
-    object-src: '''self'' data:'
-    style-src: '''self'' ''unsafe-inline'''
-    img-src: '''self'' data:'
+    default-src: "'self'"
+    script-src: "'self' 'unsafe-inline'"
+    object-src: "'self' data:"
+    style-src: "'self' 'unsafe-inline'"
+    img-src: "'self' data:"
     media-src: ''
     frame-src: ''
     frame-ancestors: ''

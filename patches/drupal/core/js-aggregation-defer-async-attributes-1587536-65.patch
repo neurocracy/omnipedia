@@ -1,8 +1,8 @@
 diff --git a/core/lib/Drupal/Core/Asset/AssetResolver.php b/core/lib/Drupal/Core/Asset/AssetResolver.php
-index c52ee7ff..7d609f40 100644
+index 9df2994bb8..39f4a57241 100644
 --- a/core/lib/Drupal/Core/Asset/AssetResolver.php
 +++ b/core/lib/Drupal/Core/Asset/AssetResolver.php
-@@ -258,9 +258,8 @@ public function getJsAssets(AttachedAssetsInterface $assets, $optimize) {
+@@ -253,9 +253,8 @@ public function getJsAssets(AttachedAssetsInterface $assets, $optimize, Language
              // marked to be loaded from the header (see above).
              $options['scope'] = in_array($library, $header_js_libraries) ? 'header' : 'footer';
  
@@ -15,13 +15,13 @@ index c52ee7ff..7d609f40 100644
              // Always add a tiny value to the weight, to conserve the insertion
              // order.
 diff --git a/core/lib/Drupal/Core/Asset/JsCollectionGrouper.php b/core/lib/Drupal/Core/Asset/JsCollectionGrouper.php
-index 9d29c40f..5dc17d1f 100644
+index 17253626f2..d9d7946b19 100644
 --- a/core/lib/Drupal/Core/Asset/JsCollectionGrouper.php
 +++ b/core/lib/Drupal/Core/Asset/JsCollectionGrouper.php
-@@ -39,6 +39,20 @@ public function group(array $js_assets) {
+@@ -33,6 +33,20 @@ public function group(array $js_assets) {
            // Help ensure maximum reuse of aggregate files by only grouping
            // together items that share the same 'group' value.
-           $group_keys = $item['preprocess'] ? [$item['type'], $item['group'], $item['browsers']] : FALSE;
+           $group_keys = $item['preprocess'] ? [$item['type'], $item['group']] : FALSE;
 +
 +          // Enables aggregation for defer and async attributes only.
 +          // @See: https://www.drupal.org/project/drupal/issues/1664602#comment-6683702
