@@ -6,7 +6,7 @@ dependencies:
     - ban
     - contact
     - contextual
-    - flood_control
+    - file
     - permissions_by_term
     - shortcut
     - system
@@ -28,6 +28,7 @@ permissions:
   - 'administer tfa for other users'
   - 'administer users'
   - 'ban IP addresses'
+  - 'delete own files'
   - 'setup own tfa'
   - 'show term permission form on term page'
   - 'show term permissions on node edit page'

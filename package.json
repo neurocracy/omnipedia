@@ -1,6 +1,6 @@
 {
   "name": "omnipedia-drupal",
-  "version": "5.0.0",
+  "version": "6.0.0",
   "license": "GPL-2.0",
   "repository": "gitlab:neurocracy/omnipedia/drupal",
   "packageManager": "yarn@3.2.4",
@@ -9,12 +9,10 @@
     "build:deploy": "cross-env NODE_ENV=production CI=true yarn build"
   },
   "workspaces": [
-    "drupal/modules/ambientimpact",
     "drupal/modules/custom/*",
     "drupal/themes/custom/*"
   ],
   "dependencies": {
-    "ambientimpact-drupal-modules": "workspace:^7",
     "cross-env": "^7.0.3"
   }
 }
