@@ -14,6 +14,10 @@ composer dump-autoload --optimize --apcu
 # pulled them in and would otherwise stop the build with an error when Yarn
 # would try to find them.
 yarn add \
+  "drupal-ambientimpact-core@workspace:^1" \
+  "drupal-ambientimpact-icon@workspace:^1" \
+  "drupal-ambientimpact-media@workspace:^1" \
+  "drupal-ambientimpact-ux@workspace:^1" \
   "drupal-omnipedia-block@workspace:^4" \
   "drupal-omnipedia-changes@workspace:^5" \
   "drupal-omnipedia-content@workspace:^4" \
