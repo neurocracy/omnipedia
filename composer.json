@@ -1,9 +1,13 @@
 {
-  "name": "omnipedia/drupal",
-  "description": "Omnipedia Drupal site project",
+  "name": "drupal/omnipedia",
+  "description": "The Omnipedia web site.",
   "type": "project",
   "license": "GPL-2.0-or-later",
   "homepage": "https://omnipedia.app",
+  "support": {
+    "source": "https://github.com/neurocracy/omnipedia",
+    "wiki": "https://thunnus-thynnus.dev"
+  },
   "authors": [
     {
       "name": "Ambient.Impact",
