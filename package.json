@@ -9,12 +9,10 @@
     "build:deploy": "cross-env NODE_ENV=production CI=true yarn build"
   },
   "workspaces": [
-    "drupal/modules/ambientimpact",
     "drupal/modules/custom/*",
     "drupal/themes/custom/*"
   ],
   "dependencies": {
-    "ambientimpact-drupal-modules": "workspace:^7",
     "cross-env": "^7.0.3"
   }
 }
