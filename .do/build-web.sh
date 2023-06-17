@@ -18,11 +18,11 @@ yarn add \
   "drupal-ambientimpact-icon@workspace:^1" \
   "drupal-ambientimpact-media@workspace:^1" \
   "drupal-ambientimpact-ux@workspace:^1" \
-  "drupal-omnipedia-block@workspace:^4" \
-  "drupal-omnipedia-changes@workspace:^5" \
-  "drupal-omnipedia-content@workspace:^4" \
-  "drupal-omnipedia-media@workspace:^4" \
-  "drupal-omnipedia-site-theme@workspace:^4"
+  "drupal-omnipedia-block@workspace:^5" \
+  "drupal-omnipedia-changes@workspace:^6" \
+  "drupal-omnipedia-content@workspace:^5" \
+  "drupal-omnipedia-media@workspace:^5" \
+  "drupal-omnipedia-site-theme@workspace:^5"
 
 yarn build:deploy
 
