@@ -52,7 +52,6 @@ dependencies:
     - image
     - key
     - login_destination
-    - mailsystem
     - markdown
     - media
     - metatag
@@ -74,7 +73,6 @@ dependencies:
     - seckit
     - security_review
     - shortcut
-    - swiftmailer
     - system
     - taxonomy
     - tfa
@@ -206,7 +204,6 @@ permissions:
   - 'administer shortcuts'
   - 'administer site configuration'
   - 'administer software updates'
-  - 'administer swiftmailer'
   - 'administer taxonomy'
   - 'administer taxonomy_term display'
   - 'administer taxonomy_term fields'
@@ -220,7 +217,6 @@ permissions:
   - 'administer user form display'
   - 'administer users'
   - 'administer views'
-  - administer_mailsystem
   - 'ban IP addresses'
   - 'build omnipedia_changes'
   - 'bypass advanced aggregation'
