@@ -19,7 +19,9 @@ The following major version bumps indicate breaking changes:
 
 * 6.x:
 
-  * Drupal core 10.0 and many compatibility/deprecation fixes to make our code ready for it.
+  * Drupal core 10.0.
+
+  * Uninstalled [the deprecated Swift Mailer module](https://www.drupal.org/project/swiftmailer) and [the Mail System module](https://www.drupal.org/project/mailsystem) that it required. This was only ever used for Commerce emails, which has been disabled for some time.
 
 * 7.x:
 

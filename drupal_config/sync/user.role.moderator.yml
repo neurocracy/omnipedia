@@ -29,6 +29,7 @@ permissions:
   - 'administer users'
   - 'ban IP addresses'
   - 'delete own files'
+  - 'flood unblock ips'
   - 'setup own tfa'
   - 'show term permission form on term page'
   - 'show term permissions on node edit page'
