@@ -30,3 +30,5 @@ The following major version bumps indicate breaking changes:
     * [Markdown](https://www.drupal.org/project/markdown/issues/3288447)
 
     * [Paranoia](https://www.drupal.org/project/paranoia/issues/3289009)
+
+  * The [Rules module](https://www.drupal.org/project/rules) has been switched from [3.0.0-alpha7](https://www.drupal.org/project/rules/releases/8.x-3.0-alpha7) to [3.x-dev@dev](https://www.drupal.org/project/rules/releases/8.x-3.x-dev) for Drupal 10 support; the patch for [Support upcasting entity IDs to full entity contexts [#2800749]](https://www.drupal.org/project/rules/issues/2800749#comment-14332836) has been removed because it's in the dev release.
