@@ -20,3 +20,11 @@ The following major version bumps indicate breaking changes:
 * 6.x:
 
   * Drupal core 10.0.
+
+  * The following modules have been temporarily switched over to forks for Drupal 10 support:
+
+    * [Development Environment](https://www.drupal.org/project/development_environment/issues/3286975)
+
+    * [Image Field Caption](https://www.drupal.org/project/image_field_caption/issues/3355337)
+
+    * [Markdown](https://www.drupal.org/project/markdown/issues/3288447)
