@@ -13,6 +13,6 @@ The following major version bumps indicate breaking changes:
 
   * Drupal core 9.5.
 
-  * Replaced [`Ambient-Impact/drupal-modules`] Git submodule with subtree split individual modules.
+  * Replaced [`Ambient-Impact/drupal-modules`](https://github.com/Ambient-Impact/drupal-modules) Git submodule with subtree split individual modules.
 
   * First pass at upgrading our code to be compatible with Drupal 10.
