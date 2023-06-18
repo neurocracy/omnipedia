@@ -173,7 +173,6 @@
     "drupal/session_limit": "^2.0@beta",
     "drupal/sodium": "^2.1",
     "drupal/subpathauto": "^1.2",
-    "drupal/swiftmailer": "^2.0",
     "drupal/tfa": "^2.0@alpha",
     "drupal/token_filter": "^2.0",
     "drupal/views_bulk_edit": "^2.5",
