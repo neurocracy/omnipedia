@@ -28,3 +28,5 @@ The following major version bumps indicate breaking changes:
     * [Image Field Caption](https://www.drupal.org/project/image_field_caption/issues/3355337)
 
     * [Markdown](https://www.drupal.org/project/markdown/issues/3288447)
+
+    * [Paranoia](https://www.drupal.org/project/paranoia/issues/3289009)
