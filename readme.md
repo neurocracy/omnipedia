@@ -19,4 +19,4 @@ The following major version bumps indicate breaking changes:
 
 * 6.x:
 
-  * Drupal core 10.0 and many compatibility/deprecation fixes to make our code ready for it.
+  * Drupal core 10.0.
