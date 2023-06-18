@@ -3574,13 +3574,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "drupal-ambientimpact-base@workspace:drupal/themes/custom/ambientimpact_base"
   dependencies:
-    drupal-ambientimpact-core: "workspace:^1"
+    drupal-ambientimpact-core: "workspace:^1 || ^2"
     drupal-ambientimpact-ux: "workspace:^1"
     sassy-cast: "github:Ambient-Impact/SassyCast#adbbd499bb36eb0c7015ae6f23c00e3a78dc54b3"
   languageName: unknown
   linkType: soft
 
-"drupal-ambientimpact-core@workspace:^1, drupal-ambientimpact-core@workspace:drupal/modules/custom/ambientimpact_core":
+"drupal-ambientimpact-core@workspace:^1 || ^2, drupal-ambientimpact-core@workspace:^2, drupal-ambientimpact-core@workspace:drupal/modules/custom/ambientimpact_core":
   version: 0.0.0-use.local
   resolution: "drupal-ambientimpact-core@workspace:drupal/modules/custom/ambientimpact_core"
   dependencies:
@@ -3616,7 +3616,7 @@ __metadata:
     "@symfony/webpack-encore": ^4.1.1
     autoprefixer: ^10.2.5
     css-loader: ^6.7.1
-    drupal-ambientimpact-core: "workspace:^1"
+    drupal-ambientimpact-core: "workspace:^1 || ^2"
     glob: ^8.0.3
     mini-css-extract-plugin: ^2.6.1
     postcss: ^8.2.15
@@ -3630,7 +3630,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"drupal-ambientimpact-media@workspace:^1, drupal-ambientimpact-media@workspace:drupal/modules/custom/ambientimpact_media":
+"drupal-ambientimpact-media@workspace:^2, drupal-ambientimpact-media@workspace:drupal/modules/custom/ambientimpact_media":
   version: 0.0.0-use.local
   resolution: "drupal-ambientimpact-media@workspace:drupal/modules/custom/ambientimpact_media"
   dependencies:
@@ -3639,7 +3639,7 @@ __metadata:
     "@symfony/webpack-encore": ^4.1.1
     autoprefixer: ^10.2.5
     css-loader: ^6.7.1
-    drupal-ambientimpact-core: "workspace:^1"
+    drupal-ambientimpact-core: "workspace:^2"
     drupal-ambientimpact-icon: "workspace:^1"
     file-loader: ^6.0.0
     glob: ^8.0.3
@@ -3667,7 +3667,7 @@ __metadata:
     autosize: ^4.0.2
     chillout: ^3.1.7
     css-loader: ^6.7.1
-    drupal-ambientimpact-core: "workspace:^1"
+    drupal-ambientimpact-core: "workspace:^1 || ^2"
     file-loader: ^6.0.0
     fontfaceobserver: ^2.1.0
     fr-offcanvas: ^1.1.1
@@ -3699,7 +3699,7 @@ __metadata:
     "@symfony/webpack-encore": ^4.1.1
     autoprefixer: ^10.2.5
     css-loader: ^6.7.1
-    drupal-ambientimpact-core: "workspace:^1"
+    drupal-ambientimpact-core: "workspace:^1 || ^2"
     glob: ^8.0.3
     image-minimizer-webpack-plugin: ^3.8.0
     mini-css-extract-plugin: ^2.6.1
@@ -3714,7 +3714,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"drupal-omnipedia-changes@workspace:^6, drupal-omnipedia-changes@workspace:drupal/modules/custom/omnipedia_changes":
+"drupal-omnipedia-changes@workspace:^7, drupal-omnipedia-changes@workspace:drupal/modules/custom/omnipedia_changes":
   version: 0.0.0-use.local
   resolution: "drupal-omnipedia-changes@workspace:drupal/modules/custom/omnipedia_changes"
   dependencies:
@@ -3723,7 +3723,7 @@ __metadata:
     "@symfony/webpack-encore": ^4.1.1
     autoprefixer: ^10.2.5
     css-loader: ^6.7.1
-    drupal-ambientimpact-core: "workspace:^1"
+    drupal-ambientimpact-core: "workspace:^2"
     glob: ^8.0.3
     mini-css-extract-plugin: ^2.6.1
     postcss: ^8.2.15
@@ -3736,7 +3736,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"drupal-omnipedia-content@workspace:^5, drupal-omnipedia-content@workspace:drupal/modules/custom/omnipedia_content":
+"drupal-omnipedia-content@workspace:^6, drupal-omnipedia-content@workspace:drupal/modules/custom/omnipedia_content":
   version: 0.0.0-use.local
   resolution: "drupal-omnipedia-content@workspace:drupal/modules/custom/omnipedia_content"
   dependencies:
@@ -3745,7 +3745,7 @@ __metadata:
     "@symfony/webpack-encore": ^4.1.1
     autoprefixer: ^10.2.5
     css-loader: ^6.7.1
-    drupal-ambientimpact-core: "workspace:^1"
+    drupal-ambientimpact-core: "workspace:^2"
     drupal-ambientimpact-ux: "workspace:^1"
     glob: ^8.0.3
     mini-css-extract-plugin: ^2.6.1
@@ -3759,7 +3759,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"drupal-omnipedia-media@workspace:^5, drupal-omnipedia-media@workspace:drupal/modules/custom/omnipedia_media":
+"drupal-omnipedia-media@workspace:^6, drupal-omnipedia-media@workspace:drupal/modules/custom/omnipedia_media":
   version: 0.0.0-use.local
   resolution: "drupal-omnipedia-media@workspace:drupal/modules/custom/omnipedia_media"
   dependencies:
@@ -3768,8 +3768,8 @@ __metadata:
     "@symfony/webpack-encore": ^4.1.1
     autoprefixer: ^10.2.5
     css-loader: ^6.7.1
-    drupal-ambientimpact-core: "workspace:^1"
-    drupal-ambientimpact-media: "workspace:^1"
+    drupal-ambientimpact-core: "workspace:^2"
+    drupal-ambientimpact-media: "workspace:^2"
     glob: ^8.0.3
     mini-css-extract-plugin: ^2.6.1
     postcss: ^8.2.15
@@ -3782,7 +3782,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"drupal-omnipedia-site-theme@workspace:^5, drupal-omnipedia-site-theme@workspace:drupal/themes/custom/omnipedia_site_theme":
+"drupal-omnipedia-site-theme@workspace:^6, drupal-omnipedia-site-theme@workspace:drupal/themes/custom/omnipedia_site_theme":
   version: 0.0.0-use.local
   resolution: "drupal-omnipedia-site-theme@workspace:drupal/themes/custom/omnipedia_site_theme"
   dependencies:
@@ -3793,12 +3793,12 @@ __metadata:
     autoprefixer: ^10.2.6
     css-loader: ^6.7.1
     drupal-ambientimpact-base: "workspace:^6"
-    drupal-ambientimpact-core: "workspace:^1"
+    drupal-ambientimpact-core: "workspace:^2"
     drupal-ambientimpact-icon: "workspace:^1"
     drupal-ambientimpact-ux: "workspace:^1"
     drupal-omnipedia-block: "workspace:^5"
-    drupal-omnipedia-content: "workspace:^5"
-    drupal-omnipedia-media: "workspace:^5"
+    drupal-omnipedia-content: "workspace:^6"
+    drupal-omnipedia-media: "workspace:^6"
     favicons: ^7.0.2
     favicons-webpack-plugin: ^6.0.0-alpha.2
     glob: ^8.0.3
@@ -5791,15 +5791,15 @@ __metadata:
   resolution: "omnipedia-drupal@workspace:."
   dependencies:
     cross-env: ^7.0.3
-    drupal-ambientimpact-core: "workspace:^1"
+    drupal-ambientimpact-core: "workspace:^2"
     drupal-ambientimpact-icon: "workspace:^1"
-    drupal-ambientimpact-media: "workspace:^1"
+    drupal-ambientimpact-media: "workspace:^2"
     drupal-ambientimpact-ux: "workspace:^1"
     drupal-omnipedia-block: "workspace:^5"
-    drupal-omnipedia-changes: "workspace:^6"
-    drupal-omnipedia-content: "workspace:^5"
-    drupal-omnipedia-media: "workspace:^5"
-    drupal-omnipedia-site-theme: "workspace:^5"
+    drupal-omnipedia-changes: "workspace:^7"
+    drupal-omnipedia-content: "workspace:^6"
+    drupal-omnipedia-media: "workspace:^6"
+    drupal-omnipedia-site-theme: "workspace:^6"
   languageName: unknown
   linkType: soft
 

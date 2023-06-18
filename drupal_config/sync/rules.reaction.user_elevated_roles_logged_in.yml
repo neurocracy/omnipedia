@@ -44,7 +44,7 @@ expression:
           to:
             - '{{ @user.current_user_context:current_user.mail.value }}'
           subject: 'Log in notification for your Omnipedia account'
-          message: 'Your Omnipedia account was logged in at {{ @rules.current_date_context:current_date | format_date(''long'') }}. If this was you, you can safely ignore this email. Log in page: {{ @rules.site_context:site.login-url }}'
+          message: "Your Omnipedia account was logged in at {{ @rules.current_date_context:current_date | format_date('long') }}. If this was you, you can safely ignore this email. Log in page: {{ @rules.site_context:site.login-url }}"
           reply: ''
           language: ''
         context_mapping: {  }
@@ -69,7 +69,7 @@ expression:
           roles:
             - administrator
           subject: 'Log in notification for elevated user account: {{ @user.current_user_context:current_user.name.value }}'
-          message: 'Logged in at {{ @rules.current_date_context:current_date | format_date(''long'') }}. {{ @user.current_user_context:current_user | entity_url }}'
+          message: "Logged in at {{ @rules.current_date_context:current_date | format_date('long') }}. {{ @user.current_user_context:current_user | entity_url }}"
           reply: ''
           language: ''
         context_mapping: {  }
