@@ -39,4 +39,4 @@ The following major version bumps indicate breaking changes:
 
   * Drupal core 10.1.
 
-  * Uninstalled and removed the AdvAgg module as Drupal core 10.1 provides much of what we needed it for.
+  * Uninstalled and removed the AdvAgg module as [Drupal core 10.1 provides much of what we needed it for](https://www.drupal.org/project/advagg/issues/3308099#comment-15025561).
