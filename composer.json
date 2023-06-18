@@ -240,7 +240,6 @@
         "Support optimized assets path configurable [#3030974]: https://www.drupal.org/project/advagg/issues/3030974#comment-15015494": "patches/drupal/advagg/configurable-asset-paths-3030974-9.patch"
       },
       "drupal/core": {
-        "JS aggregation should account for \"defer\" and \"async\" attributes [#1587536]: https://www.drupal.org/project/drupal/issues/1587536#comment-13821084": "patches/drupal/core/js-aggregation-defer-async-attributes-1587536-49.patch",
         "Make css/js optimized assets path configurable [#3027639] (NOTE: edited to remove failing block on non-existent file in dist that exists in Drupal.org Git): https://www.drupal.org/project/drupal/issues/3027639#comment-14461882": "patches/drupal/core/configurable-asset-paths-3027639-49.patch",
         "Allow configurable cookie prefix [#1361742] (NOTE: edited to remove failing block on non-existent file in dist that exists in Drupal.org Git): https://www.drupal.org/project/drupal/issues/1361742": "patches/drupal/core/1361742-allow-configurable-cookie-prefix.patch",
         "Support setting service parameters via environment variables [#3249970]: https://www.drupal.org/project/drupal/issues/3249970#comment-14294955": "patches/drupal/core/3249970-2-support-service-parameter-env.patch",
