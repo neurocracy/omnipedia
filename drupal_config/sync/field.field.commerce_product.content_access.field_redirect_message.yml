@@ -10,7 +10,7 @@ field_name: field_redirect_message
 entity_type: commerce_product
 bundle: content_access
 label: 'Redirect message'
-description: 'The message to display to the user after they''re redirected upon order completion.'
+description: "The message to display to the user after they're redirected upon order completion."
 required: true
 translatable: false
 default_value: {  }
