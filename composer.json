@@ -191,7 +191,6 @@
     "drupal/smtp": "^1.2",
     "drupal/sodium": "^2.1",
     "drupal/subpathauto": "^1.2",
-    "drupal/swiftmailer": "^2.0",
     "drupal/tfa": "^2.0@alpha",
     "drupal/token_filter": "^2.0",
     "drupal/trusted_reverse_proxy": "^1.0",
