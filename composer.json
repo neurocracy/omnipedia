@@ -121,6 +121,7 @@
     "php": "^8",
     "composer/installers": "^2.0",
     "cweagans/composer-patches": "^1.7",
+    "drupal/advagg": "^6.0@alpha",
     "drupal/ambientimpact_core": "2.x-dev@dev",
     "drupal/ambientimpact_icon": "1.x-dev@dev",
     "drupal/ambientimpact_markdown": "2.x-dev@dev",
@@ -219,6 +220,9 @@
       "drupal/core": "-p2"
     },
     "patches": {
+      "drupal/advagg": {
+        "Support optimized assets path configurable [#3030974]: https://www.drupal.org/project/advagg/issues/3030974#comment-15015494": "patches/drupal/advagg/configurable-asset-paths-3030974-9.patch"
+      },
       "drupal/core-disabled": {
         "JS aggregation should account for \"defer\" and \"async\" attributes [#1587536]: https://www.drupal.org/project/drupal/issues/1587536#comment-15106596": "patches/drupal/core/js-aggregation-defer-async-attributes-1587536-65.patch"
       },
