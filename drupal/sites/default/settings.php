@@ -81,12 +81,42 @@ foreach ($databases as $databaseKey => &$database) {
 $settings['config_sync_directory'] = $app_root . '/../drupal_config/sync';
 
 /**
+ * Enable configuration splits from environment variable if found.
+ *
+ * This reads a comma-separated list from the 'DRUPAL_CONFIG_SPLITS' environment
+ * variable and enables the ones that are listed.
+ */
+if (\getenv('DRUPAL_CONFIG_SPLITS') !== false) {
+
+  $configSplitNames = \explode(',', \getenv('DRUPAL_CONFIG_SPLITS'));
+
+  foreach ($configSplitNames as $i => $name) {
+
+    if (\mb_strlen($name) === 0) {
+      continue;
+    }
+
+    $config['config_split.config_split.' . $name]['status'] = true;
+
+  }
+
+}
+
+/**
  * Enable the Paranoia configuration split by default.
+ *
+ * Note that this will be ignored if the 'DRUPAL_CONFIG_SPLITS' environment
+ * variable has been set as that takes priority.
  *
  * @see https://www.drupal.org/project/config_split/issues/3109103
  *   Configuration Split issue explaining why a separate split is necessary.
+ *
+ * @todo Remove this completely when we're able to set environment variables in
+ *   all our hosting environments.
  */
-$config['config_split.config_split.paranoia']['status'] = true;
+if (\getenv('DRUPAL_CONFIG_SPLITS') === false) {
+  $config['config_split.config_split.paranoia']['status'] = true;
+}
 
 /**
  * Salt for one-time login links, cancel links, form tokens, etc.
