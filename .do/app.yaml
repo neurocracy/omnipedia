@@ -1,0 +1,149 @@
+name: omnipedia
+
+domains:
+- domain: omnipedia.app
+  type: PRIMARY
+- domain: oembed.omnipedia.app
+  type: ALIAS
+
+databases:
+- cluster_name: _CLUSTER_NAME_
+  db_name: omnipedia
+  db_user: omnipedia
+  engine: MYSQL
+  name: database
+  production: true
+  version: "8"
+
+envs:
+- key: COMPOSER_AUTH
+  scope: BUILD_TIME
+  type: SECRET
+  value: '{"github-oauth":{"github.com": "_GITHUB_TOKEN_"}}'
+- key: DRUPAL_CONFIG_SPLITS
+  scope: RUN_TIME
+  value: paranoia
+- key: DRUPAL_DATABASE_NAME
+  scope: RUN_TIME
+  value: ${database.DATABASE}
+- key: DRUPAL_DATABASE_USERNAME
+  scope: RUN_TIME
+  value: ${database.USERNAME}
+- key: DRUPAL_DATABASE_PASSWORD
+  scope: RUN_TIME
+  value: ${database.PASSWORD}
+- key: DRUPAL_DATABASE_HOSTNAME
+  scope: RUN_TIME
+  value: ${database.HOSTNAME}
+- key: DRUPAL_DATABASE_PORT
+  scope: RUN_TIME
+  value: ${database.PORT}
+- key: DRUPAL_HASH_SALT
+  scope: RUN_TIME
+  type: SECRET
+  value: "_DRUPAL_HASH_SALT_"
+- key: DRUPAL_PRIMARY_HOST
+  scope: RUN_AND_BUILD_TIME
+  value: ${APP_DOMAIN}
+- key: DRUPAL_OEMBED_HOST
+  scope: RUN_AND_BUILD_TIME
+  value: preview-oembed.omnipedia.app
+- key: DRUPAL_REVERSE_PROXY_ENABLED
+  scope: RUN_AND_BUILD_TIME
+  value: "true"
+- key: DRUPAL_SMTP_PASSWORD
+  scope: RUN_TIME
+  type: SECRET
+  value: "_DRUPAL_SMTP_PASSWORD_"
+- key: DRUPAL_TWO_FACTOR_SECRET
+  scope: RUN_TIME
+  type: SECRET
+  value: "_DRUPAL_TWO_FACTOR_SECRET_"
+- key: DRUSH_OPTIONS_URI
+  scope: RUN_AND_BUILD_TIME
+  value: ${APP_URL}
+- key: SPACES_ACCESS
+  scope: RUN_TIME
+  type: SECRET
+  value: "_SPACES_ACCESS_"
+- key: SPACES_SECRET
+  scope: RUN_TIME
+  type: SECRET
+  value: "_SPACES_SECRET_"
+- key: S3FS_TAKEOVER
+  scope: RUN_AND_BUILD_TIME
+  value: "true"
+- key: PAYPAL_CLIENT_ID
+  scope: RUN_TIME
+  type: SECRET
+  value: "_PAYPAL_CLIENT_ID_"
+- key: PAYPAL_SECRET
+  scope: RUN_TIME
+  type: SECRET
+  value: "_PAYPAL_SECRET_"
+- key: PAYPAL_WEBHOOK_ID
+  scope: RUN_TIME
+  type: SECRET
+  value: "_PAYPAL_WEBHOOK_ID_"
+- key: STRIPE_PUBLISHABLE
+  scope: RUN_TIME
+  type: SECRET
+  value: "_STRIPE_PUBLISHABLE_"
+- key: STRIPE_SECRET
+  scope: RUN_TIME
+  type: SECRET
+  value: "_STRIPE_SECRET_"
+
+ingress:
+  rules:
+  - component:
+      name: web
+    cors:
+      allow_methods:
+      - GET
+      - HEAD
+      - POST
+      allow_origins:
+      - regex: ([^\.]+\.)?omnipedia\.app$
+    match:
+      path:
+        prefix: /
+
+services:
+- build_command: .do/build-web.sh
+  environment_slug: php
+  envs:
+  - key: PHP_INI_SCAN_DIR
+    scope: RUN_AND_BUILD_TIME
+    value: :/workspace/.php/
+  github:
+    branch: 7.x_digitalocean
+    repo: neurocracy/omnipedia
+  health_check:
+    http_path: /
+    initial_delay_seconds: 10
+    timeout_seconds: 30
+  http_port: 80
+  instance_count: 1
+  instance_size_slug: professional-xs
+  internal_ports:
+  - 8080
+  name: web
+  run_command: .do/run-web.sh
+  source_dir: /
+
+workers:
+- build_command: .do/build-background-tasks.sh
+  environment_slug: php
+  envs:
+  - key: PHP_INI_SCAN_DIR
+    scope: RUN_AND_BUILD_TIME
+    value: :/workspace/.php/
+  github:
+    branch: 7.x_digitalocean
+    repo: neurocracy/omnipedia
+  instance_count: 1
+  instance_size_slug: professional-xs
+  name: background-tasks
+  run_command: .do/run-background-tasks.sh
+  source_dir: /
