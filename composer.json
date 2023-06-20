@@ -121,7 +121,6 @@
     "php": "^8",
     "composer/installers": "^2.0",
     "cweagans/composer-patches": "^1.7",
-    "drupal/advagg": "^6.0@alpha",
     "drupal/ambientimpact_core": "2.x-dev@dev",
     "drupal/ambientimpact_icon": "1.x-dev@dev",
     "drupal/ambientimpact_markdown": "2.x-dev@dev",
