@@ -3794,7 +3794,9 @@ __metadata:
     drupal-omnipedia-media: "workspace:^6"
     favicons: ^7.0.2
     favicons-webpack-plugin: ^6.0.0-alpha.2
+    file-loader: ^6.0.0
     glob: ^8.0.3
+    js-cookie: ^3.0.5
     mini-css-extract-plugin: ^2.6.1
     postcss: ^8.3.5
     postcss-easing-gradients: "github:Ambient-Impact/postcss-easing-gradients"
@@ -3804,6 +3806,14 @@ __metadata:
     webpack: ^5.74.0
     webpack-cli: ^4.10.0
     webpack-remove-empty-scripts: ^1.0.1
+  languageName: unknown
+  linkType: soft
+
+"drupal-omnipedia@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "drupal-omnipedia@workspace:."
+  dependencies:
+    cross-env: ^7.0.3
   languageName: unknown
   linkType: soft
 
@@ -5115,6 +5125,13 @@ __metadata:
   version: 3.6.1
   resolution: "jquery@npm:3.6.1"
   checksum: 6177d866a74f1137cad800f142c7cdbd5ab19cd4282546f8bdb4890c9f933b1d542ab96f2aa15d007e43c98de7315b0513e849ec5359d3ac5640f720892fe547
+  languageName: node
+  linkType: hard
+
+"js-cookie@npm:^3.0.5":
+  version: 3.0.5
+  resolution: "js-cookie@npm:3.0.5"
+  checksum: 2dbd2809c6180fbcf060c6957cb82dbb47edae0ead6bd71cbeedf448aa6b6923115003b995f7d3e3077bfe2cb76295ea6b584eb7196cca8ba0a09f389f64967a
   languageName: node
   linkType: hard
 
