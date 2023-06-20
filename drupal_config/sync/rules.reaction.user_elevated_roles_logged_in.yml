@@ -7,7 +7,7 @@ label: 'User with elevated roles(s) logged in'
 events:
   -
     event_name: rules_user_login
-description: 'This sends emails when a user with elevated permissions logs in to both that user and all site administrators.'
+description: 'This sends emails when a user with elevated permissions logs in to both that user and all site administrators (currently set to developer role due to Paranoia module usage).'
 tags: {  }
 config_version: '3'
 expression:
@@ -67,7 +67,7 @@ expression:
         action_id: rules_email_to_users_of_role
         context_values:
           roles:
-            - administrator
+            - developer
           subject: 'Log in notification for elevated user account: {{ @user.current_user_context:current_user.name.value }}'
           message: "Logged in at {{ @rules.current_date_context:current_date | format_date('long') }}. {{ @user.current_user_context:current_user | entity_url }}"
           reply: ''
