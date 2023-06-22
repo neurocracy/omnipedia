@@ -13,8 +13,11 @@ xdebug_enabled: false
 additional_hostnames: []
 additional_fqdns: []
 database:
-  type: mariadb
-  version: "10.4"
+  # DigitalOcean uses newer collation for some tables that will fail with errors
+  # if attempted to import into the current latest MariaDB (10.4) available in
+  # DDEV.
+  type: mysql
+  version: "8.0"
 nfs_mount_enabled: false
 mutagen_enabled: false
 use_dns_when_possible: true
