@@ -56,7 +56,17 @@ The following major version bumps indicate breaking changes:
 
     * Uninstalled the [`omnipedia_commerce` module](https://github.com/neurocracy/drupal-omnipedia-commerce).
 
-    * Uninstalled the [Permissions by Term module](https://www.drupal.org/project/permissions_by_term); this was used for access control for the season pass; due to multiple issues with the quality of the module's code and unnecessary complications it introduced, we've decided to completely remove it as well.
+    * Uninstalled the [Permissions by Term module](https://www.drupal.org/project/permissions_by_term); this was used for access control for the season pass; due to multiple issues with the quality of the module's code and unnecessary complications it introduced, we've decided to completely remove it as well; a sampling of the worst issues we had to deal with:
+
+      * [Permissions by Term - Moderately critical - Access bypass - SA-CONTRIB-2022-055](https://www.drupal.org/sa-contrib-2022-055): a ridiculous security issue that stayed unfixed publicly in the issue queue until the security team got involved.
+
+      * [Regression updating to 3.1.22 for Drupal 9.x using loadTemplate from twig [#3354478]](https://www.drupal.org/project/permissions_by_term/issues/3354478#comment-15058868): an astoundingly bad fatal error that made it into a stable release for thousands of sites and is very badly implemented with some really bad practices.
+
+      * [Node Access Rebuilt unnecessarily if no change to user terms. [#3170389]](https://www.drupal.org/project/permissions_by_term/issues/3170389#comment-14242763)
+
+      * [Permissions by Entity PHP notice for Commerce Product entities [#3231188]](https://www.drupal.org/project/permissions_by_term/issues/3231188#comment-14209558)
+
+      * [Respect the Require all terms granted and Permission mode settings in Permission by entity module [#3072171]](https://www.drupal.org/project/permissions_by_term/issues/3072171#comment-14209554)
 
     * Uninstalled all [Commerce Core modules](https://www.drupal.org/project/commerce).
 
