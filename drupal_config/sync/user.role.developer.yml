@@ -30,7 +30,6 @@ dependencies:
     - development_environment
     - disable_link_rel
     - encrypt
-    - entity_reference_revisions
     - eu_cookie_compliance
     - fancy_file_delete
     - field_ui
@@ -192,7 +191,6 @@ permissions:
   - 'delete any wiki_page content'
   - 'delete media'
   - 'delete omnipedia_attached_data entity'
-  - 'delete orphan revisions'
   - 'delete own audio media'
   - 'delete own document media'
   - 'delete own gif media'

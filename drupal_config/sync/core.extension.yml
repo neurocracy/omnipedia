@@ -32,8 +32,6 @@ module:
   dynamic_page_cache: 0
   editor: 0
   encrypt: 0
-  entity: 0
-  entity_reference_revisions: 0
   fancy_file_delete: 0
   field: 0
   field_event_dispatcher: 0
@@ -48,7 +46,6 @@ module:
   hook_event_dispatcher: 0
   image: 0
   image_field_caption: 0
-  inline_entity_form: 0
   inline_form_errors: 0
   key: 0
   link: 0
@@ -106,7 +103,6 @@ module:
   session_limit: 0
   shortcut: 0
   sodium: 0
-  state_machine: 0
   subpathauto: 0
   system: 0
   taxonomy: 0

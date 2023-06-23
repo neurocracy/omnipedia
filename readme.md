@@ -71,6 +71,14 @@ The following major version bumps indicate breaking changes:
 
       * The [Address module](https://www.drupal.org/project/address).
 
+      * The [Entity API module](https://www.drupal.org/project/entity).
+
+      * The [Entity Reference Revisions module](https://www.drupal.org/project/entity_reference_revisions).
+
+      * The [Inline Entity Form module](https://www.drupal.org/project/inline_entity_form).
+
       * The [Profile module](https://www.drupal.org/project/profile).
+
+      * The [State Machine module](https://www.drupal.org/project/state_machine).
 
     * Removed all their related configuration, fields, entity types, permissions, and so on.
