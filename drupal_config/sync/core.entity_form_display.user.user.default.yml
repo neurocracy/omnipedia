@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.user.user.commerce_remote_id
     - field.field.user.user.field_content_density
+    - field.field.user.user.field_early_supporter
     - field.field.user.user.field_last_password_reset
     - field.field.user.user.field_password_expiration
     - field.field.user.user.field_pending_expire_sent
@@ -31,6 +32,8 @@ content:
   contact:
     weight: 5
     region: content
+    settings: {  }
+    third_party_settings: {  }
   field_last_password_reset:
     type: datetime_default
     weight: 2
@@ -51,12 +54,12 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 6
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
   timezone:
-    weight: 5
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -72,5 +75,6 @@ hidden:
   commerce_remote_id: true
   customer_profiles: true
   field_content_density: true
+  field_early_supporter: true
   field_pending_expire_sent: true
   field_show_wikipedia_links: true
