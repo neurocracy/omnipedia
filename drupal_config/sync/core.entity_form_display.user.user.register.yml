@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.user.register
-    - field.field.user.user.commerce_remote_id
     - field.field.user.user.field_content_density
     - field.field.user.user.field_early_supporter
     - field.field.user.user.field_last_password_reset
@@ -40,7 +39,6 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  commerce_remote_id: true
   customer_profiles: true
   field_content_density: true
   field_early_supporter: true

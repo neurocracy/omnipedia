@@ -3,8 +3,6 @@ langcode: en
 status: true
 dependencies:
   module:
-    - commerce_order
-    - commerce_payment
     - contact
     - eu_cookie_compliance
     - media
@@ -19,6 +17,4 @@ permissions:
   - 'access content'
   - 'access site-wide contact form'
   - 'display eu cookie compliance popup'
-  - 'manage own commerce_payment_method'
   - 'view media'
-  - 'view own commerce_order'

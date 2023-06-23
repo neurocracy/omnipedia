@@ -3,8 +3,6 @@ langcode: en
 status: true
 dependencies:
   module:
-    - commerce_order
-    - commerce_payment
     - contact
     - devel
     - eu_cookie_compliance
@@ -25,6 +23,4 @@ permissions:
   - 'build omnipedia_changes'
   - 'delete own files'
   - 'display eu cookie compliance popup'
-  - 'manage own commerce_payment_method'
   - 'view media'
-  - 'view own commerce_order'

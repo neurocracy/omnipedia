@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.user.user.commerce_remote_id
     - field.field.user.user.field_content_density
     - field.field.user.user.field_early_supporter
     - field.field.user.user.field_last_password_reset
@@ -72,7 +71,6 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
 hidden:
-  commerce_remote_id: true
   customer_profiles: true
   field_content_density: true
   field_early_supporter: true
