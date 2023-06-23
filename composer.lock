@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0ff3441e993715527185a0e1edb0efd9",
+    "content-hash": "3764cd68786779eae5f070ba78d9e831",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -5202,12 +5202,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:neurocracy/drupal-omnipedia-commerce.git",
-                "reference": "0b3d8c12a164f59356cae7e1ab3cfd4e0ae7a4a2"
+                "reference": "639798787f2c10000b59a0c21c04647098e07698"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-commerce/zipball/0b3d8c12a164f59356cae7e1ab3cfd4e0ae7a4a2",
-                "reference": "0b3d8c12a164f59356cae7e1ab3cfd4e0ae7a4a2",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-commerce/zipball/639798787f2c10000b59a0c21c04647098e07698",
+                "reference": "639798787f2c10000b59a0c21c04647098e07698",
                 "shasum": ""
             },
             "require": {
@@ -5237,7 +5237,7 @@
                 "source": "https://github.com/neurocracy/drupal-omnipedia-commerce",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-commerce/issues"
             },
-            "time": "2023-06-17T22:04:25+00:00"
+            "time": "2023-06-23T00:07:16+00:00"
         },
         {
             "name": "drupal/omnipedia_content",
