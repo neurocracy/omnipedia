@@ -41,3 +41,17 @@ The following major version bumps indicate breaking changes:
   * Drupal core 10.1.
 
   * Uninstalled and removed the AdvAgg module as [Drupal core 10.1 provides much of what we needed it for](https://www.drupal.org/project/advagg/issues/3308099#comment-15025561).
+
+* 8.x:
+
+  * Increased major versions of the following Omnipedia modules:
+
+    * [`omnipedia_access`](https://github.com/neurocracy/drupal-omnipedia-access) 4.x to 5.x.
+
+    * [`omnipedia_block`](https://github.com/neurocracy/drupal-omnipedia-block) 5.x to 6.x.
+
+    * [`omnipedia_user`](https://github.com/neurocracy/drupal-omnipedia-user) 5.x to 6.x.
+
+  * Uninstalled the [`omnipedia_commerce` module](https://github.com/neurocracy/drupal-omnipedia-commerce).
+
+  * Uninstalled the [Permissions by Term module](https://www.drupal.org/project/permissions_by_term).

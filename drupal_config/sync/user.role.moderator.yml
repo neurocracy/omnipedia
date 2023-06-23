@@ -7,7 +7,6 @@ dependencies:
     - contact
     - contextual
     - file
-    - permissions_by_term
     - shortcut
     - system
     - tfa
@@ -19,7 +18,6 @@ is_admin: null
 permissions:
   - 'access administration pages'
   - 'access contextual links'
-  - 'access pbt settings'
   - 'access shortcuts'
   - 'access site in maintenance mode'
   - 'access toolbar'
@@ -31,7 +29,4 @@ permissions:
   - 'delete own files'
   - 'flood unblock ips'
   - 'setup own tfa'
-  - 'show term permission form on term page'
-  - 'show term permissions on node edit page'
-  - 'show term permissions on user edit page'
   - 'view the administration theme'

@@ -62,7 +62,6 @@ dependencies:
     - password_policy
     - path
     - pathauto
-    - permissions_by_term
     - profile
     - queue_ui
     - readonlymode
@@ -100,7 +99,6 @@ permissions:
   - 'access development environment email logs'
   - 'access files overview'
   - 'access media overview'
-  - 'access pbt settings'
   - 'access profile overview'
   - 'access rules debug'
   - 'access security review list'
@@ -329,9 +327,6 @@ permissions:
   - 'run security checks'
   - 'select account cancellation method'
   - 'setup own tfa'
-  - 'show term permission form on term page'
-  - 'show term permissions on node edit page'
-  - 'show term permissions on user edit page'
   - 'switch shortcut sets'
   - 'switch users'
   - 'synchronize configuration'

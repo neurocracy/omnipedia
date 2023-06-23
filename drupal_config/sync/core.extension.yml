@@ -87,7 +87,6 @@ module:
   omnipedia_attached_data: 0
   omnipedia_block: 0
   omnipedia_changes: 0
-  omnipedia_commerce: 0
   omnipedia_content: 0
   omnipedia_core: 0
   omnipedia_date: 0
@@ -106,8 +105,6 @@ module:
   path: 0
   path_alias: 0
   pcb: 0
-  permissions_by_entity: 0
-  permissions_by_term: 0
   phpass: 0
   preprocess_event_dispatcher: 0
   profile: 0
