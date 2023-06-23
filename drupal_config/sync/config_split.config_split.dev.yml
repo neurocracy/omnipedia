@@ -16,7 +16,6 @@ module:
 theme: {  }
 blacklist: {  }
 graylist:
-  - advagg.settings
   - dblog.settings
   - gin.settings
   - media.settings
