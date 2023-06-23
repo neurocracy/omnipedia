@@ -6,6 +6,7 @@ dependencies:
     - core.entity_form_mode.user.register
     - field.field.user.user.commerce_remote_id
     - field.field.user.user.field_content_density
+    - field.field.user.user.field_early_supporter
     - field.field.user.user.field_last_password_reset
     - field.field.user.user.field_password_expiration
     - field.field.user.user.field_pending_expire_sent
@@ -42,6 +43,7 @@ hidden:
   commerce_remote_id: true
   customer_profiles: true
   field_content_density: true
+  field_early_supporter: true
   field_last_password_reset: true
   field_password_expiration: true
   field_pending_expire_sent: true

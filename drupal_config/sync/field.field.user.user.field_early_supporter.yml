@@ -1,0 +1,22 @@
+uuid: 088979fc-d270-4c85-bd23-788000f98484
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_early_supporter
+  module:
+    - user
+id: user.user.field_early_supporter
+field_name: field_early_supporter
+entity_type: user
+bundle: user
+label: 'Early supporter'
+description: 'Flag indicating whether this user bought the Neurocracy Season Pass during our first year.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean
