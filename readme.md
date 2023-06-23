@@ -55,3 +55,5 @@ The following major version bumps indicate breaking changes:
   * Uninstalled the [`omnipedia_commerce` module](https://github.com/neurocracy/drupal-omnipedia-commerce).
 
   * Uninstalled the [Permissions by Term module](https://www.drupal.org/project/permissions_by_term).
+
+  * Uninstalled all [Commerce Core modules](https://www.drupal.org/project/commerce), the [Commerce Cart Redirection module](https://www.drupal.org/project/commerce_cart_redirection), the [Commerce PayPal module](https://www.drupal.org/project/commerce_paypal), the [Commerce Product Limits module](https://www.drupal.org/project/commerce_product_limits), and the [Commerce Stripe module](https://www.drupal.org/project/commerce_stripe); uninstalled their dependencies: the [Address module](https://www.drupal.org/project/address) and [Profile module](https://www.drupal.org/project/profile); removed all their related configuration, fields, entity types, permissions, and so on. See issue: [Uninstall and remove `omnipedia_commerce` and all the Commerce modules](https://github.com/neurocracy/omnipedia/issues/4).
