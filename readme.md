@@ -56,7 +56,7 @@ The following major version bumps indicate breaking changes:
 
     * Uninstalled the [`omnipedia_commerce` module](https://github.com/neurocracy/drupal-omnipedia-commerce).
 
-    * Uninstalled the [Permissions by Term module](https://www.drupal.org/project/permissions_by_term).
+    * Uninstalled the [Permissions by Term module](https://www.drupal.org/project/permissions_by_term); this was used for access control for the season pass; due to multiple issues with the quality of the module's code and unnecessary complications it introduced, we've decided to completely remove it as well.
 
     * Uninstalled all [Commerce Core modules](https://www.drupal.org/project/commerce).
 
