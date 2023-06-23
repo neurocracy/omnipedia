@@ -46,6 +46,7 @@ dependencies:
     - field_ui
     - file
     - filter
+    - flood_control
     - honeypot
     - image
     - key

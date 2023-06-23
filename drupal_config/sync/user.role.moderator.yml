@@ -7,6 +7,7 @@ dependencies:
     - contact
     - contextual
     - file
+    - flood_control
     - shortcut
     - system
     - tfa
