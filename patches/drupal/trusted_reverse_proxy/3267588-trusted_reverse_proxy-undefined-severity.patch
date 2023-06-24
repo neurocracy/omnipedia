@@ -1,0 +1,13 @@
+diff --git a/trusted_reverse_proxy.module b/trusted_reverse_proxy.module
+index 6a5f051b99cb332a64df16fe1cd6b1f2fee690c0..3947172989df611c3c012907e4fb9215ea523653 100644
+--- a/trusted_reverse_proxy.module
++++ b/trusted_reverse_proxy.module
+@@ -21,7 +21,7 @@ function trusted_reverse_proxy_preprocess_status_report_page(&$variables) {
+ 
+   $container = \Drupal::getContainer();
+   $severity = $container->getParameter('trusted_reverse_proxy');
+-  $originalSeverity = $variables['requirements']['#requirements']['trusted_host_patterns']['severity'];
++  $originalSeverity = $variables['requirements']['#requirements']['trusted_host_patterns']['severity'] ?? NULL;
+   if ($originalSeverity !== $severity['severity']) {
+     $variables['requirements']['#requirements']['trusted_host_patterns']['severity'] = $severity['severity'];
+     // Mock an element for rendering to retrieve the counters.

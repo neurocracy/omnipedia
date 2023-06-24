@@ -5,9 +5,10 @@ warmers:
     id: omnipedia_wiki_node_changes
     frequency: '300'
     batchSize: '5'
-  entity:
-    id: entity
+  omnipedia_wiki_node_cdn:
+    id: omnipedia_wiki_node_cdn
     frequency: 300
-    batchSize: 10
-    entity_types:
-      'node:wiki_page': 'node:wiki_page'
+    batchSize: 5
+    verify: true
+    max_concurrent_requests: 2
+    sleep_between_batches: 5

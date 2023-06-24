@@ -66,6 +66,7 @@ module:
   mysql: 0
   node: 0
   omnipedia_access: 0
+  omnipedia_asset: 0
   omnipedia_attached_data: 0
   omnipedia_block: 0
   omnipedia_changes: 0
@@ -77,6 +78,7 @@ module:
   omnipedia_menu: 0
   omnipedia_search: 0
   omnipedia_user: 0
+  omnipedia_warmer: 0
   options: 0
   password_policy_character_types: 0
   password_policy_characters: 0
@@ -96,12 +98,14 @@ module:
   remove_http_headers: 0
   responsive_image: 0
   rules: 0
+  s3fs: 0
   search_api: 0
   search_api_db: 0
   seckit: 0
   security_review: 0
   session_limit: 0
   shortcut: 0
+  smtp: 0
   sodium: 0
   subpathauto: 0
   system: 0
@@ -111,6 +115,7 @@ module:
   token: 0
   token_filter: 0
   toolbar: 0
+  trusted_reverse_proxy: 0
   typed_data: 0
   update: 0
   user: 0
@@ -119,10 +124,10 @@ module:
   views_event_dispatcher: 0
   views_ui: 0
   warmer: 0
-  warmer_entity: 0
   webp: 0
   menu_link_content: 1
   pathauto: 1
+  image_style_warmer: 10
   password_policy: 10
   views: 10
   standard: 1000

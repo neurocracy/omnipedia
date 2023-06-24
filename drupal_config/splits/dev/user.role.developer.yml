@@ -58,10 +58,12 @@ dependencies:
     - remove_http_headers
     - responsive_image
     - rules
+    - s3fs
     - search_api
     - seckit
     - security_review
     - shortcut
+    - smtp
     - system
     - taxonomy
     - tfa
@@ -148,10 +150,12 @@ permissions:
   - 'administer rules'
   - 'administer rules components'
   - 'administer rules reactions'
+  - 'administer s3fs'
   - 'administer search_api'
   - 'administer seckit'
   - 'administer shortcuts'
   - 'administer site configuration'
+  - 'administer smtp module'
   - 'administer software updates'
   - 'administer taxonomy'
   - 'administer taxonomy_term display'
