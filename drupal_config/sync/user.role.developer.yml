@@ -17,7 +17,6 @@ dependencies:
     - node.type.wiki_page
     - taxonomy.vocabulary.episode_tiers
   module:
-    - action
     - autoban
     - ban
     - block
@@ -31,7 +30,6 @@ dependencies:
     - encrypt
     - eu_cookie_compliance
     - fancy_file_delete
-    - field_ui
     - file
     - filter
     - flood_control
@@ -64,7 +62,6 @@ dependencies:
     - toolbar
     - update
     - views_bulk_edit
-    - views_ui
 id: developer
 label: developer
 weight: -4
@@ -91,19 +88,14 @@ permissions:
   - 'admin queue_ui'
   - 'admin tfa settings'
   - 'administer account settings'
-  - 'administer actions'
   - 'administer autoban'
   - 'administer blocks'
   - 'administer configuration split'
   - 'administer contact forms'
-  - 'administer contact_message display'
-  - 'administer contact_message fields'
-  - 'administer contact_message form display'
   - 'administer content types'
   - 'administer csp configuration'
   - 'administer development environment settings'
   - 'administer disable_link_rel configuration'
-  - 'administer display modes'
   - 'administer encrypt'
   - 'administer eu cookie compliance categories'
   - 'administer eu cookie compliance popup'
@@ -117,16 +109,10 @@ permissions:
   - 'administer login destination settings'
   - 'administer markdown'
   - 'administer media'
-  - 'administer media display'
-  - 'administer media fields'
-  - 'administer media form display'
   - 'administer media types'
   - 'administer menu'
   - 'administer meta tags'
   - 'administer modules'
-  - 'administer node display'
-  - 'administer node fields'
-  - 'administer node form display'
   - 'administer nodes'
   - 'administer omnipedia_attached_data entity'
   - 'administer pathauto'
@@ -143,18 +129,11 @@ permissions:
   - 'administer site configuration'
   - 'administer software updates'
   - 'administer taxonomy'
-  - 'administer taxonomy_term display'
-  - 'administer taxonomy_term fields'
-  - 'administer taxonomy_term form display'
   - 'administer tfa for other users'
   - 'administer themes'
   - 'administer unmanaged files entities'
   - 'administer url aliases'
-  - 'administer user display'
-  - 'administer user fields'
-  - 'administer user form display'
   - 'administer users'
-  - 'administer views'
   - 'ban IP addresses'
   - 'build omnipedia_changes'
   - 'bypass honeypot protection'
