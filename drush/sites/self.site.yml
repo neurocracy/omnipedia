@@ -1,7 +1,0 @@
-live:
-  root: /home/omnipedia/domain_omnipedia/root/drupal
-  uri: https://omnipedia.app
-
-staging:
-  root: /home/omnipedia/domain_omnipedia/subdomain_staging/drupal
-  uri: https://omnqgknwaphwqxy3jakjxt78vbngfywcjps.dreamhosters.com

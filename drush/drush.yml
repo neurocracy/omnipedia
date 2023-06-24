@@ -13,32 +13,3 @@ command:
         # This prevents Drush automatically trying to launch the default browser
         # when generating a log in link.
         browser: 0
-
-  ambientimpact:
-    rsync:
-      options:
-        exclude-paths:
-          - 'sites/*/settings.database.php'
-          - 'sites/*/settings.local.php'
-          # Added to prevent site-specific Drush config getting synced from
-          # staging to live.
-          - 'sites/all/drush/drush.yml'
-          # Ignore PHP storage. This contains compiled Twig templates, etc.
-          - 'storage/*'
-
-        # This removes the two 'cache:rebuild' as rebuilding various caches can
-        # be a big hit to the server and load time for the subsequent request.
-        # If newly added modules or themes need to be picked up by Drupal, run
-        # 'drush cc bootstrap' after the rsync. Other Drush commands can be run
-        # to rebuild various things if needed, and the Rebuilder module can help
-        # rebuild things that either don't have an existing Drush command or
-        # would require a difficult to remember service call using php:eval.
-        #
-        # @see https://www.drupal.org/project/rebuilder
-        #
-        # If you really want to do it manually, find the service, and run:
-        #
-        # drush php:eval "\Drupal::service('service_name')->serviceMethod()"
-        target-post-drush-commands:
-          - 'config:import'
-          - 'updb'
