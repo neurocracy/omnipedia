@@ -1,7 +1,6 @@
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
-  action: 0
   ambientimpact_core: 0
   ambientimpact_icon: 0
   ambientimpact_markdown: 0
@@ -11,7 +10,6 @@ module:
   autoban_ban: 0
   ban: 0
   block: 0
-  block_content: 0
   breakpoint: 0
   ckeditor5: 0
   config: 0
@@ -35,7 +33,6 @@ module:
   fancy_file_delete: 0
   field: 0
   field_event_dispatcher: 0
-  field_ui: 0
   file: 0
   filter: 0
   flood_control: 0
@@ -122,7 +119,6 @@ module:
   views_bulk_edit: 0
   views_bulk_operations: 0
   views_event_dispatcher: 0
-  views_ui: 0
   warmer: 0
   webp: 0
   menu_link_content: 1
