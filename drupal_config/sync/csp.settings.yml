@@ -26,38 +26,20 @@ enforce:
       base: self
     child-src:
       base: self
-      sources:
-        - 'https://www.paypal.com'
-        - 'https://www.sandbox.paypal.com'
-        - 'https://js.stripe.com'
     connect-src:
       base: self
-      sources:
-        - 'https://www.paypal.com'
     frame-src:
       base: self
-      sources:
-        - 'https://www.paypal.com'
-        - 'https://www.sandbox.paypal.com'
-        - 'https://js.stripe.com'
     img-src:
       base: self
       sources:
         - 'data:'
-        - 'https://www.paypalobjects.com'
-        - 'https://t.paypal.com/'
     object-src:
       base: none
     script-src:
       base: self
-      sources:
-        - 'https://www.paypal.com'
-        - 'https://www.sandbox.paypal.com'
     script-src-elem:
       base: self
-      sources:
-        - 'https://www.paypal.com'
-        - 'https://www.sandbox.paypal.com'
     style-src:
       base: self
       flags:
