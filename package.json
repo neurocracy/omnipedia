@@ -16,7 +16,7 @@
     "cross-env": "^7.0.3",
     "drupal-ambientimpact-core": "workspace:^2",
     "drupal-ambientimpact-icon": "workspace:^1",
-    "drupal-ambientimpact-media": "workspace:^2",
+    "drupal-ambientimpact-media": "workspace:^3",
     "drupal-ambientimpact-ux": "workspace:^1",
     "drupal-omnipedia-block": "workspace:^5",
     "drupal-omnipedia-changes": "workspace:^7",
