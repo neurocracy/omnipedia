@@ -8,7 +8,6 @@ dependencies:
     - node.type.wiki_page
     - taxonomy.vocabulary.episode_tiers
   module:
-    - block
     - contextual
     - eu_cookie_compliance
     - file
@@ -37,9 +36,7 @@ permissions:
   - 'access taxonomy overview'
   - 'access toolbar'
   - 'add omnipedia_attached_data entity'
-  - 'administer blocks'
   - 'administer eu cookie compliance categories'
-  - 'administer media'
   - 'administer menu'
   - 'administer nodes'
   - 'administer omnipedia_attached_data entity'
