@@ -5,6 +5,7 @@ dependencies:
   module:
     - contact
     - eu_cookie_compliance
+    - file
     - media
     - system
 _core:
