@@ -1,0 +1,15 @@
+diff --git a/src/ImageStylesWarmer.php b/src/ImageStylesWarmer.php
+index 4ca17bf..81c9e7f 100644
+--- a/src/ImageStylesWarmer.php
++++ b/src/ImageStylesWarmer.php
+@@ -106,6 +106,10 @@ class ImageStylesWarmer implements ImageStylesWarmerInterface {
+       if (!file_exists($derivative_uri)) {
+         $style->createDerivative($image_uri, $derivative_uri);
+       }
++
++      if (\Drupal::service('module_handler')->moduleExists('webp')) {
++        \Drupal::service('webp.webp')->createWebpCopy($derivative_uri);
++      }
+     }
+   }
+

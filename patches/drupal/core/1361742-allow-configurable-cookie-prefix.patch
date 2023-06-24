@@ -1,0 +1,57 @@
+diff --git a/core/assets/scaffold/files/default.settings.php b/core/assets/scaffold/files/default.settings.php
+index 5615be3dc0bb9d8737c3e9d4267fca31046c045b..03a03270e99b27d4f6fdb28c5a8f2b1e41f17283 100644
+--- a/core/assets/scaffold/files/default.settings.php
++++ b/core/assets/scaffold/files/default.settings.php
+@@ -567,6 +567,14 @@
+  */
+ # $settings['session_write_interval'] = 180;
+
++/**
++ * Drupal creates a cookie name consisting of a static prefix and a site-
++ * specific name that is automatically created. When hosting multiple sites
++ * under a single domain, it may be desirable to add a unique prefix for sites
++ * to easily filter these in reverse proxies or utilities.
++ */
++# $settings['session_cookie_prefix'] = '';
++
+ /**
+  * String overrides:
+  *
+diff --git a/core/lib/Drupal/Core/Session/SessionConfiguration.php b/core/lib/Drupal/Core/Session/SessionConfiguration.php
+index cecc0a350f5eb618c2831dc6aaa6b914d3fdf6d0..37a7d86b5c87fad075b3b4932bd1fea69cc5cf14 100644
+--- a/core/lib/Drupal/Core/Session/SessionConfiguration.php
++++ b/core/lib/Drupal/Core/Session/SessionConfiguration.php
+@@ -2,6 +2,7 @@
+
+ namespace Drupal\Core\Session;
+
++use Drupal\Core\Site\Settings;
+ use Symfony\Component\HttpFoundation\Request;
+
+ /**
+@@ -66,13 +67,14 @@ public function getOptions(Request $request) {
+    *   The name of the session cookie.
+    */
+   protected function getName(Request $request) {
++    $prefix = Settings::get('session_cookie_prefix', '');
+     // To prevent session cookies from being hijacked, a user can configure the
+     // SSL version of their website to only transfer session cookies via SSL by
+     // using PHP's session.cookie_secure setting. The browser will then use two
+     // separate session cookies for the HTTPS and HTTP versions of the site. So
+     // we must use different session identifiers for HTTPS and HTTP to prevent a
+     // cookie collision.
+-    $prefix = $request->isSecure() ? 'SSESS' : 'SESS';
++    $prefix .= $request->isSecure() ? 'SSESS' : 'SESS';
+     return $prefix . $this->getUnprefixedName($request);
+   }
+
+@@ -102,6 +104,10 @@ protected function getUnprefixedName(Request $request) {
+       $session_name = preg_replace('#/core$#', '', $session_name);
+     }
+
++    // Add hash salt to prevent sites on shared domains with separate databases
++    // from overwriting each other's cookies.
++    $session_name .= Settings::get('hash_salt', '');
++
+     return substr(hash('sha256', $session_name), 0, 32);
+   }

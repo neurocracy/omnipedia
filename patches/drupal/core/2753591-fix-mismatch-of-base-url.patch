@@ -1,0 +1,107 @@
+diff --git a/core/lib/Drupal/Core/DrupalKernel.php b/core/lib/Drupal/Core/DrupalKernel.php
+index c2457761e062490f4f04e3b469b47ac179fe0074..1d4867a54683045e0fc755af1fadab7e38bb0042 100644
+--- a/core/lib/Drupal/Core/DrupalKernel.php
++++ b/core/lib/Drupal/Core/DrupalKernel.php
+@@ -1099,27 +1099,16 @@ protected function initializeRequestGlobals(Request $request) {
+     global $base_secure_url, $base_insecure_url;
+ 
+     // Create base URL.
++    $base_path = $request->getBasePath();
++    // Requests to 'core/foo.php' bypass the front controller, causing
++    // $request->getBasePath() to return a string ending with '/core'. In these
++    // cases, remove '/core' to obtain the correct $base_path.
++    if (str_ends_with($base_path, '/core')) {
++      $base_path = substr($base_path, 0, -5);
++    }
++    $base_path .= '/';
+     $base_root = $request->getSchemeAndHttpHost();
+-    $base_url = $base_root;
+-
+-    // For a request URI of '/index.php/foo', $_SERVER['SCRIPT_NAME'] is
+-    // '/index.php', whereas $_SERVER['PHP_SELF'] is '/index.php/foo'.
+-    if ($dir = rtrim(dirname($request->server->get('SCRIPT_NAME')), '\/')) {
+-      // Remove "core" directory if present, allowing install.php,
+-      // authorize.php, and others to auto-detect a base path.
+-      $core_position = strrpos($dir, '/core');
+-      if ($core_position !== FALSE && strlen($dir) - 5 == $core_position) {
+-        $base_path = substr($dir, 0, $core_position);
+-      }
+-      else {
+-        $base_path = $dir;
+-      }
+-      $base_url .= $base_path;
+-      $base_path .= '/';
+-    }
+-    else {
+-      $base_path = '/';
+-    }
++    $base_url = rtrim($base_root . $base_path, '\/');
+     $base_secure_url = str_replace('http://', 'https://', $base_url);
+     $base_insecure_url = str_replace('https://', 'http://', $base_url);
+   }
+diff --git a/core/tests/Drupal/Tests/Core/DrupalKernel/DrupalKernelTest.php b/core/tests/Drupal/Tests/Core/DrupalKernel/DrupalKernelTest.php
+index 16b5b0d4757a6ccbda183dae05542b1f5c43ad70..39c1f698fa1e1530f65d0253dbfb4a07f574c272 100644
+--- a/core/tests/Drupal/Tests/Core/DrupalKernel/DrupalKernelTest.php
++++ b/core/tests/Drupal/Tests/Core/DrupalKernel/DrupalKernelTest.php
+@@ -15,6 +15,13 @@
+  */
+ class DrupalKernelTest extends UnitTestCase {
+ 
++  /**
++   * Back up and restore any global variables that may be changed by tests.
++   *
++   * @var ?bool
++   */
++  protected $backupGlobals = FALSE;
++
+   /**
+    * Tests hostname validation with settings.
+    *
+@@ -151,6 +158,47 @@ public function testGetServiceIdMapping() {
+     $this->assertEquals($container->get('kernel')->getServiceIdMapping()[$container->generateServiceIdHash($service)], 'bar');
+   }
+ 
++  /**
++   * @covers ::initializeRequestGlobals
++   * @dataProvider initializeRequestGlobalsProvider
++   */
++  public function testInitializeRequestGlobals($path, $url, $expected_base_url, $expected_base_path, $expected_base_root): void {
++    global $base_url, $base_path, $base_root;
++
++    $request = $this->prophesize(Request::class);
++    $request->getBasePath()->willReturn($path);
++    $request->getSchemeAndHttpHost()->willReturn($url);
++    $drupalKernel = new DrupalKernel('test', NULL);
++    $method = new \ReflectionMethod(DrupalKernel::class, 'initializeRequestGlobals');
++    $method->setAccessible(TRUE);
++    $method->invoke($drupalKernel, $request->reveal());
++    $this->assertSame($expected_base_path, $base_path);
++    $this->assertSame($expected_base_url, $base_url);
++    $this->assertSame($expected_base_root, $base_root);
++  }
++
++  /**
++   * Provides data for testInitializeRequestGlobals().
++   */
++  public function initializeRequestGlobalsProvider(): array {
++    return [
++      ['', 'http://localhost', 'http://localhost', '/', 'http://localhost'],
++      ['/drupal',
++        'http://localhost',
++        'http://localhost/drupal',
++        '/drupal/',
++        'http://localhost',
++      ],
++      ['/core', 'http://localhost', 'http://localhost', '/', 'http://localhost'],
++      ['/drupal/core',
++        'http://localhost',
++        'http://localhost/drupal',
++        '/drupal/',
++        'http://localhost',
++      ],
++    ];
++  }
++
+ }
+ 
+ /**
