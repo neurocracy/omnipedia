@@ -72,6 +72,7 @@ weight: -4
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'access block library'
   - 'access content overview'
   - 'access contextual links'
   - 'access development environment email logs'
@@ -94,6 +95,8 @@ permissions:
   - 'administer account settings'
   - 'administer actions'
   - 'administer autoban'
+  - 'administer block content'
+  - 'administer block types'
   - 'administer block_content display'
   - 'administer block_content fields'
   - 'administer block_content form display'
