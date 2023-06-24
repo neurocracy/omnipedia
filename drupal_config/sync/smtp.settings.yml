@@ -1,6 +1,6 @@
 _core:
   default_config_hash: HENvUIeX6xNPGRB1w3z6rT9a71LM_hKXATF6XrM9WvM
-smtp_on: false
+smtp_on: true
 smtp_host: ***REMOVED***
 smtp_hostbackup: ''
 smtp_port: '587'
