@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4932fcc71f60aeebc578ef952682a233",
+    "content-hash": "83c0be4a62399aebb4de4c758d899cb8",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -16249,8 +16249,6 @@
         "drupal/ambientimpact_markdown": 20,
         "drupal/ambientimpact_media": 20,
         "drupal/ambientimpact_ux": 20,
-        "drupal/core-composer-scaffold": 5,
-        "drupal/core-recommended": 5,
         "drupal/development_environment": 20,
         "drupal/gin": 10,
         "drupal/gin_toolbar": 10,
@@ -16272,8 +16270,7 @@
         "drupal/rebuilder": 5,
         "drupal/rules": 20,
         "drupal/session_limit": 10,
-        "drupal/tfa": 15,
-        "drupal/core-dev": 5
+        "drupal/tfa": 15
     },
     "prefer-stable": true,
     "prefer-lowest": false,

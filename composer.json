@@ -190,7 +190,7 @@
     "drupal/examples": "^4.0",
     "kint-php/kint": "^3.3",
     "phpspec/prophecy-phpunit": "^2",
-    "symfony/var-dumper": "^5.0 || ^6.2"
+    "symfony/var-dumper": "^6.2"
   },
   "conflict": {
     "drupal/drupal": "*"
