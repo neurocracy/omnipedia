@@ -229,7 +229,6 @@ permissions:
   - 'link to any page'
   - 'manage password reset'
   - 'notify of path changes'
-  - 'process entity_reference_revisions_orphan_purger queue'
   - 'process media_entity_thumbnail queue'
   - 'process warmer queue'
   - 'readonlymode access forms'
