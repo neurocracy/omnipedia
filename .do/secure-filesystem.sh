@@ -11,7 +11,7 @@
 # Set the version controlled default public files .htaccess to read-only so
 # Security Review won't complain, even though that directory isn't used since we
 # use the S3 File System module to take over the public:// stream wrapper.
-chmod u-w /workspace/drupal/sites/default/files/.htaccess
+# chmod u-w /workspace/drupal/sites/default/files/.htaccess
 
 echo "=> Removing write permissions:";
 for d in /workspace/drupal/*
