@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# @see https://stackoverflow.com/questions/6659689/referring-to-a-file-relative-to-executing-script#6659698
+source "${BASH_SOURCE%/*}/run-common.sh"
+
 # This runs various background tasks in sequence. These are mostly in order of
 # importance and order of dependency (e.g. entity warmer before wiki page
 # changes), though not strictly required to be so.
