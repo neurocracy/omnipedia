@@ -9,7 +9,6 @@ dependencies:
     - taxonomy.vocabulary.episode_tiers
   module:
     - block
-    - block_content
     - contextual
     - eu_cookie_compliance
     - file
@@ -28,7 +27,6 @@ weight: -6
 is_admin: null
 permissions:
   - 'access administration pages'
-  - 'access block library'
   - 'access content'
   - 'access content overview'
   - 'access contextual links'
@@ -39,8 +37,6 @@ permissions:
   - 'access taxonomy overview'
   - 'access toolbar'
   - 'add omnipedia_attached_data entity'
-  - 'administer block content'
-  - 'administer block types'
   - 'administer blocks'
   - 'administer eu cookie compliance categories'
   - 'administer media'

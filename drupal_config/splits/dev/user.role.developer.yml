@@ -21,7 +21,6 @@ dependencies:
     - autoban
     - ban
     - block
-    - block_content
     - config
     - config_delete
     - config_inspector
@@ -75,7 +74,6 @@ weight: -4
 is_admin: null
 permissions:
   - 'access administration pages'
-  - 'access block library'
   - 'access content overview'
   - 'access contextual links'
   - 'access devel information'
@@ -99,11 +97,6 @@ permissions:
   - 'administer account settings'
   - 'administer actions'
   - 'administer autoban'
-  - 'administer block content'
-  - 'administer block types'
-  - 'administer block_content display'
-  - 'administer block_content fields'
-  - 'administer block_content form display'
   - 'administer blocks'
   - 'administer configuration split'
   - 'administer contact forms'
