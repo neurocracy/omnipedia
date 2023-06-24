@@ -98,6 +98,7 @@ permissions:
   - 'administer responsive images'
   - 'administer search_api'
   - 'administer shortcuts'
+  - 'administer site configuration'
   - 'administer taxonomy'
   - 'administer tfa for other users'
   - 'administer unmanaged files entities'
