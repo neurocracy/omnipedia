@@ -14,3 +14,4 @@
 #
 # @see \Drupal\Core\File\HtaccessWriter::ensure()
 drush php:eval "\Drupal::service('file.htaccess_writer')->ensure();"
+drush php:eval "\Drupal::service('file.htaccess_writer')->write('sites/default/files');"
