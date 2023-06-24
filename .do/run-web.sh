@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# @see https://stackoverflow.com/questions/6659689/referring-to-a-file-relative-to-executing-script#6659698
+source "${BASH_SOURCE%/*}/run-common.sh"
+
 # Run the Heroku PHP buildpack PHP-FPM with our custom config appended.
 #
 # @see https://devcenter.heroku.com/articles/custom-php-settings
