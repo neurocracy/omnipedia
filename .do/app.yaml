@@ -73,26 +73,6 @@ envs:
 - key: S3FS_TAKEOVER
   scope: RUN_AND_BUILD_TIME
   value: "true"
-- key: PAYPAL_CLIENT_ID
-  scope: RUN_TIME
-  type: SECRET
-  value: "_PAYPAL_CLIENT_ID_"
-- key: PAYPAL_SECRET
-  scope: RUN_TIME
-  type: SECRET
-  value: "_PAYPAL_SECRET_"
-- key: PAYPAL_WEBHOOK_ID
-  scope: RUN_TIME
-  type: SECRET
-  value: "_PAYPAL_WEBHOOK_ID_"
-- key: STRIPE_PUBLISHABLE
-  scope: RUN_TIME
-  type: SECRET
-  value: "_STRIPE_PUBLISHABLE_"
-- key: STRIPE_SECRET
-  scope: RUN_TIME
-  type: SECRET
-  value: "_STRIPE_SECRET_"
 
 ingress:
   rules:
