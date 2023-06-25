@@ -47,10 +47,13 @@ yarn.build-error.log
 /drupal_private_files/*
 
 /drupal/*
+!/drupal/assets
 !/drupal/modules
 !/drupal/profiles
 !/drupal/sites
 !/drupal/themes
+
+/drupal/assets/*
 
 /drupal/modules/contrib
 /drupal/modules/README.txt

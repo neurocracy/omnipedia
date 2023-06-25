@@ -14,6 +14,9 @@ do
   find $d -execdir chmod u-w,g-w,o= '{}' \; -print
 done
 
+# Restore write permissions to assets directory.
+chmod u+w /workspace/drupal/assets
+
 # Restore write permissions to the default public files directory so that
 # /admin/reports/status doesn't complain, even though the S3 File System module
 # is configured to take over the public:// stream wrapper.
