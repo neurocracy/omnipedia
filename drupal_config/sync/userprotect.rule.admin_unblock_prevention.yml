@@ -1,0 +1,15 @@
+uuid: 929f4f65-cd7e-4608-bb43-9742c6a058c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+name: admin_unblock_prevention
+label: 'Admin unblock prevention'
+protectedEntityTypeId: user
+protectedEntityId: '1'
+protections:
+  user_status:
+    id: user_status
+    provider: userprotect
+    status: true
