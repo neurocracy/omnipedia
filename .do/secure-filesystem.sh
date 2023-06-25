@@ -14,7 +14,8 @@ do
   find $d -execdir chmod u-w,g-w,o= '{}' \; -print
 done
 
-# Restore write permissions to assets directory.
+# Restore write permissions to the assets directory so that Drupal core can
+# write the .htaccess file to it on deployment to prevent execution of PHP.
 chmod u+w /workspace/drupal/assets
 
 # Restore write permissions to the default public files directory so that
