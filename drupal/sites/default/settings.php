@@ -155,6 +155,21 @@ if (\getenv('DRUPAL_PRIMARY_HOST') !== false) {
 }
 
 /**
+ * Media oEmbed domain name via the 'DRUPAL_OEMBED_HOST' environment variable.
+ *
+ * This avoids having to hard code a domain name in the exported
+ * configuration, instead setting it dynamically.
+ *
+ * Note that this is in the host format without the protocol, so we have to
+ * prepend 'https://'.
+ */
+if (\getenv('DRUPAL_OEMBED_HOST') !== false) {
+  $config['media.settings']['iframe_domain'] = 'https://' . \getenv(
+    'DRUPAL_OEMBED_HOST'
+  );
+}
+
+/**
  * Public file path.
  *
  * A local file system path where public files will be stored. This directory
