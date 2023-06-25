@@ -13,12 +13,15 @@ for d in /workspace/drupal/*
 do
   find $d -execdir chmod u-w,g-w,o= '{}' \; -print
 done
+echo "=> Finished removing write permissions.";
 
 # Restore write permissions to the assets directory so that Drupal core can
 # write the .htaccess file to it on deployment to prevent execution of PHP.
+echo "=> Restoring write permission to aggregated assets directory.";
 chmod u+w /workspace/drupal/assets
 
 # Restore write permissions to the default public files directory so that
 # /admin/reports/status doesn't complain, even though the S3 File System module
 # is configured to take over the public:// stream wrapper.
+echo "=> Restoring write permission to sites/default/files";
 chmod u+w /workspace/drupal/sites/default/files
