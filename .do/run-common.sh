@@ -21,8 +21,19 @@ drush php:eval "\Drupal::service('file.htaccess_writer')->ensure();"
 # executable_php check even though the S3 File System module is configured to
 # take over the public:// and private:// stream wrappers.
 #
+# This avoids hard-coding the public file path here because we can just get it
+# from Drupal core. Because of this, $settings['file_public_path'] should still
+# be set to the local directory that would have been used be used if the S3
+# File System module was not set to take over the public:// stream wrapper.
+#
 # Note that this must be in the run phase because the database is not available
 # during the build phase and this would have no effect.
 #
 # @see \Drupal\Core\File\HtaccessWriter::write()
-drush php:eval "\Drupal::service('file.htaccess_writer')->write('sites/default/files', false);"
+#
+# @see \Drupal\Core\Site\Settings::get()
+drush php:eval "\Drupal::service('file.htaccess_writer')->write( \
+  '$(drush php:eval "echo \Drupal::service('settings')->get( \
+    'file_public_path' \
+  );")', false \
+);"
