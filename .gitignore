@@ -88,11 +88,5 @@ test.sqlite-wal
 # Note that this must be placed after any exclude rules to take effect.
 !.gitkeep
 
-# @todo Move all of these to DDEV environment variables via /.ddev/.env
-/keys
-
-# @todo Remove when this is split into individual custom modules.
-!/drupal/modules/ambientimpact
-
 # @todo Remove when fully migrated to DigitalOcean App Platform.
 sftp-config.json
