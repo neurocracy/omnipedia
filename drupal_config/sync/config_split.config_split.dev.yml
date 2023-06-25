@@ -21,7 +21,6 @@ blacklist: {  }
 graylist:
   - dblog.settings
   - gin.settings
-  - media.settings
   - remove_http_headers.settings
   - system.logging
   - system.performance
