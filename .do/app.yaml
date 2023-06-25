@@ -104,7 +104,7 @@ services:
     initial_delay_seconds: 10
     timeout_seconds: 30
   http_port: 80
-  instance_count: 1
+  instance_count: 2
   instance_size_slug: professional-xs
   internal_ports:
   - 8080
