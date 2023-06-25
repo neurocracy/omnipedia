@@ -68,6 +68,7 @@ dependencies:
     - tfa
     - toolbar
     - update
+    - userprotect
     - views_bulk_edit
     - views_ui
 id: developer
@@ -256,6 +257,7 @@ permissions:
   - 'use text format restricted_html'
   - 'use text format wiki_html'
   - 'use views bulk edit'
+  - userprotect.administer
   - 'view all media revisions'
   - 'view all revisions'
   - 'view omnipedia_attached_data entity'
