@@ -13,6 +13,7 @@ blacklist: {  }
 graylist:
   - dblog.settings
   - gin.settings
+  - user.role.authenticated
   - user.role.anonymous
 graylist_dependents: true
 graylist_skip_equal: true
