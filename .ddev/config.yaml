@@ -23,4 +23,4 @@ mutagen_enabled: false
 use_dns_when_possible: true
 composer_version: "2"
 web_environment: []
-nodejs_version: "16"
+nodejs_version: "18"
