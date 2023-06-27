@@ -92,3 +92,25 @@ The following major version bumps indicate breaking changes:
       * The [State Machine module](https://www.drupal.org/project/state_machine).
 
     * Removed all their related configuration, fields, entity types, permissions, and so on.
+
+* 9.x:
+
+  * This is the culimation of nearly a year of work that was done in parallel with the main branches to port Omnipedia to [DigitalOcean's App Platform](https://www.digitalocean.com/products/app-platform). It required significant engineering to rework the entire front-end and back-end build processes to fully automate them, because the file system on App Platform is ephemeral with each deployment occurring on a completely fresh file system. To get a sense of the changes involved, see [the comparison between the `8.x` and `8.x_digitalocean` branches](../../compare/8.x...8.x_digitalocean). The work occurred in these branches:
+
+    * [`4.x_digitalocean`](../../tree/4.x_digitalocean)
+
+    * [`5.x_digitalocean`](../../tree/5.x_digitalocean)
+
+    * [`6.x_digitalocean`](../../tree/6.x_digitalocean)
+
+    * [`7.x_digitalocean`](../../tree/7.x_digitalocean)
+
+    * [`8.x_digitalocean`](../../tree/8.x_digitalocean)
+
+  * All uploaded files and generated image styles are hosted on [DigitalOcean Spaces](https://www.digitalocean.com/products/spaces), their S3-compatible object storage; this is necessary due to the emphemeral nature of the App Platform file system, meaning they would get wiped on the next deploy if stored locally. On the Drupal side, this is implemented using the [S3 File System module](https://www.drupal.org/project/s3fs).
+
+  * The entire Composer and Yarn install process is now automated and installs everything on deploy; all front-end CSS and other assets are built via Yarn and Webpack during this process.
+
+  * Email is now sent out using a third-party email service as [DigitalOcean blocks sending of email directly from their Droplets or App Platform to prevent use of their services being used for spam](https://docs.digitalocean.com/support/why-is-smtp-blocked/).
+
+  * [Session cookie security has been hardened significantly](https://scotthelme.co.uk/tough-cookies/), along with many other security improvements.
