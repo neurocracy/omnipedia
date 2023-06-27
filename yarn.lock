@@ -3563,9 +3563,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"drupal-ambientimpact-base@workspace:^6, drupal-ambientimpact-base@workspace:drupal/themes/custom/ambientimpact_base":
+"drupal-ambientimpact-base@workspace:^6, drupal-ambientimpact-base@workspace:web/themes/custom/ambientimpact_base":
   version: 0.0.0-use.local
-  resolution: "drupal-ambientimpact-base@workspace:drupal/themes/custom/ambientimpact_base"
+  resolution: "drupal-ambientimpact-base@workspace:web/themes/custom/ambientimpact_base"
   dependencies:
     drupal-ambientimpact-core: "workspace:^1 || ^2"
     drupal-ambientimpact-ux: "workspace:^1"
@@ -3573,9 +3573,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"drupal-ambientimpact-core@workspace:^1 || ^2, drupal-ambientimpact-core@workspace:^2, drupal-ambientimpact-core@workspace:drupal/modules/custom/ambientimpact_core":
+"drupal-ambientimpact-core@workspace:^1 || ^2, drupal-ambientimpact-core@workspace:^2, drupal-ambientimpact-core@workspace:web/modules/custom/ambientimpact_core":
   version: 0.0.0-use.local
-  resolution: "drupal-ambientimpact-core@workspace:drupal/modules/custom/ambientimpact_core"
+  resolution: "drupal-ambientimpact-core@workspace:web/modules/custom/ambientimpact_core"
   dependencies:
     "@babel/core": ^7.20.2
     "@babel/preset-env": ^7.20.2
@@ -3600,9 +3600,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"drupal-ambientimpact-icon@workspace:^1, drupal-ambientimpact-icon@workspace:drupal/modules/custom/ambientimpact_icon":
+"drupal-ambientimpact-icon@workspace:^1, drupal-ambientimpact-icon@workspace:web/modules/custom/ambientimpact_icon":
   version: 0.0.0-use.local
-  resolution: "drupal-ambientimpact-icon@workspace:drupal/modules/custom/ambientimpact_icon"
+  resolution: "drupal-ambientimpact-icon@workspace:web/modules/custom/ambientimpact_icon"
   dependencies:
     "@babel/core": ^7.20.2
     "@babel/preset-env": ^7.20.2
@@ -3623,9 +3623,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"drupal-ambientimpact-media@workspace:^2 || ^3, drupal-ambientimpact-media@workspace:drupal/modules/custom/ambientimpact_media":
+"drupal-ambientimpact-media@workspace:^2 || ^3, drupal-ambientimpact-media@workspace:web/modules/custom/ambientimpact_media":
   version: 0.0.0-use.local
-  resolution: "drupal-ambientimpact-media@workspace:drupal/modules/custom/ambientimpact_media"
+  resolution: "drupal-ambientimpact-media@workspace:web/modules/custom/ambientimpact_media"
   dependencies:
     "@babel/core": ^7.20.2
     "@babel/preset-env": ^7.20.2
@@ -3649,9 +3649,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"drupal-ambientimpact-ux@workspace:^1, drupal-ambientimpact-ux@workspace:drupal/modules/custom/ambientimpact_ux":
+"drupal-ambientimpact-ux@workspace:^1, drupal-ambientimpact-ux@workspace:web/modules/custom/ambientimpact_ux":
   version: 0.0.0-use.local
-  resolution: "drupal-ambientimpact-ux@workspace:drupal/modules/custom/ambientimpact_ux"
+  resolution: "drupal-ambientimpact-ux@workspace:web/modules/custom/ambientimpact_ux"
   dependencies:
     "@babel/core": ^7.20.2
     "@babel/preset-env": ^7.20.2
@@ -3683,9 +3683,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"drupal-omnipedia-block@workspace:^5, drupal-omnipedia-block@workspace:drupal/modules/custom/omnipedia_block":
+"drupal-omnipedia-block@workspace:^5 || ^6, drupal-omnipedia-block@workspace:web/modules/custom/omnipedia_block":
   version: 0.0.0-use.local
-  resolution: "drupal-omnipedia-block@workspace:drupal/modules/custom/omnipedia_block"
+  resolution: "drupal-omnipedia-block@workspace:web/modules/custom/omnipedia_block"
   dependencies:
     "@babel/core": ^7.19.6
     "@babel/preset-env": ^7.19.4
@@ -3707,9 +3707,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"drupal-omnipedia-changes@workspace:drupal/modules/custom/omnipedia_changes":
+"drupal-omnipedia-changes@workspace:web/modules/custom/omnipedia_changes":
   version: 0.0.0-use.local
-  resolution: "drupal-omnipedia-changes@workspace:drupal/modules/custom/omnipedia_changes"
+  resolution: "drupal-omnipedia-changes@workspace:web/modules/custom/omnipedia_changes"
   dependencies:
     "@babel/core": ^7.20.2
     "@babel/preset-env": ^7.20.2
@@ -3729,9 +3729,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"drupal-omnipedia-content@workspace:^6, drupal-omnipedia-content@workspace:drupal/modules/custom/omnipedia_content":
+"drupal-omnipedia-content@workspace:^6, drupal-omnipedia-content@workspace:web/modules/custom/omnipedia_content":
   version: 0.0.0-use.local
-  resolution: "drupal-omnipedia-content@workspace:drupal/modules/custom/omnipedia_content"
+  resolution: "drupal-omnipedia-content@workspace:web/modules/custom/omnipedia_content"
   dependencies:
     "@babel/core": ^7.20.2
     "@babel/preset-env": ^7.20.2
@@ -3752,9 +3752,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"drupal-omnipedia-media@workspace:^6, drupal-omnipedia-media@workspace:drupal/modules/custom/omnipedia_media":
+"drupal-omnipedia-media@workspace:^6, drupal-omnipedia-media@workspace:web/modules/custom/omnipedia_media":
   version: 0.0.0-use.local
-  resolution: "drupal-omnipedia-media@workspace:drupal/modules/custom/omnipedia_media"
+  resolution: "drupal-omnipedia-media@workspace:web/modules/custom/omnipedia_media"
   dependencies:
     "@babel/core": ^7.20.2
     "@babel/preset-env": ^7.20.2
@@ -3775,9 +3775,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"drupal-omnipedia-site-theme@workspace:drupal/themes/custom/omnipedia_site_theme":
+"drupal-omnipedia-site-theme@workspace:web/themes/custom/omnipedia_site_theme":
   version: 0.0.0-use.local
-  resolution: "drupal-omnipedia-site-theme@workspace:drupal/themes/custom/omnipedia_site_theme"
+  resolution: "drupal-omnipedia-site-theme@workspace:web/themes/custom/omnipedia_site_theme"
   dependencies:
     "@babel/core": ^7.20.2
     "@babel/preset-env": ^7.20.2
@@ -3789,7 +3789,7 @@ __metadata:
     drupal-ambientimpact-core: "workspace:^2"
     drupal-ambientimpact-icon: "workspace:^1"
     drupal-ambientimpact-ux: "workspace:^1"
-    drupal-omnipedia-block: "workspace:^5"
+    drupal-omnipedia-block: "workspace:^5 || ^6"
     drupal-omnipedia-content: "workspace:^6"
     drupal-omnipedia-media: "workspace:^6"
     favicons: ^7.0.2
@@ -5795,14 +5795,6 @@ __metadata:
   checksum: 41a2ba310e7b6f6c3b905af82c275bf8854896e2e4c5752966d64cbcd2f599cfffd5932006bcf3b8b419dfdacebb3a3912d5d94e10f1d0acab59876c8757f27f
   languageName: node
   linkType: hard
-
-"omnipedia-drupal@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "omnipedia-drupal@workspace:."
-  dependencies:
-    cross-env: ^7.0.3
-  languageName: unknown
-  linkType: soft
 
 "on-finished@npm:2.4.1":
   version: 2.4.1

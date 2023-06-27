@@ -11,4 +11,4 @@ source "${BASH_SOURCE%/*}/run-common.sh"
 # @see https://github.com/heroku/heroku-buildpack-php/blob/main/bin/heroku-php-apache2
 #   Commandline usage detailed in the print_help() function, including how to
 #   pass this to the run command.
-heroku-php-apache2 -C .apache/httpd.inc.conf -F .php/php-fpm.inc.conf drupal
+heroku-php-apache2 -C .apache/httpd.inc.conf -F .php/php-fpm.inc.conf web

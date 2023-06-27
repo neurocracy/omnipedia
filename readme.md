@@ -114,3 +114,5 @@ The following major version bumps indicate breaking changes:
   * Email is now sent out using a third-party email service as [DigitalOcean blocks sending of email directly from their Droplets or App Platform to prevent use of their services being used for spam](https://docs.digitalocean.com/support/why-is-smtp-blocked/).
 
   * [Session cookie security has been hardened significantly](https://scotthelme.co.uk/tough-cookies/), along with many other security improvements.
+
+  * The web root directory has been renamed from `drupal` to `web` to be more in line with standard Drupal practices.

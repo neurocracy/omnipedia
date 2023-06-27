@@ -9,8 +9,8 @@
     "build:deploy": "cross-env NODE_ENV=production CI=true yarn build"
   },
   "workspaces": [
-    "drupal/modules/custom/*",
-    "drupal/themes/custom/*"
+    "web/modules/custom/*",
+    "web/themes/custom/*"
   ],
   "dependencies": {
     "cross-env": "^7.0.3"

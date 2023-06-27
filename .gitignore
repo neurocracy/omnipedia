@@ -46,45 +46,45 @@ yarn.build-error.log
 # Ignore Drupal private files directory.
 /drupal_private_files/*
 
-/drupal/*
-!/drupal/assets
-!/drupal/modules
-!/drupal/profiles
-!/drupal/sites
-!/drupal/themes
+/web/*
+!/web/assets
+!/web/modules
+!/web/profiles
+!/web/sites
+!/web/themes
 
-/drupal/assets/*
+/web/assets/*
 
-/drupal/modules/contrib
-/drupal/modules/README.txt
+/web/modules/contrib
+/web/modules/README.txt
 
-/drupal/profiles/contrib
-/drupal/profiles/README.txt
+/web/profiles/contrib
+/web/profiles/README.txt
 
-/drupal/sites/default/default.services.yml
-/drupal/sites/default/default.settings.php
-/drupal/sites/development.services.yml
-/drupal/sites/example.*.php
-/drupal/sites/README.txt
+/web/sites/default/default.services.yml
+/web/sites/default/default.settings.php
+/web/sites/development.services.yml
+/web/sites/example.*.php
+/web/sites/README.txt
 
-/drupal/sites/**/files/*
-/drupal/sites/**/settings.*.php
+/web/sites/**/files/*
+/web/sites/**/settings.*.php
 
-/drupal/themes/contrib
-/drupal/themes/README.txt
+/web/themes/contrib
+/web/themes/README.txt
 
 # Custom Drupal extensions (modules, profiles, themes) should be referenced as
 # custom Composer repositories and installed with --prefer-source if version
 # control is required, i.e. they're being actively developed.
-/drupal/modules/custom/*
-/drupal/profiles/custom/*
-/drupal/themes/custom/*
+/web/modules/custom/*
+/web/profiles/custom/*
+/web/themes/custom/*
 
 # Testing directories and files.
 test.sqlite
 test.sqlite-shm
 test.sqlite-wal
-/drupal/sites/simpletest
+/web/sites/simpletest
 
 # Always allow .gitkeep files which are commonly used to allow directories that
 # otherwise have no other files under version control to be deployed via Git.
