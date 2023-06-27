@@ -97,7 +97,7 @@ services:
     scope: RUN_AND_BUILD_TIME
     value: :/workspace/.php/
   github:
-    branch: 8.x_digitalocean
+    branch: 9.x
     repo: neurocracy/omnipedia
   health_check:
     http_path: /
@@ -120,7 +120,7 @@ workers:
     scope: RUN_AND_BUILD_TIME
     value: :/workspace/.php/
   github:
-    branch: 8.x_digitalocean
+    branch: 9.x
     repo: neurocracy/omnipedia
   instance_count: 1
   instance_size_slug: professional-xs
