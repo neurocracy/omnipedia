@@ -249,10 +249,6 @@
       "drupal/image_style_warmer": {
         "Support webp images [#3319397]: https://www.drupal.org/project/image_style_warmer/issues/3319397#comment-14802527": "patches/drupal/image_style_warmer/webp-module-support-3319397-5.patch"
       },
-      "drupal/permissions_by_term": {
-        "Permissions by Term complains about deactivated internal page cache when updating [#3254076]: https://www.drupal.org/project/permissions_by_term/issues/3254076#comment-14845306": "patches/drupal/permissions_by_term/3254076-internal-page-cache-warning-remove.patch",
-        "Regression updating to 3.1.22 for Drupal 9.x using loadTemplate from twig [#3354478]: https://www.drupal.org/project/permissions_by_term/issues/3354478": "patches/drupal/permissions_by_term/3354478-twig-load-template-fatal-error.patch"
-      },
       "drupal/readonlymode": {
         "Fix readonly notice message styling [#3008741]: https://www.drupal.org/project/readonlymode/issues/3008741": "patches/drupal/readonlymode/3008741-6-fix-readonly-notice-styling.patch",
         "Fatal error due to saved additional form IDs being strings and not arrays [#3115119]: https://www.drupal.org/project/readonlymode/issues/3115119": "patches/drupal/readonlymode/3115119-16-additional-forms-config-not-array.patch"
