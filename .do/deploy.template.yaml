@@ -22,6 +22,10 @@ spec:
     scope: BUILD_TIME
     type: SECRET
     value: '{"github-oauth":{"github.com": "_GITHUB_TOKEN_"}}'
+  - key: DISCOURSE_CONNECT_SECRET
+    scope: RUN_TIME
+    type: SECRET
+    value: '_DISCOURSE_CONNECT_SECRET_'
   - key: DRUPAL_CONFIG_SPLITS
     scope: RUN_TIME
     value: paranoia
