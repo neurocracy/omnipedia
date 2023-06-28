@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c6cc9e9080e8607026754cb671a15c22",
+    "content-hash": "341ea5f247aa3c42b3928d36817e1b40",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -2722,6 +2722,70 @@
             "homepage": "https://www.drupal.org/project/disable_link_rel",
             "support": {
                 "source": "https://git.drupalcode.org/project/disable_link_rel"
+            }
+        },
+        {
+            "name": "drupal/discourse_sso",
+            "version": "2.0.0-rc7",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/discourse_sso.git",
+                "reference": "2.0.0-rc7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/discourse_sso-2.0.0-rc7.zip",
+                "reference": "2.0.0-rc7",
+                "shasum": "f63ba320539ca0d38bfb40a42a0198a3ac6a74e3"
+            },
+            "require": {
+                "drupal/core": "^9.3 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0-rc7",
+                    "datestamp": "1677680579",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "boromino",
+                    "homepage": "https://www.drupal.org/user/859722"
+                },
+                {
+                    "name": "dabbor",
+                    "homepage": "https://www.drupal.org/user/2214664"
+                },
+                {
+                    "name": "jackpelorus",
+                    "homepage": "https://www.drupal.org/user/2349920"
+                },
+                {
+                    "name": "joachim",
+                    "homepage": "https://www.drupal.org/user/107701"
+                },
+                {
+                    "name": "jurgenhaas",
+                    "homepage": "https://www.drupal.org/user/168924"
+                },
+                {
+                    "name": "murrayw",
+                    "homepage": "https://www.drupal.org/user/595658"
+                }
+            ],
+            "description": "Provides a Single Sign On integration for a Discourse forum.",
+            "homepage": "https://www.drupal.org/project/discourse_sso",
+            "support": {
+                "source": "https://git.drupalcode.org/project/discourse_sso"
             }
         },
         {
@@ -16767,6 +16831,7 @@
         "drupal/ambientimpact_media": 20,
         "drupal/ambientimpact_ux": 20,
         "drupal/development_environment": 20,
+        "drupal/discourse_sso": 5,
         "drupal/gin": 10,
         "drupal/gin_toolbar": 10,
         "drupal/hook_event_dispatcher": 10,

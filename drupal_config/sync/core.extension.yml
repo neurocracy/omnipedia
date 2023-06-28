@@ -27,6 +27,7 @@ module:
   development_environment: 0
   diff: 0
   disable_link_rel: 0
+  discourse_sso: 0
   dynamic_page_cache: 0
   editor: 0
   encrypt: 0
