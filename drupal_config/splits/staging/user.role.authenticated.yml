@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   module:
+    - discourse_sso
     - eu_cookie_compliance
 _core:
   default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
@@ -11,4 +12,5 @@ label: 'authenticated user'
 weight: -9
 is_admin: false
 permissions:
+  - 'access discourse sso'
   - 'display eu cookie compliance popup'

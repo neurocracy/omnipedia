@@ -5,6 +5,7 @@ dependencies:
   module:
     - contact
     - devel
+    - discourse_sso
     - eu_cookie_compliance
     - media
     - omnipedia_changes
@@ -18,6 +19,7 @@ is_admin: false
 permissions:
   - 'access content'
   - 'access devel information'
+  - 'access discourse sso'
   - 'access site-wide contact form'
   - 'build omnipedia_changes'
   - 'display eu cookie compliance popup'
