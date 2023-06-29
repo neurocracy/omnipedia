@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cc7fb21b6a3c93e4ada8a9f892e9ea64",
+    "content-hash": "cafc1ddb2e1378dd124fdc02ada2bd11",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -4172,6 +4172,53 @@
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-date/issues"
             },
             "time": "2023-06-17T22:05:33+00:00"
+        },
+        {
+            "name": "drupal/omnipedia_discourse",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/neurocracy/drupal-omnipedia-discourse.git",
+                "reference": "11ded20dea583342ad4cf91f059f85fb3475c2a6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-discourse/zipball/11ded20dea583342ad4cf91f059f85fb3475c2a6",
+                "reference": "11ded20dea583342ad4cf91f059f85fb3475c2a6",
+                "shasum": ""
+            },
+            "require": {
+                "cweagans/composer-patches": "^1.7",
+                "drupal/core": "^9.5 || ^10.0",
+                "drupal/discourse_sso": "^2.0@RC",
+                "php": "^8"
+            },
+            "default-branch": true,
+            "type": "drupal-custom-module",
+            "extra": {
+                "patches": {
+                    "drupal/discourse_sso": {
+                        "Sites that don't grant 'access content' permission to anonymous users result in access denied when redirected to the Drupal site for log in [#3371060]: https://www.drupal.org/project/discourse_sso/issues/3371060": "https://raw.githubusercontent.com/neurocracy/drupal-omnipedia-discourse/1.x/patches/drupal/discourse_sso/3371060-add-new-login-permission.patch"
+                    }
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ambient.Impact",
+                    "homepage": "https://ambientimpact.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Omnipedia - Discourse",
+            "support": {
+                "docs": "https://github.com/neurocracy/drupal-omnipedia-discourse",
+                "source": "https://github.com/neurocracy/drupal-omnipedia-discourse",
+                "issues": "https://github.com/neurocracy/drupal-omnipedia-discourse/issues"
+            },
+            "time": "2023-06-29T17:28:50+00:00"
         },
         {
             "name": "drupal/omnipedia_logger",
@@ -16831,7 +16878,6 @@
         "drupal/ambientimpact_media": 20,
         "drupal/ambientimpact_ux": 20,
         "drupal/development_environment": 20,
-        "drupal/discourse_sso": 5,
         "drupal/gin": 10,
         "drupal/gin_toolbar": 10,
         "drupal/hook_event_dispatcher": 10,
@@ -16843,6 +16889,7 @@
         "drupal/omnipedia_content": 20,
         "drupal/omnipedia_core": 20,
         "drupal/omnipedia_date": 20,
+        "drupal/omnipedia_discourse": 20,
         "drupal/omnipedia_logger": 20,
         "drupal/omnipedia_media": 20,
         "drupal/omnipedia_menu": 20,
