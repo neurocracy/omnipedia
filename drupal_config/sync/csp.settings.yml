@@ -65,6 +65,9 @@ enforce:
       base: self
     form-action:
       base: self
+      sources:
+        - 'https://talk.omnipedia.app'
+        - '***REMOVED***'
     frame-ancestors:
       base: self
     upgrade-insecure-requests: true
