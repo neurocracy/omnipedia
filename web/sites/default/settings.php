@@ -364,6 +364,17 @@ if (\getenv('DRUPAL_REVERSE_PROXY_ENABLED') === false) {
 }
 
 /**
+ * Suppress emails and reroute them to logs if set in this environment.
+ *
+ * @see https://www.drupal.org/project/development_environment
+ *   Uses the Development Environment module to accomplish this. Module must be
+ *   installed in all environments.
+ */
+if (\getenv('DRUPAL_SUPPRESS_EMAIL') !== false) {
+  $settings['development_environment.log_emails'] = true;
+}
+
+/**
  * The default list of directories that will be ignored by Drupal's file API.
  *
  * By default ignore node_modules and bower_components folders to avoid issues
