@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "341ea5f247aa3c42b3928d36817e1b40",
+    "content-hash": "608f9794c5c4d9bae56dde77c6c89e4a",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -3613,7 +3613,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/issue/markdown-3288447.git",
-                "reference": "c1b88fd5cd3fe93464a14fac5f5b28fe592e0a29"
+                "reference": "f21d4036c125a6f05c177ecb53fbc76dcea88dc1"
             },
             "require": {
                 "composer/semver": "^1.0 || ^2.0 || ^3.0",
@@ -3651,7 +3651,7 @@
                 "issues": "https://www.drupal.org/project/markdown",
                 "source": "https://git.drupalcode.org/project/markdown"
             },
-            "time": "2023-01-08T20:57:07+00:00"
+            "time": "2023-06-27T14:31:28+00:00"
         },
         {
             "name": "drupal/media_entity_file_replace",
@@ -3699,17 +3699,17 @@
         },
         {
             "name": "drupal/metatag",
-            "version": "1.25.0",
+            "version": "1.26.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/metatag.git",
-                "reference": "8.x-1.25"
+                "reference": "8.x-1.26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/metatag-8.x-1.25.zip",
-                "reference": "8.x-1.25",
-                "shasum": "8603d84df3b93dd02dae601d57a6347598829e56"
+                "url": "https://ftp.drupal.org/files/projects/metatag-8.x-1.26.zip",
+                "reference": "8.x-1.26",
+                "shasum": "afa4a37422748baa2f0c35b13961438668ef3be8"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10",
@@ -3720,7 +3720,7 @@
                 "drupal/hal": "^9 || ^1 || ^2",
                 "drupal/metatag_dc": "*",
                 "drupal/metatag_open_graph": "*",
-                "drupal/page_manager": "*",
+                "drupal/page_manager": "^4.0",
                 "drupal/panelizer": "^4.0",
                 "drupal/redirect": "^1.0",
                 "drupal/webprofiler": "^9 || ^10",
@@ -3729,8 +3729,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.25",
-                    "datestamp": "1685541226",
+                    "version": "8.x-1.26",
+                    "datestamp": "1687856123",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5709,17 +5709,17 @@
         },
         {
             "name": "drupal/token",
-            "version": "1.11.0",
+            "version": "1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/token.git",
-                "reference": "8.x-1.11"
+                "reference": "8.x-1.12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/token-8.x-1.11.zip",
-                "reference": "8.x-1.11",
-                "shasum": "da264b36d1f88eb0c74bf84e18e8789854f98400"
+                "url": "https://ftp.drupal.org/files/projects/token-8.x-1.12.zip",
+                "reference": "8.x-1.12",
+                "shasum": "cefe1b203b793682f74ea43e18d0a814cf768763"
             },
             "require": {
                 "drupal/core": "^9.2 || ^10"
@@ -5727,8 +5727,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.11",
-                    "datestamp": "1659471813",
+                    "version": "8.x-1.12",
+                    "datestamp": "1688015262",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6104,17 +6104,17 @@
         },
         {
             "name": "drupal/warmer",
-            "version": "2.0.9",
+            "version": "2.0.10",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/warmer.git",
-                "reference": "2.0.9"
+                "reference": "2.0.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/warmer-2.0.9.zip",
-                "reference": "2.0.9",
-                "shasum": "d1be1a6eb31f4eb8301fa3ee2d67c9a894a16939"
+                "url": "https://ftp.drupal.org/files/projects/warmer-2.0.10.zip",
+                "reference": "2.0.10",
+                "shasum": "e333ab37c5a44704aa3f90c8e019d36ee75603c3"
             },
             "require": {
                 "drupal/core": "^9 || ^10",
@@ -6124,8 +6124,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.9",
-                    "datestamp": "1682671763",
+                    "version": "2.0.10",
+                    "datestamp": "1688015656",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
