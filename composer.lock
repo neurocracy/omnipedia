@@ -4179,12 +4179,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neurocracy/drupal-omnipedia-discourse.git",
-                "reference": "8492934d48abea0c95f205a7b9487bac6490d534"
+                "reference": "36f6f55c440860a4c49938ebfbe04151e8e7ff1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-discourse/zipball/8492934d48abea0c95f205a7b9487bac6490d534",
-                "reference": "8492934d48abea0c95f205a7b9487bac6490d534",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-discourse/zipball/36f6f55c440860a4c49938ebfbe04151e8e7ff1c",
+                "reference": "36f6f55c440860a4c49938ebfbe04151e8e7ff1c",
                 "shasum": ""
             },
             "require": {
@@ -4198,6 +4198,7 @@
             "extra": {
                 "patches": {
                     "drupal/discourse_sso": {
+                        "Missing config schema [#3344663]: https://www.drupal.org/project/discourse_sso/issues/3344663": "https://raw.githubusercontent.com/neurocracy/drupal-omnipedia-discourse/1.x/patches/drupal/discourse_sso/3344663-missing-config-schema.patch",
                         "Sites that don't grant 'access content' permission to anonymous users result in access denied when redirected to the Drupal site for log in [#3371060]: https://www.drupal.org/project/discourse_sso/issues/3371060": "https://raw.githubusercontent.com/neurocracy/drupal-omnipedia-discourse/1.x/patches/drupal/discourse_sso/3371060-add-new-login-permission.patch"
                     }
                 }
@@ -4218,7 +4219,7 @@
                 "source": "https://github.com/neurocracy/drupal-omnipedia-discourse",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-discourse/issues"
             },
-            "time": "2023-06-29T20:08:15+00:00"
+            "time": "2023-06-30T18:35:27+00:00"
         },
         {
             "name": "drupal/omnipedia_logger",
