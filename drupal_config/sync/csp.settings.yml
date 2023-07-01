@@ -34,11 +34,8 @@ enforce:
       base: self
       sources:
         - 'data:'
-        - 'https://cdn.omnipedia.app'
     media-src:
       base: self
-      sources:
-        - 'https://cdn.omnipedia.app'
     object-src:
       base: none
     script-src:
