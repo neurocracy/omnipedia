@@ -43,24 +43,16 @@ enforce:
       base: none
     script-src:
       base: self
-      sources:
-        - 'https://cdn.omnipedia.app'
     script-src-elem:
       base: self
-      sources:
-        - 'https://cdn.omnipedia.app'
     style-src:
       base: self
       flags:
         - unsafe-inline
-      sources:
-        - 'https://cdn.omnipedia.app'
     style-src-attr:
       base: self
       flags:
         - unsafe-inline
-      sources:
-        - 'https://cdn.omnipedia.app'
     base-uri:
       base: self
     form-action:
