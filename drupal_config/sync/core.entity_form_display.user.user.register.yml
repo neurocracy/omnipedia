@@ -25,20 +25,8 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  contact:
-    weight: 5
-    region: content
-  language:
-    weight: 1
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  timezone:
-    weight: 2
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
+  contact: true
   customer_profiles: true
   field_content_density: true
   field_early_supporter: true
@@ -46,5 +34,7 @@ hidden:
   field_password_expiration: true
   field_pending_expire_sent: true
   field_show_wikipedia_links: true
+  language: true
   path: true
+  timezone: true
   user_picture: true
