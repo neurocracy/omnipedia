@@ -239,11 +239,9 @@
       "drupal/core": "-p2"
     },
     "patches": {
-      "drupal/core-disabled": {
-        "JS aggregation should account for \"defer\" and \"async\" attributes [#1587536]: https://www.drupal.org/project/drupal/issues/1587536#comment-15106596": "patches/drupal/core/js-aggregation-defer-async-attributes-1587536-65.patch"
-      },
       "drupal/core": {
         "Allow configurable cookie prefix [#1361742] (NOTE: edited to remove failing block on non-existent file in dist that exists in Drupal.org Git): https://www.drupal.org/project/drupal/issues/1361742": "patches/drupal/core/1361742-allow-configurable-cookie-prefix.patch",
+        "JS aggregation should account for \"async\" and \"defer\" attributes [#1587536]: https://www.drupal.org/project/drupal/issues/1587536": "patches/drupal/core/1587536-js-aggregation-async-defer-attributes.patch",
         "Support setting service parameters via environment variables [#3249970]: https://www.drupal.org/project/drupal/issues/3249970#comment-14294955": "patches/drupal/core/3249970-2-support-service-parameter-env.patch",
         "Fix mismatch of $base_url with Symfony request object [#2753591]: https://www.drupal.org/project/drupal/issues/2753591": "patches/drupal/core/2753591-fix-mismatch-of-base-url.patch"
       },
