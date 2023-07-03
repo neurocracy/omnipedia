@@ -11,8 +11,8 @@ id: node.wiki_page.field_date
 field_name: field_date
 entity_type: node
 bundle: wiki_page
-label: Date
-description: ''
+label: 'Wiki date'
+description: 'The wiki date for this page.<br><em>Note that only one wiki page with the same title can exist for each wiki date.</em>'
 required: true
 translatable: false
 default_value: {  }
