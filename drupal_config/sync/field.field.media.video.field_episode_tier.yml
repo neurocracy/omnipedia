@@ -12,8 +12,8 @@ id: media.video.field_episode_tier
 field_name: field_episode_tier
 entity_type: media
 bundle: video
-label: 'Episode tier'
-description: 'The lowest episode tier that a user must have to have access to this media.'
+label: Episode
+description: 'The episode this media is part of.'
 required: true
 translatable: true
 default_value:

@@ -515,7 +515,7 @@ display:
           exposed: true
           expose:
             operator_id: field_episode_tier_target_id_op
-            label: 'Episode tier'
+            label: Episode
             description: ''
             use_operator: false
             operator: field_episode_tier_target_id_op
@@ -531,6 +531,7 @@ display:
               contributor: '0'
               moderator: '0'
               editor: '0'
+              developer: '0'
               administrator: '0'
             reduce: false
           is_grouped: false
