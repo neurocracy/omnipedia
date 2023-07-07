@@ -9,7 +9,7 @@ _core:
 id: omnipedia_site_theme_local_tasks
 theme: omnipedia_site_theme
 region: content
-weight: -5
+weight: -3
 provider: null
 plugin: local_tasks_block
 settings:

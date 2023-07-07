@@ -10,7 +10,7 @@ dependencies:
 id: omnipedia_site_theme_founder_message_join
 theme: omnipedia_site_theme
 region: content
-weight: -6
+weight: -5
 provider: null
 plugin: omnipedia_founder_message_join
 settings:
