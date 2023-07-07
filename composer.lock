@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f9e64eb32bdca9f6ec958b55b84ebc1e",
+    "content-hash": "0bfc07e4ea4d742baeaa141d60ee2a42",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -3606,6 +3606,32 @@
                 "source": "https://git.drupalcode.org/project/login_security",
                 "issues": "https://drupal.org/project/issues/login_security"
             }
+        },
+        {
+            "name": "drupal/maintenance200",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Ambient-Impact/drupal-maintenance200.git",
+                "reference": "ac61a468814bca1393bd774f58331769aceaa22d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Ambient-Impact/drupal-maintenance200/zipball/ac61a468814bca1393bd774f58331769aceaa22d",
+                "reference": "ac61a468814bca1393bd774f58331769aceaa22d",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "drupal-module",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Allows the maintenance page to return a configurable HTTP status code rather than the standard 503 code.",
+            "support": {
+                "source": "https://github.com/Ambient-Impact/drupal-maintenance200/tree/1.x",
+                "issues": "https://github.com/Ambient-Impact/drupal-maintenance200/issues"
+            },
+            "time": "2023-07-07T01:51:44+00:00"
         },
         {
             "name": "drupal/markdown",
@@ -16882,6 +16908,7 @@
         "drupal/gin": 10,
         "drupal/gin_toolbar": 10,
         "drupal/hook_event_dispatcher": 10,
+        "drupal/maintenance200": 20,
         "drupal/omnipedia_access": 20,
         "drupal/omnipedia_asset": 20,
         "drupal/omnipedia_attached_data": 20,

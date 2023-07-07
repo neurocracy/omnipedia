@@ -48,6 +48,10 @@
       "type": "vcs",
       "url": "https://git.drupalcode.org/issue/image_field_caption-3355337.git"
     },
+    "drupal/maintenance200": {
+      "type": "vcs",
+      "url": "https://github.com/Ambient-Impact/drupal-maintenance200.git"
+    },
     "drupal/markdown": {
       "type": "vcs",
       "url": "https://git.drupalcode.org/issue/markdown-3288447.git"
@@ -160,6 +164,7 @@
     "drupal/key": "^1.14",
     "drupal/login_destination": "^2.0",
     "drupal/login_security": "^2.0",
+    "drupal/maintenance200": "1.x-dev@dev",
     "drupal/markdown": "dev-3288447-automated-drupal-10@dev as 3.0@RC",
     "drupal/media_entity_file_replace": "^1.0",
     "drupal/metatag": "^2.0",
