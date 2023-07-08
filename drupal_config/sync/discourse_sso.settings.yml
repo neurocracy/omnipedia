@@ -1,7 +1,7 @@
 _core:
   default_config_hash: X86Lu47CsL5n0GazykwnSu1g1RXA07DcnUrtMmGnbXM
-discourse_server: '***REMOVED***'
 discourse_sso_secret: null
+discourse_server: 'https://talk.omnipedia.app'
 api_username: ''
 api_key: ''
 user_discourse_username_field: null
