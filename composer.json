@@ -248,6 +248,7 @@
         "Allow configurable cookie prefix [#1361742] (NOTE: edited to remove failing block on non-existent file in dist that exists in Drupal.org Git): https://www.drupal.org/project/drupal/issues/1361742": "patches/drupal/core/1361742-allow-configurable-cookie-prefix.patch",
         "JS aggregation should account for \"async\" and \"defer\" attributes [#1587536]: https://www.drupal.org/project/drupal/issues/1587536": "patches/drupal/core/1587536-js-aggregation-async-defer-attributes.patch",
         "Fix mismatch of $base_url with Symfony request object [#2753591]: https://www.drupal.org/project/drupal/issues/2753591": "patches/drupal/core/2753591-fix-mismatch-of-base-url.patch",
+        "Allow theme developers to add the default favicon filename to the theme's .info.yml [#3037922]: https://www.drupal.org/project/drupal/issues/3037922#mr4108-note181413": "patches/drupal/core/3037922-theme-info-favicon.patch",
         "Support setting service parameters via environment variables [#3249970]: https://www.drupal.org/project/drupal/issues/3249970#comment-14294955": "patches/drupal/core/3249970-2-support-service-parameter-env.patch"
       },
       "drupal/honeypot": {
