@@ -4597,12 +4597,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neurocracy/drupal-omnipedia-warmer.git",
-                "reference": "8f703fc13bbc27a48b9b63e11d4417cbb1a91b09"
+                "reference": "d8d1ec1f8324762747bbcd3abdd970ae2f802d80"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-warmer/zipball/8f703fc13bbc27a48b9b63e11d4417cbb1a91b09",
-                "reference": "8f703fc13bbc27a48b9b63e11d4417cbb1a91b09",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-warmer/zipball/d8d1ec1f8324762747bbcd3abdd970ae2f802d80",
+                "reference": "d8d1ec1f8324762747bbcd3abdd970ae2f802d80",
                 "shasum": ""
             },
             "require": {
@@ -4629,7 +4629,7 @@
                 "source": "https://github.com/neurocracy/drupal-omnipedia-warmer",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-warmer/issues"
             },
-            "time": "2023-07-02T21:49:33+00:00"
+            "time": "2023-07-08T09:00:26+00:00"
         },
         {
             "name": "drupal/paranoia",
