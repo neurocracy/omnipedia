@@ -1,0 +1,42 @@
+diff --git a/core/lib/Drupal/Core/Asset/CssCollectionRenderer.php b/core/lib/Drupal/Core/Asset/CssCollectionRenderer.php
+index 940ace05bb..368b0de82a 100644
+--- a/core/lib/Drupal/Core/Asset/CssCollectionRenderer.php
++++ b/core/lib/Drupal/Core/Asset/CssCollectionRenderer.php
+@@ -66,12 +66,11 @@ public function render(array $css_assets) {
+         // For file items, output a LINK tag for file CSS assets.
+         case 'file':
+           $element['#attributes']['href'] = $this->fileUrlGenerator->generateString($css_asset['data']);
+-          // Only add the cache-busting query string if this isn't an aggregate
+-          // file.
+-          if (!isset($css_asset['preprocessed'])) {
+-            $query_string_separator = str_contains($css_asset['data'], '?') ? '&' : '?';
+-            $element['#attributes']['href'] .= $query_string_separator . $query_string;
+-          }
++          // Always add the css_js_query_string so edge caches will download
++          // a new version of aggregates when libraries are unversioned, or for
++          // individual files where the filename never changes.
++          $query_string_separator = str_contains($css_asset['data'], '?') ? '&' : '?';
++          $element['#attributes']['href'] .= $query_string_separator . $query_string;
+           break;
+ 
+         case 'external':
+diff --git a/core/lib/Drupal/Core/Asset/JsCollectionRenderer.php b/core/lib/Drupal/Core/Asset/JsCollectionRenderer.php
+index 7c71e4f6dd..937a355d22 100644
+--- a/core/lib/Drupal/Core/Asset/JsCollectionRenderer.php
++++ b/core/lib/Drupal/Core/Asset/JsCollectionRenderer.php
+@@ -84,11 +84,10 @@ public function render(array $js_assets) {
+           $query_string = $js_asset['version'] == -1 ? $default_query_string : 'v=' . $js_asset['version'];
+           $query_string_separator = str_contains($js_asset['data'], '?') ? '&' : '?';
+           $element['#attributes']['src'] = $this->fileUrlGenerator->generateString($js_asset['data']);
+-          // Only add the cache-busting query string if this isn't an aggregate
+-          // file.
+-          if (!isset($js_asset['preprocessed'])) {
+-            $element['#attributes']['src'] .= $query_string_separator . ($js_asset['cache'] ? $query_string : REQUEST_TIME);
+-          }
++          // Always add the css_js_query_string so edge caches will download
++          // a new version of aggregates when libraries are unversioned, or for
++          // individual files where the filename never changes.
++          $element['#attributes']['src'] .= $query_string_separator . ($js_asset['cache'] ? $query_string : REQUEST_TIME);
+           break;
+ 
+         case 'external':
