@@ -145,3 +145,9 @@ definitions:
     weight: -43
     expanded: false
     enabled: false
+  omnipedia_discourse__server:
+    menu_name: main
+    parent: ''
+    weight: 0
+    expanded: false
+    enabled: true
