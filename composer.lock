@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6763e125ddcdd2e8c19b2a01ab5f0238",
+    "content-hash": "abbefe89753e74db98cd01b0dbfafe1e",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -5790,77 +5790,31 @@
         },
         {
             "name": "drupal/tfa",
-            "version": "2.0.0-alpha2",
+            "version": "dev-3370841-add-d10-support",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/tfa.git",
-                "reference": "2.0.0-alpha2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/tfa-2.0.0-alpha2.zip",
-                "reference": "2.0.0-alpha2",
-                "shasum": "ae5834b3b28aabdf6e9fb5bcdc112a4392db29fa"
+                "url": "https://git.drupalcode.org/issue/tfa-3370841.git",
+                "reference": "2074c6a028ae61beb8202ec673121e4c98cbebe4"
             },
             "require": {
                 "chillerlan/php-qrcode": "^1.0.9 || ^2.0 || ^3.2 || ^4.0",
                 "christian-riesen/otp": "^2.1",
-                "drupal/core": "^9.1 || ^10",
-                "drupal/encrypt": "^3.1",
+                "drupal/encrypt": "~3.0",
                 "php": ">=7.0"
-            },
-            "require-dev": {
-                "drupal/encrypt": "*",
-                "drupal/key": "*",
-                "drupal/services": "*"
             },
             "type": "drupal-module",
             "extra": {
-                "drupal": {
-                    "version": "2.0.0-alpha2",
-                    "datestamp": "1669821038",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
-                    }
-                },
                 "drush": {
                     "services": {
-                        "drush.services.yml": "^10 || ^11"
+                        "drush.services.yml": "^9 || ^10 || ^11"
                     }
                 }
             },
-            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0-or-later"
             ],
-            "authors": [
-                {
-                    "name": "coltrane",
-                    "homepage": "https://www.drupal.org/user/91990"
-                },
-                {
-                    "name": "daggerhart",
-                    "homepage": "https://www.drupal.org/user/167806"
-                },
-                {
-                    "name": "greggles",
-                    "homepage": "https://www.drupal.org/user/36762"
-                },
-                {
-                    "name": "jcnventura",
-                    "homepage": "https://www.drupal.org/user/122464"
-                },
-                {
-                    "name": "nerdstein",
-                    "homepage": "https://www.drupal.org/user/1557710"
-                }
-            ],
             "description": "Pluggable provider of two factor authentication for Drupal",
-            "homepage": "https://www.drupal.org/project/tfa",
-            "support": {
-                "source": "https://git.drupalcode.org/project/tfa"
-            }
+            "time": "2023-07-13T13:33:36+00:00"
         },
         {
             "name": "drupal/token",
@@ -16976,6 +16930,12 @@
             "version": "dev-3288447-automated-drupal-10",
             "alias": "3.0@RC",
             "alias_normalized": "3.0.0.0"
+        },
+        {
+            "package": "drupal/tfa",
+            "version": "dev-3370841-add-d10-support",
+            "alias": "1.1",
+            "alias_normalized": "1.1.0.0"
         }
     ],
     "minimum-stability": "dev",
@@ -17010,7 +16970,6 @@
         "drupal/rebuilder": 5,
         "drupal/rules": 20,
         "drupal/session_limit": 10,
-        "drupal/tfa": 15,
         "drupal/trusted_reverse_proxy": 20
     },
     "prefer-stable": true,

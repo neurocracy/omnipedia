@@ -124,6 +124,10 @@
       "type": "vcs",
       "url": "https://git.drupalcode.org/issue/paranoia-3289009.git"
     },
+    "drupal/tfa": {
+      "type": "vcs",
+      "url": "https://git.drupalcode.org/issue/tfa-3370841.git"
+    },
     "drupal/trusted_reverse_proxy": {
       "type": "vcs",
       "url": "https://github.com/Ambient-Impact/drupal-trusted-reverse-proxy.git"
@@ -199,7 +203,7 @@
     "drupal/smtp": "^1.2",
     "drupal/sodium": "^2.1",
     "drupal/subpathauto": "^1.2",
-    "drupal/tfa": "^2.0@alpha",
+    "drupal/tfa": "dev-3370841-add-d10-support@dev as 1.1",
     "drupal/token_filter": "^2.0",
     "drupal/trusted_reverse_proxy": "1.0.x-dev@dev",
     "drupal/userprotect": "^1.2",
