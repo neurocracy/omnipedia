@@ -243,6 +243,11 @@
       "phpstan/extension-installer": true
     }
   },
+  "autoload": {
+    "psr-4": {
+      "Omnipedia\\" : "src/"
+    }
+  },
   "extra": {
     "enable-patching": true,
     "composer-exit-on-patch-failure": true,
