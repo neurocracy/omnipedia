@@ -129,5 +129,5 @@ workers:
   instance_count: 1
   instance_size_slug: professional-xs
   name: background-tasks
-  run_command: .do/run-background-tasks.sh
+  run_command: php .do/run-background-tasks.php
   source_dir: /
