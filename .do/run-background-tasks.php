@@ -25,7 +25,7 @@ $loop->addPeriodicTimer(900, function() use ($drush): void {
 // Every 5 minutes, process jobs from the image style warmer.
 $loop->addPeriodicTimer(300, function() use ($drush): void {
   (new WorkerProcess(
-    $drush . ' queue:run image_style_warmer_pregenerator --verbose'
+    $drush . ' queue:process image_style_warmer_pregenerator'
   ))->start();
 });
 
