@@ -13,7 +13,7 @@ $drush = \realpath(__DIR__ . '/../vendor/bin/drush');
 $loop = Loop::get();
 
 // Run common tasks immediately.
-$loop->futureTick(function() {
+$loop->futureTick(function(): void {
   (new WorkerProcess(__DIR__ . '/run-common.sh'))->start();
 });
 
