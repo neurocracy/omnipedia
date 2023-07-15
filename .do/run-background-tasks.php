@@ -29,16 +29,20 @@ $loop->addPeriodicTimer(300, function() use ($drush): void {
   ))->start();
 });
 
-// Every 10 minutes, process the wiki page changes queue.
-$loop->addPeriodicTimer(600, function() use ($drush): void {
-  (new WorkerProcess($drush . ' omnipedia:changes-build --verbose'))->start();
-});
+// Every 10 minutes, enqueue and process the warmer queue.
+$loop->addPeriodicTimer(600, function() use ($drush, $loop): void {
 
-// Every 10 minutes, process the wiki page CDN warmer queue.
-$loop->addPeriodicTimer(600, function() use ($drush): void {
-  (new WorkerProcess(
-    $drush . ' warmer:enqueue omnipedia_wiki_node_cdn --run-queue --verbose'
-  ))->start();
+  $loop->futureTick(function() use ($drush): void {
+    (new WorkerProcess($drush . ' warmer:enqueue ' . \implode(',', [
+      'omnipedia_wiki_node_changes',
+      'omnipedia_wiki_node_cdn',
+    ])))->start();
+  });
+
+  $loop->futureTick(function() use ($drush): void {
+    (new WorkerProcess($drush . ' queue:process warmer'))->start();
+  });
+
 });
 
 $loop->run();
