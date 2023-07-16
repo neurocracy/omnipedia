@@ -5,11 +5,19 @@ declare(strict_types=1);
 namespace Omnipedia\BackgroundTasks;
 
 use React\ChildProcess\Process;
+use React\Promise\Deferred;
 
 /**
  * Omnipedia background tasks worker process wrapper.
  */
 class WorkerProcess {
+
+  /**
+   * The Deferred object for this process.
+   *
+   * @var \React\Promise\Deferred
+   */
+  protected Deferred $deferred;
 
   /**
    * The ReactPHP Process instance for this command.
@@ -32,18 +40,35 @@ class WorkerProcess {
 
   /**
    * Start the configured process.
+   *
+   * @return \React\Promise\Deferred
+   *   A Deferred object whose Promise is fulfilled when the process exits.
    */
-  public function start(): void {
+  public function start(): Deferred {
 
     print 'Running: ' . $this->process->getCommand() . \PHP_EOL;
 
-    $this->process->start();
+    $this->deferred = new Deferred();
+
+    try {
+
+      $this->process->start();
+
+    } catch (\RuntimeException $exception) {
+
+      $this->deferred->reject($exception);
+
+      return $this->deferred;
+
+    }
 
     $this->process->on('exit', [$this, 'onProcessExit']);
 
     $this->process->stdout->on('data', [$this, 'onStdOutData']);
 
     $this->process->stderr->on('data', [$this, 'onStdErrData']);
+
+    return $this->deferred;
 
   }
 
@@ -55,6 +80,11 @@ class WorkerProcess {
    * @param int|null $termSignal
    */
   public function onProcessExit(?int $exitCode, ?int $termSignal): void {
+
+    $this->deferred->resolve([
+      'exitCode'    => $exitCode,
+      'termSignal'  => $termSignal,
+    ]);
 
     if ($exitCode !== null) {
       return;
