@@ -42,5 +42,3 @@ $loop->addPeriodicTimer(600, function() use ($loop): void {
   });
 
 });
-
-$loop->run();
