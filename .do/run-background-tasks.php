@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use Omnipedia\BackgroundTasks\LeadingPeriodicTimer;
 use Omnipedia\BackgroundTasks\WorkerProcess;
 use React\EventLoop\Loop;
 use React\Promise\ExtendedPromiseInterface;
@@ -22,8 +23,8 @@ $loop->addPeriodicTimer(900, function(): void {
   (new WorkerProcess('drush cron'))->start();
 });
 
-// Every 10 minutes, run queues.
-$loop->addPeriodicTimer(600, function(): void {
+// Run queues 60 seconds after starting, then every ten minutes after that.
+new LeadingPeriodicTimer($loop, 60, 600, function(): void {
 
   /** @var boolean Static flag indicating whether a run is currently in progress. */
   static $running = false;
