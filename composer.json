@@ -212,8 +212,10 @@
     "drupal/webp": "^1.0",
     "drush/drush": "^11.0.6",
     "oomphinc/composer-installers-extender": "^2.0",
+    "react/async": "^4.1",
     "react/child-process": "^0.6.5",
-    "react/event-loop": "^1.4"
+    "react/event-loop": "^1.4",
+    "react/promise": "^3 || ^2"
   },
   "require-dev": {
     "drupal/config_delete": "^2.0",
