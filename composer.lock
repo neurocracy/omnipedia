@@ -5167,7 +5167,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/rules.git",
-                "reference": "31cd83747737a6aede6a80860f7665dde669d504"
+                "reference": "2d40d10351128a29c037b076c27611808398cc60"
             },
             "require": {
                 "drupal/core": "^9.1 || ^10",
@@ -5179,8 +5179,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-alpha7+48-dev",
-                    "datestamp": "1684365173",
+                    "version": "8.x-3.0-alpha7+50-dev",
+                    "datestamp": "1689032348",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
