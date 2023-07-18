@@ -138,6 +138,18 @@ if (\getenv('DRUPAL_HASH_SALT') !== false) {
 }
 
 /**
+ * Deployment identifier.
+ *
+ * Drupal's dependency injection container will be automatically invalidated and
+ * rebuilt when the Drupal core version changes. When updating contributed or
+ * custom code that changes the container, changing this identifier will also
+ * allow the container to be invalidated as soon as code is deployed.
+ */
+if (\getenv('DEPLOYMENT_IDENTIFIER') !== false) {
+  $settings['deployment_identifier'] = \getenv('DEPLOYMENT_IDENTIFIER');
+}
+
+/**
  * Access control for update.php script.
  *
  * Under almost all circumstances, this should be left as false as updating
