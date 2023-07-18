@@ -97,6 +97,13 @@ services:
 - build_command: .do/build-web.sh
   environment_slug: php
   envs:
+  # This must be specified for both the web component and background tasks to
+  # ensure they don't differ and cause Drupal to rebuild the container
+  # needlessly. Since they both get deployed from the same repository and same
+  # commit each time, they should be identical.
+  - key: DEPLOYMENT_IDENTIFIER
+    scope: RUN_AND_BUILD_TIME
+    value: ${_self.COMMIT_HASH}
   - key: PHP_INI_SCAN_DIR
     scope: RUN_AND_BUILD_TIME
     value: :/workspace/.php/
@@ -120,6 +127,13 @@ workers:
 - build_command: .do/build-background-tasks.sh
   environment_slug: php
   envs:
+  # This must be specified for both the web component and background tasks to
+  # ensure they don't differ and cause Drupal to rebuild the container
+  # needlessly. Since they both get deployed from the same repository and same
+  # commit each time, they should be identical.
+  - key: DEPLOYMENT_IDENTIFIER
+    scope: RUN_AND_BUILD_TIME
+    value: ${_self.COMMIT_HASH}
   - key: PHP_INI_SCAN_DIR
     scope: RUN_AND_BUILD_TIME
     value: :/workspace/.php/
