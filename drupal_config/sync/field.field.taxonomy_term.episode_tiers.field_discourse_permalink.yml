@@ -1,0 +1,19 @@
+uuid: bc1fdc3c-e2ef-4b8c-8d19-c57ceea1842d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_discourse_permalink
+    - taxonomy.vocabulary.episode_tiers
+id: taxonomy_term.episode_tiers.field_discourse_permalink
+field_name: field_discourse_permalink
+entity_type: taxonomy_term
+bundle: episode_tiers
+label: 'Discourse permalink'
+description: 'If set, this associates a <a href="https://meta.discourse.org/t/custom-permalinks/56867" target="_blank">permalink</a> on the Discourse server with this episode. This is primarily used for redirecting to the appropriate speculation category from wiki page talk links.<br><em>This must be in the same format entered for the URL under <quote>Admin -> Customize -> Permalinks</quote> and should not include the Discourse server domain name.</em>'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

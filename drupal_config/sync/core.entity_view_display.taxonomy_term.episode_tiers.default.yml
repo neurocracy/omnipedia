@@ -1,0 +1,24 @@
+uuid: 3994a2fa-f2d1-42fc-a153-06f1c89fc462
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.episode_tiers.field_discourse_permalink
+    - taxonomy.vocabulary.episode_tiers
+  module:
+    - text
+id: taxonomy_term.episode_tiers.default
+targetEntityType: taxonomy_term
+bundle: episode_tiers
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_discourse_permalink: true
+  search_api_excerpt: true
