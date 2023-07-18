@@ -120,20 +120,10 @@ if (\getenv('DRUPAL_CONFIG_SPLITS') === false) {
 
 /**
  * Salt for one-time login links, cancel links, form tokens, etc.
- *
- * This first tries to use the 'DRUPAL_HASH_SALT' environment variable if it
- * exists, falling back to a file-based key in ../keys/drupal_hash_salt.key if
- * it exists.
  */
 if (\getenv('DRUPAL_HASH_SALT') !== false) {
 
   $settings['hash_salt'] = \getenv('DRUPAL_HASH_SALT');
-
-} else if (\file_exists($app_root . '/../keys/drupal_hash_salt.key')) {
-
-  $settings['hash_salt'] = \file_get_contents(
-    $app_root . '/../keys/drupal_hash_salt.key'
-  );
 
 }
 
