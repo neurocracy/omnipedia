@@ -19,6 +19,7 @@ module:
 theme: {  }
 blacklist: {  }
 graylist:
+  - csp.settings
   - dblog.settings
   - gin.settings
   - remove_http_headers.settings

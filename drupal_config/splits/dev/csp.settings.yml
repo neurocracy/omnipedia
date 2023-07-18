@@ -1,0 +1,65 @@
+_core:
+  default_config_hash: o4-eDkmTmVdUICtL1VxWD3S9Ze8kNq_lHj6DskF8U8o
+report-only:
+  enable: false
+  directives:
+    script-src:
+      base: self
+    script-src-attr:
+      base: self
+    script-src-elem:
+      base: self
+    style-src:
+      base: self
+    style-src-attr:
+      base: self
+    style-src-elem:
+      base: self
+    frame-ancestors:
+      base: self
+  reporting:
+    plugin: none
+enforce:
+  enable: true
+  directives:
+    default-src:
+      base: self
+    child-src:
+      base: self
+    connect-src:
+      base: self
+    frame-src:
+      base: self
+    img-src:
+      base: self
+      sources:
+        - 'data:'
+    media-src:
+      base: self
+    object-src:
+      base: none
+    script-src:
+      base: self
+      flags:
+        - unsafe-inline
+    script-src-elem:
+      base: self
+      flags:
+        - unsafe-inline
+    style-src:
+      base: self
+      flags:
+        - unsafe-inline
+    style-src-attr:
+      base: self
+      flags:
+        - unsafe-inline
+    base-uri:
+      base: self
+    form-action:
+      base: self
+    frame-ancestors:
+      base: self
+    upgrade-insecure-requests: true
+  reporting:
+    plugin: none
