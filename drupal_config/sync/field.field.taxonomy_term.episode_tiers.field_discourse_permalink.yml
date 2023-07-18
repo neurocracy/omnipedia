@@ -10,7 +10,7 @@ field_name: field_discourse_permalink
 entity_type: taxonomy_term
 bundle: episode_tiers
 label: 'Discourse permalink'
-description: 'If set, this associates a <a href="https://meta.discourse.org/t/custom-permalinks/56867" target="_blank">permalink</a> on the Discourse server with this episode. This is primarily used for redirecting to the appropriate speculation category from wiki page talk links.<br><em>This must be in the same format entered for the URL under <quote>Admin -> Customize -> Permalinks</quote> and should not include the Discourse server domain name.</em>'
+description: 'If set, this associates a <a href="https://meta.discourse.org/t/custom-permalinks/56867" target="_blank">permalink</a> on the Discourse server with this episode. This is primarily used for redirecting to the appropriate speculation category from wiki page talk links.<br><em>This must match exactly with the value entered for the URL under <quote>Admin -> Customize -> Permalinks</quote> and should not include the Discourse server domain name.</em>'
 required: false
 translatable: false
 default_value: {  }
