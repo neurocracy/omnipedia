@@ -121,6 +121,7 @@ module:
   typed_data: 0
   update: 0
   user: 0
+  username_enumeration_prevention: 0
   userprotect: 0
   views_bulk_edit: 0
   views_bulk_operations: 0
