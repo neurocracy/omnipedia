@@ -11,6 +11,7 @@ dependencies:
     - filter
     - media
     - node
+    - omnipedia_access
     - shortcut
     - system
     - tfa
@@ -31,6 +32,7 @@ permissions:
   - 'delete media'
   - 'delete own files'
   - 'edit own wiki_page content'
+  - 'omnipedia_access bypass not found'
   - 'setup own tfa'
   - 'update media'
   - 'use text format wiki_html'

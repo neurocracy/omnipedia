@@ -8,6 +8,7 @@ dependencies:
     - contextual
     - file
     - flood_control
+    - omnipedia_access
     - shortcut
     - system
     - tfa
@@ -29,5 +30,6 @@ permissions:
   - 'ban IP addresses'
   - 'delete own files'
   - 'flood unblock ips'
+  - 'omnipedia_access bypass not found'
   - 'setup own tfa'
   - 'view the administration theme'

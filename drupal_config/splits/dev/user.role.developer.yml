@@ -46,6 +46,7 @@ dependencies:
     - media
     - metatag
     - node
+    - omnipedia_access
     - omnipedia_attached_data
     - omnipedia_changes
     - password_policy
@@ -237,6 +238,7 @@ permissions:
   - 'link to any page'
   - 'manage password reset'
   - 'notify of path changes'
+  - 'omnipedia_access bypass not found'
   - 'process media_entity_thumbnail queue'
   - 'process warmer queue'
   - 'readonlymode access forms'

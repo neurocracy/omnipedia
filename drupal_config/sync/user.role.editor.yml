@@ -14,6 +14,7 @@ dependencies:
     - filter
     - media
     - node
+    - omnipedia_access
     - omnipedia_attached_data
     - shortcut
     - system
@@ -64,6 +65,7 @@ permissions:
   - 'edit own page content'
   - 'edit own wiki_page content'
   - 'edit terms in episode_tiers'
+  - 'omnipedia_access bypass not found'
   - 'revert all revisions'
   - 'revert page revisions'
   - 'revert wiki_page revisions'
