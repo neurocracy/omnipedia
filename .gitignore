@@ -90,6 +90,3 @@ test.sqlite-wal
 # otherwise have no other files under version control to be deployed via Git.
 # Note that this must be placed after any exclude rules to take effect.
 !.gitkeep
-
-# @todo Remove when fully migrated to DigitalOcean App Platform.
-sftp-config.json
