@@ -178,7 +178,7 @@
     "drupal/omnipedia_block": "6.x-dev@dev",
     "drupal/omnipedia_changes": "7.x-dev@dev",
     "drupal/omnipedia_content": "6.x-dev@dev",
-    "drupal/omnipedia_core": "4.x-dev@dev",
+    "drupal/omnipedia_core": "5.x-dev@dev",
     "drupal/omnipedia_date": "4.x-dev@dev",
     "drupal/omnipedia_discourse": "1.x-dev@dev",
     "drupal/omnipedia_logger": "4.x-dev@dev",
