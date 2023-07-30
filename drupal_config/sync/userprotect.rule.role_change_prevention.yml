@@ -1,0 +1,17 @@
+uuid: 7d0c3a97-3957-4b79-87eb-5ace9a796dc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.authenticated
+  module:
+    - user
+name: role_change_prevention
+label: 'Role change prevention'
+protectedEntityTypeId: user_role
+protectedEntityId: authenticated
+protections:
+  user_roles:
+    id: user_roles
+    provider: userprotect
+    status: true
