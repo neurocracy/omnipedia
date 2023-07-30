@@ -8,4 +8,5 @@ in public repositories under this namespace.
 
 # Documentation
 
-1. [Major changes](docs/changes.md)
+1. [Testing](docs/testing.md)
+2. [Major changes](docs/changes.md)
