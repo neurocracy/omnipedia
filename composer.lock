@@ -5797,12 +5797,12 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/issue/tfa-3370841.git",
-                "reference": "0ef241d0f3878f1774037051e550a2d08f64d5e7"
+                "reference": "c7d80cb9debb67c9c0d8daf9256fd51daa2281e4"
             },
             "require": {
                 "chillerlan/php-qrcode": "^1.0.9 || ^2.0 || ^3.2 || ^4.0",
                 "christian-riesen/otp": "^2.1",
-                "drupal/encrypt": "^3.0",
+                "drupal/encrypt": "~3.0",
                 "php": ">=7.0"
             },
             "type": "drupal-module",
@@ -5817,7 +5817,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Pluggable provider of two factor authentication for Drupal",
-            "time": "2023-07-14T06:44:11+00:00"
+            "time": "2023-07-18T04:38:06+00:00"
         },
         {
             "name": "drupal/token",
