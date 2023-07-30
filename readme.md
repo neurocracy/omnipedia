@@ -8,6 +8,7 @@ in public repositories under this namespace.
 
 # Documentation
 
-1. [Testing](docs/testing.md)
-2. [Deploying](docs/deploying.md)
-3. [Major changes](docs/changes.md)
+1. [Local development](docs/local-dev.md)
+2. [Testing](docs/testing.md)
+3. [Deploying](docs/deploying.md)
+4. [Major changes](docs/changes.md)
