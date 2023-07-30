@@ -9,4 +9,5 @@ in public repositories under this namespace.
 # Documentation
 
 1. [Testing](docs/testing.md)
-2. [Major changes](docs/changes.md)
+2. [Deploying](docs/deploying.md)
+3. [Major changes](docs/changes.md)
