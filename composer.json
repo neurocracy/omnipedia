@@ -216,7 +216,7 @@
     "react/async": "^4.1",
     "react/child-process": "^0.6.5",
     "react/event-loop": "^1.4",
-    "react/promise": "^3 || ^2"
+    "react/promise": "^3.0"
   },
   "require-dev": {
     "drupal/config_delete": "^2.0",

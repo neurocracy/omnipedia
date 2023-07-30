@@ -5,7 +5,7 @@ declare(strict_types=1);
 use Omnipedia\BackgroundTasks\LeadingPeriodicTimer;
 use Omnipedia\BackgroundTasks\WorkerProcess;
 use React\EventLoop\Loop;
-use React\Promise\ExtendedPromiseInterface;
+use React\Promise\PromiseInterface;
 use function React\Async\series;
 
 require __DIR__ . '/../vendor/autoload.php';
@@ -36,18 +36,18 @@ new LeadingPeriodicTimer($loop, 60, 600, function(): void {
   $running = true;
 
   series([
-    function(): ExtendedPromiseInterface {
+    function(): PromiseInterface {
       return (new WorkerProcess('drush warmer:enqueue ' . \implode(',', [
         'omnipedia_wiki_node_changes',
         'omnipedia_wiki_node_cdn',
       ])))->start()->promise();
     },
-    function(): ExtendedPromiseInterface {
+    function(): PromiseInterface {
       return (new WorkerProcess(
         'drush queue:process image_style_warmer_pregenerator'
       ))->start()->promise();
     },
-    function(): ExtendedPromiseInterface {
+    function(): PromiseInterface {
       return (new WorkerProcess(
         'drush queue:process warmer'
       ))->start()->promise();
