@@ -11,4 +11,5 @@ in public repositories under this namespace.
 1. [Local development](docs/local-dev.md)
 2. [Testing](docs/testing.md)
 3. [Deploying](docs/deploying.md)
-4. [Major changes](docs/changes.md)
+4. [Security](docs/security.md)
+5. [Major changes](docs/changes.md)
