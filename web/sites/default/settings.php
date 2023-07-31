@@ -377,6 +377,23 @@ if (\getenv('DRUPAL_SUPPRESS_EMAIL') !== false) {
 }
 
 /**
+ * SMTP hosts from environment variables.
+ */
+foreach ([
+  'DRUPAL_SMTP_HOST_PRIMARY'    => 'smtp_host',
+  'DRUPAL_SMTP_HOST_SECONDARY'  => 'smtp_hostbackup',
+] as $envName => $configName) {
+
+  if (\getenv($envName) === false) {
+    continue;
+  }
+
+  $config['smtp.settings'][$configName] = \getenv($envName);
+
+}
+
+
+/**
  * The default list of directories that will be ignored by Drupal's file API.
  *
  * By default ignore node_modules and bower_components folders to avoid issues

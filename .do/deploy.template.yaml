@@ -57,6 +57,12 @@ spec:
   - key: DRUPAL_REVERSE_PROXY_ENABLED
     scope: RUN_AND_BUILD_TIME
     value: "true"
+  - key: DRUPAL_SMTP_HOST_PRIMARY
+    scope: RUN_TIME
+    value: "_DRUPAL_SMTP_HOST_PRIMARY_"
+  - key: DRUPAL_SMTP_HOST_SECONDARY
+    scope: RUN_TIME
+    value: "_DRUPAL_SMTP_HOST_SECONDARY_"
   - key: DRUPAL_SMTP_PASSWORD
     scope: RUN_TIME
     type: SECRET
