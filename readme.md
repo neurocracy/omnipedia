@@ -8,6 +8,7 @@ in public repositories under this namespace.
 
 # Documentation
 
+2. [Overview](docs/overview.md)
 1. [Local development](docs/local-dev.md)
 2. [Testing](docs/testing.md)
 3. [Deploying](docs/deploying.md)
