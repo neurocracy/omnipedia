@@ -3666,7 +3666,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"drupal-ambientimpact-media@workspace:^2 || ^3, drupal-ambientimpact-media@workspace:web/modules/custom/ambientimpact_media":
+"drupal-ambientimpact-media@workspace:^2 || ^3, drupal-ambientimpact-media@workspace:^3, drupal-ambientimpact-media@workspace:web/modules/custom/ambientimpact_media":
   version: 0.0.0-use.local
   resolution: "drupal-ambientimpact-media@workspace:web/modules/custom/ambientimpact_media"
   dependencies:
@@ -3726,7 +3726,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"drupal-omnipedia-block@workspace:^5 || ^6, drupal-omnipedia-block@workspace:web/modules/custom/omnipedia_block":
+"drupal-omnipedia-block@workspace:^5 || ^6, drupal-omnipedia-block@workspace:^6, drupal-omnipedia-block@workspace:web/modules/custom/omnipedia_block":
   version: 0.0.0-use.local
   resolution: "drupal-omnipedia-block@workspace:web/modules/custom/omnipedia_block"
   dependencies:
@@ -3750,7 +3750,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"drupal-omnipedia-changes@workspace:web/modules/custom/omnipedia_changes":
+"drupal-omnipedia-changes@workspace:^7, drupal-omnipedia-changes@workspace:web/modules/custom/omnipedia_changes":
   version: 0.0.0-use.local
   resolution: "drupal-omnipedia-changes@workspace:web/modules/custom/omnipedia_changes"
   dependencies:
@@ -3818,7 +3818,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"drupal-omnipedia-site-theme@workspace:web/themes/custom/omnipedia_site_theme":
+"drupal-omnipedia-site-theme@workspace:^6, drupal-omnipedia-site-theme@workspace:web/themes/custom/omnipedia_site_theme":
   version: 0.0.0-use.local
   resolution: "drupal-omnipedia-site-theme@workspace:web/themes/custom/omnipedia_site_theme"
   dependencies:
