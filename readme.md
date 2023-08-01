@@ -1,4 +1,4 @@
-This is the top level project for [Omnipedia](https://omnipedia.app/).
+This is the top level project for [🌐 Omnipedia](https://omnipedia.app/).
 
 ⚠️ ***[Why open source? / Spoiler warning](https://omnipedia.app/open-source)***
 
