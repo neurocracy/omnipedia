@@ -12,9 +12,9 @@ issue**, but [contact us privately](https://omnipedia.app/contact) instead.
 
 ## Drupal
 
-Drupal as a project has [a very active and proactive security
+Drupal as a project has [a very proactive security
 team](https://www.drupal.org/features/security) that regularly publishes
-security advisories and releases fixes.
+security advisories and co-ordinates fixes.
 
 ## Content-Security-Policy (CSP)
 
