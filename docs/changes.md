@@ -103,7 +103,7 @@ The following major version bumps indicate breaking changes:
 
   * The entire Composer and Yarn install process is now automated and installs everything on deploy; all front-end CSS and other assets are built via Yarn and Webpack during this process.
 
-  * Email is now sent out using a third-party email service as [DigitalOcean blocks sending of email directly from their Droplets or App Platform to prevent use of their services being used for spam](https://docs.digitalocean.com/support/why-is-smtp-blocked/).
+  * Email is now sent out using a third-party email service as [DigitalOcean blocks sending of email directly from their Droplets or App Platform to prevent use of their services for spam](https://docs.digitalocean.com/support/why-is-smtp-blocked/).
 
   * [Session cookie security has been hardened significantly](https://scotthelme.co.uk/tough-cookies/), along with many other security improvements.
 
