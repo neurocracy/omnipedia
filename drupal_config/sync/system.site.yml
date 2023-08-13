@@ -8,7 +8,7 @@ slogan: 'Building Your World'
 page:
   403: ''
   404: ''
-  front: /node/127
+  front: /wiki/Main_Page
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en

@@ -33,6 +33,8 @@ The following custom Drupal modules are maintained and used:
 
 * [`omnipedia_logger`](https://github.com/neurocracy/drupal-omnipedia-logger)
 
+* [`omnipedia_main_page`](https://github.com/neurocracy/drupal-omnipedia-main-page)
+
 * [`omnipedia_media`](https://github.com/neurocracy/drupal-omnipedia-media)
 
 * [`omnipedia_menu`](https://github.com/neurocracy/drupal-omnipedia-menu)

@@ -75,6 +75,7 @@ module:
   omnipedia_discourse: 0
   omnipedia_discourse_csp: 0
   omnipedia_logger: 0
+  omnipedia_main_page: 0
   omnipedia_media: 0
   omnipedia_media_csp: 0
   omnipedia_menu: 0
