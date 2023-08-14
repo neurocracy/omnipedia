@@ -154,7 +154,7 @@
     "drupal/autoban": "^1.7",
     "drupal/config_split": "^1.6",
     "drupal/core-composer-scaffold": "^10.1",
-    "drupal/core-recommended": "^10.1.1",
+    "drupal/core-recommended": "^10.1.2",
     "drupal/csp": "^1.13",
     "drupal/dblog_persistent": "^2.0",
     "drupal/development_environment": "2.x-dev@dev",
@@ -268,8 +268,7 @@
         "JS aggregation should account for \"async\" and \"defer\" attributes [#1587536]: https://www.drupal.org/project/drupal/issues/1587536": "patches/drupal/core/1587536-js-aggregation-async-defer-attributes.patch",
         "Fix mismatch of $base_url with Symfony request object [#2753591]: https://www.drupal.org/project/drupal/issues/2753591": "patches/drupal/core/2753591-fix-mismatch-of-base-url.patch",
         "Allow theme developers to add the default favicon filename to the theme's .info.yml [#3037922]: https://www.drupal.org/project/drupal/issues/3037922#mr4108-note181413": "patches/drupal/core/3037922-theme-info-favicon.patch",
-        "Support setting service parameters via environment variables [#3249970]: https://www.drupal.org/project/drupal/issues/3249970#comment-14294955": "patches/drupal/core/3249970-2-support-service-parameter-env.patch",
-        "Ensure that edge caches are busted on deployments for css/js aggregates [#3370828]: https://www.drupal.org/project/drupal/issues/3370828#comment-15140970": "patches/drupal/core/3370828-50-10.1-aggregation-cache-busting.patch"
+        "Support setting service parameters via environment variables [#3249970]: https://www.drupal.org/project/drupal/issues/3249970#comment-14294955": "patches/drupal/core/3249970-2-support-service-parameter-env.patch"
       },
       "drupal/honeypot": {
         "Missing primary key in table `honeypot_user` [#2943526]: https://www.drupal.org/project/honeypot/issues/2943526#comment-12712602": "patches/drupal/honeypot/honeypot-fix_missing_primary_key-8.x-2943526-6.patch"
