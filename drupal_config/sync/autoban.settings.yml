@@ -1,4 +1,4 @@
-autoban_threshold_last: '1'
+autoban_threshold_last: '2'
 autoban_provider_last: ban
 autoban_thresholds: |-
   1
@@ -20,3 +20,4 @@ autoban_dblog_type_exclude: |-
   system
   user
 autoban_threshold_analyze: '5'
+autoban_window_last: none
