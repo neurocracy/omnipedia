@@ -3395,7 +3395,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/issue/image_field_caption-3355337.git",
-                "reference": "9dc3c61ba7974a4a8ce805c41247011614fe65bd"
+                "reference": "b96e8c7dbfcabdd392af21aff35db0f86b035128"
             },
             "type": "drupal-module",
             "license": [
@@ -3407,7 +3407,7 @@
                 "issues": "https://www.drupal.org/project/issues/image_field_caption",
                 "source": "https://git.drupalcode.org/project/image_field_caption"
             },
-            "time": "2023-06-14T22:12:49+00:00"
+            "time": "2023-08-09T06:35:38+00:00"
         },
         {
             "name": "drupal/image_style_warmer",
