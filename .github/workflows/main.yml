@@ -55,5 +55,8 @@ jobs:
       - name: Install Composer dependencies
         run: composer install --no-progress --prefer-dist --optimize-autoloader
 
+      - name: Run PHP development web server for functional tests
+        run: "cd web && php -S 127.0.0.1:8080 .ht.router.php &"
+
       - name: Run tests
-        run: php web/core/scripts/run-tests.sh --sqlite ../test.sqlite --dburl mysql://root:db@127.0.0.1:${{ job.services.mysql.ports['3306'] }}/db --suppress-deprecations --color --url https://127.0.0.1/web --verbose omnipedia
+        run: php web/core/scripts/run-tests.sh --sqlite ../test.sqlite --dburl mysql://root:db@127.0.0.1:${{ job.services.mysql.ports['3306'] }}/db --suppress-deprecations --color --url http://127.0.0.1:8080 --verbose omnipedia
