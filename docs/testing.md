@@ -1,5 +1,7 @@
 # Testing
 
+[![Main](https://github.com/neurocracy/omnipedia/actions/workflows/main.yml/badge.svg)](https://github.com/neurocracy/omnipedia/actions/workflows/main.yml)
+
 Like most Drupal projects, we use [PHPUnit](https://phpunit.de/) to run our
 tests. See [the Drupal core automated testing
 guide](https://www.drupal.org/docs/develop/automated-testing) and [API
