@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3a5ec6e2dc77a61c379b37bd712a6be9",
+    "content-hash": "b8a0e366ab249c03dced7256042df188",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -4289,12 +4289,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neurocracy/drupal-omnipedia-discourse.git",
-                "reference": "34334a1120f83473634b6e62351fbb469161cd74"
+                "reference": "b540a8d00d2a5fe56a293ab498a82240e08bc83e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-discourse/zipball/34334a1120f83473634b6e62351fbb469161cd74",
-                "reference": "34334a1120f83473634b6e62351fbb469161cd74",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-discourse/zipball/b540a8d00d2a5fe56a293ab498a82240e08bc83e",
+                "reference": "b540a8d00d2a5fe56a293ab498a82240e08bc83e",
                 "shasum": ""
             },
             "require": {
@@ -4330,7 +4330,7 @@
                 "source": "https://github.com/neurocracy/drupal-omnipedia-discourse",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-discourse/issues"
             },
-            "time": "2023-08-07T23:38:50+00:00"
+            "time": "2023-08-16T16:47:09+00:00"
         },
         {
             "name": "drupal/omnipedia_logger",
