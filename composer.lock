@@ -4104,12 +4104,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neurocracy/drupal-omnipedia-changes.git",
-                "reference": "b84a43bca21fb65da983ea835d33deb0e412146a"
+                "reference": "86c03caba1d7988df1fb1b7f8fa34c598f6f9113"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-changes/zipball/b84a43bca21fb65da983ea835d33deb0e412146a",
-                "reference": "b84a43bca21fb65da983ea835d33deb0e412146a",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-changes/zipball/86c03caba1d7988df1fb1b7f8fa34c598f6f9113",
+                "reference": "86c03caba1d7988df1fb1b7f8fa34c598f6f9113",
                 "shasum": ""
             },
             "require": {
@@ -4123,7 +4123,7 @@
                 "drupal/pcb": "^3.0",
                 "drupal/queue_ui": "^3.1",
                 "drupal/warmer": "^2.0",
-                "php": "^8",
+                "php": "^8.1",
                 "symfony/css-selector": "^6.2",
                 "symfony/dom-crawler": "^6.2"
             },
@@ -4152,7 +4152,7 @@
                 "source": "https://github.com/neurocracy/drupal-omnipedia-changes",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-changes/issues"
             },
-            "time": "2023-08-13T16:43:13+00:00"
+            "time": "2023-08-16T20:42:19+00:00"
         },
         {
             "name": "drupal/omnipedia_content",
@@ -4642,12 +4642,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neurocracy/drupal-omnipedia-warmer.git",
-                "reference": "0c4953c1d407ce75e82c3b6bad58ab75a6f1cbe2"
+                "reference": "61eb648689867dc4974adc0c3a95f1c64982be10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-warmer/zipball/0c4953c1d407ce75e82c3b6bad58ab75a6f1cbe2",
-                "reference": "0c4953c1d407ce75e82c3b6bad58ab75a6f1cbe2",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-warmer/zipball/61eb648689867dc4974adc0c3a95f1c64982be10",
+                "reference": "61eb648689867dc4974adc0c3a95f1c64982be10",
                 "shasum": ""
             },
             "require": {
@@ -4674,7 +4674,7 @@
                 "source": "https://github.com/neurocracy/drupal-omnipedia-warmer",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-warmer/issues"
             },
-            "time": "2023-08-01T18:48:39+00:00"
+            "time": "2023-08-16T20:39:27+00:00"
         },
         {
             "name": "drupal/paranoia",
