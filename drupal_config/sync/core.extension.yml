@@ -131,6 +131,7 @@ module:
   webp: 0
   menu_link_content: 1
   pathauto: 1
+  shy_one_time: 2
   image_style_warmer: 10
   password_policy: 10
   views: 10
