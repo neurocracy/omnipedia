@@ -11,9 +11,31 @@ on:
   push:
     paths-ignore:
       - '**.md'
+      # We currently only use DDEV for local development and not production/CI.
+      - '/.ddev/**'
+      # DigitalOcean stuff is not currently relevant to CI.
+      - '/.apache/**'
+      - '/.do/**'
+      # Yarn and front-end assets are not currently part of CI.
+      - '/.yarn/**'
+      - '/.nvmrc'
+      - '/.yarnrc.yml'
+      - '/package.json'
+      - '/yarn.lock'
   pull_request:
     paths-ignore:
       - '**.md'
+      # We currently only use DDEV for local development and not production/CI.
+      - '/.ddev/**'
+      # DigitalOcean stuff is not currently relevant to CI.
+      - '/.apache/**'
+      - '/.do/**'
+      # Yarn and front-end assets are not currently part of CI.
+      - '/.yarn/**'
+      - '/.nvmrc'
+      - '/.yarnrc.yml'
+      - '/package.json'
+      - '/yarn.lock'
 
 env:
   # shivammathur/setup-php
