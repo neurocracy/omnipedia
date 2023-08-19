@@ -8,16 +8,6 @@
 # @see https://ddev.readthedocs.io/en/latest/users/extend/customization-extendibility/#providing-custom-environment-variables-to-a-container
 /.ddev/.env
 
-# Ignore the generated DDEV phpMyAdmin files.
-#
-# These don't get added to .ddev/.gitignore at the time of writing.
-#
-# @see https://github.com/ddev/ddev/issues/5275
-/.ddev/.disabled-services/docker-compose.phpmyadmin.yaml
-/.ddev/docker-compose.phpmyadmin-norouter.yaml
-/.ddev/docker-compose.phpmyadmin.yaml
-/.ddev/commands/host/phpmyadmin
-
 # Yarn cache and Plug-n-Play files. If we decide to switch over to the Yarn
 # zero-installs philosophy, these rules will need adjusting:
 #
