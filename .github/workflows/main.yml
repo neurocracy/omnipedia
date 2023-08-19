@@ -17,12 +17,21 @@ on:
       - '/.apache/**'
       - '/.do/**'
       - '/.php/**'
+      # Drupal config is not currently used for testing as that's all set up in
+      # modules and in tests.
+      - '/drupal_config/**'
+      - '/drupal_private_files/**'
+      # Drush config is not used for CI.
+      - '/drush/**'
       # Yarn and front-end assets are not currently part of CI.
       - '/.yarn/**'
       - '/.nvmrc'
       - '/.yarnrc.yml'
       - '/package.json'
       - '/yarn.lock'
+      # Ignore any changes in aggregated assets and public files directories.
+      - '/web/assets/**'
+      - '/web/sites/*/files/**'
   pull_request:
     paths-ignore:
       - '**.md'
@@ -32,12 +41,21 @@ on:
       - '/.apache/**'
       - '/.do/**'
       - '/.php/**'
+      # Drupal config is not currently used for testing as that's all set up in
+      # modules and in tests.
+      - '/drupal_config/**'
+      - '/drupal_private_files/**'
+      # Drush config is not used for CI.
+      - '/drush/**'
       # Yarn and front-end assets are not currently part of CI.
       - '/.yarn/**'
       - '/.nvmrc'
       - '/.yarnrc.yml'
       - '/package.json'
       - '/yarn.lock'
+      # Ignore any changes in aggregated assets and public files directories.
+      - '/web/assets/**'
+      - '/web/sites/*/files/**'
 
 env:
   # shivammathur/setup-php
