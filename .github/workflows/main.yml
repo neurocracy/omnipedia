@@ -16,6 +16,7 @@ on:
       # DigitalOcean stuff is not currently relevant to CI.
       - '/.apache/**'
       - '/.do/**'
+      - '/.php/**'
       # Yarn and front-end assets are not currently part of CI.
       - '/.yarn/**'
       - '/.nvmrc'
@@ -30,6 +31,7 @@ on:
       # DigitalOcean stuff is not currently relevant to CI.
       - '/.apache/**'
       - '/.do/**'
+      - '/.php/**'
       # Yarn and front-end assets are not currently part of CI.
       - '/.yarn/**'
       - '/.nvmrc'
