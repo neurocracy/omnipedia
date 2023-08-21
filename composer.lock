@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "871f1adbada904cbcbe85b9c4edc8cb8",
+    "content-hash": "da8a2c6f62f2c0f9ed534f3327bd4483",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -17508,7 +17508,6 @@
         "drupal/development_environment": 20,
         "drupal/gin": 10,
         "drupal/gin_toolbar": 10,
-        "drupal/hook_event_dispatcher": 10,
         "drupal/maintenance200": 20,
         "drupal/omnipedia_access": 20,
         "drupal/omnipedia_asset": 20,
