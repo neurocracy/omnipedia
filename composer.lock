@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "da8a2c6f62f2c0f9ed534f3327bd4483",
+    "content-hash": "80aece45599615a4cedff817c35c327e",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -4467,20 +4467,19 @@
         },
         {
             "name": "drupal/omnipedia_media",
-            "version": "6.x-dev",
+            "version": "7.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neurocracy/drupal-omnipedia-media.git",
-                "reference": "79fbb17e672835a3a60770b35ae1bc43d6d95ad2"
+                "reference": "2e13f5950db06c2ca7dbaf057549c3dee6659179"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-media/zipball/79fbb17e672835a3a60770b35ae1bc43d6d95ad2",
-                "reference": "79fbb17e672835a3a60770b35ae1bc43d6d95ad2",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-media/zipball/2e13f5950db06c2ca7dbaf057549c3dee6659179",
+                "reference": "2e13f5950db06c2ca7dbaf057549c3dee6659179",
                 "shasum": ""
             },
             "require": {
-                "cweagans/composer-patches": "^1.7",
                 "drupal/ambientimpact_core": "2.x-dev@dev",
                 "drupal/ambientimpact_media": "2.x-dev@dev || 3.x-dev@dev",
                 "drupal/core": "^10.0",
@@ -4491,15 +4490,7 @@
                 "drupal/webp": "^1.0",
                 "php": "^8.1"
             },
-            "default-branch": true,
             "type": "drupal-custom-module",
-            "extra": {
-                "patches": {
-                    "drupal/webp": {
-                        "Upper/lowercase checking on file extension causes image generation to fail due to token mismatch [#3161795]: https://www.drupal.org/project/webp/issues/3161795#comment-14096421": "https://raw.githubusercontent.com/neurocracy/drupal-omnipedia-media/6.x/patches/drupal/webp/webp-replace-file-exists-call-with-entity-load-to-fix-image-generation-3161795-16.patch"
-                    }
-                }
-            },
             "license": [
                 "GPL-2.0-or-later"
             ],
@@ -4516,7 +4507,7 @@
                 "source": "https://github.com/neurocracy/drupal-omnipedia-media",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-media/issues"
             },
-            "time": "2023-08-22T05:14:14+00:00"
+            "time": "2023-08-22T22:57:45+00:00"
         },
         {
             "name": "drupal/omnipedia_menu",
@@ -4611,12 +4602,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neurocracy/drupal-omnipedia-site-theme.git",
-                "reference": "c0d942bf978dde49a886dba2e0c0d2d8b7355f4c"
+                "reference": "ba0a1291fdbf1ce34a1e4b080d688c35d7884d0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-site-theme/zipball/c0d942bf978dde49a886dba2e0c0d2d8b7355f4c",
-                "reference": "c0d942bf978dde49a886dba2e0c0d2d8b7355f4c",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-site-theme/zipball/ba0a1291fdbf1ce34a1e4b080d688c35d7884d0a",
+                "reference": "ba0a1291fdbf1ce34a1e4b080d688c35d7884d0a",
                 "shasum": ""
             },
             "require": {
@@ -4627,7 +4618,7 @@
                 "drupal/core": "^10.0",
                 "drupal/omnipedia_block": "5.x-dev@dev || 6.x-dev@dev",
                 "drupal/omnipedia_content": "6.x-dev@dev",
-                "drupal/omnipedia_media": "6.x-dev@dev",
+                "drupal/omnipedia_media": "6.x-dev@dev || 7.x-dev@dev",
                 "php": "^8",
                 "symfony/css-selector": "^6.2",
                 "symfony/dom-crawler": "^6.2"
@@ -4650,7 +4641,7 @@
                 "source": "https://github.com/neurocracy/drupal-omnipedia-site-theme",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-site-theme/issues"
             },
-            "time": "2023-08-20T21:50:33+00:00"
+            "time": "2023-08-22T22:59:22+00:00"
         },
         {
             "name": "drupal/omnipedia_user",
