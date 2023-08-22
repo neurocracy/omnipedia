@@ -49,6 +49,8 @@ if (
  * Set the MySQL transaction isolation level as recommended by Drupal.
  *
  * @see https://www.drupal.org/docs/system-requirements/setting-the-mysql-transaction-isolation-level
+ *
+ * @todo Is this still needed as of Drupal core 10?
  */
 foreach ($databases as $databaseKey => &$database) {
 
