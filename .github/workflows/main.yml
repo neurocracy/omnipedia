@@ -108,5 +108,5 @@ jobs:
       - name: Run PHP development web server for functional tests
         run: "cd web && php -S 127.0.0.1:8080 .ht.router.php &"
 
-      - name: Run tests
+      - name: Run Drupal PHPUnit tests
         run: php web/core/scripts/run-tests.sh --sqlite ../test.sqlite --dburl mysql://root:db@127.0.0.1:${{ job.services.mysql.ports['3306'] }}/db --suppress-deprecations --color --url http://127.0.0.1:8080 --verbose omnipedia
