@@ -3,8 +3,8 @@ _core:
 warmers:
   omnipedia_wiki_node_changes:
     id: omnipedia_wiki_node_changes
-    frequency: '300'
-    batchSize: '5'
+    frequency: 300
+    batchSize: 5
   omnipedia_wiki_node_cdn:
     id: omnipedia_wiki_node_cdn
     frequency: 300
