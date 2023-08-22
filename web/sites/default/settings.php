@@ -85,6 +85,13 @@ $settings['config_sync_directory'] = $app_root . '/../drupal_config/sync';
  *
  * This reads a comma-separated list from the 'DRUPAL_CONFIG_SPLITS' environment
  * variable and enables the ones that are listed.
+ *
+ * @see https://www.drupal.org/project/config_split/issues/3109103
+ *   Configuration Split issue explaining why a separate split is necessary for
+ *   only enabling a specific module in production but not in other
+ *   environments such as dev; a good example of where this is preferred is the
+ *   Paranoia module, which is mostly only needed in production but can get in
+ *   the in dev environments.
  */
 if (\getenv('DRUPAL_CONFIG_SPLITS') !== false) {
 
@@ -100,22 +107,6 @@ if (\getenv('DRUPAL_CONFIG_SPLITS') !== false) {
 
   }
 
-}
-
-/**
- * Enable the Paranoia configuration split by default.
- *
- * Note that this will be ignored if the 'DRUPAL_CONFIG_SPLITS' environment
- * variable has been set as that takes priority.
- *
- * @see https://www.drupal.org/project/config_split/issues/3109103
- *   Configuration Split issue explaining why a separate split is necessary.
- *
- * @todo Remove this completely when we're able to set environment variables in
- *   all our hosting environments.
- */
-if (\getenv('DRUPAL_CONFIG_SPLITS') === false) {
-  $config['config_split.config_split.paranoia']['status'] = true;
 }
 
 /**
