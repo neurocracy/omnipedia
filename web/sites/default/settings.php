@@ -301,10 +301,16 @@ if (\getenv('DRUPAL_SESSION_COOKIE_PREFIX') !== false) {
  */
 $servicesYamls = [
   'default.services.yml',
-  'services.hux.yml',
   'services.session.yml',
   'services.security.yml',
 ];
+
+// Only include the Hux services file if the optimize environment variable
+// exists to avoid fatal errors during CI or if it's not included by mistake in
+// production.
+if (\getenv('DRUPAL_HUX_OPTIMIZE') !== false) {
+  $servicesYamls[] = 'services.hux.yml';
+}
 
 // Only include the Monolog services file if not running tests, by checking if
 // one of the test environment variables is set. This is necessary as Symfony
