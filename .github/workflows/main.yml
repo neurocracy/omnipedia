@@ -89,11 +89,11 @@ jobs:
           coverage: none
           tools: composer:v2
 
-      - name: Get composer cache directory
+      - name: Get Composer cache directory
         id: composer-cache
         run: echo "dir=$(composer config cache-files-dir)" >> $GITHUB_OUTPUT
 
-      - name: Cache composer dependencies
+      - name: Cache Composer dependencies
         uses: actions/cache@v3
         with:
           path: ${{ steps.composer-cache.outputs.dir }}
