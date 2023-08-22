@@ -301,6 +301,7 @@ if (\getenv('DRUPAL_SESSION_COOKIE_PREFIX') !== false) {
  */
 $servicesYamls = [
   'default.services.yml',
+  'services.hux.yml',
   'services.session.yml',
   'services.security.yml',
 ];

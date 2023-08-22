@@ -42,6 +42,7 @@ module:
   history: 0
   honeypot: 0
   hook_event_dispatcher: 0
+  hux: 0
   image: 0
   image_field_caption: 0
   inline_form_errors: 0

@@ -46,6 +46,9 @@ envs:
   scope: RUN_TIME
   type: SECRET
   value: "_DRUPAL_HASH_SALT_"
+- key: DRUPAL_HUX_OPTIMIZE
+  scope: RUN_TIME
+  value: "true"
 - key: DRUPAL_PRIMARY_HOST
   scope: RUN_AND_BUILD_TIME
   value: ${APP_DOMAIN}

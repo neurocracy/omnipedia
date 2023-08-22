@@ -1,0 +1,13 @@
+parameters:
+
+  # Enable or disable Hux' optimized mode via environment variable.
+  #
+  # @see https://www.drupal.org/docs/contributed-modules/hux/hux-optimized-mode
+  #
+  # @see https://symfony.com/doc/current/configuration/env_var_processors.html
+  #
+  # @see https://www.drupal.org/project/drupal/issues/3249970
+  #   Requires this Drupal core patch to work. Without the patch, setting this
+  #   parameter like this will result in a fatal error.
+  hux:
+    optimize: '%env(DRUPAL_HUX_OPTIMIZE)%'
