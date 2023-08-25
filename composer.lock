@@ -4650,12 +4650,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neurocracy/drupal-omnipedia-user.git",
-                "reference": "c9f7dae25631a48fa4c396cbc6689d033c661efb"
+                "reference": "6060be88185ff4b3ff2f9df49a4664764b32f363"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-user/zipball/c9f7dae25631a48fa4c396cbc6689d033c661efb",
-                "reference": "c9f7dae25631a48fa4c396cbc6689d033c661efb",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-user/zipball/6060be88185ff4b3ff2f9df49a4664764b32f363",
+                "reference": "6060be88185ff4b3ff2f9df49a4664764b32f363",
                 "shasum": ""
             },
             "require": {
@@ -4682,7 +4682,7 @@
                 "source": "https://github.com/neurocracy/drupal-omnipedia-user",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-user/issues"
             },
-            "time": "2023-08-22T23:18:34+00:00"
+            "time": "2023-08-25T12:53:28+00:00"
         },
         {
             "name": "drupal/omnipedia_warmer",
