@@ -1,0 +1,15 @@
+diff --git a/core/modules/system/src/Controller/SystemController.php b/core/modules/system/src/Controller/SystemController.php
+index 39c67dac79..720129f63f 100644
+--- a/core/modules/system/src/Controller/SystemController.php
++++ b/core/modules/system/src/Controller/SystemController.php
+@@ -120,10 +120,6 @@ public static function create(ContainerInterface $container) {
+    *   A renderable array of the administration overview page.
+    */
+   public function overview($link_id) {
+-    // Check for status report errors.
+-    if ($this->currentUser()->hasPermission('administer site configuration') && $this->systemManager->checkRequirements()) {
+-      $this->messenger()->addError($this->t('One or more problems were detected with your Drupal installation. Check the <a href=":status">status report</a> for more information.', [':status' => Url::fromRoute('system.status')->toString()]));
+-    }
+     // Load all menu links below it.
+     $parameters = new MenuTreeParameters();
+     $parameters->setRoot($link_id)->excludeRoot()->setTopLevelOnly()->onlyEnabledLinks();
