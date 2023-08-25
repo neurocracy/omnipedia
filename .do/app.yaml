@@ -1,5 +1,9 @@
 name: omnipedia
 
+# @see https://docs.digitalocean.com/products/app-platform/how-to/upgrade-stack/
+features:
+  - buildpack-stack=ubuntu-22
+
 domains:
 - domain: omnipedia.app
   type: PRIMARY
