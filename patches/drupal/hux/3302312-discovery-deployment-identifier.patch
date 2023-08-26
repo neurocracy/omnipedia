@@ -1,0 +1,79 @@
+diff --git a/hux.services.yml b/hux.services.yml
+index 24fc9f8..4370f77 100644
+--- a/hux.services.yml
++++ b/hux.services.yml
+@@ -11,6 +11,7 @@ services:
+     arguments:
+       - '@hux.module_handler.inner'
+       - '@cache.bootstrap'
++      - '@settings'
+     calls:
+       - [ setContainer, [ '@service_container' ] ]
+     tags:
+diff --git a/src/HuxModuleHandler.php b/src/HuxModuleHandler.php
+index 2c6955b..e5ad3f4 100644
+--- a/src/HuxModuleHandler.php
++++ b/src/HuxModuleHandler.php
+@@ -7,6 +7,7 @@ namespace Drupal\hux;
+ use Drupal\Component\Utility\NestedArray;
+ use Drupal\Core\Cache\CacheBackendInterface;
+ use Drupal\Core\Extension\ModuleHandlerInterface;
++use Drupal\Core\Site\Settings;
+ use Symfony\Component\DependencyInjection\ContainerAwareTrait;
+ use Symfony\Component\DependencyInjection\ContainerInterface;
+ 
+@@ -53,10 +54,13 @@ final class HuxModuleHandler implements ModuleHandlerInterface {
+    *   The inner module handler.
+    * @param \Drupal\Core\Cache\CacheBackendInterface $cacheBackend
+    *   A fast cache backend.
++   * @param \Drupal\Core\Site\Settings
++   *   The site settings instance.
+    */
+   public function __construct(
+     protected ModuleHandlerInterface $inner,
+     protected CacheBackendInterface $cacheBackend,
++    protected Settings $siteSettings,
+   ) {
+   }
+ 
+@@ -285,6 +289,22 @@ final class HuxModuleHandler implements ModuleHandlerInterface {
+     yield from $this->alters[$alter];
+   }
+ 
++  /**
++   * Get the Hux discovery cache key.
++   *
++   * @return string
++   *
++   * @see \Drupal\Core\DrupalKernel::getContainerCacheKey()
++   *   This is how core uses the deployment identifier to automatically rebuild
++   *   the container.
++   */
++  private function getHuxDiscoveryCacheKey(): string {
++    return \implode(':', [
++      'hux.discovery',
++      $this->siteSettings->get('deployment_identifier'),
++    ]);
++  }
++
+   /**
+    * Initialises and caches, or unserializes discovery.
+    *
+@@ -299,14 +319,15 @@ final class HuxModuleHandler implements ModuleHandlerInterface {
+   public function discovery(ContainerInterface $container, array $implementations, array $huxParameters): void {
+     ['optimize' => $optimize] = $huxParameters;
+     $optimize ?? throw new \Exception('Missing Hux parameters. App is misconfigured.');
+-    if ($optimize && ($cache = $this->cacheBackend->get('hux.discovery'))) {
++    $cacheKey = $this->getHuxDiscoveryCacheKey();
++    if ($optimize && ($cache = $this->cacheBackend->get($cacheKey))) {
+       $this->discovery = $cache->data;
+     }
+     else {
+       $this->discovery = new HuxDiscovery($implementations);
+       $this->discovery->discovery($container);
+       if ($optimize) {
+-        $this->cacheBackend->set('hux.discovery', $this->discovery);
++        $this->cacheBackend->set($cacheKey, $this->discovery);
+       }
+     }
+   }
