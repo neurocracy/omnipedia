@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "80aece45599615a4cedff817c35c327e",
+    "content-hash": "c9ef449ab35aa7a9a611fda70d694eee",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -3392,27 +3392,27 @@
         },
         {
             "name": "drupal/hux",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/hux.git",
-                "reference": "1.1.0"
+                "reference": "1.2.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/hux-1.1.0.zip",
-                "reference": "1.1.0",
-                "shasum": "001718d2ba1cea82d6e62183ab88f7c755fef0c0"
+                "url": "https://ftp.drupal.org/files/projects/hux-1.2.0.zip",
+                "reference": "1.2.0",
+                "shasum": "99da43b5979542a6dc79bb49cfdcb04c574542a3"
             },
             "require": {
-                "drupal/core": "^9 || ^10",
-                "php": ">=8.0"
+                "drupal/core": "^10",
+                "php": ">=8.1"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "1.1.0",
-                    "datestamp": "1668049694",
+                    "version": "1.2.0",
+                    "datestamp": "1692704913",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
