@@ -22,9 +22,9 @@ $loop->futureTick(function(): void {
 #
 # @todo Rework this to ensure it only runs once on deploy, either as an App
 #   Platform job or using some form of locking.
-$loop->futureTick(function(): void {
-  (new WorkerProcess(__DIR__ . '/deploy-tasks.sh'))->start();
-});
+// $loop->futureTick(function(): void {
+//   (new WorkerProcess(__DIR__ . '/deploy-tasks.sh'))->start();
+// });
 
 // Run cron every 15 minutes.
 $loop->addPeriodicTimer(900, function(): void {
