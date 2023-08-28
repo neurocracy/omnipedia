@@ -13,4 +13,4 @@ they provide via [Yarn](https://yarnpkg.com/).
 If you'd like to give this repository a try (and also potentially get us
 referral credits 👉👈 🥺), use this link:
 
-[![Deploy to DO](https://www.deploytodo.com/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/neurocracy/omnipedia/tree/HEAD&refcode=44bfd65c116f)
+[![Deploy to DO](https://www.deploytodo.com/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/neurocracy/omnipedia/tree/9.x&refcode=44bfd65c116f)
