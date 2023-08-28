@@ -68,6 +68,7 @@ dependencies:
     - taxonomy
     - tfa
     - toolbar
+    - typed_entity_ui
     - update
     - userprotect
     - views_bulk_edit
@@ -231,6 +232,7 @@ permissions:
   - 'edit own wiki_page content'
   - 'edit terms in episode_tiers'
   - 'edit unmanaged files entities'
+  - 'explore typed entity classes'
   - 'export configuration'
   - 'flood unblock ips'
   - 'import configuration'
