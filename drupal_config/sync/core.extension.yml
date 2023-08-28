@@ -121,6 +121,7 @@ module:
   toolbar: 0
   trusted_reverse_proxy: 0
   typed_data: 0
+  typed_entity: 0
   update: 0
   user: 0
   username_enumeration_prevention: 0
