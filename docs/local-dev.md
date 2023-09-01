@@ -21,11 +21,11 @@ Once DDEV has started all of the containers, you'll be able to build the
 codebase by running
 
 ```bash
-ddev composer install
+ddev composer install && ddev yarn install
 ```
 
-Once Composer has finished pulling in all dependencies, you can build all their
-front-end assets (CSS, images, icons, etc.) by running
+Once Composer and Yarn have finished pulling in all dependencies, you can build
+all of their front-end assets (CSS, images, icons, etc.) by running
 
 ```bash
 ddev yarn build
