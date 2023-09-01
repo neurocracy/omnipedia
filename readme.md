@@ -17,3 +17,10 @@ app.
 # Current test status
 
 [![Main](https://github.com/neurocracy/omnipedia/actions/workflows/main.yml/badge.svg)](https://github.com/neurocracy/omnipedia/actions/workflows/main.yml)
+
+# License
+
+The entire Omnipedia codebase is released under [the GPLv2 (or later)
+license](https://en.wikipedia.org/wiki/GNU_General_Public_License#Version_2);
+Omnipedia is and will continue to be [free and open source software
+(FOSS)](https://en.wikipedia.org/wiki/Free_and_open-source_software).
