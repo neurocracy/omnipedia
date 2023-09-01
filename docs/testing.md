@@ -10,4 +10,7 @@ for more details.
 
 Our tests are found in the various custom modules listed in
 [Overview](overview.md), though a few may later be added in this root repository
-if appropriate for testing Omnipedia as a whole.
+if appropriate for testing Omnipedia as a whole. GitHub Actions automatically
+runs our full test suite on every push to this repository, with [the current
+test results publicly
+viewable](https://github.com/neurocracy/omnipedia/actions).
