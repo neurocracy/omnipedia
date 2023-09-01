@@ -6,9 +6,6 @@ This is the top level project for [Omnipedia](https://omnipedia.app/).
 
 # Documentation
 
-Please note that this documentation is fairly sparse at the moment but will be
-expanded upon over time.
-
 1. [Overview](docs/overview.md)
 2. [Local development](docs/local-dev.md)
 3. [Testing](docs/testing.md)
