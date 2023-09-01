@@ -14,4 +14,6 @@ app.
 5. [Security](docs/security.md)
 6. [Major changes](docs/changes.md)
 
+# Current test status
+
 [![Main](https://github.com/neurocracy/omnipedia/actions/workflows/main.yml/badge.svg)](https://github.com/neurocracy/omnipedia/actions/workflows/main.yml)
