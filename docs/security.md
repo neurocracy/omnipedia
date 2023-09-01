@@ -1,9 +1,9 @@
 # Security
 
 We go above and beyond what most projects would consider "good enough" to make
-it difficult for anyone to compromise our work and thus endanger not only us,
-but our users, and hope that we can demonstrate the implementation of many
-security best practices.
+it difficult for anyone to compromise our work and potentially endanger our
+users, and hope that we can demonstrate the implementation of many security
+best practices.
 
 ## Reporting
 
