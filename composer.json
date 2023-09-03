@@ -52,10 +52,6 @@
       "type": "vcs",
       "url": "https://github.com/Ambient-Impact/drupal-maintenance200.git"
     },
-    "drupal/markdown": {
-      "type": "vcs",
-      "url": "https://git.drupalcode.org/issue/markdown-3288447.git"
-    },
     "drupal/omnipedia_access": {
       "type": "vcs",
       "url": "https://github.com/neurocracy/drupal-omnipedia-access.git"
@@ -124,10 +120,6 @@
       "type": "vcs",
       "url": "https://github.com/neurocracy/drupal-omnipedia-warmer.git"
     },
-    "drupal/paranoia": {
-      "type": "vcs",
-      "url": "https://git.drupalcode.org/issue/paranoia-3289009.git"
-    },
     "drupal/tfa": {
       "type": "vcs",
       "url": "https://git.drupalcode.org/issue/tfa-3370841.git"
@@ -172,7 +164,7 @@
     "drupal/login_destination": "^2.0",
     "drupal/login_security": "^2.0",
     "drupal/maintenance200": "1.x-dev@dev",
-    "drupal/markdown": "dev-3288447-automated-drupal-10@dev as 3.0@RC",
+    "drupal/markdown": "^3.0@RC",
     "drupal/media_entity_file_replace": "^1.0",
     "drupal/metatag": "^2.0",
     "drupal/omnipedia_access": "5.x-dev@dev",
@@ -192,7 +184,7 @@
     "drupal/omnipedia_site_theme": "6.x-dev@dev",
     "drupal/omnipedia_user": "6.x-dev@dev",
     "drupal/omnipedia_warmer": "2.x-dev@dev",
-    "drupal/paranoia": "3289009-automated-drupal-10-dev@dev",
+    "drupal/paranoia": "^1.0@RC",
     "drupal/password_policy": "^4.0",
     "drupal/pathauto": "^1.6",
     "drupal/readonlymode": "^1.1",

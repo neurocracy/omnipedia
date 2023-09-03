@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cbcbb4c83c48d49c302b660db93dce0e",
+    "content-hash": "2cb8dbee710fa4cf21137bda2d14d2e2",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -3766,14 +3766,21 @@
         },
         {
             "name": "drupal/markdown",
-            "version": "dev-3288447-automated-drupal-10",
+            "version": "3.0.0-rc3",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/issue/markdown-3288447.git",
-                "reference": "4c550fcb333d69c674397edfd3d3efcc4745d29f"
+                "url": "https://git.drupalcode.org/project/markdown.git",
+                "reference": "3.0.0-rc3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/markdown-3.0.0-rc3.zip",
+                "reference": "3.0.0-rc3",
+                "shasum": "93e44b3f11f4770bfbb9ff4960e6ab4f76bc36b2"
             },
             "require": {
                 "composer/semver": "^1.0 || ^2.0 || ^3.0",
+                "drupal/core": "^9.1 || ^10",
                 "php": ">=5.5.9"
             },
             "suggest": {
@@ -3781,12 +3788,21 @@
             },
             "type": "drupal-module",
             "extra": {
+                "drupal": {
+                    "version": "3.0.0-rc3",
+                    "datestamp": "1692626406",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                },
                 "drush": {
                     "services": {
                         "drush.services.yml": "^9 || ^10"
                     }
                 }
             },
+            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0-or-later"
             ],
@@ -3800,15 +3816,22 @@
                     "name": "Gisle Hannemyr (gisle)",
                     "homepage": "https://www.drupal.org/u/gisle",
                     "role": "D7 Maintainer"
+                },
+                {
+                    "name": "joelpittet",
+                    "homepage": "https://www.drupal.org/user/160302"
+                },
+                {
+                    "name": "markdorison",
+                    "homepage": "https://www.drupal.org/user/346106"
                 }
             ],
             "description": "Provides Markdown integration for Drupal and allows content to be formatted in a simple plain-text syntax that is transformed into valid HTML.",
             "homepage": "https://www.drupal.org/project/markdown",
             "support": {
-                "issues": "https://www.drupal.org/project/markdown",
-                "source": "https://git.drupalcode.org/project/markdown"
-            },
-            "time": "2023-08-03T15:58:57+00:00"
+                "source": "https://git.drupalcode.org/project/markdown",
+                "issues": "https://www.drupal.org/project/markdown"
+            }
         },
         {
             "name": "drupal/media_entity_file_replace",
@@ -4740,25 +4763,63 @@
         },
         {
             "name": "drupal/paranoia",
-            "version": "dev-3289009-automated-drupal-10",
+            "version": "1.0.0-rc2",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/issue/paranoia-3289009.git",
-                "reference": "b95439a42991d1717ebb1d7e8673d61494a82c10"
+                "url": "https://git.drupalcode.org/project/paranoia.git",
+                "reference": "8.x-1.0-rc2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/paranoia-8.x-1.0-rc2.zip",
+                "reference": "8.x-1.0-rc2",
+                "shasum": "ef9037b90412a669e719ed7ba99a52f642e0a5be"
+            },
+            "require": {
+                "drupal/core": "^8.9 || ^9 || ^10"
             },
             "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-rc2",
+                    "datestamp": "1690562977",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "banviktor",
+                    "homepage": "https://www.drupal.org/user/3176333"
+                },
+                {
+                    "name": "greggles",
+                    "homepage": "https://www.drupal.org/user/36762"
+                },
+                {
+                    "name": "killes@www.drop.org",
+                    "homepage": "https://www.drupal.org/user/227"
+                },
+                {
+                    "name": "mlncn",
+                    "homepage": "https://www.drupal.org/user/64383"
+                },
+                {
+                    "name": "nedjo",
+                    "homepage": "https://www.drupal.org/user/4481"
+                }
             ],
             "description": "Protects a site from some insecure configurations.",
             "homepage": "https://www.drupal.org/project/paranoia",
-            "keywords": [
-                "Drupal"
-            ],
             "support": {
-                "issues": "http://drupal.org/project/issues/paranoia"
-            },
-            "time": "2023-03-08T19:36:34+00:00"
+                "source": "https://git.drupalcode.org/project/paranoia"
+            }
         },
         {
             "name": "drupal/password_policy",
@@ -17658,12 +17719,6 @@
             "alias_normalized": "1.2.0.0"
         },
         {
-            "package": "drupal/markdown",
-            "version": "dev-3288447-automated-drupal-10",
-            "alias": "3.0@RC",
-            "alias_normalized": "3.0.0.0"
-        },
-        {
             "package": "drupal/tfa",
             "version": "dev-3370841-add-d10-support",
             "alias": "1.1",
@@ -17681,6 +17736,7 @@
         "drupal/gin": 10,
         "drupal/gin_toolbar": 10,
         "drupal/maintenance200": 20,
+        "drupal/markdown": 5,
         "drupal/omnipedia_access": 20,
         "drupal/omnipedia_asset": 20,
         "drupal/omnipedia_attached_data": 20,
@@ -17698,7 +17754,7 @@
         "drupal/omnipedia_site_theme": 20,
         "drupal/omnipedia_user": 20,
         "drupal/omnipedia_warmer": 20,
-        "drupal/paranoia": 20,
+        "drupal/paranoia": 5,
         "drupal/rebuilder": 5,
         "drupal/rules": 20,
         "drupal/session_limit": 10,
