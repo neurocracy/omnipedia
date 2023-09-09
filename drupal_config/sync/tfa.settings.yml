@@ -5,7 +5,6 @@ required_roles:
   contributor: contributor
   moderator: moderator
   editor: editor
-  store_manager: store_manager
   developer: developer
   administrator: administrator
   authenticated: '0'
