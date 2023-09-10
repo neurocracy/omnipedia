@@ -1,0 +1,18 @@
+diff --git a/src/ShyOneTimeState.php b/src/ShyOneTimeState.php
+index e54a587..5471520 100644
+--- a/src/ShyOneTimeState.php
++++ b/src/ShyOneTimeState.php
+@@ -44,6 +44,13 @@ class ShyOneTimeState implements ShyOneTimeStateInterface {
+     foreach ($this->getUserAgents() as $userAgent) {
+ 
+       $trimmedUserAgent = preg_replace('/\s+/', ' ', trim($userAgent));
++
++      // Skip empty user agent strings to avoid false positives. This can happen
++      // when the state value is an empty string.
++      if (empty($trimmedUserAgent)) {
++        continue;
++      }
++
+       $patternUserAgent = "/" . preg_quote($trimmedUserAgent, '/') . "/i";
+ 
+       if (preg_match($patternUserAgent, $currentUserAgent)) {
