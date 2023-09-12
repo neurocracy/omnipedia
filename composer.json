@@ -278,7 +278,7 @@
         "Services\\SessionLimit should type-hint ModuleHandlerInterface rather than a specific implementation [#3308506]: https://www.drupal.org/project/session_limit/issues/3308506": "patches/drupal/session_limit/3308506-typehint-module-handler-interface.patch"
       },
       "drupal/shy_one_time": {
-        "Empty state user agent value results in false positive, redirects non-crawlers to user/login: https://github.com/neurocracy/omnipedia/issues/42": "patches/drupal/shy_one_time/false-positive-on-empty-state.patch"
+        "Empty state user agent value results in false positive, redirects all non-crawlers to user/login [#3386334]: https://www.drupal.org/project/shy_one_time/issues/3386334": "patches/drupal/shy_one_time/3386334-false-positive-on-empty-state.patch"
       },
       "drupal/trusted_reverse_proxy": {
         "Notice: Undefined index: severity in trusted_reverse_proxy_preprocess_status_report_page() [#3267588]: https://www.drupal.org/project/trusted_reverse_proxy/issues/3267588": "patches/drupal/trusted_reverse_proxy/3267588-trusted_reverse_proxy-undefined-severity.patch"
