@@ -7,8 +7,10 @@ place to start is [the Drupal.org developer
 documentation](https://www.drupal.org/docs/develop).
 
 Omnipedia is developed on Linux and run locally via [DDEV](https://ddev.com/)
-with our configuration found in
-[`.ddev/config.yaml`](../.ddev/config.yaml). It can be started by running
+with our configuration found in [`.ddev/config.yaml`](../.ddev/config.yaml).
+[Install DDEV by following their Getting Started
+steps](https://ddev.com/get-started/). Once DDEV is installed, the Omnipedia
+project can be started by running
 
 ```bash
 ddev start
