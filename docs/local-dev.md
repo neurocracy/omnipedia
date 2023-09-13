@@ -40,7 +40,7 @@ To see the full production build, run
 ddev yarn build:production
 ```
 
-This will run the full production build, including minimizing and optimizing
+This will run the full production build, including minifying and optimizing
 compiled CSS and other files.
 
 Note that in both cases, yarn.BUILD will automagically only run build commands
