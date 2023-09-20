@@ -21,7 +21,7 @@ services:
     arguments:
       - ''
       - 'private://logs/deduplication.log'
-      - '%monolog.level.error%'
+      - 'error'
       - 3600 # 60 seconds x 60 minutes = 1 hour.
     abstract: true
 
@@ -40,10 +40,10 @@ services:
     parent: monolog.handler.mail_abstract
     arguments:
       - 'i@ambientimpact.com'
-      - '%monolog.level.notice%'
+      - 'notice'
 
   # monolog.handler.mail_deduplicated_omnipedia_user_roles_elevated:
   #   parent: monolog.handler.deduplication_base
   #   arguments:
   #     index_0: '@monolog.handler.mail_omnipedia_user_roles_elevated'
-  #     index_2: '%monolog.level.notice%'
+  #     index_2: 'notice'

@@ -296,6 +296,7 @@ $servicesYamls = [
   'default.services.yml',
   'services.session.yml',
   'services.security.yml',
+  'services.monolog.yml',
 ];
 
 // Only include the Hux services file if the optimize environment variable
@@ -303,18 +304,6 @@ $servicesYamls = [
 // production.
 if (\getenv('DRUPAL_HUX_OPTIMIZE') !== false) {
   $servicesYamls[] = 'services.hux.yml';
-}
-
-// Only include the Monolog services file if not running tests, by checking if
-// one of the test environment variables is set. This is necessary as Symfony
-// will throw an error about requesting a non-existent parameter
-// "monolog.level.notice". Not that when running tests via core's run-tests.sh,
-// core's phpunit.xml.dist will be used so it isn't easy to set a custom
-// environment variable that way.
-//
-// @todo What if Monolog services are needed by a test?
-if (\getenv('SIMPLETEST_BASE_URL') === false) {
-  $servicesYamls[] = 'services.monolog.yml';
 }
 
 if (\getenv('DRUPAL_PRIMARY_HOST') !== false) {
