@@ -299,15 +299,32 @@ $servicesYamls = [
   'services.monolog.yml',
 ];
 
-// Only include the Hux services file if the optimize environment variable
-// exists to avoid fatal errors during CI or if it's not included by mistake in
-// production.
-if (\getenv('DRUPAL_HUX_OPTIMIZE') !== false) {
-  $servicesYamls[] = 'services.hux.yml';
-}
+/**
+ * Additional services files, keyed by required environment variables.
+ *
+ * These are only included if their respective environment variables exist to
+ * avoid fatal errors.
+ *
+ * @see https://www.drupal.org/project/drupal/issues/3249970
+ *   Requires this Drupal core patch to use environment variables in service
+ *   definitions and parameters.
+ *
+ * @todo Can we use Symfony environment variable processors to provide fallback
+ *   values instead of doing this?
+ *
+ * @see https://symfony.com/doc/current/configuration/env_var_processors.html
+ */
+foreach ([
+  'DRUPAL_HUX_OPTIMIZE'   => 'services.hux.yml',
+  'DRUPAL_PRIMARY_HOST'   => 'services.routing.yml',
+] as $env => $file) {
 
-if (\getenv('DRUPAL_PRIMARY_HOST') !== false) {
-  $servicesYamls[] = 'services.routing.yml';
+  if (\getenv($env) === false) {
+    continue;
+  }
+
+  $servicesYamls[] = $file;
+
 }
 
 foreach ($servicesYamls as $fileName) {
