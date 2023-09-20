@@ -3,7 +3,7 @@ parameters:
   # Override the auto detected Symfony request context with our DigitalOcean
   # App Platform environment variable.
   #
-  # @see https://symfony.com/doc/4.4/configuration/env_var_processors.html
+  # @see https://symfony.com/doc/current/configuration/env_var_processors.html
   #
   # @see https://www.drupal.org/project/drupal/issues/3249970
   #   Requires this Drupal core patch to work. Without the patch, setting this
