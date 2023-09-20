@@ -36,10 +36,13 @@ services:
           - '@plugin.manager.mail'
           - '@string_translation'
 
+  # @see https://www.drupal.org/project/drupal/issues/3249970
+  #   Requires this Drupal core patch to work. Without the patch, setting this
+  #   parameter like this will result in a fatal error.
   monolog.handler.mail_omnipedia_user_roles_elevated:
     parent: monolog.handler.mail_abstract
     arguments:
-      - 'i@ambientimpact.com'
+      - '%env(DRUPAL_MONOLOG_EMAIL)%'
       - 'notice'
 
   # monolog.handler.mail_deduplicated_omnipedia_user_roles_elevated:

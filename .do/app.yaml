@@ -53,6 +53,9 @@ envs:
 - key: DRUPAL_HUX_OPTIMIZE
   scope: RUN_TIME
   value: "true"
+- key: DRUPAL_MONOLOG_EMAIL
+  scope: RUN_TIME
+  value: "_DRUPAL_MONOLOG_EMAIL_"
 - key: DRUPAL_PRIMARY_HOST
   scope: RUN_AND_BUILD_TIME
   value: ${APP_DOMAIN}

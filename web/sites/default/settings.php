@@ -296,7 +296,6 @@ $servicesYamls = [
   'default.services.yml',
   'services.session.yml',
   'services.security.yml',
-  'services.monolog.yml',
 ];
 
 /**
@@ -316,6 +315,7 @@ $servicesYamls = [
  */
 foreach ([
   'DRUPAL_HUX_OPTIMIZE'   => 'services.hux.yml',
+  'DRUPAL_MONOLOG_EMAIL'  => 'services.monolog.yml',
   'DRUPAL_PRIMARY_HOST'   => 'services.routing.yml',
 ] as $env => $file) {
 
