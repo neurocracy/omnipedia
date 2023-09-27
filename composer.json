@@ -260,7 +260,7 @@
         "Slow admin/config page load [#3336621]: https://www.drupal.org/project/drupal/issues/3336621#comment-14888211": "patches/drupal/core/3336621-3-remove-admin-config-status-report-check.patch"
       },
       "drupal/honeypot": {
-        "Missing primary key in table `honeypot_user` [#2943526]: https://www.drupal.org/project/honeypot/issues/2943526#comment-12712602": "patches/drupal/honeypot/honeypot-fix_missing_primary_key-8.x-2943526-6.patch"
+        "honeypot_update_8102() no longer fails if key exists [#2943526]: https://www.drupal.org/project/honeypot/issues/2943526#comment-15246770": "patches/drupal/honeypot/2943526-89-missing-primary-key-2.1.x-preexisting.patch"
       },
       "drupal/hux": {
         "Removing a Hux hook implementation/class can cause fatal errors [#3302312]: https://www.drupal.org/project/hux/issues/3302312#comment-15207542": "patches/drupal/hux/3302312-discovery-deployment-identifier.patch",

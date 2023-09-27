@@ -1,0 +1,69 @@
+diff --git a/honeypot.install b/honeypot.install
+index a5412e2..9a53e5a 100644
+--- a/honeypot.install
++++ b/honeypot.install
+@@ -114,6 +114,14 @@ function honeypot_update_8101() {
+  * Creates an 'id' column for the {honeypot_user} table to act as a primary key.
+  */
+ function honeypot_update_8102() {
++
++  // Don't attempt to add the column if it already exists. This can happen for
++  // a number of reasons, such as a failed update or the module being previously
++  // patched to add the column before this update hook was added.
++  if (\Drupal::database()->schema()->fieldExists('honeypot_user', 'id')) {
++    return;
++  }
++
+   $schema = \Drupal::database()->schema();
+   $schema->addField('honeypot_user', 'id', [
+     'type' => 'serial',
+diff --git a/tests/src/Functional/Update/HoneypotUpdateTest.php b/tests/src/Functional/Update/HoneypotUpdateTest.php
+index ea56b93..041c2c3 100644
+--- a/tests/src/Functional/Update/HoneypotUpdateTest.php
++++ b/tests/src/Functional/Update/HoneypotUpdateTest.php
+@@ -118,4 +118,45 @@ class HoneypotUpdateTest extends UpdatePathTestBase {
+     $this->assertEquals(['id'], $primary_key);
+   }
+ 
++  /**
++   * Test honeypot_update_8102() when 'honeypot_user' primary key preexists.
++   *
++   * @see honeypot_update_8102()
++   */
++  public function testUpdateHooks8102Preexisting(): void {
++
++    // Fixture is built for schema 8000, so this test will be running all
++    // updates up to and including 8102.
++    $this->assertSame(8000, $this->container->get('keyvalue')->get(
++      'system.schema'
++    )->get('honeypot'));
++
++    $schema = $this->container->get('database')->schema();
++
++    $schema->addField('honeypot_user', 'id', [
++      'type' => 'serial',
++      'not null' => TRUE,
++      'description' => 'Unique record ID.',
++    ],
++    [
++      'primary key' => ['id'],
++    ]);
++
++    // Check that there is a primary key before the update.
++    $this->assertTrue($schema->fieldExists('honeypot_user', 'id'));
++
++    // Run updates.
++    $this->runUpdates();
++
++    // Assert that update 8102 has been successfully recorded by Drupal. If the
++    // update failed, this is expected to be less than this value. Note that we
++    // have to test that the value is equal to or greater than as otherwise
++    // this will very likely start to fail when subsequent update hooks are
++    // added.
++    $this->assertTrue($this->container->get('keyvalue')->get(
++      'system.schema'
++    )->get('honeypot') >= 8102);
++
++  }
++
+ }
