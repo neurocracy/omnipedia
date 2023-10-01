@@ -1,7 +1,7 @@
 # Overview
 
-[Omnipedia](https://omnipedia.app/) is a somewhat complex Drupal site that fully
-embraces [Composer-driven
+[Omnipedia](https://omnipedia.app/) is a relatively complex Drupal site that
+fully embraces [Composer-driven
 management](https://www.drupal.org/docs/develop/using-composer) of not just the
 many third-party Drupal modules, themes, and libraries that we use, but also of
 our own extensive custom code that spans many custom modules and themes, all of
