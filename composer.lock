@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3321321c2f165da488fe283b3574e7fd",
+    "content-hash": "d2bb5ee45220049f3f9bc4600847a803",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -4301,12 +4301,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neurocracy/drupal-omnipedia-core.git",
-                "reference": "52f44400d590b6a68311ffa047bb5085c4c66af1"
+                "reference": "b7bce23aa8e748fe88977ec7671d2882f39dc0f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-core/zipball/52f44400d590b6a68311ffa047bb5085c4c66af1",
-                "reference": "52f44400d590b6a68311ffa047bb5085c4c66af1",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-core/zipball/b7bce23aa8e748fe88977ec7671d2882f39dc0f0",
+                "reference": "b7bce23aa8e748fe88977ec7671d2882f39dc0f0",
                 "shasum": ""
             },
             "require": {
@@ -4316,6 +4316,7 @@
                 "drupal/typed_entity": "^4.0",
                 "php": "^8.1"
             },
+            "default-branch": true,
             "type": "drupal-custom-module",
             "license": [
                 "GPL-2.0-or-later"
@@ -4333,7 +4334,7 @@
                 "source": "https://github.com/neurocracy/drupal-omnipedia-core",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-core/issues"
             },
-            "time": "2023-10-01T18:53:25+00:00"
+            "time": "2023-10-02T18:08:23+00:00"
         },
         {
             "name": "drupal/omnipedia_date",
@@ -17828,7 +17829,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^8",
+        "php": "^8.2",
         "ext-apcu": "*"
     },
     "platform-dev": [],
