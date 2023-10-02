@@ -18,14 +18,6 @@ $loop->futureTick(function(): void {
   (new WorkerProcess(__DIR__ . '/run-common.sh'))->start();
 });
 
-# Run deploy tasks. Note that this assumes only one background tasks worker.
-#
-# @todo Rework this to ensure it only runs once on deploy, either as an App
-#   Platform job or using some form of locking.
-$loop->futureTick(function(): void {
-  (new WorkerProcess(__DIR__ . '/deploy-tasks.sh'))->start();
-});
-
 // Run cron every 15 minutes.
 $loop->addPeriodicTimer(900, function(): void {
   (new WorkerProcess('drush cron'))->start();
