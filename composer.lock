@@ -4613,12 +4613,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neurocracy/drupal-omnipedia-refreshless.git",
-                "reference": "2014fca1a0d56ddd62522755451a13992340d143"
+                "reference": "f2903d39810c629da4a7bb95986f9141716c2a67"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-refreshless/zipball/2014fca1a0d56ddd62522755451a13992340d143",
-                "reference": "2014fca1a0d56ddd62522755451a13992340d143",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-refreshless/zipball/f2903d39810c629da4a7bb95986f9141716c2a67",
+                "reference": "f2903d39810c629da4a7bb95986f9141716c2a67",
                 "shasum": ""
             },
             "require": {
@@ -4626,6 +4626,7 @@
                 "drupal/refreshless": "2.x-dev@dev",
                 "php": "^8.1"
             },
+            "default-branch": true,
             "type": "drupal-custom-module",
             "extra": {
                 "patches": {
@@ -4649,7 +4650,7 @@
                 "source": "https://github.com/neurocracy/drupal-omnipedia-refreshless/tree/2.x",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-refreshless/issues"
             },
-            "time": "2023-10-03T20:51:36+00:00"
+            "time": "2023-10-07T21:31:38+00:00"
         },
         {
             "name": "drupal/omnipedia_search",
