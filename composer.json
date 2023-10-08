@@ -5,8 +5,7 @@
   "license": "GPL-2.0-or-later",
   "homepage": "https://omnipedia.app",
   "support": {
-    "source": "https://github.com/neurocracy/omnipedia",
-    "wiki": "https://thunnus-thynnus.dev"
+    "source": "https://github.com/neurocracy/omnipedia"
   },
   "authors": [
     {
