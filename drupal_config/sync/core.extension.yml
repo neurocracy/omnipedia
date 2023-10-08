@@ -80,6 +80,7 @@ module:
   omnipedia_media: 0
   omnipedia_media_csp: 0
   omnipedia_menu: 0
+  omnipedia_refreshless: 0
   omnipedia_search: 0
   omnipedia_user: 0
   omnipedia_warmer: 0
@@ -99,6 +100,7 @@ module:
   rebuilder: 0
   rebuilder_ui: 0
   redirect: 0
+  refreshless: 0
   remove_http_headers: 0
   responsive_image: 0
   rules: 0
