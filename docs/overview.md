@@ -39,6 +39,8 @@ The following custom Drupal modules are maintained and used:
 
 * [`omnipedia_menu`](https://github.com/neurocracy/drupal-omnipedia-menu)
 
+* [`omnipedia_refreshless`](https://github.com/neurocracy/drupal-omnipedia-refreshless)
+
 * [`omnipedia_search`](https://github.com/neurocracy/drupal-omnipedia-search)
 
 * [`omnipedia_user`](https://github.com/neurocracy/drupal-omnipedia-user)
