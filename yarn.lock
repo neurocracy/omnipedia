@@ -3640,6 +3640,7 @@ __metadata:
     webpack: ^5.88.2
     webpack-cli: ^4.10.0
     webpack-remove-empty-scripts: ^1.0.1
+    webpack-yarn-vendorize: "github:Ambient-Impact/webpack-yarn-vendorize#49113a6b8ff822c47522cd39b96155b4b8c15750"
   languageName: unknown
   linkType: soft
 
@@ -3666,7 +3667,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"drupal-ambientimpact-media@workspace:^2 || ^3, drupal-ambientimpact-media@workspace:^3, drupal-ambientimpact-media@workspace:web/modules/custom/ambientimpact_media":
+"drupal-ambientimpact-media@workspace:^2 || ^3, drupal-ambientimpact-media@workspace:web/modules/custom/ambientimpact_media":
   version: 0.0.0-use.local
   resolution: "drupal-ambientimpact-media@workspace:web/modules/custom/ambientimpact_media"
   dependencies:
@@ -3689,6 +3690,7 @@ __metadata:
     webpack: ^5.88.2
     webpack-cli: ^4.10.0
     webpack-remove-empty-scripts: ^1.0.1
+    webpack-yarn-vendorize: "github:Ambient-Impact/webpack-yarn-vendorize#49113a6b8ff822c47522cd39b96155b4b8c15750"
   languageName: unknown
   linkType: soft
 
@@ -3723,10 +3725,11 @@ __metadata:
     webpack: ^5.88.2
     webpack-cli: ^4.10.0
     webpack-remove-empty-scripts: ^1.0.1
+    webpack-yarn-vendorize: "github:Ambient-Impact/webpack-yarn-vendorize#49113a6b8ff822c47522cd39b96155b4b8c15750"
   languageName: unknown
   linkType: soft
 
-"drupal-omnipedia-block@workspace:^5 || ^6, drupal-omnipedia-block@workspace:^6, drupal-omnipedia-block@workspace:web/modules/custom/omnipedia_block":
+"drupal-omnipedia-block@workspace:^5 || ^6, drupal-omnipedia-block@workspace:web/modules/custom/omnipedia_block":
   version: 0.0.0-use.local
   resolution: "drupal-omnipedia-block@workspace:web/modules/custom/omnipedia_block"
   dependencies:
@@ -3750,7 +3753,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"drupal-omnipedia-changes@workspace:^7, drupal-omnipedia-changes@workspace:web/modules/custom/omnipedia_changes":
+"drupal-omnipedia-changes@workspace:web/modules/custom/omnipedia_changes":
   version: 0.0.0-use.local
   resolution: "drupal-omnipedia-changes@workspace:web/modules/custom/omnipedia_changes"
   dependencies:
@@ -3818,7 +3821,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"drupal-omnipedia-site-theme@workspace:^6, drupal-omnipedia-site-theme@workspace:web/themes/custom/omnipedia_site_theme":
+"drupal-omnipedia-site-theme@workspace:web/themes/custom/omnipedia_site_theme":
   version: 0.0.0-use.local
   resolution: "drupal-omnipedia-site-theme@workspace:web/themes/custom/omnipedia_site_theme"
   dependencies:
@@ -3849,6 +3852,7 @@ __metadata:
     webpack: ^5.88.2
     webpack-cli: ^4.10.0
     webpack-remove-empty-scripts: ^1.0.1
+    webpack-yarn-vendorize: "github:Ambient-Impact/webpack-yarn-vendorize#49113a6b8ff822c47522cd39b96155b4b8c15750"
   languageName: unknown
   linkType: soft
 
@@ -4388,7 +4392,7 @@ __metadata:
 
 "fsevents@patch:fsevents@~2.3.2#~builtin<compat/fsevents>":
   version: 2.3.2
-  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=18f3a7"
+  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"
   dependencies:
     node-gyp: latest
   conditions: os=darwin
@@ -6937,7 +6941,7 @@ __metadata:
 
 "resolve@patch:resolve@^1.14.2#~builtin<compat/resolve>, resolve@patch:resolve@^1.9.0#~builtin<compat/resolve>":
   version: 1.22.1
-  resolution: "resolve@patch:resolve@npm%3A1.22.1#~builtin<compat/resolve>::version=1.22.1&hash=07638b"
+  resolution: "resolve@patch:resolve@npm%3A1.22.1#~builtin<compat/resolve>::version=1.22.1&hash=c3c19d"
   dependencies:
     is-core-module: ^2.9.0
     path-parse: ^1.0.7
@@ -8133,6 +8137,27 @@ __metadata:
   version: 3.2.3
   resolution: "webpack-sources@npm:3.2.3"
   checksum: 989e401b9fe3536529e2a99dac8c1bdc50e3a0a2c8669cbafad31271eadd994bc9405f88a3039cd2e29db5e6d9d0926ceb7a1a4e7409ece021fe79c37d9c4607
+  languageName: node
+  linkType: hard
+
+"webpack-yarn-vendorize@github:Ambient-Impact/webpack-yarn-vendorize#49113a6b8ff822c47522cd39b96155b4b8c15750":
+  version: 0.0.0
+  resolution: "webpack-yarn-vendorize@https://github.com/Ambient-Impact/webpack-yarn-vendorize.git#commit=49113a6b8ff822c47522cd39b96155b4b8c15750"
+  dependencies:
+    "@babel/core": ^7.20.2
+    "@babel/preset-env": ^7.20.2
+    "@symfony/webpack-encore": ^4.1.1
+    file-loader: ^6.0.0
+    webpack: ^5.88.2
+    webpack-cli: ^4.10.0
+  peerDependencies:
+    "@babel/core": ^7.20.2
+    "@babel/preset-env": ^7.20.2
+    "@symfony/webpack-encore": ^4.1.1
+    file-loader: ^6.0.0
+    webpack: ^5.88.2
+    webpack-cli: ^4.10.0
+  checksum: 3e4d9f3b80926da0f9f1aa85525ee51e81456abb52af6d3a034aa5d6af03295732e2b4b0697b75d97fc1bc25ad3bcc00e5cb11924802d17449d5ce47afb0b172
   languageName: node
   linkType: hard
 
