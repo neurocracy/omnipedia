@@ -23,12 +23,6 @@ on:
       - '/drupal_private_files/**'
       # Drush config is not used for CI.
       - '/drush/**'
-      # Yarn and front-end assets are not currently part of CI.
-      - '/.yarn/**'
-      - '/.nvmrc'
-      - '/.yarnrc.yml'
-      - '/package.json'
-      - '/yarn.lock'
       # Ignore any changes in aggregated assets and public files directories.
       - '/web/assets/**'
       - '/web/sites/*/files/**'
@@ -47,12 +41,6 @@ on:
       - '/drupal_private_files/**'
       # Drush config is not used for CI.
       - '/drush/**'
-      # Yarn and front-end assets are not currently part of CI.
-      - '/.yarn/**'
-      - '/.nvmrc'
-      - '/.yarnrc.yml'
-      - '/package.json'
-      - '/yarn.lock'
       # Ignore any changes in aggregated assets and public files directories.
       - '/web/assets/**'
       - '/web/sites/*/files/**'
@@ -110,3 +98,46 @@ jobs:
 
       - name: Run Drupal PHPUnit tests
         run: php web/core/scripts/run-tests.sh --sqlite ../test.sqlite --dburl mysql://root:db@127.0.0.1:${{ job.services.mysql.ports['3306'] }}/db --suppress-deprecations --color --url http://127.0.0.1:8080 --verbose omnipedia
+  yarn:
+    name: Yarn
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - uses: actions/checkout@v3
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ env.PHP_VERSION }}
+          extensions: ${{ env.PHP_EXTENSIONS }}
+          coverage: none
+          tools: composer:v2
+
+      - name: Get Composer cache directory
+        id: composer-cache
+        run: echo "dir=$(composer config cache-files-dir)" >> $GITHUB_OUTPUT
+
+      - name: Cache Composer dependencies
+        uses: actions/cache@v3
+        with:
+          path: ${{ steps.composer-cache.outputs.dir }}
+          # Use composer.json for key, if composer.lock is not committed.
+          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
+          restore-keys: ${{ runner.os }}-composer-
+
+      - name: Install Composer dependencies
+        run: composer install --no-progress --prefer-dist --optimize-autoloader
+
+      - name: Set Node.js 18.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+
+      - name: Yarn install
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install
+
+      - name: Yarn build:deploy
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: build:deploy

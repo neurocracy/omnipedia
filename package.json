@@ -3,7 +3,7 @@
   "version": "9.0.0",
   "license": "GPL-2.0-or-later",
   "repository": "github:neurocracy/omnipedia",
-  "packageManager": "yarn@3.2.4",
+  "packageManager": "yarn@3.6.4",
   "scripts": {
     "build:production": "cross-env NODE_ENV=production yarn build",
     "build:deploy": "cross-env NODE_ENV=production CI=true yarn build"
