@@ -4688,7 +4688,7 @@ __metadata:
     webpack: ^5.88.2
     webpack-cli: ^4.10.0
     webpack-remove-empty-scripts: ^1.0.1
-    webpack-yarn-vendorize: "github:Ambient-Impact/webpack-yarn-vendorize#11330d9627b0c7cfc7e028e2225b7caf2fb37815"
+    webpack-yarn-vendorize: "github:Ambient-Impact/webpack-yarn-vendorize#71db465c742fb184ced7346a06ab3dbc3d99c2a2"
   languageName: unknown
   linkType: soft
 
@@ -4738,7 +4738,7 @@ __metadata:
     webpack: ^5.88.2
     webpack-cli: ^4.10.0
     webpack-remove-empty-scripts: ^1.0.1
-    webpack-yarn-vendorize: "github:Ambient-Impact/webpack-yarn-vendorize#11330d9627b0c7cfc7e028e2225b7caf2fb37815"
+    webpack-yarn-vendorize: "github:Ambient-Impact/webpack-yarn-vendorize#71db465c742fb184ced7346a06ab3dbc3d99c2a2"
   languageName: unknown
   linkType: soft
 
@@ -4773,7 +4773,7 @@ __metadata:
     webpack: ^5.88.2
     webpack-cli: ^4.10.0
     webpack-remove-empty-scripts: ^1.0.1
-    webpack-yarn-vendorize: "github:Ambient-Impact/webpack-yarn-vendorize#11330d9627b0c7cfc7e028e2225b7caf2fb37815"
+    webpack-yarn-vendorize: "github:Ambient-Impact/webpack-yarn-vendorize#71db465c742fb184ced7346a06ab3dbc3d99c2a2"
   languageName: unknown
   linkType: soft
 
@@ -4900,7 +4900,7 @@ __metadata:
     webpack: ^5.88.2
     webpack-cli: ^4.10.0
     webpack-remove-empty-scripts: ^1.0.1
-    webpack-yarn-vendorize: "github:Ambient-Impact/webpack-yarn-vendorize#11330d9627b0c7cfc7e028e2225b7caf2fb37815"
+    webpack-yarn-vendorize: "github:Ambient-Impact/webpack-yarn-vendorize#71db465c742fb184ced7346a06ab3dbc3d99c2a2"
   languageName: unknown
   linkType: soft
 
@@ -9255,9 +9255,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack-yarn-vendorize@github:Ambient-Impact/webpack-yarn-vendorize#11330d9627b0c7cfc7e028e2225b7caf2fb37815":
+"webpack-yarn-vendorize@github:Ambient-Impact/webpack-yarn-vendorize#71db465c742fb184ced7346a06ab3dbc3d99c2a2":
   version: 0.0.0
-  resolution: "webpack-yarn-vendorize@https://github.com/Ambient-Impact/webpack-yarn-vendorize.git#commit=11330d9627b0c7cfc7e028e2225b7caf2fb37815"
+  resolution: "webpack-yarn-vendorize@https://github.com/Ambient-Impact/webpack-yarn-vendorize.git#commit=71db465c742fb184ced7346a06ab3dbc3d99c2a2"
   dependencies:
     "@babel/core": ^7.20.2
     "@babel/preset-env": ^7.20.2
@@ -9274,7 +9274,7 @@ __metadata:
     webpack-cli: ^4.10.0
   bin:
     vendorize: ./src/bin.mjs
-  checksum: e080d5e6c1a42b6b7ea61afa62c098778e4d2021516aa4c3032efb358d70de8b462828d4a603007b8a860ec30770d786933fae2eb1824c956b3174916500a8c5
+  checksum: a339626bb4eccc46157b639591a753297a851c517e39a6761ee0d8b81014a667303450cc847caedde66aa016e10a8f52073e3dd647a7bd0f4d27fa85baa7eefd
   languageName: node
   linkType: hard
 
