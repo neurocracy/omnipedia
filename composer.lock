@@ -1790,18 +1790,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-markdown.git",
-                "reference": "19409f8adcfd2153c248809916afa404441b7a3e"
+                "reference": "12c1f31b8d70a6a952598b49f9850b57e4809639"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-markdown/zipball/19409f8adcfd2153c248809916afa404441b7a3e",
-                "reference": "19409f8adcfd2153c248809916afa404441b7a3e",
+                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-markdown/zipball/12c1f31b8d70a6a952598b49f9850b57e4809639",
+                "reference": "12c1f31b8d70a6a952598b49f9850b57e4809639",
                 "shasum": ""
             },
             "require": {
                 "drupal/core": "^10.0",
+                "drupal/hux": "^1.1",
                 "drupal/markdown": "^3.0@RC",
-                "league/commonmark": "^1.5"
+                "league/commonmark": "^1.5",
+                "php": "^8.1"
             },
             "default-branch": true,
             "type": "drupal-custom-module",
@@ -1821,7 +1823,7 @@
                 "source": "https://github.com/Ambient-Impact/drupal-ambientimpact-markdown",
                 "issues": "https://github.com/Ambient-Impact/drupal-ambientimpact-markdown/issues"
             },
-            "time": "2023-06-17T22:01:02+00:00"
+            "time": "2023-10-20T15:35:56+00:00"
         },
         {
             "name": "drupal/ambientimpact_media",
@@ -1883,19 +1885,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-ux.git",
-                "reference": "dc8179d24648df177279fd2a24b42f8cfb0c988d"
+                "reference": "884bb670a0e541ca16b0f802f7718242fe7336dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-ux/zipball/dc8179d24648df177279fd2a24b42f8cfb0c988d",
-                "reference": "dc8179d24648df177279fd2a24b42f8cfb0c988d",
+                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-ux/zipball/884bb670a0e541ca16b0f802f7718242fe7336dc",
+                "reference": "884bb670a0e541ca16b0f802f7718242fe7336dc",
                 "shasum": ""
             },
             "require": {
                 "drupal/ambientimpact_core": "1.x-dev@dev || 2.x-dev@dev",
                 "drupal/ambientimpact_icon": "1.x-dev@dev",
                 "drupal/core": "^9.5 || ^10.0",
-                "drupal/hook_event_dispatcher": "^3.1 || ^4.0"
+                "drupal/hook_event_dispatcher": "^3.1 || ^4.0",
+                "drupal/hux": "^1.1",
+                "php": "^8.1"
             },
             "default-branch": true,
             "type": "drupal-custom-module",
@@ -1915,7 +1919,7 @@
                 "source": "https://github.com/Ambient-Impact/drupal-ambientimpact-ux",
                 "issues": "https://github.com/Ambient-Impact/drupal-ambientimpact-ux/issues"
             },
-            "time": "2023-10-20T13:11:31+00:00"
+            "time": "2023-10-20T15:35:44+00:00"
         },
         {
             "name": "drupal/autoban",
