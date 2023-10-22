@@ -2490,6 +2490,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@hotwired/turbo@npm:^7.3.0":
+  version: 7.3.0
+  resolution: "@hotwired/turbo@npm:7.3.0"
+  checksum: ccc03c980e4b4636e48ea2132c7d28be1be4f4e6123f63905fbf871e7647369b5c6ce53301443b218d7abf68fa4897eaf614254688108ed6ae303c5040241a97
+  languageName: node
+  linkType: hard
+
 "@jest/schemas@npm:^29.0.0":
   version: 29.0.0
   resolution: "@jest/schemas@npm:29.0.0"
@@ -4909,6 +4916,15 @@ __metadata:
   resolution: "drupal-omnipedia@workspace:."
   dependencies:
     cross-env: ^7.0.3
+  languageName: unknown
+  linkType: soft
+
+"drupal-refreshless@workspace:web/modules/contrib/refreshless":
+  version: 0.0.0-use.local
+  resolution: "drupal-refreshless@workspace:web/modules/contrib/refreshless"
+  dependencies:
+    "@hotwired/turbo": ^7.3.0
+    pnp-vendorize: "github:Ambient-Impact/pnp-vendorize#1030d968013bad44cda10fd75e18b25d6dabb35d"
   languageName: unknown
   linkType: soft
 

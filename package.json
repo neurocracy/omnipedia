@@ -9,6 +9,7 @@
     "build:deploy": "cross-env NODE_ENV=production CI=true yarn build"
   },
   "workspaces": [
+    "web/modules/contrib/refreshless",
     "web/modules/custom/*",
     "web/themes/custom/*"
   ],
