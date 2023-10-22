@@ -4679,6 +4679,7 @@ __metadata:
     glob: ^8.0.3
     include-media: ^1.4.10
     mini-css-extract-plugin: ^2.6.1
+    pnp-vendorize: "github:Ambient-Impact/pnp-vendorize#1030d968013bad44cda10fd75e18b25d6dabb35d"
     postcss: ^8.4.31
     postcss-loader: ^7.0.1
     sass: ^1.43.4
@@ -4688,7 +4689,6 @@ __metadata:
     webpack: ^5.88.2
     webpack-cli: ^4.10.0
     webpack-remove-empty-scripts: ^1.0.1
-    webpack-yarn-vendorize: "github:Ambient-Impact/webpack-yarn-vendorize#71db465c742fb184ced7346a06ab3dbc3d99c2a2"
   languageName: unknown
   linkType: soft
 
@@ -4730,6 +4730,7 @@ __metadata:
     glob: ^8.0.3
     mini-css-extract-plugin: ^2.6.1
     photoswipe: ^4.1.3
+    pnp-vendorize: "github:Ambient-Impact/pnp-vendorize#1030d968013bad44cda10fd75e18b25d6dabb35d"
     postcss: ^8.4.31
     postcss-loader: ^7.0.1
     sass: ^1.43.4
@@ -4738,7 +4739,6 @@ __metadata:
     webpack: ^5.88.2
     webpack-cli: ^4.10.0
     webpack-remove-empty-scripts: ^1.0.1
-    webpack-yarn-vendorize: "github:Ambient-Impact/webpack-yarn-vendorize#71db465c742fb184ced7346a06ab3dbc3d99c2a2"
   languageName: unknown
   linkType: soft
 
@@ -4762,6 +4762,7 @@ __metadata:
     jquery-hoverintent: ^1.10.0
     jquery.onfontresize: "github:Ambient-Impact/jquery.onfontresize"
     mini-css-extract-plugin: ^2.6.1
+    pnp-vendorize: "github:Ambient-Impact/pnp-vendorize#1030d968013bad44cda10fd75e18b25d6dabb35d"
     popper.js: ^1.15.0
     postcss: ^8.4.31
     postcss-loader: ^7.0.1
@@ -4773,7 +4774,6 @@ __metadata:
     webpack: ^5.88.2
     webpack-cli: ^4.10.0
     webpack-remove-empty-scripts: ^1.0.1
-    webpack-yarn-vendorize: "github:Ambient-Impact/webpack-yarn-vendorize#71db465c742fb184ced7346a06ab3dbc3d99c2a2"
   languageName: unknown
   linkType: soft
 
@@ -4892,6 +4892,7 @@ __metadata:
     glob: ^8.0.3
     js-cookie: ^3.0.5
     mini-css-extract-plugin: ^2.6.1
+    pnp-vendorize: "github:Ambient-Impact/pnp-vendorize#1030d968013bad44cda10fd75e18b25d6dabb35d"
     postcss: ^8.4.31
     postcss-easing-gradients: "github:Ambient-Impact/postcss-easing-gradients"
     postcss-loader: ^7.0.1
@@ -4900,7 +4901,6 @@ __metadata:
     webpack: ^5.88.2
     webpack-cli: ^4.10.0
     webpack-remove-empty-scripts: ^1.0.1
-    webpack-yarn-vendorize: "github:Ambient-Impact/webpack-yarn-vendorize#71db465c742fb184ced7346a06ab3dbc3d99c2a2"
   languageName: unknown
   linkType: soft
 
@@ -7242,6 +7242,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"pnp-vendorize@github:Ambient-Impact/pnp-vendorize#1030d968013bad44cda10fd75e18b25d6dabb35d":
+  version: 0.0.0
+  resolution: "pnp-vendorize@https://github.com/Ambient-Impact/pnp-vendorize.git#commit=1030d968013bad44cda10fd75e18b25d6dabb35d"
+  dependencies:
+    "@babel/core": ^7.20.2
+    "@babel/preset-env": ^7.20.2
+    "@symfony/webpack-encore": ^4.1.1
+    file-loader: ^6.0.0
+    webpack: ^5.88.2
+    webpack-cli: ^4.10.0
+  peerDependencies:
+    "@babel/core": ^7.20.2
+    "@babel/preset-env": ^7.20.2
+    "@symfony/webpack-encore": ^4.1.1
+    file-loader: ^6.0.0
+    webpack: ^5.88.2
+    webpack-cli: ^4.10.0
+  bin:
+    vendorize: ./src/bin.mjs
+  checksum: 5914711dc8cbd588824fffb049a30c4d8e626ccb818ce434226aa540dde2197cc97a524baac76e41e489f697680fa71104a7ce7c4db3d3a54d035b7c8951de1d
+  languageName: node
+  linkType: hard
+
 "popper.js@npm:^1.14.3, popper.js@npm:^1.15.0":
   version: 1.16.1
   resolution: "popper.js@npm:1.16.1"
@@ -9252,29 +9275,6 @@ __metadata:
   version: 3.2.3
   resolution: "webpack-sources@npm:3.2.3"
   checksum: 989e401b9fe3536529e2a99dac8c1bdc50e3a0a2c8669cbafad31271eadd994bc9405f88a3039cd2e29db5e6d9d0926ceb7a1a4e7409ece021fe79c37d9c4607
-  languageName: node
-  linkType: hard
-
-"webpack-yarn-vendorize@github:Ambient-Impact/webpack-yarn-vendorize#71db465c742fb184ced7346a06ab3dbc3d99c2a2":
-  version: 0.0.0
-  resolution: "webpack-yarn-vendorize@https://github.com/Ambient-Impact/webpack-yarn-vendorize.git#commit=71db465c742fb184ced7346a06ab3dbc3d99c2a2"
-  dependencies:
-    "@babel/core": ^7.20.2
-    "@babel/preset-env": ^7.20.2
-    "@symfony/webpack-encore": ^4.1.1
-    file-loader: ^6.0.0
-    webpack: ^5.88.2
-    webpack-cli: ^4.10.0
-  peerDependencies:
-    "@babel/core": ^7.20.2
-    "@babel/preset-env": ^7.20.2
-    "@symfony/webpack-encore": ^4.1.1
-    file-loader: ^6.0.0
-    webpack: ^5.88.2
-    webpack-cli: ^4.10.0
-  bin:
-    vendorize: ./src/bin.mjs
-  checksum: a339626bb4eccc46157b639591a753297a851c517e39a6761ee0d8b81014a667303450cc847caedde66aa016e10a8f52073e3dd647a7bd0f4d27fa85baa7eefd
   languageName: node
   linkType: hard
 
