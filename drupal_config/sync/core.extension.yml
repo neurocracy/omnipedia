@@ -101,6 +101,7 @@ module:
   rebuilder_ui: 0
   redirect: 0
   refreshless: 0
+  refreshless_turbo: 0
   remove_http_headers: 0
   responsive_image: 0
   rules: 0

@@ -4919,9 +4919,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"drupal-refreshless@workspace:web/modules/contrib/refreshless":
+"drupal-refreshless-turbo@workspace:web/modules/contrib/refreshless/modules/refreshless_turbo":
   version: 0.0.0-use.local
-  resolution: "drupal-refreshless@workspace:web/modules/contrib/refreshless"
+  resolution: "drupal-refreshless-turbo@workspace:web/modules/contrib/refreshless/modules/refreshless_turbo"
   dependencies:
     "@hotwired/turbo": ^7.3.0
     pnp-vendorize: "github:Ambient-Impact/pnp-vendorize#1030d968013bad44cda10fd75e18b25d6dabb35d"
