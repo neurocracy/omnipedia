@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d2bb5ee45220049f3f9bc4600847a803",
+    "content-hash": "fe6170e49216d67a6f80c37eff2b1d84",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -6632,36 +6632,32 @@
         },
         {
             "name": "drupal/warmer",
-            "version": "2.0.11",
+            "version": "2.0.12",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/warmer.git",
-                "reference": "2.0.11"
+                "reference": "2.0.12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/warmer-2.0.11.zip",
-                "reference": "2.0.11",
-                "shasum": "d421e0a471a7e334ab3a1d7486c2e0735ed98faf"
+                "url": "https://ftp.drupal.org/files/projects/warmer-2.0.12.zip",
+                "reference": "2.0.12",
+                "shasum": "7f8e4a411e1ced284c8fc4d754fdcb5f2038b710"
             },
             "require": {
                 "drupal/core": "^9 || ^10",
+                "drush/drush": "^11.6 || ^12",
                 "php": ">=5.6.0",
                 "vipnytt/sitemapparser": "^1.0"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.11",
-                    "datestamp": "1698732535",
+                    "version": "2.0.12",
+                    "datestamp": "1699265413",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
-                    }
-                },
-                "drush": {
-                    "services": {
-                        "drush.services.yml": "^9"
                     }
                 }
             },
