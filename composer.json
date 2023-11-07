@@ -283,9 +283,6 @@
       },
       "drupal/trusted_reverse_proxy": {
         "Notice: Undefined index: severity in trusted_reverse_proxy_preprocess_status_report_page() [#3267588]: https://www.drupal.org/project/trusted_reverse_proxy/issues/3267588": "patches/drupal/trusted_reverse_proxy/3267588-trusted_reverse_proxy-undefined-severity.patch"
-      },
-      "drupal/warmer": {
-        "[warning] Undefined array key \"items-limit\" QueueCommands.php:66 [#3324816]: https://www.drupal.org/project/warmer/issues/3324816#comment-14871916": "patches/drupal/warmer/3324816-5-undefined-array-key-items-limit.patch"
       }
     },
     "drupal-scaffold": {
