@@ -4718,12 +4718,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neurocracy/drupal-omnipedia-site-theme.git",
-                "reference": "520a6f2658c634c3f28b8502b6e39a6387f51d93"
+                "reference": "165b97132f2a31af0de37265a1df896d9fd6060d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-site-theme/zipball/520a6f2658c634c3f28b8502b6e39a6387f51d93",
-                "reference": "520a6f2658c634c3f28b8502b6e39a6387f51d93",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-site-theme/zipball/165b97132f2a31af0de37265a1df896d9fd6060d",
+                "reference": "165b97132f2a31af0de37265a1df896d9fd6060d",
                 "shasum": ""
             },
             "require": {
@@ -4758,7 +4758,7 @@
                 "source": "https://github.com/neurocracy/drupal-omnipedia-site-theme",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-site-theme/issues"
             },
-            "time": "2023-11-01T07:40:42+00:00"
+            "time": "2023-11-08T23:19:11+00:00"
         },
         {
             "name": "drupal/omnipedia_user",
