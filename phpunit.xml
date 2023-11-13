@@ -6,7 +6,7 @@
  or your current system user. See core/tests/README.md and
  https://www.drupal.org/node/2116263 for details.
 -->
-<phpunit bootstrap="drupal/core/tests/bootstrap.php" colors="true"
+<phpunit bootstrap="web/core/tests/bootstrap.php" colors="true"
          beStrictAboutTestsThatDoNotTestAnything="true"
          beStrictAboutOutputDuringTests="true"
          beStrictAboutChangesToGlobalState="true"
@@ -40,19 +40,19 @@
   </php>
   <testsuites>
     <testsuite name="unit">
-      <file>drupal/core/tests/TestSuites/UnitTestSuite.php</file>
+      <file>web/core/tests/TestSuites/UnitTestSuite.php</file>
     </testsuite>
     <testsuite name="kernel">
-      <file>drupal/core/tests/TestSuites/KernelTestSuite.php</file>
+      <file>web/core/tests/TestSuites/KernelTestSuite.php</file>
     </testsuite>
     <testsuite name="functional">
-      <file>drupal/core/tests/TestSuites/FunctionalTestSuite.php</file>
+      <file>web/core/tests/TestSuites/FunctionalTestSuite.php</file>
     </testsuite>
     <testsuite name="functional-javascript">
-      <file>drupal/core/tests/TestSuites/FunctionalJavascriptTestSuite.php</file>
+      <file>web/core/tests/TestSuites/FunctionalJavascriptTestSuite.php</file>
     </testsuite>
     <testsuite name="build">
-      <file>drupal/core/tests/TestSuites/BuildTestSuite.php</file>
+      <file>web/core/tests/TestSuites/BuildTestSuite.php</file>
     </testsuite>
   </testsuites>
   <listeners>
