@@ -398,7 +398,6 @@ foreach ([
 
 }
 
-
 /**
  * The default list of directories that will be ignored by Drupal's file API.
  *
