@@ -10,7 +10,9 @@ webserver_type: apache-fpm
 router_http_port: "80"
 router_https_port: "443"
 xdebug_enabled: false
-additional_hostnames: []
+# @see https://ddev.readthedocs.io/en/latest/users/extend/additional-hostnames/
+additional_hostnames:
+  - omnipedia-oembed
 additional_fqdns: []
 database:
   # DigitalOcean uses newer collation for some tables that will fail with errors
