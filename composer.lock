@@ -12907,16 +12907,16 @@
         },
         {
             "name": "vipnytt/sitemapparser",
-            "version": "v1.2.0",
+            "version": "v1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/VIPnytt/SitemapParser.git",
-                "reference": "151bceefa12d7f60d722a9c094bee119e80572e8"
+                "reference": "c414ec31b7d76f5dee32779e5f5efaa5e2786625"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/VIPnytt/SitemapParser/zipball/151bceefa12d7f60d722a9c094bee119e80572e8",
-                "reference": "151bceefa12d7f60d722a9c094bee119e80572e8",
+                "url": "https://api.github.com/repos/VIPnytt/SitemapParser/zipball/c414ec31b7d76f5dee32779e5f5efaa5e2786625",
+                "reference": "c414ec31b7d76f5dee32779e5f5efaa5e2786625",
                 "shasum": ""
             },
             "require": {
@@ -12929,6 +12929,11 @@
             "require-dev": {
                 "codeclimate/php-test-reporter": "^0",
                 "phpunit/phpunit": "^5.0 || ^6.0 || ^7.0 || ^8.0"
+            },
+            "suggest": {
+                "caseyamcl/guzzle_retry_middleware": "Allow automatic retry when request for sitemap fails",
+                "gmponos/guzzle_logger": "Advanced logging",
+                "hamburgscleanest/guzzle-advanced-throttle": "Throttle requests"
             },
             "type": "library",
             "autoload": {
@@ -12963,9 +12968,9 @@
             ],
             "support": {
                 "issues": "https://github.com/VIPnytt/SitemapParser/issues",
-                "source": "https://github.com/VIPnytt/SitemapParser/tree/v1.2.0"
+                "source": "https://github.com/VIPnytt/SitemapParser/tree/v1.3.0"
             },
-            "time": "2023-11-08T18:43:58+00:00"
+            "time": "2023-11-27T15:24:01+00:00"
         },
         {
             "name": "webflo/drupal-finder",
@@ -13212,16 +13217,16 @@
         },
         {
             "name": "colinodell/psr-testlogger",
-            "version": "v1.2.0",
+            "version": "v1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/colinodell/psr-testlogger.git",
-                "reference": "9246155e688b310fb3d0f201ead2445686b5844e"
+                "reference": "291f5b70ea0d3139787d18f442365a8e2784a462"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/colinodell/psr-testlogger/zipball/9246155e688b310fb3d0f201ead2445686b5844e",
-                "reference": "9246155e688b310fb3d0f201ead2445686b5844e",
+                "url": "https://api.github.com/repos/colinodell/psr-testlogger/zipball/291f5b70ea0d3139787d18f442365a8e2784a462",
+                "reference": "291f5b70ea0d3139787d18f442365a8e2784a462",
                 "shasum": ""
             },
             "require": {
@@ -13287,7 +13292,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-03-14T19:12:55+00:00"
+            "time": "2023-11-29T23:03:34+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -15709,16 +15714,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.10.44",
+            "version": "1.10.46",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "bf84367c53a23f759513985c54ffe0d0c249825b"
+                "reference": "90d3d25c5b98b8068916bbf08ce42d5cb6c54e70"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/bf84367c53a23f759513985c54ffe0d0c249825b",
-                "reference": "bf84367c53a23f759513985c54ffe0d0c249825b",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/90d3d25c5b98b8068916bbf08ce42d5cb6c54e70",
+                "reference": "90d3d25c5b98b8068916bbf08ce42d5cb6c54e70",
                 "shasum": ""
             },
             "require": {
@@ -15767,7 +15772,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-11-21T16:30:46+00:00"
+            "time": "2023-11-28T14:57:26+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
