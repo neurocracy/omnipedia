@@ -89,11 +89,10 @@ $settings['config_sync_directory'] = $app_root . '/../drupal_config/sync';
  * variable and enables the ones that are listed.
  *
  * @see https://www.drupal.org/project/config_split/issues/3109103
- *   Configuration Split issue explaining why a separate split is necessary for
- *   only enabling a specific module in production but not in other
- *   environments such as dev; a good example of where this is preferred is the
- *   Paranoia module, which is mostly only needed in production but can get in
- *   the in dev environments.
+ *   If you need a module to only be enabled in production but not in other
+ *   environments (an example being the Paranoia module), you can create a
+ *   configuration split that enables such modules and only enable that split in
+ *   production. See the issue for more information.
  */
 if (\getenv('DRUPAL_CONFIG_SPLITS') !== false) {
 
