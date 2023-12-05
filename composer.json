@@ -47,10 +47,6 @@
       "type": "vcs",
       "url": "https://git.drupalcode.org/issue/image_field_caption-3355337.git"
     },
-    "drupal/maintenance200": {
-      "type": "vcs",
-      "url": "https://github.com/Ambient-Impact/drupal-maintenance200.git"
-    },
     "drupal/omnipedia_access": {
       "type": "vcs",
       "url": "https://github.com/neurocracy/drupal-omnipedia-access.git"
@@ -162,7 +158,7 @@
     "drupal/key": "^1.14",
     "drupal/login_destination": "^2.0",
     "drupal/login_security": "^2.0",
-    "drupal/maintenance200": "1.x-dev@dev",
+    "drupal/maintenance200": "^2.1",
     "drupal/markdown": "^3.0",
     "drupal/media_entity_file_replace": "^1.0",
     "drupal/metatag": "^2.0",
