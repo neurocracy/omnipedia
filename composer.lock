@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5e9fa0378c6b945073fa7b75b9ccf1f8",
+    "content-hash": "bb52c07003866c85e1dd76822120c6da",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -3766,29 +3766,59 @@
         },
         {
             "name": "drupal/maintenance200",
-            "version": "1.x-dev",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Ambient-Impact/drupal-maintenance200.git",
-                "reference": "ac61a468814bca1393bd774f58331769aceaa22d"
+                "url": "https://git.drupalcode.org/project/maintenance200.git",
+                "reference": "8.x-2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Ambient-Impact/drupal-maintenance200/zipball/ac61a468814bca1393bd774f58331769aceaa22d",
-                "reference": "ac61a468814bca1393bd774f58331769aceaa22d",
-                "shasum": ""
+                "url": "https://ftp.drupal.org/files/projects/maintenance200-8.x-2.1.zip",
+                "reference": "8.x-2.1",
+                "shasum": "fc8ea60619b6b4682bade340e13fb4565d3a7e0c"
             },
-            "default-branch": true,
+            "require": {
+                "drupal/core": "^9.1 || ^10"
+            },
             "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.1",
+                    "datestamp": "1697195734",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0-or-later"
             ],
+            "authors": [
+                {
+                    "name": "Barrett",
+                    "homepage": "https://www.drupal.org/user/52745"
+                },
+                {
+                    "name": "ben.bunk",
+                    "homepage": "https://www.drupal.org/user/764808"
+                },
+                {
+                    "name": "kemsnake",
+                    "homepage": "https://www.drupal.org/user/914800"
+                },
+                {
+                    "name": "runeasgar",
+                    "homepage": "https://www.drupal.org/user/1105258"
+                }
+            ],
             "description": "Allows the maintenance page to return a configurable HTTP status code rather than the standard 503 code.",
+            "homepage": "https://www.drupal.org/project/maintenance200",
             "support": {
-                "source": "https://github.com/Ambient-Impact/drupal-maintenance200/tree/1.x",
-                "issues": "https://github.com/Ambient-Impact/drupal-maintenance200/issues"
-            },
-            "time": "2023-07-07T01:51:44+00:00"
+                "source": "https://git.drupalcode.org/project/maintenance200"
+            }
         },
         {
             "name": "drupal/markdown",
@@ -17981,7 +18011,6 @@
         "drupal/development_environment": 20,
         "drupal/gin": 10,
         "drupal/gin_toolbar": 10,
-        "drupal/maintenance200": 20,
         "drupal/omnipedia_access": 20,
         "drupal/omnipedia_asset": 20,
         "drupal/omnipedia_attached_data": 20,
