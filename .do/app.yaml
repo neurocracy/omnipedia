@@ -68,7 +68,7 @@ envs:
   value: ${APP_DOMAIN}
 - key: DRUPAL_OEMBED_HOST
   scope: RUN_AND_BUILD_TIME
-  value: preview-oembed.omnipedia.app
+  value: oembed.omnipedia.app
 - key: DRUPAL_REVERSE_PROXY_ENABLED
   scope: RUN_AND_BUILD_TIME
   value: "true"
