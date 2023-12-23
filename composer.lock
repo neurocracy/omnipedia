@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bb52c07003866c85e1dd76822120c6da",
+    "content-hash": "6010ba2fdbbe6ba52b3614818ffc881a",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -3405,17 +3405,17 @@
         },
         {
             "name": "drupal/hux",
-            "version": "1.2.2",
+            "version": "1.3.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/hux.git",
-                "reference": "1.2.2"
+                "reference": "1.3.0-beta2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/hux-1.2.2.zip",
-                "reference": "1.2.2",
-                "shasum": "955d4a994f0e8f253c15b2f8b70e22ed7d13e30b"
+                "url": "https://ftp.drupal.org/files/projects/hux-1.3.0-beta2.zip",
+                "reference": "1.3.0-beta2",
+                "shasum": "d7990c8fa2d6b33cfcb3d9b13a260f05eaf46b81"
             },
             "require": {
                 "drupal/core": ">=10",
@@ -3436,11 +3436,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "1.2.2",
-                    "datestamp": "1701163729",
+                    "version": "1.3.0-beta2",
+                    "datestamp": "1702898464",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 },
                 "installer-paths": {
@@ -18011,6 +18011,7 @@
         "drupal/development_environment": 20,
         "drupal/gin": 10,
         "drupal/gin_toolbar": 10,
+        "drupal/hux": 10,
         "drupal/omnipedia_access": 20,
         "drupal/omnipedia_asset": 20,
         "drupal/omnipedia_attached_data": 20,

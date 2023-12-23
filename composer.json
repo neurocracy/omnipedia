@@ -153,6 +153,7 @@
     "drupal/gin": "^3.0@beta",
     "drupal/gin_toolbar": "^1.0@beta",
     "drupal/honeypot": "^2.0",
+    "drupal/hux": "^1.3@beta",
     "drupal/image_field_caption": "dev-3355337-support-drupal-10@dev as 1.2",
     "drupal/image_style_warmer": "^1.2",
     "drupal/key": "^1.14",
@@ -261,10 +262,6 @@
       },
       "drupal/honeypot": {
         "honeypot_update_8102() no longer fails if key exists [#2943526]: https://www.drupal.org/project/honeypot/issues/2943526#comment-15246770": "patches/drupal/honeypot/2943526-89-missing-primary-key-2.1.x-preexisting.patch"
-      },
-      "drupal/hux": {
-        "Removing a Hux hook implementation/class can cause fatal errors [#3302312]: https://www.drupal.org/project/hux/issues/3302312#comment-15207542": "patches/drupal/hux/3302312-discovery-deployment-identifier.patch",
-        "Unnecessary use of generators? [#3363080]: https://www.drupal.org/project/hux/issues/3363080#mr17-note213601": "patches/drupal/hux/3363080-unnecessary-use-of-generators.patch"
       },
       "drupal/image_style_warmer": {
         "Support webp images [#3319397]: https://www.drupal.org/project/image_style_warmer/issues/3319397#comment-14802527": "patches/drupal/image_style_warmer/webp-module-support-3319397-5.patch"
