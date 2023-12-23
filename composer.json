@@ -136,12 +136,12 @@
     "drupal/ambientimpact_core": "2.x-dev@dev",
     "drupal/ambientimpact_icon": "1.x-dev@dev",
     "drupal/ambientimpact_markdown": "2.x-dev@dev",
-    "drupal/ambientimpact_media": "3.x-dev@dev",
+    "drupal/ambientimpact_media": "4.x-dev@dev",
     "drupal/ambientimpact_ux": "1.x-dev@dev",
     "drupal/autoban": "^1.7",
     "drupal/config_split": "^1.6",
-    "drupal/core-composer-scaffold": "^10.1",
-    "drupal/core-recommended": "^10.1.2",
+    "drupal/core-composer-scaffold": "^10.2",
+    "drupal/core-recommended": "^10.2",
     "drupal/csp": "^1.13",
     "drupal/dblog_persistent": "^2.0",
     "drupal/development_environment": "2.x-dev@dev",
@@ -216,7 +216,7 @@
     "drupal/config_delete": "^2.0",
     "drupal/config_devel": "^1.2",
     "drupal/config_inspector": "^2.1",
-    "drupal/core-dev": "^10.1",
+    "drupal/core-dev": "^10.2",
     "drupal/devel": "^5.0",
     "drupal/devel_entity_updates": "^4.0",
     "drupal/examples": "^4.0",
@@ -237,7 +237,8 @@
       "drupal/core-composer-scaffold": true,
       "oomphinc/composer-installers-extender": true,
       "dealerdirect/phpcodesniffer-composer-installer": true,
-      "phpstan/extension-installer": true
+      "phpstan/extension-installer": true,
+      "php-http/discovery": true
     }
   },
   "autoload": {

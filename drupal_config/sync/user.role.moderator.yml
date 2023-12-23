@@ -8,6 +8,7 @@ dependencies:
     - contextual
     - file
     - flood_control
+    - help
     - omnipedia_access
     - shortcut
     - system
@@ -20,6 +21,7 @@ is_admin: null
 permissions:
   - 'access administration pages'
   - 'access contextual links'
+  - 'access help pages'
   - 'access shortcuts'
   - 'access site in maintenance mode'
   - 'access toolbar'

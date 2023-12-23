@@ -8,5 +8,6 @@ _core:
   default_config_hash: KY0bNIY8dPEtaz6aP7RvmIJJPz-csGJG4d86eSht2BQ
 id: media.compact
 label: Compact
+description: ''
 targetEntityType: media
 cache: true

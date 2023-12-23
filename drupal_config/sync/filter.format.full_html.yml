@@ -10,25 +10,12 @@ name: 'Full HTML'
 format: full_html
 weight: -8
 filters:
-  filter_htmlcorrector:
-    id: filter_htmlcorrector
-    provider: filter
-    status: true
-    weight: 10
-    settings: {  }
   filter_autop:
     id: filter_autop
     provider: filter
     status: true
     weight: 1
     settings: {  }
-  filter_url:
-    id: filter_url
-    provider: filter
-    status: true
-    weight: 0
-    settings:
-      filter_url_length: 72
   filter_html:
     id: filter_html
     provider: filter
@@ -38,6 +25,19 @@ filters:
       allowed_html: ''
       filter_html_help: true
       filter_html_nofollow: false
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: true
+    weight: 10
+    settings: {  }
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: true
+    weight: 0
+    settings:
+      filter_url_length: 72
   token_filter:
     id: token_filter
     provider: token_filter

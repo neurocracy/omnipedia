@@ -6,5 +6,6 @@ dependencies:
     - file
 id: file.large
 label: large
+description: ''
 targetEntityType: file
 cache: true
