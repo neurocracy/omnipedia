@@ -6,5 +6,6 @@ dependencies:
     - media
 id: media.omnipedia_embedded_group
 label: 'Omnipedia embedded group'
+description: ''
 targetEntityType: media
 cache: true

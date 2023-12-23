@@ -38,6 +38,7 @@ dependencies:
     - file
     - filter
     - flood_control
+    - help
     - honeypot
     - image
     - key
@@ -84,6 +85,7 @@ permissions:
   - 'access devel information'
   - 'access development environment email logs'
   - 'access files overview'
+  - 'access help pages'
   - 'access media overview'
   - 'access rules debug'
   - 'access security review list'

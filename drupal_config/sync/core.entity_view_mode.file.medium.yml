@@ -6,5 +6,6 @@ dependencies:
     - file
 id: file.medium
 label: medium
+description: ''
 targetEntityType: file
 cache: true

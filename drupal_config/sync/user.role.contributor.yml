@@ -9,6 +9,7 @@ dependencies:
     - contextual
     - file
     - filter
+    - help
     - media
     - node
     - omnipedia_access
@@ -25,6 +26,7 @@ permissions:
   - 'access content'
   - 'access content overview'
   - 'access contextual links'
+  - 'access help pages'
   - 'access media overview'
   - 'access shortcuts'
   - 'access toolbar'
