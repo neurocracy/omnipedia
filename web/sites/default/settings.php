@@ -10,6 +10,9 @@ declare(strict_types=1);
  *
  * @see default.settings.php
  *   Contains full documentation.
+ *
+ * @todo Convert inline validation and error messages to classes, either by
+ *   creating our own or reusing existing Drupal/Symfony classes.
  */
 
 /**
@@ -115,6 +118,14 @@ if (\getenv('DRUPAL_CONFIG_SPLITS') !== false) {
  */
 if (\getenv('DRUPAL_HASH_SALT') !== false) {
 
+  if (\mb_strlen(\getenv('DRUPAL_HASH_SALT')) === 0) {
+
+    throw new \UnexpectedValueException(
+      'The "DRUPAL_HASH_SALT" environment variable cannot be set to an empty value if set!',
+    );
+
+  }
+
   $settings['hash_salt'] = \getenv('DRUPAL_HASH_SALT');
 
 }
@@ -145,7 +156,17 @@ $settings['update_free_access'] = false;
  * Primary host name if set via the 'DRUPAL_PRIMARY_HOST' environment variable.
  */
 if (\getenv('DRUPAL_PRIMARY_HOST') !== false) {
+
+  if (\mb_strlen(\getenv('DRUPAL_PRIMARY_HOST')) === 0) {
+
+    throw new \UnexpectedValueException(
+      'The "DRUPAL_PRIMARY_HOST" environment variable cannot be set to an empty value if set!',
+    );
+
+  }
+
   $settings['primary_host'] = \getenv('DRUPAL_PRIMARY_HOST');
+
 }
 
 /**
@@ -158,9 +179,19 @@ if (\getenv('DRUPAL_PRIMARY_HOST') !== false) {
  * prepend 'https://'.
  */
 if (\getenv('DRUPAL_OEMBED_HOST') !== false) {
+
+  if (\mb_strlen(\getenv('DRUPAL_OEMBED_HOST')) === 0) {
+
+    throw new \UnexpectedValueException(
+      'The "DRUPAL_OEMBED_HOST" environment variable cannot be set to an empty value if set!',
+    );
+
+  }
+
   $config['media.settings']['iframe_domain'] = 'https://' . \getenv(
     'DRUPAL_OEMBED_HOST'
   );
+
 }
 
 /**
@@ -205,15 +236,30 @@ $settings['file_private_path'] = \realpath(
 );
 
 /**
- * Enable S3 File System public/private takeover if environment variable exists.
+ * Enable S3 File System public/private takeover via environment variable.
  *
  * The public and private file paths should still be set above regardless so
  * Drupal won't complain. The S3 module will still override them when the below
  * are active.
  */
 if (\getenv('S3FS_TAKEOVER') !== false) {
-  $settings['s3fs.use_s3_for_public']   = true;
-  $settings['s3fs.use_s3_for_private']  = true;
+
+  if (!\in_array(\mb_strtolower(\getenv('S3FS_TAKEOVER')), ['true', 'false'])) {
+
+    throw new \UnexpectedValueException(
+      'The "S3FS_TAKEOVER" environment variable must be either "true" or "false" if set! ' .
+      'Got: "' . \getenv('S3FS_TAKEOVER') . '"',
+    );
+
+  }
+
+  if (\mb_strtolower(\getenv('S3FS_TAKEOVER')) === 'true') {
+
+    $settings['s3fs.use_s3_for_public']   = true;
+    $settings['s3fs.use_s3_for_private']  = true;
+
+  }
+
 }
 
 /**
@@ -247,15 +293,30 @@ if (\getenv('S3FS_TAKEOVER') !== false) {
  */
 if (\getenv('DRUPAL_REVERSE_PROXY_ENABLED') !== false) {
 
-  $settings['reverse_proxy'] = true;
+  if (!\in_array(
+    \mb_strtolower(\getenv('DRUPAL_REVERSE_PROXY_ENABLED')), ['true', 'false'],
+  )) {
 
-  // These are the only headers that the Symfony Request object supports out of
-  // the box that Cloudflare sends.
-  //
-  // @see https://developers.cloudflare.com/fundamentals/get-started/reference/http-request-headers/
-  $settings['reverse_proxy_trusted_headers'] =
-    \Symfony\Component\HttpFoundation\Request::HEADER_X_FORWARDED_FOR |
-    \Symfony\Component\HttpFoundation\Request::HEADER_X_FORWARDED_PROTO;
+    throw new \UnexpectedValueException(
+      'The "DRUPAL_REVERSE_PROXY_ENABLED" environment variable must be either "true" or "false" if set! ' .
+      'Got: "' . \getenv('DRUPAL_REVERSE_PROXY_ENABLED') . '"',
+    );
+
+  }
+
+  if (\mb_strtolower(\getenv('DRUPAL_REVERSE_PROXY_ENABLED')) === 'true') {
+
+    $settings['reverse_proxy'] = true;
+
+    // These are the only headers that the Symfony Request object supports out of
+    // the box that Cloudflare sends.
+    //
+    // @see https://developers.cloudflare.com/fundamentals/get-started/reference/http-request-headers/
+    $settings['reverse_proxy_trusted_headers'] =
+      \Symfony\Component\HttpFoundation\Request::HEADER_X_FORWARDED_FOR |
+      \Symfony\Component\HttpFoundation\Request::HEADER_X_FORWARDED_PROTO;
+
+  }
 
 }
 
@@ -378,7 +439,21 @@ if (\getenv('DRUPAL_REVERSE_PROXY_ENABLED') === false) {
  *   installed in all environments.
  */
 if (\getenv('DRUPAL_SUPPRESS_EMAIL') !== false) {
+
+
+  if (!\in_array(
+    \mb_strtolower(\getenv('DRUPAL_SUPPRESS_EMAIL')), ['true', 'false'],
+  )) {
+
+    throw new \UnexpectedValueException(
+      'The "DRUPAL_SUPPRESS_EMAIL" environment variable must be either "true" or "false" if set! ' .
+      'Got: "' . \getenv('DRUPAL_SUPPRESS_EMAIL') . '"',
+    );
+
+  }
+
   $settings['development_environment.log_emails'] = true;
+
 }
 
 /**
@@ -389,7 +464,10 @@ foreach ([
   'DRUPAL_SMTP_HOST_SECONDARY'  => 'smtp_hostbackup',
 ] as $envName => $configName) {
 
-  if (\getenv($envName) === false) {
+  if (
+    \getenv($envName) === false ||
+    \mb_strlen(\getenv($envName)) === 0
+  ) {
     continue;
   }
 
