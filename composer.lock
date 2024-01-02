@@ -1890,12 +1890,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-ux.git",
-                "reference": "2c795bbb11f2af596d126a311edf3bc1fbce3901"
+                "reference": "2256698bda465dd5ce42d65564b617712d8aa36e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-ux/zipball/2c795bbb11f2af596d126a311edf3bc1fbce3901",
-                "reference": "2c795bbb11f2af596d126a311edf3bc1fbce3901",
+                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-ux/zipball/2256698bda465dd5ce42d65564b617712d8aa36e",
+                "reference": "2256698bda465dd5ce42d65564b617712d8aa36e",
                 "shasum": ""
             },
             "require": {
@@ -1924,7 +1924,7 @@
                 "source": "https://github.com/Ambient-Impact/drupal-ambientimpact-ux",
                 "issues": "https://github.com/Ambient-Impact/drupal-ambientimpact-ux/issues"
             },
-            "time": "2023-12-31T15:53:46+00:00"
+            "time": "2024-01-02T22:19:41+00:00"
         },
         {
             "name": "drupal/autoban",
