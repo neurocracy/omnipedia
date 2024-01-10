@@ -524,11 +524,42 @@ $settings['entity_update_batch_size'] = 50;
 $settings['entity_update_backup'] = true;
 
 /**
- * Suppress PHP deprecation warnings.
+ * Default to reporting all error levels, overriding current Drupal defaults.
+ *
+ * This is the default value for PHP, but Drupal sets a different value by
+ * default.
+ *
+ * @see https://www.php.net/manual/en/errorfunc.configuration.php#ini.error-reporting
  *
  * @see https://www.drupal.org/project/drupal/issues/1267246
  */
-\error_reporting(\E_STRICT | \E_ALL & ~\E_DEPRECATED);
+\error_reporting(\E_ALL);
+
+/**
+ * Suppress PHP deprecation warnings via environment variable.
+ *
+ * @see https://www.php.net/manual/en/errorfunc.configuration.php#ini.error-reporting
+ *
+ * @see https://www.drupal.org/project/drupal/issues/1267246
+ */
+if (\getenv('DRUPAL_SUPPRESS_DEPRECATIONS') !== false) {
+
+  if (!\in_array(
+    \mb_strtolower(\getenv('DRUPAL_SUPPRESS_DEPRECATIONS')), ['true', 'false'],
+  )) {
+
+    throw new \UnexpectedValueException(
+      'The "DRUPAL_SUPPRESS_DEPRECATIONS" environment variable must be either "true" or "false" if set! ' .
+      'Got: "' . \getenv('DRUPAL_SUPPRESS_DEPRECATIONS') . '"',
+    );
+
+  }
+
+  if (\getenv('DRUPAL_SUPPRESS_DEPRECATIONS') === 'true') {
+    \error_reporting(\E_STRICT | \E_ALL & ~\E_DEPRECATED);
+  }
+
+}
 
 /**
  * Load local development override configuration, if available.

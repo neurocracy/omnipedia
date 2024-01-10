@@ -72,6 +72,9 @@ envs:
 - key: DRUPAL_REVERSE_PROXY_ENABLED
   scope: RUN_AND_BUILD_TIME
   value: "true"
+- key: DRUPAL_SUPPRESS_DEPRECATIONS
+  scope: RUN_TIME
+  value: "true"
 - key: DRUPAL_SMTP_HOST_PRIMARY
   scope: RUN_TIME
   value: "_DRUPAL_SMTP_HOST_PRIMARY_"
