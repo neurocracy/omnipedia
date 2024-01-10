@@ -451,7 +451,9 @@ if (\getenv('DRUPAL_SUPPRESS_EMAIL') !== false) {
 
   }
 
-  $settings['development_environment.log_emails'] = true;
+  if (\getenv('DRUPAL_SUPPRESS_EMAIL') === 'true') {
+    $settings['development_environment.log_emails'] = true;
+  }
 
 }
 
