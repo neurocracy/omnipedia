@@ -440,7 +440,6 @@ if (\getenv('DRUPAL_REVERSE_PROXY_ENABLED') === false) {
  */
 if (\getenv('DRUPAL_SUPPRESS_EMAIL') !== false) {
 
-
   if (!\in_array(
     \mb_strtolower(\getenv('DRUPAL_SUPPRESS_EMAIL')), ['true', 'false'],
   )) {
