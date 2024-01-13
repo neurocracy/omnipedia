@@ -6,11 +6,11 @@ spec:
   features:
     - buildpack-stack=ubuntu-22
 
-  domains:
-  - domain: omnipedia.app
-    type: PRIMARY
-  - domain: oembed.omnipedia.app
-    type: ALIAS
+  # domains:
+  # - domain: omnipedia.app
+  #   type: PRIMARY
+  # - domain: oembed.omnipedia.app
+  #   type: ALIAS
 
   databases:
   - cluster_name: _CLUSTER_NAME_
