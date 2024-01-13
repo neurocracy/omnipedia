@@ -263,6 +263,36 @@ if (\getenv('S3FS_TAKEOVER') !== false) {
 }
 
 /**
+ * S3 File System configuration overrides from environment variables.
+ *
+ * This allows details to vary per environment. E.g. use a different bucket in a
+ * staging environment, etc.
+ */
+foreach ([
+  'S3FS_BUCKET'   => 'bucket',
+  'S3FS_DOMAIN'   => 'domain',
+  'S3FS_HOSTNAME' => 'hostname',
+  'S3FS_REGION'   => 'region',
+] as $envName => $configName) {
+
+  if (\getenv($env) === false) {
+    continue;
+  }
+
+
+  if (\mb_strlen(\getenv($envName)) === 0) {
+
+    throw new \UnexpectedValueException(
+      'The "' . $envName . '" environment variable cannot be set to an empty value if set!',
+    );
+
+  }
+
+  $config['s3fs.settings'][$configName] = \getenv($envName);
+
+}
+
+/**
  * Reverse Proxy Configuration.
  *
  * If the environment variable is defined, we enable the reverse proxy

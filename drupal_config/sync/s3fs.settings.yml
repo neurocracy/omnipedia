@@ -1,13 +1,13 @@
 _core:
   default_config_hash: VV0HFGFvi0Pou7lakptNvL-oNLy6iIUp5m6b6gf4xos
 credentials_file: ''
-bucket: omnipedia-production
-region: nyc3
+bucket: ''
+region: ''
 use_cname: true
 domain_root: none
 use_customhost: true
-hostname: 'https://nyc3.digitaloceanspaces.com'
-domain: cdn.omnipedia.app
+hostname: ''
+domain: ''
 use_path_style_endpoint: false
 disable_version_sync: false
 cache_control_header: ''
