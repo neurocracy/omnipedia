@@ -275,7 +275,7 @@ foreach ([
   'S3FS_REGION'   => 'region',
 ] as $envName => $configName) {
 
-  if (\getenv($env) === false) {
+  if (\getenv($envName) === false) {
     continue;
   }
 
