@@ -11,11 +11,7 @@ module: {  }
 theme: {  }
 blacklist: {  }
 graylist:
-  - block.block.omnipedia_site_theme_account_menu
   - dblog.settings
   - gin.settings
-  - user.role.anonymous
-  - user.role.authenticated
-  - user.settings
 graylist_dependents: true
 graylist_skip_equal: true

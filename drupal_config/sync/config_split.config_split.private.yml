@@ -1,0 +1,19 @@
+uuid: 798abab8-9344-42da-9bbf-6bd23e6ff800
+langcode: en
+status: false
+dependencies: {  }
+id: private
+label: 'Private content'
+description: 'Private content site configuration split.'
+weight: 0
+folder: ../drupal_config/splits/private
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist:
+  - block.block.omnipedia_site_theme_account_menu
+  - user.role.anonymous
+  - user.role.authenticated
+  - user.settings
+graylist_dependents: true
+graylist_skip_equal: true
