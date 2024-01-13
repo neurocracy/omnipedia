@@ -1,5 +1,16 @@
 #!/bin/bash
 
+# Create .htaccess in various directories to prevent PHP execution.
+#
+# Note that while this is in the build directory, it must be executed during the
+# run phase because the database is not available during the build phase. Also
+# note that this will operate on the current App Platform service or worker, so
+# it must be run in each one and cannot be run in a pre- or post-deploy job
+# because it would write the .htaccess files to the filesystem of those jobs,
+# not the service or worker filesystems.
+#
+# @see \Drupal\Core\File\HtaccessWriter::ensure()
+
 # Create .htaccess in files directories to prevent PHP execution.
 #
 # Creates the necessary .htaccess files to public, private, and asset

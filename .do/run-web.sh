@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# @see https://stackoverflow.com/questions/6659689/referring-to-a-file-relative-to-executing-script#6659698
-source "${BASH_SOURCE%/*}/run-common.sh"
+# Create .htaccess in various directories to prevent PHP execution.
+source "${BASH_SOURCE%/*}/build/write-htaccess.sh"
 
 # Run the Heroku PHP buildpack PHP-FPM with our custom config appended.
 #

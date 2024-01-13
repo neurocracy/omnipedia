@@ -13,9 +13,9 @@ require __DIR__ . '/../vendor/autoload.php';
 /** @var \React\EventLoop\LoopInterface */
 $loop = Loop::get();
 
-// Run common tasks immediately.
+// Create .htaccess in various directories to prevent PHP execution.
 $loop->futureTick(function(): void {
-  (new WorkerProcess(__DIR__ . '/run-common.sh'))->start();
+  (new WorkerProcess(__DIR__ . '/build/write-htaccess.sh'))->start();
 });
 
 // Run cron every 15 minutes.
