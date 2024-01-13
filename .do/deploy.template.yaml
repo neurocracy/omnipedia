@@ -110,7 +110,7 @@ spec:
     type: SECRET
     value: "_SPACES_SECRET_"
   - key: S3FS_TAKEOVER
-    scope: RUN_AND_BUILD_TIME
+    scope: RUN_TIME
     value: "true"
 
   ingress:
