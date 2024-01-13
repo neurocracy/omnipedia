@@ -1,14 +1,6 @@
 #!/bin/bash
 
-# Build the background tasks worker.
-#
-# This should be identical to build-web.sh minus building the front-end assets,
-# as those are not currently needed for the background tasks worker.
-
-# Dump optimized Composer autoloader using APCu for production.
-#
-# @see https://getcomposer.org/doc/articles/autoloader-optimization.md
-composer dump-autoload --optimize --apcu
+source "${BASH_SOURCE%/*}/build/composer.sh"
 
 # Secure the file system by removing write permissions.
 #
