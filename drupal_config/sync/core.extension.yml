@@ -138,8 +138,8 @@ module:
   password_policy: 10
   views: 10
   standard: 1000
-  eu_cookie_compliance: 1001
   readonlymode: 9999
+  eu_cookie_compliance: 10000
 theme:
   stable: 0
   classy: 0

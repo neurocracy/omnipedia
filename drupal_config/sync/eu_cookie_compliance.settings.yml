@@ -5,8 +5,8 @@ uuid: 23f87a44-3143-496e-8a85-4c825c16c0a7
 popup_enabled: true
 popup_clicking_confirmation: false
 popup_scrolling_confirmation: false
-eu_only: null
-eu_only_js: null
+eu_only: false
+eu_only_js: false
 popup_position: false
 fixed_top_position: true
 popup_info:
@@ -38,13 +38,19 @@ popup_text_hex: ''
 domain: ''
 domains_option: 1
 domains_list: ''
-exclude_paths: "/admin\r\n/admin/*\r\n/batch\r\n/node/add*\r\n/node/*/*\r\n/user/*/*"
+exclude_paths: |-
+  /admin
+  /admin/*
+  /batch
+  /node/add*
+  /user/*/*
 exclude_admin_theme: true
 cookie_session: 0
 set_cookie_session_zero_on_disagree: 0
 cookie_lifetime: 100
 use_mobile_message: false
 use_bare_css: true
+use_olivero_css: false
 disagree_do_not_show_popup: false
 reload_page: false
 reload_options: 0
@@ -79,3 +85,6 @@ close_button_action: close_banner
 reject_button_label: ''
 reject_button_enabled: false
 close_button_enabled: false
+dependencies:
+  config:
+    - filter.format.wiki_html
