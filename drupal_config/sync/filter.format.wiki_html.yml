@@ -10,6 +10,7 @@ dependencies:
     - media
     - omnipedia_attached_data
     - omnipedia_content
+    - pathologic
     - token_filter
 name: 'Wiki HTML'
 format: wiki_html
@@ -84,6 +85,16 @@ filters:
     status: true
     weight: -34
     settings: {  }
+  filter_pathologic:
+    id: filter_pathologic
+    provider: pathologic
+    status: true
+    weight: 50
+    settings:
+      settings_source: global
+      local_settings:
+        protocol_style: full
+        local_paths: ''
   filter_url:
     id: filter_url
     provider: filter
@@ -97,7 +108,6 @@ filters:
     status: true
     weight: -47
     settings:
-      override: false
       id: commonmark
       enabled: true
       render_strategy:
@@ -114,6 +124,7 @@ filters:
           filter_align: false
           filter_caption: true
           media_embed: false
+      override: false
     filterFormat: wiki_html
   media_embed:
     id: media_embed
