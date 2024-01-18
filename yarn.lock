@@ -4757,7 +4757,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"drupal-ambientimpact-media@workspace:^2 || ^3, drupal-ambientimpact-media@workspace:web/modules/custom/ambientimpact_media":
+"drupal-ambientimpact-media@workspace:^2 || ^3 || ^4, drupal-ambientimpact-media@workspace:web/modules/custom/ambientimpact_media":
   version: 0.0.0-use.local
   resolution: "drupal-ambientimpact-media@workspace:web/modules/custom/ambientimpact_media"
   dependencies:
@@ -4897,7 +4897,7 @@ __metadata:
     autoprefixer: ^10.2.5
     css-loader: ^6.7.1
     drupal-ambientimpact-core: "workspace:^2"
-    drupal-ambientimpact-media: "workspace:^2 || ^3"
+    drupal-ambientimpact-media: "workspace:^2 || ^3 || ^4"
     glob: ^10.3.10
     mini-css-extract-plugin: ^2.6.1
     postcss: ^8.4.31

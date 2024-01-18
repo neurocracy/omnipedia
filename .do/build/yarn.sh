@@ -9,7 +9,7 @@
 yarn add \
   "drupal-ambientimpact-core@workspace:^2" \
   "drupal-ambientimpact-icon@workspace:^1" \
-  "drupal-ambientimpact-media@workspace:^3" \
+  "drupal-ambientimpact-media@workspace:^4" \
   "drupal-ambientimpact-ux@workspace:^1" \
   "drupal-omnipedia-block@workspace:^6" \
   "drupal-omnipedia-changes@workspace:^7" \
