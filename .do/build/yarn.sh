@@ -15,6 +15,6 @@ yarn add \
   "drupal-omnipedia-changes@workspace:^7" \
   "drupal-omnipedia-content@workspace:^6" \
   "drupal-omnipedia-media@workspace:^6" \
-  "drupal-omnipedia-site-theme@workspace:^6"
+  "drupal-omnipedia-site-theme@workspace:^7"
 
 yarn build:deploy

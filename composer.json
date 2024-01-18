@@ -178,7 +178,7 @@
     "drupal/omnipedia_menu": "^4.0@dev",
     "drupal/omnipedia_refreshless": "^2.0@dev",
     "drupal/omnipedia_search": "^4.0@dev",
-    "drupal/omnipedia_site_theme": "^6.0@dev",
+    "drupal/omnipedia_site_theme": "^7.0@dev",
     "drupal/omnipedia_user": "^6.0@dev",
     "drupal/omnipedia_warmer": "^2.0@dev",
     "drupal/paranoia": "^1.0@RC",

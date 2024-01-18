@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "430570205f2bbad0ca4283bebbaf57b7",
+    "content-hash": "dc46a3a344eea9e19b7718ec54c636e7",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -4763,16 +4763,16 @@
         },
         {
             "name": "drupal/omnipedia_site_theme",
-            "version": "6.x-dev",
+            "version": "7.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neurocracy/drupal-omnipedia-site-theme.git",
-                "reference": "228a47738a3316caafa4981d9a3718794fc9e8c2"
+                "reference": "5ef17fc0be63b4733b6deba182c1a5660b4d7ad9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-site-theme/zipball/228a47738a3316caafa4981d9a3718794fc9e8c2",
-                "reference": "228a47738a3316caafa4981d9a3718794fc9e8c2",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-site-theme/zipball/5ef17fc0be63b4733b6deba182c1a5660b4d7ad9",
+                "reference": "5ef17fc0be63b4733b6deba182c1a5660b4d7ad9",
                 "shasum": ""
             },
             "require": {
@@ -4789,7 +4789,6 @@
                 "symfony/css-selector": "^6.2",
                 "symfony/dom-crawler": "^6.2"
             },
-            "default-branch": true,
             "type": "drupal-custom-theme",
             "license": [
                 "GPL-2.0-or-later"
@@ -4807,7 +4806,7 @@
                 "source": "https://github.com/neurocracy/drupal-omnipedia-site-theme",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-site-theme/issues"
             },
-            "time": "2024-01-15T22:59:33+00:00"
+            "time": "2024-01-18T00:22:26+00:00"
         },
         {
             "name": "drupal/omnipedia_user",
