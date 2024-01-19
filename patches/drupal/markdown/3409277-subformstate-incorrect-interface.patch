@@ -1,0 +1,75 @@
+diff --git a/src/Form/ParserConfigurationForm.php b/src/Form/ParserConfigurationForm.php
+index d3adf73312a748f7cd2f937684502834e5d7eba3..99ac41c1f95e5ded5a39e4534ab74306b5449ed6 100644
+--- a/src/Form/ParserConfigurationForm.php
++++ b/src/Form/ParserConfigurationForm.php
+@@ -18,6 +18,7 @@ use Drupal\Core\Render\Element;
+ use Drupal\Core\Render\ElementInfoManagerInterface;
+ use Drupal\Core\Render\Markup;
+ use Drupal\Core\Url;
++use Drupal\Core\Form\SubformState;
+ use Drupal\markdown\Markdown;
+ use Drupal\markdown\Plugin\Markdown\ExtensibleParserInterface;
+ use Drupal\markdown\Plugin\Markdown\ParserInterface;
+diff --git a/src/Form/SubformState.php b/src/Form/SubformState.php
+index 9fc07775fa112001d2be2225c371eaa0968248df..92178c35d72b600f3cae6db3f410eadca17d0280 100644
+--- a/src/Form/SubformState.php
++++ b/src/Form/SubformState.php
+@@ -3,8 +3,9 @@
+ namespace Drupal\markdown\Form;
+ 
+ use Drupal\Component\Serialization\Json;
++use Drupal\Core\Form\FormInterface;
+ use Drupal\Core\Form\FormStateInterface;
+-use Drupal\markdown\BcSupport\SubformState as CoreSubformState;
++use Drupal\Core\Form\SubformState as CoreSubformState;
+ use Drupal\markdown\Traits\FormTrait;
+ 
+ /**
+@@ -54,7 +55,7 @@ class SubformState extends CoreSubformState implements SubformStateInterface {
+   /**
+    * {@inheritdoc}
+    */
+-  public static function createForSubform(array &$subform, array &$parent_form, FormStateInterface $parent_form_state) {
++  public static function createForSubform(array &$subform, array &$parent_form, FormStateInterface $parent_form_state, ?FormInterface $subform_form_object = null) {
+     // Attempt to construct #parents array based on passed values.
+     if (!isset($subform['#parents']) && $parent_form_state instanceof SubformStateInterface && ($name = array_search($subform, $parent_form, TRUE))) {
+       $subform['#parents'] = array_merge($parent_form_state->getAllParents(), [$name]);
+diff --git a/src/Form/SubformStateInterface.php b/src/Form/SubformStateInterface.php
+index a4f7d6260a175726632712536a0b619d137ccfb0..44bb98b38dc532d0eb5a973fb340e418e2b5a303 100644
+--- a/src/Form/SubformStateInterface.php
++++ b/src/Form/SubformStateInterface.php
+@@ -2,7 +2,7 @@
+ 
+ namespace Drupal\markdown\Form;
+ 
+-use Drupal\markdown\BcSupport\SubformStateInterface as CoreSubformStateInterface;
++use Drupal\Core\Form\SubformStateInterface as CoreSubformStateInterface;
+ 
+ /**
+  * Interface for markdown plugin subforms.
+diff --git a/src/Plugin/Filter/FilterMarkdown.php b/src/Plugin/Filter/FilterMarkdown.php
+index 186449f8c71c282b24ce604af54db566fff3cf15..17611cbc93067f5cec0e86a6552e944d9fb9dab2 100644
+--- a/src/Plugin/Filter/FilterMarkdown.php
++++ b/src/Plugin/Filter/FilterMarkdown.php
+@@ -15,7 +15,7 @@ use Drupal\filter\Entity\FilterFormat;
+ use Drupal\filter\FilterProcessResult;
+ use Drupal\filter\Plugin\FilterBase;
+ use Drupal\markdown\Form\ParserConfigurationForm;
+-use Drupal\markdown\Form\SubformState;
++use Drupal\Core\Form\SubformState;
+ use Drupal\markdown\Plugin\Markdown\ParserInterface;
+ use Drupal\markdown\PluginManager\ParserManagerInterface;
+ use Drupal\markdown\Traits\FilterFormatAwareTrait;
+diff --git a/src/Plugin/Markdown/CommonMark/CommonMark.php b/src/Plugin/Markdown/CommonMark/CommonMark.php
+index 8e7c2ebde38c16f4690d492380aa838da643aa26..d94b11da019644efe22815b7dc8614d86202976f 100644
+--- a/src/Plugin/Markdown/CommonMark/CommonMark.php
++++ b/src/Plugin/Markdown/CommonMark/CommonMark.php
+@@ -7,7 +7,7 @@ use Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException;
+ use Drupal\Component\Utility\NestedArray;
+ use Drupal\Core\Form\FormStateInterface;
+ use Drupal\Core\Language\LanguageInterface;
+-use Drupal\markdown\Form\SubformState;
++use Drupal\Core\Form\SubformState;
+ use Drupal\markdown\Plugin\Markdown\AllowedHtmlInterface;
+ use Drupal\markdown\Plugin\Markdown\BaseExtensibleParser;
+ use Drupal\markdown\Plugin\Markdown\SettingsInterface;
