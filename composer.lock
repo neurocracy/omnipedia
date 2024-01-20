@@ -2469,28 +2469,27 @@
         },
         {
             "name": "drupal/csp",
-            "version": "1.24.0",
+            "version": "1.30.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/csp.git",
-                "reference": "8.x-1.24"
+                "reference": "8.x-1.30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/csp-8.x-1.24.zip",
-                "reference": "8.x-1.24",
-                "shasum": "d07ac3e6089209b0716691b43a93681534df6468"
+                "url": "https://ftp.drupal.org/files/projects/csp-8.x-1.30.zip",
+                "reference": "8.x-1.30",
+                "shasum": "50ff811459e9d93a1d605f96ada4082aa0dc637f"
             },
             "require": {
-                "drupal/core": "^9.5 || ~10.0.0 || ^10.1.3",
-                "ext-json": "*",
-                "php": ">=7.4"
+                "drupal/core": "~10.0.0 || ^10.1.3",
+                "ext-json": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.24",
-                    "datestamp": "1703324718",
+                    "version": "8.x-1.30",
+                    "datestamp": "1705655685",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
