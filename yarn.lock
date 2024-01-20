@@ -2490,10 +2490,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hotwired/turbo@npm:^7.3.0":
-  version: 7.3.0
-  resolution: "@hotwired/turbo@npm:7.3.0"
-  checksum: ccc03c980e4b4636e48ea2132c7d28be1be4f4e6123f63905fbf871e7647369b5c6ce53301443b218d7abf68fa4897eaf614254688108ed6ae303c5040241a97
+"@hotwired/turbo@npm:^8.0.0-beta.2":
+  version: 8.0.0-beta.2
+  resolution: "@hotwired/turbo@npm:8.0.0-beta.2"
+  checksum: 0c63c6b7022044c4924b6d8c8b018b774a8ea6eaf4718dc194b232ac468b924579c57fb48b3705f12b8ebaa0aacab76557286892caf4ac1bea1dff336607232b
   languageName: node
   linkType: hard
 
@@ -4957,7 +4957,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "drupal-refreshless-turbo@workspace:web/modules/contrib/refreshless/modules/refreshless_turbo"
   dependencies:
-    "@hotwired/turbo": ^7.3.0
+    "@hotwired/turbo": ^8.0.0-beta.2
     pnp-vendorize: "github:Ambient-Impact/pnp-vendorize#1030d968013bad44cda10fd75e18b25d6dabb35d"
   languageName: unknown
   linkType: soft
