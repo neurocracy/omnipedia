@@ -51,6 +51,18 @@ dev environments, exported as configuration, and pushed to the production site
 which automatically imports any updated configuration during the deployment
 process.
 
+### Secure file system
+
+As part of our deployment process, before Drupal is able to accept requests, we
+remove all write permissions from everything in the publicly accessible web
+directory, except for directories necessary for Drupal to function, such as the
+aggregated assets directory. This means that once deployed, Drupal cannot
+modify its codebase.
+
+Directories that Drupal *can* write to have PHP execution disabled so in the
+unlikely case someone were to find a way to upload a PHP file to one of these
+directories, the web server would refuse to run it.
+
 ## Content-Security-Policy (CSP)
 
 We implement a fairly restrictive [Content-Security-Policy
