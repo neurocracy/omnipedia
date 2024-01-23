@@ -2490,10 +2490,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hotwired/turbo@npm:^8.0.0-beta.3":
+"@hotwired/turbo@npm:8.0.0-beta.3":
   version: 8.0.0-beta.3
   resolution: "@hotwired/turbo@npm:8.0.0-beta.3"
   checksum: 1be7369056a150cd160d9344b0f8a1e7fe2dc89cdd929e01b81ee1aaab014afc00d44079a1a47e382c09d1e79b5eaab0a8b3bf79a5ba4b97115282a6e8c504ef
+  languageName: node
+  linkType: hard
+
+"@hotwired/turbo@patch:@hotwired/turbo@npm%3A8.0.0-beta.3#./.yarn/patches/@hotwired-turbo-npm-8.0.0-beta.3-a24b9037b0.patch::locator=drupal-omnipedia%40workspace%3A.":
+  version: 8.0.0-beta.3
+  resolution: "@hotwired/turbo@patch:@hotwired/turbo@npm%3A8.0.0-beta.3#./.yarn/patches/@hotwired-turbo-npm-8.0.0-beta.3-a24b9037b0.patch::version=8.0.0-beta.3&hash=dc60e1&locator=drupal-omnipedia%40workspace%3A."
+  checksum: f220e4a8c4f48be3d42f60cbb3055b9c2de153c1362a9f85146cb3e45855ba329cea56161380edbc204e853964bf740fa41facc44d46c83f3f6e3f79955a794e
   languageName: node
   linkType: hard
 
