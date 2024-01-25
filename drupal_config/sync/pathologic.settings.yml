@@ -1,9 +1,10 @@
 _core:
   default_config_hash: EKYCulG-Y3pcObfUpVbl-D9T5DDX6d4hpQ-BVlSBAmw
+protocol_style: path
+local_paths: 'https://omnipedia.app'
+keep_language_prefix: null
 scheme_whitelist:
   - http
   - https
   - files
   - internal
-protocol_style: path
-local_paths: 'https://omnipedia.app'
