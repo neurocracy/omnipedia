@@ -2490,17 +2490,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hotwired/turbo@npm:8.0.0-beta.3":
-  version: 8.0.0-beta.3
-  resolution: "@hotwired/turbo@npm:8.0.0-beta.3"
-  checksum: 1be7369056a150cd160d9344b0f8a1e7fe2dc89cdd929e01b81ee1aaab014afc00d44079a1a47e382c09d1e79b5eaab0a8b3bf79a5ba4b97115282a6e8c504ef
+"@hotwired/turbo@npm:8.0.0-beta.4":
+  version: 8.0.0-beta.4
+  resolution: "@hotwired/turbo@npm:8.0.0-beta.4"
+  checksum: d1399b7ac4b545eea1c1cc6dde40cfa4e88180a743396ac4137992adbb0caccef3bd515f30ab9fad6e10013f681cf14426d430017635264fe1f0081d53a84052
   languageName: node
   linkType: hard
 
-"@hotwired/turbo@patch:@hotwired/turbo@npm%3A8.0.0-beta.3#./.yarn/patches/@hotwired-turbo-npm-8.0.0-beta.3-a24b9037b0.patch::locator=drupal-omnipedia%40workspace%3A.":
-  version: 8.0.0-beta.3
-  resolution: "@hotwired/turbo@patch:@hotwired/turbo@npm%3A8.0.0-beta.3#./.yarn/patches/@hotwired-turbo-npm-8.0.0-beta.3-a24b9037b0.patch::version=8.0.0-beta.3&hash=dc60e1&locator=drupal-omnipedia%40workspace%3A."
-  checksum: f220e4a8c4f48be3d42f60cbb3055b9c2de153c1362a9f85146cb3e45855ba329cea56161380edbc204e853964bf740fa41facc44d46c83f3f6e3f79955a794e
+"@hotwired/turbo@patch:@hotwired/turbo@npm%3A8.0.0-beta.4#./.yarn/patches/@hotwired-turbo-npm-8.0.0-beta.3-a24b9037b0.patch::locator=drupal-omnipedia%40workspace%3A.":
+  version: 8.0.0-beta.4
+  resolution: "@hotwired/turbo@patch:@hotwired/turbo@npm%3A8.0.0-beta.4#./.yarn/patches/@hotwired-turbo-npm-8.0.0-beta.3-a24b9037b0.patch::version=8.0.0-beta.4&hash=dc60e1&locator=drupal-omnipedia%40workspace%3A."
+  checksum: f6db1ee57058b5b5a972e193cd3484d3143d0aee74bffbf3c2285e0ecbb76f241ad605f239ad1cba75189347374339783be3b22568d7893b8a0b48eef6f058ea
   languageName: node
   linkType: hard
 
@@ -4964,7 +4964,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "drupal-refreshless-turbo@workspace:web/modules/contrib/refreshless/modules/refreshless_turbo"
   dependencies:
-    "@hotwired/turbo": ^8.0.0-beta.3
+    "@hotwired/turbo": ^8.0.0-beta.4
     pnp-vendorize: "github:Ambient-Impact/pnp-vendorize#1030d968013bad44cda10fd75e18b25d6dabb35d"
   languageName: unknown
   linkType: soft
