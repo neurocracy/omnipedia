@@ -80,7 +80,7 @@ spec:
     scope: RUN_AND_BUILD_TIME
     value: oembed.omnipedia.app
   - key: DRUPAL_REVERSE_PROXY_ENABLED
-    scope: RUN_AND_BUILD_TIME
+    scope: RUN_TIME
     value: "true"
   - key: DRUPAL_SUPPRESS_DEPRECATIONS
     scope: RUN_TIME
