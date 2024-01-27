@@ -5,8 +5,8 @@ dependencies: {  }
 id: contact
 label: Contact
 recipients:
-  - joannes@playthroughline.com
+  - contact@omnipedia.app
 reply: ''
 weight: 0
-message: 'Your message has been sent. We''ll get back to you as soon as we can. Please make sure you check your spam folder for emails ending in "@playthroughline.com".'
+message: 'Your message has been sent. We''ll get back to you as soon as we can. Please make sure you check your spam folder for emails ending in "@omnipedia.app".'
 redirect: /contact
