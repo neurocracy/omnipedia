@@ -3,7 +3,7 @@ _core:
 langcode: en
 uuid: 03ace075-a0d7-4ccb-8ad1-baf6452417fd
 name: Omnipedia
-mail: contact@omnipedia.app
+mail: no-reply@omnipedia.app
 slogan: 'Building Your World'
 page:
   403: ''

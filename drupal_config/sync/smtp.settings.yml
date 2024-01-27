@@ -7,9 +7,9 @@ smtp_port: '587'
 smtp_protocol: tls
 smtp_autotls: true
 smtp_timeout: 30
-smtp_username: contact@omnipedia.app
+smtp_username: no-reply@omnipedia.app
 smtp_password: null
-smtp_from: contact@omnipedia.app
+smtp_from: no-reply@omnipedia.app
 smtp_fromname: Omnipedia
 smtp_client_hostname: ''
 smtp_client_helo: ''
