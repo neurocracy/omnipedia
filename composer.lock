@@ -4723,15 +4723,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neurocracy/drupal-omnipedia-search.git",
-                "reference": "5c92f95efdd4c53076c7325d2574b0cfe78bbb0d"
+                "reference": "cd60f23bb74f716cb2a3ae23cabd1e58357b0f54"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-search/zipball/5c92f95efdd4c53076c7325d2574b0cfe78bbb0d",
-                "reference": "5c92f95efdd4c53076c7325d2574b0cfe78bbb0d",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-search/zipball/cd60f23bb74f716cb2a3ae23cabd1e58357b0f54",
+                "reference": "cd60f23bb74f716cb2a3ae23cabd1e58357b0f54",
                 "shasum": ""
             },
             "require": {
+                "cweagans/composer-patches": "^1.7",
                 "drupal/core": "^9.5 || ^10.0",
                 "drupal/omnipedia_content": "^6.0@dev",
                 "drupal/omnipedia_core": "^5.0@dev || ^6.0@dev",
@@ -4742,6 +4743,13 @@
             },
             "default-branch": true,
             "type": "drupal-custom-module",
+            "extra": {
+                "patches": {
+                    "drupal/search_api": {
+                        "How to change input type from \"text\" to \"search\" [#3214236]": "https://raw.githubusercontent.com/neurocracy/drupal-omnipedia-search/4.x/patches/drupal/search_api/3214236-input-type-search.patch"
+                    }
+                }
+            },
             "license": [
                 "GPL-2.0-or-later"
             ],
@@ -4758,7 +4766,7 @@
                 "source": "https://github.com/neurocracy/drupal-omnipedia-search",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-search/issues"
             },
-            "time": "2023-12-23T03:58:08+00:00"
+            "time": "2024-01-28T23:24:04+00:00"
         },
         {
             "name": "drupal/omnipedia_site_theme",
