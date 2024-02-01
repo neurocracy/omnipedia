@@ -3411,17 +3411,17 @@
         },
         {
             "name": "drupal/hux",
-            "version": "1.3.0",
+            "version": "1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/hux.git",
-                "reference": "1.3.0"
+                "reference": "1.3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/hux-1.3.0.zip",
-                "reference": "1.3.0",
-                "shasum": "a28672e79b4aa1756fbb809b1985e649240221ea"
+                "url": "https://ftp.drupal.org/files/projects/hux-1.3.1.zip",
+                "reference": "1.3.1",
+                "shasum": "522aaf977e1c7a8a9f896bb365636a73ce166beb"
             },
             "require": {
                 "drupal/core": ">=10.1",
@@ -3442,8 +3442,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "1.3.0",
-                    "datestamp": "1704173399",
+                    "version": "1.3.1",
+                    "datestamp": "1706581316",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
