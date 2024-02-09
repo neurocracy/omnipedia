@@ -2490,17 +2490,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hotwired/turbo@npm:8.0.0-beta.4":
-  version: 8.0.0-beta.4
-  resolution: "@hotwired/turbo@npm:8.0.0-beta.4"
-  checksum: d1399b7ac4b545eea1c1cc6dde40cfa4e88180a743396ac4137992adbb0caccef3bd515f30ab9fad6e10013f681cf14426d430017635264fe1f0081d53a84052
+"@hotwired/turbo@npm:8.0.2":
+  version: 8.0.2
+  resolution: "@hotwired/turbo@npm:8.0.2"
+  checksum: 131075e828854278dceda132a03fe119d8fecf6c53132c9c4df8abda1121cc84ca37325fa7cef18b5210cdaed4b1bbe715765c5ae7c15d601f8e4169be6ce242
   languageName: node
   linkType: hard
 
-"@hotwired/turbo@patch:@hotwired/turbo@npm%3A8.0.0-beta.4#./.yarn/patches/@hotwired-turbo-npm-8.0.0-beta.3-a24b9037b0.patch::locator=drupal-omnipedia%40workspace%3A.":
-  version: 8.0.0-beta.4
-  resolution: "@hotwired/turbo@patch:@hotwired/turbo@npm%3A8.0.0-beta.4#./.yarn/patches/@hotwired-turbo-npm-8.0.0-beta.3-a24b9037b0.patch::version=8.0.0-beta.4&hash=dc60e1&locator=drupal-omnipedia%40workspace%3A."
-  checksum: f6db1ee57058b5b5a972e193cd3484d3143d0aee74bffbf3c2285e0ecbb76f241ad605f239ad1cba75189347374339783be3b22568d7893b8a0b48eef6f058ea
+"@hotwired/turbo@patch:@hotwired/turbo@npm%3A8.0.2#./.yarn/patches/@hotwired-turbo-npm-8.0.0-beta.3-a24b9037b0.patch::locator=drupal-omnipedia%40workspace%3A.":
+  version: 8.0.2
+  resolution: "@hotwired/turbo@patch:@hotwired/turbo@npm%3A8.0.2#./.yarn/patches/@hotwired-turbo-npm-8.0.0-beta.3-a24b9037b0.patch::version=8.0.2&hash=dc60e1&locator=drupal-omnipedia%40workspace%3A."
+  checksum: f54ac23b013f527cfb61b4db5aca262e7668eba3eed4555f4820f988b1a2495b5a5700e792ce98803ca940fc18c459fbee1a6b5b472e3c452d9fbf0b3e488dfb
   languageName: node
   linkType: hard
 
@@ -4964,7 +4964,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "drupal-refreshless-turbo@workspace:web/modules/contrib/refreshless/modules/refreshless_turbo"
   dependencies:
-    "@hotwired/turbo": ^8.0.0-beta.4
+    "@hotwired/turbo": ^8.0.2
     pnp-vendorize: "github:Ambient-Impact/pnp-vendorize#1030d968013bad44cda10fd75e18b25d6dabb35d"
   languageName: unknown
   linkType: soft

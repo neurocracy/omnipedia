@@ -20,7 +20,6 @@
     "cross-env": "^7.0.3"
   },
   "resolutions": {
-    "@hotwired/turbo@^8.0.0-beta.3": "patch:@hotwired/turbo@npm%3A8.0.0-beta.3#./.yarn/patches/@hotwired-turbo-npm-8.0.0-beta.3-a24b9037b0.patch",
-    "@hotwired/turbo@^8.0.0-beta.4": "patch:@hotwired/turbo@npm%3A8.0.0-beta.4#./.yarn/patches/@hotwired-turbo-npm-8.0.0-beta.3-a24b9037b0.patch"
+    "@hotwired/turbo@^8.0.2": "patch:@hotwired/turbo@npm%3A8.0.2#./.yarn/patches/@hotwired-turbo-npm-8.0.0-beta.3-a24b9037b0.patch"
   }
 }
