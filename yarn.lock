@@ -2490,17 +2490,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hotwired/turbo@npm:8.0.2":
-  version: 8.0.2
-  resolution: "@hotwired/turbo@npm:8.0.2"
-  checksum: 131075e828854278dceda132a03fe119d8fecf6c53132c9c4df8abda1121cc84ca37325fa7cef18b5210cdaed4b1bbe715765c5ae7c15d601f8e4169be6ce242
+"@hotwired/turbo@npm:8.0.3":
+  version: 8.0.3
+  resolution: "@hotwired/turbo@npm:8.0.3"
+  checksum: fa6295fe119e3c6e8fc4f8401f7bc20f06e0c947bf45a45c0700c0f45d9f358465b2bcd34542b349b2250c86b69951e3ea8da1395628930533957d130b79fa0a
   languageName: node
   linkType: hard
 
-"@hotwired/turbo@patch:@hotwired/turbo@npm%3A8.0.2#./.yarn/patches/@hotwired-turbo-npm-8-combined.patch::locator=drupal-omnipedia%40workspace%3A.":
-  version: 8.0.2
-  resolution: "@hotwired/turbo@patch:@hotwired/turbo@npm%3A8.0.2#./.yarn/patches/@hotwired-turbo-npm-8-combined.patch::version=8.0.2&hash=5db745&locator=drupal-omnipedia%40workspace%3A."
-  checksum: ee88344e0583121f32aa30344cf97b5ff2aa8d71e74dd27ee560d2d591b5bad0ceb4f50f5fc0dac9d71efaa476ea358741f124bb17841be9e6a311dcd1cef7de
+"@hotwired/turbo@patch:@hotwired/turbo@npm%3A8.0.3#./.yarn/patches/@hotwired-turbo-npm-8-combined.patch::locator=drupal-omnipedia%40workspace%3A.":
+  version: 8.0.3
+  resolution: "@hotwired/turbo@patch:@hotwired/turbo@npm%3A8.0.3#./.yarn/patches/@hotwired-turbo-npm-8-combined.patch::version=8.0.3&hash=5db745&locator=drupal-omnipedia%40workspace%3A."
+  checksum: 33e394c1f8245e8aacc82aa7c944bea4d1af63bac723f208af82a00d9ee0fb8e904286c1df2a77fe9291fce62e39260d15a0e3698e87a8aacd55bf590ae172fb
   languageName: node
   linkType: hard
 
@@ -4957,7 +4957,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "drupal-refreshless-turbo@workspace:web/modules/contrib/refreshless/modules/refreshless_turbo"
   dependencies:
-    "@hotwired/turbo": ^8.0.2
+    "@hotwired/turbo": ^8.0.3
     pnp-vendorize: "github:Ambient-Impact/pnp-vendorize#1030d968013bad44cda10fd75e18b25d6dabb35d"
   languageName: unknown
   linkType: soft
