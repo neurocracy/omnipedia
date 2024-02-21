@@ -1,0 +1,13 @@
+diff --git a/dist/turbo.es2017-umd.js b/dist/turbo.es2017-umd.js
+index 02070dd7986a899a166c65739a6dcfc428146b89..b3500a7329f68770ecb229750d4d4d891c452cd1 100644
+--- a/dist/turbo.es2017-umd.js
++++ b/dist/turbo.es2017-umd.js
+@@ -2503,7 +2503,7 @@ Copyright © 2024 37signals LLC
+             this.adapter.visitRendered(this);
+             this.complete();
+           } else {
+-            await this.view.renderError(PageSnapshot.fromHTMLString(responseHTML), this);
++            await this.renderPageSnapshot(PageSnapshot.fromHTMLString(responseHTML), false);
+             this.adapter.visitRendered(this);
+             this.fail();
+           }
