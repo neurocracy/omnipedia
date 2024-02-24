@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3fa66073d831bb8dc895c72491d709cb",
+    "content-hash": "41aa2df2dbe6c4e0295df2d9213ea9c6",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -4670,52 +4670,6 @@
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-menu/issues"
             },
             "time": "2023-12-23T03:56:51+00:00"
-        },
-        {
-            "name": "drupal/omnipedia_refreshless",
-            "version": "2.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/neurocracy/drupal-omnipedia-refreshless.git",
-                "reference": "ffe7d7d8ac3fe2a86c727a056199055dd9c81831"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-refreshless/zipball/ffe7d7d8ac3fe2a86c727a056199055dd9c81831",
-                "reference": "ffe7d7d8ac3fe2a86c727a056199055dd9c81831",
-                "shasum": ""
-            },
-            "require": {
-                "drupal/core": "^10.1",
-                "drupal/hux": "^1.2",
-                "drupal/refreshless": "^2.0@dev",
-                "php": "^8.1"
-            },
-            "default-branch": true,
-            "type": "drupal-custom-module",
-            "extra": {
-                "patches": {
-                    "drupal/core": {
-                        "RefreshLess core patch: https://git.drupalcode.org/project/refreshless/-/blob/13fca4ac1512e7c7b3a1fcb573fdd77bc4b60256/core.patch": "https://git.drupalcode.org/project/refreshless/-/raw/13fca4ac1512e7c7b3a1fcb573fdd77bc4b60256/core.patch"
-                    }
-                }
-            },
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Ambient.Impact",
-                    "homepage": "https://ambientimpact.com/",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Omnipedia - RefreshLess",
-            "support": {
-                "source": "https://github.com/neurocracy/drupal-omnipedia-refreshless/tree/2.x",
-                "issues": "https://github.com/neurocracy/drupal-omnipedia-refreshless/issues"
-            },
-            "time": "2023-12-23T03:57:36+00:00"
         },
         {
             "name": "drupal/omnipedia_search",
@@ -19024,7 +18978,6 @@
         "drupal/omnipedia_main_page": 20,
         "drupal/omnipedia_media": 20,
         "drupal/omnipedia_menu": 20,
-        "drupal/omnipedia_refreshless": 20,
         "drupal/omnipedia_search": 20,
         "drupal/omnipedia_site_theme": 20,
         "drupal/omnipedia_user": 20,
@@ -19032,6 +18985,7 @@
         "drupal/paranoia": 5,
         "drupal/pathologic": 15,
         "drupal/rebuilder": 5,
+        "drupal/refreshless": 20,
         "drupal/rules": 15,
         "drupal/session_limit": 10,
         "drupal/trusted_reverse_proxy": 20

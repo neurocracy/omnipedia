@@ -101,10 +101,6 @@
     },
     {
       "type": "vcs",
-      "url": "https://github.com/neurocracy/drupal-omnipedia-refreshless.git"
-    },
-    {
-      "type": "vcs",
       "url": "https://github.com/neurocracy/drupal-omnipedia-search.git"
     },
     {
@@ -176,7 +172,6 @@
     "drupal/omnipedia_main_page": "^1.0@dev",
     "drupal/omnipedia_media": "^7.0@dev",
     "drupal/omnipedia_menu": "^4.0@dev",
-    "drupal/omnipedia_refreshless": "^2.0@dev",
     "drupal/omnipedia_search": "^4.0@dev",
     "drupal/omnipedia_site_theme": "^7.0@dev",
     "drupal/omnipedia_user": "^6.0@dev",
@@ -188,6 +183,7 @@
     "drupal/readonlymode": "^1.1",
     "drupal/rebuilder": "^1.0@RC",
     "drupal/redirect": "^1.6",
+    "drupal/refreshless": "^2.0@dev",
     "drupal/remove_http_headers": "^2.0",
     "drupal/rules": "^3.0@alpha",
     "drupal/s3fs": "^3.3",
@@ -243,7 +239,8 @@
     },
     "preferred-install": {
       "drupal/ambientimpact_*": "source",
-      "drupal/omnipedia_*": "source"
+      "drupal/omnipedia_*": "source",
+      "drupal/refreshless": "source"
     }
   },
   "autoload": {
