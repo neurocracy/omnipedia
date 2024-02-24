@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# Enable Corepack for Yarn 4.
-#
-# @see https://yarnpkg.com/blog/release/4.0
-corepack enable
-
 # Because it's not yet possible to customize the order that autodetected
 # buildpacks run their builds on DigitalOcean App Platform, and because the PHP
 # buildpack always runs after the Node.js buildpack, we have to add these
