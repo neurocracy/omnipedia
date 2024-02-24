@@ -8,7 +8,6 @@ description: 'RefreshLess module enabling configuration split.'
 weight: 0
 folder: ../drupal_config/splits/refreshless
 module:
-  omnipedia_refreshless: 0
   refreshless: 0
   refreshless_turbo: 0
 theme: {  }
