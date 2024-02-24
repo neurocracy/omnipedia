@@ -3,7 +3,7 @@
   "version": "9.0.0",
   "license": "GPL-2.0-or-later",
   "repository": "github:neurocracy/omnipedia",
-  "packageManager": "yarn@3.7.0",
+  "packageManager": "yarn@4.1.0",
   "engines": {
     "node": ">=20"
   },
