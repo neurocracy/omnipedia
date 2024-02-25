@@ -21,6 +21,6 @@
     "cross-env": "^7.0.3"
   },
   "resolutions": {
-    "@hotwired/turbo@^8.0.3": "patch:@hotwired/turbo@npm%3A8.0.3#./.yarn/patches/@hotwired-turbo-npm-8-combined.patch"
+    "@hotwired/turbo@^8.0.3": "patch:@hotwired/turbo@npm%3A8.0.3#./web/modules/contrib/refreshless/modules/refreshless_turbo/patches/@hotwired/turbo/turbo-8-refreshless-combined.patch"
   }
 }

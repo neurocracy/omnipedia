@@ -2497,9 +2497,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hotwired/turbo@patch:@hotwired/turbo@npm%3A8.0.3#./.yarn/patches/@hotwired-turbo-npm-8-combined.patch::locator=drupal-omnipedia%40workspace%3A.":
+"@hotwired/turbo@patch:@hotwired/turbo@npm%3A8.0.3#./web/modules/contrib/refreshless/modules/refreshless_turbo/patches/@hotwired/turbo/turbo-8-refreshless-combined.patch::locator=drupal-omnipedia%40workspace%3A.":
   version: 8.0.3
-  resolution: "@hotwired/turbo@patch:@hotwired/turbo@npm%3A8.0.3#./.yarn/patches/@hotwired-turbo-npm-8-combined.patch::version=8.0.3&hash=5db745&locator=drupal-omnipedia%40workspace%3A."
+  resolution: "@hotwired/turbo@patch:@hotwired/turbo@npm%3A8.0.3#./web/modules/contrib/refreshless/modules/refreshless_turbo/patches/@hotwired/turbo/turbo-8-refreshless-combined.patch::version=8.0.3&hash=5db745&locator=drupal-omnipedia%40workspace%3A."
   checksum: 10/bc939ea7bd4ca2898f2c2eeac5de2f663028e9753b4afbd1c0a6b9a3fdc435e664ae780ec99687cd7d3d0c36abe636599a90310872658ea338797b003f5e9e2d
   languageName: node
   linkType: hard
