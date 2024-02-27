@@ -14,6 +14,6 @@
 #
 # @see Aptfile
 #   Tells App Platform to install jq for us.
-yarn add $(jq '.doDependencies | to_entries[] | [.key, .value] | [join("@")] | join(" ")' package.json)
+yarn add $(jq '.doDependencies | to_entries[] | [.key, .value] | [join("@")] | join(" ")' /workspace/package.json)
 
 yarn build:deploy
