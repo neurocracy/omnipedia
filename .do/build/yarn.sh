@@ -1,7 +1,5 @@
 #!/bin/bash
 
-cd /workspace
-
 # Because it's not yet possible to customize the order that autodetected
 # buildpacks run their builds on DigitalOcean App Platform, and because the PHP
 # buildpack always runs after the Node.js buildpack, we have to add these
@@ -16,6 +14,6 @@ cd /workspace
 #
 # @see Aptfile
 #   Tells App Platform to install jq for us.
-yarn add $(jq '.doDependencies | to_entries[] | [.key, .value] | [join("@")] | join(" ")' /workspace/package.json)
+yarn add $(jq --raw-output '.doDependencies | to_entries[] | [.key, .value] | [join("@")] | join(" ")' package.json)
 
 yarn build:deploy
