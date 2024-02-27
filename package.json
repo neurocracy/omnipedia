@@ -20,6 +20,17 @@
   "dependencies": {
     "cross-env": "^7.0.3"
   },
+  "doDependencies": {
+    "drupal-ambientimpact-core": "workspace:^2",
+    "drupal-ambientimpact-icon": "workspace:^1",
+    "drupal-ambientimpact-media": "workspace:^4",
+    "drupal-ambientimpact-ux": "workspace:^1",
+    "drupal-omnipedia-block": "workspace:^6",
+    "drupal-omnipedia-changes": "workspace:^7",
+    "drupal-omnipedia-content": "workspace:^6",
+    "drupal-omnipedia-media": "workspace:^6",
+    "drupal-omnipedia-site-theme": "workspace:^7"
+  },
   "resolutions": {
     "@hotwired/turbo@^8.0.3": "patch:@hotwired/turbo@npm%3A8.0.3#./web/modules/contrib/refreshless/modules/refreshless_turbo/patches/@hotwired/turbo/turbo-8-refreshless-combined.patch"
   }

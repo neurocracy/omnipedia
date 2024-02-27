@@ -1,0 +1,14 @@
+# Instructs App Platform to install additional system-level dependencies.
+#
+# @see https://docs.digitalocean.com/products/app-platform/reference/buildpacks/aptfile/
+#
+# @see https://elements.heroku.com/buildpacks/heroku/heroku-buildpack-apt
+
+# We use jq on App Platform to read the "doDependencies" package.json and
+# yarn add the contents after Composer dependencies have been pulled in due to
+# current limitations on buildpack run order.
+#
+# @see .do/build/yarn.sh
+#
+# @see https://jqlang.github.io/jq/
+jq
