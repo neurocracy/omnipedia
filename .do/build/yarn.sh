@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd /workspace
+
 # Because it's not yet possible to customize the order that autodetected
 # buildpacks run their builds on DigitalOcean App Platform, and because the PHP
 # buildpack always runs after the Node.js buildpack, we have to add these
