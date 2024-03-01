@@ -2453,6 +2453,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@consensus.enterprises/pnp-vendorize@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@consensus.enterprises/pnp-vendorize@npm:1.0.0"
+  dependencies:
+    "@babel/core": "npm:^7.20.2"
+    "@babel/preset-env": "npm:^7.20.2"
+    "@symfony/webpack-encore": "npm:^4.1.1"
+    file-loader: "npm:^6.0.0"
+    webpack: "npm:^5.88.2"
+    webpack-cli: "npm:^4.10.0"
+  peerDependencies:
+    "@babel/core": ^7.20.2
+    "@babel/preset-env": ^7.20.2
+    "@symfony/webpack-encore": ^4.1.1
+    file-loader: ^6.0.0
+    webpack: ^5.88.2
+    webpack-cli: ^4.10.0
+  bin:
+    vendorize: src/bin.mjs
+  checksum: 10/5f9fb08a9ec3de89e79854d8dcdd3af9714c432bb6d2c7fbd83f6abfbc2eee46c60866930a430bf85ea63164cb648c6b4a8d9b93b9d201cee9c8f2a2f1d1c61e
+  languageName: node
+  linkType: hard
+
 "@discoveryjs/json-ext@npm:^0.5.0":
   version: 0.5.7
   resolution: "@discoveryjs/json-ext@npm:0.5.7"
@@ -4712,6 +4735,7 @@ __metadata:
   dependencies:
     "@babel/core": "npm:^7.23.2"
     "@babel/preset-env": "npm:^7.23.2"
+    "@consensus.enterprises/pnp-vendorize": "npm:^1.0.0"
     "@symfony/webpack-encore": "npm:^4.1.1"
     ally.js: "npm:^1.4.1"
     autoprefixer: "npm:^10.2.5"
@@ -4721,7 +4745,6 @@ __metadata:
     glob: "npm:^10.3.10"
     include-media: "npm:^1.4.10"
     mini-css-extract-plugin: "npm:^2.6.1"
-    pnp-vendorize: "github:Ambient-Impact/pnp-vendorize#1030d968013bad44cda10fd75e18b25d6dabb35d"
     postcss: "npm:^8.4.31"
     postcss-loader: "npm:^7.0.1"
     sass: "npm:^1.43.4"
@@ -4763,6 +4786,7 @@ __metadata:
   dependencies:
     "@babel/core": "npm:^7.23.2"
     "@babel/preset-env": "npm:^7.23.2"
+    "@consensus.enterprises/pnp-vendorize": "npm:^1.0.0"
     "@symfony/webpack-encore": "npm:^4.1.1"
     autoprefixer: "npm:^10.2.5"
     css-loader: "npm:^6.7.1"
@@ -4772,7 +4796,6 @@ __metadata:
     glob: "npm:^10.3.10"
     mini-css-extract-plugin: "npm:^2.6.1"
     photoswipe: "npm:^4.1.3"
-    pnp-vendorize: "github:Ambient-Impact/pnp-vendorize#1030d968013bad44cda10fd75e18b25d6dabb35d"
     postcss: "npm:^8.4.31"
     postcss-loader: "npm:^7.0.1"
     sass: "npm:^1.43.4"
@@ -4790,6 +4813,7 @@ __metadata:
   dependencies:
     "@babel/core": "npm:^7.23.2"
     "@babel/preset-env": "npm:^7.23.2"
+    "@consensus.enterprises/pnp-vendorize": "npm:^1.0.0"
     "@symfony/webpack-encore": "npm:^4.1.1"
     autoprefixer: "npm:^10.2.5"
     autosize: "npm:^4.0.2"
@@ -4804,7 +4828,6 @@ __metadata:
     jquery-hoverintent: "npm:^1.10.0"
     jquery.onfontresize: "github:Ambient-Impact/jquery.onfontresize"
     mini-css-extract-plugin: "npm:^2.6.1"
-    pnp-vendorize: "github:Ambient-Impact/pnp-vendorize#1030d968013bad44cda10fd75e18b25d6dabb35d"
     popper.js: "npm:^1.15.0"
     postcss: "npm:^8.4.31"
     postcss-loader: "npm:^7.0.1"
@@ -4916,6 +4939,7 @@ __metadata:
   dependencies:
     "@babel/core": "npm:^7.23.2"
     "@babel/preset-env": "npm:^7.23.2"
+    "@consensus.enterprises/pnp-vendorize": "npm:^1.0.0"
     "@fontsource/exo-2": "npm:^4.5.10"
     "@symfony/webpack-encore": "npm:^4.1.1"
     autoprefixer: "npm:^10.2.6"
@@ -4933,7 +4957,6 @@ __metadata:
     glob: "npm:^10.3.10"
     js-cookie: "npm:^3.0.5"
     mini-css-extract-plugin: "npm:^2.6.1"
-    pnp-vendorize: "github:Ambient-Impact/pnp-vendorize#1030d968013bad44cda10fd75e18b25d6dabb35d"
     postcss: "npm:^8.4.31"
     postcss-easing-gradients: "github:Ambient-Impact/postcss-easing-gradients"
     postcss-loader: "npm:^7.0.1"
@@ -4957,8 +4980,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "drupal-refreshless-turbo@workspace:web/modules/contrib/refreshless/modules/refreshless_turbo"
   dependencies:
+    "@consensus.enterprises/pnp-vendorize": "npm:^1.0.0"
     "@hotwired/turbo": "npm:^8.0.3"
-    pnp-vendorize: "github:Ambient-Impact/pnp-vendorize#1030d968013bad44cda10fd75e18b25d6dabb35d"
   languageName: unknown
   linkType: soft
 
@@ -7365,29 +7388,6 @@ __metadata:
   version: 1.3.3
   resolution: "platform@npm:1.3.3"
   checksum: 10/3abaa62cf5c7cf549d0a7564ce97caa32615d9dbbc1c19a83ed95dfa2749d0dc68d13cb704e1858022ac5f18de412aa6878cc2521df524cfe9764f9fd51e6802
-  languageName: node
-  linkType: hard
-
-"pnp-vendorize@github:Ambient-Impact/pnp-vendorize#1030d968013bad44cda10fd75e18b25d6dabb35d":
-  version: 0.0.0
-  resolution: "pnp-vendorize@https://github.com/Ambient-Impact/pnp-vendorize.git#commit=1030d968013bad44cda10fd75e18b25d6dabb35d"
-  dependencies:
-    "@babel/core": "npm:^7.20.2"
-    "@babel/preset-env": "npm:^7.20.2"
-    "@symfony/webpack-encore": "npm:^4.1.1"
-    file-loader: "npm:^6.0.0"
-    webpack: "npm:^5.88.2"
-    webpack-cli: "npm:^4.10.0"
-  peerDependencies:
-    "@babel/core": ^7.20.2
-    "@babel/preset-env": ^7.20.2
-    "@symfony/webpack-encore": ^4.1.1
-    file-loader: ^6.0.0
-    webpack: ^5.88.2
-    webpack-cli: ^4.10.0
-  bin:
-    vendorize: ./src/bin.mjs
-  checksum: 10/694fdda47e582b456452a27b057d95758608eeea1e836efc183e3cad22cc23b913e7611101d27eb3770472b901728ffeca66fa74a55db792f1abd3bf1ed04d2b
   languageName: node
   linkType: hard
 
