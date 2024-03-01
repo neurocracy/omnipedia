@@ -20,7 +20,7 @@
   "dependencies": {
     "cross-env": "^7.0.3"
   },
-  "doDependencies": {
+  "composerDependencies": {
     "drupal-ambientimpact-core": "workspace:^2",
     "drupal-ambientimpact-icon": "workspace:^1",
     "drupal-ambientimpact-media": "workspace:^4",
