@@ -5433,7 +5433,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/refreshless.git",
-                "reference": "4248d9af62bd7451e5defb180b954c1fe7c02718"
+                "reference": "067beaaf34f8a5bda813d187345acbc44a912099"
             },
             "require": {
                 "composer/semver": "^3.0",
@@ -5451,7 +5451,7 @@
                 },
                 "drupal": {
                     "version": "2.x-dev",
-                    "datestamp": "1709665162",
+                    "datestamp": "1709690992",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
