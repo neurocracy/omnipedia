@@ -97,7 +97,10 @@ jobs:
         run: "cd web && php -S 127.0.0.1:8080 .ht.router.php &"
 
       - name: Run Drupal PHPUnit tests
-        run: php web/core/scripts/run-tests.sh --sqlite ../test.sqlite --dburl mysql://root:db@127.0.0.1:${{ job.services.mysql.ports['3306'] }}/db --suppress-deprecations --color --url http://127.0.0.1:8080 --verbose omnipedia
+        env:
+          SIMPLETEST_BASE_URL: http://127.0.0.1:8080
+          SIMPLETEST_DB: mysql://root:db@127.0.0.1:${{ job.services.mysql.ports['3306'] }}/db
+        run: phpunit --group=omnipedia --verbose
   yarn:
     name: Yarn
     runs-on: ubuntu-latest
