@@ -100,7 +100,7 @@ jobs:
         env:
           SIMPLETEST_BASE_URL: http://127.0.0.1:8080
           SIMPLETEST_DB: mysql://root:db@127.0.0.1:${{ job.services.mysql.ports['3306'] }}/db
-        run: phpunit --group=omnipedia --verbose
+        run: vendor/bin/phpunit --group=omnipedia --verbose
   yarn:
     name: Yarn
     runs-on: ubuntu-latest
