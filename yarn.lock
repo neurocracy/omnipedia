@@ -2653,6 +2653,71 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@motionone/animation@npm:^10.17.0":
+  version: 10.17.0
+  resolution: "@motionone/animation@npm:10.17.0"
+  dependencies:
+    "@motionone/easing": "npm:^10.17.0"
+    "@motionone/types": "npm:^10.17.0"
+    "@motionone/utils": "npm:^10.17.0"
+    tslib: "npm:^2.3.1"
+  checksum: 10/85ac8a36f33b7510cec239b12d90eec38a8f191158e2686c95c7ba237b17cac0e14b1533748fb27e10c18b8f4f4ea9798bc0a9286cf854852ab957d290a09ba9
+  languageName: node
+  linkType: hard
+
+"@motionone/dom@npm:^10.17.0":
+  version: 10.17.0
+  resolution: "@motionone/dom@npm:10.17.0"
+  dependencies:
+    "@motionone/animation": "npm:^10.17.0"
+    "@motionone/generators": "npm:^10.17.0"
+    "@motionone/types": "npm:^10.17.0"
+    "@motionone/utils": "npm:^10.17.0"
+    hey-listen: "npm:^1.0.8"
+    tslib: "npm:^2.3.1"
+  checksum: 10/7a9c5f01eacc084b95ac59c5f96de9c153b713d60cc99bc66b4c7619326f6b04d9acc14445ce0f3d9c7f65c8834a9543c59d3c90f7399de916aaaacbf38f4fb9
+  languageName: node
+  linkType: hard
+
+"@motionone/easing@npm:^10.17.0":
+  version: 10.17.0
+  resolution: "@motionone/easing@npm:10.17.0"
+  dependencies:
+    "@motionone/utils": "npm:^10.17.0"
+    tslib: "npm:^2.3.1"
+  checksum: 10/69f0fc4999a209801b128586cbb328937d9db1c091bed26762d30d035ecc5c01b0cbdce610c6550f609c0be78c1ad03c808e6c61f15fc52621f614449ce10a86
+  languageName: node
+  linkType: hard
+
+"@motionone/generators@npm:^10.17.0":
+  version: 10.17.0
+  resolution: "@motionone/generators@npm:10.17.0"
+  dependencies:
+    "@motionone/types": "npm:^10.17.0"
+    "@motionone/utils": "npm:^10.17.0"
+    tslib: "npm:^2.3.1"
+  checksum: 10/06bd6c16cdb3c9fbb3a3fca05d6941d5e756b6ce151e2e9cc4f49c3b021fb54a5b970b01e3ddae9d77175e58b66cacb00927ee829f545fafd0bbdbdc838933aa
+  languageName: node
+  linkType: hard
+
+"@motionone/types@npm:^10.17.0":
+  version: 10.17.0
+  resolution: "@motionone/types@npm:10.17.0"
+  checksum: 10/9449991493f6e7be59261e4fc1a3d4a5b842da8962084d742905f964b4d3aad5fd6c37bd95d5ab51f65fda7b0c389a332c5f7c7eccd6be54eb765ee2fc6e7070
+  languageName: node
+  linkType: hard
+
+"@motionone/utils@npm:^10.17.0":
+  version: 10.17.0
+  resolution: "@motionone/utils@npm:10.17.0"
+  dependencies:
+    "@motionone/types": "npm:^10.17.0"
+    hey-listen: "npm:^1.0.8"
+    tslib: "npm:^2.3.1"
+  checksum: 10/030359d37a6edebf29e0477050e638340f3756fc993a75b877e923b31ed4f3092a61f9d2323494f4b561ada1afc5ea774fb34022e7afbe2ec449c215585ab392
+  languageName: node
+  linkType: hard
+
 "@npmcli/fs@npm:^2.1.0":
   version: 2.1.2
   resolution: "@npmcli/fs@npm:2.1.2"
@@ -4723,9 +4788,23 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "drupal-ambientimpact-base@workspace:web/themes/custom/ambientimpact_base"
   dependencies:
+    "@babel/core": "npm:^7.23.2"
+    "@babel/preset-env": "npm:^7.23.2"
+    "@symfony/webpack-encore": "npm:^4.1.1"
+    autoprefixer: "npm:^10.2.5"
+    css-loader: "npm:^6.7.1"
     drupal-ambientimpact-core: "workspace:^1 || ^2"
     drupal-ambientimpact-ux: "workspace:^1"
+    glob: "npm:^10.3.10"
+    mini-css-extract-plugin: "npm:^2.6.1"
+    postcss: "npm:^8.4.31"
+    postcss-loader: "npm:^7.0.1"
+    sass: "npm:^1.43.4"
+    sass-loader: "npm:^13.1.0"
     sassy-cast: "github:Ambient-Impact/SassyCast#adbbd499bb36eb0c7015ae6f23c00e3a78dc54b3"
+    webpack: "npm:^5.88.2"
+    webpack-cli: "npm:^4.10.0"
+    webpack-remove-empty-scripts: "npm:^1.0.1"
   languageName: unknown
   linkType: soft
 
@@ -4828,6 +4907,7 @@ __metadata:
     jquery-hoverintent: "npm:^1.10.0"
     jquery.onfontresize: "github:Ambient-Impact/jquery.onfontresize"
     mini-css-extract-plugin: "npm:^2.6.1"
+    motion: "npm:^10.17.0"
     popper.js: "npm:^1.15.0"
     postcss: "npm:^8.4.31"
     postcss-loader: "npm:^7.0.1"
@@ -5769,6 +5849,13 @@ __metadata:
   version: 0.10.4
   resolution: "headroom.js@npm:0.10.4"
   checksum: 10/644af70f3d0c74591c7ecf01be9244b0bb55895a0c2552d6559648eb3b65b1e93f00c865d6bdd728e675bcf048bd26ac7a774d5496efe90c2537f396ff79576a
+  languageName: node
+  linkType: hard
+
+"hey-listen@npm:^1.0.8":
+  version: 1.0.8
+  resolution: "hey-listen@npm:1.0.8"
+  checksum: 10/744b5f4c18c7cfb82b22bd22e1d300a9ac4eafe05a22e58fb87e48addfca8be00604d9aa006434ea02f9530990eb4b393ddb28659e2ab7f833ce873e32eb809c
   languageName: node
   linkType: hard
 
@@ -6851,6 +6938,18 @@ __metadata:
   bin:
     mkdirp: bin/cmd.js
   checksum: 10/d71b8dcd4b5af2fe13ecf3bd24070263489404fe216488c5ba7e38ece1f54daf219e72a833a3a2dc404331e870e9f44963a33399589490956bff003a3404d3b2
+  languageName: node
+  linkType: hard
+
+"motion@npm:^10.17.0":
+  version: 10.17.0
+  resolution: "motion@npm:10.17.0"
+  dependencies:
+    "@motionone/animation": "npm:^10.17.0"
+    "@motionone/dom": "npm:^10.17.0"
+    "@motionone/types": "npm:^10.17.0"
+    "@motionone/utils": "npm:^10.17.0"
+  checksum: 10/626e7ea50bb5f6724307c08180a672491ca55d55e4d132e6722b8cb4d0422c3c78bb5ecf432428e0ef12f39dacc4eca517bf7789f12d63c4a4cb50144f4a9462
   languageName: node
   linkType: hard
 
@@ -9126,6 +9225,13 @@ __metadata:
   version: 2.4.0
   resolution: "tslib@npm:2.4.0"
   checksum: 10/d8379e68b36caf082c1905ec25d17df8261e1d68ddc1abfd6c91158a064f6e4402039ae7c02cf4c81d12e3a2a2c7cd8ea2f57b233eb80136a2e3e7279daf2911
+  languageName: node
+  linkType: hard
+
+"tslib@npm:^2.3.1":
+  version: 2.6.2
+  resolution: "tslib@npm:2.6.2"
+  checksum: 10/bd26c22d36736513980091a1e356378e8b662ded04204453d353a7f34a4c21ed0afc59b5f90719d4ba756e581a162ecbf93118dc9c6be5acf70aa309188166ca
   languageName: node
   linkType: hard
 

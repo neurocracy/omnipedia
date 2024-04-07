@@ -21,6 +21,7 @@
     "cross-env": "^7.0.3"
   },
   "composerDependencies": {
+    "drupal-ambientimpact-base": "workspace:^6",
     "drupal-ambientimpact-core": "workspace:^2",
     "drupal-ambientimpact-icon": "workspace:^1",
     "drupal-ambientimpact-media": "workspace:^4",
