@@ -3344,17 +3344,17 @@
         },
         {
             "name": "drupal/hook_event_dispatcher",
-            "version": "4.0.0",
+            "version": "4.0.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/hook_event_dispatcher.git",
-                "reference": "4.0.0"
+                "reference": "4.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/hook_event_dispatcher-4.0.0.zip",
-                "reference": "4.0.0",
-                "shasum": "9b11a07269ccf87e2c9b5e487aea3bcb425fcf5f"
+                "url": "https://ftp.drupal.org/files/projects/hook_event_dispatcher-4.0.1.zip",
+                "reference": "4.0.1",
+                "shasum": "a170035796c1f72f820bca5642f5de0117d51524"
             },
             "require": {
                 "drupal/core": "^10",
@@ -3377,8 +3377,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "4.0.0",
-                    "datestamp": "1709272506",
+                    "version": "4.0.1",
+                    "datestamp": "1710429583",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4678,12 +4678,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neurocracy/drupal-omnipedia-search.git",
-                "reference": "e10e8204b790378f38425cc5d50278bd6893c4d1"
+                "reference": "bac75a0bbcaed60f65b4ae9189a51eb49c0167b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-search/zipball/e10e8204b790378f38425cc5d50278bd6893c4d1",
-                "reference": "e10e8204b790378f38425cc5d50278bd6893c4d1",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-search/zipball/bac75a0bbcaed60f65b4ae9189a51eb49c0167b5",
+                "reference": "bac75a0bbcaed60f65b4ae9189a51eb49c0167b5",
                 "shasum": ""
             },
             "require": {
@@ -4721,7 +4721,7 @@
                 "source": "https://github.com/neurocracy/drupal-omnipedia-search",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-search/issues"
             },
-            "time": "2024-01-29T21:26:21+00:00"
+            "time": "2024-04-07T14:38:04+00:00"
         },
         {
             "name": "drupal/omnipedia_site_theme",
@@ -5322,27 +5322,27 @@
         },
         {
             "name": "drupal/rebuilder",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/rebuilder.git",
-                "reference": "1.0.0"
+                "reference": "1.1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/rebuilder-1.0.0.zip",
-                "reference": "1.0.0",
-                "shasum": "f5f2941ee925d896aaea7f04f378d72491ddcc44"
+                "url": "https://ftp.drupal.org/files/projects/rebuilder-1.1.0.zip",
+                "reference": "1.1.0",
+                "shasum": "bed450c72c2b2c987b421fe462db6b9b77554e8b"
             },
             "require": {
-                "drupal/core": "^9 || ^10",
-                "php": "^8"
+                "drupal/core": "^10.1",
+                "php": "^8.1"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "1.0.0",
-                    "datestamp": "1655843678",
+                    "version": "1.1.0",
+                    "datestamp": "1712185967",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5720,20 +5720,20 @@
         },
         {
             "name": "drupal/search_api",
-            "version": "1.31.0",
+            "version": "1.34.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/search_api.git",
-                "reference": "8.x-1.31"
+                "reference": "8.x-1.34"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/search_api-8.x-1.31.zip",
-                "reference": "8.x-1.31",
-                "shasum": "ec8436744c34de2ede6370d4dd26875489e761bc"
+                "url": "https://ftp.drupal.org/files/projects/search_api-8.x-1.34.zip",
+                "reference": "8.x-1.34",
+                "shasum": "dd08166888f90adaf01cc1a759266097709efe7c"
             },
             "require": {
-                "drupal/core": "^10.0"
+                "drupal/core": "^10.1 || ^11"
             },
             "conflict": {
                 "drupal/search_api_solr": "2.* || 3.0 || 3.1"
@@ -5751,8 +5751,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.31",
-                    "datestamp": "1700926323",
+                    "version": "8.x-1.34",
+                    "datestamp": "1712400445",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6271,17 +6271,17 @@
         },
         {
             "name": "drupal/tfa",
-            "version": "1.5.0",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/tfa.git",
-                "reference": "8.x-1.5"
+                "reference": "8.x-1.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/tfa-8.x-1.5.zip",
-                "reference": "8.x-1.5",
-                "shasum": "7ad87575e2743e343e9a793f9cc4746b1602d133"
+                "url": "https://ftp.drupal.org/files/projects/tfa-8.x-1.6.zip",
+                "reference": "8.x-1.6",
+                "shasum": "3b660e25b694fd97d7be777b07ab92b1fd7252f4"
             },
             "require": {
                 "chillerlan/php-qrcode": "^1.0.9 || ^2.0 || ^3.2 || ^4.0",
@@ -6298,8 +6298,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.5",
-                    "datestamp": "1706121372",
+                    "version": "8.x-1.6",
+                    "datestamp": "1712169197",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -14713,29 +14713,30 @@
         },
         {
             "name": "drupal/devel",
-            "version": "5.1.2",
+            "version": "5.2.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/devel.git",
-                "reference": "5.1.2"
+                "reference": "5.2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/devel-5.1.2.zip",
-                "reference": "5.1.2",
-                "shasum": "9b35e38bf2043bf87f88585b3d9100f38da8f07f"
+                "url": "https://ftp.drupal.org/files/projects/devel-5.2.1.zip",
+                "reference": "5.2.1",
+                "shasum": "793861751e01092fe8bc7c0cd47589ebea2bb8df"
             },
             "require": {
                 "doctrine/common": "^2.7 || ^3.4",
-                "drupal/core": "^9 || ^10",
-                "php": ">=7.4",
+                "drupal/core": ">=10.0 <12.0.0-stable",
+                "php": ">=8.1",
                 "symfony/var-dumper": "^4 || ^5 || ^6"
             },
             "conflict": {
+                "drush/drush": "<12.5.1",
                 "kint-php/kint": "<3"
             },
             "require-dev": {
-                "drush/drush": "^11"
+                "drush/drush": "^12.5.1"
             },
             "suggest": {
                 "kint-php/kint": "Kint provides an informative display of arrays/objects. Useful for debugging and developing."
@@ -14743,16 +14744,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "5.1.2",
-                    "datestamp": "1686161028",
+                    "version": "5.2.1",
+                    "datestamp": "1711328410",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
-                    }
-                },
-                "drush": {
-                    "services": {
-                        "drush.services.yml": "^9 || ^10 || ^11"
                     }
                 }
             },
@@ -14761,10 +14757,6 @@
                 "GPL-2.0-or-later"
             ],
             "authors": [
-                {
-                    "name": "drupalspoons",
-                    "homepage": "https://www.drupal.org/user/3647684"
-                },
                 {
                     "name": "moshe weitzman",
                     "homepage": "https://www.drupal.org/user/23"
