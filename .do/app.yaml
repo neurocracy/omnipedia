@@ -162,7 +162,7 @@ services:
     branch: 9.x
     repo: neurocracy/omnipedia
   health_check:
-    http_path: /
+    http_path: /health
     initial_delay_seconds: 0
     timeout_seconds: 30
   http_port: 80
