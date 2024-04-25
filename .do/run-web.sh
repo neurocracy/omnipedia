@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Create .htaccess in various directories to prevent PHP execution.
-source "${BASH_SOURCE%/*}/build/write-htaccess.sh"
+.do/build/write-htaccess.sh
 
 # Run the Heroku PHP buildpack PHP-FPM with our custom config appended.
 #
