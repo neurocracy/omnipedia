@@ -16,4 +16,10 @@
 #   Tells App Platform to install jq for us.
 yarn add $(jq --raw-output '.composerDependencies | to_entries[] | [.key, .value] | [join("@")] | join(" ")' package.json)
 
+# For whatever reason, running this package.json script doesn't correctly fail
+# the whole process if the script fails. This is probably related to using
+# cross-env. Note that we have to return the return value to correctly stop
+# execution of the parent script on build failure, via the subsequent command.
 yarn build:deploy
+
+return "$?"
