@@ -17,10 +17,9 @@
 yarn add $(jq --raw-output '.composerDependencies | to_entries[] | [.key, .value] | [join("@")] | join(" ")' package.json)
 
 # For whatever reason, running this package.json script doesn't correctly fail
-# the whole process if the script fails. This is probably related to using
-# cross-env. Note that we have to return the return value to correctly stop
-# execution of the parent script on build failure, via the subsequent
-# statements.
+# the whole process if the script fails. This might be related to using
+# cross-env, but regardless, we try to exit with the exit code if it's greater
+# than zero via subsequent statements.
 yarn build:deploy
 
 yarnbuildexitcode=$?
