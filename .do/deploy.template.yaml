@@ -170,7 +170,7 @@ spec:
       timeout_seconds: 30
     http_port: 80
     instance_count: 2
-    instance_size_slug: professional-xs
+    instance_size_slug: apps-s-1vcpu-1gb
     internal_ports:
     - 8080
     name: web
@@ -184,7 +184,7 @@ spec:
       branch: 9.x
       repo: neurocracy/omnipedia
     instance_count: 1
-    instance_size_slug: professional-xs
+    instance_size_slug: apps-s-1vcpu-1gb-fixed
     name: background-tasks
     run_command: php .do/run-background-tasks.php
     source_dir: /
@@ -195,7 +195,7 @@ spec:
       branch: 9.x
       repo: neurocracy/omnipedia
     instance_count: 1
-    instance_size_slug: professional-xs
+    instance_size_slug: apps-s-1vcpu-1gb-fixed
     kind: PRE_DEPLOY
     name: pre-deploy
     run_command: .do/jobs/pre-deploy.sh
@@ -205,7 +205,7 @@ spec:
       branch: 9.x
       repo: neurocracy/omnipedia
     instance_count: 1
-    instance_size_slug: professional-xs
+    instance_size_slug: apps-s-1vcpu-1gb-fixed
     kind: POST_DEPLOY
     name: post-successful-deploy
     run_command: .do/jobs/post-successful-deploy.sh
@@ -215,7 +215,7 @@ spec:
       branch: 9.x
       repo: neurocracy/omnipedia
     instance_count: 1
-    instance_size_slug: professional-xs
+    instance_size_slug: apps-s-1vcpu-1gb-fixed
     kind: FAILED_DEPLOY
     name: post-failed-deploy
     run_command: .do/jobs/post-failed-deploy.sh
