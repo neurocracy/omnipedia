@@ -184,7 +184,7 @@ spec:
       branch: 9.x
       repo: neurocracy/omnipedia
     instance_count: 1
-    instance_size_slug: apps-s-1vcpu-1gb-fixed
+    instance_size_slug: apps-s-1vcpu-0.5gb
     name: background-tasks
     run_command: php .do/run-background-tasks.php
     source_dir: /
