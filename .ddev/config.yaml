@@ -3,7 +3,8 @@
 # @see https://ddev.readthedocs.io/en/latest/users/configuration/config/
 
 name: omnipedia
-type: drupal10
+type: drupal
+ddev_version_constraint: '>=1.23' # Required for versionless 'drupal' type.
 docroot: web
 php_version: "8.2"
 webserver_type: apache-fpm
