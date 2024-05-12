@@ -4,7 +4,7 @@
 #
 # @see https://elements.heroku.com/buildpacks/heroku/heroku-buildpack-apt
 
-# We use jq on App Platform to read the "doDependencies" package.json and
+# We use jq on App Platform to read the "composerDependencies" package.json and
 # yarn add the contents after Composer dependencies have been pulled in due to
 # current limitations on buildpack run order.
 #
