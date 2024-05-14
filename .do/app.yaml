@@ -173,6 +173,18 @@ services:
   name: web
   run_command: .do/run-web.sh
   source_dir: /
+  envs:
+  # This informs the Heroku buildpack to spawn this number of php-fpm workers.
+  # Unfortunately, the value App Platform sets for this seems too high for us
+  # and results in some requests stalling and causing a restart, probably due
+  # to running out of RAM. App Platform probably scales this based on the
+  # container RAM size, so it may have to be manually adjusted if increasing or
+  # decreasing the RAM amount.
+  #
+  # @see https://devcenter.heroku.com/articles/php-concurrency
+  - key: WEB_CONCURRENCY
+    scope: RUN_AND_BUILD_TIME
+    value: "16"
 
 workers:
 - build_command: .do/build-background-tasks.sh
