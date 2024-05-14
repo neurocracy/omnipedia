@@ -24,6 +24,8 @@ yarn build:deploy
 
 yarnbuildexitcode=$?
 
+echo "Yarn exit code: $yarnbuildexitcode"
+
 if [ $yarnbuildexitcode -gt 0 ]; then
   exit $yarnbuildexitcode
 fi
