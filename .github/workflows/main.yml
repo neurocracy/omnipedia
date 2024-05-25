@@ -109,7 +109,7 @@ jobs:
       # @see https://github.com/marketplace/actions/run-jq
       - name: Read existing Drupal scaffold config from composer.json
         id: drupal-scaffold-config
-        run: echo $(composer config extra.drupal-scaffold.file-mapping) >> $GITHUB_OUTPUT
+        run: echo '$(composer config extra.drupal-scaffold.file-mapping)' >> $GITHUB_OUTPUT
 
       - name: Unset the .ht.router.php Drupal scaffold file mapping
         uses: sergeysova/jq-action@v2
@@ -122,7 +122,7 @@ jobs:
       - name: Save updated Drupal scaffold file mapping for PHPUnit tests
         run: |
           composer config extra.drupal-scaffold.file-mapping --json \
-            ${{ steps.drupal-scaffold-config-modified.outputs.value }}
+            '${{ steps.drupal-scaffold-config-modified.outputs.value }}'
 
       - name: Install Composer dependencies
         run: composer install --no-progress --prefer-dist --optimize-autoloader
