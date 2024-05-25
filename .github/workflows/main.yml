@@ -90,6 +90,27 @@ jobs:
           key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
           restore-keys: ${{ runner.os }}-composer-
 
+      # This file is set in our composer.json to not be scaffolded by default
+      # since it's not needed in production and local dev environments. However,
+      # it's not possible to run:
+      #
+      # composer config --unset \
+      #   extra.drupal-scaffold.file-mapping."[web-root]/.ht.router.php"
+      #
+      # because Composer will ignore more than 3 nesting levels passed to the
+      # config command by design. Thankfully, it's possible to get the full
+      # JSON contents of the file-mapping key, which we can then modify with jq
+      # and set regardless of nesting level.
+      #
+      # @see https://getcomposer.org/doc/03-cli.md#modifying-extra-values
+      #   Documentation states a max nesting level of 3.
+      #
+      # @see https://jqlang.github.io/jq/manual/
+      - name: Scaffold .ht.router.php for PHPUnit tests
+        run: composer config extra.drupal-scaffold.file-mapping --json \
+          $(composer config extra.drupal-scaffold.file-mapping | \
+          jq --compact-output 'del(."[web-root]/.ht.router.php")')
+
       - name: Install Composer dependencies
         run: composer install --no-progress --prefer-dist --optimize-autoloader
 

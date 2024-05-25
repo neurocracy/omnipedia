@@ -294,6 +294,7 @@
         "[project-root]/.gitattributes": {
           "append": "drupal_scaffold/gitattributes_append.txt"
         },
+        "[web-root]/.ht.router.php": false,
         "[web-root]/.htaccess": {
           "prepend": "drupal_scaffold/htaccess_prepend.txt",
           "append": "drupal_scaffold/htaccess_append.txt"
