@@ -106,10 +106,20 @@ jobs:
       #   Documentation states a max nesting level of 3.
       #
       # @see https://jqlang.github.io/jq/manual/
+      #
+      # @see https://github.com/marketplace/actions/run-jq
+      - name: Read existing Drupal scaffold config from composer.json
+        uses: sergeysova/jq-action@v2
+        id: drupal-scaffold-config
+        with:
+          cmd: |
+            composer config extra.drupal-scaffold.file-mapping | \
+              jq --compact-output 'del(."[web-root]/.ht.router.php")'
+
       - name: Scaffold .ht.router.php for PHPUnit tests
-        run: composer config extra.drupal-scaffold.file-mapping --json \
-          $(composer config extra.drupal-scaffold.file-mapping | \
-          jq --compact-output 'del(."[web-root]/.ht.router.php")')
+        run: |
+          composer config extra.drupal-scaffold.file-mapping --json \
+            ${{ steps.drupal-scaffold-config.outputs.value }}
 
       - name: Install Composer dependencies
         run: composer install --no-progress --prefer-dist --optimize-autoloader
