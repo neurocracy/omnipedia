@@ -116,7 +116,7 @@ jobs:
         id: drupal-scaffold-config-modified
         with:
           cmd: |
-            echo '${{ steps.drupal-scaffold-config.outputs.value }}' | \
+            echo ${{ steps.drupal-scaffold-config.outputs.value }} | \
               jq --compact-output 'del(."[web-root]/.ht.router.php")'
 
       - name: Save updated Drupal scaffold file mapping for PHPUnit tests
