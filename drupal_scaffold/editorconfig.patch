@@ -1,0 +1,15 @@
+diff --git a/.editorconfig b/.editorconfig
+index 686c443cec..ffd179a154 100644
+--- a/.editorconfig
++++ b/.editorconfig
+@@ -13,5 +13,9 @@ charset = utf-8
+ trim_trailing_whitespace = true
+ insert_final_newline = true
+
+-[composer.{json,lock}]
++# Note that this has been patched via Drupal scaffold from 4 spaces to 2 spaces.
++[composer.json]
++indent_size = 2
++
++[composer.lock]
+ indent_size = 4

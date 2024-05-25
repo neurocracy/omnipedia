@@ -290,7 +290,6 @@
         "web-root": "web/"
       },
       "file-mapping": {
-        "[project-root]/.editorconfig": false,
         "[project-root]/.gitattributes": {
           "append": "drupal_scaffold/gitattributes_append"
         },
@@ -318,5 +317,10 @@
       "web/modules/custom/{$name}": ["type:drupal-custom-module"],
       "web/themes/custom/{$name}": ["type:drupal-custom-theme"]
     }
+  },
+  "scripts": {
+    "post-drupal-scaffold-cmd": [
+      "patch -p1 <drupal_scaffold/editorconfig.patch"
+    ]
   }
 }
