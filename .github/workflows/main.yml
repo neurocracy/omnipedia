@@ -109,7 +109,7 @@ jobs:
       # @see https://github.com/marketplace/actions/run-jq
       - name: Read existing Drupal scaffold config from composer.json
         id: drupal-scaffold-config
-        run: composer config extra.drupal-scaffold.file-mapping >> $GITHUB_OUTPUT
+        run: echo $(composer config extra.drupal-scaffold.file-mapping) >> $GITHUB_OUTPUT
 
       - name: Unset the .ht.router.php Drupal scaffold file mapping
         uses: sergeysova/jq-action@v2
