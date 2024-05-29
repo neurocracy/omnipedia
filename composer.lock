@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "728a41720150b903999d46d911d37eed",
+    "content-hash": "08b6c50189e1b8f029cf389274187712",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -4722,12 +4722,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neurocracy/drupal-omnipedia-site-theme.git",
-                "reference": "8b6cad8a6d0bb7a19d5dbfb87435b84ff59ba3db"
+                "reference": "6f66ba3562efbd49fbacc8a8304f21c18f9a7b57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-site-theme/zipball/8b6cad8a6d0bb7a19d5dbfb87435b84ff59ba3db",
-                "reference": "8b6cad8a6d0bb7a19d5dbfb87435b84ff59ba3db",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-site-theme/zipball/6f66ba3562efbd49fbacc8a8304f21c18f9a7b57",
+                "reference": "6f66ba3562efbd49fbacc8a8304f21c18f9a7b57",
                 "shasum": ""
             },
             "require": {
@@ -4762,7 +4762,7 @@
                 "source": "https://github.com/neurocracy/drupal-omnipedia-site-theme",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-site-theme/issues"
             },
-            "time": "2024-05-29T23:01:15+00:00"
+            "time": "2024-05-11T04:47:11+00:00"
         },
         {
             "name": "drupal/omnipedia_user",
