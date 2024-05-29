@@ -16,16 +16,4 @@
 #   Tells App Platform to install jq for us.
 yarn add $(jq --raw-output '.composerDependencies | to_entries[] | [.key, .value] | [join("@")] | join(" ")' package.json)
 
-# For whatever reason, running this package.json script doesn't correctly fail
-# the whole process if the script fails. This might be related to using
-# cross-env, but regardless, we try to exit with the exit code if it's greater
-# than zero via subsequent statements.
 yarn build:deploy
-
-yarnbuildexitcode=$?
-
-echo "Yarn exit code: $yarnbuildexitcode"
-
-if [ $yarnbuildexitcode -gt 0 ]; then
-  exit $yarnbuildexitcode
-fi
