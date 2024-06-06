@@ -1,6 +1,6 @@
 # DDEV project configuration.
 #
-# @see https://ddev.readthedocs.io/en/latest/users/configuration/config/
+# @see https://ddev.readthedocs.io/en/stable/users/configuration/config/
 
 name: omnipedia
 type: drupal
@@ -11,7 +11,7 @@ webserver_type: apache-fpm
 router_http_port: "80"
 router_https_port: "443"
 xdebug_enabled: false
-# @see https://ddev.readthedocs.io/en/latest/users/extend/additional-hostnames/
+# @see https://ddev.readthedocs.io/en/stable/users/extend/additional-hostnames/
 additional_hostnames:
   - omnipedia-oembed
 additional_fqdns: []
@@ -27,13 +27,7 @@ use_dns_when_possible: true
 composer_version: "2"
 web_environment: []
 nodejs_version: "20"
-
-hooks:
-  post-start:
-    # Currently required to use Yarn 4 without checking in the binary. You can
-    # go without this, but you'll have to run 'ddev exec corepack enable'
-    # manually every time you start up the project or you'll get an error that
-    # the global Yarn is 1.x which doesn't match the "packageManager" field.
-    #
-    # @see https://yarnpkg.com/blog/release/4.0#installing-yarn
-    - exec: "corepack enable"
+# Required to use Yarn 4 without checking in the binary.
+#
+# @see https://yarnpkg.com/blog/release/4.0#installing-yarn
+corepack_enable: true
