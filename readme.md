@@ -14,6 +14,12 @@ app.
 5. [Security](docs/security.md)
 6. [Major changes](docs/changes.md)
 
+# Funding
+
+Funding for this project was provided in part by
+
+[![Consensus Enterprises](docs/assets/consensus-logo-horizontal.svg?v=1)](https://consensus.enterprises/)
+
 # Current test status
 
 [![Main](https://github.com/neurocracy/omnipedia/actions/workflows/main.yml/badge.svg)](https://github.com/neurocracy/omnipedia/actions/workflows/main.yml)
