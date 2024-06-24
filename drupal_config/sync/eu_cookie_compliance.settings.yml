@@ -60,7 +60,7 @@ exclude_uid_1: false
 better_support_for_screen_readers: true
 method: categories
 disabled_javascripts: ''
-automatic_cookies_removal: true
+automatic_cookies_removal: false
 allowed_cookies: ''
 consent_storage_method: do_not_store
 withdraw_message:
