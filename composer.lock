@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "728a41720150b903999d46d911d37eed",
+    "content-hash": "af1bb5c4855f4e9d04c998af55b0298b",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -119,16 +119,16 @@
         },
         {
             "name": "aws/aws-crt-php",
-            "version": "v1.2.4",
+            "version": "v1.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/awslabs/aws-crt-php.git",
-                "reference": "eb0c6e4e142224a10b08f49ebf87f32611d162b2"
+                "reference": "a63485b65b6b3367039306496d49737cf1995408"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/awslabs/aws-crt-php/zipball/eb0c6e4e142224a10b08f49ebf87f32611d162b2",
-                "reference": "eb0c6e4e142224a10b08f49ebf87f32611d162b2",
+                "url": "https://api.github.com/repos/awslabs/aws-crt-php/zipball/a63485b65b6b3367039306496d49737cf1995408",
+                "reference": "a63485b65b6b3367039306496d49737cf1995408",
                 "shasum": ""
             },
             "require": {
@@ -167,22 +167,22 @@
             ],
             "support": {
                 "issues": "https://github.com/awslabs/aws-crt-php/issues",
-                "source": "https://github.com/awslabs/aws-crt-php/tree/v1.2.4"
+                "source": "https://github.com/awslabs/aws-crt-php/tree/v1.2.6"
             },
-            "time": "2023-11-08T00:42:13+00:00"
+            "time": "2024-06-13T17:21:28+00:00"
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.304.3",
+            "version": "3.321.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "d1ecaba720dc5d935d4ff66255f990fce3aa9727"
+                "reference": "df456658bdc2ad84a00cf35a7b5af874fdcc7a53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/d1ecaba720dc5d935d4ff66255f990fce3aa9727",
-                "reference": "d1ecaba720dc5d935d4ff66255f990fce3aa9727",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/df456658bdc2ad84a00cf35a7b5af874fdcc7a53",
+                "reference": "df456658bdc2ad84a00cf35a7b5af874fdcc7a53",
                 "shasum": ""
             },
             "require": {
@@ -235,7 +235,10 @@
                 ],
                 "psr-4": {
                     "Aws\\": "src/"
-                }
+                },
+                "exclude-from-classmap": [
+                    "src/data/"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -262,9 +265,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.304.3"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.321.8"
             },
-            "time": "2024-04-11T18:05:41+00:00"
+            "time": "2024-09-10T18:18:03+00:00"
         },
         {
             "name": "caxy/php-htmldiff",
@@ -5630,25 +5633,25 @@
         },
         {
             "name": "drupal/s3fs",
-            "version": "3.4.0",
+            "version": "3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/s3fs.git",
-                "reference": "8.x-3.4"
+                "reference": "8.x-3.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/s3fs-8.x-3.4.zip",
-                "reference": "8.x-3.4",
-                "shasum": "4b31c7a34a892cf70476327e1d5c1cf2e99c20a0"
+                "url": "https://ftp.drupal.org/files/projects/s3fs-8.x-3.6.zip",
+                "reference": "8.x-3.6",
+                "shasum": "b422cef4ed8f32c287b3e09ddac22c8d087dcd58"
             },
             "require": {
                 "aws/aws-sdk-php": "^3.18",
-                "drupal/core": "^8.8 || ^9 || ~10.0.0 || ~10.1.0 || ~10.2.0"
+                "drupal/core": "^8.8 || ^9 || ~10.0.0 || ~10.1.0 || ~10.2.0 || ~10.3.0 || ~11.0.0"
             },
             "require-dev": {
-                "drupal/advagg": "^4.0 || ^5.0 || ^6.0",
-                "drush/drush": "^10 || ^11 || ^12",
+                "drupal/key": "^1",
+                "drush/drush": "^10 || ^11 || ^12 || ^13",
                 "mglaman/phpstan-drupal": "^1.1",
                 "phpstan/extension-installer": "^1.2",
                 "phpstan/phpstan": "^1.9",
@@ -5661,8 +5664,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.4",
-                    "datestamp": "1701992779",
+                    "version": "8.x-3.6",
+                    "datestamp": "1723007914",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"

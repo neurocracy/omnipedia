@@ -187,7 +187,7 @@
     "drupal/refreshless": "^2.0@dev",
     "drupal/remove_http_headers": "^2.0",
     "drupal/rules": "^3.0@alpha",
-    "drupal/s3fs": "^3.3",
+    "drupal/s3fs": "^3.6",
     "drupal/seckit": "^2.0",
     "drupal/security_review": "^2.0",
     "drupal/session_limit": "^2.0@beta",
