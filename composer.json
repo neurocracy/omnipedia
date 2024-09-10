@@ -320,7 +320,7 @@
   },
   "scripts": {
     "post-drupal-scaffold-cmd": [
-      "patch -p1 <drupal_scaffold/editorconfig.patch"
+      "patch --no-backup-if-mismatch -p1 <drupal_scaffold/editorconfig.patch"
     ]
   }
 }
