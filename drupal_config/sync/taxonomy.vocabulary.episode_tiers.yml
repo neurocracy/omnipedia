@@ -6,3 +6,4 @@ name: Episodes
 vid: episode_tiers
 description: 'Associate wiki pages and media with an episode number.'
 weight: 0
+new_revision: false

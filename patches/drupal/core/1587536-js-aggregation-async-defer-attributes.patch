@@ -1,27 +1,27 @@
 diff --git a/core/lib/Drupal/Core/Asset/AssetResolver.php b/core/lib/Drupal/Core/Asset/AssetResolver.php
-index 04a5186368..ac53c56334 100644
+index fcd294a649714d4ed7fc191060ce044bf266eb01..aeda30bfdd6768ca0e0dc8dcd55b20ae4410a5c6 100644
 --- a/core/lib/Drupal/Core/Asset/AssetResolver.php
 +++ b/core/lib/Drupal/Core/Asset/AssetResolver.php
-@@ -264,8 +264,15 @@ public function getJsAssets(AttachedAssetsInterface $assets, $optimize, Language
-             $options['scope'] = in_array($library, $header_js_libraries) ? 'header' : 'footer';
+@@ -296,8 +296,15 @@ public function getJsAssets(AttachedAssetsInterface $assets, $optimize, ?Languag
+           $options['scope'] = in_array($library, $header_js_libraries) ? 'header' : 'footer';
  
-             // Preprocess can only be set if caching is enabled and no
--            // attributes are set.
--            $options['preprocess'] = $options['cache'] && empty($options['attributes']) ? $options['preprocess'] : FALSE;
-+            // attributes other than 'async' or 'defer' are set.
-+            //
-+            // @see: https://www.drupal.org/project/drupal/issues/1587536
-+            $options['preprocess'] = $options['cache'] && (
-+              empty($options['attributes']) ||
-+              count(\array_diff_key(
-+                $options['attributes'], ['async' => TRUE, 'defer' => TRUE])
-+              ) === 0
-+            ) ? $options['preprocess'] : FALSE;
+           // Preprocess can only be set if caching is enabled and no
+-          // attributes are set.
+-          $options['preprocess'] = $options['cache'] && empty($options['attributes']) ? $options['preprocess'] : FALSE;
++          // attributes other than 'async' or 'defer' are set.
++          //
++          // @see: https://www.drupal.org/project/drupal/issues/1587536
++          $options['preprocess'] = $options['cache'] && (
++            empty($options['attributes']) ||
++            count(\array_diff_key(
++              $options['attributes'], ['async' => TRUE, 'defer' => TRUE])
++            ) === 0
++          ) ? $options['preprocess'] : FALSE;
  
-             // Always add a tiny value to the weight, to conserve the insertion
-             // order.
+           // Always add a tiny value to the weight, to conserve the insertion
+           // order.
 diff --git a/core/lib/Drupal/Core/Asset/JsCollectionGrouper.php b/core/lib/Drupal/Core/Asset/JsCollectionGrouper.php
-index 17253626f2..0731bc2c06 100644
+index 17253626f2d0a42c6a29bd83c6b70d0262eac7bf..0731bc2c06346e4aeb3f4b7ebad903a6787b7509 100644
 --- a/core/lib/Drupal/Core/Asset/JsCollectionGrouper.php
 +++ b/core/lib/Drupal/Core/Asset/JsCollectionGrouper.php
 @@ -33,6 +33,21 @@ public function group(array $js_assets) {

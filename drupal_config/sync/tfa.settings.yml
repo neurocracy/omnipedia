@@ -1,5 +1,6 @@
 _core:
   default_config_hash: r1PkPDtSv8uPbDtiuPH3x0ALdXOUHzuH7zp8mbp3zeA
+langcode: en
 enabled: true
 required_roles:
   contributor: contributor

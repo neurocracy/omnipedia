@@ -1,5 +1,6 @@
 _core:
   default_config_hash: E99p-j2YC4tVqQ7Gz4-I4cALOq2a8XHkvlQnxoV5EWY
+langcode: en
 session_limit_max: 1
 session_limit_masquerade_ignore: false
 session_limit_behaviour: 1

@@ -1,5 +1,6 @@
 _core:
   default_config_hash: HENvUIeX6xNPGRB1w3z6rT9a71LM_hKXATF6XrM9WvM
+langcode: en
 smtp_on: true
 smtp_host: ''
 smtp_hostbackup: ''
@@ -17,6 +18,6 @@ smtp_allowhtml: false
 smtp_test_address: ''
 smtp_reroute_address: ''
 smtp_debugging: false
+smtp_debug_level: 1
 prev_mail_system: php_mail
 smtp_keepalive: true
-smtp_debug_level: 1

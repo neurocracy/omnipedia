@@ -15,7 +15,7 @@ _core:
 name: Page
 type: page
 description: "Use generic <em>pages</em> to create a non-wiki page that doesn't vary by wiki date."
-help: ''
+help: null
 new_revision: true
 preview_mode: 1
 display_submitted: false
