@@ -159,7 +159,7 @@
     "drupal/ambientimpact_core": "^2.0@dev",
     "drupal/ambientimpact_icon": "^1.0@dev",
     "drupal/ambientimpact_markdown": "^2.0@dev",
-    "drupal/ambientimpact_media": "^4.0@dev || ^5.0@dev",
+    "drupal/ambientimpact_media": "^5.0@dev",
     "drupal/ambientimpact_ux": "^1.0@dev",
     "drupal/autoban": "^1.7",
     "drupal/config_split": "^1.6",
