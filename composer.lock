@@ -4008,20 +4008,20 @@
         },
         {
             "name": "drupal/monolog",
-            "version": "3.0.2",
+            "version": "3.0.4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/monolog.git",
-                "reference": "3.0.2"
+                "reference": "3.0.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/monolog-3.0.2.zip",
-                "reference": "3.0.2",
-                "shasum": "a88e8249028e56a21c4472891381412b9733f768"
+                "url": "https://ftp.drupal.org/files/projects/monolog-3.0.4.zip",
+                "reference": "3.0.4",
+                "shasum": "5e86b3598b826dca767c52bc7e63cb2c049212d3"
             },
             "require": {
-                "drupal/core": "^10",
+                "drupal/core": "^10 || ^11",
                 "monolog/monolog": "^3.2.0",
                 "php": "^8.1.0"
             },
@@ -4036,17 +4036,12 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.2",
-                    "datestamp": "1707845433",
+                    "version": "3.0.4",
+                    "datestamp": "1723450250",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Drupal\\Monolog": "src/"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
