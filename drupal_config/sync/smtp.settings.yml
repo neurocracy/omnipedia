@@ -13,9 +13,10 @@ smtp_from: no-reply@omnipedia.app
 smtp_fromname: Omnipedia
 smtp_client_hostname: ''
 smtp_client_helo: ''
-smtp_allowhtml: '0'
+smtp_allowhtml: false
 smtp_test_address: ''
 smtp_reroute_address: ''
 smtp_debugging: false
 prev_mail_system: php_mail
 smtp_keepalive: true
+smtp_debug_level: 1
