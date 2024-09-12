@@ -24,7 +24,7 @@
     "drupal-ambientimpact-base": "workspace:^6",
     "drupal-ambientimpact-core": "workspace:^2",
     "drupal-ambientimpact-icon": "workspace:^1",
-    "drupal-ambientimpact-media": "workspace:^4",
+    "drupal-ambientimpact-media": "workspace:^5",
     "drupal-ambientimpact-ux": "workspace:^1",
     "drupal-omnipedia-block": "workspace:^6",
     "drupal-omnipedia-changes": "workspace:^7",
