@@ -1898,12 +1898,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-media.git",
-                "reference": "2ad1929e2ede6a5017975c99139082924dc47ae5"
+                "reference": "bf863bc434d0db5831447dba77ee180334de0eef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-media/zipball/2ad1929e2ede6a5017975c99139082924dc47ae5",
-                "reference": "2ad1929e2ede6a5017975c99139082924dc47ae5",
+                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-media/zipball/bf863bc434d0db5831447dba77ee180334de0eef",
+                "reference": "bf863bc434d0db5831447dba77ee180334de0eef",
                 "shasum": ""
             },
             "require": {
@@ -1923,7 +1923,7 @@
             "extra": {
                 "patches": {
                     "drupal/core": {
-                        "Add a hook to modify oEmbed resource data (core 10.3.x) [#3042423]: https://www.drupal.org/project/drupal/issues/3042423": "https://raw.githubusercontent.com/Ambient-Impact/drupal-ambientimpact-media/a5d7bd9c9630a1776195464e74a4d99be882e84e/patches/drupal/core/3042423-hook-to-modify-oembed-resource-data.patch"
+                        "Add a hook to modify oEmbed resource data (core 10.3.x) [#3042423]: https://www.drupal.org/project/drupal/issues/3042423#comment-15772049": "https://raw.githubusercontent.com/Ambient-Impact/drupal-ambientimpact-media/f412074cd73f4da9f23c0e9ef13cbb9b7e3b4312/patches/drupal/core/3042423-hook-to-modify-oembed-resource-data.patch"
                     },
                     "drupal/image_field_caption": {
                         "Caption required incorrectly based on alt field required [#3181263]: https://www.drupal.org/project/image_field_caption/issues/3181263#comment-13895775": "https://raw.githubusercontent.com/Ambient-Impact/drupal-ambientimpact-media/c4b5b93573d96017d342c0f29e6aabe34a0396ef/patches/drupal/image_field_caption/image_field_caption_caption_required_alt_required_3181263-1.patch"
@@ -1946,7 +1946,7 @@
                 "source": "https://github.com/Ambient-Impact/drupal-ambientimpact-media",
                 "issues": "https://github.com/Ambient-Impact/drupal-ambientimpact-media/issues"
             },
-            "time": "2024-07-17T04:31:02+00:00"
+            "time": "2024-09-13T18:10:34+00:00"
         },
         {
             "name": "drupal/ambientimpact_ux",
