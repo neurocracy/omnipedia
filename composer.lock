@@ -4332,16 +4332,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neurocracy/drupal-omnipedia-changes.git",
-                "reference": "f19e224eb96b41cdcd8a150c99929cb674572fa6"
+                "reference": "bfbc4bef0be54d1957a5f522f71c57abfefcf227"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-changes/zipball/f19e224eb96b41cdcd8a150c99929cb674572fa6",
-                "reference": "f19e224eb96b41cdcd8a150c99929cb674572fa6",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-changes/zipball/bfbc4bef0be54d1957a5f522f71c57abfefcf227",
+                "reference": "bfbc4bef0be54d1957a5f522f71c57abfefcf227",
                 "shasum": ""
             },
             "require": {
                 "caxy/php-htmldiff": "^0.1.12",
+                "cweagans/composer-patches": "^1.7.0",
                 "drupal/ambientimpact_core": "^2.0@dev",
                 "drupal/core": "^10.0",
                 "drupal/diff": "^1.0",
@@ -4365,6 +4366,11 @@
                     "services": {
                         "drush.services.yml": "^10"
                     }
+                },
+                "patches": {
+                    "drupal/pcb": {
+                        "PHPUnit test fails on Drupal ^10.3 due to missing void return types [#3474283]: https://www.drupal.org/project/pcb/issues/3474283": "https://raw.githubusercontent.com/neurocracy/drupal-omnipedia-changes/c1b045af3ffb97658b3916726f3b37f39d1a663d/patches/drupal/pcb/3474283-phpunit-test-method-return-type.patch"
+                    }
                 }
             },
             "license": [
@@ -4383,7 +4389,7 @@
                 "source": "https://github.com/neurocracy/drupal-omnipedia-changes",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-changes/issues"
             },
-            "time": "2023-12-23T03:54:01+00:00"
+            "time": "2024-09-13T20:04:05+00:00"
         },
         {
             "name": "drupal/omnipedia_content",
