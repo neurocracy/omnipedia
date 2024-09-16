@@ -70,8 +70,8 @@ header](https://developer.mozilla.org/docs/Web/HTTP/CSP) via [the Drupal module
 of the same name](https://www.drupal.org/project/csp), so that in the unlikely
 event someone finds a way to inject malicious code into our database that gets
 sent to our users, their browsers will refuse to run most or all of it. See [our
-Mozilla Observatory scan
-results](https://observatory.mozilla.org/analyze/omnipedia.app).
+MDN HTTP Observatory scan
+results](https://developer.mozilla.org/en-US/observatory/analyze?host=omnipedia.app).
 
 ## Session cookies
 
