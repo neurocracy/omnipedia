@@ -554,6 +554,19 @@ $settings['entity_update_batch_size'] = 50;
 $settings['entity_update_backup'] = true;
 
 /**
+ * State caching.
+ *
+ * State caching uses the cache collector pattern to cache all requested keys
+ * from the state API in a single cache entry, which can greatly reduce the
+ * amount of database queries. However, some sites may use state with a lot of
+ * dynamic keys which could result in a very large cache.
+ *
+ * @see https://www.drupal.org/node/3177901
+ *   Drupal 10.3 change recording introducing state caching.
+ */
+$settings['state_cache'] = true;
+
+/**
  * Default to reporting all error levels, overriding current Drupal defaults.
  *
  * This is the default value for PHP, but Drupal sets a different value by
