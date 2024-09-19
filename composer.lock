@@ -5521,7 +5521,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/refreshless.git",
-                "reference": "2e9a84f4d2bd46f35d9c9b4fb84c31c9e3fdc295"
+                "reference": "1670bd6dcfadcff8a6d10319c25b8cb16d861ec6"
             },
             "require": {
                 "composer/semver": "^3.0",
@@ -5539,7 +5539,7 @@
                 },
                 "drupal": {
                     "version": "2.x-dev",
-                    "datestamp": "1713040777",
+                    "datestamp": "1726764853",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -5569,11 +5569,11 @@
                     "homepage": "https://www.drupal.org/user/3090607"
                 },
                 {
-                    "name": "JaydipJD",
+                    "name": "jaydip makawana",
                     "homepage": "https://www.drupal.org/user/3621830"
                 },
                 {
-                    "name": "Rajeshreeputra",
+                    "name": "rajeshreeputra",
                     "homepage": "https://www.drupal.org/user/3418561"
                 },
                 {
@@ -5585,7 +5585,7 @@
                     "homepage": "https://www.drupal.org/user/2314038"
                 },
                 {
-                    "name": "Wim Leers",
+                    "name": "wim leers",
                     "homepage": "https://www.drupal.org/user/99777"
                 }
             ],
