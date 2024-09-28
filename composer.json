@@ -208,7 +208,7 @@
     "drupal/pathauto": "^1.6",
     "drupal/pathologic": "^2.0@alpha",
     "drupal/readonlymode": "^1.1",
-    "drupal/rebuilder": "^1.0@RC",
+    "drupal/rebuilder": "^1.0",
     "drupal/redirect": "^1.6",
     "drupal/refreshless": "^2.0@dev",
     "drupal/remove_http_headers": "^2.0",

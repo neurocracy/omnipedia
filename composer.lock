@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0f8537232845d71f3b11fd115a788363",
+    "content-hash": "cf3e9e31f320a9b0ee523e25fd88c04f",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -19366,7 +19366,6 @@
         "drupal/omnipedia_warmer": 20,
         "drupal/paranoia": 5,
         "drupal/pathologic": 15,
-        "drupal/rebuilder": 5,
         "drupal/refreshless": 20,
         "drupal/rules": 15,
         "drupal/trusted_reverse_proxy": 20,
