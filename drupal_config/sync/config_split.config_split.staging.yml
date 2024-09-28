@@ -6,13 +6,12 @@ id: staging
 label: Staging
 description: 'Staging site configuration split.'
 weight: 0
-stackable: false
-no_patching: false
-storage: folder
 folder: ../drupal_config/splits/staging
 module: {  }
 theme: {  }
-complete_list: {  }
-partial_list:
+blacklist: {  }
+graylist:
   - dblog.settings
   - gin.settings
+graylist_dependents: true
+graylist_skip_equal: true

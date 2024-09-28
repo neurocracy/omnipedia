@@ -13,6 +13,7 @@ module:
   breakpoint: 0
   ckeditor5: 0
   config: 0
+  config_filter: 0
   config_split: 0
   contact: 0
   contextual: 0

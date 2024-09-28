@@ -6,9 +6,6 @@ id: dev
 label: Development
 description: 'Local development site configuration split.'
 weight: 0
-stackable: false
-no_patching: false
-storage: folder
 folder: ../drupal_config/splits/dev
 module:
   action: 0
@@ -21,8 +18,8 @@ module:
   typed_entity_ui: 0
   views_ui: 0
 theme: {  }
-complete_list: {  }
-partial_list:
+blacklist: {  }
+graylist:
   - csp.settings
   - dblog.settings
   - gin.settings
@@ -32,3 +29,5 @@ partial_list:
   - user.role.anonymous
   - user.role.authenticated
   - user.role.developer
+graylist_dependents: true
+graylist_skip_equal: true

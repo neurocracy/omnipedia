@@ -1,0 +1,26 @@
+uuid: 950179d1-b220-48fa-849d-d835d4c2991c
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact
+    - devel
+    - discourse_sso
+    - eu_cookie_compliance
+    - media
+    - omnipedia_changes
+    - system
+_core:
+  default_config_hash: pq_mEIu_B4widZN7Ap81iCJSjShFFdcL0jEiCi8VrDk
+id: anonymous
+label: 'anonymous user'
+weight: -10
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access devel information'
+  - 'access discourse sso'
+  - 'access site-wide contact form'
+  - 'build omnipedia_changes'
+  - 'display eu cookie compliance popup'
+  - 'view media'

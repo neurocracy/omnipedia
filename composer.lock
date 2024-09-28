@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "da14ed541669f19d76ede2c597cd0741",
+    "content-hash": "cf3e9e31f320a9b0ee523e25fd88c04f",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -2159,26 +2159,24 @@
         },
         {
             "name": "drupal/config_split",
-            "version": "2.0.1",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/config_split.git",
-                "reference": "2.0.1"
+                "reference": "8.x-1.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_split-2.0.1.zip",
-                "reference": "2.0.1",
-                "shasum": "e033a277995753c564f3a4681b88cd112e19ba2a"
+                "url": "https://ftp.drupal.org/files/projects/config_split-8.x-1.9.zip",
+                "reference": "8.x-1.9",
+                "shasum": "cb2a17f590ae057ff8a1864f57e2e114b2395a86"
             },
             "require": {
-                "drupal/core": "^8.8 || ^9 || ^10 || ^11"
+                "drupal/config_filter": "^1",
+                "drupal/core": "^9.3 || ^10"
             },
             "conflict": {
-                "drush/drush": "<10"
-            },
-            "require-dev": {
-                "drupal/config_filter": "^1||^2"
+                "drupal/console": "<1.3.2"
             },
             "suggest": {
                 "drupal/chosen": "Chosen uses the Chosen jQuery plugin to make the <select> elements more user-friendly.",
@@ -2187,8 +2185,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.1",
-                    "datestamp": "1711022056",
+                    "version": "8.x-1.9",
+                    "datestamp": "1656976425",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2196,7 +2194,7 @@
                 },
                 "drush": {
                     "services": {
-                        "drush.services.yml": "^10 || ^11"
+                        "drush.services.yml": "^9 || ^10 || ^11"
                     }
                 }
             },

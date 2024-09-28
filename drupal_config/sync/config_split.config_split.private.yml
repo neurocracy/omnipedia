@@ -6,15 +6,14 @@ id: private
 label: 'Private content'
 description: 'Private content site configuration split.'
 weight: 0
-stackable: false
-no_patching: false
-storage: folder
 folder: ../drupal_config/splits/private
 module: {  }
 theme: {  }
-complete_list: {  }
-partial_list:
+blacklist: {  }
+graylist:
   - block.block.omnipedia_site_theme_account_menu
   - user.role.anonymous
   - user.role.authenticated
   - user.settings
+graylist_dependents: true
+graylist_skip_equal: true

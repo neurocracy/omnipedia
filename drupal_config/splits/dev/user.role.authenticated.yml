@@ -1,0 +1,32 @@
+uuid: 8ececdc4-5d28-4535-bd83-7639aa508c86
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact
+    - devel
+    - discourse_sso
+    - eu_cookie_compliance
+    - file
+    - media
+    - omnipedia_changes
+    - system
+    - userprotect
+_core:
+  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+id: authenticated
+label: 'authenticated user'
+weight: -9
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access devel information'
+  - 'access discourse sso'
+  - 'access site-wide contact form'
+  - 'build omnipedia_changes'
+  - 'delete own files'
+  - 'display eu cookie compliance popup'
+  - userprotect.account.edit
+  - userprotect.mail.edit
+  - userprotect.pass.edit
+  - 'view media'
