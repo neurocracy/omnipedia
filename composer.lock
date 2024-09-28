@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8e30f571ce6441c739c53be60cb1ed1a",
+    "content-hash": "cf3e9e31f320a9b0ee523e25fd88c04f",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -3406,29 +3406,29 @@
         },
         {
             "name": "drupal/honeypot",
-            "version": "2.1.4",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/honeypot.git",
-                "reference": "2.1.4"
+                "reference": "2.2.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/honeypot-2.1.4.zip",
-                "reference": "2.1.4",
-                "shasum": "adf76c3520c0e458177dbe6d638aa2d6ae40a95b"
+                "url": "https://ftp.drupal.org/files/projects/honeypot-2.2.0.zip",
+                "reference": "2.2.0",
+                "shasum": "56397c3779ebac1526cce9ecd39385017ee9a837"
             },
             "require": {
-                "drupal/core": "^9.2 || ^10"
+                "drupal/core": "^10.3 || ^11"
             },
             "require-dev": {
-                "drupal/rules": "^3.x-dev"
+                "drupal/rules": "^4.0"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.1.4",
-                    "datestamp": "1723489062",
+                    "version": "2.2.0",
+                    "datestamp": "1723761042",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
