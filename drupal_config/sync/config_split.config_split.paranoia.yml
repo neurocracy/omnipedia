@@ -6,11 +6,12 @@ id: paranoia
 label: Paranoia
 description: 'Paranoia module enabling configuration split.'
 weight: 0
+stackable: false
+no_patching: false
+storage: folder
 folder: ../drupal_config/splits/paranoia
 module:
   paranoia: 0
 theme: {  }
-blacklist: {  }
-graylist: {  }
-graylist_dependents: true
-graylist_skip_equal: true
+complete_list: {  }
+partial_list: {  }
