@@ -4,6 +4,10 @@
 drush maint:set 1
 echo "=> Maintenance mode has been turned on"
 
+# Rebuild plug-in definitions as these can occasionally cause errors if one or
+# more has been removed.
+drush rebuilder plugins
+
 # Run any necessary database updates.
 drush -y updb
 
