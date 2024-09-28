@@ -1,0 +1,4 @@
+adding:
+  error_level: all
+removing:
+  error_level: hide

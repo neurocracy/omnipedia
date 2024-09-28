@@ -6,13 +6,14 @@ id: refreshless
 label: RefreshLess
 description: 'RefreshLess module enabling configuration split.'
 weight: 0
+stackable: false
+no_patching: false
+storage: folder
 folder: ../drupal_config/splits/refreshless
 module:
   refreshless: 0
   refreshless_turbo: 0
 theme: {  }
-blacklist: {  }
-graylist:
+complete_list: {  }
+partial_list:
   - system.performance
-graylist_dependents: true
-graylist_skip_equal: true
