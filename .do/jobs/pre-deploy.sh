@@ -1,6 +1,6 @@
 #!/bin/bash
 
-drush -y pm:uninstall config_split
+drush cr
 
 # Enable maintenance mode.
 drush maint:set 1
