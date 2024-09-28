@@ -2093,20 +2093,20 @@
         },
         {
             "name": "drupal/config_filter",
-            "version": "1.12.0",
+            "version": "1.13.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/config_filter.git",
-                "reference": "8.x-1.12"
+                "reference": "8.x-1.13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_filter-8.x-1.12.zip",
-                "reference": "8.x-1.12",
-                "shasum": "364581700ca3a298f62950ff37dd309d0bfb8381"
+                "url": "https://ftp.drupal.org/files/projects/config_filter-8.x-1.13.zip",
+                "reference": "8.x-1.13",
+                "shasum": "d9f83dbeaeaa1a1788368219a6e530f6b681459b"
             },
             "require": {
-                "drupal/core": "^8.8 || ^9 || ^10"
+                "drupal/core": "^8.8 || ^9 || ^10 || ^11"
             },
             "suggest": {
                 "drupal/config_split": "Split site configuration for different environments."
@@ -2114,8 +2114,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.12",
-                    "datestamp": "1698308496",
+                    "version": "8.x-1.13",
+                    "datestamp": "1727472406",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3111,27 +3111,27 @@
         },
         {
             "name": "drupal/fancy_file_delete",
-            "version": "2.0.9",
+            "version": "2.0.10",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/fancy_file_delete.git",
-                "reference": "2.0.9"
+                "reference": "2.0.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/fancy_file_delete-2.0.9.zip",
-                "reference": "2.0.9",
-                "shasum": "113c12c481dab0f59ac549b5a789baa8d3c17057"
+                "url": "https://ftp.drupal.org/files/projects/fancy_file_delete-2.0.10.zip",
+                "reference": "2.0.10",
+                "shasum": "55c0209d8c5d764e9471f9ca15f3d8d1388d7f7f"
             },
             "require": {
-                "drupal/core": "^8.7.7 || ^9 || ^10",
+                "drupal/core": "^8.7.7 || ^9 || ^10 || ^11",
                 "drupal/views_bulk_operations": "^4.1"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.9",
-                    "datestamp": "1693367670",
+                    "version": "2.0.10",
+                    "datestamp": "1726865522",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3471,20 +3471,20 @@
         },
         {
             "name": "drupal/hook_event_dispatcher",
-            "version": "4.0.3",
+            "version": "4.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/hook_event_dispatcher.git",
-                "reference": "4.0.3"
+                "reference": "4.2.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/hook_event_dispatcher-4.0.3.zip",
-                "reference": "4.0.3",
-                "shasum": "e97591b7be0f4961b7cdf9db18c65979f352adba"
+                "url": "https://ftp.drupal.org/files/projects/hook_event_dispatcher-4.2.0.zip",
+                "reference": "4.2.0",
+                "shasum": "8a3c2278778150bd2c61c15b1676a67d4fbc2a5b"
             },
             "require": {
-                "drupal/core": "^10.2",
+                "drupal/core": "^10.2 || ^11.0",
                 "php": ">=8.1.0"
             },
             "require-dev": {
@@ -3503,8 +3503,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "4.0.3",
-                    "datestamp": "1720437069",
+                    "version": "4.2.0",
+                    "datestamp": "1727021695",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5410,27 +5410,27 @@
         },
         {
             "name": "drupal/rebuilder",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/rebuilder.git",
-                "reference": "1.1.0"
+                "reference": "1.2.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/rebuilder-1.1.0.zip",
-                "reference": "1.1.0",
-                "shasum": "bed450c72c2b2c987b421fe462db6b9b77554e8b"
+                "url": "https://ftp.drupal.org/files/projects/rebuilder-1.2.0.zip",
+                "reference": "1.2.0",
+                "shasum": "175e3fa8f20772a6fb52a3553789ee35c243225e"
             },
             "require": {
-                "drupal/core": "^10.1",
+                "drupal/core": "^10.1 || ^11",
                 "php": "^8.1"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "1.1.0",
-                    "datestamp": "1712185967",
+                    "version": "1.2.0",
+                    "datestamp": "1726628007",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6598,12 +6598,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ambient-Impact/drupal-trusted-reverse-proxy.git",
-                "reference": "6ecd3ce71b258815d66969b1c562f0492242ec78"
+                "reference": "a2a0441a13f9290e76f9c5c5dc130fbbbd413369"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Ambient-Impact/drupal-trusted-reverse-proxy/zipball/6ecd3ce71b258815d66969b1c562f0492242ec78",
-                "reference": "6ecd3ce71b258815d66969b1c562f0492242ec78",
+                "url": "https://api.github.com/repos/Ambient-Impact/drupal-trusted-reverse-proxy/zipball/a2a0441a13f9290e76f9c5c5dc130fbbbd413369",
+                "reference": "a2a0441a13f9290e76f9c5c5dc130fbbbd413369",
                 "shasum": ""
             },
             "default-branch": true,
@@ -6616,7 +6616,7 @@
                 "source": "https://github.com/Ambient-Impact/drupal-trusted-reverse-proxy/tree/1.0.x",
                 "issues": "https://github.com/Ambient-Impact/drupal-trusted-reverse-proxy/issues"
             },
-            "time": "2023-05-07T01:36:58+00:00"
+            "time": "2024-09-18T01:11:15+00:00"
         },
         {
             "name": "drupal/typed_data",
@@ -14489,26 +14489,26 @@
         },
         {
             "name": "drupal/config_devel",
-            "version": "1.9.0",
+            "version": "1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/config_devel.git",
-                "reference": "8.x-1.9"
+                "reference": "8.x-1.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_devel-8.x-1.9.zip",
-                "reference": "8.x-1.9",
-                "shasum": "a9cb90575ec854b8d8adb4633a0ddc47c490ca87"
+                "url": "https://ftp.drupal.org/files/projects/config_devel-8.x-1.10.zip",
+                "reference": "8.x-1.10",
+                "shasum": "d47415b4be32180f27fcd58e86107a9a7b1351f3"
             },
             "require": {
-                "drupal/core": "^9.3 || ^10"
+                "drupal/core": "^9.3 || ^10 || ^11"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.9",
-                    "datestamp": "1678264813",
+                    "version": "8.x-1.10",
+                    "datestamp": "1727184343",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
