@@ -29,7 +29,7 @@
     "drupal-omnipedia-block": "workspace:^6",
     "drupal-omnipedia-changes": "workspace:^7",
     "drupal-omnipedia-content": "workspace:^6",
-    "drupal-omnipedia-media": "workspace:^6",
+    "drupal-omnipedia-media": "workspace:^7",
     "drupal-omnipedia-site-theme": "workspace:^7"
   },
   "resolutions": {

@@ -5229,7 +5229,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"drupal-omnipedia-media@workspace:^6, drupal-omnipedia-media@workspace:web/modules/custom/omnipedia_media":
+"drupal-omnipedia-media@workspace:^6 || ^7, drupal-omnipedia-media@workspace:web/modules/custom/omnipedia_media":
   version: 0.0.0-use.local
   resolution: "drupal-omnipedia-media@workspace:web/modules/custom/omnipedia_media"
   dependencies:
@@ -5269,7 +5269,7 @@ __metadata:
     drupal-ambientimpact-ux: "workspace:^1"
     drupal-omnipedia-block: "workspace:^5 || ^6"
     drupal-omnipedia-content: "workspace:^6"
-    drupal-omnipedia-media: "workspace:^6"
+    drupal-omnipedia-media: "workspace:^6 || ^7"
     favicons: "npm:^7.1.4"
     favicons-webpack-plugin: "npm:^6.0.0-alpha.2"
     file-loader: "npm:^6.2.0"
