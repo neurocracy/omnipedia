@@ -48,7 +48,7 @@ on:
 env:
   # shivammathur/setup-php
   PHP_EXTENSIONS: dom, curl, libxml, mbstring, zip, pdo, mysql, pdo_mysql, pdo_sqlite, bcmath, gd, exif, iconv
-  PHP_VERSION: 8.2
+  PHP_VERSION: 8.3
 
 jobs:
   phpunit:
