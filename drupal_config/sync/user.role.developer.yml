@@ -41,7 +41,6 @@ dependencies:
     - path
     - pathauto
     - queue_ui
-    - readonlymode
     - redirect
     - responsive_image
     - rules
@@ -177,7 +176,6 @@ permissions:
   - 'omnipedia_access bypass not found'
   - 'process media_entity_thumbnail queue'
   - 'process warmer queue'
-  - 'readonlymode access forms'
   - 'revert all revisions'
   - 'revert page revisions'
   - 'revert wiki_page revisions'
