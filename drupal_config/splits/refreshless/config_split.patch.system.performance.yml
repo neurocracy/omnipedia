@@ -1,6 +1,0 @@
-adding:
-  js:
-    preprocess: false
-removing:
-  js:
-    preprocess: true
