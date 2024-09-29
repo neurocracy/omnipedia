@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4a472dba879d6dd9e9f65174440bef81",
+    "content-hash": "2d6daafac439002d4f649441cf606835",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -2470,27 +2470,27 @@
         },
         {
             "name": "drupal/csp",
-            "version": "1.33.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/csp.git",
-                "reference": "8.x-1.33"
+                "reference": "2.1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/csp-8.x-1.33.zip",
-                "reference": "8.x-1.33",
-                "shasum": "c923468c3cf077bbc89967ee7fa6c6e48c7254df"
+                "url": "https://ftp.drupal.org/files/projects/csp-2.1.0.zip",
+                "reference": "2.1.0",
+                "shasum": "b698ce2f128b5e910fa40632710ccb510a55b791"
             },
             "require": {
-                "drupal/core": "~10.0.0 || ^10.1.3 || ^11",
+                "drupal/core": "^10.1.3 || ^11",
                 "ext-json": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.33",
-                    "datestamp": "1721292907",
+                    "version": "2.1.0",
+                    "datestamp": "1725489878",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4469,12 +4469,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neurocracy/drupal-omnipedia-discourse.git",
-                "reference": "d63e4e07fe57170b81c26cee5d7a9d838acc7193"
+                "reference": "416b1c61fb6de9006668db1f270602e4209bad5b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-discourse/zipball/d63e4e07fe57170b81c26cee5d7a9d838acc7193",
-                "reference": "d63e4e07fe57170b81c26cee5d7a9d838acc7193",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-discourse/zipball/416b1c61fb6de9006668db1f270602e4209bad5b",
+                "reference": "416b1c61fb6de9006668db1f270602e4209bad5b",
                 "shasum": ""
             },
             "require": {
@@ -4512,7 +4512,7 @@
                 "source": "https://github.com/neurocracy/drupal-omnipedia-discourse",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-discourse/issues"
             },
-            "time": "2024-09-13T20:14:20+00:00"
+            "time": "2024-09-29T07:22:19+00:00"
         },
         {
             "name": "drupal/omnipedia_logger",
@@ -4603,12 +4603,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neurocracy/drupal-omnipedia-media.git",
-                "reference": "60baecf45d6373ddecfa14f903e2078029491b56"
+                "reference": "1f59e011b909de7788deba473561d0d007bce9c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-media/zipball/60baecf45d6373ddecfa14f903e2078029491b56",
-                "reference": "60baecf45d6373ddecfa14f903e2078029491b56",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-media/zipball/1f59e011b909de7788deba473561d0d007bce9c5",
+                "reference": "1f59e011b909de7788deba473561d0d007bce9c5",
                 "shasum": ""
             },
             "require": {
@@ -4640,7 +4640,7 @@
                 "source": "https://github.com/neurocracy/drupal-omnipedia-media",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-media/issues"
             },
-            "time": "2024-09-28T04:16:55+00:00"
+            "time": "2024-09-29T07:22:28+00:00"
         },
         {
             "name": "drupal/omnipedia_menu",
