@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1946563d7f1d71a948cf12770987dc3b",
+    "content-hash": "a7fc9b7727f76b6c3b7fd208183d9b4a",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -5274,78 +5274,6 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/queue_ui",
                 "issues": "https://www.drupal.org/project/issues/queue_ui"
-            }
-        },
-        {
-            "name": "drupal/readonlymode",
-            "version": "1.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/readonlymode.git",
-                "reference": "8.x-1.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/readonlymode-8.x-1.3.zip",
-                "reference": "8.x-1.3",
-                "shasum": "a957efae0f39f676f019c6e58f29876ca77ba2d2"
-            },
-            "require": {
-                "drupal/core": "^10.1 || ^11"
-            },
-            "conflict": {
-                "drush/drush": "<10"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.3",
-                    "datestamp": "1725100053",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                },
-                "drush": {
-                    "services": {
-                        "drush.services.yml": "^10"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Sharique Farooqui",
-                    "homepage": "https://www.drupal.org/u/sharique",
-                    "email": "safknw@gmail.com",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Fabian Bircher",
-                    "homepage": "https://www.drupal.org/u/bircher",
-                    "email": "opensource@fabianbircher.com",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "petew",
-                    "homepage": "https://www.drupal.org/user/1009366"
-                },
-                {
-                    "name": "sharique",
-                    "homepage": "https://www.drupal.org/user/73545"
-                }
-            ],
-            "description": "Read Only Mode provides an alternate to the built in Maintenance Mode in Drupal.",
-            "homepage": "https://www.drupal.org/project/readonlymode",
-            "keywords": [
-                "Drupal"
-            ],
-            "support": {
-                "source": "https://git.drupalcode.org/project/readonlymode",
-                "issues": "https://www.drupal.org/project/issues/readonlymode"
             }
         },
         {
