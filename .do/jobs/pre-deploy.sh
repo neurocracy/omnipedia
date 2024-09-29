@@ -1,7 +1,5 @@
 #!/bin/bash
 
-drush cr
-
 # Enable maintenance mode.
 drush maint:set 1
 echo "=> Maintenance mode has been turned on"
