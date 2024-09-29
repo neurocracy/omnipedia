@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a9c5547e7369ae461d509a5d83105609",
+    "content-hash": "05514b68842cad5a90564a272b99280e",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -4179,12 +4179,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neurocracy/drupal-omnipedia-attached-data.git",
-                "reference": "60e7b66caef6f6a4493cd785f95f81b16a5774f5"
+                "reference": "2920f978d92296106c6436f534a0608b667149ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-attached-data/zipball/60e7b66caef6f6a4493cd785f95f81b16a5774f5",
-                "reference": "60e7b66caef6f6a4493cd785f95f81b16a5774f5",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-attached-data/zipball/2920f978d92296106c6436f534a0608b667149ae",
+                "reference": "2920f978d92296106c6436f534a0608b667149ae",
                 "shasum": ""
             },
             "require": {
@@ -4218,7 +4218,7 @@
                 "source": "https://github.com/neurocracy/drupal-omnipedia-attached-data",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-attached-data/issues"
             },
-            "time": "2023-12-23T03:53:06+00:00"
+            "time": "2024-09-29T08:57:26+00:00"
         },
         {
             "name": "drupal/omnipedia_block",
@@ -19381,7 +19381,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^8.2",
+        "php": "^8.3",
         "ext-apcu": "*"
     },
     "platform-dev": [],
