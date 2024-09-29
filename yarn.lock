@@ -5301,6 +5301,7 @@ __metadata:
   dependencies:
     "@consensus.enterprises/pnp-vendorize": "npm:^1.0.0"
     "@hotwired/turbo": "npm:8.0.10"
+    js-cookie: "npm:^3.0.5"
   languageName: unknown
   linkType: soft
 
