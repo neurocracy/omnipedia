@@ -1,7 +1,6 @@
 adding:
   dependencies:
     module:
-      - action
       - autoban
       - block
       - config
@@ -15,7 +14,9 @@ adding:
       - help
       - key
       - remove_http_headers
+      - s3fs
       - seckit
+      - smtp
       - typed_entity_ui
       - userprotect
       - views_ui
@@ -77,6 +78,4 @@ adding:
     - 'switch users'
     - 'synchronize configuration'
     - userprotect.administer
-removing:
-  permissions:
-    - 'delete any file'
+removing: {  }
