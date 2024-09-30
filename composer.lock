@@ -2904,27 +2904,27 @@
         },
         {
             "name": "drupal/encrypt",
-            "version": "3.1.0",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/encrypt.git",
-                "reference": "8.x-3.1"
+                "reference": "8.x-3.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/encrypt-8.x-3.1.zip",
-                "reference": "8.x-3.1",
-                "shasum": "357ca7fcf9879af66b5d0c5593da080f19664f17"
+                "url": "https://ftp.drupal.org/files/projects/encrypt-8.x-3.2.zip",
+                "reference": "8.x-3.2",
+                "shasum": "32a700eeb59aac51f6ce4651718243a1641d5ef0"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10",
-                "drupal/key": "*"
+                "drupal/core": "^8 || ^9 || ^10 || ^11",
+                "drupal/key": "^1"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.1",
-                    "datestamp": "1669655248",
+                    "version": "8.x-3.2",
+                    "datestamp": "1727640040",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
