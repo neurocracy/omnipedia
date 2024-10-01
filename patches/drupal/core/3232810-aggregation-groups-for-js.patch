@@ -1,0 +1,20 @@
+diff --git a/core/lib/Drupal/Core/Asset/LibraryDiscoveryParser.php b/core/lib/Drupal/Core/Asset/LibraryDiscoveryParser.php
+index 5631483d45bd6bc8d08c3818747126418445f2c5..cf21e98e6d2861791ab06a9674fa3eba89c5154d 100644
+--- a/core/lib/Drupal/Core/Asset/LibraryDiscoveryParser.php
++++ b/core/lib/Drupal/Core/Asset/LibraryDiscoveryParser.php
+@@ -192,11 +192,10 @@ public function buildByExtension($extension) {
+           if ($type == 'js' && isset($options['weight']) && $options['weight'] > 0) {
+             throw new \UnexpectedValueException("The $extension/$id library defines a positive weight for '$source'. Only negative weights are allowed (but should be avoided). Instead of a positive weight, specify accurate dependencies for this library.");
+           }
+-          // Unconditionally apply default groups for the defined asset files.
+-          // The library system is a dependency management system. Each library
+-          // properly specifies its dependencies instead of relying on a custom
+-          // processing order.
+-          if ($type == 'js') {
++          // Each library properly specifies its dependencies instead of relying
++          // on a custom processing order. Allow setting groups to define
++          // different aggregates.
++          if ($type == 'js' && empty($options['group'])) {
+             $options['group'] = JS_LIBRARY;
+           }
+           elseif ($type == 'css') {
