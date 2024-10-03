@@ -5389,7 +5389,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/issue/refreshless-3414538.git",
-                "reference": "cf9a47a05e731c496ef9a6cc4fe9974ee98ac1a7"
+                "reference": "dbfc838396fbc5bd1b174f34bf968237f999369d"
             },
             "require": {
                 "composer/semver": "^3.0",
@@ -5423,7 +5423,7 @@
                 "irc": "irc://irc.freenode.org/drupal",
                 "source": "https://cgit.drupalcode.org/refreshless"
             },
-            "time": "2024-10-02T16:01:24+00:00"
+            "time": "2024-10-03T17:58:35+00:00"
         },
         {
             "name": "drupal/remove_http_headers",
