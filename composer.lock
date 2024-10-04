@@ -1771,16 +1771,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-core.git",
-                "reference": "0ba9a01667957396cacf2e1b3b8d7ae879f86229"
+                "reference": "22135cd91b0b10766a58444d2f2ab48e77fddcaf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-core/zipball/0ba9a01667957396cacf2e1b3b8d7ae879f86229",
-                "reference": "0ba9a01667957396cacf2e1b3b8d7ae879f86229",
+                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-core/zipball/22135cd91b0b10766a58444d2f2ab48e77fddcaf",
+                "reference": "22135cd91b0b10766a58444d2f2ab48e77fddcaf",
                 "shasum": ""
             },
             "require": {
-                "drupal/core": "^10.0",
+                "drupal/core": "^10.0 || ^11.0",
                 "drupal/hook_event_dispatcher": "^4.0",
                 "symfony/css-selector": "^6.2",
                 "symfony/dom-crawler": "^6.2"
@@ -1810,7 +1810,7 @@
                 "source": "https://github.com/Ambient-Impact/drupal-ambientimpact-core",
                 "issues": "https://github.com/Ambient-Impact/drupal-ambientimpact-core/issues"
             },
-            "time": "2024-09-19T13:31:40+00:00"
+            "time": "2024-10-04T19:38:41+00:00"
         },
         {
             "name": "drupal/ambientimpact_icon",
@@ -1818,17 +1818,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-icon.git",
-                "reference": "551e54a7a85977260d81461e0d026cac7021f267"
+                "reference": "b02caf4394a265f36775aea1dcbf83a239f39894"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-icon/zipball/551e54a7a85977260d81461e0d026cac7021f267",
-                "reference": "551e54a7a85977260d81461e0d026cac7021f267",
+                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-icon/zipball/b02caf4394a265f36775aea1dcbf83a239f39894",
+                "reference": "b02caf4394a265f36775aea1dcbf83a239f39894",
                 "shasum": ""
             },
             "require": {
                 "drupal/ambientimpact_core": "^1.0@dev || ^2.0@dev",
-                "drupal/core": "^9.5 || ^10.0",
+                "drupal/core": "^9.5 || ^10.0 || ^11.0",
                 "drupal/hook_event_dispatcher": "^3.1 || ^4.0"
             },
             "default-branch": true,
@@ -1849,7 +1849,7 @@
                 "source": "https://github.com/Ambient-Impact/drupal-ambientimpact-icon",
                 "issues": "https://github.com/Ambient-Impact/drupal-ambientimpact-icon/issues"
             },
-            "time": "2024-09-14T21:27:22+00:00"
+            "time": "2024-10-04T19:38:52+00:00"
         },
         {
             "name": "drupal/ambientimpact_markdown",
@@ -1857,16 +1857,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-markdown.git",
-                "reference": "080492b5efaed28ba5dad7af3812a82790fe2269"
+                "reference": "e00e27d1c6a34d34cec44d4676490bb3267eb72a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-markdown/zipball/080492b5efaed28ba5dad7af3812a82790fe2269",
-                "reference": "080492b5efaed28ba5dad7af3812a82790fe2269",
+                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-markdown/zipball/e00e27d1c6a34d34cec44d4676490bb3267eb72a",
+                "reference": "e00e27d1c6a34d34cec44d4676490bb3267eb72a",
                 "shasum": ""
             },
             "require": {
-                "drupal/core": "^10.0",
+                "drupal/core": "^10.0 || ^11.0",
                 "drupal/hux": "^1.1",
                 "drupal/markdown": "^3.0@RC",
                 "league/commonmark": "^1.5",
@@ -1890,7 +1890,7 @@
                 "source": "https://github.com/Ambient-Impact/drupal-ambientimpact-markdown",
                 "issues": "https://github.com/Ambient-Impact/drupal-ambientimpact-markdown/issues"
             },
-            "time": "2023-12-18T19:54:26+00:00"
+            "time": "2024-10-04T19:32:36+00:00"
         },
         {
             "name": "drupal/ambientimpact_media",
@@ -1898,12 +1898,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-media.git",
-                "reference": "25ac65d947890d432adc219ce92b55ad1a1e9b38"
+                "reference": "1c758f86e0bbc18b2d3b579439b0a182cb7dfda2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-media/zipball/25ac65d947890d432adc219ce92b55ad1a1e9b38",
-                "reference": "25ac65d947890d432adc219ce92b55ad1a1e9b38",
+                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-media/zipball/1c758f86e0bbc18b2d3b579439b0a182cb7dfda2",
+                "reference": "1c758f86e0bbc18b2d3b579439b0a182cb7dfda2",
                 "shasum": ""
             },
             "require": {
@@ -1946,7 +1946,7 @@
                 "source": "https://github.com/Ambient-Impact/drupal-ambientimpact-media",
                 "issues": "https://github.com/Ambient-Impact/drupal-ambientimpact-media/issues"
             },
-            "time": "2024-09-14T21:29:46+00:00"
+            "time": "2024-10-03T19:22:41+00:00"
         },
         {
             "name": "drupal/ambientimpact_ux",
