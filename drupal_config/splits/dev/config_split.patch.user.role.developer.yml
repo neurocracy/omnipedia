@@ -13,7 +13,6 @@ adding:
       - field_ui
       - help
       - key
-      - remove_http_headers
       - s3fs
       - seckit
       - smtp
@@ -72,7 +71,6 @@ adding:
     - 'export configuration'
     - 'import configuration'
     - 'inspect configuration'
-    - 'remove_http_headers settings access'
     - 'select account cancellation method'
     - 'setup own tfa'
     - 'switch users'
