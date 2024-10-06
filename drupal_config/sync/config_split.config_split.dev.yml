@@ -26,7 +26,6 @@ partial_list:
   - csp.settings
   - dblog.settings
   - gin.settings
-  - remove_http_headers.settings
   - system.logging
   - system.performance
   - user.role.anonymous
