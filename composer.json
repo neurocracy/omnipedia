@@ -161,6 +161,7 @@
     "ext-apcu": "*",
     "composer/installers": "^2.0",
     "cweagans/composer-patches": "^1.7",
+    "drupal/action": "^0.2",
     "drupal/ambientimpact_core": "^2.0@dev",
     "drupal/ambientimpact_icon": "^1.0@dev",
     "drupal/ambientimpact_markdown": "^2.0@dev",
