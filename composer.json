@@ -222,7 +222,7 @@
     "drupal/session_limit": "^2.0",
     "drupal/shy_one_time": "^2.0.1",
     "drupal/smtp": "^1.2",
-    "drupal/sodium": "^2.1",
+    "drupal/sodium": "^3.0",
     "drupal/subpathauto": "^1.2",
     "drupal/tfa": "^1.2",
     "drupal/token_filter": "^2.0",

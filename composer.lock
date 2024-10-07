@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "64e28a5323e7b223d693b6dff5f68c0f",
+    "content-hash": "b99ca8d81675c782b763bdf962457cb5",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -5963,30 +5963,30 @@
         },
         {
             "name": "drupal/sodium",
-            "version": "2.4.0",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/sodium.git",
-                "reference": "8.x-2.4"
+                "reference": "3.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/sodium-8.x-2.4.zip",
-                "reference": "8.x-2.4",
-                "shasum": "64e6a527797a8ed192e4e19e6abf288c104a64b5"
+                "url": "https://ftp.drupal.org/files/projects/sodium-3.0.0.zip",
+                "reference": "3.0.0",
+                "shasum": "a3d6b19e37721066893823e93a655b5acba9d50c"
             },
             "require": {
-                "drupal/core": "^8.9.0 || ^9.0 || ^10",
-                "drupal/encrypt": "^3.0",
+                "drupal/core": "^10.3 || ^11",
+                "drupal/encrypt": "^3.2",
                 "drupal/key": "^1.0",
-                "paragonie/halite": "^4.1 || ^5.0",
-                "php": ">=7.2"
+                "paragonie/halite": "^5.1",
+                "php": ">=8.1"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.4",
-                    "datestamp": "1674407491",
+                    "version": "3.0.0",
+                    "datestamp": "1727770260",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
