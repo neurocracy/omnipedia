@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5116245bc050bdaf73add215336d27b9",
+    "content-hash": "64e28a5323e7b223d693b6dff5f68c0f",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -13814,6 +13814,55 @@
             "time": "2023-01-05T11:28:13+00:00"
         },
         {
+            "name": "dekor/php-array-table",
+            "version": "2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/deniskoronets/php-array-table.git",
+                "reference": "ca40b21ba84eee6a9658a33fc5f897d76baaf8e5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/deniskoronets/php-array-table/zipball/ca40b21ba84eee6a9658a33fc5f897d76baaf8e5",
+                "reference": "ca40b21ba84eee6a9658a33fc5f897d76baaf8e5",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^10"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "dekor\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Denis Koronets",
+                    "email": "deniskoronets@woo.zp.ua",
+                    "homepage": "https://woo.zp.ua/"
+                }
+            ],
+            "description": "PHP Library for printing associative arrays as text table (similar to mysql terminal console)",
+            "keywords": [
+                "library",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/deniskoronets/php-array-table/issues",
+                "source": "https://github.com/deniskoronets/php-array-table/tree/2.0"
+            },
+            "time": "2023-02-10T10:13:42+00:00"
+        },
+        {
             "name": "doctrine/common",
             "version": "3.4.4",
             "source": {
@@ -14943,6 +14992,64 @@
             "homepage": "https://www.drupal.org/project/rdf",
             "support": {
                 "source": "https://git.drupalcode.org/project/rdf"
+            }
+        },
+        {
+            "name": "drupal/upgrade_status",
+            "version": "4.3.5",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/upgrade_status.git",
+                "reference": "4.3.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/upgrade_status-4.3.5.zip",
+                "reference": "4.3.5",
+                "shasum": "353c17f14c855f5ba0fe48c6a4f6486360c066a7"
+            },
+            "require": {
+                "dekor/php-array-table": "^2.0",
+                "drupal/core": "^9 || ^10 || ^11",
+                "mglaman/phpstan-drupal": "^1.2.11",
+                "nikic/php-parser": "^4.0.0|^5.0.0",
+                "phpstan/phpstan-deprecation-rules": "^1.0.0",
+                "symfony/process": "^3.4|^4.0|^5.0|^6.0|^7.0",
+                "webflo/drupal-finder": "^1.2"
+            },
+            "require-dev": {
+                "drush/drush": "^11|^12|^13"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "4.3.5",
+                    "datestamp": "1723044184",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9 || ^10"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Gábor Hojtsy",
+                    "homepage": "https://www.drupal.org/user/4166"
+                }
+            ],
+            "description": "Review Drupal major upgrade readiness of the environment and components of the site.",
+            "homepage": "http://drupal.org/project/upgrade_status",
+            "support": {
+                "source": "https://git.drupalcode.org/project/upgrade_status"
             }
         },
         {
