@@ -5434,12 +5434,12 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/issue/refreshless-3414538.git",
-                "reference": "bc94a405959e3e1003dbb23f791a0e8e6afb0cb6"
+                "reference": "a8f8f72dd7438547bb55312a773f5d0b374c3fe1"
             },
             "require": {
                 "composer/semver": "^3.0",
-                "drupal/core": "^10.1",
-                "drupal/hux": "^1.2",
+                "drupal/core": "^10.2 || ^11.0",
+                "drupal/hux": "^1.4",
                 "php": "^8.1"
             },
             "type": "drupal-module",
@@ -5468,7 +5468,7 @@
                 "irc": "irc://irc.freenode.org/drupal",
                 "source": "https://cgit.drupalcode.org/refreshless"
             },
-            "time": "2024-10-09T06:45:45+00:00"
+            "time": "2024-10-09T21:47:56+00:00"
         },
         {
             "name": "drupal/rules",
