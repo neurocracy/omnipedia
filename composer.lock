@@ -5434,7 +5434,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/issue/refreshless-3414538.git",
-                "reference": "a8f8f72dd7438547bb55312a773f5d0b374c3fe1"
+                "reference": "4aceb1199970f91da75ab75d5f7323c8c10b9847"
             },
             "require": {
                 "composer/semver": "^3.0",
@@ -5468,7 +5468,7 @@
                 "irc": "irc://irc.freenode.org/drupal",
                 "source": "https://cgit.drupalcode.org/refreshless"
             },
-            "time": "2024-10-09T21:47:56+00:00"
+            "time": "2024-10-09T23:17:49+00:00"
         },
         {
             "name": "drupal/rules",
