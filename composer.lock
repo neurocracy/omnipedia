@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a37d8a3374cb3df53c8cbb9316086852",
+    "content-hash": "c86f00982587e223a79a80e786ddaf99",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -5430,11 +5430,11 @@
         },
         {
             "name": "drupal/refreshless",
-            "version": "dev-3414538-additive-js-aggregation",
+            "version": "dev-2.x",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/issue/refreshless-3414538.git",
-                "reference": "aec1eb6573ca089aeaa83a474b6cc481f61f95f8"
+                "url": "https://git.drupalcode.org/project/refreshless.git",
+                "reference": "b89a17523fb1bec86bce8d6c0be97d7fd14abca4"
             },
             "require": {
                 "composer/semver": "^3.0",
@@ -5442,7 +5442,24 @@
                 "drupal/hux": "^1.4",
                 "php": "^8.1"
             },
+            "require-dev": {
+                "drupal/hux": "*"
+            },
             "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "2.x-dev",
+                    "datestamp": "1728623288",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0+"
             ],
@@ -5455,6 +5472,34 @@
                 {
                     "name": "See other contributors",
                     "homepage": "https://www.drupal.org/node/2693129/committers"
+                },
+                {
+                    "name": "ganeshsurya11",
+                    "homepage": "https://www.drupal.org/user/3526791"
+                },
+                {
+                    "name": "handkerchief",
+                    "homepage": "https://www.drupal.org/user/3090607"
+                },
+                {
+                    "name": "jaydip makawana",
+                    "homepage": "https://www.drupal.org/user/3621830"
+                },
+                {
+                    "name": "rajeshreeputra",
+                    "homepage": "https://www.drupal.org/user/3418561"
+                },
+                {
+                    "name": "renguer0",
+                    "homepage": "https://www.drupal.org/user/3623854"
+                },
+                {
+                    "name": "ronaldtebrake",
+                    "homepage": "https://www.drupal.org/user/2314038"
+                },
+                {
+                    "name": "wim leers",
+                    "homepage": "https://www.drupal.org/user/99777"
                 }
             ],
             "description": "RefreshLess makes navigating your web site faster by only loading the parts that change between pages.",
@@ -5464,11 +5509,10 @@
                 "scalability"
             ],
             "support": {
+                "source": "https://cgit.drupalcode.org/refreshless",
                 "issues": "https://www.drupal.org/project/issues/refreshless",
-                "irc": "irc://irc.freenode.org/drupal",
-                "source": "https://cgit.drupalcode.org/refreshless"
-            },
-            "time": "2024-10-11T01:43:53+00:00"
+                "irc": "irc://irc.freenode.org/drupal"
+            }
         },
         {
             "name": "drupal/rules",
@@ -19672,12 +19716,6 @@
             "version": "dev-3355337-support-drupal-10",
             "alias": "1.2",
             "alias_normalized": "1.2.0.0"
-        },
-        {
-            "package": "drupal/refreshless",
-            "version": "dev-3414538-additive-js-aggregation",
-            "alias": "2.0",
-            "alias_normalized": "2.0.0.0"
         }
     ],
     "minimum-stability": "dev",

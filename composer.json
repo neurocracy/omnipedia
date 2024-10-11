@@ -143,11 +143,6 @@
     },
     {
       "type": "vcs",
-      "url": "https://git.drupalcode.org/issue/refreshless-3414538.git",
-      "only": ["drupal/refreshless"]
-    },
-    {
-      "type": "vcs",
       "url": "https://github.com/Ambient-Impact/drupal-trusted-reverse-proxy.git",
       "only": ["drupal/trusted_reverse_proxy"]
     },
@@ -215,7 +210,7 @@
     "drupal/pathologic": "^2.0@alpha",
     "drupal/rebuilder": "^1.0",
     "drupal/redirect": "^1.6",
-    "drupal/refreshless": "dev-3414538-additive-js-aggregation as 2.0",
+    "drupal/refreshless": "^2.0@dev",
     "drupal/rules": "^3.0@alpha || ^4.0",
     "drupal/s3fs": "^3.6",
     "drupal/seckit": "^2.0",
