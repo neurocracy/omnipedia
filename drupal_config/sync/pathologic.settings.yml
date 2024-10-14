@@ -1,7 +1,10 @@
 _core:
   default_config_hash: EKYCulG-Y3pcObfUpVbl-D9T5DDX6d4hpQ-BVlSBAmw
 protocol_style: path
-local_paths: 'https://omnipedia.app'
+local_paths: |-
+  https://omnipedia.app
+  https://refreshless.omnipedia.app
+  https://omnipedia.ddev.site
 keep_language_prefix: null
 scheme_allow_list:
   - http
