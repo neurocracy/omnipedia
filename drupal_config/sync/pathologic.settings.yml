@@ -3,7 +3,7 @@ _core:
 protocol_style: path
 local_paths: 'https://omnipedia.app'
 keep_language_prefix: null
-scheme_whitelist:
+scheme_allow_list:
   - http
   - https
   - files
