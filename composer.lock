@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6ada73323cf30d685181c818cdd18307",
+    "content-hash": "9ead11926b8c85beb9ee3aebed229238",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -5473,10 +5473,11 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/refreshless.git",
-                "reference": "5a6f80728fa9198fddd291bd1452b17117b7f484"
+                "reference": "b3d162903098dc59009e71c04e7930bc5cc98a93"
             },
             "require": {
                 "composer/semver": "^3.0",
+                "cweagans/composer-patches": "^1.7.0",
                 "drupal/core": "^10.2 || ^11.0",
                 "drupal/hux": "^1.4",
                 "php": "^8.1"
@@ -5491,10 +5492,16 @@
                 },
                 "drupal": {
                     "version": "2.x-dev",
-                    "datestamp": "1729011307",
+                    "datestamp": "1729020039",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                },
+                "patches": {
+                    "drupal/core": {
+                        "JS aggregation should account for \"async\" and \"defer\" attributes [#1587536]: https://www.drupal.org/project/drupal/issues/1587536": "https://git.drupalcode.org/project/refreshless/-/raw/9bd0325f415e95bfaa7adc29daaf26cc32bed673/modules/refreshless_turbo/patches/drupal/core/1587536-js-aggregation-async-defer-attributes.patch",
+                        "Allow setting aggregation groups for js files in library definitions [#3232810]: https://www.drupal.org/project/drupal/issues/3232810": "https://git.drupalcode.org/project/refreshless/-/raw/9bd0325f415e95bfaa7adc29daaf26cc32bed673/modules/refreshless_turbo/patches/drupal/core/3232810-aggregation-groups-for-js.patch"
                     }
                 }
             },

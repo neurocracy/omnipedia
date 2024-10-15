@@ -297,7 +297,6 @@
         "JS aggregation should account for \"async\" and \"defer\" attributes [#1587536]: https://www.drupal.org/project/drupal/issues/1587536": "patches/drupal/core/1587536-js-aggregation-async-defer-attributes.patch",
         "Fix mismatch of $base_url with Symfony request object [#2753591]: https://www.drupal.org/project/drupal/issues/2753591": "patches/drupal/core/2753591-fix-mismatch-of-base-url.patch",
         "Allow theme developers to add the default favicon filename to the theme's .info.yml [#3037922]: https://www.drupal.org/project/drupal/issues/3037922#mr4108-note181413": "patches/drupal/core/3037922-theme-info-favicon.patch",
-        "Allow setting aggregation groups for js files in library definitions [#3232810]: https://www.drupal.org/project/drupal/issues/3232810": "patches/drupal/core/3232810-aggregation-groups-for-js.patch",
         "Support setting service parameters via environment variables [#3249970]: https://www.drupal.org/project/drupal/issues/3249970#comment-14294955": "patches/drupal/core/3249970-2-support-service-parameter-env.patch",
         "Slow admin/config page load [#3336621]: https://www.drupal.org/project/drupal/issues/3336621#comment-14888211": "patches/drupal/core/3336621-3-remove-admin-config-status-report-check.patch"
       },
@@ -309,6 +308,13 @@
       },
       "drupal/trusted_reverse_proxy": {
         "Notice: Undefined index: severity in trusted_reverse_proxy_preprocess_status_report_page() [#3267588]: https://www.drupal.org/project/trusted_reverse_proxy/issues/3267588": "patches/drupal/trusted_reverse_proxy/3267588-trusted_reverse_proxy-undefined-severity.patch"
+      }
+    },
+    "patches-ignore": {
+      "drupal/refreshless": {
+        "drupal/core": {
+          "We already have this patch for JS \"async\" and \"defer\" attributes": "https://git.drupalcode.org/project/refreshless/-/raw/9bd0325f415e95bfaa7adc29daaf26cc32bed673/modules/refreshless_turbo/patches/drupal/core/1587536-js-aggregation-async-defer-attributes.patch"
+        }
       }
     },
     "drupal-scaffold": {
