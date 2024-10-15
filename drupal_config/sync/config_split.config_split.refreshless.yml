@@ -16,5 +16,4 @@ module:
   refreshless_turbo: 0
 theme: {  }
 complete_list: {  }
-partial_list:
-  - system.performance
+partial_list: {  }
