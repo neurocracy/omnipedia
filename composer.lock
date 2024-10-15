@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c86f00982587e223a79a80e786ddaf99",
+    "content-hash": "6ada73323cf30d685181c818cdd18307",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -4736,6 +4736,45 @@
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-menu/issues"
             },
             "time": "2024-09-13T20:14:29+00:00"
+        },
+        {
+            "name": "drupal/omnipedia_pipeline",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/neurocracy/drupal-omnipedia-pipeline.git",
+                "reference": "3a834c0790cc3b8570f38c49698dfeeee725e109"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-pipeline/zipball/3a834c0790cc3b8570f38c49698dfeeee725e109",
+                "reference": "3a834c0790cc3b8570f38c49698dfeeee725e109",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/core": "^10.3 || ^11.0",
+                "drupal/refreshless": "^2.0@dev",
+                "php": "^8.1"
+            },
+            "default-branch": true,
+            "type": "drupal-custom-module",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ambient.Impact",
+                    "homepage": "https://ambientimpact.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Omnipedia - Pipeline",
+            "support": {
+                "docs": "https://github.com/neurocracy/drupal-omnipedia-pipeline",
+                "source": "https://github.com/neurocracy/drupal-omnipedia-pipeline",
+                "issues": "https://github.com/neurocracy/drupal-omnipedia-pipeline/issues"
+            },
+            "time": "2024-10-15T17:23:56+00:00"
         },
         {
             "name": "drupal/omnipedia_search",
@@ -19741,6 +19780,7 @@
         "drupal/omnipedia_main_page": 20,
         "drupal/omnipedia_media": 20,
         "drupal/omnipedia_menu": 20,
+        "drupal/omnipedia_pipeline": 20,
         "drupal/omnipedia_search": 20,
         "drupal/omnipedia_site_theme": 20,
         "drupal/omnipedia_user": 20,
