@@ -36,6 +36,7 @@ module:
   file: 0
   filter: 0
   flood_control: 0
+  gin_everywhere: 0
   gin_toolbar: 0
   health_check: 0
   help: 0
