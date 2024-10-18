@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "30598409bd678e5fc4a737989fdae7af",
+    "content-hash": "f2078d0f32f2ff53ed294e9ca5a7b120",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -5522,7 +5522,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/refreshless.git",
-                "reference": "63abf343374f43b454e29bddb4245e5259b1f4dc"
+                "reference": "99d28833aed1ea3fdfb5a5413fb3a05113ffc92e"
             },
             "require": {
                 "composer/semver": "^3.0",
@@ -5540,8 +5540,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "2.0.0-alpha1+3-dev",
-                    "datestamp": "1729100291",
+                    "version": "2.0.0-alpha1+7-dev",
+                    "datestamp": "1729204021",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -19811,6 +19811,12 @@
             "version": "dev-3355337-support-drupal-10",
             "alias": "1.2",
             "alias_normalized": "1.2.0.0"
+        },
+        {
+            "package": "drupal/refreshless",
+            "version": "2.9999999.9999999.9999999-dev",
+            "alias": "2.0@dev",
+            "alias_normalized": "2.0.0.0"
         }
     ],
     "minimum-stability": "dev",
@@ -19843,10 +19849,10 @@
         "drupal/omnipedia_warmer": 20,
         "drupal/paranoia": 5,
         "drupal/pathologic": 15,
+        "drupal/rdf": 10,
         "drupal/refreshless": 20,
         "drupal/rules": 15,
-        "drupal/trusted_reverse_proxy": 20,
-        "drupal/rdf": 10
+        "drupal/trusted_reverse_proxy": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
@@ -19854,6 +19860,6 @@
         "php": "^8.3",
         "ext-apcu": "*"
     },
-    "platform-dev": [],
+    "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }
