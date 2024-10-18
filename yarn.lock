@@ -5277,7 +5277,7 @@ __metadata:
     js-cookie: "npm:^3.0.5"
     mini-css-extract-plugin: "npm:^2.9.1"
     postcss: "npm:^8.4.31"
-    postcss-easing-gradients: "github:Ambient-Impact/postcss-easing-gradients"
+    postcss-easing-gradients: "https://github.com/Ambient-Impact/postcss-easing-gradients"
     postcss-loader: "npm:^7.0.1"
     sass: "npm:^1.43.4"
     sass-loader: "npm:^13.3.3"
@@ -7981,16 +7981,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-easing-gradients@github:Ambient-Impact/postcss-easing-gradients":
+"postcss-easing-gradients@https://github.com/Ambient-Impact/postcss-easing-gradients":
   version: 3.0.1
-  resolution: "postcss-easing-gradients@https://github.com/Ambient-Impact/postcss-easing-gradients.git#commit=db2024601ae5a420ea2b58a5908f26054e10c177"
+  resolution: "postcss-easing-gradients@https://github.com/Ambient-Impact/postcss-easing-gradients.git#commit=fdaa06245ab0b59b5e5d9514c2b774b116c073ed"
   dependencies:
     chroma-js: "npm:^1.3.7"
     easing-coordinates: "npm:^2.0.0"
     postcss-value-parser: "npm:^3.3.0"
   peerDependencies:
     postcss: ^8.1.2
-  checksum: 10/e4ea33a2bfe82f90ead6a44675f51f90cf268064629e537cf017043c819d13b5e363c0a21d645606659a1752f883b5fa9d9e027152d8070a701f06b5211a9a5f
+  checksum: 10/9c6cc79f904dfa3bd97bd20283ff859c7ad0dc55fcc3bb454abcf5c4499cc94c19e40008edd65736f313a00b0a949ba885db1da97a101420ff6f697cb4ea087d
   languageName: node
   linkType: hard
 
