@@ -5332,7 +5332,7 @@ __metadata:
     mini-css-extract-plugin: "npm:^2.9.1"
     postcss: "npm:^8.4.31"
     postcss-loader: "npm:^7.0.1"
-    sass: "npm:^1.43.4"
+    sass: "npm:^1.43.4 <1.79.0"
     sass-loader: "npm:^13.3.3"
     webpack: "npm:^5.94.0"
     webpack-cli: "npm:^5.1.4"
@@ -8964,6 +8964,19 @@ __metadata:
   bin:
     sass: sass.js
   checksum: 10/57d739718659dc29041be7eabee3819fd0f53fb5a1d34eab29874c44ca8c0be07db63895ad23675378bd96e090703fe2d7fe27a7efb11950bf3dc110c1efd2ae
+  languageName: node
+  linkType: hard
+
+"sass@npm:^1.43.4 <1.79.0":
+  version: 1.78.0
+  resolution: "sass@npm:1.78.0"
+  dependencies:
+    chokidar: "npm:>=3.0.0 <4.0.0"
+    immutable: "npm:^4.0.0"
+    source-map-js: "npm:>=0.6.2 <2.0.0"
+  bin:
+    sass: sass.js
+  checksum: 10/a180135addd9108d9a3549e111b2b442a97761bc429ef04374d57ef741d4343378e7092a6cba12e1f94e48b02d9b997cc79e737c0a2b834ad9204a761b14734d
   languageName: node
   linkType: hard
 
