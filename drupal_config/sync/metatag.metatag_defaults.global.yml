@@ -7,10 +7,6 @@ _core:
 id: global
 label: Global
 tags:
-  canonical_url: '[current-page:url]'
-  description: '[site:slogan]'
-  generator: 'Drupal (https://www.drupal.org)'
-  title: '[current-page:title] | [site:name]'
   apple_touch_icon: '[site:url]themes/custom/omnipedia_site_theme/images/icons/generated/apple-touch-icon-60x60.png?v=2'
   apple_touch_icon_114x114: '[site:url]themes/custom/omnipedia_site_theme/images/icons/generated/apple-touch-icon-114x114.png?v=2'
   apple_touch_icon_120x120: '[site:url]themes/custom/omnipedia_site_theme/images/icons/generated/apple-touch-icon-120x120.png?v=2'
@@ -27,13 +23,18 @@ tags:
   apple_touch_icon_precomposed_180x180: '[site:url]themes/custom/omnipedia_site_theme/images/icons/generated/apple-touch-icon-180x180.png?v=2'
   apple_touch_icon_precomposed_72x72: '[site:url]themes/custom/omnipedia_site_theme/images/icons/generated/apple-touch-icon-72x72.png?v=2'
   apple_touch_icon_precomposed_76x76: '[site:url]themes/custom/omnipedia_site_theme/images/icons/generated/apple-touch-icon-76x76.png?v=2'
+  canonical_url: '[current-page:url]'
+  description: '[site:slogan]'
+  generator: 'Drupal (https://www.drupal.org)'
   icon_16x16: '[site:url]themes/custom/omnipedia_site_theme/images/icons/generated/favicon-16x16.png?v=1'
   icon_192x192: '[site:url]themes/custom/omnipedia_site_theme/images/icons/generated/android-chrome-192x192.png?v=1'
   icon_32x32: '[site:url]themes/custom/omnipedia_site_theme/images/icons/generated/favicon-32x32.png?v=1'
   icon_96x96: '[site:url]themes/custom/omnipedia_site_theme/images/icons/generated/android-chrome-96x96.png?v=1'
-  shortcut_icon: '[site:url]themes/custom/omnipedia_site_theme/images/icons/generated/favicon-32x32.png?v=1'
-  msapplication_config: '[site:url]themes/custom/omnipedia_site_theme/windows.xml'
-  theme_color: '#0d47a1'
   mask_icon:
     href: '[site:url]themes/custom/omnipedia_site_theme/images/icons/icon_grayscale.svg?v=1'
+    color: ''
+  msapplication_config: '[site:url]themes/custom/omnipedia_site_theme/windows.xml'
+  shortcut_icon: '[site:url]themes/custom/omnipedia_site_theme/images/icons/generated/favicon-32x32.png?v=1'
+  theme_color: '#0d47a1'
+  title: '[current-page:title] | [site:name]'
   web_manifest: '[site:url]themes/custom/omnipedia_site_theme/manifest.webmanifest?v=2'
