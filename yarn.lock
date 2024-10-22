@@ -2569,8 +2569,8 @@ __metadata:
 
 "@hotwired/turbo@patch:@hotwired/turbo@npm%3A8.0.10#./web/modules/contrib/refreshless/modules/refreshless_turbo/patches/@hotwired/turbo/turbo-8-refreshless-combined.patch::locator=drupal-omnipedia%40workspace%3A.":
   version: 8.0.10
-  resolution: "@hotwired/turbo@patch:@hotwired/turbo@npm%3A8.0.10#./web/modules/contrib/refreshless/modules/refreshless_turbo/patches/@hotwired/turbo/turbo-8-refreshless-combined.patch::version=8.0.10&hash=5395cb&locator=drupal-omnipedia%40workspace%3A."
-  checksum: 10/9b46e67334b8c335ab5556fbc64a865e03ad8c24ba2c5a28a10b3d91d17e8899d5c5ce9f05882820ce6c4c43022cade91a05358172827c92ec69bcc555bf4d1f
+  resolution: "@hotwired/turbo@patch:@hotwired/turbo@npm%3A8.0.10#./web/modules/contrib/refreshless/modules/refreshless_turbo/patches/@hotwired/turbo/turbo-8-refreshless-combined.patch::version=8.0.10&hash=ca1cdf&locator=drupal-omnipedia%40workspace%3A."
+  checksum: 10/1f71d9bac647567ddada2f895c946805668e57090f34a5dc437c0327812c2a932e6ccf0c44900d2f9548ebcdfefaa1fa845254e2e591a947f3c88ea56ce3ef96
   languageName: node
   linkType: hard
 
