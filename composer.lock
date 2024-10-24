@@ -1815,12 +1815,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-core.git",
-                "reference": "3b606c29a865565e32843d3f318af18c1001dc0e"
+                "reference": "6dce873c315ca53e43ec536bcb9e90b6982ddae2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-core/zipball/3b606c29a865565e32843d3f318af18c1001dc0e",
-                "reference": "3b606c29a865565e32843d3f318af18c1001dc0e",
+                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-core/zipball/6dce873c315ca53e43ec536bcb9e90b6982ddae2",
+                "reference": "6dce873c315ca53e43ec536bcb9e90b6982ddae2",
                 "shasum": ""
             },
             "require": {
@@ -1854,7 +1854,7 @@
                 "source": "https://github.com/Ambient-Impact/drupal-ambientimpact-core",
                 "issues": "https://github.com/Ambient-Impact/drupal-ambientimpact-core/issues"
             },
-            "time": "2024-10-18T21:10:19+00:00"
+            "time": "2024-10-24T13:22:47+00:00"
         },
         {
             "name": "drupal/ambientimpact_icon",
@@ -1942,12 +1942,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-media.git",
-                "reference": "ca8eca1ea1aba760dd782675016ad0b877650529"
+                "reference": "25f5a1f3dcbb367b354f46b9af82027235e2a0b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-media/zipball/ca8eca1ea1aba760dd782675016ad0b877650529",
-                "reference": "ca8eca1ea1aba760dd782675016ad0b877650529",
+                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-media/zipball/25f5a1f3dcbb367b354f46b9af82027235e2a0b9",
+                "reference": "25f5a1f3dcbb367b354f46b9af82027235e2a0b9",
                 "shasum": ""
             },
             "require": {
@@ -1990,7 +1990,7 @@
                 "source": "https://github.com/Ambient-Impact/drupal-ambientimpact-media",
                 "issues": "https://github.com/Ambient-Impact/drupal-ambientimpact-media/issues"
             },
-            "time": "2024-10-18T21:12:10+00:00"
+            "time": "2024-10-24T13:50:04+00:00"
         },
         {
             "name": "drupal/ambientimpact_ux",
