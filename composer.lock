@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5f216f947220f66b8f3df5df1ef1a2ce",
+    "content-hash": "e90f22d91e8907de67cfcca425fc0f65",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -6916,55 +6916,26 @@
         },
         {
             "name": "drupal/warmer",
-            "version": "2.0.13",
+            "version": "dev-3435591-automated-drupal-11",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/warmer.git",
-                "reference": "2.0.13"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/warmer-2.0.13.zip",
-                "reference": "2.0.13",
-                "shasum": "e69c1ed8f13ba7e708f70043b1d4672c0afb0bbd"
+                "url": "https://git.drupalcode.org/issue/warmer-3435591.git",
+                "reference": "78023fab944abde9b5caac723c72b24650605fb6"
             },
             "require": {
-                "drupal/core": "^9 || ^10",
-                "drush/drush": "^11.6 || ^12",
+                "drush/drush": "^11.6 || ^12 || ^13",
                 "php": ">=5.6.0",
                 "vipnytt/sitemapparser": "^1.0"
             },
             "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "2.0.13",
-                    "datestamp": "1708323102",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
             "authors": [
                 {
                     "name": "Mateu Aguiló Bosch",
-                    "homepage": "https://www.drupal.org/user/550110",
                     "email": "mateu@mateuaguilo.com"
-                },
-                {
-                    "name": "slv_",
-                    "homepage": "https://www.drupal.org/user/826088"
                 }
             ],
             "description": "Module that provides infrastructure for common cache warming/pre-fetching techniques.",
-            "homepage": "https://www.drupal.org/project/warmer",
-            "support": {
-                "source": "https://git.drupalcode.org/project/warmer"
-            }
+            "time": "2024-09-20T13:07:37+00:00"
         },
         {
             "name": "drupal/webp",
@@ -19826,6 +19797,12 @@
             "version": "2.9999999.9999999.9999999-dev",
             "alias": "2.0@dev",
             "alias_normalized": "2.0.0.0"
+        },
+        {
+            "package": "drupal/warmer",
+            "version": "dev-3435591-automated-drupal-11",
+            "alias": "2.0.13",
+            "alias_normalized": "2.0.13.0"
         }
     ],
     "minimum-stability": "dev",
@@ -19862,7 +19839,8 @@
         "drupal/rebuilder": 20,
         "drupal/refreshless": 20,
         "drupal/rules": 15,
-        "drupal/trusted_reverse_proxy": 20
+        "drupal/trusted_reverse_proxy": 20,
+        "drupal/warmer": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

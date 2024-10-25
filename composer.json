@@ -152,6 +152,11 @@
       "only": ["drupal/trusted_reverse_proxy"]
     },
     {
+      "type": "vcs",
+      "url": "https://git.drupalcode.org/issue/warmer-3435591.git",
+      "only": ["drupal/warmer"]
+    },
+    {
       "type": "composer",
       "url": "https://packages.drupal.org/8"
     }
@@ -234,6 +239,7 @@
     "drupal/userprotect": "^1.2",
     "drupal/views_bulk_edit": "^3.0",
     "drupal/views_bulk_operations": "^4.1",
+    "drupal/warmer": "dev-3435591-automated-drupal-11 as 2.0.13",
     "drupal/webp": "^1.0",
     "drush/drush": "^12.4.3 || ^13",
     "oomphinc/composer-installers-extender": "^2.0",
