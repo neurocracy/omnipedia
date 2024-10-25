@@ -1,0 +1,22 @@
+diff --git a/src/Commands/MarkdownCommands.php b/src/Commands/MarkdownCommands.php
+index d34ccbd..a5178d9 100644
+--- a/src/Commands/MarkdownCommands.php
++++ b/src/Commands/MarkdownCommands.php
+@@ -100,7 +100,16 @@ class MarkdownCommands extends DrushCommands implements ContainerInjectionInterf
+   public function __construct(FileSystemInterface $fileSystem, LoggerInterface $logger) {
+     parent::__construct();
+     $this->fileSystem = $fileSystem;
+-    $this->logger = $logger;
++
++    // Don't replace Drush's logger because it'll cause a fatal error on Drush
++    // 13 and newer.
++    //
++    // @see https://www.drupal.org/project/markdown/issues/3483437
++    //
++    // @see https://github.com/drush-ops/drush/pull/5022
++    if (!method_exists($this, 'logger')) {
++      $this->logger = $logger;
++    }
+ 
+     if (!static::$shutdownRegistered) {
+       drupal_register_shutdown_function(function () {
