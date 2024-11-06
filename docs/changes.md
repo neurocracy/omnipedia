@@ -108,3 +108,13 @@ The following major version bumps indicate breaking changes:
   * [Session cookie security has been hardened significantly](https://scotthelme.co.uk/tough-cookies/), along with many other security improvements.
 
   * The web root directory has been renamed from `drupal` to `web` to be more in line with standard Drupal practices.
+
+* 10.x:
+
+  * Increased [`drupal/ambientimpact_ux` to 2.x](https://github.com/Ambient-Impact/drupal-ambientimpact-ux/tree/2.x) from 1.x.
+
+  * Increased [`omnipedia_attached_data` to 5.x](https://github.com/neurocracy/drupal-omnipedia-attached-data/tree/5.x) from 4.x.
+
+  * Increased [`omnipedia_content` to 7.x](https://github.com/neurocracy/drupal-omnipedia-content/tree/7.x) from 6.x.
+
+  * Increased [`omnipedia_site_theme` to 8.x](https://github.com/neurocracy/drupal-omnipedia-site-theme/tree/8.x) from 7.x.

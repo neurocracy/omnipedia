@@ -2853,10 +2853,161 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@parcel/watcher-android-arm64@npm:2.5.0":
+  version: 2.5.0
+  resolution: "@parcel/watcher-android-arm64@npm:2.5.0"
+  conditions: os=android & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@parcel/watcher-darwin-arm64@npm:2.5.0":
+  version: 2.5.0
+  resolution: "@parcel/watcher-darwin-arm64@npm:2.5.0"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@parcel/watcher-darwin-x64@npm:2.5.0":
+  version: 2.5.0
+  resolution: "@parcel/watcher-darwin-x64@npm:2.5.0"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@parcel/watcher-freebsd-x64@npm:2.5.0":
+  version: 2.5.0
+  resolution: "@parcel/watcher-freebsd-x64@npm:2.5.0"
+  conditions: os=freebsd & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@parcel/watcher-linux-arm-glibc@npm:2.5.0":
+  version: 2.5.0
+  resolution: "@parcel/watcher-linux-arm-glibc@npm:2.5.0"
+  conditions: os=linux & cpu=arm & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@parcel/watcher-linux-arm-musl@npm:2.5.0":
+  version: 2.5.0
+  resolution: "@parcel/watcher-linux-arm-musl@npm:2.5.0"
+  conditions: os=linux & cpu=arm & libc=musl
+  languageName: node
+  linkType: hard
+
+"@parcel/watcher-linux-arm64-glibc@npm:2.5.0":
+  version: 2.5.0
+  resolution: "@parcel/watcher-linux-arm64-glibc@npm:2.5.0"
+  conditions: os=linux & cpu=arm64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@parcel/watcher-linux-arm64-musl@npm:2.5.0":
+  version: 2.5.0
+  resolution: "@parcel/watcher-linux-arm64-musl@npm:2.5.0"
+  conditions: os=linux & cpu=arm64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@parcel/watcher-linux-x64-glibc@npm:2.5.0":
+  version: 2.5.0
+  resolution: "@parcel/watcher-linux-x64-glibc@npm:2.5.0"
+  conditions: os=linux & cpu=x64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@parcel/watcher-linux-x64-musl@npm:2.5.0":
+  version: 2.5.0
+  resolution: "@parcel/watcher-linux-x64-musl@npm:2.5.0"
+  conditions: os=linux & cpu=x64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@parcel/watcher-win32-arm64@npm:2.5.0":
+  version: 2.5.0
+  resolution: "@parcel/watcher-win32-arm64@npm:2.5.0"
+  conditions: os=win32 & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@parcel/watcher-win32-ia32@npm:2.5.0":
+  version: 2.5.0
+  resolution: "@parcel/watcher-win32-ia32@npm:2.5.0"
+  conditions: os=win32 & cpu=ia32
+  languageName: node
+  linkType: hard
+
+"@parcel/watcher-win32-x64@npm:2.5.0":
+  version: 2.5.0
+  resolution: "@parcel/watcher-win32-x64@npm:2.5.0"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@parcel/watcher@npm:^2.4.1":
+  version: 2.5.0
+  resolution: "@parcel/watcher@npm:2.5.0"
+  dependencies:
+    "@parcel/watcher-android-arm64": "npm:2.5.0"
+    "@parcel/watcher-darwin-arm64": "npm:2.5.0"
+    "@parcel/watcher-darwin-x64": "npm:2.5.0"
+    "@parcel/watcher-freebsd-x64": "npm:2.5.0"
+    "@parcel/watcher-linux-arm-glibc": "npm:2.5.0"
+    "@parcel/watcher-linux-arm-musl": "npm:2.5.0"
+    "@parcel/watcher-linux-arm64-glibc": "npm:2.5.0"
+    "@parcel/watcher-linux-arm64-musl": "npm:2.5.0"
+    "@parcel/watcher-linux-x64-glibc": "npm:2.5.0"
+    "@parcel/watcher-linux-x64-musl": "npm:2.5.0"
+    "@parcel/watcher-win32-arm64": "npm:2.5.0"
+    "@parcel/watcher-win32-ia32": "npm:2.5.0"
+    "@parcel/watcher-win32-x64": "npm:2.5.0"
+    detect-libc: "npm:^1.0.3"
+    is-glob: "npm:^4.0.3"
+    micromatch: "npm:^4.0.5"
+    node-addon-api: "npm:^7.0.0"
+    node-gyp: "npm:latest"
+  dependenciesMeta:
+    "@parcel/watcher-android-arm64":
+      optional: true
+    "@parcel/watcher-darwin-arm64":
+      optional: true
+    "@parcel/watcher-darwin-x64":
+      optional: true
+    "@parcel/watcher-freebsd-x64":
+      optional: true
+    "@parcel/watcher-linux-arm-glibc":
+      optional: true
+    "@parcel/watcher-linux-arm-musl":
+      optional: true
+    "@parcel/watcher-linux-arm64-glibc":
+      optional: true
+    "@parcel/watcher-linux-arm64-musl":
+      optional: true
+    "@parcel/watcher-linux-x64-glibc":
+      optional: true
+    "@parcel/watcher-linux-x64-musl":
+      optional: true
+    "@parcel/watcher-win32-arm64":
+      optional: true
+    "@parcel/watcher-win32-ia32":
+      optional: true
+    "@parcel/watcher-win32-x64":
+      optional: true
+  checksum: 10/1e28b1aa9a63456ebfa7af3e41297d088bd31d9e32548604f4f26ed96c5808f4330cd515062e879c24a9eaab7894066c8a3951ee30b59e7cbe6786ab2c790dae
+  languageName: node
+  linkType: hard
+
 "@pkgjs/parseargs@npm:^0.11.0":
   version: 0.11.0
   resolution: "@pkgjs/parseargs@npm:0.11.0"
   checksum: 10/115e8ceeec6bc69dff2048b35c0ab4f8bbee12d8bb6c1f4af758604586d802b6e669dcb02dda61d078de42c2b4ddce41b3d9e726d7daa6b4b850f4adbf7333ff
+  languageName: node
+  linkType: hard
+
+"@popperjs/core@npm:^2.11.8, @popperjs/core@npm:^2.9.0":
+  version: 2.11.8
+  resolution: "@popperjs/core@npm:2.11.8"
+  checksum: 10/ddd16090cde777aaf102940f05d0274602079a95ad9805bd20bc55dcc7c3a2ba1b99dd5c73e5cc2753c3d31250ca52a67d58059459d7d27debb983a9f552936c
   languageName: node
   linkType: hard
 
@@ -4246,6 +4397,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"chokidar@npm:^4.0.0":
+  version: 4.0.1
+  resolution: "chokidar@npm:4.0.1"
+  dependencies:
+    readdirp: "npm:^4.0.1"
+  checksum: 10/62749d2173a60cc5632d6c6e0b7024f33aadce47b06d02e55ad03c7b8daaaf2fc85d4296c047473d04387fd992dab9384cc5263c70a3dc3018b7ebecfb5b5217
+  languageName: node
+  linkType: hard
+
 "chownr@npm:^1.1.1":
   version: 1.1.4
   resolution: "chownr@npm:1.1.4"
@@ -4967,6 +5127,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"detect-libc@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "detect-libc@npm:1.0.3"
+  bin:
+    detect-libc: ./bin/detect-libc.js
+  checksum: 10/3849fe7720feb153e4ac9407086956e073f1ce1704488290ef0ca8aab9430a8d48c8a9f8351889e7cdc64e5b1128589501e4fef48f3a4a49ba92cd6d112d0757
+  languageName: node
+  linkType: hard
+
 "detect-libc@npm:^2.0.0":
   version: 2.0.1
   resolution: "detect-libc@npm:2.0.1"
@@ -5092,7 +5261,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"drupal-ambientimpact-base@workspace:^6, drupal-ambientimpact-base@workspace:web/themes/custom/ambientimpact_base":
+"drupal-ambientimpact-base@workspace:^7, drupal-ambientimpact-base@workspace:web/themes/custom/ambientimpact_base":
   version: 0.0.0-use.local
   resolution: "drupal-ambientimpact-base@workspace:web/themes/custom/ambientimpact_base"
   dependencies:
@@ -5102,12 +5271,12 @@ __metadata:
     autoprefixer: "npm:^10.2.5"
     css-loader: "npm:^6.11.0"
     drupal-ambientimpact-core: "workspace:^1 || ^2"
-    drupal-ambientimpact-ux: "workspace:^1"
+    drupal-ambientimpact-ux: "workspace:^2"
     glob: "npm:^10.3.10"
     mini-css-extract-plugin: "npm:^2.9.1"
     postcss: "npm:^8.4.31"
-    postcss-loader: "npm:^7.0.1"
-    sass: "npm:^1.43.4"
+    postcss-loader: "npm:^7.3.4"
+    sass: "npm:^1.69.0"
     sass-loader: "npm:^13.3.3"
     sassy-cast: "github:Ambient-Impact/SassyCast#adbbd499bb36eb0c7015ae6f23c00e3a78dc54b3"
     webpack: "npm:^5.94.0"
@@ -5194,13 +5363,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"drupal-ambientimpact-ux@workspace:^1, drupal-ambientimpact-ux@workspace:web/modules/custom/ambientimpact_ux":
+"drupal-ambientimpact-ux@workspace:^2, drupal-ambientimpact-ux@workspace:web/modules/custom/ambientimpact_ux":
   version: 0.0.0-use.local
   resolution: "drupal-ambientimpact-ux@workspace:web/modules/custom/ambientimpact_ux"
   dependencies:
     "@babel/core": "npm:^7.25.2"
     "@babel/preset-env": "npm:^7.25.4"
     "@consensus.enterprises/pnp-vendorize": "npm:^1.0.0"
+    "@popperjs/core": "npm:^2.11.8"
     "@symfony/webpack-encore": "npm:^4.7.0"
     autoprefixer: "npm:^10.2.5"
     autosize: "npm:^4.0.2"
@@ -5216,13 +5386,12 @@ __metadata:
     jquery.onfontresize: "github:Ambient-Impact/jquery.onfontresize"
     mini-css-extract-plugin: "npm:^2.9.1"
     motion: "npm:^10.17.0"
-    popper.js: "npm:^1.15.0"
     postcss: "npm:^8.4.31"
-    postcss-loader: "npm:^7.0.1"
+    postcss-loader: "npm:^7.3.4"
     sass: "npm:^1.43.4"
     sass-loader: "npm:^13.3.3"
     sassy-lists: "npm:^3.0.1"
-    tippy.js: "npm:^2.6.0"
+    tippy.js: "npm:^6.3.7"
     webpack: "npm:^5.94.0"
     webpack-cli: "npm:^5.1.4"
     webpack-remove-empty-scripts: "npm:^1.0.1"
@@ -5275,7 +5444,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"drupal-omnipedia-content@workspace:^6, drupal-omnipedia-content@workspace:web/modules/custom/omnipedia_content":
+"drupal-omnipedia-content@workspace:^7, drupal-omnipedia-content@workspace:web/modules/custom/omnipedia_content":
   version: 0.0.0-use.local
   resolution: "drupal-omnipedia-content@workspace:web/modules/custom/omnipedia_content"
   dependencies:
@@ -5285,7 +5454,7 @@ __metadata:
     autoprefixer: "npm:^10.2.5"
     css-loader: "npm:^6.11.0"
     drupal-ambientimpact-core: "workspace:^2"
-    drupal-ambientimpact-ux: "workspace:^1"
+    drupal-ambientimpact-ux: "workspace:^2"
     glob: "npm:^10.3.10"
     mini-css-extract-plugin: "npm:^2.9.1"
     postcss: "npm:^8.4.31"
@@ -5334,12 +5503,12 @@ __metadata:
     "@symfony/webpack-encore": "npm:^4.7.0"
     autoprefixer: "npm:^10.2.6"
     css-loader: "npm:^6.11.0"
-    drupal-ambientimpact-base: "workspace:^6"
+    drupal-ambientimpact-base: "workspace:^7"
     drupal-ambientimpact-core: "workspace:^2"
     drupal-ambientimpact-icon: "workspace:^1"
-    drupal-ambientimpact-ux: "workspace:^1"
+    drupal-ambientimpact-ux: "workspace:^2"
     drupal-omnipedia-block: "workspace:^5 || ^6"
-    drupal-omnipedia-content: "workspace:^6"
+    drupal-omnipedia-content: "workspace:^7"
     drupal-omnipedia-media: "workspace:^6 || ^7"
     favicons: "npm:^7.1.4"
     favicons-webpack-plugin: "npm:^6.0.0-alpha.2"
@@ -6678,7 +6847,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-glob@npm:^4.0.1, is-glob@npm:~4.0.1":
+"is-glob@npm:^4.0.1, is-glob@npm:^4.0.3, is-glob@npm:~4.0.1":
   version: 4.0.3
   resolution: "is-glob@npm:4.0.3"
   dependencies:
@@ -7181,7 +7350,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"micromatch@npm:^4.0.2":
+"micromatch@npm:^4.0.2, micromatch@npm:^4.0.5":
   version: 4.0.8
   resolution: "micromatch@npm:4.0.8"
   dependencies:
@@ -7530,6 +7699,15 @@ __metadata:
   dependencies:
     node-gyp: "npm:latest"
   checksum: 10/8eea1d4d965930a177a0508695beb0d89b4c1d80bf330646a035357a1e8fc31e0d09686e2374996e96e757b947a7ece319f98ede3146683f162597c0bcb4df90
+  languageName: node
+  linkType: hard
+
+"node-addon-api@npm:^7.0.0":
+  version: 7.1.1
+  resolution: "node-addon-api@npm:7.1.1"
+  dependencies:
+    node-gyp: "npm:latest"
+  checksum: 10/ee1e1ed6284a2f8cd1d59ac6175ecbabf8978dcf570345e9a8095a9d0a2b9ced591074ae77f9009287b00c402352b38aa9322a34f2199cdc9f567b842a636b94
   languageName: node
   linkType: hard
 
@@ -7983,13 +8161,6 @@ __metadata:
   version: 1.3.3
   resolution: "platform@npm:1.3.3"
   checksum: 10/3abaa62cf5c7cf549d0a7564ce97caa32615d9dbbc1c19a83ed95dfa2749d0dc68d13cb704e1858022ac5f18de412aa6878cc2521df524cfe9764f9fd51e6802
-  languageName: node
-  linkType: hard
-
-"popper.js@npm:^1.14.3, popper.js@npm:^1.15.0":
-  version: 1.16.1
-  resolution: "popper.js@npm:1.16.1"
-  checksum: 10/71338c86faf9b66ce60c3cdd7fb2ed742944e5d2765a188f269239fee2980aa6223b77b41302d1b6eb7d724e611092f9a2576d0048ac2071b605291abc72c0cf
   languageName: node
   linkType: hard
 
@@ -8647,6 +8818,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"readdirp@npm:^4.0.1":
+  version: 4.0.2
+  resolution: "readdirp@npm:4.0.2"
+  checksum: 10/4ef93103307c7d5e42e78ecf201db58c984c4d66882a27c956250478b49c2444b1ff6aea8ce0f5e4157b2c07ce2fe870ad16c92ebd7c6ff30391ded6e42b9873
+  languageName: node
+  linkType: hard
+
 "readdirp@npm:~3.6.0":
   version: 3.6.0
   resolution: "readdirp@npm:3.6.0"
@@ -8994,6 +9172,23 @@ __metadata:
   bin:
     sass: sass.js
   checksum: 10/a180135addd9108d9a3549e111b2b442a97761bc429ef04374d57ef741d4343378e7092a6cba12e1f94e48b02d9b997cc79e737c0a2b834ad9204a761b14734d
+  languageName: node
+  linkType: hard
+
+"sass@npm:^1.69.0":
+  version: 1.80.6
+  resolution: "sass@npm:1.80.6"
+  dependencies:
+    "@parcel/watcher": "npm:^2.4.1"
+    chokidar: "npm:^4.0.0"
+    immutable: "npm:^4.0.0"
+    source-map-js: "npm:>=0.6.2 <2.0.0"
+  dependenciesMeta:
+    "@parcel/watcher":
+      optional: true
+  bin:
+    sass: sass.js
+  checksum: 10/a01996fa06bb9249cdae623b9b86930cebfe98fd39bba8700bb76b022e436b83085ef84c22310d44ee6ea5992e13ea86d6422c4b687323bb17ad88597cb39e81
   languageName: node
   linkType: hard
 
@@ -9835,12 +10030,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tippy.js@npm:^2.6.0":
-  version: 2.6.0
-  resolution: "tippy.js@npm:2.6.0"
+"tippy.js@npm:^6.3.7":
+  version: 6.3.7
+  resolution: "tippy.js@npm:6.3.7"
   dependencies:
-    popper.js: "npm:^1.14.3"
-  checksum: 10/2835ef2026dab7895977b30e45d5d4ee3a9af8ed837263fdd199328cc769aba4931d7fe7621bd9ea4e19c4c8f7a68120d5dd061a003993ed8dabf207b4f4842b
+    "@popperjs/core": "npm:^2.9.0"
+  checksum: 10/9bd1c6ab68704dd10b8896fd66e28f3b4b4017a32b8802a9d57a565dee1704df45c249d8363bcaca235dbc0d9a7a90d6f1326f1e6b999f7809b36599a3f92eb3
   languageName: node
   linkType: hard
 

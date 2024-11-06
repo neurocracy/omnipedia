@@ -21,16 +21,16 @@
     "cross-env": "^7.0.3"
   },
   "composerDependencies": {
-    "drupal-ambientimpact-base": "workspace:^6",
+    "drupal-ambientimpact-base": "workspace:^7",
     "drupal-ambientimpact-core": "workspace:^2",
     "drupal-ambientimpact-icon": "workspace:^1",
     "drupal-ambientimpact-media": "workspace:^5",
-    "drupal-ambientimpact-ux": "workspace:^1",
+    "drupal-ambientimpact-ux": "workspace:^2",
     "drupal-omnipedia-block": "workspace:^6",
     "drupal-omnipedia-changes": "workspace:^7",
-    "drupal-omnipedia-content": "workspace:^6",
+    "drupal-omnipedia-content": "workspace:^7",
     "drupal-omnipedia-media": "workspace:^7",
-    "drupal-omnipedia-site-theme": "workspace:^7"
+    "drupal-omnipedia-site-theme": "workspace:^8"
   },
   "resolutions": {
     "@hotwired/turbo@8.0.10": "patch:@hotwired/turbo@npm%3A8.0.10#./web/modules/contrib/refreshless/modules/refreshless_turbo/patches/@hotwired/turbo/turbo-8-refreshless-combined.patch"
