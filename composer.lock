@@ -5416,7 +5416,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/rebuilder.git",
-                "reference": "3f41437d3c3d615385681a6687b959d16169c2c3"
+                "reference": "65c78cd80ef2ac039023bb453b82ce667fbf1043"
             },
             "require": {
                 "drupal/core": "^10.1 || ^11",
@@ -5428,8 +5428,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "1.2.0+6-dev",
-                    "datestamp": "1729653441",
+                    "version": "1.2.0+8-dev",
+                    "datestamp": "1729869278",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
