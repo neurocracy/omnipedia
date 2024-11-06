@@ -4433,12 +4433,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neurocracy/drupal-omnipedia-content.git",
-                "reference": "2983c7609dba7e960846c788bae9c4da55716a8a"
+                "reference": "44c84c9c17a6fb58d865fa88fff646db04fbd85c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-content/zipball/2983c7609dba7e960846c788bae9c4da55716a8a",
-                "reference": "2983c7609dba7e960846c788bae9c4da55716a8a",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-content/zipball/44c84c9c17a6fb58d865fa88fff646db04fbd85c",
+                "reference": "44c84c9c17a6fb58d865fa88fff646db04fbd85c",
                 "shasum": ""
             },
             "require": {
@@ -4454,8 +4454,8 @@
                 "drupal/omnipedia_date": "^4.0@dev || ^5.0@dev",
                 "league/commonmark": "^1.6.1",
                 "php": "^8.1",
-                "symfony/css-selector": "^4.4 || ^6.2",
-                "symfony/dom-crawler": "^4.4 || ^6.2"
+                "symfony/css-selector": "^6.2",
+                "symfony/dom-crawler": "^6.2"
             },
             "type": "drupal-custom-module",
             "license": [
@@ -4474,7 +4474,7 @@
                 "source": "https://github.com/neurocracy/drupal-omnipedia-content",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-content/issues"
             },
-            "time": "2024-11-06T17:03:29+00:00"
+            "time": "2024-11-06T17:19:27+00:00"
         },
         {
             "name": "drupal/omnipedia_core",
