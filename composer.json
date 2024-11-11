@@ -1,6 +1,6 @@
 {
   "name": "drupal/omnipedia",
-  "version": "9.0.0",
+  "version": "10.0.0",
   "description": "The Omnipedia web app.",
   "type": "project",
   "license": "GPL-2.0-or-later",
