@@ -39,7 +39,7 @@ new LeadingPeriodicTimer($loop, 60, 600, function(): void {
     function(): PromiseInterface {
       return (new WorkerProcess('drush warmer:enqueue ' . \implode(',', [
         'omnipedia_wiki_node_changes',
-        'omnipedia_wiki_node_cdn',
+        // 'omnipedia_wiki_node_cdn',
       ])))->start()->promise();
     },
     function(): PromiseInterface {
