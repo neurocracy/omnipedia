@@ -5890,28 +5890,28 @@
         },
         {
             "name": "drupal/security_review",
-            "version": "3.0.3",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/security_review.git",
-                "reference": "3.0.3"
+                "reference": "3.1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/security_review-3.0.3.zip",
-                "reference": "3.0.3",
-                "shasum": "06ccb512ca80b2aa5158ec67f30d84cc3f33ec30"
+                "url": "https://ftp.drupal.org/files/projects/security_review-3.1.0.zip",
+                "reference": "3.1.0",
+                "shasum": "45e387bea5bb14989990aad604a79784c8a1ccda"
             },
             "require": {
-                "drupal/core": "^10 || ^11",
+                "drupal/core": "^10.3 || ^11",
                 "php": ">=8.1.0",
                 "symfony/filesystem": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.3",
-                    "datestamp": "1722973230",
+                    "version": "3.1.0",
+                    "datestamp": "1731704479",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
