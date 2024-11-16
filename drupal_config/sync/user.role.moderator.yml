@@ -9,6 +9,7 @@ dependencies:
     - file
     - flood_control
     - help
+    - navigation
     - omnipedia_access
     - shortcut
     - system
@@ -22,6 +23,7 @@ permissions:
   - 'access administration pages'
   - 'access contextual links'
   - 'access help pages'
+  - 'access navigation'
   - 'access shortcuts'
   - 'access site in maintenance mode'
   - 'access toolbar'

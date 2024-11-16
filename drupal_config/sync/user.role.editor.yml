@@ -14,6 +14,7 @@ dependencies:
     - filter
     - help
     - media
+    - navigation
     - node
     - omnipedia_access
     - omnipedia_attached_data
@@ -33,6 +34,7 @@ permissions:
   - 'access contextual links'
   - 'access help pages'
   - 'access media overview'
+  - 'access navigation'
   - 'access shortcuts'
   - 'access site in maintenance mode'
   - 'access site reports'

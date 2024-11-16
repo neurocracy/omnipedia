@@ -65,6 +65,7 @@ adding:
     - 'administer views'
     - 'bypass rules access'
     - 'cancel account'
+    - 'configure navigation layout'
     - 'delete configuration'
     - 'disable own tfa'
     - 'explore typed entity classes'

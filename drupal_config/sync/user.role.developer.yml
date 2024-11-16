@@ -33,6 +33,7 @@ dependencies:
     - markdown
     - media
     - metatag
+    - navigation
     - node
     - omnipedia_access
     - omnipedia_attached_data
@@ -64,6 +65,7 @@ permissions:
   - 'access development environment email logs'
   - 'access files overview'
   - 'access media overview'
+  - 'access navigation'
   - 'access rules debug'
   - 'access security review list'
   - 'access shortcuts'

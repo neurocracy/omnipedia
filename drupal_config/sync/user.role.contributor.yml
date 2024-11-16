@@ -11,6 +11,7 @@ dependencies:
     - filter
     - help
     - media
+    - navigation
     - node
     - omnipedia_access
     - shortcut
@@ -28,6 +29,7 @@ permissions:
   - 'access contextual links'
   - 'access help pages'
   - 'access media overview'
+  - 'access navigation'
   - 'access shortcuts'
   - 'access toolbar'
   - 'administer nodes'
