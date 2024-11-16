@@ -306,7 +306,8 @@
         "Fix mismatch of $base_url with Symfony request object [#2753591]: https://www.drupal.org/project/drupal/issues/2753591": "patches/drupal/core/2753591-fix-mismatch-of-base-url.patch",
         "Allow theme developers to add the default favicon filename to the theme's .info.yml [#3037922]: https://www.drupal.org/project/drupal/issues/3037922#mr4108-note181413": "patches/drupal/core/3037922-theme-info-favicon.patch",
         "Support setting service parameters via environment variables [#3249970]: https://www.drupal.org/project/drupal/issues/3249970#comment-14294955": "patches/drupal/core/3249970-2-support-service-parameter-env.patch",
-        "Slow admin/config page load [#3336621]: https://www.drupal.org/project/drupal/issues/3336621#comment-14888211": "patches/drupal/core/3336621-3-remove-admin-config-status-report-check.patch"
+        "Slow admin/config page load [#3336621]: https://www.drupal.org/project/drupal/issues/3336621#comment-14888211": "patches/drupal/core/3336621-3-remove-admin-config-status-report-check.patch",
+        "Drupal.displace() only checks inline display: none; instead of computed styles, leading to incorrect visibility check [#3487907]: https://www.drupal.org/project/drupal/issues/3487907": "patches/drupal/core/3487907-drupal-displace-computed-style.patch"
       },
       "drupal/image_style_warmer": {
         "Support webp images [#3319397]: https://www.drupal.org/project/image_style_warmer/issues/3319397#comment-14802527": "patches/drupal/image_style_warmer/webp-module-support-3319397-5.patch"
