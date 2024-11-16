@@ -5524,7 +5524,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/refreshless.git",
-                "reference": "3f6c068a109f011eb2a834a8f71bf7767d867b01"
+                "reference": "8589fba8fbe97179e46cf1fd88d9c02cc4b5ef71"
             },
             "require": {
                 "composer/semver": "^3.0",
@@ -5534,7 +5534,8 @@
                 "php": "^8.1"
             },
             "require-dev": {
-                "drupal/hux": "*"
+                "drupal/hux": "*",
+                "drupal/refreshless_turbo": "*"
             },
             "type": "drupal-module",
             "extra": {
@@ -5542,8 +5543,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "2.0.0-alpha2+4-dev",
-                    "datestamp": "1730507463",
+                    "version": "2.0.0-alpha2+8-dev",
+                    "datestamp": "1731742749",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -5552,7 +5553,8 @@
                 "patches": {
                     "drupal/core": {
                         "JS aggregation should account for \"async\" and \"defer\" attributes [#1587536]: https://www.drupal.org/project/drupal/issues/1587536": "https://git.drupalcode.org/project/refreshless/-/raw/9bd0325f415e95bfaa7adc29daaf26cc32bed673/modules/refreshless_turbo/patches/drupal/core/1587536-js-aggregation-async-defer-attributes.patch",
-                        "Allow setting aggregation groups for js files in library definitions [#3232810]: https://www.drupal.org/project/drupal/issues/3232810": "https://git.drupalcode.org/project/refreshless/-/raw/9bd0325f415e95bfaa7adc29daaf26cc32bed673/modules/refreshless_turbo/patches/drupal/core/3232810-aggregation-groups-for-js.patch"
+                        "Allow setting aggregation groups for js files in library definitions [#3232810]: https://www.drupal.org/project/drupal/issues/3232810": "https://git.drupalcode.org/project/refreshless/-/raw/9bd0325f415e95bfaa7adc29daaf26cc32bed673/modules/refreshless_turbo/patches/drupal/core/3232810-aggregation-groups-for-js.patch",
+                        "New navigation does not displace if detached and attached again [#3487905]: https://www.drupal.org/project/drupal/issues/3487905": "https://git.drupalcode.org/project/refreshless/-/raw/833cfd6603fc7e839f6aa491ed297c6a8f262e03/modules/refreshless_turbo/patches/drupal/core/3487905-navigation-displace-detach-attach.patch"
                     }
                 }
             },
