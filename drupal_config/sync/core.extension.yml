@@ -103,7 +103,6 @@ module:
   rebuilder: 0
   rebuilder_ui: 0
   redirect: 0
-  refreshless_turbo_gin: 0
   responsive_image: 0
   rules: 0
   s3fs: 0
