@@ -4975,16 +4975,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neurocracy/drupal-omnipedia-warmer.git",
-                "reference": "383d22b90a9319f284be6932c2ae16436207ab83"
+                "reference": "20c691c6e0388f143b2be234ead9f3c1b95a8ba0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-warmer/zipball/383d22b90a9319f284be6932c2ae16436207ab83",
-                "reference": "383d22b90a9319f284be6932c2ae16436207ab83",
+                "url": "https://api.github.com/repos/neurocracy/drupal-omnipedia-warmer/zipball/20c691c6e0388f143b2be234ead9f3c1b95a8ba0",
+                "reference": "20c691c6e0388f143b2be234ead9f3c1b95a8ba0",
                 "shasum": ""
             },
             "require": {
                 "drupal/core": "^9.5 || ^10.0 || ^11.0",
+                "drupal/hux": "^1.1",
                 "drupal/omnipedia_core": "^4.0@dev || ^5.0@dev || ^6.0@dev",
                 "drupal/warmer": "^2.0",
                 "php": "^8.1"
@@ -5007,7 +5008,7 @@
                 "source": "https://github.com/neurocracy/drupal-omnipedia-warmer",
                 "issues": "https://github.com/neurocracy/drupal-omnipedia-warmer/issues"
             },
-            "time": "2024-11-06T19:17:13+00:00"
+            "time": "2024-11-17T15:44:37+00:00"
         },
         {
             "name": "drupal/paranoia",
