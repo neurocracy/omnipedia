@@ -8,7 +8,7 @@ warmers:
   omnipedia_wiki_node_cdn:
     id: omnipedia_wiki_node_cdn
     frequency: 300
-    batchSize: 4
+    batchSize: 2
     verify: true
     max_concurrent_requests: 2
     sleep_between_batches: 8
