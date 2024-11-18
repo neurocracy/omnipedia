@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "976995c416840a833a5835f889262c5a",
+    "content-hash": "14fb9e9e48b3e7349180a19fb754245a",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -1776,12 +1776,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-base.git",
-                "reference": "3a1232b12007dc6335521bbe46f99605f0f37e95"
+                "reference": "1b63b19c09a71660de804aaff401db034fed9a7f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-base/zipball/3a1232b12007dc6335521bbe46f99605f0f37e95",
-                "reference": "3a1232b12007dc6335521bbe46f99605f0f37e95",
+                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-base/zipball/1b63b19c09a71660de804aaff401db034fed9a7f",
+                "reference": "1b63b19c09a71660de804aaff401db034fed9a7f",
                 "shasum": ""
             },
             "require": {
@@ -1808,7 +1808,7 @@
                 "source": "https://github.com/Ambient-Impact/drupal-ambientimpact-base",
                 "issues": "https://github.com/Ambient-Impact/drupal-ambientimpact-base/issues"
             },
-            "time": "2024-11-17T17:51:52+00:00"
+            "time": "2024-11-18T15:13:52+00:00"
         },
         {
             "name": "drupal/ambientimpact_core",
