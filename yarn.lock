@@ -2576,13 +2576,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hotwired/turbo@patch:@hotwired/turbo@npm%3A8.0.10#./web/modules/contrib/refreshless/modules/refreshless_turbo/patches/@hotwired/turbo/turbo-8-refreshless-combined.patch::locator=drupal-omnipedia%40workspace%3A.":
-  version: 8.0.10
-  resolution: "@hotwired/turbo@patch:@hotwired/turbo@npm%3A8.0.10#./web/modules/contrib/refreshless/modules/refreshless_turbo/patches/@hotwired/turbo/turbo-8-refreshless-combined.patch::version=8.0.10&hash=ca1cdf&locator=drupal-omnipedia%40workspace%3A."
-  checksum: 10/1f71d9bac647567ddada2f895c946805668e57090f34a5dc437c0327812c2a932e6ccf0c44900d2f9548ebcdfefaa1fa845254e2e591a947f3c88ea56ce3ef96
-  languageName: node
-  linkType: hard
-
 "@isaacs/cliui@npm:^8.0.2":
   version: 8.0.2
   resolution: "@isaacs/cliui@npm:8.0.2"
