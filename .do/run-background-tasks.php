@@ -18,6 +18,52 @@ $loop->futureTick(function(): void {
   (new WorkerProcess(__DIR__ . '/build/write-htaccess.sh'))->start();
 });
 
+/**
+ * True if maintenance mode is currently on; false otherwise.
+ *
+ * @var boolean
+ */
+$maintenance = \trim(\exec('drush maint:get')) === '1';
+
+/**
+ * Amount of time to sleep between checks for maintenance mode to turn off.
+ *
+ * @var integer
+ */
+$maintenanceSleep = 5;
+
+// Basic and ugly wait for maintenance mode to be turned off during a deploy.
+//
+// @see https://reactphp.org/promise-timer/#sleep Can we instead implement this
+//   using ReactPHP? Attempted using ChildProcess but that didn't seem to work
+//   as expected, was not calling the stdout/stderr callbacks at all.
+if ($maintenance === true) {
+
+  print 'Waiting for maintenance mode to be turned off.' . "\n";
+
+  do {
+
+    if (\trim(\exec('drush maint:get')) === '0') {
+
+      $maintenance = false;
+
+      print 'Maintenance mode has been turned off; continuing run.' . "\n";
+
+      break;
+
+    }
+
+    print \sprintf(
+      'Sleeping for %d seconds.',
+      $maintenanceSleep,
+    ) . "\n";
+
+    sleep($maintenanceSleep);
+
+  } while (true);
+
+}
+
 // Run cron every 15 minutes.
 $loop->addPeriodicTimer(900, function(): void {
   (new WorkerProcess('drush cron'))->start();
