@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3e337d117d183521e2f56be03ecbe742",
+    "content-hash": "14fb9e9e48b3e7349180a19fb754245a",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -5517,11 +5517,11 @@
         },
         {
             "name": "drupal/refreshless",
-            "version": "dev-3488459-turbo-fouc",
+            "version": "dev-2.x",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/issue/refreshless-3488459.git",
-                "reference": "e528893e242676fa92e0a5cfb2e0e5e2b48cab70"
+                "url": "https://git.drupalcode.org/project/refreshless.git",
+                "reference": "9c8bc8aef212769c840667766bdf7ba8aac6eb54"
             },
             "require": {
                 "composer/semver": "^3.0",
@@ -5530,16 +5530,32 @@
                 "drupal/hux": "^1.4",
                 "php": "^8.1"
             },
+            "require-dev": {
+                "drupal/hux": "*",
+                "drupal/refreshless_turbo": "*"
+            },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "2.0.0-alpha3+16-dev",
+                    "datestamp": "1733347593",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                },
                 "patches": {
                     "drupal/core": {
                         "JS aggregation should account for \"async\" and \"defer\" attributes [#1587536]: https://www.drupal.org/project/drupal/issues/1587536": "https://git.drupalcode.org/project/refreshless/-/raw/9bd0325f415e95bfaa7adc29daaf26cc32bed673/modules/refreshless_turbo/patches/drupal/core/1587536-js-aggregation-async-defer-attributes.patch",
-                        "Allow setting aggregation groups for js files in library definitions [#3232810]: https://www.drupal.org/project/drupal/issues/3232810": "https://git.drupalcode.org/project/refreshless/-/raw/9bd0325f415e95bfaa7adc29daaf26cc32bed673/modules/refreshless_turbo/patches/drupal/core/3232810-aggregation-groups-for-js.patch",
-                        "New navigation does not displace if detached and attached again [#3487905]: https://www.drupal.org/project/drupal/issues/3487905": "https://git.drupalcode.org/project/refreshless/-/raw/833cfd6603fc7e839f6aa491ed297c6a8f262e03/modules/refreshless_turbo/patches/drupal/core/3487905-navigation-displace-detach-attach.patch"
+                        "Allow setting aggregation groups for js files in library definitions [#3232810]: https://www.drupal.org/project/drupal/issues/3232810": "https://git.drupalcode.org/project/refreshless/-/raw/a9abd3f0581150115ce17dcf8d80891db6dbb84d/patches/drupal/core/3232810-aggregation-groups-for-js.patch",
+                        "New navigation does not displace if detached and attached again [#3487905]: https://www.drupal.org/project/drupal/issues/3487905": "https://git.drupalcode.org/project/refreshless/-/raw/a9abd3f0581150115ce17dcf8d80891db6dbb84d/patches/drupal/core/3487905-navigation-displace-detach-attach.patch"
                     }
                 }
             },
+            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0+"
             ],
@@ -5552,6 +5568,34 @@
                 {
                     "name": "See other contributors",
                     "homepage": "https://www.drupal.org/node/2693129/committers"
+                },
+                {
+                    "name": "ganeshsurya11",
+                    "homepage": "https://www.drupal.org/user/3526791"
+                },
+                {
+                    "name": "handkerchief",
+                    "homepage": "https://www.drupal.org/user/3090607"
+                },
+                {
+                    "name": "jaydip makawana",
+                    "homepage": "https://www.drupal.org/user/3621830"
+                },
+                {
+                    "name": "rajeshreeputra",
+                    "homepage": "https://www.drupal.org/user/3418561"
+                },
+                {
+                    "name": "renguer0",
+                    "homepage": "https://www.drupal.org/user/3623854"
+                },
+                {
+                    "name": "ronaldtebrake",
+                    "homepage": "https://www.drupal.org/user/2314038"
+                },
+                {
+                    "name": "wim leers",
+                    "homepage": "https://www.drupal.org/user/99777"
                 }
             ],
             "description": "RefreshLess makes navigating your web site faster by only loading the parts that change between pages.",
@@ -5561,11 +5605,10 @@
                 "scalability"
             ],
             "support": {
+                "source": "https://git.drupalcode.org/project/refreshless",
                 "issues": "https://www.drupal.org/project/issues/refreshless",
-                "irc": "irc://irc.freenode.org/drupal",
-                "source": "https://cgit.drupalcode.org/refreshless"
-            },
-            "time": "2024-12-02T17:18:15+00:00"
+                "irc": "irc://irc.freenode.org/drupal"
+            }
         },
         {
             "name": "drupal/rules",
@@ -20056,7 +20099,7 @@
         },
         {
             "package": "drupal/refreshless",
-            "version": "dev-3488459-turbo-fouc",
+            "version": "2.9999999.9999999.9999999-dev",
             "alias": "2.0@dev",
             "alias_normalized": "2.0.0.0"
         },
