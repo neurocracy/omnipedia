@@ -100,7 +100,7 @@ new LeadingPeriodicTimer($loop, 10, 600, function(): void {
     },
   ])->always(function() use (&$running) {
 
-    \print('Queue run complete.' . "\n");
+    print 'Queue run complete.' . "\n";
 
     $running = false;
 
