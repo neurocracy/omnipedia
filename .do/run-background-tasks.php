@@ -69,8 +69,8 @@ $loop->addPeriodicTimer(900, function(): void {
   (new WorkerProcess('drush cron'))->start();
 });
 
-// Run queues 60 seconds after starting, then every ten minutes after that.
-new LeadingPeriodicTimer($loop, 60, 600, function(): void {
+// Run queues 10 seconds after starting, then every ten minutes after that.
+new LeadingPeriodicTimer($loop, 10, 600, function(): void {
 
   /** @var boolean Static flag indicating whether a run is currently in progress. */
   static $running = false;
