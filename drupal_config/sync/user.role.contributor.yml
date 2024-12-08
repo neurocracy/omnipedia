@@ -10,6 +10,7 @@ dependencies:
     - file
     - filter
     - help
+    - linkchecker
     - media
     - navigation
     - node
@@ -30,6 +31,7 @@ permissions:
   - 'access help pages'
   - 'access media overview'
   - 'access navigation'
+  - 'access own broken links report'
   - 'access shortcuts'
   - 'access toolbar'
   - 'administer nodes'

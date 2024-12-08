@@ -13,6 +13,7 @@ dependencies:
     - file
     - filter
     - help
+    - linkchecker
     - media
     - navigation
     - node
@@ -29,12 +30,14 @@ weight: -6
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'access broken links report'
   - 'access content'
   - 'access content overview'
   - 'access contextual links'
   - 'access help pages'
   - 'access media overview'
   - 'access navigation'
+  - 'access own broken links report'
   - 'access shortcuts'
   - 'access site in maintenance mode'
   - 'access site reports'

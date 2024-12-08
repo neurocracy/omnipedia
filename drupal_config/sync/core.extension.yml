@@ -51,6 +51,7 @@ module:
   layout_builder: 0
   layout_discovery: 0
   link: 0
+  linkchecker: 0
   login_destination: 0
   login_security: 0
   markdown: 0

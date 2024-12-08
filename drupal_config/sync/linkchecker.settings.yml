@@ -1,0 +1,60 @@
+_core:
+  default_config_hash: FzFKuqOuk667AkDorrqvXkc_-M4D-Ac1XeGGusxS1JU
+scan_blocks: null
+check_links_types: 2
+default_url_scheme: 'http://'
+base_path: ''
+search_published_contents_only: true
+extract:
+  from_a: true
+  from_audio: false
+  from_embed: false
+  from_iframe: false
+  from_img: false
+  from_object: false
+  from_video: false
+  filter_blacklist:
+    filter_autop: filter_autop
+    filter_caption: filter_caption
+    filter_align: filter_align
+    ambientimpact_dom: '0'
+    ambientimpact_icon: '0'
+    editor_file_reference: '0'
+    filter_image_lazy_load: '0'
+    filter_html: '0'
+    filter_url: '0'
+    filter_html_image_secure: '0'
+    filter_htmlcorrector: '0'
+    filter_html_escape: '0'
+    markdown: '0'
+    media_embed: '0'
+    omnipedia_attached_data_wikimedia_strip: '0'
+    omnipedia_attached_data_attachments: '0'
+    omnipedia_elements: '0'
+    omnipedia_markdown_attachments: '0'
+    omnipedia_markdown_alterations: '0'
+    filter_pathologic: '0'
+    token_filter: '0'
+check:
+  connections_max: 8
+  connections_max_per_domain: 2
+  disable_link_check_for_urls: |-
+    example.com
+    example.net
+    example.org
+  library: core
+  interval: 2419200
+  useragent: 'Drupal (+https://drupal.org/)'
+error:
+  action_status_code_301: 0
+  action_status_code_404: 0
+  ignore_response_codes: |-
+    200
+    206
+    302
+    304
+    401
+    403
+  impersonate_account: admin
+logging:
+  level: 6

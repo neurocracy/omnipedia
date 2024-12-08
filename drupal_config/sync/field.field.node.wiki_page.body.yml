@@ -7,7 +7,12 @@ dependencies:
     - filter.format.wiki_html
     - node.type.wiki_page
   module:
+    - linkchecker
     - text
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: html_link_extractor
 id: node.wiki_page.body
 field_name: body
 entity_type: node
