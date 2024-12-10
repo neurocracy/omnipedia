@@ -14,9 +14,6 @@
       "Slow admin/config page load [#3336621]: https://www.drupal.org/project/drupal/issues/3336621#comment-14888211": "patches/drupal/core/3336621-3-remove-admin-config-status-report-check.patch",
       "Drupal.displace() only checks inline display: none; instead of computed styles, leading to incorrect visibility check [#3487907]: https://www.drupal.org/project/drupal/issues/3487907": "patches/drupal/core/3487907-drupal-displace-computed-style.patch"
     },
-    "drupal/gin": {
-      "New core navigation's top bar in dark mode on small screens has white background with light grey text [#3488177]: https://www.drupal.org/project/gin/issues/3488177": "patches/drupal/gin/3488177-core-navigation-dark-mode-top-bar.patch"
-    },
     "drupal/image_style_warmer": {
       "Support webp images [#3319397]: https://www.drupal.org/project/image_style_warmer/issues/3319397#comment-14802527": "patches/drupal/image_style_warmer/webp-module-support-3319397-5.patch"
     },
