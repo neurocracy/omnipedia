@@ -5521,7 +5521,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/refreshless.git",
-                "reference": "61cfd1aa828e52353b9de4363c127a1f6ee1df7b"
+                "reference": "5c2dcb36de4bfdb04a98029ff4a72f04eb999ca6"
             },
             "require": {
                 "composer/semver": "^3.0",
@@ -5540,8 +5540,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "2.0.0-alpha4+7-dev",
-                    "datestamp": "1734012414",
+                    "version": "2.0.0-alpha5+8-dev",
+                    "datestamp": "1734739475",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -5598,7 +5598,7 @@
                     "homepage": "https://www.drupal.org/user/99777"
                 }
             ],
-            "description": "RefreshLess makes navigating your web site faster by only loading the parts that change between pages.",
+            "description": "RefreshLess layers JavaScript-based navigation on top of Drupal's existing server-rendered HTML to provide the kind of smooth, fast, and responsive experience users expect.",
             "homepage": "https://www.drupal.org/project/refreshless",
             "keywords": [
                 "performance",
