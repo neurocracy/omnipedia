@@ -146,6 +146,16 @@ spec:
   - key: S3FS_TAKEOVER
     scope: RUN_TIME
     value: "true"
+    # Reusing Yarn cache on App Platform seems to not work as expected and
+    # results in a failed build due to error:
+    #
+    # mv: cannot move '/layers/heroku_nodejs/shim/node/cache/yarn' to '/workspace/.yarn/cache': No such file or directory
+  - key: NODE_MODULES_CACHE
+    scope: BUILD_TIME
+    value: 'false'
+  - key: USE_YARN_CACHE
+    scope: BUILD_TIME
+    value: 'false'
 
   ingress:
     rules:
