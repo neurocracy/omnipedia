@@ -5,7 +5,8 @@
   "repository": "github:neurocracy/omnipedia",
   "packageManager": "yarn@4.5.0",
   "engines": {
-    "node": ">=20 <21"
+    "node": ">=20 <21",
+    "yarn": ">=4.5.0"
   },
   "scripts": {
     "build:production": "cross-env NODE_ENV=production yarn build",
