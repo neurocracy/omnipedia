@@ -186,7 +186,7 @@
     "drupal/flood_control": "^3.0",
     "drupal/gin": "^4.0",
     "drupal/gin_everywhere": "^1.1",
-    "drupal/gin_toolbar": "^1.0",
+    "drupal/gin_toolbar": "^2.0",
     "drupal/health_check": "^3.0",
     "drupal/honeypot": "^2.0",
     "drupal/hux": "^1.3",

@@ -2,9 +2,13 @@ spec:
 
   name: omnipedia
 
-  # @see https://docs.digitalocean.com/products/app-platform/how-to/upgrade-stack/
   features:
+    # @see https://docs.digitalocean.com/products/app-platform/how-to/upgrade-stack/
     - buildpack-stack=ubuntu-22
+    # Opt in to the new Heroku Node.js buildpack if app is on the legacy one.
+    #
+    # @see https://docs.digitalocean.com/products/app-platform/how-to/migrate-nodejs-buildpack/
+    - new-nodejs-buildpack=true
 
   # domains:
   # - domain: omnipedia.app
@@ -142,6 +146,16 @@ spec:
   - key: S3FS_TAKEOVER
     scope: RUN_TIME
     value: "true"
+    # Reusing Yarn cache on App Platform seems to not work as expected and
+    # results in a failed build due to error:
+    #
+    # mv: cannot move '/layers/heroku_nodejs/shim/node/cache/yarn' to '/workspace/.yarn/cache': No such file or directory
+  - key: NODE_MODULES_CACHE
+    scope: BUILD_TIME
+    value: 'false'
+  - key: USE_YARN_CACHE
+    scope: BUILD_TIME
+    value: 'false'
 
   ingress:
     rules:

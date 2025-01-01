@@ -18,6 +18,7 @@
     "web/themes/custom/*"
   ],
   "dependencies": {
+    "corepack": "^0.30.0",
     "cross-env": "^7.0.3"
   },
   "composerDependencies": {

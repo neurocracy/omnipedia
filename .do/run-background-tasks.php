@@ -54,7 +54,7 @@ if ($maintenance === true) {
     }
 
     print \sprintf(
-      'Sleeping for %d seconds.',
+      'Maintenance mode enabled; sleeping for %d seconds.',
       $maintenanceSleep,
     ) . "\n";
 
