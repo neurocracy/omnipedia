@@ -20,7 +20,8 @@ app.
 
 # Funding
 
-Funding for this project was provided in part by
+Funding for the continued development and maintenance of Neurocracy was provided
+in part by
 
 [![Consensus Enterprises](docs/assets/consensus-logo-horizontal.svg?v=1)](https://consensus.enterprises/)
 
