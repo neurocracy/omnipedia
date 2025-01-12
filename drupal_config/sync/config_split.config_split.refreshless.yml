@@ -14,7 +14,6 @@ module:
   omnipedia_pipeline: 0
   refreshless: 0
   refreshless_turbo: 0
-  refreshless_turbo_debug: 0
   refreshless_turbo_gin: 0
 theme: {  }
 complete_list: {  }
