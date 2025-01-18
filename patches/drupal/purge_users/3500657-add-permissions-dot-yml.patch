@@ -1,0 +1,15 @@
+diff --git a/purge_users.permissions.yml b/purge_users.permissions.yml
+new file mode 100644
+index 0000000000000000000000000000000000000000..69ac935c8a10ce682ea2280836abd4cc159c5fa3
+--- /dev/null
++++ b/purge_users.permissions.yml
+@@ -0,0 +1,9 @@
++access purge setting page:
++  title: 'Access the Auto Purge Users page'
++  description: 'Allows a user to view and edit user purge rules.'
++  restrict access: true
++
++access purge confirmation form:
++  title: 'Purge users'
++  description: 'Allows a user to initiate user purging via the UI.'
++  restrict access: true

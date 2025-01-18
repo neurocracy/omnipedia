@@ -99,6 +99,7 @@ module:
   pcb: 0
   phpass: 0
   preprocess_event_dispatcher: 0
+  purge_users: 0
   queue_ui: 0
   rebuilder: 0
   rebuilder_ui: 0

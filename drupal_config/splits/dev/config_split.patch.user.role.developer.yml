@@ -13,6 +13,7 @@ adding:
       - field_ui
       - help
       - key
+      - purge_users
       - s3fs
       - seckit
       - smtp
@@ -22,6 +23,8 @@ adding:
   permissions:
     - 'access devel information'
     - 'access help pages'
+    - 'access purge confirmation form'
+    - 'access purge setting page'
     - 'admin tfa settings'
     - 'administer account settings'
     - 'administer actions'

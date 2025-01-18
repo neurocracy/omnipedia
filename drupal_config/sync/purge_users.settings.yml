@@ -1,0 +1,46 @@
+user_never_lastlogin_value: 7
+user_never_lastlogin_period: days
+user_lastlogin_value: null
+user_lastlogin_period: days
+user_inactive_value: null
+user_inactive_period: days
+user_blocked_value: null
+user_blocked_period: days
+enabled_never_loggedin_users: true
+enabled_loggedin_users: false
+enabled_inactive_users: false
+enabled_blocked_users: false
+purge_included_users_roles:
+  authenticated: authenticated
+  contributor: '0'
+  moderator: '0'
+  editor: '0'
+  developer: '0'
+  administrator: '0'
+purge_on_cron: true
+inactive_user_notify_subject: 'Your account is deleted'
+inactive_user_notify_text: |-
+  Dear User, 
+
+  Your account has been deleted due the website’s policy to automatically remove users who match certain criteria. If you have concerns regarding the deletion, please talk to the administrator of the website.
+
+  Thank you
+send_email_notification: false
+purge_user_cancel_method: user_cancel_delete
+disregard_blocked_users: false
+purge_excluded_users_roles:
+  contributor: contributor
+  moderator: moderator
+  editor: editor
+  developer: developer
+  administrator: administrator
+user_before_deletion_subject: 'Your account will be deleted'
+user_before_deletion_text: |-
+  Dear User, 
+
+  Your account will be deleted soon due the website’s policy to automatically remove users who match certain criteria. If you have concerns regarding the deletion, please talk to the administrator of the website.
+
+  Thank you
+send_email_user_before_notification: false
+user_before_notification_value: ''
+user_before_notification_period: days

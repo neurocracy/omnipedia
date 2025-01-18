@@ -220,6 +220,7 @@
     "drupal/password_policy": "^4.0",
     "drupal/pathauto": "^1.6",
     "drupal/pathologic": "^2.0@alpha",
+    "drupal/purge_users": "^4.0@beta",
     "drupal/rebuilder": "1.x-dev as 1.2",
     "drupal/redirect": "^1.6",
     "drupal/refreshless": "2.x-dev as 2.0@dev",
