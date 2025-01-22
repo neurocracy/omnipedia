@@ -18,6 +18,12 @@ app.
 
 [![Main](https://github.com/neurocracy/omnipedia/actions/workflows/main.yml/badge.svg)](https://github.com/neurocracy/omnipedia/actions/workflows/main.yml)
 
+# Funding
+
+Funding for the continued development of Neurocracy was provided in part by
+
+[![Consensus Enterprises](docs/assets/consensus-logo-horizontal.svg?v=1)](https://consensus.enterprises/)
+
 # License
 
 The entire Omnipedia codebase is released under [the GPLv2 (or later)
