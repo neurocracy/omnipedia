@@ -9,3 +9,8 @@ drush -y updb
 
 # Import any configuration changes. This should be run after database updates.
 drush -y config:import
+
+# Delete old tables from the Commerce days.
+#
+# @see https://github.com/neurocracy/omnipedia/issues/52
+drush php:script .do/delete-old-tables.php
