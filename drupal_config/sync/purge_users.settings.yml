@@ -6,7 +6,7 @@ user_inactive_value: null
 user_inactive_period: days
 user_blocked_value: null
 user_blocked_period: days
-enabled_never_loggedin_users: true
+enabled_never_loggedin_users: false
 enabled_loggedin_users: false
 enabled_inactive_users: false
 enabled_blocked_users: false
