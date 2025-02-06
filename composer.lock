@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6ad5b088bb71bee744e02744413a4afa",
+    "content-hash": "57d6b1ee8f1efefe1243c27ecf764eee",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -1937,12 +1937,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-media.git",
-                "reference": "9c750849d3d1a9b2febf246e87fcdc426e0e0ddd"
+                "reference": "8101b254b3b3b4cca31270f69f33bd82c39e0f09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-media/zipball/9c750849d3d1a9b2febf246e87fcdc426e0e0ddd",
-                "reference": "9c750849d3d1a9b2febf246e87fcdc426e0e0ddd",
+                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-media/zipball/8101b254b3b3b4cca31270f69f33bd82c39e0f09",
+                "reference": "8101b254b3b3b4cca31270f69f33bd82c39e0f09",
                 "shasum": ""
             },
             "require": {
@@ -1953,7 +1953,7 @@
                 "drupal/core": ">=10.3 <11.1",
                 "drupal/hook_event_dispatcher": "^4.0",
                 "drupal/hux": "^1.2",
-                "drupal/image_field_caption": "^1.1",
+                "drupal/image_field_caption": "^2.0.1",
                 "guzzlehttp/guzzle": "^7.4.5",
                 "php": "^8.1"
             },
@@ -1963,9 +1963,6 @@
                 "patches": {
                     "drupal/core": {
                         "Add a hook to modify oEmbed resource data (core 10.3.x) [#3042423]: https://www.drupal.org/project/drupal/issues/3042423#comment-15772049": "https://raw.githubusercontent.com/Ambient-Impact/drupal-ambientimpact-media/f412074cd73f4da9f23c0e9ef13cbb9b7e3b4312/patches/drupal/core/3042423-hook-to-modify-oembed-resource-data.patch"
-                    },
-                    "drupal/image_field_caption": {
-                        "Caption required incorrectly based on alt field required [#3181263]: https://www.drupal.org/project/image_field_caption/issues/3181263#comment-13895775": "https://raw.githubusercontent.com/Ambient-Impact/drupal-ambientimpact-media/c4b5b93573d96017d342c0f29e6aabe34a0396ef/patches/drupal/image_field_caption/image_field_caption_caption_required_alt_required_3181263-1.patch"
                     }
                 }
             },
@@ -1985,7 +1982,7 @@
                 "source": "https://github.com/Ambient-Impact/drupal-ambientimpact-media",
                 "issues": "https://github.com/Ambient-Impact/drupal-ambientimpact-media/issues"
             },
-            "time": "2024-12-27T17:15:55+00:00"
+            "time": "2025-02-06T21:12:56+00:00"
         },
         {
             "name": "drupal/ambientimpact_ux",
@@ -3633,23 +3630,72 @@
         },
         {
             "name": "drupal/image_field_caption",
-            "version": "dev-3355337-support-drupal-10",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/issue/image_field_caption-3355337.git",
-                "reference": "b96e8c7dbfcabdd392af21aff35db0f86b035128"
+                "url": "https://git.drupalcode.org/project/image_field_caption.git",
+                "reference": "2.0.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/image_field_caption-2.0.2.zip",
+                "reference": "2.0.2",
+                "shasum": "9b1f7d780adb66755626b925a80fe2b855f4975d"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10"
             },
             "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.2",
+                    "datestamp": "1738422190",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "awm",
+                    "homepage": "https://www.drupal.org/user/1059398"
+                },
+                {
+                    "name": "foxy-vikvik",
+                    "homepage": "https://www.drupal.org/user/3706169"
+                },
+                {
+                    "name": "hanoii",
+                    "homepage": "https://www.drupal.org/user/23157"
+                },
+                {
+                    "name": "ironsizide",
+                    "homepage": "https://www.drupal.org/user/787980"
+                },
+                {
+                    "name": "istryker",
+                    "homepage": "https://www.drupal.org/user/303676"
+                },
+                {
+                    "name": "robloach",
+                    "homepage": "https://www.drupal.org/user/61114"
+                },
+                {
+                    "name": "tyler.frankenstein",
+                    "homepage": "https://www.drupal.org/user/150680"
+                }
             ],
             "description": "Add caption to image field.",
             "homepage": "https://www.drupal.org/project/image_field_caption",
             "support": {
-                "issues": "https://www.drupal.org/project/issues/image_field_caption",
-                "source": "https://git.drupalcode.org/project/image_field_caption"
-            },
-            "time": "2023-08-09T06:35:38+00:00"
+                "source": "https://git.drupalcode.org/project/image_field_caption",
+                "issues": "https://www.drupal.org/project/issues/image_field_caption"
+            }
         },
         {
             "name": "drupal/image_style_warmer",
@@ -20075,12 +20121,6 @@
         }
     ],
     "aliases": [
-        {
-            "package": "drupal/image_field_caption",
-            "version": "dev-3355337-support-drupal-10",
-            "alias": "1.2",
-            "alias_normalized": "1.2.0.0"
-        },
         {
             "package": "drupal/rebuilder",
             "version": "1.9999999.9999999.9999999-dev",
