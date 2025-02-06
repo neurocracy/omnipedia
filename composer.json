@@ -296,6 +296,13 @@
   },
   "extra": {
     "patches-file": "composer.patches.json",
+    "patches-ignore": {
+      "drupal/refreshless": {
+        "drupal/core": {
+          "We already have this patch for JS \"async\" and \"defer\" attributes": "https://git.drupalcode.org/project/refreshless/-/raw/9bd0325f415e95bfaa7adc29daaf26cc32bed673/modules/refreshless_turbo/patches/drupal/core/1587536-js-aggregation-async-defer-attributes.patch"
+        }
+      }
+    },
     "drupal-scaffold": {
       "locations": {
         "web-root": "web/"

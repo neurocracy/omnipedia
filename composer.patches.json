@@ -24,12 +24,5 @@
     "drupal/trusted_reverse_proxy": {
       "Notice: Undefined index: severity in trusted_reverse_proxy_preprocess_status_report_page() [#3267588]: https://www.drupal.org/project/trusted_reverse_proxy/issues/3267588": "patches/drupal/trusted_reverse_proxy/3267588-trusted_reverse_proxy-undefined-severity.patch"
     }
-  },
-  "patches-ignore": {
-    "drupal/refreshless": {
-      "drupal/core": {
-        "We already have this patch for JS \"async\" and \"defer\" attributes": "https://git.drupalcode.org/project/refreshless/-/raw/9bd0325f415e95bfaa7adc29daaf26cc32bed673/modules/refreshless_turbo/patches/drupal/core/1587536-js-aggregation-async-defer-attributes.patch"
-      }
-    }
   }
 }
