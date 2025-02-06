@@ -1,0 +1,143 @@
+diff --git a/tests/src/Functional/FeedAdminDisplayTest.php b/tests/src/Functional/FeedAdminDisplayTest.php
+index 91650bda2aba9d4c9c4f430837a5dd689c7697f1..ac1f15f19f93c8ecf56ab646a35583c8d413b956 100644
+--- a/tests/src/Functional/FeedAdminDisplayTest.php
++++ b/tests/src/Functional/FeedAdminDisplayTest.php
+@@ -68,11 +68,10 @@ class FeedAdminDisplayTest extends AggregatorTestBase {
+   /**
+    * {@inheritdoc}
+    */
+-  public function randomMachineName($length = 8) {
++  public function randomMachineName($length = 8): string {
+     $value = parent::randomMachineName($length);
+     // See expected values in testFeedUpdateFields().
+-    $value = str_replace(['never', 'imminently', 'ago', 'left'], 'x', $value);
+-    return $value;
++    return str_replace(['never', 'imminently', 'ago', 'left'], 'x', $value);
+   }
+ 
+ }
+diff --git a/tests/src/Functional/Jsonapi/FeedTest.php b/tests/src/Functional/Jsonapi/FeedTest.php
+index 3726db34a3dc546c969e03ba7fc1a8309194c8d1..0c291d9d378faf27c96656e8b22d3b6e8835de43 100644
+--- a/tests/src/Functional/Jsonapi/FeedTest.php
++++ b/tests/src/Functional/Jsonapi/FeedTest.php
+@@ -4,6 +4,7 @@ namespace Drupal\Tests\aggregator\Functional\Jsonapi;
+ 
+ use Drupal\aggregator\Entity\Feed;
+ use Drupal\Core\Url;
++use Drupal\jsonapi\JsonApiSpec;
+ use Drupal\Tests\jsonapi\Functional\ResourceTestBase;
+ use Drupal\Tests\jsonapi\Traits\CommonCollectionFilterAccessTestPatternsTrait;
+ 
+@@ -16,6 +17,13 @@ class FeedTest extends ResourceTestBase {
+ 
+   use CommonCollectionFilterAccessTestPatternsTrait;
+ 
++  /**
++   * A feed title.
++   *
++   * @see Drupal\Tests\aggregator\Functional\Jsonapi\FeedTest::getPostDocument()
++   */
++  const POST_DOCUMENT_TITLE = 'Feed Resource Post Test';
++
+   /**
+    * {@inheritdoc}
+    */
+@@ -112,10 +120,10 @@ class FeedTest extends ResourceTestBase {
+       'jsonapi' => [
+         'meta' => [
+           'links' => [
+-            'self' => ['href' => 'http://jsonapi.org/format/1.0/'],
++            'self' => ['href' => JsonApiSpec::SUPPORTED_SPECIFICATION_PERMALINK],
+           ],
+         ],
+-        'version' => '1.0',
++        'version' => JsonApiSpec::SUPPORTED_SPECIFICATION_VERSION,
+       ],
+       'links' => [
+         'self' => ['href' => $self_url],
+@@ -152,7 +160,7 @@ class FeedTest extends ResourceTestBase {
+       'data' => [
+         'type' => 'aggregator_feed--aggregator_feed',
+         'attributes' => [
+-          'title' => 'Feed Resource Post Test',
++          'title' => self::POST_DOCUMENT_TITLE,
+           'url' => 'http://example.com/feed',
+           'refresh' => 900,
+           'description' => 'Feed Resource Post Test Description',
+@@ -161,6 +169,29 @@ class FeedTest extends ResourceTestBase {
+     ];
+   }
+ 
++  /**
++   * {@inheritdoc}
++   */
++  protected function doTestPatchIndividual(): void {
++    // doTestPostIndividual() runs before this and creates a feed based on
++    // getPostDocument(). Because of that, Aggregator's title and URL uniqueness
++    // validation cause doTestPatchIndividual() to fail when it tries to edit
++    // the feed to have that same title and URL. The feed created by
++    // doTestPostIndividual() must first be deleted from the database.
++    $ids = \Drupal::entityQuery('aggregator_feed')
++      ->accessCheck(FALSE)
++      ->condition('title', self::POST_DOCUMENT_TITLE)
++      ->execute();
++    $feeds = \Drupal::entityTypeManager()
++      ->getStorage('aggregator_feed')
++      ->loadMultiple($ids);
++    foreach ($feeds as $feed) {
++      $feed->delete();
++    }
++
++    parent::doTestPatchIndividual();
++  }
++
+   /**
+    * {@inheritdoc}
+    */
+diff --git a/tests/src/Functional/Jsonapi/ItemTest.php b/tests/src/Functional/Jsonapi/ItemTest.php
+index fd728f6d5557b31a5d6fe17aedf30937e46c6a93..8ceedc77caeb3962cc12bdc7028d98fb78ad4826 100644
+--- a/tests/src/Functional/Jsonapi/ItemTest.php
++++ b/tests/src/Functional/Jsonapi/ItemTest.php
+@@ -152,14 +152,14 @@ class ItemTest extends ResourceTestBase {
+   /**
+    * {@inheritdoc}
+    */
+-  public function testPostIndividual(): void {
++  public function doTestPostIndividual(): void {
+     $this->markTestSkipped('Remove this override in https://www.drupal.org/project/drupal/issues/2149851');
+   }
+ 
+   /**
+    * {@inheritdoc}
+    */
+-  public function testPatchIndividual(): void {
++  public function doTestPatchIndividual(): void {
+     $this->markTestSkipped('Remove this override in https://www.drupal.org/project/drupal/issues/2149851');
+   }
+ 
+diff --git a/tests/src/Kernel/Migrate/d6/MigrateBlockTest.php b/tests/src/Kernel/Migrate/d6/MigrateBlockTest.php
+index e5a0a84347b5cd942bf12260f962fdc110103390..9ddf7158b908dbcd53010d13ffe26fbbb240bb5e 100644
+--- a/tests/src/Kernel/Migrate/d6/MigrateBlockTest.php
++++ b/tests/src/Kernel/Migrate/d6/MigrateBlockTest.php
+@@ -49,7 +49,7 @@ class MigrateBlockTest extends MigrateDrupal6TestBase {
+       'd6_user_role',
+       'd6_block',
+     ]);
+-    block_rebuild();
++    \Drupal::service('module_handler')->invoke('block', 'rebuild');
+   }
+ 
+   /**
+diff --git a/tests/src/Kernel/Migrate/d7/MigrateBlockTest.php b/tests/src/Kernel/Migrate/d7/MigrateBlockTest.php
+index 403dda861c76e7cb493040a6cb6cb0874ec32d13..af3662f87082b1e568661676bb3f6cd6e3d0228d 100644
+--- a/tests/src/Kernel/Migrate/d7/MigrateBlockTest.php
++++ b/tests/src/Kernel/Migrate/d7/MigrateBlockTest.php
+@@ -49,7 +49,7 @@ class MigrateBlockTest extends MigrateDrupal7TestBase {
+       'd7_user_role',
+       'd7_block',
+     ]);
+-    block_rebuild();
++    \Drupal::service('module_handler')->invoke('block', 'rebuild');
+   }
+ 
+   /**
