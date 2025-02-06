@@ -10,6 +10,7 @@
       "JS aggregation should account for \"async\" and \"defer\" attributes [#1587536]: https://www.drupal.org/project/drupal/issues/1587536": "patches/drupal/core/1587536-js-aggregation-async-defer-attributes.patch",
       "Fix mismatch of $base_url with Symfony request object [#2753591]: https://www.drupal.org/project/drupal/issues/2753591": "patches/drupal/core/2753591-fix-mismatch-of-base-url.patch",
       "Allow theme developers to add the default favicon filename to the theme's .info.yml [#3037922]: https://www.drupal.org/project/drupal/issues/3037922#mr4108-note181413": "patches/drupal/core/3037922-theme-info-favicon.patch",
+      "Add a hook to modify oEmbed resource data (core 10.4.x) [#3042423]: https://www.drupal.org/project/drupal/issues/3042423#comment-15944908": "patches/drupal/core/3042423-hook-to-modify-oembed-resource-data.patch",
       "Support setting service parameters via environment variables [#3249970]: https://www.drupal.org/project/drupal/issues/3249970#comment-14294955": "patches/drupal/core/3249970-2-support-service-parameter-env.patch",
       "Slow admin/config page load [#3336621]: https://www.drupal.org/project/drupal/issues/3336621#comment-14888211": "patches/drupal/core/3336621-3-remove-admin-config-status-report-check.patch",
       "Drupal.displace() only checks inline display: none; instead of computed styles, leading to incorrect visibility check [#3487907]: https://www.drupal.org/project/drupal/issues/3487907": "patches/drupal/core/3487907-drupal-displace-computed-style.patch"

@@ -174,8 +174,8 @@
     "drupal/ambientimpact_ux": "^2.0@dev",
     "drupal/autoban": "^1.7",
     "drupal/config_split": "^2.0",
-    "drupal/core-composer-scaffold": "^10.3 <10.4",
-    "drupal/core-recommended": "^10.3 <10.4",
+    "drupal/core-composer-scaffold": "^10.4",
+    "drupal/core-recommended": "^10.4",
     "drupal/csp": "^2.1",
     "drupal/dblog_persistent": "^2.0",
     "drupal/development_environment": "^2.0@dev",
@@ -255,7 +255,7 @@
     "drupal/config_devel": "^1.2",
     "drupal/config_filter": "^2.7",
     "drupal/config_inspector": "^2.1",
-    "drupal/core-dev": "^10.3 <10.4",
+    "drupal/core-dev": "^10.4",
     "drupal/devel": "^5.0",
     "drupal/devel_entity_updates": "^4.0",
     "drupal/examples": "^4.0",
@@ -297,6 +297,11 @@
   "extra": {
     "patches-file": "composer.patches.json",
     "patches-ignore": {
+      "drupal/ambientimpact_media": {
+        "drupal/core": {
+          "Add a hook to modify oEmbed resource data (core 10.3.x) [#3042423]: https://www.drupal.org/project/drupal/issues/3042423#comment-15772049": "https://raw.githubusercontent.com/Ambient-Impact/drupal-ambientimpact-media/f412074cd73f4da9f23c0e9ef13cbb9b7e3b4312/patches/drupal/core/3042423-hook-to-modify-oembed-resource-data.patch"
+        }
+      },
       "drupal/refreshless": {
         "drupal/core": {
           "We already have this patch for JS \"async\" and \"defer\" attributes": "https://git.drupalcode.org/project/refreshless/-/raw/9bd0325f415e95bfaa7adc29daaf26cc32bed673/modules/refreshless_turbo/patches/drupal/core/1587536-js-aggregation-async-defer-attributes.patch"
