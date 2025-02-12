@@ -3202,17 +3202,17 @@
         },
         {
             "name": "drupal/gin",
-            "version": "4.0.2",
+            "version": "4.0.3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin.git",
-                "reference": "4.0.2"
+                "reference": "4.0.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/gin-4.0.2.zip",
-                "reference": "4.0.2",
-                "shasum": "501f167bd7009cffa29848a918b3982cb0a8245b"
+                "url": "https://ftp.drupal.org/files/projects/gin-4.0.3.zip",
+                "reference": "4.0.3",
+                "shasum": "c8b80935b558985f88ee7d5fa7dbb25ec4024dd0"
             },
             "require": {
                 "drupal/core": "^10 || ^11",
@@ -3221,8 +3221,8 @@
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "4.0.2",
-                    "datestamp": "1735405135",
+                    "version": "4.0.3",
+                    "datestamp": "1739275596",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
