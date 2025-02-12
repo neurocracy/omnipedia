@@ -2128,17 +2128,17 @@
         },
         {
             "name": "drupal/config_split",
-            "version": "2.0.1",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/config_split.git",
-                "reference": "2.0.1"
+                "reference": "2.0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_split-2.0.1.zip",
-                "reference": "2.0.1",
-                "shasum": "e033a277995753c564f3a4681b88cd112e19ba2a"
+                "url": "https://ftp.drupal.org/files/projects/config_split-2.0.2.zip",
+                "reference": "2.0.2",
+                "shasum": "efde01f790ca6f6023982e918fe51740da931d3e"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9 || ^10 || ^11"
@@ -2156,8 +2156,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.1",
-                    "datestamp": "1711022056",
+                    "version": "2.0.2",
+                    "datestamp": "1739381800",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3431,29 +3431,30 @@
         },
         {
             "name": "drupal/honeypot",
-            "version": "2.2.0",
+            "version": "2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/honeypot.git",
-                "reference": "2.2.0"
+                "reference": "2.2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/honeypot-2.2.0.zip",
-                "reference": "2.2.0",
-                "shasum": "56397c3779ebac1526cce9ecd39385017ee9a837"
+                "url": "https://ftp.drupal.org/files/projects/honeypot-2.2.1.zip",
+                "reference": "2.2.1",
+                "shasum": "445fd3d22d5776dc9e517ef35a2bb3cc1c85c5a2"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11"
             },
             "require-dev": {
-                "drupal/rules": "^4.0"
+                "drupal/rules": "^4.0",
+                "drupal/webform": "^6.2"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.2.0",
-                    "datestamp": "1723761042",
+                    "version": "2.2.1",
+                    "datestamp": "1739062705",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6947,17 +6948,17 @@
         },
         {
             "name": "drupal/views_bulk_operations",
-            "version": "4.3.2",
+            "version": "4.3.3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/views_bulk_operations.git",
-                "reference": "4.3.2"
+                "reference": "4.3.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views_bulk_operations-4.3.2.zip",
-                "reference": "4.3.2",
-                "shasum": "b3d0ee06abb15520595b83324e93c5500d5dcef3"
+                "url": "https://ftp.drupal.org/files/projects/views_bulk_operations-4.3.3.zip",
+                "reference": "4.3.3",
+                "shasum": "60d83a18ef31fd1e85fb30137fd03a55cad275f3"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11"
@@ -6974,8 +6975,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "4.3.2",
-                    "datestamp": "1731070018",
+                    "version": "4.3.3",
+                    "datestamp": "1739278730",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7003,9 +7004,9 @@
             "description": "Adds an ability to perform bulk operations on selected entities from view results. Provides an API to create such operations.",
             "homepage": "https://www.drupal.org/project/views_bulk_operations",
             "support": {
-                "source": "https://git.drupalcode.org/project/views_bulk_operations/-/tree/8.x-3.x",
-                "issues": "https://www.drupal.org/project/issues/views_bulk_operations?version=8.x",
-                "docs": "https://www.drupal.org/docs/8/modules/views-bulk-operations-vbo"
+                "source": "https://git.drupalcode.org/project/views_bulk_operations",
+                "issues": "https://www.drupal.org/project/issues/views_bulk_operations?version=any_4.",
+                "docs": "https://www.drupal.org/docs/contributed-modules/views-bulk-operations-vbo"
             }
         },
         {
