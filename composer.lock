@@ -5231,11 +5231,11 @@
             ],
             "authors": [
                 {
-                    "name": "Berdir",
+                    "name": "berdir",
                     "homepage": "https://www.drupal.org/user/214652"
                 },
                 {
-                    "name": "Dave Reid",
+                    "name": "dave reid",
                     "homepage": "https://www.drupal.org/user/53892"
                 },
                 {
@@ -7848,16 +7848,16 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v11.36.1",
+            "version": "v11.42.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
-                "reference": "21868f9ac221a42d4346dc56495d11ab7e0d339a"
+                "reference": "6fd628d32a0989211c4f2829bf0a6a6175b2f3fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/collections/zipball/21868f9ac221a42d4346dc56495d11ab7e0d339a",
-                "reference": "21868f9ac221a42d4346dc56495d11ab7e0d339a",
+                "url": "https://api.github.com/repos/illuminate/collections/zipball/6fd628d32a0989211c4f2829bf0a6a6175b2f3fd",
+                "reference": "6fd628d32a0989211c4f2829bf0a6a6175b2f3fd",
                 "shasum": ""
             },
             "require": {
@@ -7900,11 +7900,11 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2024-12-13T13:58:10+00:00"
+            "time": "2025-02-05T10:23:21+00:00"
         },
         {
             "name": "illuminate/conditionable",
-            "version": "v11.36.1",
+            "version": "v11.42.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/conditionable.git",
@@ -7950,16 +7950,16 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v11.36.1",
+            "version": "v11.42.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
-                "reference": "184317f701ba20ca265e36808ed54b75b115972d"
+                "reference": "b350a3cd8450846325cb49e1cbc1293598b18898"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/contracts/zipball/184317f701ba20ca265e36808ed54b75b115972d",
-                "reference": "184317f701ba20ca265e36808ed54b75b115972d",
+                "url": "https://api.github.com/repos/illuminate/contracts/zipball/b350a3cd8450846325cb49e1cbc1293598b18898",
+                "reference": "b350a3cd8450846325cb49e1cbc1293598b18898",
                 "shasum": ""
             },
             "require": {
@@ -7994,11 +7994,11 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2024-11-25T15:33:38+00:00"
+            "time": "2025-02-10T14:20:57+00:00"
         },
         {
             "name": "illuminate/macroable",
-            "version": "v11.36.1",
+            "version": "v11.42.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/macroable.git",
@@ -8044,16 +8044,16 @@
         },
         {
             "name": "jaybizzle/crawler-detect",
-            "version": "v1.3.0",
+            "version": "v1.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JayBizzle/Crawler-Detect.git",
-                "reference": "be155e11613fa618aa18aee438955588d1092a47"
+                "reference": "b15237098211b502b9629bbf6f6884a3279420f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/be155e11613fa618aa18aee438955588d1092a47",
-                "reference": "be155e11613fa618aa18aee438955588d1092a47",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/b15237098211b502b9629bbf6f6884a3279420f2",
+                "reference": "b15237098211b502b9629bbf6f6884a3279420f2",
                 "shasum": ""
             },
             "require": {
@@ -8090,9 +8090,9 @@
             ],
             "support": {
                 "issues": "https://github.com/JayBizzle/Crawler-Detect/issues",
-                "source": "https://github.com/JayBizzle/Crawler-Detect/tree/v1.3.0"
+                "source": "https://github.com/JayBizzle/Crawler-Detect/tree/v1.3.2"
             },
-            "time": "2024-11-25T19:38:36+00:00"
+            "time": "2025-02-06T18:54:20+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -8837,16 +8837,16 @@
         },
         {
             "name": "paragonie/halite",
-            "version": "v5.1.2",
+            "version": "v5.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/halite.git",
-                "reference": "aee234711b29cccb4a17aaaf6104fc542862fc1e"
+                "reference": "ef9c72278377d634cd4e08f8ec30198feb7ad167"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/halite/zipball/aee234711b29cccb4a17aaaf6104fc542862fc1e",
-                "reference": "aee234711b29cccb4a17aaaf6104fc542862fc1e",
+                "url": "https://api.github.com/repos/paragonie/halite/zipball/ef9c72278377d634cd4e08f8ec30198feb7ad167",
+                "reference": "ef9c72278377d634cd4e08f8ec30198feb7ad167",
                 "shasum": ""
             },
             "require": {
@@ -8902,9 +8902,9 @@
             "support": {
                 "docs": "https://github.com/paragonie/halite/tree/master/doc",
                 "issues": "https://github.com/paragonie/halite/issues",
-                "source": "https://github.com/paragonie/halite/tree/v5.1.2"
+                "source": "https://github.com/paragonie/halite/tree/v5.1.3"
             },
-            "time": "2024-05-08T12:59:43+00:00"
+            "time": "2025-01-23T21:33:58+00:00"
         },
         {
             "name": "paragonie/hidden-string",
@@ -10128,33 +10128,33 @@
         },
         {
             "name": "react/child-process",
-            "version": "v0.6.5",
+            "version": "v0.6.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/child-process.git",
-                "reference": "e71eb1aa55f057c7a4a0d08d06b0b0a484bead43"
+                "reference": "1721e2b93d89b745664353b9cfc8f155ba8a6159"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/child-process/zipball/e71eb1aa55f057c7a4a0d08d06b0b0a484bead43",
-                "reference": "e71eb1aa55f057c7a4a0d08d06b0b0a484bead43",
+                "url": "https://api.github.com/repos/reactphp/child-process/zipball/1721e2b93d89b745664353b9cfc8f155ba8a6159",
+                "reference": "1721e2b93d89b745664353b9cfc8f155ba8a6159",
                 "shasum": ""
             },
             "require": {
                 "evenement/evenement": "^3.0 || ^2.0 || ^1.0",
                 "php": ">=5.3.0",
                 "react/event-loop": "^1.2",
-                "react/stream": "^1.2"
+                "react/stream": "^1.4"
             },
             "require-dev": {
-                "phpunit/phpunit": "^9.3 || ^5.7 || ^4.8.35",
-                "react/socket": "^1.8",
+                "phpunit/phpunit": "^9.6 || ^5.7 || ^4.8.36",
+                "react/socket": "^1.16",
                 "sebastian/environment": "^5.0 || ^3.0 || ^2.0 || ^1.0"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "React\\ChildProcess\\": "src"
+                    "React\\ChildProcess\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -10191,19 +10191,15 @@
             ],
             "support": {
                 "issues": "https://github.com/reactphp/child-process/issues",
-                "source": "https://github.com/reactphp/child-process/tree/v0.6.5"
+                "source": "https://github.com/reactphp/child-process/tree/v0.6.6"
             },
             "funding": [
                 {
-                    "url": "https://github.com/WyriHaximus",
-                    "type": "github"
-                },
-                {
-                    "url": "https://github.com/clue",
-                    "type": "github"
+                    "url": "https://opencollective.com/reactphp",
+                    "type": "open_collective"
                 }
             ],
-            "time": "2022-09-16T13:41:56+00:00"
+            "time": "2025-01-01T16:37:48+00:00"
         },
         {
             "name": "react/event-loop",
@@ -16129,16 +16125,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.12.1",
+            "version": "1.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "123267b2c49fbf30d78a7b2d333f6be754b94845"
+                "reference": "024473a478be9df5fdaca2c793f2232fe788e414"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/123267b2c49fbf30d78a7b2d333f6be754b94845",
-                "reference": "123267b2c49fbf30d78a7b2d333f6be754b94845",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/024473a478be9df5fdaca2c793f2232fe788e414",
+                "reference": "024473a478be9df5fdaca2c793f2232fe788e414",
                 "shasum": ""
             },
             "require": {
@@ -16177,7 +16173,7 @@
             ],
             "support": {
                 "issues": "https://github.com/myclabs/DeepCopy/issues",
-                "source": "https://github.com/myclabs/DeepCopy/tree/1.12.1"
+                "source": "https://github.com/myclabs/DeepCopy/tree/1.13.0"
             },
             "funding": [
                 {
@@ -16185,7 +16181,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-11-08T17:47:46+00:00"
+            "time": "2025-02-12T12:17:51+00:00"
         },
         {
             "name": "nyholm/psr7-server",
@@ -17418,16 +17414,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.12.16",
+            "version": "1.12.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "e0bb5cb78545aae631220735aa706eac633a6be9"
+                "reference": "7027b3b0270bf392de0cfba12825979768d728bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/e0bb5cb78545aae631220735aa706eac633a6be9",
-                "reference": "e0bb5cb78545aae631220735aa706eac633a6be9",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/7027b3b0270bf392de0cfba12825979768d728bf",
+                "reference": "7027b3b0270bf392de0cfba12825979768d728bf",
                 "shasum": ""
             },
             "require": {
@@ -17472,7 +17468,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-01-21T14:50:05+00:00"
+            "time": "2025-02-07T15:01:57+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
