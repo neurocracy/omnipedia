@@ -30,6 +30,7 @@ module:
   dynamic_page_cache: 0
   editor: 0
   encrypt: 0
+  entity_usage: 0
   fancy_file_delete: 0
   field: 0
   field_event_dispatcher: 0

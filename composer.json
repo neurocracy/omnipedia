@@ -176,6 +176,7 @@
     "drupal/development_environment": "^2.0@dev",
     "drupal/diff": "^1.0",
     "drupal/disable_link_rel": "^2.0",
+    "drupal/entity_usage": "^2.0@beta",
     "drupal/eu_cookie_compliance": "^1.14",
     "drupal/fancy_file_delete": "^2.0",
     "drupal/flood_control": "^3.0",
