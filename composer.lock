@@ -1721,17 +1721,17 @@
         },
         {
             "name": "drupal/action",
-            "version": "0.2.1",
+            "version": "0.2.2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/action.git",
-                "reference": "0.2.1"
+                "reference": "0.2.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/action-0.2.1.zip",
-                "reference": "0.2.1",
-                "shasum": "efc67e925ceb3e78fc8c1f73e58ddd0312bda6f3"
+                "url": "https://ftp.drupal.org/files/projects/action-0.2.2.zip",
+                "reference": "0.2.2",
+                "shasum": "ea4d9c32b02668e6a15b3cdec0dc9254ff01d5cd"
             },
             "require": {
                 "drupal/core": ">10.2"
@@ -1739,8 +1739,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "0.2.1",
-                    "datestamp": "1712919607",
+                    "version": "0.2.2",
+                    "datestamp": "1740601845",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -5926,17 +5926,17 @@
         },
         {
             "name": "drupal/search_api",
-            "version": "1.37.0",
+            "version": "1.38.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/search_api.git",
-                "reference": "8.x-1.37"
+                "reference": "8.x-1.38"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/search_api-8.x-1.37.zip",
-                "reference": "8.x-1.37",
-                "shasum": "76d9b5850d7fce9df8fc6cf8c49450ab541f455d"
+                "url": "https://ftp.drupal.org/files/projects/search_api-8.x-1.38.zip",
+                "reference": "8.x-1.38",
+                "shasum": "d1c83ba74e553eca07d3ea4b15e5d9c7f009a496"
             },
             "require": {
                 "drupal/core": "^10.2 || ^11"
@@ -5957,8 +5957,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.37",
-                    "datestamp": "1732727356",
+                    "version": "8.x-1.38",
+                    "datestamp": "1740298961",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6482,17 +6482,17 @@
         },
         {
             "name": "drupal/tfa",
-            "version": "1.9.0",
+            "version": "1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/tfa.git",
-                "reference": "8.x-1.9"
+                "reference": "8.x-1.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/tfa-8.x-1.9.zip",
-                "reference": "8.x-1.9",
-                "shasum": "1d42020673e8c29259dd9b6b2a7c1f974e66a415"
+                "url": "https://ftp.drupal.org/files/projects/tfa-8.x-1.10.zip",
+                "reference": "8.x-1.10",
+                "shasum": "c8314dfff47ad44ab78a1ea962f25e073abc9960"
             },
             "require": {
                 "chillerlan/php-qrcode": "^1.0.9 || ^2.0 || ^3.2 || ^4.0",
@@ -6515,8 +6515,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.9",
-                    "datestamp": "1729138391",
+                    "version": "8.x-1.10",
+                    "datestamp": "1741198609",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
