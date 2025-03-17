@@ -26,6 +26,8 @@ on:
       # Ignore any changes in aggregated assets and public files directories.
       - '/web/assets/**'
       - '/web/sites/*/files/**'
+      # Obvious reason is obvious.
+      - '.gitlab-ci.yml'
   pull_request:
     paths-ignore:
       - '**.md'
@@ -44,6 +46,8 @@ on:
       # Ignore any changes in aggregated assets and public files directories.
       - '/web/assets/**'
       - '/web/sites/*/files/**'
+      # Obvious reason is obvious.
+      - '.gitlab-ci.yml'
 
 env:
   # shivammathur/setup-php
