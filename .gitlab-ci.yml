@@ -1,0 +1,73 @@
+stages:
+  - test
+
+variables:
+  DEBIAN_FRONTEND: "noninteractive"
+  COMPOSER_CACHE_DIR: "$CI_PROJECT_DIR/build/composer/cache"
+  YARN_CACHE_FOLDER: "$CI_PROJECT_DIR/build/yarn/cache"
+
+cache:
+  # Cache is per-branch.
+  key: "$CI_BUILD_REF_NAME"
+  paths:
+    - "$COMPOSER_CACHE_DIR"
+    - "$YARN_CACHE_FOLDER"
+
+# Hidden job intended as a template for tests.
+#
+# @see https://docs.gitlab.com/ee/ci/yaml/yaml_optimization.html#anchors
+.test-base: &test-base
+  stage: test
+
+  variables:
+    DOCKER_HOST: tcp://docker:2375
+    DOCKER_DRIVER: overlay2
+    DOCKER_TLS_CERTDIR: ""
+    # Allow service containers to see each other.
+    #
+    # @see https://docs.gitlab.com/ee/ci/services/#connecting-services
+    FF_NETWORK_PER_BUILD: 'true'
+    # Remove "umask 0000" usage, so DDEV has permissions on the cloned
+    # repository.
+    #
+    # @see https://docs.gitlab.com/runner/configuration/feature-flags.html#available-feature-flags
+    FF_DISABLE_UMASK_FOR_DOCKER_EXECUTOR: 'true'
+
+  services:
+    - name: docker:20-dind
+      alias: docker
+      command: ["--tls=false"]
+
+  image:
+    name: registry.gitlab.com/consensus.enterprises/drumkit/ddev
+    # Options to run the Docker executor with; notably run as the 'ddev' user
+    # and group. This must match the user and group that the Drumkit DDEV image
+    # creates.
+    #
+    # @see https://docs.gitlab.com/ee/ci/yaml/index.html#imagedocker
+    docker:
+      user: ddev:ddev
+    # We have to override the container entrypoint or else we end up in /bin/sh
+    # and `source d` doesn't work.
+    #
+    # @see https://docs.gitlab.com/ee/ci/docker/using_docker_images.html#overriding-the-entrypoint-of-an-image
+    entrypoint: [""]
+
+  before_script:
+    # Opt into sending diagnotistic data to the DDEV project to help improve it.
+    #
+    # @see https://ddev.readthedocs.io/en/stable/users/usage/diagnostics/
+    - ddev config global --instrumentation-opt-in=true
+    # Disable the DDEV SSH agent container as it fails its health checks and we
+    # shouldn't need it.
+    - ddev config global --omit-containers=ddev-ssh-agent
+    - ddev mutagen reset && ddev config global --mutagen-enabled=false
+    - ddev start
+    - ddev composer install --no-progress
+    - ddev yarn install
+    - ddev yarn build:deploy
+
+test:phpunit:
+  <<: *test-base
+  script:
+    - ddev exec phpunit --group=omnipedia --verbose
