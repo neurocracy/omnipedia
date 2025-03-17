@@ -6,7 +6,7 @@
   "packageManager": "yarn@4.6.0",
   "engines": {
     "node": ">=20 <21",
-    "yarn": ">=4.6.0"
+    "yarn": "4.6.0"
   },
   "scripts": {
     "build:production": "cross-env NODE_ENV=production yarn build",
