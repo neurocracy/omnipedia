@@ -5431,7 +5431,7 @@ __metadata:
     sass: "npm:^1.43.4"
     sass-loader: "npm:^13.3.3"
     webpack: "npm:^5.94.0"
-    webpack-cli: "npm:^4.10.0"
+    webpack-cli: "npm:^5.1.4"
     webpack-remove-empty-scripts: "npm:^1.0.1"
   languageName: unknown
   linkType: soft
