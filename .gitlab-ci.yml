@@ -72,7 +72,8 @@ cache:
     # they don't inherit environment variables from outside the container.
     #
     # @see https://ddev.readthedocs.io/en/stable/users/extend/customization-extendibility/#environment-variables-for-containers-and-services
-    - ddev dotenv set .ddev/.env --composer-cache-dir "$COMPOSER_CACHE_DIR_CONTAINER" --yarn-cache-folder "YARN_CACHE_DIR_CONTAINER"
+    - ddev config --web-environment-add="COMPOSER_CACHE_DIR=$COMPOSER_CACHE_DIR_CONTAINER"
+    - ddev config --web-environment-add="YARN_CACHE_FOLDER=$YARN_CACHE_DIR_CONTAINER"
     - ddev start
     - ddev composer install --no-progress
     - ddev yarn install
