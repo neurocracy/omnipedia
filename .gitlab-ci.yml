@@ -79,6 +79,21 @@ cache:
     - ddev yarn install
     - ddev yarn build:deploy
 
+  artifacts:
+    expire_in: 1 week
+    expose_as: web
+    when: always
+    exclude:
+    - ".git"
+    - ".git/**/*"
+    - "$CI_PROJECT_DIR/web/**/.git"
+    - "$CI_PROJECT_DIR/web/**/.git/**/*"
+    - vendor/**/.git
+    - vendor/**/.git/**/*
+    name: artifacts-$CI_PIPELINE_ID-$CI_JOB_NAME_SLUG
+    paths:
+    - "$CI_PROJECT_DIR"
+
 test:phpunit:
   <<: *test-base
   script:
