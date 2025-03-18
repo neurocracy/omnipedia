@@ -3,15 +3,21 @@ stages:
 
 variables:
   DEBIAN_FRONTEND: "noninteractive"
-  COMPOSER_CACHE_DIR: "$CI_PROJECT_DIR/build/composer/cache"
-  YARN_CACHE_FOLDER: "$CI_PROJECT_DIR/build/yarn/cache"
+  COMPOSER_CACHE_PATH_RELATIVE: ".composer/cache"
+  YARN_CACHE_PATH_RELATIVE: ".yarn/cache"
+  # Absolute cache paths outside of the DDEV web container.
+  COMPOSER_CACHE_DIR_CI: "$CI_PROJECT_DIR/build/$COMPOSER_CACHE_PATH_RELATIVE"
+  YARN_CACHE_DIR_CI: "$CI_PROJECT_DIR/build/$YARN_CACHE_PATH_RELATIVE"
+  # Absolute cache paths inside the DDEV web container.
+  COMPOSER_CACHE_DIR_CONTAINER: "/var/www/html/$COMPOSER_CACHE_PATH_RELATIVE"
+  YARN_CACHE_DIR_CONTAINER: "/var/www/html/$YARN_CACHE_PATH_RELATIVE"
 
 cache:
   # Cache is per-branch.
   key: "$CI_BUILD_REF_NAME"
   paths:
-    - "$COMPOSER_CACHE_DIR"
-    - "$YARN_CACHE_FOLDER"
+    - "$COMPOSER_CACHE_DIR_CI"
+    - "$YARN_CACHE_DIR_CI"
 
 # Hidden job intended as a template for tests.
 #
@@ -62,6 +68,11 @@ cache:
     # shouldn't need it.
     - ddev config global --omit-containers=ddev-ssh-agent
     - ddev mutagen reset && ddev config global --mutagen-enabled=false
+    # Pass the Composer and Yarn cache directory paths to the container since
+    # they don't inherit environment variables from outside the container.
+    #
+    # @see https://ddev.readthedocs.io/en/stable/users/extend/customization-extendibility/#environment-variables-for-containers-and-services
+    - ddev dotenv set .ddev/.env --composer-cache-dir "$COMPOSER_CACHE_DIR_CONTAINER" --yarn-cache-folder "YARN_CACHE_DIR_CONTAINER"
     - ddev start
     - ddev composer install --no-progress
     - ddev yarn install
