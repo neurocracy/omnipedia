@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "faf7ebf6cf3ff258c9fd87a15d965d27",
+    "content-hash": "a9816638b0eda025cfc43fb5ee9db4d2",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -1936,20 +1936,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-media.git",
-                "reference": "8101b254b3b3b4cca31270f69f33bd82c39e0f09"
+                "reference": "44cfc210006a6df56a99be6f91b4c3f0ee605cc2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-media/zipball/8101b254b3b3b4cca31270f69f33bd82c39e0f09",
-                "reference": "8101b254b3b3b4cca31270f69f33bd82c39e0f09",
+                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-media/zipball/44cfc210006a6df56a99be6f91b4c3f0ee605cc2",
+                "reference": "44cfc210006a6df56a99be6f91b4c3f0ee605cc2",
                 "shasum": ""
             },
             "require": {
-                "cweagans/composer-patches": "^1.7.0",
                 "drupal/ambientimpact_core": "^2.0@dev",
                 "drupal/ambientimpact_icon": "^1.0@dev",
                 "drupal/ambientimpact_ux": "^1.0@dev || ^2.0@dev",
-                "drupal/core": ">=10.3 <11.1",
+                "drupal/core": "^10.3 || ^11.0",
                 "drupal/hook_event_dispatcher": "^4.0",
                 "drupal/hux": "^1.2",
                 "drupal/image_field_caption": "^2.0.1",
@@ -1958,13 +1957,6 @@
             },
             "default-branch": true,
             "type": "drupal-custom-module",
-            "extra": {
-                "patches": {
-                    "drupal/core": {
-                        "Add a hook to modify oEmbed resource data (core 10.3.x) [#3042423]: https://www.drupal.org/project/drupal/issues/3042423#comment-15772049": "https://raw.githubusercontent.com/Ambient-Impact/drupal-ambientimpact-media/f412074cd73f4da9f23c0e9ef13cbb9b7e3b4312/patches/drupal/core/3042423-hook-to-modify-oembed-resource-data.patch"
-                    }
-                }
-            },
             "license": [
                 "GPL-2.0-or-later"
             ],
@@ -1981,7 +1973,7 @@
                 "source": "https://github.com/Ambient-Impact/drupal-ambientimpact-media",
                 "issues": "https://github.com/Ambient-Impact/drupal-ambientimpact-media/issues"
             },
-            "time": "2025-02-06T21:12:56+00:00"
+            "time": "2025-03-16T16:35:39+00:00"
         },
         {
             "name": "drupal/ambientimpact_ux",

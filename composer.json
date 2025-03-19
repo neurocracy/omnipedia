@@ -295,11 +295,6 @@
   "extra": {
     "patches-file": "composer.patches.json",
     "patches-ignore": {
-      "drupal/ambientimpact_media": {
-        "drupal/core": {
-          "Add a hook to modify oEmbed resource data (core 10.3.x) [#3042423]: https://www.drupal.org/project/drupal/issues/3042423#comment-15772049": "https://raw.githubusercontent.com/Ambient-Impact/drupal-ambientimpact-media/f412074cd73f4da9f23c0e9ef13cbb9b7e3b4312/patches/drupal/core/3042423-hook-to-modify-oembed-resource-data.patch"
-        }
-      },
       "drupal/refreshless": {
         "drupal/core": {
           "We already have this patch for JS \"async\" and \"defer\" attributes": "https://git.drupalcode.org/project/refreshless/-/raw/9bd0325f415e95bfaa7adc29daaf26cc32bed673/modules/refreshless_turbo/patches/drupal/core/1587536-js-aggregation-async-defer-attributes.patch"
