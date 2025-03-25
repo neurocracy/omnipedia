@@ -5683,7 +5683,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/refreshless.git",
-                "reference": "502d0115b6c1c6f15f6fbde24923f278ca4fb53a"
+                "reference": "d488e395b4fd0a4af8fcb8a52fac60bba7ced84e"
             },
             "require": {
                 "composer/semver": "^3.0",
@@ -5702,8 +5702,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "2.0.0-alpha7+27-dev",
-                    "datestamp": "1742517350",
+                    "version": "2.0.0-alpha8+3-dev",
+                    "datestamp": "1742880727",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."

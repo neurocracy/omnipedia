@@ -2569,10 +2569,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hotwired/turbo@npm:8.0.10":
-  version: 8.0.10
-  resolution: "@hotwired/turbo@npm:8.0.10"
-  checksum: 10/71ac7b5aba3245764c649daec81a695f04fe318fdbc8e7f99e74e124e370031d2463b5cce3ca4dae7987e616f1f3e343d0a9d3bb82c24aa196d86bd3db3d5bf0
+"@hotwired/turbo@npm:8.0.13":
+  version: 8.0.13
+  resolution: "@hotwired/turbo@npm:8.0.13"
+  checksum: 10/e0677ac2b9ae97ee773f8fd60ec013dfea610c2b2f02583a00cb4a10c7f888a5ef05c7c330d557c9d3e377502afcda7e2627f0cbd2ebebaed40656fc1851853e
   languageName: node
   linkType: hard
 
@@ -5532,7 +5532,7 @@ __metadata:
   resolution: "drupal-refreshless-turbo@workspace:web/modules/contrib/refreshless/modules/refreshless_turbo"
   dependencies:
     "@consensus.enterprises/pnp-vendorize": "npm:^1.0.0"
-    "@hotwired/turbo": "npm:8.0.10"
+    "@hotwired/turbo": "npm:8.0.13"
     js-cookie: "npm:^3.0.5"
   languageName: unknown
   linkType: soft
