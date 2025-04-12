@@ -2,7 +2,7 @@
   "name": "drupal-omnipedia",
   "version": "10.0.0",
   "license": "GPL-2.0-or-later",
-  "repository": "https://github.com/neurocracy/omnipedia",
+  "repository": "https://gitlab.com/neurocracy/omnipedia/omnipedia",
   "packageManager": "yarn@4.6.0",
   "engines": {
     "node": ">=20 <21",

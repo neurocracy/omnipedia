@@ -38,15 +38,15 @@ The following major version bumps indicate breaking changes:
 
   * Increased major versions of the following Omnipedia modules:
 
-    * [`omnipedia_access`](https://github.com/neurocracy/drupal-omnipedia-access) 4.x to 5.x.
+    * [`omnipedia_access`](https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-access) 4.x to 5.x.
 
-    * [`omnipedia_block`](https://github.com/neurocracy/drupal-omnipedia-block) 5.x to 6.x.
+    * [`omnipedia_block`](https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-block) 5.x to 6.x.
 
-    * [`omnipedia_user`](https://github.com/neurocracy/drupal-omnipedia-user) 5.x to 6.x.
+    * [`omnipedia_user`](https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-user) 5.x to 6.x.
 
-  * [Uninstalled and removed `omnipedia_commerce` and all Commerce modules](https://github.com/neurocracy/omnipedia/issues/4):
+  * [Uninstalled and removed `omnipedia_commerce` and all Commerce modules](https://gitlab.com/neurocracy/omnipedia/omnipedia/-/issues/4):
 
-    * Uninstalled the [`omnipedia_commerce` module](https://github.com/neurocracy/drupal-omnipedia-commerce).
+    * Uninstalled the [`omnipedia_commerce` module](https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-commerce).
 
     * Uninstalled the [Permissions by Term module](https://www.drupal.org/project/permissions_by_term); this was used for access control for the season pass; due to multiple issues with the quality of the module's code and unnecessary complications it introduced, we've decided to completely remove it as well; a sampling of the worst issues:
 
@@ -113,8 +113,8 @@ The following major version bumps indicate breaking changes:
 
   * Increased [`drupal/ambientimpact_ux` to 2.x](https://github.com/Ambient-Impact/drupal-ambientimpact-ux/tree/2.x) from 1.x.
 
-  * Increased [`omnipedia_attached_data` to 5.x](https://github.com/neurocracy/drupal-omnipedia-attached-data/tree/5.x) from 4.x.
+  * Increased [`omnipedia_attached_data` to 5.x](https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-attached-data/tree/5.x) from 4.x.
 
-  * Increased [`omnipedia_content` to 7.x](https://github.com/neurocracy/drupal-omnipedia-content/tree/7.x) from 6.x.
+  * Increased [`omnipedia_content` to 7.x](https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-content/tree/7.x) from 6.x.
 
-  * Increased [`omnipedia_site_theme` to 8.x](https://github.com/neurocracy/drupal-omnipedia-site-theme/tree/8.x) from 7.x.
+  * Increased [`omnipedia_site_theme` to 8.x](https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-site-theme/tree/8.x) from 7.x.

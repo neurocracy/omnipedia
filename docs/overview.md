@@ -13,37 +13,37 @@ pulled in via Composer.
 
 The following custom Drupal modules are maintained and used:
 
-* [`omnipedia_access`](https://github.com/neurocracy/drupal-omnipedia-access)
+* [`omnipedia_access`](https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-access)
 
-* [`omnipedia_asset`](https://github.com/neurocracy/drupal-omnipedia-asset)
+* [`omnipedia_asset`](https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-asset)
 
-* [`omnipedia_attached_data`](https://github.com/neurocracy/drupal-omnipedia-attached-data)
+* [`omnipedia_attached_data`](https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-attached-data)
 
-* [`omnipedia_block`](https://github.com/neurocracy/drupal-omnipedia-block)
+* [`omnipedia_block`](https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-block)
 
-* [`omnipedia_changes`](https://github.com/neurocracy/drupal-omnipedia-changes)
+* [`omnipedia_changes`](https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-changes)
 
-* [`omnipedia_content`](https://github.com/neurocracy/drupal-omnipedia-content)
+* [`omnipedia_content`](https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-content)
 
-* [`omnipedia_core`](https://github.com/neurocracy/drupal-omnipedia-core)
+* [`omnipedia_core`](https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-core)
 
-* [`omnipedia_date`](https://github.com/neurocracy/drupal-omnipedia-date)
+* [`omnipedia_date`](https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-date)
 
-* [`omnipedia_discourse`](https://github.com/neurocracy/drupal-omnipedia-discourse)
+* [`omnipedia_discourse`](https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-discourse)
 
-* [`omnipedia_logger`](https://github.com/neurocracy/drupal-omnipedia-logger)
+* [`omnipedia_logger`](https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-logger)
 
-* [`omnipedia_main_page`](https://github.com/neurocracy/drupal-omnipedia-main-page)
+* [`omnipedia_main_page`](https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-main-page)
 
-* [`omnipedia_media`](https://github.com/neurocracy/drupal-omnipedia-media)
+* [`omnipedia_media`](https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-media)
 
-* [`omnipedia_menu`](https://github.com/neurocracy/drupal-omnipedia-menu)
+* [`omnipedia_menu`](https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-menu)
 
-* [`omnipedia_search`](https://github.com/neurocracy/drupal-omnipedia-search)
+* [`omnipedia_search`](https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-search)
 
-* [`omnipedia_user`](https://github.com/neurocracy/drupal-omnipedia-user)
+* [`omnipedia_user`](https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-user)
 
-* [`omnipedia_warmer`](https://github.com/neurocracy/drupal-omnipedia-warmer)
+* [`omnipedia_warmer`](https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-warmer)
 
 * [`ambientimpact_core`](https://github.com/Ambient-Impact/drupal-ambientimpact-core)
 
@@ -59,6 +59,6 @@ The following custom Drupal modules are maintained and used:
 
 The following custom Drupal themes are maintained and used:
 
-* [`omnipedia_site_theme`](https://github.com/neurocracy/drupal-omnipedia-site-theme)
+* [`omnipedia_site_theme`](https://gitlab.com/neurocracy/omnipedia/omnipedia-theme)
 
 * [`ambientimpact_base`](https://github.com/Ambient-Impact/drupal-ambientimpact-base)
