@@ -173,7 +173,7 @@ services:
 - build_command: .do/build-web.sh
   environment_slug: php
   github:
-    branch: 10.x
+    branch: main
     repo: neurocracy/omnipedia
   health_check:
     http_path: /health
@@ -204,7 +204,7 @@ workers:
 - build_command: .do/build-background-tasks.sh
   environment_slug: php
   github:
-    branch: 10.x
+    branch: main
     repo: neurocracy/omnipedia
   instance_count: 1
   instance_size_slug: apps-s-1vcpu-0.5gb
@@ -215,7 +215,7 @@ workers:
 jobs:
 - environment_slug: php
   github:
-    branch: 10.x
+    branch: main
     repo: neurocracy/omnipedia
   instance_count: 1
   instance_size_slug: apps-s-1vcpu-1gb-fixed
@@ -225,7 +225,7 @@ jobs:
   source_dir: /
 - environment_slug: php
   github:
-    branch: 10.x
+    branch: main
     repo: neurocracy/omnipedia
   instance_count: 1
   instance_size_slug: apps-s-1vcpu-1gb-fixed
@@ -235,7 +235,7 @@ jobs:
   source_dir: /
 - environment_slug: php
   github:
-    branch: 10.x
+    branch: main
     repo: neurocracy/omnipedia
   instance_count: 1
   instance_size_slug: apps-s-1vcpu-1gb-fixed
