@@ -118,13 +118,13 @@
     },
     {
       "type": "vcs",
-      "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-search.git",
-      "only": ["drupal/omnipedia_search"]
+      "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-pipeline.git",
+      "only": ["drupal/omnipedia_pipeline"]
     },
     {
       "type": "vcs",
-      "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-pipeline.git",
-      "only": ["drupal/omnipedia_pipeline"]
+      "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-search.git",
+      "only": ["drupal/omnipedia_search"]
     },
     {
       "type": "vcs",
