@@ -172,9 +172,9 @@ ingress:
 services:
 - build_command: .do/build-web.sh
   environment_slug: php
-  github:
+  gitlab:
     branch: main
-    repo: neurocracy/omnipedia
+    repo: neurocracy/omnipedia/omnipedia
   health_check:
     http_path: /health
     initial_delay_seconds: 0
@@ -203,9 +203,9 @@ services:
 workers:
 - build_command: .do/build-background-tasks.sh
   environment_slug: php
-  github:
+  gitlab:
     branch: main
-    repo: neurocracy/omnipedia
+    repo: neurocracy/omnipedia/omnipedia
   instance_count: 1
   instance_size_slug: apps-s-1vcpu-0.5gb
   name: background-tasks
@@ -214,9 +214,9 @@ workers:
 
 jobs:
 - environment_slug: php
-  github:
+  gitlab:
     branch: main
-    repo: neurocracy/omnipedia
+    repo: neurocracy/omnipedia/omnipedia
   instance_count: 1
   instance_size_slug: apps-s-1vcpu-1gb-fixed
   kind: PRE_DEPLOY
@@ -224,9 +224,9 @@ jobs:
   run_command: .do/jobs/pre-deploy.sh
   source_dir: /
 - environment_slug: php
-  github:
+  gitlab:
     branch: main
-    repo: neurocracy/omnipedia
+    repo: neurocracy/omnipedia/omnipedia
   instance_count: 1
   instance_size_slug: apps-s-1vcpu-1gb-fixed
   kind: POST_DEPLOY
@@ -234,9 +234,9 @@ jobs:
   run_command: .do/jobs/post-successful-deploy.sh
   source_dir: /
 - environment_slug: php
-  github:
+  gitlab:
     branch: main
-    repo: neurocracy/omnipedia
+    repo: neurocracy/omnipedia/omnipedia
   instance_count: 1
   instance_size_slug: apps-s-1vcpu-1gb-fixed
   kind: FAILED_DEPLOY
