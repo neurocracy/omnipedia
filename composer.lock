@@ -1936,12 +1936,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-media.git",
-                "reference": "44cfc210006a6df56a99be6f91b4c3f0ee605cc2"
+                "reference": "94512e1bc2a70c2a1b9e2d07d32617348ec1a24a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-media/zipball/44cfc210006a6df56a99be6f91b4c3f0ee605cc2",
-                "reference": "44cfc210006a6df56a99be6f91b4c3f0ee605cc2",
+                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-media/zipball/94512e1bc2a70c2a1b9e2d07d32617348ec1a24a",
+                "reference": "94512e1bc2a70c2a1b9e2d07d32617348ec1a24a",
                 "shasum": ""
             },
             "require": {
@@ -1951,7 +1951,7 @@
                 "drupal/core": "^10.3 || ^11.0",
                 "drupal/hook_event_dispatcher": "^4.0",
                 "drupal/hux": "^1.2",
-                "drupal/image_field_caption": "^2.0.1",
+                "drupal/image_field_caption": "^2.0.1 || ^3.0",
                 "guzzlehttp/guzzle": "^7.4.5",
                 "php": "^8.1"
             },
@@ -1973,7 +1973,7 @@
                 "source": "https://github.com/Ambient-Impact/drupal-ambientimpact-media",
                 "issues": "https://github.com/Ambient-Impact/drupal-ambientimpact-media/issues"
             },
-            "time": "2025-03-16T16:35:39+00:00"
+            "time": "2025-03-21T20:11:25+00:00"
         },
         {
             "name": "drupal/ambientimpact_ux",
@@ -3694,26 +3694,26 @@
         },
         {
             "name": "drupal/image_field_caption",
-            "version": "2.0.2",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/image_field_caption.git",
-                "reference": "2.0.2"
+                "reference": "3.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/image_field_caption-2.0.2.zip",
-                "reference": "2.0.2",
-                "shasum": "9b1f7d780adb66755626b925a80fe2b855f4975d"
+                "url": "https://ftp.drupal.org/files/projects/image_field_caption-3.0.1.zip",
+                "reference": "3.0.1",
+                "shasum": "e84c3b9534d5824b6a67885187b1c24d4eccaf60"
             },
             "require": {
-                "drupal/core": "^9 || ^10"
+                "drupal/core": "^10 || ^11"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.2",
-                    "datestamp": "1738422190",
+                    "version": "3.0.1",
+                    "datestamp": "1739400507",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
