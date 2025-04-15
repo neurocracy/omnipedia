@@ -28,7 +28,7 @@ Funding for the continued development of Neurocracy was provided in part by
 
 # License
 
-The entire Omnipedia codebase is released under [the GPLv2 (or later)
-license](https://en.wikipedia.org/wiki/GNU_General_Public_License#Version_2);
+The entire Omnipedia codebase is released under [the GPLv3 (or later)
+license](https://en.wikipedia.org/wiki/GNU_General_Public_License#Version_3);
 Omnipedia is and will continue to be [free and open source software
 (FOSS)](https://en.wikipedia.org/wiki/Free_and_open-source_software).
