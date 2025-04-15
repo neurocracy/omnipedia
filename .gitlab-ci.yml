@@ -59,6 +59,29 @@ cache:
     # @see https://docs.gitlab.com/ee/ci/docker/using_docker_images.html#overriding-the-entrypoint-of-an-image
     entrypoint: [""]
 
+  # Don't run on changes to these path patterns.
+  #
+  # @todo Port this to rules as 'except' is deprecated.
+  #
+  # @see https://docs.gitlab.com/ci/yaml/#only--except
+  except:
+    changes:
+      # DigitalOcean stuff is not currently relevant to CI.
+      - '/.apache/**'
+      - '/.do/**'
+      - '/.php/**'
+      # Drupal config is not currently used for testing as that's all set up in
+      # modules and in tests.
+      - '/drupal_config/**'
+      - '/drupal_private_files/**'
+      # Drush config is not used for CI.
+      - '/drush/**'
+      # Ignore any changes in aggregated assets and public files directories.
+      - '/web/assets/**'
+      - '/web/sites/*/files/**'
+      # Obvious reason is obvious.
+      - '/.github/**'
+
   before_script:
     # Opt into sending diagnotistic data to the DDEV project to help improve it.
     #
