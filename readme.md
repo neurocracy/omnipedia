@@ -16,7 +16,7 @@ app.
 
 # Current test status
 
-[![GitLab pipeline status](https://gitlab.com/neurocracy/omnipedia/omnipedia/badges/main/pipeline.svg?ignore_skipped=true&key_text=GitLab+pipeline&key_width=100)](https://gitlab.com/neurocracy/omnipedia/omnipedia/-/commits/main)
+[![GitLab pipeline status](https://gitlab.com/neurocracy/omnipedia/omnipedia/badges/main/pipeline.svg?ignore_skipped=true&key_text=Pipeline)](https://gitlab.com/neurocracy/omnipedia/omnipedia/-/commits/main)
 
 [![GitHub workflow status](https://github.com/neurocracy/omnipedia/actions/workflows/main.yml/badge.svg)](https://github.com/neurocracy/omnipedia/actions/workflows/main.yml)
 
