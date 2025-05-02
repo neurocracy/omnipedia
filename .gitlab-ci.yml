@@ -66,6 +66,8 @@ cache:
   # @see https://docs.gitlab.com/ci/yaml/#only--except
   except:
     changes:
+      # Not relevant for testing.
+      - '**.md'
       # DigitalOcean stuff is not currently relevant to CI.
       - '/.apache/**'
       - '/.do/**'
