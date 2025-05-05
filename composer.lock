@@ -4999,12 +4999,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/omnipedia-theme.git",
-                "reference": "c639f14cc6aefb7711b9bf8cc0688af697cfaee5"
+                "reference": "76255531fd104d66e79f0bd8dcebdc8465c600d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fomnipedia-theme/repository/archive.zip?sha=c639f14cc6aefb7711b9bf8cc0688af697cfaee5",
-                "reference": "c639f14cc6aefb7711b9bf8cc0688af697cfaee5",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fomnipedia-theme/repository/archive.zip?sha=76255531fd104d66e79f0bd8dcebdc8465c600d8",
+                "reference": "76255531fd104d66e79f0bd8dcebdc8465c600d8",
                 "shasum": ""
             },
             "require": {
@@ -5039,7 +5039,7 @@
                 "source": "https://gitlab.com/neurocracy/omnipedia/omnipedia-theme",
                 "issues": "https://gitlab.com/neurocracy/omnipedia/omnipedia-theme/-/issues"
             },
-            "time": "2025-05-04T19:27:46-04:00"
+            "time": "2025-05-05T17:42:00-04:00"
         },
         {
             "name": "drupal/omnipedia_user",
@@ -5690,7 +5690,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/refreshless.git",
-                "reference": "8a3a5c8aa0a3caa679ccb05096aeb32b5f6d7c16"
+                "reference": "6038219a3bf9677fc9ec7e1cd8b84fd308522206"
             },
             "require": {
                 "composer/semver": "^3.0",
@@ -5709,8 +5709,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "2.0.0-alpha8+6-dev",
-                    "datestamp": "1742952980",
+                    "version": "2.0.0-alpha9+2-dev",
+                    "datestamp": "1746481081",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
