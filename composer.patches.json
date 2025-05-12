@@ -18,6 +18,9 @@
       "Slow admin/config page load [#3336621]: https://www.drupal.org/project/drupal/issues/3336621#comment-14888211": "patches/drupal/core/3336621-3-remove-admin-config-status-report-check.patch",
       "Drupal.displace() only checks inline display: none; instead of computed styles, leading to incorrect visibility check [#3487907]: https://www.drupal.org/project/drupal/issues/3487907": "patches/drupal/core/3487907-drupal-displace-computed-style.patch"
     },
+    "drupal/hux": {
+      "Wrong module name limit [#3472641]: https://www.drupal.org/project/hux/issues/3472641": "patches/drupal/hux/3472641-wrong-module-name-limit.patch"
+    },
     "drupal/image_style_warmer": {
       "Support webp images [#3319397]: https://www.drupal.org/project/image_style_warmer/issues/3319397#comment-14802527": "patches/drupal/image_style_warmer/webp-module-support-3319397-5.patch"
     },

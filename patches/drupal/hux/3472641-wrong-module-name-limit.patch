@@ -1,0 +1,13 @@
+diff --git a/src/HuxCompilerPass.php b/src/HuxCompilerPass.php
+index fcfa4ab..c387036 100644
+--- a/src/HuxCompilerPass.php
++++ b/src/HuxCompilerPass.php
+@@ -73,7 +73,7 @@ final class HuxCompilerPass implements CompilerPassInterface {
+       $serviceDefinition = $container->getDefinition($serviceId);
+       /** @var class-string|null $className */
+       $className = $serviceDefinition->getClass();
+-      preg_match_all('/^Drupal\\\\(?<moduleName>[a-z_0-9]{1,32})\\\\.*$/m', $className, $matches, PREG_SET_ORDER);
++      preg_match_all('/^Drupal\\\\(?<moduleName>[a-z_0-9]{1,50})\\\\.*$/m', $className, $matches, PREG_SET_ORDER);
+       $moduleName = $matches[0]['moduleName'] ?? throw new \Exception(sprintf('Could not determine module name from class %s', $className));
+       $implementations[] = [$moduleName, $className, $id];
+ 
