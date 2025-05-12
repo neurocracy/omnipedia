@@ -16,9 +16,11 @@ dependencies:
     - node.type.page
     - node.type.wiki_page
     - taxonomy.vocabulary.episode_tiers
+    - workflows.workflow.editorial
   module:
     - ban
     - contact
+    - content_moderation
     - contextual
     - development_environment
     - disable_link_rel
@@ -187,6 +189,11 @@ permissions:
   - 'switch shortcut sets'
   - 'update any media'
   - 'update media'
+  - 'use editorial transition archive'
+  - 'use editorial transition archived_draft'
+  - 'use editorial transition archived_published'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition publish'
   - 'use text format basic_html'
   - 'use text format full_html'
   - 'use text format restricted_html'
@@ -194,6 +201,8 @@ permissions:
   - 'use views bulk edit'
   - 'view all media revisions'
   - 'view all revisions'
+  - 'view any unpublished content'
+  - 'view latest version'
   - 'view omnipedia_attached_data entity'
   - 'view own unpublished content'
   - 'view own unpublished media'

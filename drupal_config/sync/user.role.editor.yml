@@ -7,7 +7,9 @@ dependencies:
     - node.type.page
     - node.type.wiki_page
     - taxonomy.vocabulary.episode_tiers
+    - workflows.workflow.editorial
   module:
+    - content_moderation
     - contextual
     - eu_cookie_compliance
     - file
@@ -76,9 +78,16 @@ permissions:
   - 'setup own tfa'
   - 'update any media'
   - 'update media'
+  - 'use editorial transition archive'
+  - 'use editorial transition archived_draft'
+  - 'use editorial transition archived_published'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition publish'
   - 'use text format wiki_html'
   - 'view all media revisions'
   - 'view all revisions'
+  - 'view any unpublished content'
+  - 'view latest version'
   - 'view media'
   - 'view omnipedia_attached_data entity'
   - 'view own unpublished content'

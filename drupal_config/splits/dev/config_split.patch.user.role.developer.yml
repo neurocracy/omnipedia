@@ -1,5 +1,7 @@
 adding:
   dependencies:
+    config:
+      - workflows.workflow.editorial
     module:
       - autoban
       - block
@@ -20,6 +22,7 @@ adding:
       - typed_entity_ui
       - userprotect
       - views_ui
+      - workflows
   permissions:
     - 'access devel information'
     - 'access help pages'
@@ -66,6 +69,7 @@ adding:
     - 'administer user fields'
     - 'administer user form display'
     - 'administer views'
+    - 'administer workflows'
     - 'bypass rules access'
     - 'cancel account'
     - 'configure navigation layout'
