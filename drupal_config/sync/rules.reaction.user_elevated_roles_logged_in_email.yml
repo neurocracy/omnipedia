@@ -1,0 +1,60 @@
+uuid: 62685938-88c3-45cb-9bf1-0012357f899d
+langcode: en
+status: true
+dependencies: {  }
+id: user_elevated_roles_logged_in_email
+label: 'User with elevated roles(s) logged in (email)'
+events:
+  -
+    event_name: rules_user_login
+description: "Sends an email when a user with elevated permissions logs in to that user's email address."
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: c90078b7-53d5-4526-be08-977e26aa285e
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: 7a89a8bb-4b3d-437c-9886-94e3c155a811
+    weight: 0
+    conditions:
+      -
+        id: rules_condition
+        uuid: 1706ef40-bc97-46bd-81f0-a300a27cf7b4
+        weight: 0
+        condition_id: omnipedia_user_has_elevated_roles
+        negate: false
+        context_values: {  }
+        context_mapping:
+          user: '@user.current_user_context:current_user'
+        context_processors: {  }
+        provides_mapping: {  }
+  actions:
+    id: rules_action_set
+    uuid: 4f6208f3-225b-4a2c-8a56-cf532032506b
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: d1183a4c-dad6-4a3f-bf66-91b30f138b54
+        weight: 0
+        action_id: rules_send_email
+        context_values:
+          to:
+            - '{{ @user.current_user_context:current_user.mail.value }}'
+          subject: 'Log in notification for your Omnipedia account'
+          message: "Your Omnipedia account was logged in at {{ @rules.current_date_context:current_date | format_date('long') }}. If this was you, you can safely ignore this email. Log in page: {{ @rules.site_context:site.login-url }}"
+          reply: ''
+        context_mapping:
+          language: '@language.current_language_context:language_interface'
+        context_processors:
+          to:
+            rules_tokens: {  }
+          subject:
+            rules_tokens: {  }
+          message:
+            rules_tokens: {  }
+          reply:
+            rules_tokens: {  }
+        provides_mapping: {  }

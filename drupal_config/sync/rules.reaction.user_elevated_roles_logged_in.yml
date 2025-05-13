@@ -7,7 +7,7 @@ label: 'User with elevated roles(s) logged in'
 events:
   -
     event_name: rules_user_login
-description: 'This sends emails when a user with elevated permissions logs in to both that user and all site administrators (currently set to developer role due to Paranoia module usage).'
+description: ''
 tags: {  }
 config_version: '3'
 expression:
@@ -35,56 +35,6 @@ expression:
     uuid: 363801a2-5e89-4922-aace-223ea092923a
     weight: 0
     actions:
-      -
-        id: rules_action
-        uuid: 5da453a2-870c-4d34-9a1c-695b15d90d4d
-        weight: 0
-        action_id: rules_send_email
-        context_values:
-          to:
-            - '{{ @user.current_user_context:current_user.mail.value }}'
-          subject: 'Log in notification for your Omnipedia account'
-          message: "Your Omnipedia account was logged in at {{ @rules.current_date_context:current_date | format_date('long') }}. If this was you, you can safely ignore this email. Log in page: {{ @rules.site_context:site.login-url }}"
-          reply: ''
-          language: ''
-        context_mapping: {  }
-        context_processors:
-          to:
-            rules_tokens: {  }
-          subject:
-            rules_tokens: {  }
-          message:
-            rules_tokens: {  }
-          reply:
-            rules_tokens: {  }
-          language:
-            rules_tokens: {  }
-        provides_mapping: {  }
-      -
-        id: rules_action
-        uuid: abadf617-253b-4466-aaed-110eda25d71b
-        weight: 0
-        action_id: rules_email_to_users_of_role
-        context_values:
-          roles:
-            - developer
-          subject: 'Log in notification for elevated user account: {{ @user.current_user_context:current_user.name.value }}'
-          message: "Logged in at {{ @rules.current_date_context:current_date | format_date('long') }}. {{ @user.current_user_context:current_user | entity_url }}"
-          reply: ''
-          language: ''
-        context_mapping: {  }
-        context_processors:
-          roles:
-            rules_tokens: {  }
-          subject:
-            rules_tokens: {  }
-          message:
-            rules_tokens: {  }
-          reply:
-            rules_tokens: {  }
-          language:
-            rules_tokens: {  }
-        provides_mapping: {  }
       -
         id: rules_action
         uuid: bfc90d80-6f12-41dc-8256-0d24c3df03f2
