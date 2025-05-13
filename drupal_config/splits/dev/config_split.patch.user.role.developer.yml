@@ -1,7 +1,5 @@
 adding:
   dependencies:
-    config:
-      - workflows.workflow.editorial
     module:
       - autoban
       - block
