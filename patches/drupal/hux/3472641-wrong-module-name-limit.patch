@@ -1,5 +1,5 @@
 diff --git a/src/HuxCompilerPass.php b/src/HuxCompilerPass.php
-index fcfa4ab..c387036 100644
+index fcfa4abc974377b56e5d05101eae1b4cb6b3f5fa..96a7749cbd7bbd75ade07c005b812c84c6e13965 100644
 --- a/src/HuxCompilerPass.php
 +++ b/src/HuxCompilerPass.php
 @@ -73,7 +73,7 @@ final class HuxCompilerPass implements CompilerPassInterface {
@@ -7,7 +7,7 @@ index fcfa4ab..c387036 100644
        /** @var class-string|null $className */
        $className = $serviceDefinition->getClass();
 -      preg_match_all('/^Drupal\\\\(?<moduleName>[a-z_0-9]{1,32})\\\\.*$/m', $className, $matches, PREG_SET_ORDER);
-+      preg_match_all('/^Drupal\\\\(?<moduleName>[a-z_0-9]{1,50})\\\\.*$/m', $className, $matches, PREG_SET_ORDER);
++      preg_match_all('/^Drupal\\\\(?<moduleName>[a-z_0-9]{1,' . preg_quote((string) DRUPAL_EXTENSION_NAME_MAX_LENGTH) . '})\\\\.*$/m', $className, $matches, PREG_SET_ORDER);
        $moduleName = $matches[0]['moduleName'] ?? throw new \Exception(sprintf('Could not determine module name from class %s', $className));
        $implementations[] = [$moduleName, $className, $id];
  
