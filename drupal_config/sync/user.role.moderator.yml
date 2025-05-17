@@ -9,6 +9,7 @@ dependencies:
     - file
     - flood_control
     - help
+    - login_history
     - navigation
     - omnipedia_access
     - shortcut
@@ -36,4 +37,5 @@ permissions:
   - 'flood unblock ips'
   - 'omnipedia_access bypass not found'
   - 'setup own tfa'
+  - 'view all login histories'
   - 'view the administration theme'

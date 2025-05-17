@@ -33,6 +33,7 @@ dependencies:
     - honeypot
     - image
     - login_destination
+    - login_history
     - markdown
     - media
     - metatag
@@ -199,6 +200,7 @@ permissions:
   - 'use text format restricted_html'
   - 'use text format wiki_html'
   - 'use views bulk edit'
+  - 'view all login histories'
   - 'view all media revisions'
   - 'view all revisions'
   - 'view any unpublished content'

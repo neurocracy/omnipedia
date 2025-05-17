@@ -13,6 +13,7 @@ adding:
       - field_ui
       - help
       - key
+      - login_history
       - purge_users
       - s3fs
       - seckit
@@ -42,6 +43,7 @@ adding:
     - 'administer filters'
     - 'administer key configuration overrides'
     - 'administer keys'
+    - 'administer login history'
     - 'administer media'
     - 'administer media display'
     - 'administer media fields'

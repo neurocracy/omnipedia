@@ -7,6 +7,7 @@ dependencies:
     - discourse_sso
     - eu_cookie_compliance
     - file
+    - login_history
     - media
     - system
     - userprotect
@@ -22,6 +23,7 @@ permissions:
   - 'access site-wide contact form'
   - 'delete own files'
   - 'display eu cookie compliance popup'
+  - 'view own login history'
   - userprotect.account.edit
   - userprotect.mail.edit
   - userprotect.pass.edit
