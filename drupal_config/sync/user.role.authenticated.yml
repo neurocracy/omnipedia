@@ -23,8 +23,8 @@ permissions:
   - 'access site-wide contact form'
   - 'delete own files'
   - 'display eu cookie compliance popup'
-  - 'view media'
-  - 'view own login history'
   - userprotect.account.edit
   - userprotect.mail.edit
   - userprotect.pass.edit
+  - 'view media'
+  - 'view own login history'
