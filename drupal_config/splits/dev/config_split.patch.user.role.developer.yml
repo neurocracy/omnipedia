@@ -13,7 +13,6 @@ adding:
       - field_ui
       - help
       - key
-      - login_history
       - purge_users
       - s3fs
       - seckit
