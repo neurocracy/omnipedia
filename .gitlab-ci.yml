@@ -58,6 +58,24 @@ cache:
 
   before_script:
     - composer install --no-progress
+
+    - node --version
+
+    # In case Corepack isn't enabled in Node.js, we have to do that here.
+    - corepack enable
+    # At the time of writing, the Node.js in GitLab CI is 18.x, which doesn't
+    # have the 'corepack use' command that newer versions of Corepack offer so
+    # we have to explicitly set a Yarn version here. Note that this upgrades
+    # the global Yarn so that we can install the local Yarn in the next step.
+    # The default version of Yarn is 1.x which doesn't understand the
+    # 'yarn set' command and will fail.
+    #
+    # @see https://nodejs.org/docs/latest-v18.x/api/corepack.html
+    - corepack prepare yarn@4.6.0 --activate
+    # Now that the global Yarn understands the 'yarn set' command, set the local
+    # Yarn to 4.x.
+    - yarn set version 4.6.0
+
     - yarn install
     - yarn build:deploy
 
