@@ -79,4 +79,4 @@ cache:
 test:phpunit:
   <<: *test-base
   script:
-    - ddev exec phpunit --group=omnipedia --verbose
+    - phpunit --group=omnipedia --verbose
