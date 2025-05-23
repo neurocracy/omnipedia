@@ -59,11 +59,12 @@ cache:
       - '/.github/**'
 
   before_script:
-    - composer install --no-progress
 
     - node --version
 
     - pwd
+
+    - composer install --no-progress
 
     # In case Corepack isn't enabled in Node.js, we have to do that here.
     - corepack enable
