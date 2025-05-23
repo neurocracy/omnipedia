@@ -63,6 +63,8 @@ cache:
 
     - node --version
 
+    - pwd
+
     # In case Corepack isn't enabled in Node.js, we have to do that here.
     - corepack enable
     # At the time of writing, the Node.js in GitLab CI is 18.x, which doesn't
