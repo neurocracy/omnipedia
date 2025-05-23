@@ -1,6 +1,8 @@
 stages:
   - test
 
+image: ddev/ddev-webserver:latest
+
 variables:
   DEBIAN_FRONTEND: "noninteractive"
   COMPOSER_CACHE_PATH_RELATIVE: ".composer/cache"
@@ -11,6 +13,10 @@ variables:
   # Absolute cache paths inside the DDEV web container.
   COMPOSER_CACHE_DIR_CONTAINER: "/var/www/html/$COMPOSER_CACHE_PATH_RELATIVE"
   YARN_CACHE_DIR_CONTAINER: "/var/www/html/$YARN_CACHE_PATH_RELATIVE"
+  # Allow service containers to see each other.
+  #
+  # @see https://docs.gitlab.com/ee/ci/services/#connecting-services
+  FF_NETWORK_PER_BUILD: 'true'
 
 cache:
   # Cache is per-branch.
@@ -24,40 +30,6 @@ cache:
 # @see https://docs.gitlab.com/ee/ci/yaml/yaml_optimization.html#anchors
 .test-base: &test-base
   stage: test
-
-  variables:
-    DOCKER_HOST: tcp://docker:2375
-    DOCKER_DRIVER: overlay2
-    DOCKER_TLS_CERTDIR: ""
-    # Allow service containers to see each other.
-    #
-    # @see https://docs.gitlab.com/ee/ci/services/#connecting-services
-    FF_NETWORK_PER_BUILD: 'true'
-    # Remove "umask 0000" usage, so DDEV has permissions on the cloned
-    # repository.
-    #
-    # @see https://docs.gitlab.com/runner/configuration/feature-flags.html#available-feature-flags
-    FF_DISABLE_UMASK_FOR_DOCKER_EXECUTOR: 'true'
-
-  services:
-    - name: docker:20-dind
-      alias: docker
-      command: ["--tls=false"]
-
-  image:
-    name: registry.gitlab.com/consensus.enterprises/drumkit/ddev
-    # Options to run the Docker executor with; notably run as the 'ddev' user
-    # and group. This must match the user and group that the Drumkit DDEV image
-    # creates.
-    #
-    # @see https://docs.gitlab.com/ee/ci/yaml/index.html#imagedocker
-    docker:
-      user: ddev:ddev
-    # We have to override the container entrypoint or else we end up in /bin/sh
-    # and `source d` doesn't work.
-    #
-    # @see https://docs.gitlab.com/ee/ci/docker/using_docker_images.html#overriding-the-entrypoint-of-an-image
-    entrypoint: [""]
 
   # Don't run on changes to these path patterns.
   #
