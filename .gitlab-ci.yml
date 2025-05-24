@@ -18,7 +18,9 @@ variables:
   COMPOSER_CACHE_DIR_CONTAINER: "/var/www/html/$COMPOSER_CACHE_PATH_RELATIVE"
   YARN_CACHE_DIR_CONTAINER: "/var/www/html/$YARN_CACHE_PATH_RELATIVE"
 
-  PHPUNIT_RESULTS_FILE: '$CI_PROJECT_DIR/phpunit-results.xml'
+  PHPUNIT_RESULTS_FILE_RELATIVE: 'phpunit-results.xml'
+  PHPUNIT_RESULTS_FILE_CI: '$CI_PROJECT_DIR/$PHPUNIT_RESULTS_FILE_RELATIVE'
+  PHPUNIT_RESULTS_FILE_CONTAINER: '/var/www/html/$PHPUNIT_RESULTS_FILE_RELATIVE'
 
 cache:
   # Cache is per-branch.
@@ -100,9 +102,9 @@ cache:
     name: artifacts-$CI_PIPELINE_ID-$CI_JOB_NAME_SLUG
     paths:
     - "$CI_PROJECT_DIR"
-    - $PHPUNIT_RESULTS_FILE
+    - '$PHPUNIT_RESULTS_FILE_CI'
     reports:
-      junit: $PHPUNIT_RESULTS_FILE
+      junit: '$PHPUNIT_RESULTS_FILE_CI'
 
 composer:
 
@@ -165,4 +167,4 @@ test:phpunit:
   <<: *test-base
 
   script:
-    - ddev exec phpunit --group=omnipedia --verbose --log-junit=$PHPUNIT_RESULTS_FILE
+    - ddev exec phpunit --group=omnipedia --verbose --log-junit=$PHPUNIT_RESULTS_FILE_CONTAINER
