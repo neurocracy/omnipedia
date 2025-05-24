@@ -1,8 +1,14 @@
 stages:
+  - .pre
+  - build
+  - validate
   - test
+  - .post
 
 variables:
+
   DEBIAN_FRONTEND: "noninteractive"
+
   COMPOSER_CACHE_PATH_RELATIVE: ".composer/cache"
   YARN_CACHE_PATH_RELATIVE: ".yarn/cache"
   # Absolute cache paths outside of the DDEV web container.
@@ -22,13 +28,14 @@ cache:
 # Hidden job intended as a template for tests.
 #
 # @see https://docs.gitlab.com/ee/ci/yaml/yaml_optimization.html#anchors
-.test-base: &test-base
-  stage: test
+.ddev-base: &ddev-base
 
   variables:
+
     DOCKER_HOST: tcp://docker:2375
     DOCKER_DRIVER: overlay2
     DOCKER_TLS_CERTDIR: ""
+
     # Allow service containers to see each other.
     #
     # @see https://docs.gitlab.com/ee/ci/services/#connecting-services
@@ -45,6 +52,7 @@ cache:
       command: ["--tls=false"]
 
   image:
+
     name: registry.gitlab.com/consensus.enterprises/drumkit/ddev
     # Options to run the Docker executor with; notably run as the 'ddev' user
     # and group. This must match the user and group that the Drumkit DDEV image
@@ -58,6 +66,69 @@ cache:
     #
     # @see https://docs.gitlab.com/ee/ci/docker/using_docker_images.html#overriding-the-entrypoint-of-an-image
     entrypoint: [""]
+
+  before_script:
+    # Opt into sending diagnotistic data to the DDEV project to help improve it.
+    #
+    # @see https://ddev.readthedocs.io/en/stable/users/usage/diagnostics/
+    - ddev config global --instrumentation-opt-in=true
+    # Disable the DDEV SSH agent container as it fails its health checks and we
+    # shouldn't need it.
+    - ddev config global --omit-containers=ddev-ssh-agent
+    - ddev mutagen reset && ddev config global --mutagen-enabled=false
+    # Pass the Composer and Yarn cache directory paths to the container since
+    # they don't inherit environment variables from outside the container.
+    #
+    # @see https://ddev.readthedocs.io/en/stable/users/extend/customization-extendibility/#environment-variables-for-containers-and-services
+    - ddev config --web-environment-add="COMPOSER_CACHE_DIR=$COMPOSER_CACHE_DIR_CONTAINER"
+    - ddev config --web-environment-add="YARN_CACHE_FOLDER=$YARN_CACHE_DIR_CONTAINER"
+    - ddev start
+
+  artifacts:
+    expire_in: 1 week
+    expose_as: web
+    when: always
+    exclude:
+    - ".git"
+    - ".git/**/*"
+    - "$CI_PROJECT_DIR/web/**/.git"
+    - "$CI_PROJECT_DIR/web/**/.git/**/*"
+    - vendor/**/.git
+    - vendor/**/.git/**/*
+    name: artifacts-$CI_PIPELINE_ID-$CI_JOB_NAME_SLUG
+    paths:
+    - "$CI_PROJECT_DIR"
+
+composer:
+
+  <<: *ddev-base
+
+  stage: build
+
+  script:
+    - ddev composer install --no-progress
+
+yarn:
+
+  <<: *ddev-base
+
+  stage: build
+
+  needs:
+    - composer
+
+  script:
+    - ddev yarn install
+    - ddev yarn build:deploy
+
+# Hidden job intended as a template for tests.
+#
+# @see https://docs.gitlab.com/ee/ci/yaml/yaml_optimization.html#anchors
+.test-base: &test-base
+
+  <<: *ddev-base
+
+  stage: test
 
   # Don't run on changes to these path patterns.
   #
@@ -84,42 +155,9 @@ cache:
       # Obvious reason is obvious.
       - '/.github/**'
 
-  before_script:
-    # Opt into sending diagnotistic data to the DDEV project to help improve it.
-    #
-    # @see https://ddev.readthedocs.io/en/stable/users/usage/diagnostics/
-    - ddev config global --instrumentation-opt-in=true
-    # Disable the DDEV SSH agent container as it fails its health checks and we
-    # shouldn't need it.
-    - ddev config global --omit-containers=ddev-ssh-agent
-    - ddev mutagen reset && ddev config global --mutagen-enabled=false
-    # Pass the Composer and Yarn cache directory paths to the container since
-    # they don't inherit environment variables from outside the container.
-    #
-    # @see https://ddev.readthedocs.io/en/stable/users/extend/customization-extendibility/#environment-variables-for-containers-and-services
-    - ddev config --web-environment-add="COMPOSER_CACHE_DIR=$COMPOSER_CACHE_DIR_CONTAINER"
-    - ddev config --web-environment-add="YARN_CACHE_FOLDER=$YARN_CACHE_DIR_CONTAINER"
-    - ddev start
-    - ddev composer install --no-progress
-    - ddev yarn install
-    - ddev yarn build:deploy
-
-  artifacts:
-    expire_in: 1 week
-    expose_as: web
-    when: always
-    exclude:
-    - ".git"
-    - ".git/**/*"
-    - "$CI_PROJECT_DIR/web/**/.git"
-    - "$CI_PROJECT_DIR/web/**/.git/**/*"
-    - vendor/**/.git
-    - vendor/**/.git/**/*
-    name: artifacts-$CI_PIPELINE_ID-$CI_JOB_NAME_SLUG
-    paths:
-    - "$CI_PROJECT_DIR"
-
 test:phpunit:
+
   <<: *test-base
+
   script:
     - ddev exec phpunit --group=omnipedia --verbose
