@@ -18,6 +18,8 @@ variables:
   COMPOSER_CACHE_DIR_CONTAINER: "/var/www/html/$COMPOSER_CACHE_PATH_RELATIVE"
   YARN_CACHE_DIR_CONTAINER: "/var/www/html/$YARN_CACHE_PATH_RELATIVE"
 
+  PHPUNIT_RESULTS_FILE: '$CI_PROJECT_DIR/phpunit-results.xml'
+
 cache:
   # Cache is per-branch.
   key: "$CI_BUILD_REF_NAME"
@@ -160,4 +162,4 @@ test:phpunit:
   <<: *test-base
 
   script:
-    - ddev exec phpunit --group=omnipedia --verbose
+    - ddev exec phpunit --group=omnipedia --verbose --log-junit='${PHPUNIT_RESULTS_FILE}'
