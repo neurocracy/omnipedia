@@ -102,4 +102,21 @@
       <directory suffix=".api.php">web/modules/**</directory>
     </exclude>
   </coverage>
+  <extensions>
+    <!--
+      Output test run times to identify slow tests.
+
+      @see https://davidllop.com/posts/identifying-the-slowest-tests-in-phpunit
+      @see https://github.com/lloople/phpunit-extensions
+    -->
+    <extension class="Lloople\PHPUnitExtensions\Runners\SlowestTests\Csv">
+      <arguments>
+        <!--
+          Note that this is relative to the web root and not the root of the
+          repository.
+        -->
+        <string>../phpunit_results.csv</string>
+      </arguments>
+    </extension>
+  </extensions>
 </phpunit>

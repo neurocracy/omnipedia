@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f40bbd9944691c20395dfeda87fbfd54",
+    "content-hash": "84976062e287371568be96250daef747",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -16054,6 +16054,55 @@
                 }
             ],
             "time": "2024-10-29T13:46:07+00:00"
+        },
+        {
+            "name": "lloople/phpunit-extensions",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Lloople/phpunit-extensions.git",
+                "reference": "44e439d8cd966a31c27bb0339cb32d38d6a7ee26"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Lloople/phpunit-extensions/zipball/44e439d8cd966a31c27bb0339cb32d38d6a7ee26",
+                "reference": "44e439d8cd966a31c27bb0339cb32d38d6a7ee26",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1|^8"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.1|^8.0|^9.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Lloople\\PHPUnitExtensions\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Llop",
+                    "email": "d.lloople@icloud.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "📦 Some cool extensions for PHPUnit",
+            "homepage": "https://github.com/lloople/phpunit-extensions",
+            "keywords": [
+                "lloople",
+                "phpunit-extensions"
+            ],
+            "support": {
+                "issues": "https://github.com/Lloople/phpunit-extensions/issues",
+                "source": "https://github.com/Lloople/phpunit-extensions/tree/v2.1.0"
+            },
+            "time": "2023-09-12T20:19:24+00:00"
         },
         {
             "name": "lullabot/mink-selenium2-driver",

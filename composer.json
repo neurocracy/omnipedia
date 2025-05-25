@@ -256,6 +256,7 @@
     "drupal/rdf": "^3.0@beta",
     "drupal/upgrade_status": "^4.3",
     "kint-php/kint": "^3.3",
+    "lloople/phpunit-extensions": "^2.1",
     "phpspec/prophecy-phpunit": "^2",
     "symfony/var-dumper": "^6.2"
   },

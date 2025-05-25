@@ -85,6 +85,8 @@ test.sqlite
 test.sqlite-shm
 test.sqlite-wal
 /web/sites/simpletest
+# @see https://davidllop.com/posts/identifying-the-slowest-tests-in-phpunit
+/phpunit_results.csv
 
 # Always allow .gitkeep files which are commonly used to allow directories that
 # otherwise have no other files under version control to be deployed via Git.
