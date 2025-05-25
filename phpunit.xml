@@ -115,7 +115,7 @@
           Note that this is relative to the web root and not the root of the
           repository.
         -->
-        <string>../phpunit_results.csv</string>
+        <string>../phpunit-results.csv</string>
       </arguments>
     </extension>
   </extensions>
