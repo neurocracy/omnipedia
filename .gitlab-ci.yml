@@ -46,7 +46,7 @@ cache:
 .file-patterns-phpunit: &file-patterns-phpunit
   - phpunit.xml
 
-# Hidden job intended as a template for tests.
+# Hidden job intended as a template for other DDEV-based jobs.
 #
 # @see https://docs.gitlab.com/ee/ci/yaml/yaml_optimization.html#anchors
 .ddev-base: &ddev-base
