@@ -125,7 +125,7 @@ cache:
     reports:
       junit: '$PHPUNIT_RESULTS_FILE_CI'
 
-composer:
+build:composer:
 
   <<: *ddev-base
 
@@ -146,14 +146,14 @@ composer:
   script:
     - ddev composer install --no-progress
 
-yarn:
+build:yarn:
 
   <<: *ddev-base
 
   stage: build
 
   needs:
-    - composer
+    - build:composer
 
   rules:
     # Run only on these path patterns having changes.
@@ -181,7 +181,7 @@ test:phpunit:
   <<: *test-base
 
   needs:
-    - composer
+    - build:composer
 
   rules:
     # Run only on these path patterns having changes.
