@@ -172,6 +172,9 @@ test:phpunit:
 
   <<: *test-base
 
+  needs:
+    - composer
+
   rules:
     # Run only on these path patterns having changes.
     #
