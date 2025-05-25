@@ -104,8 +104,7 @@
   </coverage>
   <logging>
     <!-- Note that this is relative to the web root and not the root of the
-              repository. -->
-
+         repository. -->
     <junit outputFile="../phpunit-results.xml"/>
   </logging>
   <extensions>
