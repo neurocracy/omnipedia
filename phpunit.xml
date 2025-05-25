@@ -102,6 +102,9 @@
       <directory suffix=".api.php">web/modules/**</directory>
     </exclude>
   </coverage>
+  <logging>
+    <junit outputFile="../phpunit-results.xml"/>
+  </logging>
   <extensions>
     <!--
       Output test run times to identify slow tests.

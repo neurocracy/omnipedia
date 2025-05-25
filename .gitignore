@@ -85,6 +85,7 @@ test.sqlite
 test.sqlite-shm
 test.sqlite-wal
 /web/sites/simpletest
+/phpunit-results.xml
 # @see https://davidllop.com/posts/identifying-the-slowest-tests-in-phpunit
 /phpunit-results.csv
 
