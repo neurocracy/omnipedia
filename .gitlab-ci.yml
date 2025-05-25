@@ -29,6 +29,20 @@ cache:
     - "$COMPOSER_CACHE_DIR_CI"
     - "$YARN_CACHE_DIR_CI"
 
+.file-patterns-ddev: &file-patterns-ddev
+  - .ddev/**/*
+
+.file-patterns-composer: &file-patterns-composer
+  - composer.json
+  - composer.lock
+  - composer.patches.json
+
+.file-patterns-yarn: &file-patterns-yarn
+  - .yarn/**/*
+  - .yarnrc.yml
+  - package.json
+  - yarn.lock
+
 # Hidden job intended as a template for tests.
 #
 # @see https://docs.gitlab.com/ee/ci/yaml/yaml_optimization.html#anchors
@@ -71,6 +85,12 @@ cache:
     # @see https://docs.gitlab.com/ee/ci/docker/using_docker_images.html#overriding-the-entrypoint-of-an-image
     entrypoint: [""]
 
+  rules:
+    # Run only on these path patterns having changes.
+    #
+    # @see https://docs.gitlab.com/ci/yaml/#ruleschanges
+    - changes: *file-patterns-ddev
+
   before_script:
     # Opt into sending diagnotistic data to the DDEV project to help improve it.
     #
@@ -112,6 +132,13 @@ composer:
 
   stage: build
 
+  rules:
+    # Run only on these path patterns having changes.
+    #
+    # @see https://docs.gitlab.com/ci/yaml/#ruleschanges
+    - changes: *file-patterns-ddev
+    - changes: *file-patterns-composer
+
   script:
     - ddev composer install --no-progress
 
@@ -123,6 +150,14 @@ yarn:
 
   needs:
     - composer
+
+  rules:
+    # Run only on these path patterns having changes.
+    #
+    # @see https://docs.gitlab.com/ci/yaml/#ruleschanges
+    - changes: *file-patterns-ddev
+    - changes: *file-patterns-composer
+    - changes: *file-patterns-yarn
 
   script:
     - ddev yarn install
@@ -137,34 +172,18 @@ yarn:
 
   stage: test
 
-  # Don't run on changes to these path patterns.
-  #
-  # @todo Port this to rules as 'except' is deprecated.
-  #
-  # @see https://docs.gitlab.com/ci/yaml/#only--except
-  except:
-    changes:
-      # Not relevant for testing.
-      - '**.md'
-      # DigitalOcean stuff is not currently relevant to CI.
-      - '/.apache/**'
-      - '/.do/**'
-      - '/.php/**'
-      # Drupal config is not currently used for testing as that's all set up in
-      # modules and in tests.
-      - '/drupal_config/**'
-      - '/drupal_private_files/**'
-      # Drush config is not used for CI.
-      - '/drush/**'
-      # Ignore any changes in aggregated assets and public files directories.
-      - '/web/assets/**'
-      - '/web/sites/*/files/**'
-      # Obvious reason is obvious.
-      - '/.github/**'
-
 test:phpunit:
 
   <<: *test-base
+
+  rules:
+    # Run only on these path patterns having changes.
+    #
+    # @see https://docs.gitlab.com/ci/yaml/#ruleschanges
+    - changes: *file-patterns-ddev
+    - changes: *file-patterns-composer
+    - changes:
+      - phpunit.xml
 
   script:
     - ddev exec phpunit --group=omnipedia --verbose --log-junit=$PHPUNIT_RESULTS_FILE_CONTAINER
