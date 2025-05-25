@@ -7,16 +7,16 @@ stages:
 
 variables:
 
-  DEBIAN_FRONTEND: "noninteractive"
+  DEBIAN_FRONTEND: 'noninteractive'
 
-  COMPOSER_CACHE_PATH_RELATIVE: ".composer/cache"
-  YARN_CACHE_PATH_RELATIVE: ".yarn/cache"
+  COMPOSER_CACHE_PATH_RELATIVE: '.composer/cache'
+  YARN_CACHE_PATH_RELATIVE: '.yarn/cache'
   # Absolute cache paths outside of the DDEV web container.
-  COMPOSER_CACHE_DIR_CI: "$CI_PROJECT_DIR/$COMPOSER_CACHE_PATH_RELATIVE"
-  YARN_CACHE_DIR_CI: "$CI_PROJECT_DIR/$YARN_CACHE_PATH_RELATIVE"
+  COMPOSER_CACHE_DIR_CI: '$CI_PROJECT_DIR/$COMPOSER_CACHE_PATH_RELATIVE'
+  YARN_CACHE_DIR_CI: '$CI_PROJECT_DIR/$YARN_CACHE_PATH_RELATIVE'
   # Absolute cache paths inside the DDEV web container.
-  COMPOSER_CACHE_DIR_CONTAINER: "/var/www/html/$COMPOSER_CACHE_PATH_RELATIVE"
-  YARN_CACHE_DIR_CONTAINER: "/var/www/html/$YARN_CACHE_PATH_RELATIVE"
+  COMPOSER_CACHE_DIR_CONTAINER: '/var/www/html/$COMPOSER_CACHE_PATH_RELATIVE'
+  YARN_CACHE_DIR_CONTAINER: '/var/www/html/$YARN_CACHE_PATH_RELATIVE'
 
   PHPUNIT_RESULTS_FILE_RELATIVE: 'phpunit-results.xml'
   PHPUNIT_RESULTS_FILE_CI: '$CI_PROJECT_DIR/$PHPUNIT_RESULTS_FILE_RELATIVE'
@@ -24,10 +24,10 @@ variables:
 
 cache:
   # Cache is per-branch.
-  key: "$CI_BUILD_REF_NAME"
+  key: '$CI_BUILD_REF_NAME'
   paths:
-    - "$COMPOSER_CACHE_DIR_CI"
-    - "$YARN_CACHE_DIR_CI"
+    - '$COMPOSER_CACHE_DIR_CI'
+    - '$YARN_CACHE_DIR_CI'
 
 .file-patterns-ddev: &file-patterns-ddev
   - .ddev/**/*
@@ -55,13 +55,13 @@ cache:
 
     DOCKER_HOST: tcp://docker:2375
     DOCKER_DRIVER: overlay2
-    DOCKER_TLS_CERTDIR: ""
+    DOCKER_TLS_CERTDIR: ''
 
     # Allow service containers to see each other.
     #
     # @see https://docs.gitlab.com/ee/ci/services/#connecting-services
     FF_NETWORK_PER_BUILD: 'true'
-    # Remove "umask 0000" usage, so DDEV has permissions on the cloned
+    # Remove 'umask 0000' usage, so DDEV has permissions on the cloned
     # repository.
     #
     # @see https://docs.gitlab.com/runner/configuration/feature-flags.html#available-feature-flags
@@ -70,7 +70,7 @@ cache:
   services:
     - name: docker:20-dind
       alias: docker
-      command: ["--tls=false"]
+      command: ['--tls=false']
 
   image:
 
@@ -86,7 +86,7 @@ cache:
     # and `source d` doesn't work.
     #
     # @see https://docs.gitlab.com/ee/ci/docker/using_docker_images.html#overriding-the-entrypoint-of-an-image
-    entrypoint: [""]
+    entrypoint: ['']
 
   rules:
     # Run only on these path patterns having changes.
@@ -107,8 +107,8 @@ cache:
     # they don't inherit environment variables from outside the container.
     #
     # @see https://ddev.readthedocs.io/en/stable/users/extend/customization-extendibility/#environment-variables-for-containers-and-services
-    - ddev config --web-environment-add="COMPOSER_CACHE_DIR=$COMPOSER_CACHE_DIR_CONTAINER"
-    - ddev config --web-environment-add="YARN_CACHE_FOLDER=$YARN_CACHE_DIR_CONTAINER"
+    - ddev config --web-environment-add='COMPOSER_CACHE_DIR=$COMPOSER_CACHE_DIR_CONTAINER'
+    - ddev config --web-environment-add='YARN_CACHE_FOLDER=$YARN_CACHE_DIR_CONTAINER'
     - ddev start
 
   artifacts:
@@ -116,15 +116,15 @@ cache:
     expose_as: web
     when: always
     exclude:
-    - ".git"
-    - ".git/**/*"
-    - "$CI_PROJECT_DIR/web/**/.git"
-    - "$CI_PROJECT_DIR/web/**/.git/**/*"
+    - '.git'
+    - '.git/**/*'
+    - '$CI_PROJECT_DIR/web/**/.git'
+    - '$CI_PROJECT_DIR/web/**/.git/**/*'
     - vendor/**/.git
     - vendor/**/.git/**/*
     name: artifacts-$CI_PIPELINE_ID-$CI_JOB_NAME_SLUG
     paths:
-    - "$CI_PROJECT_DIR"
+    - '$CI_PROJECT_DIR'
     - '$PHPUNIT_RESULTS_FILE_CI'
     reports:
       junit: '$PHPUNIT_RESULTS_FILE_CI'
