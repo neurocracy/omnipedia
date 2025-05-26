@@ -6,10 +6,10 @@ name: omnipedia
 type: drupal
 ddev_version_constraint: '>=1.23' # Required for versionless 'drupal' type.
 docroot: web
-php_version: "8.3"
+php_version: '8.3'
 webserver_type: apache-fpm
-router_http_port: "80"
-router_https_port: "443"
+router_http_port: '80'
+router_https_port: '443'
 xdebug_enabled: false
 # @see https://ddev.readthedocs.io/en/stable/users/extend/additional-hostnames/
 additional_hostnames:
@@ -20,13 +20,13 @@ database:
   # if attempted to import into the current latest MariaDB (10.4) available in
   # DDEV.
   type: mysql
-  version: "8.0"
+  version: '8.0'
 nfs_mount_enabled: false
 mutagen_enabled: false
 use_dns_when_possible: true
-composer_version: "2"
+composer_version: '2'
 web_environment: []
-nodejs_version: "20"
+nodejs_version: '20'
 # Required to use Yarn 4 without checking in the binary.
 #
 # @see https://yarnpkg.com/blog/release/4.0#installing-yarn
