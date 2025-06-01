@@ -99,9 +99,14 @@ cache:
     # @see https://ddev.readthedocs.io/en/stable/users/usage/diagnostics/
     - ddev config global --instrumentation-opt-in=true
     # Disable the DDEV SSH agent container as it fails its health checks and we
-    # shouldn't need it.
+    # don't need it.
     - ddev config global --omit-containers=ddev-ssh-agent
-    - ddev mutagen reset && ddev config global --mutagen-enabled=false
+    # Ensure neither Mutagen nor NFS are used. The former seems primarily
+    # intended for Mac and Windows, and the latter is deprecated and not
+    # recommended.
+    #
+    # @see https://ddev.readthedocs.io/en/stable/users/install/performance/
+    - ddev mutagen reset && ddev config global --performance-mode=none
     # Pass the Composer and Yarn cache directory paths to the container since
     # they don't inherit environment variables from outside the container.
     #
