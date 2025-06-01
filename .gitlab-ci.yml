@@ -175,6 +175,31 @@ build:yarn:
     - ddev yarn install
     - ddev yarn build:deploy
 
+validate:composer:
+
+  <<: *ddev-base
+
+  stage: validate
+
+  needs:
+    - build:composer
+
+  rules:
+    # Run only on these path patterns having changes.
+    #
+    # @see https://docs.gitlab.com/ci/yaml/#ruleschanges
+    - changes: *file-patterns-ddev
+    - changes: *file-patterns-composer
+
+  script:
+    # @see https://getcomposer.org/doc/03-cli.md#validate
+    #
+    # @todo Use the --strict option? Currently fails due to "2.x-dev as 2.0@dev"
+    #   style versions that lack a version constraint. Figure out if we can
+    #   use a version range/constraint that doesn't result in a warning while
+    #   also allowing the use of checked out Git branches.
+    - ddev composer validate --no-check-version
+
 # Hidden job intended as a template for tests.
 #
 # @see https://docs.gitlab.com/ee/ci/yaml/yaml_optimization.html#anchors
