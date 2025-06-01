@@ -29,6 +29,9 @@ cache:
     - '$COMPOSER_CACHE_DIR_CI'
     - '$YARN_CACHE_DIR_CI'
 
+.file-patterns-ci: &file-patterns-ci
+  - .gitlab-ci.yml
+
 .file-patterns-ddev: &file-patterns-ddev
   - .ddev/**/*
 
@@ -143,6 +146,7 @@ build:composer:
     # Run only on these path patterns having changes.
     #
     # @see https://docs.gitlab.com/ci/yaml/#ruleschanges
+    - changes: *file-patterns-ci
     - changes: *file-patterns-ddev
     - changes: *file-patterns-composer
     # Because subsequent jobs require this and there's way to have subsequent
@@ -167,6 +171,7 @@ build:yarn:
     # Run only on these path patterns having changes.
     #
     # @see https://docs.gitlab.com/ci/yaml/#ruleschanges
+    - changes: *file-patterns-ci
     - changes: *file-patterns-ddev
     - changes: *file-patterns-composer
     - changes: *file-patterns-yarn
@@ -188,6 +193,7 @@ validate:composer:
     # Run only on these path patterns having changes.
     #
     # @see https://docs.gitlab.com/ci/yaml/#ruleschanges
+    - changes: *file-patterns-ci
     - changes: *file-patterns-ddev
     - changes: *file-patterns-composer
 
@@ -220,6 +226,7 @@ test:phpunit:
     # Run only on these path patterns having changes.
     #
     # @see https://docs.gitlab.com/ci/yaml/#ruleschanges
+    - changes: *file-patterns-ci
     - changes: *file-patterns-ddev
     - changes: *file-patterns-composer
     - changes: *file-patterns-phpunit
