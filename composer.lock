@@ -4971,12 +4971,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-pipeline.git",
-                "reference": "5361ae5a5999d6dde4c1230a8618cdc08176eaf7"
+                "reference": "30ac63c70d7247722a5aa06a18a44ac566ea0516"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-pipeline/repository/archive.zip?sha=5361ae5a5999d6dde4c1230a8618cdc08176eaf7",
-                "reference": "5361ae5a5999d6dde4c1230a8618cdc08176eaf7",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-pipeline/repository/archive.zip?sha=30ac63c70d7247722a5aa06a18a44ac566ea0516",
+                "reference": "30ac63c70d7247722a5aa06a18a44ac566ea0516",
                 "shasum": ""
             },
             "require": {
@@ -5002,7 +5002,7 @@
                 "source": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-pipeline",
                 "issues": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-pipeline/-/issues"
             },
-            "time": "2025-05-04T19:27:17-04:00"
+            "time": "2025-06-15T17:46:07-04:00"
         },
         {
             "name": "drupal/omnipedia_search",
@@ -5752,7 +5752,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/refreshless.git",
-                "reference": "6038219a3bf9677fc9ec7e1cd8b84fd308522206"
+                "reference": "614ea451e89f05b55124a13078c921189cc9c60c"
             },
             "require": {
                 "composer/semver": "^3.0",
@@ -5771,8 +5771,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "2.0.0-alpha9+2-dev",
-                    "datestamp": "1746481081",
+                    "version": "2.0.0-alpha9+17-dev",
+                    "datestamp": "1750023585",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
