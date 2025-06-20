@@ -90,6 +90,11 @@ cache:
     # @see https://docs.gitlab.com/ee/ci/docker/using_docker_images.html#overriding-the-entrypoint-of-an-image
     entrypoint: ['']
 
+  # Allow jobs to be cancelled if a newer commit is pushed to the same branch.
+  #
+  # @see https://docs.gitlab.com/ci/pipelines/settings/#auto-cancel-redundant-pipelines
+  interruptible: true
+
   rules:
     # Run only on these path patterns having changes.
     #
