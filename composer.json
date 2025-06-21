@@ -143,6 +143,11 @@
     },
     {
       "type": "vcs",
+      "url": "https://git.drupalcode.org/issue/refreshless-3411449.git",
+      "only": ["drupal/refreshless"]
+    },
+    {
+      "type": "vcs",
       "url": "https://github.com/Ambient-Impact/drupal-trusted-reverse-proxy.git",
       "only": ["drupal/trusted_reverse_proxy"]
     },
@@ -214,7 +219,7 @@
     "drupal/purge_users": "^4.0@beta",
     "drupal/rebuilder": "1.x-dev as 1.2",
     "drupal/redirect": "^1.6",
-    "drupal/refreshless": "2.x-dev as 2.0@dev",
+    "drupal/refreshless": "dev-3411449-enable-turbo-cache as 2.0@dev",
     "drupal/rules": "^3.0@alpha || ^4.0",
     "drupal/s3fs": "^3.6",
     "drupal/seckit": "^2.0",

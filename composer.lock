@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "84976062e287371568be96250daef747",
+    "content-hash": "9bcd8b75989fdad68d089a57ee7e0d3b",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -5748,11 +5748,11 @@
         },
         {
             "name": "drupal/refreshless",
-            "version": "dev-2.x",
+            "version": "dev-3411449-enable-turbo-cache",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/refreshless.git",
-                "reference": "614ea451e89f05b55124a13078c921189cc9c60c"
+                "url": "https://git.drupalcode.org/issue/refreshless-3411449.git",
+                "reference": "b578df5e1071c8c2f328afb3fe5d23dc6b9daf9b"
             },
             "require": {
                 "composer/semver": "^3.0",
@@ -5761,23 +5761,8 @@
                 "drupal/hux": "^1.4",
                 "php": "^8.1"
             },
-            "require-dev": {
-                "drupal/hux": "*",
-                "drupal/refreshless_turbo": "*"
-            },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
-                "drupal": {
-                    "version": "2.0.0-alpha9+17-dev",
-                    "datestamp": "1750023585",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
-                    }
-                },
                 "patches": {
                     "drupal/core": {
                         "JS aggregation should account for \"async\" and \"defer\" attributes [#1587536]: https://www.drupal.org/project/drupal/issues/1587536": "https://git.drupalcode.org/project/refreshless/-/raw/9bd0325f415e95bfaa7adc29daaf26cc32bed673/modules/refreshless_turbo/patches/drupal/core/1587536-js-aggregation-async-defer-attributes.patch",
@@ -5786,7 +5771,6 @@
                     }
                 }
             },
-            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0-or-later"
             ],
@@ -5804,30 +5788,6 @@
                 {
                     "name": "See other contributors",
                     "homepage": "https://www.drupal.org/node/2693129/committers"
-                },
-                {
-                    "name": "handkerchief",
-                    "homepage": "https://www.drupal.org/user/3090607"
-                },
-                {
-                    "name": "jaydip makawana",
-                    "homepage": "https://www.drupal.org/user/3621830"
-                },
-                {
-                    "name": "rajeshreeputra",
-                    "homepage": "https://www.drupal.org/user/3418561"
-                },
-                {
-                    "name": "renguer0",
-                    "homepage": "https://www.drupal.org/user/3623854"
-                },
-                {
-                    "name": "ronaldtebrake",
-                    "homepage": "https://www.drupal.org/user/2314038"
-                },
-                {
-                    "name": "wim leers",
-                    "homepage": "https://www.drupal.org/user/99777"
                 }
             ],
             "description": "RefreshLess layers JavaScript-based navigation on top of Drupal's existing server-rendered HTML to provide the kind of smooth, fast, and responsive experience users expect.",
@@ -5837,10 +5797,11 @@
                 "scalability"
             ],
             "support": {
-                "source": "https://git.drupalcode.org/project/refreshless",
                 "issues": "https://www.drupal.org/project/issues/refreshless",
-                "irc": "irc://irc.freenode.org/drupal"
-            }
+                "irc": "irc://irc.freenode.org/drupal",
+                "source": "https://git.drupalcode.org/project/refreshless"
+            },
+            "time": "2025-06-21T17:55:23+00:00"
         },
         {
             "name": "drupal/rules",
@@ -20429,7 +20390,7 @@
         },
         {
             "package": "drupal/refreshless",
-            "version": "2.9999999.9999999.9999999-dev",
+            "version": "dev-3411449-enable-turbo-cache",
             "alias": "2.0@dev",
             "alias_normalized": "2.0.0.0"
         }
