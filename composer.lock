@@ -5061,12 +5061,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/omnipedia-theme.git",
-                "reference": "27ce679e9ab64281ffcc2ddd6af92c3f398413ef"
+                "reference": "d9b0d4ad3fd027af3c9ad74851df4e87c9cc5e85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fomnipedia-theme/repository/archive.zip?sha=27ce679e9ab64281ffcc2ddd6af92c3f398413ef",
-                "reference": "27ce679e9ab64281ffcc2ddd6af92c3f398413ef",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fomnipedia-theme/repository/archive.zip?sha=d9b0d4ad3fd027af3c9ad74851df4e87c9cc5e85",
+                "reference": "d9b0d4ad3fd027af3c9ad74851df4e87c9cc5e85",
                 "shasum": ""
             },
             "require": {
@@ -5101,7 +5101,7 @@
                 "source": "https://gitlab.com/neurocracy/omnipedia/omnipedia-theme",
                 "issues": "https://gitlab.com/neurocracy/omnipedia/omnipedia-theme/-/issues"
             },
-            "time": "2025-06-21T13:42:44-04:00"
+            "time": "2025-06-22T14:34:56-04:00"
         },
         {
             "name": "drupal/omnipedia_user",
@@ -5752,7 +5752,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/issue/refreshless-3411449.git",
-                "reference": "b578df5e1071c8c2f328afb3fe5d23dc6b9daf9b"
+                "reference": "5a8f9e92be56acd8d3f8ab2fd18217728a992737"
             },
             "require": {
                 "composer/semver": "^3.0",
@@ -5801,7 +5801,7 @@
                 "irc": "irc://irc.freenode.org/drupal",
                 "source": "https://git.drupalcode.org/project/refreshless"
             },
-            "time": "2025-06-21T17:55:23+00:00"
+            "time": "2025-06-22T17:44:43+00:00"
         },
         {
             "name": "drupal/rules",
