@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "faae59a541e618cd74df530e5dd4c1db",
+    "content-hash": "d8262f7dfdd69112ff49f0162314d232",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -5748,11 +5748,11 @@
         },
         {
             "name": "drupal/refreshless",
-            "version": "dev-3411449-enable-turbo-cache",
+            "version": "dev-cache-and-lazy-preloader",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/issue/refreshless-3411449.git",
-                "reference": "5a8f9e92be56acd8d3f8ab2fd18217728a992737"
+                "url": "https://git.drupalcode.org/project/refreshless.git",
+                "reference": "d7aa5dac0f3f1ca14c77aacea32f1642b2047965"
             },
             "require": {
                 "composer/semver": "^3.0",
@@ -5801,7 +5801,7 @@
                 "irc": "irc://irc.freenode.org/drupal",
                 "source": "https://git.drupalcode.org/project/refreshless"
             },
-            "time": "2025-06-22T17:44:43+00:00"
+            "time": "2025-06-23T21:43:23+00:00"
         },
         {
             "name": "drupal/rules",
@@ -20460,7 +20460,7 @@
         },
         {
             "package": "drupal/refreshless",
-            "version": "dev-3411449-enable-turbo-cache",
+            "version": "dev-cache-and-lazy-preloader",
             "alias": "2.0@dev",
             "alias_normalized": "2.0.0.0"
         }
