@@ -238,7 +238,7 @@
     "drupal/views_bulk_operations": "^4.1",
     "drupal/warmer": "^2.0",
     "drupal/webp": "^1.0",
-    "drush/drush": "^12.4.3 || ^13",
+    "drush/drush": "^13.6",
     "oomphinc/composer-installers-extender": "^2.0",
     "react/async": "^4.1",
     "react/child-process": "^0.6.5",
