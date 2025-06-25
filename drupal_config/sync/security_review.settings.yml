@@ -4,7 +4,15 @@ untrusted_roles:
   - anonymous
   - authenticated
 log: false
-skipped: {  }
+skipped:
+  trusted_hosts:
+    skipped: true
+    skipped_by: '2'
+    skipped_on: 1750716732
+  headers:
+    skipped: true
+    skipped_by: '2'
+    skipped_on: 1750716780
 views_access:
   ignore_default: false
 upload_extensions:
