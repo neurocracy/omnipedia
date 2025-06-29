@@ -1,0 +1,15 @@
+uuid: d74c61b1-28cf-4a82-8b08-809293065b06
+langcode: en
+status: true
+dependencies: {  }
+name: omnipedia_infobox_1300x2600
+label: 'Omnipedia infobox 1300x2600'
+effects:
+  1d00333e-d837-4932-a17c-afff73f62040:
+    uuid: 1d00333e-d837-4932-a17c-afff73f62040
+    id: image_scale
+    weight: 1
+    data:
+      width: 1300
+      height: 2600
+      upscale: false

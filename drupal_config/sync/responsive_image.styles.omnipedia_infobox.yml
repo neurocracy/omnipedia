@@ -1,0 +1,23 @@
+uuid: f9651677-b0e2-42c0-a7da-5ffd9e41a450
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.omnipedia_infobox_1300x2600
+    - image.style.omnipedia_infobox_325x650
+    - image.style.omnipedia_infobox_650x1300
+id: omnipedia_infobox
+label: 'Omnipedia infobox'
+image_style_mappings:
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: '(max-width: 30em) 95vw, (min-width: 30em) 25vw'
+      sizes_image_styles:
+        - omnipedia_infobox_1300x2600
+        - omnipedia_infobox_325x650
+        - omnipedia_infobox_650x1300
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+breakpoint_group: responsive_image
+fallback_image_style: omnipedia_infobox_325x650

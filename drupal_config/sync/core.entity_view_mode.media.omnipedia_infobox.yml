@@ -1,0 +1,11 @@
+uuid: ec1f20a7-31e4-4c59-8d7c-59714e2362a3
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.omnipedia_infobox
+label: 'Omnipedia infobox'
+description: ''
+targetEntityType: media
+cache: true
