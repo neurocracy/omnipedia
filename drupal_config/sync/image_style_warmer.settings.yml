@@ -11,6 +11,10 @@ initial_image_styles:
   medium: medium
   omnipedia_embedded_group_1x: omnipedia_embedded_group_1x
   omnipedia_embedded_group_2x: omnipedia_embedded_group_2x
+  omnipedia_infobox_1300x2600: omnipedia_infobox_1300x2600
+  omnipedia_infobox_325x650: omnipedia_infobox_325x650
+  omnipedia_infobox_650x1300: omnipedia_infobox_650x1300
+  open_graph: open_graph
   thumbnail: thumbnail
 queue_image_styles:
   content_image_large: content_image_large
@@ -25,4 +29,8 @@ queue_image_styles:
   medium: medium
   omnipedia_embedded_group_1x: omnipedia_embedded_group_1x
   omnipedia_embedded_group_2x: omnipedia_embedded_group_2x
+  omnipedia_infobox_1300x2600: omnipedia_infobox_1300x2600
+  omnipedia_infobox_325x650: omnipedia_infobox_325x650
+  omnipedia_infobox_650x1300: omnipedia_infobox_650x1300
+  open_graph: open_graph
   thumbnail: thumbnail
