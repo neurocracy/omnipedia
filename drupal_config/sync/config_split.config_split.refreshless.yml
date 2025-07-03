@@ -12,6 +12,7 @@ storage: folder
 folder: ../drupal_config/splits/refreshless
 module:
   omnipedia_core_refreshless: 0
+  omnipedia_date_refreshless: 0
   omnipedia_pipeline: 0
   refreshless: 0
   refreshless_turbo: 0

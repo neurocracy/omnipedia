@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d8262f7dfdd69112ff49f0162314d232",
+    "content-hash": "2e978e44f173983037e6de1069a93752",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -4696,26 +4696,26 @@
         },
         {
             "name": "drupal/omnipedia_date",
-            "version": "5.x-dev",
+            "version": "dev-refreshless-set-date-header",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-date.git",
-                "reference": "8e2558423514ea2aac6756c81b4665f141f9c72a"
+                "reference": "c8e33f816c0372ca129566822a784e46e3de4c37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-date/repository/archive.zip?sha=8e2558423514ea2aac6756c81b4665f141f9c72a",
-                "reference": "8e2558423514ea2aac6756c81b4665f141f9c72a",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-date/repository/archive.zip?sha=c8e33f816c0372ca129566822a784e46e3de4c37",
+                "reference": "c8e33f816c0372ca129566822a784e46e3de4c37",
                 "shasum": ""
             },
             "require": {
                 "drupal/core": "^9.5 || ^10.0 || ^11.0",
                 "drupal/hook_event_dispatcher": "^3.1 || ^4.0",
+                "drupal/hux": "^1.6",
                 "drupal/omnipedia_core": "^5.0@dev || ^6.0@dev",
                 "drupal/typed_entity": "^4.0",
                 "php": "^8.1"
             },
-            "default-branch": true,
             "type": "drupal-custom-module",
             "license": [
                 "GPL-3.0-or-later"
@@ -4733,7 +4733,7 @@
                 "source": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-date",
                 "issues": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-date/-/issues"
             },
-            "time": "2025-06-29T00:33:10-04:00"
+            "time": "2025-07-03T11:54:32-04:00"
         },
         {
             "name": "drupal/omnipedia_discourse",
@@ -20452,6 +20452,12 @@
         }
     ],
     "aliases": [
+        {
+            "package": "drupal/omnipedia_date",
+            "version": "dev-refreshless-set-date-header",
+            "alias": "5.0@dev",
+            "alias_normalized": "5.0.0.0"
+        },
         {
             "package": "drupal/rebuilder",
             "version": "1.9999999.9999999.9999999-dev",

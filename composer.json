@@ -201,7 +201,7 @@
     "drupal/omnipedia_changes": "^7.0@dev",
     "drupal/omnipedia_content": "^7.0@dev",
     "drupal/omnipedia_core": "^6.0@dev",
-    "drupal/omnipedia_date": "^5.0@dev",
+    "drupal/omnipedia_date": "dev-refreshless-set-date-header as 5.0@dev",
     "drupal/omnipedia_discourse": "^1.0@dev",
     "drupal/omnipedia_logger": "^4.0@dev",
     "drupal/omnipedia_main_page": "^1.0@dev",
