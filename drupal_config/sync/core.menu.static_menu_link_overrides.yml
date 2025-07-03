@@ -151,3 +151,39 @@ definitions:
     weight: 0
     expanded: false
     enabled: true
+  navigation__content__node_type__page:
+    weight: -47
+    menu_name: content
+    parent: navigation.create
+    expanded: false
+    enabled: true
+  navigation__content__node_type__wiki_page:
+    weight: -50
+    menu_name: content
+    parent: navigation.create
+    expanded: false
+    enabled: true
+  navigation__content__media_type__document:
+    weight: -46
+    menu_name: content
+    parent: navigation.create
+    expanded: false
+    enabled: false
+  navigation__content__media_type__image:
+    weight: -48
+    menu_name: content
+    parent: navigation.create
+    enabled: true
+    expanded: false
+  navigation__create__user:
+    weight: -45
+    menu_name: content
+    parent: navigation.create
+    expanded: false
+    enabled: false
+  omnipedia_attached_data__navigation_create:
+    weight: -49
+    menu_name: content
+    parent: navigation.create
+    enabled: true
+    expanded: false
