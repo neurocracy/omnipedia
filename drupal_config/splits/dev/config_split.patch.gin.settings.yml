@@ -1,9 +1,4 @@
 adding:
-  logo:
-    use_default: true
   preset_accent_color: pink
-  secondary_toolbar_frontend: false
-  show_description_toggle: false
-  sticky_action_buttons: false
 removing:
   preset_accent_color: custom
