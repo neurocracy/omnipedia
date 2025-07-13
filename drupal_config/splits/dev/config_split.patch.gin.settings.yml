@@ -6,4 +6,4 @@ adding:
   show_description_toggle: false
   sticky_action_buttons: false
 removing:
-  preset_accent_color: blue
+  preset_accent_color: custom
