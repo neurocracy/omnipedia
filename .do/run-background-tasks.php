@@ -18,47 +18,57 @@ $loop->futureTick(function(): void {
   (new WorkerProcess(__DIR__ . '/build/write-htaccess.sh'))->start();
 });
 
+function isDeploymentActive(): bool {
+
+  // The drush state:get command returns an empty value if the key isn't set,
+  // so we don't need to check for that directly.
+  return \trim(\exec(
+    'drush state:get digitalocean.deployment_active',
+  )) === 'true';
+
+}
+
 /**
  * True if maintenance mode is currently on; false otherwise.
  *
  * @var boolean
  */
-$maintenance = \trim(\exec('drush maint:get')) === '1';
+$isDeploymentActive = isDeploymentActive();
 
 /**
- * Amount of time to sleep between checks for maintenance mode to turn off.
+ * Amount of time to sleep between checks for deployment to finish.
  *
  * @var integer
  */
-$maintenanceSleep = 5;
+$deploymentActiveSleep = 5;
 
 // Basic and ugly wait for maintenance mode to be turned off during a deploy.
 //
 // @see https://reactphp.org/promise-timer/#sleep Can we instead implement this
 //   using ReactPHP? Attempted using ChildProcess but that didn't seem to work
 //   as expected, was not calling the stdout/stderr callbacks at all.
-if ($maintenance === true) {
+if ($isDeploymentActive === true) {
 
   print 'Waiting for maintenance mode to be turned off.' . "\n";
 
   do {
 
-    if (\trim(\exec('drush maint:get')) === '0') {
+    $isDeploymentActive = isDeploymentActive();
 
-      $maintenance = false;
+    if ($isDeploymentActive === false) {
 
-      print 'Maintenance mode has been turned off; continuing run.' . "\n";
+      print 'Deployment finished; continuing run.' . "\n";
 
       break;
 
     }
 
     print \sprintf(
-      'Maintenance mode enabled; sleeping for %d seconds.',
-      $maintenanceSleep,
+      'Currently deploying; sleeping for %d seconds.',
+      $deploymentActiveSleep,
     ) . "\n";
 
-    sleep($maintenanceSleep);
+    sleep($deploymentActiveSleep);
 
   } while (true);
 
