@@ -1,0 +1,17 @@
+_core:
+  default_config_hash: Zh4iXZzPYu0noNB7nq7VJtc2b2jRQlcsm_iPCVhR328
+langcode: en
+publish:
+  state:
+    published: published
+unpublish:
+  state:
+    archived: archived
+    draft: draft
+archive:
+  state:
+    archived: archived
+disable_toolbar_language_switcher: false
+enable_dialog_node_edit_form: true
+enable_dialog_admin_content: true
+retain_revision_info: false

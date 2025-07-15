@@ -196,6 +196,7 @@
     "drupal/markdown": "^3.0",
     "drupal/media_entity_file_replace": "^1.0",
     "drupal/metatag": "^2.0",
+    "drupal/moderated_content_bulk_publish": "^2.0",
     "drupal/omnipedia_access": "^5.0@dev",
     "drupal/omnipedia_asset": "^2.0@dev",
     "drupal/omnipedia_attached_data": "^5.0@dev",

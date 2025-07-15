@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c62f370c5802793025cd82fc7100e3d4",
+    "content-hash": "0ccdaee93936e2747f26bc4c4882dede",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -4416,6 +4416,61 @@
                 "source": "https://git.drupalcode.org/project/metatag",
                 "issues": "https://www.drupal.org/project/issues/metatag",
                 "docs": "https://www.drupal.org/docs/8/modules/metatag"
+            }
+        },
+        {
+            "name": "drupal/moderated_content_bulk_publish",
+            "version": "2.0.36",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/moderated_content_bulk_publish.git",
+                "reference": "2.0.36"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/moderated_content_bulk_publish-2.0.36.zip",
+                "reference": "2.0.36",
+                "shasum": "a0b8058c17b26a9566b2515167c763854b94a8c3"
+            },
+            "require": {
+                "drupal/core": "^10.2 || ^11",
+                "drupal/pathauto": "*",
+                "drupal/views_bulk_operations": "^4.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.36",
+                    "datestamp": "1746054203",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "See all contributors",
+                    "homepage": "https://www.drupal.org/node/3070758/committers"
+                },
+                {
+                    "name": "joseph.olstad",
+                    "homepage": "https://www.drupal.org/user/1321830"
+                },
+                {
+                    "name": "smulvih2",
+                    "homepage": "https://www.drupal.org/user/795442"
+                }
+            ],
+            "description": "The Moderated Content Bulk Publish module does what it says from the /admin/content view.",
+            "homepage": "https://www.drupal.org/project/moderated_content_bulk_publish",
+            "support": {
+                "source": "git://git.drupal.org/project/moderated_content_bulk_publish.git",
+                "issues": "https://www.drupal.org/project/issues/moderated_content_bulk_publish"
             }
         },
         {

@@ -37,6 +37,7 @@ dependencies:
     - markdown
     - media
     - metatag
+    - moderated_content_bulk_publish
     - navigation
     - node
     - omnipedia_access
@@ -178,6 +179,11 @@ permissions:
   - 'flood unblock ips'
   - 'link to any page'
   - 'manage password reset'
+  - 'moderated content bulk archive'
+  - 'moderated content bulk pin content'
+  - 'moderated content bulk publish'
+  - 'moderated content bulk unpin content'
+  - 'moderated content bulk unpublish'
   - 'notify of path changes'
   - 'omnipedia_access bypass not found'
   - 'perform batch updates entity usage'

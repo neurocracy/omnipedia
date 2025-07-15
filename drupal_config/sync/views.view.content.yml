@@ -88,30 +88,52 @@ display:
           clear_on_exposed: true
           force_selection_info: false
           selected_actions:
-            2:
+            -
               action_id: node_assign_owner_action
               preconfiguration:
                 add_confirmation: false
+                confirm_help_text: ''
                 label_override: 'Change author'
-            8:
-              action_id: omnipedia_access_rebuild_node_access
-              preconfiguration:
-                add_confirmation: false
-            9:
+                message_override: ''
+            -
               action_id: views_bulk_edit
               preconfiguration:
                 add_confirmation: false
+                confirm_help_text: ''
+                message_override: ''
                 get_bundles_from_results: true
-            11:
+            -
               action_id: 'entity:publish_action:node'
               preconfiguration:
                 add_confirmation: false
+                confirm_help_text: ''
                 label_override: Publish
-            13:
+                message_override: ''
+            -
               action_id: 'entity:unpublish_action:node'
               preconfiguration:
                 add_confirmation: false
+                confirm_help_text: ''
                 label_override: Unpublish
+                message_override: ''
+            -
+              action_id: unpublish_current_revision_action
+              preconfiguration:
+                add_confirmation: false
+                confirm_help_text: ''
+                message_override: ''
+            -
+              action_id: archive_current_revision_action
+              preconfiguration:
+                add_confirmation: false
+                confirm_help_text: ''
+                message_override: ''
+            -
+              action_id: publish_latest_revision_action
+              preconfiguration:
+                add_confirmation: false
+                confirm_help_text: ''
+                message_override: ''
         title:
           id: title
           table: node_field_data
@@ -386,13 +408,13 @@ display:
       pager:
         type: full
         options:
+          pagination_heading_level: h4
           items_per_page: 50
           tags:
             next: 'Next ›'
             previous: '‹ Previous'
             first: '« First'
             last: 'Last »'
-          pagination_heading_level: h4
       exposed_form:
         type: basic
         options:
