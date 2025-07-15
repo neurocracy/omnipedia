@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Disable maintenance mode if it wasn't enabled when the deployment started.
+# Disable maintenance mode if not already enabled when deployment started.
 if [ "$(drush state:get digitalocean.maint_preserve_on)" == "1" ]; then
 
   echo "=> Maintenance mode was already turned on before deployment; leaving it enabled"

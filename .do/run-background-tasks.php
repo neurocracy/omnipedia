@@ -18,6 +18,12 @@ $loop->futureTick(function(): void {
   (new WorkerProcess(__DIR__ . '/build/write-htaccess.sh'))->start();
 });
 
+/**
+ * Check if we're currently deploying.
+ *
+ * @return boolean
+ *   True if a deployment is currenty running; false otherwise.
+ */
 function isDeploymentActive(): bool {
 
   // The drush state:get command returns an empty value if the key isn't set,
@@ -29,7 +35,7 @@ function isDeploymentActive(): bool {
 }
 
 /**
- * True if maintenance mode is currently on; false otherwise.
+ * True if a deployment is currently running; false otherwise.
  *
  * @var boolean
  */
@@ -42,14 +48,14 @@ $isDeploymentActive = isDeploymentActive();
  */
 $deploymentActiveSleep = 5;
 
-// Basic and ugly wait for maintenance mode to be turned off during a deploy.
+// Basic and ugly wait for a deployment to finish.
 //
 // @see https://reactphp.org/promise-timer/#sleep Can we instead implement this
 //   using ReactPHP? Attempted using ChildProcess but that didn't seem to work
 //   as expected, was not calling the stdout/stderr callbacks at all.
 if ($isDeploymentActive === true) {
 
-  print 'Waiting for maintenance mode to be turned off.' . "\n";
+  print 'Waiting for deployment to finish.' . "\n";
 
   do {
 
@@ -64,7 +70,7 @@ if ($isDeploymentActive === true) {
     }
 
     print \sprintf(
-      'Currently deploying; sleeping for %d seconds.',
+      'Still deploying; sleeping for %d seconds.',
       $deploymentActiveSleep,
     ) . "\n";
 

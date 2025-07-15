@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Disable maintenance mode if it wasn't enabled when the deployment started.
+# Disable maintenance mode if not already enabled when deployment started.
 #
 # The database is shared between all deploys, even failed ones, so we need to
 # turn off maintenance mode so that the live copy of the site (not this failed
