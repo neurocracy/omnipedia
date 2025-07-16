@@ -22,10 +22,13 @@ settings:
     value: 'We find ourselves in unprecedented times, navigating a crisis that has shaken the world to its very core. Now more than ever, we need an accessible and reliable source of information as it comes in. **Omnipedia** can be that source, but not without your help. If you are able, please donate now. I promise you, there is a light at the end of this tunnel, and we will guide you there.'
     format: wiki_html
   join_label: 'Donate now'
-  join_url: 'https://pyrofoux.itch.io/neurocracy2049'
+  join_url: 'https://pyrofoux.itch.io/neurocracy'
 visibility:
   request_path:
     id: request_path
     negate: true
     context_mapping: {  }
-    pages: "/wiki/2049/09/28/Main_Page\r\n/wiki/2049/09/29/Main_Page\r\n/wiki/2049/09/30/Main_Page"
+    pages: |-
+      /wiki/2049/09/28/Main_Page
+      /wiki/2049/09/29/Main_Page
+      /wiki/2049/09/30/Main_Page
