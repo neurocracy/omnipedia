@@ -5373,7 +5373,7 @@ __metadata:
     "@symfony/webpack-encore": "npm:^4.7.0"
     autoprefixer: "npm:^10.2.5"
     css-loader: "npm:^6.11.0"
-    drupal-ambientimpact-core: "workspace:^1 || ^2"
+    drupal-ambientimpact-core: "workspace:^1 || ^2 || ^3"
     drupal-ambientimpact-ux: "workspace:^2"
     glob: "npm:^11.0.0"
     mini-css-extract-plugin: "npm:^2.9.1"
@@ -5388,7 +5388,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"drupal-ambientimpact-core@workspace:^1 || ^2, drupal-ambientimpact-core@workspace:^2, drupal-ambientimpact-core@workspace:web/modules/custom/ambientimpact_core":
+"drupal-ambientimpact-core@workspace:^1 || ^2, drupal-ambientimpact-core@workspace:^1 || ^2 || ^3, drupal-ambientimpact-core@workspace:^2, drupal-ambientimpact-core@workspace:^2 || ^3, drupal-ambientimpact-core@workspace:web/modules/custom/ambientimpact_core":
   version: 0.0.0-use.local
   resolution: "drupal-ambientimpact-core@workspace:web/modules/custom/ambientimpact_core"
   dependencies:
@@ -5425,7 +5425,7 @@ __metadata:
     "@symfony/webpack-encore": "npm:^4.7.0"
     autoprefixer: "npm:^10.2.5"
     css-loader: "npm:^6.11.0"
-    drupal-ambientimpact-core: "workspace:^1 || ^2"
+    drupal-ambientimpact-core: "workspace:^1 || ^2 || ^3"
     glob: "npm:^11.0.0"
     mini-css-extract-plugin: "npm:^2.9.1"
     postcss: "npm:^8.4.31"
@@ -5449,7 +5449,7 @@ __metadata:
     "@symfony/webpack-encore": "npm:^4.7.0"
     autoprefixer: "npm:^10.2.5"
     css-loader: "npm:^6.11.0"
-    drupal-ambientimpact-core: "workspace:^2"
+    drupal-ambientimpact-core: "workspace:^2 || ^3"
     drupal-ambientimpact-icon: "workspace:^1"
     file-loader: "npm:^6.2.0"
     glob: "npm:^11.0.0"
@@ -5479,7 +5479,7 @@ __metadata:
     autosize: "npm:^4.0.2"
     chillout: "npm:^3.1.7"
     css-loader: "npm:^6.11.0"
-    drupal-ambientimpact-core: "workspace:^1 || ^2"
+    drupal-ambientimpact-core: "workspace:^1 || ^2 || ^3"
     file-loader: "npm:^6.2.0"
     fontfaceobserver: "npm:^2.1.0"
     fr-offcanvas: "npm:^1.1.1"
