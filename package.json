@@ -23,7 +23,7 @@
   },
   "composerDependencies": {
     "drupal-ambientimpact-base": "workspace:^7",
-    "drupal-ambientimpact-core": "workspace:^2",
+    "drupal-ambientimpact-core": "workspace:^3",
     "drupal-ambientimpact-icon": "workspace:^1",
     "drupal-ambientimpact-media": "workspace:^5",
     "drupal-ambientimpact-ux": "workspace:^2",

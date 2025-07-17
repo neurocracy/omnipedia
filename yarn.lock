@@ -5388,7 +5388,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"drupal-ambientimpact-core@workspace:^1 || ^2, drupal-ambientimpact-core@workspace:^1 || ^2 || ^3, drupal-ambientimpact-core@workspace:^2, drupal-ambientimpact-core@workspace:^2 || ^3, drupal-ambientimpact-core@workspace:web/modules/custom/ambientimpact_core":
+"drupal-ambientimpact-core@workspace:^1 || ^2 || ^3, drupal-ambientimpact-core@workspace:^2 || ^3, drupal-ambientimpact-core@workspace:web/modules/custom/ambientimpact_core":
   version: 0.0.0-use.local
   resolution: "drupal-ambientimpact-core@workspace:web/modules/custom/ambientimpact_core"
   dependencies:
@@ -5510,7 +5510,7 @@ __metadata:
     "@symfony/webpack-encore": "npm:^4.7.0"
     autoprefixer: "npm:^10.2.5"
     css-loader: "npm:^6.11.0"
-    drupal-ambientimpact-core: "workspace:^1 || ^2"
+    drupal-ambientimpact-core: "workspace:^2 || ^3"
     glob: "npm:^11.0.0"
     image-minimizer-webpack-plugin: "npm:^3.8.3"
     mini-css-extract-plugin: "npm:^2.9.1"
@@ -5534,7 +5534,7 @@ __metadata:
     "@symfony/webpack-encore": "npm:^4.7.0"
     autoprefixer: "npm:^10.2.5"
     css-loader: "npm:^6.11.0"
-    drupal-ambientimpact-core: "workspace:^2"
+    drupal-ambientimpact-core: "workspace:^2 || ^3"
     glob: "npm:^11.0.0"
     mini-css-extract-plugin: "npm:^2.9.1"
     postcss: "npm:^8.4.31"
@@ -5556,7 +5556,7 @@ __metadata:
     "@symfony/webpack-encore": "npm:^4.7.0"
     autoprefixer: "npm:^10.2.5"
     css-loader: "npm:^6.11.0"
-    drupal-ambientimpact-core: "workspace:^2"
+    drupal-ambientimpact-core: "workspace:^2 || ^3"
     drupal-ambientimpact-ux: "workspace:^2"
     glob: "npm:^11.0.0"
     mini-css-extract-plugin: "npm:^2.9.1"
@@ -5579,7 +5579,7 @@ __metadata:
     "@symfony/webpack-encore": "npm:^4.7.0"
     autoprefixer: "npm:^10.2.5"
     css-loader: "npm:^6.11.0"
-    drupal-ambientimpact-core: "workspace:^2"
+    drupal-ambientimpact-core: "workspace:^2 || ^3"
     drupal-ambientimpact-media: "workspace:^2 || ^3 || ^4 || ^5"
     glob: "npm:^11.0.0"
     mini-css-extract-plugin: "npm:^2.9.1"
@@ -5607,7 +5607,7 @@ __metadata:
     autoprefixer: "npm:^10.2.6"
     css-loader: "npm:^6.11.0"
     drupal-ambientimpact-base: "workspace:^7"
-    drupal-ambientimpact-core: "workspace:^2"
+    drupal-ambientimpact-core: "workspace:^2 || ^3"
     drupal-ambientimpact-icon: "workspace:^1"
     drupal-ambientimpact-ux: "workspace:^2"
     drupal-omnipedia-block: "workspace:^5 || ^6"
