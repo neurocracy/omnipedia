@@ -256,7 +256,6 @@
     "drupal/config_inspector": "^2.1",
     "drupal/core-dev": "^10.5",
     "drupal/devel": "^5.0",
-    "drupal/devel_entity_updates": "^4.0",
     "drupal/entity_browser": "^2.13",
     "drupal/examples": "^4.0",
     "drupal/feeds": "^3.0",

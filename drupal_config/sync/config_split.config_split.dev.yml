@@ -16,7 +16,6 @@ module:
   config_devel: 0
   config_inspector: 0
   devel: 0
-  devel_entity_updates: 0
   field_ui: 0
   typed_entity_ui: 0
   upgrade_status: 0
