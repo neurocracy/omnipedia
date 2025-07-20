@@ -18,6 +18,7 @@ hidden:
   created: true
   field_episode_tier: true
   field_media_document: true
+  moderation_state: true
   name: true
   path: true
   replace_file: true

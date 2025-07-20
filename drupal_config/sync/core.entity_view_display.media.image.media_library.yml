@@ -29,6 +29,7 @@ content:
     weight: 0
     region: content
 hidden:
+  content_moderation_control: true
   created: true
   field_episode_tier: true
   field_media_image: true
