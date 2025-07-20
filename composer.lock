@@ -5864,7 +5864,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/refreshless.git",
-                "reference": "fe5c8e0a195825beaab2af802b7c4985ecdc04c4"
+                "reference": "fdb836c24bbc45afa8313910475a16be4d0316f4"
             },
             "require": {
                 "composer/semver": "^3.0",
@@ -5883,8 +5883,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "2.0.0-alpha9+82-dev",
-                    "datestamp": "1753046774",
+                    "version": "2.0.0-alpha9+83-dev",
+                    "datestamp": "1753053513",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -5951,7 +5951,8 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/refreshless",
                 "issues": "https://www.drupal.org/project/issues/refreshless",
-                "irc": "irc://irc.freenode.org/drupal"
+                "docs": "https://project.pages.drupalcode.org/refreshless/",
+                "chat": "https://matrix.to/#/#refreshless:matrix.org"
             }
         },
         {
