@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4430f6305ff5f89bfa96365e0232bc70",
+    "content-hash": "873c79ce6d1727e15398429b60b0744f",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -2693,32 +2693,6 @@
                 "source": "https://git.drupalcode.org/project/dblog_persistent",
                 "issues": "https://www.drupal.org/project/issues/dblog_persistent"
             }
-        },
-        {
-            "name": "drupal/development_environment",
-            "version": "2.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Ambient-Impact/drupal-development-environment.git",
-                "reference": "0ed9fcd9100261f5237b0e311bc651d47d68e26a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Ambient-Impact/drupal-development-environment/zipball/0ed9fcd9100261f5237b0e311bc651d47d68e26a",
-                "reference": "0ed9fcd9100261f5237b0e311bc651d47d68e26a",
-                "shasum": ""
-            },
-            "default-branch": true,
-            "type": "drupal-module",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "description": "When this module is enabled, the system it is enabled on is marked as a development environment, logging emails to the watchdog instead of sending them out.",
-            "support": {
-                "source": "https://github.com/Ambient-Impact/drupal-development-environment/tree/2.x",
-                "issues": "https://github.com/Ambient-Impact/drupal-development-environment/issues"
-            },
-            "time": "2023-06-14T22:47:55+00:00"
         },
         {
             "name": "drupal/diff",
@@ -20689,7 +20663,6 @@
         "drupal/ambientimpact_markdown": 20,
         "drupal/ambientimpact_media": 20,
         "drupal/ambientimpact_ux": 20,
-        "drupal/development_environment": 20,
         "drupal/entity_usage": 10,
         "drupal/image_style_warmer": 5,
         "drupal/omnipedia_access": 20,

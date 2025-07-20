@@ -48,11 +48,6 @@
     },
     {
       "type": "vcs",
-      "url": "https://github.com/Ambient-Impact/drupal-development-environment.git",
-      "only": ["drupal/development_environment"]
-    },
-    {
-      "type": "vcs",
       "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-access.git",
       "only": ["drupal/omnipedia_access"]
     },
@@ -169,7 +164,6 @@
     "drupal/core-recommended": "^10.5",
     "drupal/csp": "^2.1",
     "drupal/dblog_persistent": "^2.0",
-    "drupal/development_environment": "^2.0@dev",
     "drupal/diff": "^1.0",
     "drupal/disable_link_rel": "^2.0",
     "drupal/entity_usage": "^2.0@beta",
