@@ -16,6 +16,11 @@ targetEntityType: media
 bundle: image
 mode: default
 content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
   field_media_image:
     type: responsive_image
     label: visually_hidden
