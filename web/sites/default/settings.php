@@ -462,32 +462,6 @@ if (\getenv('DRUPAL_REVERSE_PROXY_ENABLED') === false) {
 }
 
 /**
- * Suppress emails and reroute them to logs if set in this environment.
- *
- * @see https://www.drupal.org/project/development_environment
- *   Uses the Development Environment module to accomplish this. Module must be
- *   installed in all environments.
- */
-if (\getenv('DRUPAL_SUPPRESS_EMAIL') !== false) {
-
-  if (!\in_array(
-    \mb_strtolower(\getenv('DRUPAL_SUPPRESS_EMAIL')), ['true', 'false'],
-  )) {
-
-    throw new \UnexpectedValueException(
-      'The "DRUPAL_SUPPRESS_EMAIL" environment variable must be either "true" or "false" if set! ' .
-      'Got: "' . \getenv('DRUPAL_SUPPRESS_EMAIL') . '"',
-    );
-
-  }
-
-  if (\getenv('DRUPAL_SUPPRESS_EMAIL') === 'true') {
-    $settings['development_environment.log_emails'] = true;
-  }
-
-}
-
-/**
  * SMTP hosts from environment variables.
  */
 foreach ([

@@ -218,6 +218,7 @@
     "drupal/rebuilder": "1.x-dev as 1.2",
     "drupal/redirect": "^1.6",
     "drupal/refreshless": "2.x-dev as 2.0@dev",
+    "drupal/reroute_email": "^2.3@RC",
     "drupal/rules": "^3.0@alpha || ^4.0",
     "drupal/s3fs": "^3.6",
     "drupal/seckit": "^2.0",

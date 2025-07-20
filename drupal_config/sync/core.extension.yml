@@ -25,7 +25,6 @@ module:
   datetime_range: 0
   dblog: 0
   dblog_persistent: 0
-  development_environment: 0
   diff: 0
   disable_link_rel: 0
   discourse_sso: 0
@@ -111,6 +110,7 @@ module:
   rebuilder: 0
   rebuilder_ui: 0
   redirect: 0
+  reroute_email: 0
   responsive_image: 0
   rules: 0
   s3fs: 0

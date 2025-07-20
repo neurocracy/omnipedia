@@ -26,6 +26,7 @@ partial_list:
   - csp.settings
   - dblog.settings
   - gin.settings
+  - reroute_email.settings
   - system.logging
   - system.performance
   - user.role.anonymous

@@ -14,6 +14,7 @@ adding:
       - help
       - key
       - purge_users
+      - reroute_email
       - s3fs
       - seckit
       - smtp
@@ -53,6 +54,7 @@ adding:
     - 'administer node fields'
     - 'administer node form display'
     - 'administer permissions'
+    - 'administer reroute email'
     - 'administer rules'
     - 'administer rules components'
     - 'administer rules reactions'

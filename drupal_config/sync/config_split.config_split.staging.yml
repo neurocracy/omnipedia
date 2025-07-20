@@ -16,3 +16,4 @@ complete_list: {  }
 partial_list:
   - dblog.settings
   - gin.settings
+  - reroute_email.settings

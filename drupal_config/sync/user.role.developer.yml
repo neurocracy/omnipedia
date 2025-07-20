@@ -22,7 +22,6 @@ dependencies:
     - contact
     - content_moderation
     - contextual
-    - development_environment
     - disable_link_rel
     - entity_usage
     - eu_cookie_compliance
@@ -67,7 +66,6 @@ permissions:
   - 'access administration pages'
   - 'access content overview'
   - 'access contextual links'
-  - 'access development environment email logs'
   - 'access entity usage statistics'
   - 'access files overview'
   - 'access media overview'
@@ -86,7 +84,6 @@ permissions:
   - 'add unmanaged files entities'
   - 'admin queue_ui'
   - 'administer contact forms'
-  - 'administer development environment settings'
   - 'administer disable_link_rel configuration'
   - 'administer entity usage'
   - 'administer eu cookie compliance categories'
