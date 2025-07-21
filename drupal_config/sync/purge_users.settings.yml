@@ -18,14 +18,9 @@ purge_included_users_roles:
   developer: '0'
   administrator: '0'
 purge_on_cron: true
-inactive_user_notify_subject: 'Your account is deleted'
-inactive_user_notify_text: |-
-  Dear User, 
-
-  Your account has been deleted due the website’s policy to automatically remove users who match certain criteria. If you have concerns regarding the deletion, please talk to the administrator of the website.
-
-  Thank you
 send_email_notification: false
+inactive_user_notify_subject: 'Your Omnipedia account has been deleted'
+inactive_user_notify_text: 'Your Omnipedia account has been deleted because you never logged in after registering. You may register again with the same user name and email address at [site:url]/user/register'
 purge_user_cancel_method: user_cancel_delete
 disregard_blocked_users: false
 purge_excluded_users_roles:
@@ -34,13 +29,8 @@ purge_excluded_users_roles:
   editor: editor
   developer: developer
   administrator: administrator
-user_before_deletion_subject: 'Your account will be deleted'
-user_before_deletion_text: |-
-  Dear User, 
-
-  Your account will be deleted soon due the website’s policy to automatically remove users who match certain criteria. If you have concerns regarding the deletion, please talk to the administrator of the website.
-
-  Thank you
 send_email_user_before_notification: false
-user_before_notification_value: ''
+user_before_deletion_subject: 'Your Omnipedia account will be deleted in 5 days unless you log in'
+user_before_deletion_text: 'Your Omnipedia account will be deleted in 5 days unless you log in at least once before then. Please log in at [site:url]/user/login with the user name and password you registered with; you can reset your password at [site:url]/user/password'
+user_before_notification_value: '5'
 user_before_notification_period: days
