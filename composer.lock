@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "873c79ce6d1727e15398429b60b0744f",
+    "content-hash": "4e3c2d7058de4b4474356b6ec1f06f72",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -4782,7 +4782,7 @@
         },
         {
             "name": "drupal/omnipedia_date",
-            "version": "dev-refreshless-set-date-header",
+            "version": "5.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-date.git",
@@ -4802,6 +4802,7 @@
                 "drupal/typed_entity": "^4.0",
                 "php": "^8.1"
             },
+            "default-branch": true,
             "type": "drupal-custom-module",
             "license": [
                 "GPL-3.0-or-later"
@@ -20637,12 +20638,6 @@
         }
     ],
     "aliases": [
-        {
-            "package": "drupal/omnipedia_date",
-            "version": "dev-refreshless-set-date-header",
-            "alias": "5.0@dev",
-            "alias_normalized": "5.0.0.0"
-        },
         {
             "package": "drupal/rebuilder",
             "version": "1.9999999.9999999.9999999-dev",
