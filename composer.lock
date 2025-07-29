@@ -4828,12 +4828,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-discourse.git",
-                "reference": "82bfe1afe1c06843bd370e8b5c09be97f027d5a9"
+                "reference": "65fda162e398648d67cae30f4eff1edda8c646eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-discourse/repository/archive.zip?sha=82bfe1afe1c06843bd370e8b5c09be97f027d5a9",
-                "reference": "82bfe1afe1c06843bd370e8b5c09be97f027d5a9",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-discourse/repository/archive.zip?sha=65fda162e398648d67cae30f4eff1edda8c646eb",
+                "reference": "65fda162e398648d67cae30f4eff1edda8c646eb",
                 "shasum": ""
             },
             "require": {
@@ -4873,7 +4873,7 @@
                 "source": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-discourse",
                 "issues": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-discourse/-/issues"
             },
-            "time": "2025-07-29T11:32:36-04:00"
+            "time": "2025-07-29T12:11:07-04:00"
         },
         {
             "name": "drupal/omnipedia_logger",
