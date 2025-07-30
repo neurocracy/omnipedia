@@ -4828,12 +4828,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-discourse.git",
-                "reference": "3da2f67b5b98a183efd6d34d0c8a349399795e28"
+                "reference": "b078a082f0bf1167a6ed339e02f50643daa43395"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-discourse/repository/archive.zip?sha=3da2f67b5b98a183efd6d34d0c8a349399795e28",
-                "reference": "3da2f67b5b98a183efd6d34d0c8a349399795e28",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-discourse/repository/archive.zip?sha=b078a082f0bf1167a6ed339e02f50643daa43395",
+                "reference": "b078a082f0bf1167a6ed339e02f50643daa43395",
                 "shasum": ""
             },
             "require": {
@@ -4852,8 +4852,9 @@
             "extra": {
                 "patches": {
                     "drupal/discourse_sso": {
-                        "Missing config schema [#3344663]: https://www.drupal.org/project/discourse_sso/issues/3344663": "https://raw.githubusercontent.com/neurocracy/drupal-omnipedia-discourse/1.x/patches/drupal/discourse_sso/3344663-missing-config-schema.patch",
-                        "Sites that don't grant 'access content' permission to anonymous users result in access denied when redirected to the Drupal site for log in [#3371060]: https://www.drupal.org/project/discourse_sso/issues/3371060": "https://raw.githubusercontent.com/neurocracy/drupal-omnipedia-discourse/1.x/patches/drupal/discourse_sso/3371060-add-new-login-permission.patch"
+                        "Missing config schema [#3344663]: https://www.drupal.org/project/discourse_sso/issues/3344663": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-discourse/-/raw/3da2f67b5b98a183efd6d34d0c8a349399795e28/patches/drupal/discourse_sso/3344663-missing-config-schema.patch",
+                        "Sites that don't grant 'access content' permission to anonymous users result in access denied when redirected to the Drupal site for log in [#3371060]: https://www.drupal.org/project/discourse_sso/issues/3371060": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-discourse/-/raw/3da2f67b5b98a183efd6d34d0c8a349399795e28/patches/drupal/discourse_sso/3371060-add-new-login-permission.patch",
+                        "Controller should use \\Drupal\\Core\\Url to build \"destination\" instead of doing so manually [#3538890]: https://www.drupal.org/project/discourse_sso/issues/3538890": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-discourse/-/raw/e452bd8a31bbfb710403d6ea8abad834b859ca01/patches/drupal/discourse_sso/3538890-controller-use-url-object.patch"
                     }
                 }
             },
@@ -4873,7 +4874,7 @@
                 "source": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-discourse",
                 "issues": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-discourse/-/issues"
             },
-            "time": "2025-07-29T12:26:13-04:00"
+            "time": "2025-07-30T15:40:11-04:00"
         },
         {
             "name": "drupal/omnipedia_logger",
