@@ -1,4 +1,6 @@
 adding:
   enable: true
+  address: ''
 removing:
   enable: false
+  address: contact@omnipedia.app
