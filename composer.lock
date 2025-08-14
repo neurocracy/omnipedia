@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7b77c11502633960d50bb6f7849e4d00",
+    "content-hash": "8833005cc23828467e554b38638c098a",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -2646,42 +2646,32 @@
         },
         {
             "name": "drupal/dblog_persistent",
-            "version": "2.1.1",
+            "version": "2.1.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/dblog_persistent.git",
-                "reference": "2.1.1"
+                "url": "https://gitlab.com/neurocracy/omnipedia/modules/forks/dblog-persistent.git",
+                "reference": "bfb516b4f9cc1467f14d3832626e3a47b0887123"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/dblog_persistent-2.1.1.zip",
-                "reference": "2.1.1",
-                "shasum": "3aab297c8b3ee09c8dc144a66dc381058b46437f"
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fforks%2Fdblog-persistent/repository/archive.zip?sha=bfb516b4f9cc1467f14d3832626e3a47b0887123",
+                "reference": "bfb516b4f9cc1467f14d3832626e3a47b0887123",
+                "shasum": ""
             },
             "require": {
-                "drupal/core": "^9 || ^10",
+                "drupal/core": "^9 || ^10 || ^11",
                 "php": "^8"
             },
+            "default-branch": true,
             "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "2.1.1",
-                    "datestamp": "1655363570",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0+"
             ],
             "authors": [
                 {
                     "name": "Christoph Burschka",
-                    "homepage": "https://github.com/cburschka",
                     "email": "christoph@burschka.de",
+                    "homepage": "https://github.com/cburschka",
                     "role": "Developer"
                 }
             ],
@@ -2691,9 +2681,10 @@
                 "Drupal"
             ],
             "support": {
-                "source": "https://git.drupalcode.org/project/dblog_persistent",
-                "issues": "https://www.drupal.org/project/issues/dblog_persistent"
-            }
+                "issues": "https://www.drupal.org/project/issues/dblog_persistent",
+                "source": "https://git.drupalcode.org/project/dblog_persistent"
+            },
+            "time": "2024-03-17T09:51:59+00:00"
         },
         {
             "name": "drupal/diff",
@@ -20551,6 +20542,12 @@
     ],
     "aliases": [
         {
+            "package": "drupal/dblog_persistent",
+            "version": "2.1.9999999.9999999-dev",
+            "alias": "2.1.1",
+            "alias_normalized": "2.1.1.0"
+        },
+        {
             "package": "drupal/maintenance200",
             "version": "dev-8.x-2.x",
             "alias": "2.1",
@@ -20588,6 +20585,7 @@
         "drupal/ambientimpact_markdown": 20,
         "drupal/ambientimpact_media": 20,
         "drupal/ambientimpact_ux": 20,
+        "drupal/dblog_persistent": 20,
         "drupal/entity_usage": 10,
         "drupal/image_style_warmer": 5,
         "drupal/maintenance200": 20,

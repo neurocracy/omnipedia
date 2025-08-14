@@ -48,6 +48,11 @@
     },
     {
       "type": "vcs",
+      "url": "https://gitlab.com/neurocracy/omnipedia/modules/forks/dblog-persistent.git",
+      "only": ["drupal/dblog_persistent"]
+    },
+    {
+      "type": "vcs",
       "url": "https://gitlab.com/neurocracy/omnipedia/modules/forks/maintenance200.git",
       "only": ["drupal/maintenance200"]
     },
@@ -178,7 +183,7 @@
     "drupal/core-composer-scaffold": "^10.5",
     "drupal/core-recommended": "^10.5",
     "drupal/csp": "^2.1",
-    "drupal/dblog_persistent": "^2.0",
+    "drupal/dblog_persistent": "2.1.x-dev as 2.1.1",
     "drupal/diff": "^1.0",
     "drupal/disable_link_rel": "^2.0",
     "drupal/entity_usage": "^2.0@beta",
