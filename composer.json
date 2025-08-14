@@ -138,7 +138,7 @@
     },
     {
       "type": "vcs",
-      "url": "https://github.com/Ambient-Impact/drupal-trusted-reverse-proxy.git",
+      "url": "https://gitlab.com/neurocracy/omnipedia/modules/forks/trusted-reverse-proxy.git",
       "only": ["drupal/trusted_reverse_proxy"]
     },
     {

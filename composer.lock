@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3e31709d7039cc37be8f42323270f5d7",
+    "content-hash": "77c9fa11bb8073f95c550f7f9f419265",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -6937,12 +6937,12 @@
             "version": "1.0.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Ambient-Impact/drupal-trusted-reverse-proxy.git",
+                "url": "https://gitlab.com/neurocracy/omnipedia/modules/forks/trusted-reverse-proxy.git",
                 "reference": "a2a0441a13f9290e76f9c5c5dc130fbbbd413369"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Ambient-Impact/drupal-trusted-reverse-proxy/zipball/a2a0441a13f9290e76f9c5c5dc130fbbbd413369",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fforks%2Ftrusted-reverse-proxy/repository/archive.zip?sha=a2a0441a13f9290e76f9c5c5dc130fbbbd413369",
                 "reference": "a2a0441a13f9290e76f9c5c5dc130fbbbd413369",
                 "shasum": ""
             },
@@ -6953,10 +6953,10 @@
             ],
             "description": "Provides sensible defaults for sites running behind known trusted reverse proxies.",
             "support": {
-                "source": "https://github.com/Ambient-Impact/drupal-trusted-reverse-proxy/tree/1.0.x",
-                "issues": "https://github.com/Ambient-Impact/drupal-trusted-reverse-proxy/issues"
+                "source": "https://gitlab.com/neurocracy/omnipedia/modules/forks/trusted-reverse-proxy/-/tree/1.0.x",
+                "issues": "https://gitlab.com/neurocracy/omnipedia/modules/forks/trusted-reverse-proxy/-/issues"
             },
-            "time": "2024-09-18T01:11:15+00:00"
+            "time": "2024-09-17T21:11:15-04:00"
         },
         {
             "name": "drupal/typed_data",
