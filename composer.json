@@ -138,6 +138,11 @@
     },
     {
       "type": "vcs",
+      "url": "https://gitlab.com/neurocracy/omnipedia/modules/forks/paranoia.git",
+      "only": ["drupal/paranoia"]
+    },
+    {
+      "type": "vcs",
       "url": "https://gitlab.com/neurocracy/omnipedia/modules/forks/trusted-reverse-proxy.git",
       "only": ["drupal/trusted_reverse_proxy"]
     },
@@ -209,7 +214,7 @@
     "drupal/omnipedia_site_theme": "^8.0@dev",
     "drupal/omnipedia_user": "^6.0@dev",
     "drupal/omnipedia_warmer": "^2.0@dev",
-    "drupal/paranoia": "^1.0@RC",
+    "drupal/paranoia": "dev-8.x-1.x as 1.0-rc2",
     "drupal/password_policy": "^4.0",
     "drupal/pathauto": "^1.6",
     "drupal/pathologic": "^2.0@alpha",
