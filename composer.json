@@ -48,6 +48,11 @@
     },
     {
       "type": "vcs",
+      "url": "https://gitlab.com/neurocracy/omnipedia/modules/forks/maintenance200.git",
+      "only": ["drupal/maintenance200"]
+    },
+    {
+      "type": "vcs",
       "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-access.git",
       "only": ["drupal/omnipedia_access"]
     },
@@ -191,7 +196,7 @@
     "drupal/login_destination": "^2.0",
     "drupal/login_history": "^2.0",
     "drupal/login_security": "^2.0",
-    "drupal/maintenance200": "^2.1",
+    "drupal/maintenance200": "dev-8.x-2.x as 2.1",
     "drupal/markdown": "^3.0",
     "drupal/media_entity_file_replace": "^1.0",
     "drupal/metatag": "^2.0",

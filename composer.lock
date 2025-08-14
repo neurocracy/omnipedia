@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c580058bef6711fb4bbabb72c76b68ac",
+    "content-hash": "7b77c11502633960d50bb6f7849e4d00",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -4088,59 +4088,29 @@
         },
         {
             "name": "drupal/maintenance200",
-            "version": "2.1.0",
+            "version": "dev-8.x-2.x",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/maintenance200.git",
-                "reference": "8.x-2.1"
+                "url": "https://gitlab.com/neurocracy/omnipedia/modules/forks/maintenance200.git",
+                "reference": "ce7695b107f85e94960bcaae63bab77a69cf4eec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/maintenance200-8.x-2.1.zip",
-                "reference": "8.x-2.1",
-                "shasum": "fc8ea60619b6b4682bade340e13fb4565d3a7e0c"
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fforks%2Fmaintenance200/repository/archive.zip?sha=ce7695b107f85e94960bcaae63bab77a69cf4eec",
+                "reference": "ce7695b107f85e94960bcaae63bab77a69cf4eec",
+                "shasum": ""
             },
-            "require": {
-                "drupal/core": "^9.1 || ^10"
-            },
+            "default-branch": true,
             "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-2.1",
-                    "datestamp": "1697195734",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0-or-later"
             ],
-            "authors": [
-                {
-                    "name": "Barrett",
-                    "homepage": "https://www.drupal.org/user/52745"
-                },
-                {
-                    "name": "ben.bunk",
-                    "homepage": "https://www.drupal.org/user/764808"
-                },
-                {
-                    "name": "kemsnake",
-                    "homepage": "https://www.drupal.org/user/914800"
-                },
-                {
-                    "name": "runeasgar",
-                    "homepage": "https://www.drupal.org/user/1105258"
-                }
-            ],
             "description": "Allows the maintenance page to return a configurable HTTP status code rather than the standard 503 code.",
-            "homepage": "https://www.drupal.org/project/maintenance200",
             "support": {
-                "source": "https://git.drupalcode.org/project/maintenance200"
-            }
+                "source": "https://gitlab.com/neurocracy/omnipedia/modules/forks/maintenance200/-/tree/8.x-2.x",
+                "issues": "https://gitlab.com/neurocracy/omnipedia/modules/forks/maintenance200/-/issues"
+            },
+            "time": "2025-08-14T16:46:42-04:00"
         },
         {
             "name": "drupal/markdown",
@@ -20581,6 +20551,12 @@
     ],
     "aliases": [
         {
+            "package": "drupal/maintenance200",
+            "version": "dev-8.x-2.x",
+            "alias": "2.1",
+            "alias_normalized": "2.1.0.0"
+        },
+        {
             "package": "drupal/paranoia",
             "version": "dev-8.x-1.x",
             "alias": "1.0-rc2",
@@ -20614,6 +20590,7 @@
         "drupal/ambientimpact_ux": 20,
         "drupal/entity_usage": 10,
         "drupal/image_style_warmer": 5,
+        "drupal/maintenance200": 20,
         "drupal/omnipedia_access": 20,
         "drupal/omnipedia_asset": 20,
         "drupal/omnipedia_attached_data": 20,
