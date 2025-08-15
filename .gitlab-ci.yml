@@ -294,4 +294,5 @@ test:phpunit:
     - changes: *file-patterns-phpunit
 
   script:
-    - $CI_PROJECT_DIR/vendor/bin/phpunit --group=omnipedia --verbose --log-junit=$PHPUNIT_RESULTS_FILE_CONTAINER
+    # @see https://www.drupal.org/docs/develop/automated-testing/phpunit-in-drupal/running-phpunit-tests#s-permission-problems
+    - sudo -u www-data -E $CI_PROJECT_DIR/vendor/bin/phpunit --group=omnipedia --verbose --log-junit=$PHPUNIT_RESULTS_FILE_CONTAINER
