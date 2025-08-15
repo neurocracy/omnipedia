@@ -225,6 +225,10 @@ build:yarn:
     - changes: *file-patterns-composer
     - changes: *file-patterns-yarn
 
+  before_script:
+    - corepack enable
+    - corepack prepare yarn@4.6.0 --activate
+
   script:
     - yarn install
     - yarn build:deploy
