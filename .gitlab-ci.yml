@@ -49,10 +49,37 @@ cache:
 .file-patterns-phpunit: &file-patterns-phpunit
   - phpunit.xml
 
+.ci-base: &ci-base
+
+  # Allow jobs to be cancelled if a newer commit is pushed to the same branch.
+  #
+  # @see https://docs.gitlab.com/ci/pipelines/settings/#auto-cancel-redundant-pipelines
+  interruptible: true
+
+  artifacts:
+    expire_in: 1 week
+    expose_as: web
+    when: always
+    exclude:
+    - '.git'
+    - '.git/**/*'
+    - '$CI_PROJECT_DIR/web/**/.git'
+    - '$CI_PROJECT_DIR/web/**/.git/**/*'
+    - vendor/**/.git
+    - vendor/**/.git/**/*
+    name: artifacts-$CI_PIPELINE_ID-$CI_JOB_NAME_SLUG
+    paths:
+    - '$CI_PROJECT_DIR'
+    - '$PHPUNIT_RESULTS_FILE_CI'
+    reports:
+      junit: '$PHPUNIT_RESULTS_FILE_CI'
+
 # Hidden job intended as a template for other DDEV-based jobs.
 #
 # @see https://docs.gitlab.com/ee/ci/yaml/yaml_optimization.html#anchors
 .ddev-base: &ddev-base
+
+  <<: *ci-base
 
   variables:
 
@@ -90,11 +117,6 @@ cache:
     # @see https://docs.gitlab.com/ee/ci/docker/using_docker_images.html#overriding-the-entrypoint-of-an-image
     entrypoint: ['']
 
-  # Allow jobs to be cancelled if a newer commit is pushed to the same branch.
-  #
-  # @see https://docs.gitlab.com/ci/pipelines/settings/#auto-cancel-redundant-pipelines
-  interruptible: true
-
   rules:
     # Run only on these path patterns having changes.
     #
@@ -122,24 +144,6 @@ cache:
     - ddev config --web-environment-add='COMPOSER_CACHE_DIR=$COMPOSER_CACHE_DIR_CONTAINER'
     - ddev config --web-environment-add='YARN_CACHE_FOLDER=$YARN_CACHE_DIR_CONTAINER'
     - ddev start
-
-  artifacts:
-    expire_in: 1 week
-    expose_as: web
-    when: always
-    exclude:
-    - '.git'
-    - '.git/**/*'
-    - '$CI_PROJECT_DIR/web/**/.git'
-    - '$CI_PROJECT_DIR/web/**/.git/**/*'
-    - vendor/**/.git
-    - vendor/**/.git/**/*
-    name: artifacts-$CI_PIPELINE_ID-$CI_JOB_NAME_SLUG
-    paths:
-    - '$CI_PROJECT_DIR'
-    - '$PHPUNIT_RESULTS_FILE_CI'
-    reports:
-      junit: '$PHPUNIT_RESULTS_FILE_CI'
 
 build:composer:
 
