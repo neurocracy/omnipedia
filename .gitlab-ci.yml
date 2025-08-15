@@ -238,6 +238,7 @@ build:yarn:
   before_script:
     - corepack enable
     - corepack prepare yarn@4.6.0 --activate
+    - unset YARN_CACHE_PATH_RELATIVE YARN_CACHE_DIR_CI YARN_CACHE_DIR_CONTAINER
 
   script:
     - yarn install
