@@ -122,6 +122,9 @@ cache:
     - ln -s $CI_PROJECT_DIR/$_WEB_ROOT /var/www/html
     - chown -R www-data:www-data $CI_PROJECT_DIR
     - service apache2 start
+    - mkdir -pv $COMPOSER_CACHE_DIR
+    - chmod -R 755 $COMPOSER_CACHE_DIR
+    - chown -R www-data:www-data $COMPOSER_CACHE_DIR
 
 # Hidden job intended as a template for other DDEV-based jobs.
 #
@@ -213,7 +216,6 @@ build:composer:
     - changes: *file-patterns-phpunit
 
   script:
-    - git config --global --add safe.directory $CI_PROJECT_DIR
     - composer install --no-progress
 
 build:yarn:
