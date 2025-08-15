@@ -283,4 +283,4 @@ test:phpunit:
     - changes: *file-patterns-phpunit
 
   script:
-    - phpunit --group=omnipedia --verbose --log-junit=$PHPUNIT_RESULTS_FILE_CONTAINER
+    - $CI_PROJECT_DIR/vendor/bin/phpunit --group=omnipedia --verbose --log-junit=$PHPUNIT_RESULTS_FILE_CONTAINER
