@@ -108,6 +108,7 @@ cache:
     SIMPLETEST_DB: 'mysql://$MYSQL_USER:$MYSQL_PASSWORD@database/$MYSQL_DATABASE'
 
   before_script:
+    - cd $CI_PROJECT_DIR && pwd
     - mkdir -pv $BROWSERTEST_OUTPUT_DIRECTORY
     - mkdir -pv $CI_PROJECT_DIR/$_WEB_ROOT/sites/default/files/simpletest
     - chmod -R 755 $BROWSERTEST_OUTPUT_DIRECTORY
