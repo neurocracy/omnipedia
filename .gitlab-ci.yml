@@ -213,6 +213,7 @@ build:composer:
     - changes: *file-patterns-phpunit
 
   script:
+    - git config --global --add safe.directory $CI_PROJECT_DIR
     - composer install --no-progress
 
 build:yarn:
