@@ -74,6 +74,48 @@ cache:
     reports:
       junit: '$PHPUNIT_RESULTS_FILE_CI'
 
+.drupalci-base: &drupalci-base
+
+  <<: *ci-base
+
+  # @see https://hub.docker.com/r/drupalci/php-8.3-ubuntu-apache
+  image: drupalci/php-8.3-ubuntu-apache:production
+
+  services:
+  # @see https://hub.docker.com/r/drupalci/mysql-8
+  - name: drupalci/mysql-8:production
+    alias: database
+
+  variables:
+    COMPOSER_CACHE_DIR: $COMPOSER_CACHE_DIR_CONTAINER
+    YARN_CACHE_FOLDER:  $YARN_CACHE_DIR_CONTAINER
+
+    PHPUNIT_RESULTS_FILE_CONTAINER: $PHPUNIT_RESULTS_FILE_CI
+
+    # Allow service containers to see each other.
+    #
+    # @see https://docs.gitlab.com/ee/ci/services/#connecting-services
+    FF_NETWORK_PER_BUILD: 'true'
+
+    _WEB_ROOT: web
+    BROWSERTEST_OUTPUT_DIRECTORY: '$CI_PROJECT_DIR/$_WEB_ROOT/sites/simpletest/browser_output'
+    SIMPLETEST_BASE_URL: http://localhost/$_WEB_ROOT
+    DB_DRIVER: mysql
+    MYSQL_ROOT_PASSWORD: root
+    MYSQL_DATABASE: mysql
+    MYSQL_USER: drupaltestbot
+    MYSQL_PASSWORD: drupaltestbotpw
+    SIMPLETEST_DB: 'mysql://$MYSQL_USER:$MYSQL_PASSWORD@database/$MYSQL_DATABASE'
+
+  before_script:
+    - mkdir -pv $BROWSERTEST_OUTPUT_DIRECTORY
+    - mkdir -pv $CI_PROJECT_DIR/$_WEB_ROOT/sites/default/files/simpletest
+    - chmod -R 755 $BROWSERTEST_OUTPUT_DIRECTORY
+    - chmod -R 755 $CI_PROJECT_DIR/$_WEB_ROOT/sites/default/files/simpletest
+    - ln -s $CI_PROJECT_DIR/$_WEB_ROOT /var/www/html
+    - chown -R www-data:www-data $CI_PROJECT_DIR
+    - service apache2 start
+
 # Hidden job intended as a template for other DDEV-based jobs.
 #
 # @see https://docs.gitlab.com/ee/ci/yaml/yaml_optimization.html#anchors
@@ -147,7 +189,7 @@ cache:
 
 build:composer:
 
-  <<: *ddev-base
+  <<: *drupalci-base
 
   stage: build
 
@@ -156,7 +198,6 @@ build:composer:
     #
     # @see https://docs.gitlab.com/ci/yaml/#ruleschanges
     - changes: *file-patterns-ci
-    - changes: *file-patterns-ddev
     - changes: *file-patterns-composer
     # Because subsequent jobs require this and there's way to have subsequent
     # jobs that require this also cause this job to run at the time of writing,
@@ -165,11 +206,11 @@ build:composer:
     - changes: *file-patterns-phpunit
 
   script:
-    - ddev composer install --no-progress
+    - composer install --no-progress
 
 build:yarn:
 
-  <<: *ddev-base
+  <<: *drupalci-base
 
   stage: build
 
@@ -181,17 +222,16 @@ build:yarn:
     #
     # @see https://docs.gitlab.com/ci/yaml/#ruleschanges
     - changes: *file-patterns-ci
-    - changes: *file-patterns-ddev
     - changes: *file-patterns-composer
     - changes: *file-patterns-yarn
 
   script:
-    - ddev yarn install
-    - ddev yarn build:deploy
+    - yarn install
+    - yarn build:deploy
 
 validate:composer:
 
-  <<: *ddev-base
+  <<: *drupalci-base
 
   stage: validate
 
@@ -203,7 +243,6 @@ validate:composer:
     #
     # @see https://docs.gitlab.com/ci/yaml/#ruleschanges
     - changes: *file-patterns-ci
-    - changes: *file-patterns-ddev
     - changes: *file-patterns-composer
 
   script:
@@ -213,14 +252,14 @@ validate:composer:
     #   style versions that lack a version constraint. Figure out if we can
     #   use a version range/constraint that doesn't result in a warning while
     #   also allowing the use of checked out Git branches.
-    - ddev composer validate --no-check-version
+    - composer validate --no-check-version
 
 # Hidden job intended as a template for tests.
 #
 # @see https://docs.gitlab.com/ee/ci/yaml/yaml_optimization.html#anchors
 .test-base: &test-base
 
-  <<: *ddev-base
+  <<: *drupalci-base
 
   stage: test
 
@@ -236,9 +275,8 @@ test:phpunit:
     #
     # @see https://docs.gitlab.com/ci/yaml/#ruleschanges
     - changes: *file-patterns-ci
-    - changes: *file-patterns-ddev
     - changes: *file-patterns-composer
     - changes: *file-patterns-phpunit
 
   script:
-    - ddev exec phpunit --group=omnipedia --verbose --log-junit=$PHPUNIT_RESULTS_FILE_CONTAINER
+    - phpunit --group=omnipedia --verbose --log-junit=$PHPUNIT_RESULTS_FILE_CONTAINER
