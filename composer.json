@@ -190,7 +190,6 @@
     "drupal/csp": "^2.1",
     "drupal/dblog_persistent": "2.1.x-dev as 2.1.1",
     "drupal/diff": "^1.0",
-    "drupal/disable_link_rel": "^2.0",
     "drupal/entity_usage": "^2.0@beta",
     "drupal/eu_cookie_compliance": "^1.14",
     "drupal/fancy_file_delete": "^2.0",
