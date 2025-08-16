@@ -97,12 +97,6 @@ cache:
     # @see https://docs.gitlab.com/ee/ci/services/#connecting-services
     FF_NETWORK_PER_BUILD: 'true'
 
-    # Remove 'umask 0000' usage so Docker has permissions on the cloned
-    # repository.
-    #
-    # @see https://docs.gitlab.com/runner/configuration/feature-flags.html#available-feature-flags
-    FF_DISABLE_UMASK_FOR_DOCKER_EXECUTOR: 'true'
-
     _WEB_ROOT: web
     BROWSERTEST_OUTPUT_DIRECTORY: '$CI_PROJECT_DIR/$_WEB_ROOT/sites/simpletest/browser_output'
     SIMPLETEST_BASE_URL: http://localhost/$_WEB_ROOT
