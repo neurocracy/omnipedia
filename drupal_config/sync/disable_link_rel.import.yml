@@ -1,6 +1,0 @@
-links: 'canonical, shortlink, devel-load, devel-render, devel-definition, token-devel'
-enable: 1
-remove_link_attr: 1
-remove_link_attr_list: data-drupal-link-system-path
-_core:
-  default_config_hash: EeqkSU38IdHFlAhbWO0qEBT_M3qLbfvxRuW8k5yoLYo

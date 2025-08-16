@@ -26,7 +26,6 @@ module:
   dblog: 0
   dblog_persistent: 0
   diff: 0
-  disable_link_rel: 0
   discourse_sso: 0
   dynamic_page_cache: 0
   editor: 0

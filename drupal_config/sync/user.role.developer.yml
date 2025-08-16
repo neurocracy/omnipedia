@@ -22,7 +22,6 @@ dependencies:
     - contact
     - content_moderation
     - contextual
-    - disable_link_rel
     - entity_usage
     - eu_cookie_compliance
     - fancy_file_delete
@@ -84,7 +83,6 @@ permissions:
   - 'add unmanaged files entities'
   - 'admin queue_ui'
   - 'administer contact forms'
-  - 'administer disable_link_rel configuration'
   - 'administer entity usage'
   - 'administer eu cookie compliance categories'
   - 'administer eu cookie compliance popup'
