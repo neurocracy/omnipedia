@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8833005cc23828467e554b38638c098a",
+    "content-hash": "353302716aa7159a00f3606cce34ce17",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -2839,67 +2839,29 @@
         },
         {
             "name": "drupal/discourse_sso",
-            "version": "2.0.0-rc7",
+            "version": "2.0.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/discourse_sso.git",
-                "reference": "2.0.0-rc7"
+                "url": "https://gitlab.com/neurocracy/omnipedia/modules/forks/discourse-sso.git",
+                "reference": "beef4ae4f4830be7e8543a7b6f5fee481937e882"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/discourse_sso-2.0.0-rc7.zip",
-                "reference": "2.0.0-rc7",
-                "shasum": "f63ba320539ca0d38bfb40a42a0198a3ac6a74e3"
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fforks%2Fdiscourse-sso/repository/archive.zip?sha=beef4ae4f4830be7e8543a7b6f5fee481937e882",
+                "reference": "beef4ae4f4830be7e8543a7b6f5fee481937e882",
+                "shasum": ""
             },
-            "require": {
-                "drupal/core": "^9.3 || ^10"
-            },
+            "default-branch": true,
             "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "2.0.0-rc7",
-                    "datestamp": "1677680579",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "RC releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0-or-later"
             ],
-            "authors": [
-                {
-                    "name": "boromino",
-                    "homepage": "https://www.drupal.org/user/859722"
-                },
-                {
-                    "name": "dabbor",
-                    "homepage": "https://www.drupal.org/user/2214664"
-                },
-                {
-                    "name": "jackpelorus",
-                    "homepage": "https://www.drupal.org/user/2349920"
-                },
-                {
-                    "name": "joachim",
-                    "homepage": "https://www.drupal.org/user/107701"
-                },
-                {
-                    "name": "jurgenhaas",
-                    "homepage": "https://www.drupal.org/user/168924"
-                },
-                {
-                    "name": "murrayw",
-                    "homepage": "https://www.drupal.org/user/595658"
-                }
-            ],
             "description": "Provides a Single Sign On integration for a Discourse forum.",
-            "homepage": "https://www.drupal.org/project/discourse_sso",
             "support": {
-                "source": "https://git.drupalcode.org/project/discourse_sso"
-            }
+                "source": "https://gitlab.com/neurocracy/omnipedia/modules/forks/discourse-sso/-/tree/2.0.x",
+                "issues": "https://gitlab.com/neurocracy/omnipedia/modules/forks/discourse-sso/-/issues"
+            },
+            "time": "2025-08-15T16:48:29-04:00"
         },
         {
             "name": "drupal/encrypt",
@@ -4790,18 +4752,17 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-discourse.git",
-                "reference": "b078a082f0bf1167a6ed339e02f50643daa43395"
+                "reference": "6b831d8d36123f9092fac8bb96187db84e481604"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-discourse/repository/archive.zip?sha=b078a082f0bf1167a6ed339e02f50643daa43395",
-                "reference": "b078a082f0bf1167a6ed339e02f50643daa43395",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-discourse/repository/archive.zip?sha=6b831d8d36123f9092fac8bb96187db84e481604",
+                "reference": "6b831d8d36123f9092fac8bb96187db84e481604",
                 "shasum": ""
             },
             "require": {
-                "cweagans/composer-patches": "^1.7",
                 "drupal/core": "^10.0 || ^11.0",
-                "drupal/discourse_sso": "^2.0@RC",
+                "drupal/discourse_sso": "^2.0@dev",
                 "drupal/hux": "^1.1",
                 "drupal/omnipedia_core": "^4.0@dev || ^5.0@dev || ^6.0@dev",
                 "drupal/omnipedia_date": "^5.0@dev",
@@ -4811,15 +4772,6 @@
             },
             "default-branch": true,
             "type": "drupal-custom-module",
-            "extra": {
-                "patches": {
-                    "drupal/discourse_sso": {
-                        "Missing config schema [#3344663]: https://www.drupal.org/project/discourse_sso/issues/3344663": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-discourse/-/raw/3da2f67b5b98a183efd6d34d0c8a349399795e28/patches/drupal/discourse_sso/3344663-missing-config-schema.patch",
-                        "Sites that don't grant 'access content' permission to anonymous users result in access denied when redirected to the Drupal site for log in [#3371060]: https://www.drupal.org/project/discourse_sso/issues/3371060": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-discourse/-/raw/3da2f67b5b98a183efd6d34d0c8a349399795e28/patches/drupal/discourse_sso/3371060-add-new-login-permission.patch",
-                        "Controller should use \\Drupal\\Core\\Url to build \"destination\" instead of doing so manually [#3538890]: https://www.drupal.org/project/discourse_sso/issues/3538890": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-discourse/-/raw/e452bd8a31bbfb710403d6ea8abad834b859ca01/patches/drupal/discourse_sso/3538890-controller-use-url-object.patch"
-                    }
-                }
-            },
             "license": [
                 "GPL-3.0-or-later"
             ],
@@ -4836,7 +4788,7 @@
                 "source": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-discourse",
                 "issues": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-discourse/-/issues"
             },
-            "time": "2025-07-30T15:40:11-04:00"
+            "time": "2025-08-16T15:28:00-04:00"
         },
         {
             "name": "drupal/omnipedia_logger",

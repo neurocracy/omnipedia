@@ -53,6 +53,11 @@
     },
     {
       "type": "vcs",
+      "url": "https://gitlab.com/neurocracy/omnipedia/modules/forks/discourse-sso.git",
+      "only": ["drupal/discourse_sso"]
+    },
+    {
+      "type": "vcs",
       "url": "https://gitlab.com/neurocracy/omnipedia/modules/forks/maintenance200.git",
       "only": ["drupal/maintenance200"]
     },
