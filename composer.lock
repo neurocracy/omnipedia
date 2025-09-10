@@ -1712,12 +1712,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-base.git",
-                "reference": "66ed90217140fb3b069e8c2fc77927f35deb41aa"
+                "reference": "654669a6839a4866e9893746498632dbba7783a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-base/zipball/66ed90217140fb3b069e8c2fc77927f35deb41aa",
-                "reference": "66ed90217140fb3b069e8c2fc77927f35deb41aa",
+                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-base/zipball/654669a6839a4866e9893746498632dbba7783a8",
+                "reference": "654669a6839a4866e9893746498632dbba7783a8",
                 "shasum": ""
             },
             "require": {
@@ -1744,7 +1744,7 @@
                 "source": "https://github.com/Ambient-Impact/drupal-ambientimpact-base",
                 "issues": "https://github.com/Ambient-Impact/drupal-ambientimpact-base/issues"
             },
-            "time": "2025-08-30T00:47:48+00:00"
+            "time": "2025-09-10T00:14:12+00:00"
         },
         {
             "name": "drupal/ambientimpact_core",
@@ -5021,12 +5021,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/omnipedia-theme.git",
-                "reference": "eedc50bdcf441eae89e55599846d976f6098b0b4"
+                "reference": "c59d9da067be1ceffabedfafe00e5032d9e9cda7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fomnipedia-theme/repository/archive.zip?sha=eedc50bdcf441eae89e55599846d976f6098b0b4",
-                "reference": "eedc50bdcf441eae89e55599846d976f6098b0b4",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fomnipedia-theme/repository/archive.zip?sha=c59d9da067be1ceffabedfafe00e5032d9e9cda7",
+                "reference": "c59d9da067be1ceffabedfafe00e5032d9e9cda7",
                 "shasum": ""
             },
             "require": {
@@ -5061,7 +5061,7 @@
                 "source": "https://gitlab.com/neurocracy/omnipedia/omnipedia-theme",
                 "issues": "https://gitlab.com/neurocracy/omnipedia/omnipedia-theme/-/issues"
             },
-            "time": "2025-09-08T14:43:04-04:00"
+            "time": "2025-09-09T20:14:41-04:00"
         },
         {
             "name": "drupal/omnipedia_user",

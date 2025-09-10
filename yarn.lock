@@ -3038,6 +3038,42 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@sass-fairy/exception@npm:^1.0.0, @sass-fairy/exception@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "@sass-fairy/exception@npm:1.1.1"
+  checksum: 10/7098e4e1bc9a963b59ed8b7dd5a2ae1b19aa5f990daca205787116cd72e72e0888821a58edee39baa39dda733e0c187042f56f75ca379b2bb5fa92195dfa7bf3
+  languageName: node
+  linkType: hard
+
+"@sass-fairy/list@npm:^1.2.4":
+  version: 1.2.4
+  resolution: "@sass-fairy/list@npm:1.2.4"
+  dependencies:
+    "@sass-fairy/exception": "npm:^1.0.0"
+    "@sass-fairy/math": "npm:^1.0.0"
+    "@sass-fairy/meta": "npm:^1.0.0"
+  checksum: 10/cdc560daad90640d215ab4b60d8bb59eb856d8f0a6dca8bf45812e372c4f7395a1027031e54e72a42dd735859476b22264141f2904721361031b977548a9ea9c
+  languageName: node
+  linkType: hard
+
+"@sass-fairy/math@npm:^1.0.0":
+  version: 1.0.3
+  resolution: "@sass-fairy/math@npm:1.0.3"
+  dependencies:
+    "@sass-fairy/exception": "npm:^1.0.0"
+  checksum: 10/5f47cee0c6cf9dc4f74ef744a0d557e8ba94eabb7838a28b99266f94de4cd523c04723afa057de683cead9f2863edb36354797e40c48202c033c9b589d639d67
+  languageName: node
+  linkType: hard
+
+"@sass-fairy/meta@npm:^1.0.0":
+  version: 1.0.2
+  resolution: "@sass-fairy/meta@npm:1.0.2"
+  dependencies:
+    "@sass-fairy/exception": "npm:^1.0.0"
+  checksum: 10/a68d2d809bde40f9cbe3ee673ba3eb524593a907b69edc2ebfab8646497efb3f4b626be96e3b7366ebb683e8ab44d8b3872068356ef95eb080ee1278efd1f018
+  languageName: node
+  linkType: hard
+
 "@sideway/address@npm:^4.1.3":
   version: 4.1.4
   resolution: "@sideway/address@npm:4.1.4"
@@ -5377,6 +5413,8 @@ __metadata:
   dependencies:
     "@babel/core": "npm:^7.25.2"
     "@babel/preset-env": "npm:^7.25.4"
+    "@sass-fairy/exception": "npm:^1.1.1"
+    "@sass-fairy/list": "npm:^1.2.4"
     "@symfony/webpack-encore": "npm:^4.7.0"
     autoprefixer: "npm:^10.2.5"
     css-loader: "npm:^6.11.0"
