@@ -24,9 +24,6 @@
       "SubformState incorrect interface error [#3409277]: https://www.drupal.org/project/markdown/issues/3409277": "patches/drupal/markdown/3409277-subformstate-incorrect-interface.patch",
       "Fatal error with Drush 13 due to MarkdownCommands replacing logger [#3483437]: https://www.drupal.org/project/markdown/issues/3483437": "patches/drupal/markdown/3483437-drush-13-fatal-error.patch"
     },
-    "drupal/metatag": {
-      "V2UpdatesTest::doSelectionTest() must be compatible with parent UpdatePathTestBase::doSelectionTest [#3531026]: https://www.drupal.org/project/metatag/issues/3531026": "patches/drupal/metatag/3531026-drupal-10.5-update-test-return-type.patch"
-    },
     "drupal/trusted_reverse_proxy": {
       "Notice: Undefined index: severity in trusted_reverse_proxy_preprocess_status_report_page() [#3267588]: https://www.drupal.org/project/trusted_reverse_proxy/issues/3267588": "patches/drupal/trusted_reverse_proxy/3267588-trusted_reverse_proxy-undefined-severity.patch"
     }
