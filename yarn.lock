@@ -4511,7 +4511,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chokidar@npm:>=3.0.0 <4.0.0, chokidar@npm:^3.5.3":
+"chokidar@npm:^3.5.3":
   version: 3.5.3
   resolution: "chokidar@npm:3.5.3"
   dependencies:
@@ -5424,7 +5424,7 @@ __metadata:
     mini-css-extract-plugin: "npm:^2.9.1"
     postcss: "npm:^8.4.31"
     postcss-loader: "npm:^7.3.4"
-    sass: "npm:^1.69.0"
+    sass: "npm:^1.92.1"
     sass-loader: "npm:^13.3.3"
     sassy-cast: "github:Ambient-Impact/SassyCast#adbbd499bb36eb0c7015ae6f23c00e3a78dc54b3"
     webpack: "npm:^5.94.0"
@@ -5451,7 +5451,7 @@ __metadata:
     mini-css-extract-plugin: "npm:^2.9.1"
     postcss: "npm:^8.4.31"
     postcss-loader: "npm:^7.3.4"
-    sass: "npm:^1.43.4"
+    sass: "npm:^1.92.1"
     sass-loader: "npm:^13.3.3"
     sassy-lists: "npm:^3.0.1"
     strictdom: "npm:^1.0.1"
@@ -5475,7 +5475,7 @@ __metadata:
     mini-css-extract-plugin: "npm:^2.9.1"
     postcss: "npm:^8.4.31"
     postcss-loader: "npm:^7.3.4"
-    sass: "npm:^1.43.4"
+    sass: "npm:^1.92.1"
     sass-loader: "npm:^13.3.3"
     svg-spritemap-webpack-plugin: "npm:^4.5.0"
     webpack: "npm:^5.94.0"
@@ -5502,7 +5502,7 @@ __metadata:
     photoswipe: "npm:^4.1.3"
     postcss: "npm:^8.4.31"
     postcss-loader: "npm:^7.3.4"
-    sass: "npm:^1.43.4"
+    sass: "npm:^1.92.1"
     sass-loader: "npm:^13.3.3"
     svg-spritemap-webpack-plugin: "npm:^4.5.0"
     webpack: "npm:^5.94.0"
@@ -5536,7 +5536,7 @@ __metadata:
     motion: "npm:^10.17.0"
     postcss: "npm:^8.4.31"
     postcss-loader: "npm:^7.3.4"
-    sass: "npm:^1.43.4"
+    sass: "npm:^1.92.1"
     sass-loader: "npm:^13.3.3"
     sassy-lists: "npm:^3.0.1"
     tippy.js: "npm:^6.3.7"
@@ -5561,7 +5561,7 @@ __metadata:
     mini-css-extract-plugin: "npm:^2.9.1"
     postcss: "npm:^8.4.31"
     postcss-loader: "npm:^7.0.1"
-    sass: "npm:^1.43.4"
+    sass: "npm:^1.92.1"
     sass-loader: "npm:^13.3.3"
     sharp: "npm:^0.32.6"
     webpack: "npm:^5.94.0"
@@ -5584,7 +5584,7 @@ __metadata:
     mini-css-extract-plugin: "npm:^2.9.1"
     postcss: "npm:^8.4.31"
     postcss-loader: "npm:^7.0.1"
-    sass: "npm:^1.43.4"
+    sass: "npm:^1.92.1"
     sass-loader: "npm:^13.3.3"
     webpack: "npm:^5.94.0"
     webpack-cli: "npm:^5.1.4"
@@ -5607,7 +5607,7 @@ __metadata:
     mini-css-extract-plugin: "npm:^2.9.1"
     postcss: "npm:^8.4.31"
     postcss-loader: "npm:^7.0.1"
-    sass: "npm:^1.43.4"
+    sass: "npm:^1.92.1"
     sass-loader: "npm:^13.3.3"
     webpack: "npm:^5.94.0"
     webpack-cli: "npm:^5.1.4"
@@ -5630,7 +5630,7 @@ __metadata:
     mini-css-extract-plugin: "npm:^2.9.1"
     postcss: "npm:^8.4.31"
     postcss-loader: "npm:^7.0.1"
-    sass: "npm:^1.43.4"
+    sass: "npm:^1.92.1"
     sass-loader: "npm:^13.3.3"
     webpack: "npm:^5.94.0"
     webpack-cli: "npm:^5.1.4"
@@ -5666,7 +5666,7 @@ __metadata:
     mini-css-extract-plugin: "npm:^2.9.1"
     postcss: "npm:^8.4.31"
     postcss-loader: "npm:^7.0.1"
-    sass: "npm:^1.43.4 <1.79.0"
+    sass: "npm:^1.92.1"
     sass-loader: "npm:^13.3.3"
     webpack: "npm:^5.94.0"
     webpack-cli: "npm:^5.1.4"
@@ -6817,10 +6817,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"immutable@npm:^4.0.0":
-  version: 4.1.0
-  resolution: "immutable@npm:4.1.0"
-  checksum: 10/1bd10f07d945ad14c95bbb69c7f58eef23ce8be4b8d097f6c4a786a76c2f09b013f1a8d787a9466b7481b9e474a28afad61d81f0a756d71403971fb1d126014c
+"immutable@npm:^5.0.2":
+  version: 5.1.3
+  resolution: "immutable@npm:5.1.3"
+  checksum: 10/6d29b29036143e7ea1e7f7be581c71bca873ea77c175d33c6c839bf4017265a58c41ec269e3ffcd7b483797fc7fa9c928b4ed3d6edfeeb1b5711d84f60d04090
   languageName: node
   linkType: hard
 
@@ -9307,46 +9307,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.43.4":
-  version: 1.55.0
-  resolution: "sass@npm:1.55.0"
-  dependencies:
-    chokidar: "npm:>=3.0.0 <4.0.0"
-    immutable: "npm:^4.0.0"
-    source-map-js: "npm:>=0.6.2 <2.0.0"
-  bin:
-    sass: sass.js
-  checksum: 10/57d739718659dc29041be7eabee3819fd0f53fb5a1d34eab29874c44ca8c0be07db63895ad23675378bd96e090703fe2d7fe27a7efb11950bf3dc110c1efd2ae
-  languageName: node
-  linkType: hard
-
-"sass@npm:^1.43.4 <1.79.0":
-  version: 1.78.0
-  resolution: "sass@npm:1.78.0"
-  dependencies:
-    chokidar: "npm:>=3.0.0 <4.0.0"
-    immutable: "npm:^4.0.0"
-    source-map-js: "npm:>=0.6.2 <2.0.0"
-  bin:
-    sass: sass.js
-  checksum: 10/a180135addd9108d9a3549e111b2b442a97761bc429ef04374d57ef741d4343378e7092a6cba12e1f94e48b02d9b997cc79e737c0a2b834ad9204a761b14734d
-  languageName: node
-  linkType: hard
-
-"sass@npm:^1.69.0":
-  version: 1.80.6
-  resolution: "sass@npm:1.80.6"
+"sass@npm:^1.92.1":
+  version: 1.92.1
+  resolution: "sass@npm:1.92.1"
   dependencies:
     "@parcel/watcher": "npm:^2.4.1"
     chokidar: "npm:^4.0.0"
-    immutable: "npm:^4.0.0"
+    immutable: "npm:^5.0.2"
     source-map-js: "npm:>=0.6.2 <2.0.0"
   dependenciesMeta:
     "@parcel/watcher":
       optional: true
   bin:
     sass: sass.js
-  checksum: 10/a01996fa06bb9249cdae623b9b86930cebfe98fd39bba8700bb76b022e436b83085ef84c22310d44ee6ea5992e13ea86d6422c4b687323bb17ad88597cb39e81
+  checksum: 10/ded47fd238d20a826bf3c5d129b4849100abae6fafe525a082d936b5793d7fd59a914134a302f0a6780efb5b26fdc2d1f1bfa37d8a9302ba632cad5e67675eec
   languageName: node
   linkType: hard
 
