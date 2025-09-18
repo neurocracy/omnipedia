@@ -3,6 +3,7 @@
 # Build the background tasks worker.
 
 .do/build/composer.sh && \
+.do/build/harden-packages.sh && \
 .do/build/secure-filesystem.sh
 
 # Explicitly exit here using the most recent exit code from the above. Note the
