@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8c422d99e0813f1f4f4798ee09a8c3dc",
+    "content-hash": "69d4ae1976a229394fcbcb8b6afc071d",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -6795,11 +6795,20 @@
         },
         {
             "name": "drupal/typed_entity",
-            "version": "dev-3541204-sub-modules-drupal-11",
+            "version": "4.1.1",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/issue/typed_entity-3541204.git",
-                "reference": "1b4e3de5cf452e9d24efa6c59270544a08ffd8e0"
+                "url": "https://git.drupalcode.org/project/typed_entity.git",
+                "reference": "4.1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/typed_entity-4.1.1.zip",
+                "reference": "4.1.1",
+                "shasum": "d8f0f61996b5017e5a0930c64a168ee666b7dcde"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10 || ^11"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "dev-master",
@@ -6814,17 +6823,36 @@
                 "squizlabs/php_codesniffer": "^3.0@dev"
             },
             "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "4.1.1",
+                    "datestamp": "1757966773",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0"
             ],
             "authors": [
                 {
                     "name": "Mateu Aguiló Bosch",
+                    "homepage": "https://www.drupal.org/user/550110",
                     "email": "mateu@mateuaguilo.com"
+                },
+                {
+                    "name": "lullabot",
+                    "homepage": "https://www.drupal.org/user/3815489"
                 }
             ],
             "description": "Provides classes based on the existing entities.",
-            "time": "2025-08-13T17:04:53+00:00"
+            "homepage": "https://www.drupal.org/project/typed_entity",
+            "support": {
+                "source": "https://git.drupalcode.org/project/typed_entity"
+            }
         },
         {
             "name": "drupal/username_enumeration_prevention",
@@ -20600,12 +20628,6 @@
             "version": "2.9999999.9999999.9999999-dev",
             "alias": "2.0@dev",
             "alias_normalized": "2.0.0.0"
-        },
-        {
-            "package": "drupal/typed_entity",
-            "version": "dev-3541204-sub-modules-drupal-11",
-            "alias": "4.1.0",
-            "alias_normalized": "4.1.0.0"
         }
     ],
     "minimum-stability": "dev",
@@ -20645,8 +20667,7 @@
         "drupal/refreshless": 20,
         "drupal/reroute_email": 5,
         "drupal/rules": 15,
-        "drupal/trusted_reverse_proxy": 20,
-        "drupal/typed_entity": 20
+        "drupal/trusted_reverse_proxy": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
