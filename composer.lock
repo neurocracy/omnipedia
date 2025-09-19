@@ -4438,17 +4438,16 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-changes.git",
-                "reference": "52c05f82168a233841b9d552db2b87d4b6d12910"
+                "reference": "a2c6e1bd27a2b4eaa6562ac911555dfe36112465"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-changes/repository/archive.zip?sha=52c05f82168a233841b9d552db2b87d4b6d12910",
-                "reference": "52c05f82168a233841b9d552db2b87d4b6d12910",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-changes/repository/archive.zip?sha=a2c6e1bd27a2b4eaa6562ac911555dfe36112465",
+                "reference": "a2c6e1bd27a2b4eaa6562ac911555dfe36112465",
                 "shasum": ""
             },
             "require": {
                 "caxy/php-htmldiff": "^0.1.12",
-                "cweagans/composer-patches": "^1.7.0",
                 "drupal/ambientimpact_core": "^2.0@dev || ^3.0@dev",
                 "drupal/core": "^10.0 || ^11.0",
                 "drupal/diff": "^1.0",
@@ -4457,7 +4456,7 @@
                 "drupal/omnipedia_date": "^4.0@dev || ^5.0@dev",
                 "drupal/omnipedia_main_page": "^1.0@dev",
                 "drupal/omnipedia_user": "^5.0@dev || ^6.0@dev",
-                "drupal/pcb": "^3.0",
+                "drupal/pcb": "^4.0",
                 "drupal/queue_ui": "^3.1",
                 "drupal/typed_entity": "^4.0",
                 "drupal/warmer": "^2.0",
@@ -4471,11 +4470,6 @@
                 "drush": {
                     "services": {
                         "drush.services.yml": "^10"
-                    }
-                },
-                "patches": {
-                    "drupal/pcb": {
-                        "PHPUnit test fails on Drupal ^10.3 due to missing void return types [#3474283]: https://www.drupal.org/project/pcb/issues/3474283": "https://raw.githubusercontent.com/neurocracy/drupal-omnipedia-changes/c1b045af3ffb97658b3916726f3b37f39d1a663d/patches/drupal/pcb/3474283-phpunit-test-method-return-type.patch"
                     }
                 }
             },
@@ -4495,7 +4489,7 @@
                 "source": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-changes",
                 "issues": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-changes/-/issues"
             },
-            "time": "2025-09-19T17:29:01-04:00"
+            "time": "2025-09-19T18:25:56-04:00"
         },
         {
             "name": "drupal/omnipedia_content",
@@ -5303,20 +5297,20 @@
         },
         {
             "name": "drupal/pcb",
-            "version": "3.2.0",
+            "version": "4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/pcb.git",
-                "reference": "3.2.0"
+                "reference": "4.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/pcb-3.2.0.zip",
-                "reference": "3.2.0",
-                "shasum": "ed7f1641ccdc9bd9d30a3daf44a0a1821668f5ff"
+                "url": "https://ftp.drupal.org/files/projects/pcb-4.0.0.zip",
+                "reference": "4.0.0",
+                "shasum": "7be2bf23ddd4b4ba415a9e63e6173fdc85f326da"
             },
             "require": {
-                "drupal/core": "^9.0 || ^10 || ^11 || ^12",
+                "drupal/core": "^10.3 || ^11 || ^12",
                 "php": ">=8.1.0"
             },
             "require-dev": {
@@ -5326,8 +5320,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.2.0",
-                    "datestamp": "1723273148",
+                    "version": "4.0.0",
+                    "datestamp": "1727251133",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
