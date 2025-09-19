@@ -20,10 +20,6 @@
     "drupal/image_style_warmer": {
       "Support webp images [#3319397]: https://www.drupal.org/project/image_style_warmer/issues/3319397#comment-14802527": "patches/drupal/image_style_warmer/webp-module-support-3319397-5.patch"
     },
-    "drupal/markdown": {
-      "SubformState incorrect interface error [#3409277]: https://www.drupal.org/project/markdown/issues/3409277": "patches/drupal/markdown/3409277-subformstate-incorrect-interface.patch",
-      "Fatal error with Drush 13 due to MarkdownCommands replacing logger [#3483437]: https://www.drupal.org/project/markdown/issues/3483437": "patches/drupal/markdown/3483437-drush-13-fatal-error.patch"
-    },
     "drupal/trusted_reverse_proxy": {
       "Notice: Undefined index: severity in trusted_reverse_proxy_preprocess_status_report_page() [#3267588]: https://www.drupal.org/project/trusted_reverse_proxy/issues/3267588": "patches/drupal/trusted_reverse_proxy/3267588-trusted_reverse_proxy-undefined-severity.patch"
     }

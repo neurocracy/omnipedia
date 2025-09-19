@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "69d4ae1976a229394fcbcb8b6afc071d",
+    "content-hash": "2929b4ab1b8e93a591ded75b143aa411",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -3972,43 +3972,34 @@
         },
         {
             "name": "drupal/markdown",
-            "version": "3.0.1",
+            "version": "3.0.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/markdown.git",
-                "reference": "3.0.1"
+                "url": "https://gitlab.com/neurocracy/omnipedia/modules/forks/markdown.git",
+                "reference": "f31c55bd80b733261a2ada5c2c77dad9b7a4a722"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/markdown-3.0.1.zip",
-                "reference": "3.0.1",
-                "shasum": "ae33f2819c0f2591484ae02921781fb3ea783330"
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fforks%2Fmarkdown/repository/archive.zip?sha=f31c55bd80b733261a2ada5c2c77dad9b7a4a722",
+                "reference": "f31c55bd80b733261a2ada5c2c77dad9b7a4a722",
+                "shasum": ""
             },
             "require": {
                 "composer/semver": "^1.0 || ^2.0 || ^3.0",
-                "drupal/core": "^9.1 || ^10",
                 "php": ">=5.5.9"
             },
             "suggest": {
                 "league/commonmark": "The PHP CommonMark parser is a robust, highly-extensible Markdown parser for PHP based on the CommonMark and Github-Flavored Markdown specifications."
             },
+            "default-branch": true,
             "type": "drupal-module",
             "extra": {
-                "drupal": {
-                    "version": "3.0.1",
-                    "datestamp": "1704727858",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                },
                 "drush": {
                     "services": {
                         "drush.services.yml": "^9 || ^10"
                     }
                 }
             },
-            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0-or-later"
             ],
@@ -4022,26 +4013,15 @@
                     "name": "Gisle Hannemyr (gisle)",
                     "homepage": "https://www.drupal.org/u/gisle",
                     "role": "D7 Maintainer"
-                },
-                {
-                    "name": "joelpittet",
-                    "homepage": "https://www.drupal.org/user/160302"
-                },
-                {
-                    "name": "markdorison",
-                    "homepage": "https://www.drupal.org/user/346106"
-                },
-                {
-                    "name": "megachriz",
-                    "homepage": "https://www.drupal.org/user/654114"
                 }
             ],
             "description": "Provides Markdown integration for Drupal and allows content to be formatted in a simple plain-text syntax that is transformed into valid HTML.",
             "homepage": "https://www.drupal.org/project/markdown",
             "support": {
-                "source": "https://git.drupalcode.org/project/markdown",
-                "issues": "https://www.drupal.org/project/markdown"
-            }
+                "issues": "https://www.drupal.org/project/markdown",
+                "source": "https://git.drupalcode.org/project/markdown"
+            },
+            "time": "2025-09-19T14:47:05-04:00"
         },
         {
             "name": "drupal/media_entity_file_replace",
@@ -4523,12 +4503,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-content.git",
-                "reference": "2ed69b16533e7a5595ee797aec018c6b722f474c"
+                "reference": "c8783a0cc8221a358e561944606227ebaffd8bba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-content/repository/archive.zip?sha=2ed69b16533e7a5595ee797aec018c6b722f474c",
-                "reference": "2ed69b16533e7a5595ee797aec018c6b722f474c",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-content/repository/archive.zip?sha=c8783a0cc8221a358e561944606227ebaffd8bba",
+                "reference": "c8783a0cc8221a358e561944606227ebaffd8bba",
                 "shasum": ""
             },
             "require": {
@@ -4539,7 +4519,7 @@
                 "drupal/core": "^10.3 || ^11.0",
                 "drupal/hook_event_dispatcher": "^3.1 || ^4.0",
                 "drupal/hux": "^1.1",
-                "drupal/markdown": "^3.0@RC",
+                "drupal/markdown": "^3.0",
                 "drupal/omnipedia_core": "^4.0@dev || ^5.0@dev || ^6.0@dev",
                 "drupal/omnipedia_date": "^4.0@dev || ^5.0@dev",
                 "league/commonmark": "^1.6.1",
@@ -4565,7 +4545,7 @@
                 "source": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-content",
                 "issues": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-content/-/issues"
             },
-            "time": "2025-09-13T09:24:33-04:00"
+            "time": "2025-09-19T14:52:52-04:00"
         },
         {
             "name": "drupal/omnipedia_core",
@@ -20612,6 +20592,12 @@
             "alias_normalized": "2.1.0.0"
         },
         {
+            "package": "drupal/markdown",
+            "version": "3.0.9999999.9999999-dev",
+            "alias": "3.0",
+            "alias_normalized": "3.0.0.0"
+        },
+        {
             "package": "drupal/paranoia",
             "version": "dev-8.x-1.x",
             "alias": "1.0-rc2",
@@ -20641,6 +20627,7 @@
         "drupal/entity_usage": 10,
         "drupal/image_style_warmer": 5,
         "drupal/maintenance200": 20,
+        "drupal/markdown": 20,
         "drupal/omnipedia_access": 20,
         "drupal/omnipedia_asset": 20,
         "drupal/omnipedia_attached_data": 20,
