@@ -29,6 +29,7 @@ yarn.build-error.log
 # These are pulled in by the Drupal scaffold.
 /.gitattributes
 /.editorconfig
+/recipes/.gitignore
 
 # Ignore the storage directory. This is used for compiled Twig templates and
 # other PHP storage.
