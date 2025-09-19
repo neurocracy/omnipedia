@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2929b4ab1b8e93a591ded75b143aa411",
+    "content-hash": "b28a109c0becd04a7a7bb922a535df6f",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -3972,16 +3972,16 @@
         },
         {
             "name": "drupal/markdown",
-            "version": "3.0.x-dev",
+            "version": "dev-3.0.x-drupal-11",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/modules/forks/markdown.git",
-                "reference": "f31c55bd80b733261a2ada5c2c77dad9b7a4a722"
+                "reference": "7697cf2f0cc8e1987784e037dc71c51d27c9a4b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fforks%2Fmarkdown/repository/archive.zip?sha=f31c55bd80b733261a2ada5c2c77dad9b7a4a722",
-                "reference": "f31c55bd80b733261a2ada5c2c77dad9b7a4a722",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fforks%2Fmarkdown/repository/archive.zip?sha=7697cf2f0cc8e1987784e037dc71c51d27c9a4b7",
+                "reference": "7697cf2f0cc8e1987784e037dc71c51d27c9a4b7",
                 "shasum": ""
             },
             "require": {
@@ -3991,7 +3991,6 @@
             "suggest": {
                 "league/commonmark": "The PHP CommonMark parser is a robust, highly-extensible Markdown parser for PHP based on the CommonMark and Github-Flavored Markdown specifications."
             },
-            "default-branch": true,
             "type": "drupal-module",
             "extra": {
                 "drush": {
@@ -4021,7 +4020,7 @@
                 "issues": "https://www.drupal.org/project/markdown",
                 "source": "https://git.drupalcode.org/project/markdown"
             },
-            "time": "2025-09-19T14:47:05-04:00"
+            "time": "2025-09-19T15:03:00-04:00"
         },
         {
             "name": "drupal/media_entity_file_replace",
@@ -20593,7 +20592,7 @@
         },
         {
             "package": "drupal/markdown",
-            "version": "3.0.9999999.9999999-dev",
+            "version": "dev-3.0.x-drupal-11",
             "alias": "3.0",
             "alias_normalized": "3.0.0.0"
         },
