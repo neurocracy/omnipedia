@@ -5,9 +5,6 @@
     "drupal/core": "-p2"
   },
   "patches": {
-    "drupal/aggregator": {
-      "Drupal 10.4 test fixes: https://www.drupal.org/project/aggregator/issues/3471498": "patches/drupal/aggregator/3471498-drupal-10.4-tests.patch"
-    },
     "drupal/core": {
       "Allow configurable cookie prefix [#1361742] (NOTE: edited to remove failing block on non-existent file in dist that exists in Drupal.org Git): https://www.drupal.org/project/drupal/issues/1361742": "patches/drupal/core/1361742-allow-configurable-cookie-prefix.patch",
       "JS aggregation should account for \"async\" and \"defer\" attributes [#1587536]: https://www.drupal.org/project/drupal/issues/1587536": "patches/drupal/core/1587536-js-aggregation-async-defer-attributes.patch",

@@ -263,18 +263,13 @@
     "react/promise": "^3.0"
   },
   "require-dev": {
-    "drupal/aggregator": "^2.2",
     "drupal/config_delete": "^2.0",
     "drupal/config_devel": "^1.2",
     "drupal/config_filter": "^2.7",
     "drupal/config_inspector": "^2.1",
     "drupal/core-dev": "^10.5 || ^11.2",
     "drupal/devel": "^5.0",
-    "drupal/entity_browser": "^2.13",
     "drupal/examples": "^4.0",
-    "drupal/feeds": "^3.0",
-    "drupal/paragraphs": "^1.19",
-    "drupal/rdf": "^3.0@beta",
     "drupal/upgrade_status": "^4.3",
     "lloople/phpunit-extensions": "^2.1",
     "phpspec/prophecy-phpunit": "^2",
