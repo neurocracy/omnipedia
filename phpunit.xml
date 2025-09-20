@@ -167,14 +167,15 @@
       @see https://davidllop.com/posts/identifying-the-slowest-tests-in-phpunit
       @see https://github.com/lloople/phpunit-extensions
     -->
-    <extension class="Lloople\PHPUnitExtensions\Runners\SlowestTests\Csv">
-      <arguments>
+    <!-- Note: disabled in PHPUnit 10+ as it currently doesn't work. -->
+    <!-- <extension class="Lloople\PHPUnitExtensions\Runners\SlowestTests\Csv">
+      <arguments> -->
         <!--
           Note that this is relative to the web root and not the root of the
           repository.
         -->
-        <string>../phpunit-results.csv</string>
+        <!-- <string>../phpunit-results.csv</string>
       </arguments>
-    </extension>
+    </extension> -->
   </extensions>
 </phpunit>
