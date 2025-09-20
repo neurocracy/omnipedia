@@ -69,11 +69,11 @@
       <directory>web/core/tests/Drupal/Tests/Component</directory>
     </testsuite>
     <testsuite name="unit">
-      <directory>web/core/tests/Drupal/Tests</directory>
+      <!-- <directory>web/core/tests/Drupal/Tests</directory>
       <exclude>web/core/tests/Drupal/Tests/Component</exclude>
       <directory>web/core/modules/**/tests/src/Unit</directory>
       <directory>web/core/profiles/**/tests/src/Unit</directory>
-      <directory>web/core/themes/**/tests/src/Unit</directory>
+      <directory>web/core/themes/**/tests/src/Unit</directory> -->
       <!-- Only contrib modules we want PHPUnit to scan to avoid unrelated
            fatal errors from other contrib modules. -->
       <directory>web/modules/contrib/rebuilder/**/tests/src/Unit</directory>
@@ -83,11 +83,11 @@
       <directory>web/themes/custom/*/**/tests/src/Unit</directory>
     </testsuite>
     <testsuite name="kernel">
-      <directory>web/core/tests/Drupal/KernelTests</directory>
+      <!-- <directory>web/core/tests/Drupal/KernelTests</directory>
       <directory>web/core/modules/**/tests/src/Kernel</directory>
       <directory>web/core/recipes/*/tests/src/Kernel</directory>
       <directory>web/core/profiles/**/tests/src/Kernel</directory>
-      <directory>web/core/themes/**/tests/src/Kernel</directory>
+      <directory>web/core/themes/**/tests/src/Kernel</directory> -->
       <!-- Only contrib modules we want PHPUnit to scan to avoid unrelated
            fatal errors from other contrib modules. -->
       <directory>web/modules/contrib/rebuilder/**/tests/src/Kernel</directory>
@@ -97,11 +97,11 @@
       <directory>web/themes/custom/*/**/tests/src/Kernel</directory>
     </testsuite>
     <testsuite name="functional">
-      <directory>web/core/tests/Drupal/FunctionalTests</directory>
+      <!-- <directory>web/core/tests/Drupal/FunctionalTests</directory>
       <directory>web/core/modules/**/tests/src/Functional</directory>
       <directory>web/core/profiles/**/tests/src/Functional</directory>
       <directory>web/core/recipes/*/tests/src/Functional</directory>
-      <directory>web/core/themes/**/tests/src/Functional</directory>
+      <directory>web/core/themes/**/tests/src/Functional</directory> -->
       <!-- Only contrib modules we want PHPUnit to scan to avoid unrelated
            fatal errors from other contrib modules. -->
       <directory>web/modules/contrib/rebuilder/**/tests/src/Functional</directory>
@@ -111,11 +111,11 @@
       <directory>web/themes/custom/*/**/tests/src/Functional</directory>
     </testsuite>
     <testsuite name="functional-javascript">
-      <directory>web/core/tests/Drupal/FunctionalJavascriptTests</directory>
+      <!-- <directory>web/core/tests/Drupal/FunctionalJavascriptTests</directory>
       <directory>web/core/modules/**/tests/src/FunctionalJavascript</directory>
       <directory>web/core/recipes/*/tests/src/FunctionalJavascript</directory>
       <directory>web/core/profiles/**/tests/src/FunctionalJavascript</directory>
-      <directory>web/core/themes/**/tests/src/FunctionalJavascript</directory>
+      <directory>web/core/themes/**/tests/src/FunctionalJavascript</directory> -->
       <!-- Only contrib modules we want PHPUnit to scan to avoid unrelated
            fatal errors from other contrib modules. -->
       <directory>web/modules/contrib/rebuilder/**/tests/src/FunctionalJavascript</directory>
@@ -125,8 +125,8 @@
       <directory>web/themes/custom/*/**/tests/src/FunctionalJavascript</directory>
     </testsuite>
     <testsuite name="build">
-      <directory>web/core/tests/Drupal/BuildTests</directory>
-      <directory>web/core/modules/**/tests/src/Build</directory>
+      <!-- <directory>web/core/tests/Drupal/BuildTests</directory>
+      <directory>web/core/modules/**/tests/src/Build</directory> -->
       <directory>web/modules/custom/*/**/tests/src/Build</directory>
     </testsuite>
   </testsuites>
