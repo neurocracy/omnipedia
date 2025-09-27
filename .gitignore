@@ -82,6 +82,7 @@ yarn.build-error.log
 /web/themes/custom/*
 
 # Testing directories and files.
+/.phpunit.cache/*
 test.sqlite
 test.sqlite-shm
 test.sqlite-wal
