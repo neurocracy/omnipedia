@@ -4994,18 +4994,19 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-user.git",
-                "reference": "dc4fb6162383ed2dde014a4c56a419fe7ad915da"
+                "reference": "a6a3b680baec5b4ee68adb44d5783edeee0985ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-user/repository/archive.zip?sha=dc4fb6162383ed2dde014a4c56a419fe7ad915da",
-                "reference": "dc4fb6162383ed2dde014a4c56a419fe7ad915da",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-user/repository/archive.zip?sha=a6a3b680baec5b4ee68adb44d5783edeee0985ed",
+                "reference": "a6a3b680baec5b4ee68adb44d5783edeee0985ed",
                 "shasum": ""
             },
             "require": {
                 "drupal/core": "^10.0 || ^11.0",
                 "drupal/hook_event_dispatcher": "^4.0",
                 "drupal/hux": "^1.1",
+                "drupal/omnipedia_core": "^6.0@dev",
                 "php": "^8.1"
             },
             "default-branch": true,
@@ -5026,7 +5027,7 @@
                 "source": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-user",
                 "issues": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-user/-/issues"
             },
-            "time": "2025-05-04T19:27:30-04:00"
+            "time": "2025-09-27T08:46:45-04:00"
         },
         {
             "name": "drupal/omnipedia_warmer",
