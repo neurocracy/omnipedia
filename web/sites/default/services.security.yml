@@ -1,5 +1,11 @@
 parameters:
 
+  # Disable special super user behaviour of UID 1.
+  #
+  # @see https://www.drupal.org/node/2910500
+  #   Container parameter introduced in Drupal 10.3.0.
+  security.enable_super_user: false
+
   trusted_reverse_proxy:
 
     # Override the severity of the message shown on the status page about an
