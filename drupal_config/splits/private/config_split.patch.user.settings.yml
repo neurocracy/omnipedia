@@ -1,0 +1,4 @@
+adding:
+  register: admin_only
+removing:
+  register: visitors

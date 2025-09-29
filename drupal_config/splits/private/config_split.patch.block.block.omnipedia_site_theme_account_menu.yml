@@ -1,0 +1,13 @@
+adding:
+  dependencies:
+    module:
+      - user
+  visibility:
+    user_role:
+      id: user_role
+      negate: false
+      context_mapping:
+        user: '@user.current_user_context:current_user'
+      roles:
+        authenticated: authenticated
+removing: {  }

@@ -1,0 +1,11 @@
+adding: {  }
+removing:
+  dependencies:
+    module:
+      - contact
+      - media
+      - system
+  permissions:
+    - 'access content'
+    - 'access site-wide contact form'
+    - 'view media'

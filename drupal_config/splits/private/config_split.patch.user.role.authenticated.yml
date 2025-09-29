@@ -1,0 +1,19 @@
+adding: {  }
+removing:
+  dependencies:
+    module:
+      - contact
+      - file
+      - login_history
+      - media
+      - system
+      - userprotect
+  permissions:
+    - 'access content'
+    - 'access site-wide contact form'
+    - 'delete own files'
+    - userprotect.account.edit
+    - userprotect.mail.edit
+    - userprotect.pass.edit
+    - 'view media'
+    - 'view own login history'
