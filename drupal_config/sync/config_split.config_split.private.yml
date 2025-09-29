@@ -15,6 +15,7 @@ theme: {  }
 complete_list: {  }
 partial_list:
   - block.block.omnipedia_site_theme_account_menu
+  - reroute_email.settings
   - user.role.anonymous
   - user.role.authenticated
   - user.settings
