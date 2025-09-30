@@ -1653,12 +1653,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-base.git",
-                "reference": "5591c2020066b88c3bb63d69966519b643ed6eda"
+                "reference": "7329879dda543148dc39a90c2f5a50b7f48bcf4f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-base/zipball/5591c2020066b88c3bb63d69966519b643ed6eda",
-                "reference": "5591c2020066b88c3bb63d69966519b643ed6eda",
+                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-base/zipball/7329879dda543148dc39a90c2f5a50b7f48bcf4f",
+                "reference": "7329879dda543148dc39a90c2f5a50b7f48bcf4f",
                 "shasum": ""
             },
             "require": {
@@ -1685,7 +1685,7 @@
                 "source": "https://github.com/Ambient-Impact/drupal-ambientimpact-base",
                 "issues": "https://github.com/Ambient-Impact/drupal-ambientimpact-base/issues"
             },
-            "time": "2025-09-29T16:00:39+00:00"
+            "time": "2025-09-30T17:12:02+00:00"
         },
         {
             "name": "drupal/ambientimpact_core",
@@ -4497,12 +4497,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-content.git",
-                "reference": "e7e13a8868190cea46fc866ade8457868ce09657"
+                "reference": "8403ebd58adfd28db4884383f4a0318062127cad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-content/repository/archive.zip?sha=e7e13a8868190cea46fc866ade8457868ce09657",
-                "reference": "e7e13a8868190cea46fc866ade8457868ce09657",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-content/repository/archive.zip?sha=8403ebd58adfd28db4884383f4a0318062127cad",
+                "reference": "8403ebd58adfd28db4884383f4a0318062127cad",
                 "shasum": ""
             },
             "require": {
@@ -4539,7 +4539,7 @@
                 "source": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-content",
                 "issues": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-content/-/issues"
             },
-            "time": "2025-09-19T17:29:05-04:00"
+            "time": "2025-09-30T13:07:34-04:00"
         },
         {
             "name": "drupal/omnipedia_core",
