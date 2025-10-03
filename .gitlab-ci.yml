@@ -237,4 +237,4 @@ test:phpunit:
     - changes: *file-patterns-phpunit
 
   script:
-    - ddev exec phpunit --group=omnipedia --verbose --log-junit=$PHPUNIT_RESULTS_FILE_CONTAINER
+    - ddev exec phpunit --group=omnipedia --log-junit=$PHPUNIT_RESULTS_FILE_CONTAINER
