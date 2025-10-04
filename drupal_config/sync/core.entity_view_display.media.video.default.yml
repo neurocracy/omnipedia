@@ -17,6 +17,11 @@ targetEntityType: media
 bundle: video
 mode: default
 content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
   field_media_video_file:
     type: file_video
     label: visually_hidden
@@ -26,6 +31,7 @@ content:
       loop: false
       multiple_file_display_type: sources
       muted: false
+      playsinline: false
       width: 1280
       height: 720
     third_party_settings: {  }
