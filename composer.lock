@@ -4814,12 +4814,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-menu.git",
-                "reference": "bb1d285f73d559da56fa8b2b0bce7e2acfed9409"
+                "reference": "e5e0f64605e61c766843e0f05a116ebb15363a34"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-menu/repository/archive.zip?sha=bb1d285f73d559da56fa8b2b0bce7e2acfed9409",
-                "reference": "bb1d285f73d559da56fa8b2b0bce7e2acfed9409",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-menu/repository/archive.zip?sha=e5e0f64605e61c766843e0f05a116ebb15363a34",
+                "reference": "e5e0f64605e61c766843e0f05a116ebb15363a34",
                 "shasum": ""
             },
             "require": {
@@ -4837,7 +4837,7 @@
             "extra": {
                 "patches": {
                     "drupal/core": {
-                        "UrlGenerator improperly escapes a colon in the path [#3165305]: https://www.drupal.org/project/drupal/issues/3165305#comment-14058586": "https://raw.githubusercontent.com/neurocracy/drupal-omnipedia-menu/4.x/patches/drupal/core/url_escaped-3165305-10.patch"
+                        "UrlGenerator improperly escapes a colon in the path [#3165305]: https://www.drupal.org/project/drupal/issues/3165305#comment-14058586": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-menu/-/raw/bb1d285f73d559da56fa8b2b0bce7e2acfed9409/patches/drupal/core/url_escaped-3165305-10.patch"
                     }
                 }
             },
@@ -4857,7 +4857,7 @@
                 "source": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-menu",
                 "issues": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-menu/-/issues"
             },
-            "time": "2025-06-29T00:39:46-04:00"
+            "time": "2025-10-04T17:47:25-04:00"
         },
         {
             "name": "drupal/omnipedia_pipeline",
@@ -4904,12 +4904,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-search.git",
-                "reference": "b2ecb6d25952d96079c2aea96b60bbe5595ab8a6"
+                "reference": "710f7f63ff6b512165129a34bd76583ad109438b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-search/repository/archive.zip?sha=b2ecb6d25952d96079c2aea96b60bbe5595ab8a6",
-                "reference": "b2ecb6d25952d96079c2aea96b60bbe5595ab8a6",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-search/repository/archive.zip?sha=710f7f63ff6b512165129a34bd76583ad109438b",
+                "reference": "710f7f63ff6b512165129a34bd76583ad109438b",
                 "shasum": ""
             },
             "require": {
@@ -4927,7 +4927,7 @@
             "extra": {
                 "patches": {
                     "drupal/search_api": {
-                        "How to change input type from \"text\" to \"search\" [#3214236]": "https://raw.githubusercontent.com/neurocracy/drupal-omnipedia-search/4.x/patches/drupal/search_api/3214236-input-type-search.patch"
+                        "How to change input type from \"text\" to \"search\" [#3214236]": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-search/-/raw/b2ecb6d25952d96079c2aea96b60bbe5595ab8a6/patches/drupal/search_api/3214236-input-type-search.patch"
                     }
                 }
             },
@@ -4947,7 +4947,7 @@
                 "source": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-search",
                 "issues": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-search/-/issues"
             },
-            "time": "2025-05-04T19:27:21-04:00"
+            "time": "2025-10-04T17:47:28-04:00"
         },
         {
             "name": "drupal/omnipedia_site_theme",
