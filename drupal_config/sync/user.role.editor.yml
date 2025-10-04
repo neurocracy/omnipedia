@@ -24,7 +24,6 @@ dependencies:
     - system
     - taxonomy
     - tfa
-    - toolbar
 id: editor
 label: editor
 weight: -6
@@ -41,7 +40,6 @@ permissions:
   - 'access site in maintenance mode'
   - 'access site reports'
   - 'access taxonomy overview'
-  - 'access toolbar'
   - 'add omnipedia_attached_data entity'
   - 'administer eu cookie compliance categories'
   - 'administer menu'

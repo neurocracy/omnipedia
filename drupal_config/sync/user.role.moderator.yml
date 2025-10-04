@@ -15,7 +15,6 @@ dependencies:
     - shortcut
     - system
     - tfa
-    - toolbar
 id: moderator
 label: moderator
 weight: -7
@@ -27,7 +26,6 @@ permissions:
   - 'access navigation'
   - 'access shortcuts'
   - 'access site in maintenance mode'
-  - 'access toolbar'
   - 'access user contact forms'
   - 'access user profiles'
   - 'administer tfa for other users'

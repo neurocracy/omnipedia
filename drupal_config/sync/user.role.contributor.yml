@@ -17,7 +17,6 @@ dependencies:
     - shortcut
     - system
     - tfa
-    - toolbar
 id: contributor
 label: contributor
 weight: -8
@@ -31,7 +30,6 @@ permissions:
   - 'access media overview'
   - 'access navigation'
   - 'access shortcuts'
-  - 'access toolbar'
   - 'administer nodes'
   - 'delete media'
   - 'delete own files'

@@ -54,7 +54,6 @@ dependencies:
     - system
     - taxonomy
     - tfa
-    - toolbar
     - update
     - views_bulk_edit
 id: developer
@@ -76,7 +75,6 @@ permissions:
   - 'access site reports'
   - 'access site-wide contact form'
   - 'access taxonomy overview'
-  - 'access toolbar'
   - 'access user contact forms'
   - 'access user profiles'
   - 'add omnipedia_attached_data entity'

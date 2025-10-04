@@ -129,7 +129,6 @@ module:
   tfa: 0
   token: 0
   token_filter: 0
-  toolbar: 0
   trusted_reverse_proxy: 0
   typed_data: 0
   typed_entity: 0
