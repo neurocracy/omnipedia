@@ -129,6 +129,8 @@ cache:
     #   DDEV image that does support it.
     #- ddev debug rebuild
     - ddev start
+    # Checking doctl was successfully added during the web image build.
+    - ddev doctl --help
 
   artifacts:
     expire_in: 1 week
