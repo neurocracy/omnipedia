@@ -26,7 +26,7 @@ mutagen_enabled: false
 use_dns_when_possible: true
 composer_version: '2'
 web_environment: []
-nodejs_version: '20'
+nodejs_version: '22'
 # Required to use Yarn 4 without checking in the binary.
 #
 # @see https://yarnpkg.com/blog/release/4.0#installing-yarn
