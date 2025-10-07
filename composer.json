@@ -172,7 +172,7 @@
     }
   ],
   "require": {
-    "php": "^8.3",
+    "php": "^8.4",
     "ext-apcu": "*",
     "composer/installers": "^2.0",
     "cweagans/composer-patches": "^1.7",
