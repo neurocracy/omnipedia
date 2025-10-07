@@ -109,6 +109,10 @@ cache:
     # Disable the DDEV SSH agent container as it fails its health checks and we
     # don't need it.
     - ddev config global --omit-containers=ddev-ssh-agent
+    # The DDEV-in-CI image does not yet support PHP 8.4.
+    #
+    # @todo Remove this when the image is updated to support PHP 8.4.
+    - ddev config --php-version 8.3
     # Ensure neither Mutagen nor NFS are used. The former seems primarily
     # intended for Mac and Windows, and the latter is deprecated and not
     # recommended.
@@ -121,10 +125,6 @@ cache:
     # @see https://ddev.readthedocs.io/en/stable/users/extend/customization-extendibility/#environment-variables-for-containers-and-services
     - ddev config --web-environment-add='COMPOSER_CACHE_DIR=$COMPOSER_CACHE_DIR_CONTAINER'
     - ddev config --web-environment-add='YARN_CACHE_FOLDER=$YARN_CACHE_DIR_CONTAINER'
-    # The DDEV-in-CI image does not yet support PHP 8.4.
-    #
-    # @todo Remove this when the image is updated to support PHP 8.4.
-    - ddev config --php-version 8.3
     # This this verbose logs the image build steps, then starts the project.
     #
     # @see https://docs.ddev.com/en/stable/users/usage/commands/#debug-rebuild
