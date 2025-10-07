@@ -1,0 +1,19 @@
+# Downloads and installs the DigitalOcean doctl CLI tool.
+#
+# @see https://docs.digitalocean.com/reference/doctl/
+
+# "FROM" is required for Sublime Text to syntax highlight this file.
+#                                ¯\_(ツ)_/¯
+# This gets optimized away/removed by Docker when included, so it shouldn't
+# cause any issues.
+FROM $BASE_IMAGE
+
+# @todo Make the version configurable or automatically use the latest.
+ENV DOCTL_VERSION="1.145.0"
+ENV DOCTL_ARCHIVE="doctl-$DOCTL_VERSION-$TARGETOS-$TARGETARCH.tar.gz"
+
+WORKDIR /usr/local/bin
+
+ADD https://github.com/digitalocean/doctl/releases/download/v$DOCTL_VERSION/$DOCTL_ARCHIVE /usr/local/bin
+
+RUN tar xf $DOCTL_ARCHIVE && rm -f $DOCTL_ARCHIVE

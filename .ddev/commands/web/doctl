@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+## Description: Run the DigitalOcean doctl tool inside the web container
+## Usage: doctl [flags] [args]
+## Example: ddev doctl apps list
+
+# @see https://docs.digitalocean.com/reference/doctl/
+
+RED='\033[31m'
+BLUE='\033[34m'
+RESET='\033[0m'
+
+if [[ -z "${DIGITALOCEAN_TOKEN}" ]]; then
+
+  printf "${RED}Please set the \"DIGITALOCEAN_TOKEN\" environment variable to your access token to run this command!${RESET}\n\n" | fold -w 80 -s >&2
+
+  printf "Setting environment variables:\n${BLUE}https://docs.ddev.com/en/stable/users/extend/customization-extendibility/#environment-variables-for-containers-and-services${RESET}\n\n"
+
+  printf "Generate or manage tokens:\n${BLUE}https://cloud.digitalocean.com/account/api/tokens${RESET}\n\n"
+
+  exit 1
+
+fi
+
+doctl --access-token $DIGITALOCEAN_TOKEN "$@"
