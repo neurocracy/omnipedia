@@ -124,7 +124,11 @@ cache:
     # This this verbose logs the image build steps, then starts the project.
     #
     # @see https://docs.ddev.com/en/stable/users/usage/commands/#debug-rebuild
-    - ddev debug rebuild
+    #
+    # @todo Re-enable this once the DDEV image we're using is rebuilt on a newer
+    #   DDEV image that does support it.
+    #- ddev debug rebuild
+    - ddev start
 
   artifacts:
     expire_in: 1 week
