@@ -130,7 +130,10 @@ cache:
     #- ddev debug rebuild
     - ddev start
     # Checking doctl was successfully added during the web image build.
-    - ddev doctl --help
+    #
+    # Note that we're bypassing the custom command here so we don't fail due to
+    # the DIGITALOCEAN_TOKEN env not being set.
+    - ddev exec doctl --help
 
   artifacts:
     expire_in: 1 week
