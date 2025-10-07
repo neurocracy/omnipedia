@@ -8,7 +8,9 @@
 # cause any issues.
 FROM $BASE_IMAGE
 
-# Might fix DDEV-in-CI not receiving these.
+# These don't seen to be declared by slightly older DDEV versions, which would
+# cause DOCTL_ARCHIVE to have empty values for the architecture and OS,
+# resulting in a 404 when the URL isn't found.
 ARG TARGETARCH
 ARG TARGETOS
 
