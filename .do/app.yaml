@@ -21,7 +21,7 @@ databases:
   engine: MYSQL
   name: database
   production: true
-  version: "8"
+  version: '8'
 
 envs:
   # This must be specified for all components to ensure they don't differ and
@@ -56,13 +56,13 @@ envs:
 - key: DRUPAL_HASH_SALT
   scope: RUN_TIME
   type: SECRET
-  value: "_DRUPAL_HASH_SALT_"
+  value: '_DRUPAL_HASH_SALT_'
 - key: DRUPAL_HUX_OPTIMIZE
   scope: RUN_TIME
-  value: "true"
+  value: 'true'
 - key: DRUPAL_MONOLOG_EMAIL
   scope: RUN_TIME
-  value: "_DRUPAL_MONOLOG_EMAIL_"
+  value: '_DRUPAL_MONOLOG_EMAIL_'
 - key: DRUPAL_PRIMARY_HOST
   scope: RUN_AND_BUILD_TIME
   value: ${APP_DOMAIN}
@@ -71,29 +71,29 @@ envs:
   value: oembed.omnipedia.app
 - key: DRUPAL_REVERSE_PROXY_ENABLED
   scope: RUN_TIME
-  value: "true"
+  value: 'true'
 - key: DRUPAL_SUPPRESS_DEPRECATIONS
   scope: RUN_TIME
-  value: "true"
+  value: 'true'
 - key: DRUPAL_SMTP_HOST_PRIMARY
   scope: RUN_TIME
-  value: "_DRUPAL_SMTP_HOST_PRIMARY_"
+  value: '_DRUPAL_SMTP_HOST_PRIMARY_'
 - key: DRUPAL_SMTP_HOST_SECONDARY
   scope: RUN_TIME
-  value: "_DRUPAL_SMTP_HOST_SECONDARY_"
+  value: '_DRUPAL_SMTP_HOST_SECONDARY_'
 - key: DRUPAL_SMTP_PASSWORD
   scope: RUN_TIME
   type: SECRET
-  value: "_DRUPAL_SMTP_PASSWORD_"
+  value: '_DRUPAL_SMTP_PASSWORD_'
 - key: DRUPAL_TWO_FACTOR_SECRET
   scope: RUN_TIME
   type: SECRET
-  value: "_DRUPAL_TWO_FACTOR_SECRET_"
+  value: '_DRUPAL_TWO_FACTOR_SECRET_'
 - key: DRUSH_OPTIONS_URI
   scope: RUN_AND_BUILD_TIME
   value: ${APP_URL}
-  # Append our PHP settings directory. Note the leading ":" which tells PHP to
-  # scan all the default locations first before appending ours; without the ":",
+  # Append our PHP settings directory. Note the leading ':' which tells PHP to
+  # scan all the default locations first before appending ours; without the ':',
   # PHP would ignore all the default locations and only use our settings, which
   # only contain a small subset of PHP settings and would likely do bad things.
 - key: PHP_INI_SCAN_DIR
@@ -102,35 +102,35 @@ envs:
 - key: SPACES_ACCESS
   scope: RUN_TIME
   type: SECRET
-  value: "_SPACES_ACCESS_"
+  value: '_SPACES_ACCESS_'
 - key: SPACES_SECRET
   scope: RUN_TIME
   type: SECRET
-  value: "_SPACES_SECRET_"
+  value: '_SPACES_SECRET_'
 # This is the name of the DigitalOcean Spaces bucket.
 - key: S3FS_BUCKET
   scope: RUN_TIME
-  value: "_S3FS_BUCKET_"
+  value: '_S3FS_BUCKET_'
 # This is the custom domain name the DigitalOcean Spaces bucket is mapped to.
 - key: S3FS_DOMAIN
   scope: RUN_TIME
-  value: "cdn.omnipedia.app"
+  value: 'cdn.omnipedia.app'
 # This is the DigitalOcean Spaces host name, in the format of
 # 'https://REGION.digitaloceanspaces.com' where REGION is the datacentre the
 # bucket is hosted in. This should match the value in the 'S3FS_REGION' env var.
 - key: S3FS_HOSTNAME
   scope: RUN_TIME
-  value: "https://nyc3.digitaloceanspaces.com"
+  value: 'https://nyc3.digitaloceanspaces.com'
 # The DigitalOcean Spaces datacentre region.
 - key: S3FS_REGION
   scope: RUN_TIME
-  value: "nyc3"
+  value: 'nyc3'
 # If true, instructs the S3 File System module to take over the public:// and
 # private:// stream wrappers entirely and serve them from the DigitalOcean
 # Spaces bucket.
 - key: S3FS_TAKEOVER
   scope: RUN_TIME
-  value: "true"
+  value: 'true'
   # Reusing Yarn cache on App Platform seems to not work as expected and results
   # in a failed build due to error:
   #
@@ -168,7 +168,7 @@ services:
     initial_delay_seconds: 0
     timeout_seconds: 30
   http_port: 80
-  instance_count: 2
+  instance_count: 1
   instance_size_slug: apps-s-1vcpu-1gb
   internal_ports:
   - 8080
@@ -186,7 +186,7 @@ services:
   # @see https://devcenter.heroku.com/articles/php-concurrency
   - key: WEB_CONCURRENCY
     scope: RUN_AND_BUILD_TIME
-    value: "16"
+    value: '16'
 
 workers:
 - build_command: .do/build-background-tasks.sh
