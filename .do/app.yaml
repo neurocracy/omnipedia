@@ -24,18 +24,6 @@ databases:
   version: "8"
 
 envs:
-  # If you reference any private Git repositories from your composer.json, you
-  # must provide Composer with a token for the respective service. Giving
-  # DigitalOcean access to your GitHub repositories (other than the root one)
-  # won't work, for example. The format for GitHub is provided here, but others
-  # work as well, e.g. GitLab, and can be merged in if you need to use multiple
-  # services.
-  #
-  # @see https://getcomposer.org/doc/05-repositories.md#using-private-repositories
-- key: COMPOSER_AUTH
-  scope: BUILD_TIME
-  type: SECRET
-  value: '{"github-oauth":{"github.com": "_GITHUB_TOKEN_"}}'
   # This must be specified for all components to ensure they don't differ and
   # cause Drupal to rebuild the container needlessly. Since they all get
   # deployed from the same repository and same commit each time, they should be
