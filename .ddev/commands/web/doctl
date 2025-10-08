@@ -6,8 +6,13 @@
 
 # @see https://docs.digitalocean.com/reference/doctl/
 
+# @see https://superuser.com/questions/270214/how-can-i-change-the-colors-of-my-xterm-using-ansi-escape-sequences
 RED='\033[31m'
+GREEN='\033[32m'
+YELLOW='\033[33m'
 BLUE='\033[34m'
+MAGENTA='\033[35m'
+CYAN='\033[36m'
 RESET='\033[0m'
 
 if [[ -z "${DIGITALOCEAN_TOKEN}" ]]; then
