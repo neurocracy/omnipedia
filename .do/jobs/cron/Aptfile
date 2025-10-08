@@ -1,7 +1,0 @@
-# Instructs App Platform to install additional system-level dependencies.
-#
-# @see https://docs.digitalocean.com/products/app-platform/reference/buildpacks/aptfile/
-#
-# @see https://elements.heroku.com/buildpacks/heroku/heroku-buildpack-apt
-
-curl
