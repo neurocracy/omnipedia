@@ -7,3 +7,9 @@
 # @see https://docs.digitalocean.com/reference/doctl/reference/apps/create-deployment/
 
 doctl --access-token $DIGITALOCEAN_TOKEN apps create-deployment $DIGITALOCEAN_APP --verbose "$@"
+
+# @todo This seems to only get the already deployed logs, i.e. the previous
+#  deployment and not the one we create above. Figure out how to display/tail
+#  the new deployment if possible.
+#
+# doctl --access-token $DIGITALOCEAN_TOKEN apps logs $DIGITALOCEAN_APP --follow --type build
