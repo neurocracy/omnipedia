@@ -7,4 +7,4 @@ COPY cron.sh /
 
 RUN apk add --no-cache bash
 
-CMD ['/bin/bash', '/cron.sh']
+CMD ["/bin/bash", "/cron.sh"]
