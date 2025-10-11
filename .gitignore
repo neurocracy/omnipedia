@@ -29,7 +29,12 @@ yarn.build-error.log
 # These are pulled in by the Drupal scaffold.
 /.gitattributes
 /.editorconfig
-/recipes/.gitignore
+
+# Recipes in this directory are intended to be added via Composer and so this is
+# ignored like /vendor is.
+#
+# @see https://www.drupal.org/docs/extending-drupal/drupal-recipes/how-to-download-and-apply-drupal-recipes
+/recipes
 
 # Ignore the storage directory. This is used for compiled Twig templates and
 # other PHP storage.
