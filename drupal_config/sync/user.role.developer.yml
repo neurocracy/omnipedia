@@ -39,7 +39,6 @@ dependencies:
     - node
     - omnipedia_access
     - omnipedia_attached_data
-    - omnipedia_changes
     - password_policy
     - path
     - pathauto
@@ -104,7 +103,6 @@ permissions:
   - 'administer url aliases'
   - 'administer users'
   - 'ban IP addresses'
-  - 'build omnipedia_changes'
   - 'bypass honeypot protection'
   - 'bypass node access'
   - 'change own username'

@@ -2,8 +2,6 @@ adding:
   dependencies:
     module:
       - devel
-      - omnipedia_changes
   permissions:
     - 'access devel information'
-    - 'build omnipedia_changes'
 removing: {  }
