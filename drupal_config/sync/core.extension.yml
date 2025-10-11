@@ -79,9 +79,6 @@ module:
   omnipedia_core: 0
   omnipedia_core_content_moderation: 0
   omnipedia_date: 0
-  omnipedia_discourse: 0
-  omnipedia_discourse_csp: 0
-  omnipedia_discourse_refreshless: 0
   omnipedia_logger: 0
   omnipedia_main_page: 0
   omnipedia_media: 0
