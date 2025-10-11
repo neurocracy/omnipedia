@@ -7,12 +7,6 @@ definitions:
     weight: -45
     expanded: false
     enabled: false
-  standard__front_page:
-    menu_name: main
-    parent: ''
-    weight: -50
-    expanded: false
-    enabled: false
   update__status:
     menu_name: admin
     parent: system.admin_reports
