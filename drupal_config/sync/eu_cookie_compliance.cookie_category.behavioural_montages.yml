@@ -1,9 +1,0 @@
-uuid: 72af5058-1d8e-482d-b866-eeded88ecd73
-langcode: en
-status: true
-dependencies: {  }
-id: behavioural_montages
-label: 'Behavioural montages'
-description: "Omnipedia's algorithms can keep track of your emotional state and, depending on your reactions, highlight content that piques a particular interest or restrict content that may be deemed upsetting or inappropriate."
-checkbox_default_state: unchecked
-weight: -7

@@ -23,7 +23,6 @@ dependencies:
     - content_moderation
     - contextual
     - entity_usage
-    - eu_cookie_compliance
     - fancy_file_delete
     - file
     - filter
@@ -82,8 +81,6 @@ permissions:
   - 'admin queue_ui'
   - 'administer contact forms'
   - 'administer entity usage'
-  - 'administer eu cookie compliance categories'
-  - 'administer eu cookie compliance popup'
   - 'administer fancy file delete'
   - 'administer flood unblock'
   - 'administer honeypot'

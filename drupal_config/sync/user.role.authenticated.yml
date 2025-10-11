@@ -5,7 +5,6 @@ dependencies:
   module:
     - contact
     - discourse_sso
-    - eu_cookie_compliance
     - file
     - login_history
     - media
@@ -22,7 +21,6 @@ permissions:
   - 'access discourse sso'
   - 'access site-wide contact form'
   - 'delete own files'
-  - 'display eu cookie compliance popup'
   - userprotect.account.edit
   - userprotect.mail.edit
   - userprotect.pass.edit

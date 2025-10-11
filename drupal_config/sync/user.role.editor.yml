@@ -11,7 +11,6 @@ dependencies:
   module:
     - content_moderation
     - contextual
-    - eu_cookie_compliance
     - file
     - filter
     - help
@@ -41,7 +40,6 @@ permissions:
   - 'access site reports'
   - 'access taxonomy overview'
   - 'add omnipedia_attached_data entity'
-  - 'administer eu cookie compliance categories'
   - 'administer menu'
   - 'administer nodes'
   - 'administer omnipedia_attached_data entity'

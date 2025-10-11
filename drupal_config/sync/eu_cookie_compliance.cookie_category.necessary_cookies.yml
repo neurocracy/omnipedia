@@ -1,9 +1,0 @@
-uuid: 294e8b34-152b-4a79-9d31-0bd453675aca
-langcode: en
-status: true
-dependencies: {  }
-id: necessary_cookies
-label: 'Necessary cookies'
-description: 'Omnipedia downloads minute data blocks known as cookies to your viewing device, some of which are required for basic functionality and for storing the information that you have consented to sharing.'
-checkbox_default_state: required
-weight: -10
