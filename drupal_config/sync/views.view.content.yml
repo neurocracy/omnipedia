@@ -134,6 +134,13 @@ display:
                 add_confirmation: false
                 confirm_help_text: ''
                 message_override: ''
+            -
+              action_id: views_bulk_operations_delete_entity
+              preconfiguration:
+                add_confirmation: true
+                confirm_help_text: ''
+                label_override: Delete
+                message_override: ''
         title:
           id: title
           table: node_field_data
