@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+
+## Description: Run the DigitalOcean do-app tool inside the web container
+## Usage: do-app [flags] [args]
+## Example: ddev do-app list
+
+# @see https://superuser.com/questions/270214/how-can-i-change-the-colors-of-my-xterm-using-ansi-escape-sequences
+RED='\033[31m'
+GREEN='\033[32m'
+YELLOW='\033[33m'
+BLUE='\033[34m'
+MAGENTA='\033[35m'
+CYAN='\033[36m'
+RESET='\033[0m'
+
+if [[ -z "${DIGITALOCEAN_TOKEN}" ]]; then
+
+  printf "${RED}Please set the \"DIGITALOCEAN_TOKEN\" environment variable to your access token to run this command!${RESET}\n\n" | fold -w 80 -s >&2
+
+  printf "Setting environment variables:\n${BLUE}https://docs.ddev.com/en/stable/users/extend/customization-extendibility/#environment-variables-for-containers-and-services${RESET}\n\n"
+
+  printf "Generate or manage tokens:\n${BLUE}https://cloud.digitalocean.com/account/api/tokens${RESET}\n\n"
+
+  exit 1
+
+fi
+
+if [[ -z "${DIGITALOCEAN_APP}" ]]; then
+
+  printf "${RED}Please set the \"DIGITALOCEAN_APP\" environment variable to an App Platform app ID to run this command!${RESET}\n\n" | fold -w 80 -s >&2
+
+  printf "Setting environment variables:\n${BLUE}https://docs.ddev.com/en/stable/users/extend/customization-extendibility/#environment-variables-for-containers-and-services${RESET}\n\n"
+
+  exit 1
+
+fi
+
+do-app --access-token="$DIGITALOCEAN_TOKEN" --app-id="$DIGITALOCEAN_APP" "$@"
