@@ -173,16 +173,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.356.43",
+            "version": "3.359.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "5722f6ea95240ef28f1ded35448bedcccb0b0883"
+                "reference": "c04a8b3c40bca26da591a8ff14bcc390d26c1644"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/5722f6ea95240ef28f1ded35448bedcccb0b0883",
-                "reference": "5722f6ea95240ef28f1ded35448bedcccb0b0883",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/c04a8b3c40bca26da591a8ff14bcc390d26c1644",
+                "reference": "c04a8b3c40bca26da591a8ff14bcc390d26c1644",
                 "shasum": ""
             },
             "require": {
@@ -264,9 +264,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.356.43"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.359.11"
             },
-            "time": "2025-10-21T19:13:44+00:00"
+            "time": "2025-11-12T19:18:02+00:00"
         },
         {
             "name": "caxy/php-htmldiff",
