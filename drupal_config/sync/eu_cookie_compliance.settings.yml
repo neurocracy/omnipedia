@@ -1,6 +1,9 @@
 _core:
   default_config_hash: Wph0IY6FThC4QuHAGcSQDx6S8gysoclVsF2tkm4Lu8o
 langcode: en
+dependencies:
+  config:
+    - filter.format.wiki_html
 uuid: 23f87a44-3143-496e-8a85-4c825c16c0a7
 popup_enabled: true
 popup_clicking_confirmation: false
@@ -85,6 +88,3 @@ close_button_action: close_banner
 reject_button_label: ''
 reject_button_enabled: false
 close_button_enabled: false
-dependencies:
-  config:
-    - filter.format.wiki_html
