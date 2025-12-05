@@ -6,5 +6,5 @@ roles: {  }
 allowed: ''
 description: true
 message: true
-mailkeys: ''
+mailkeys: update_status_notify
 mailkeys_skip: ''
