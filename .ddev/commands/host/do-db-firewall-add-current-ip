@@ -1,0 +1,88 @@
+#!/usr/bin/env bash
+
+## Description: Add current IP address to the DigitalOcean database cluster's firewall allow list
+## Usage: do-db-firewall-add-current-ip
+
+# @see https://superuser.com/questions/270214/how-can-i-change-the-colors-of-my-xterm-using-ansi-escape-sequences
+RED='\033[31m'
+GREEN='\033[32m'
+YELLOW='\033[33m'
+BLUE='\033[34m'
+MAGENTA='\033[35m'
+CYAN='\033[36m'
+RESET='\033[0m'
+
+CURRENT_IP="$(ddev get-current-public-ip)"
+
+CURRENT_IP_EXIT=$?
+
+if [ $CURRENT_IP_EXIT -ne 0 ]; then
+
+  printf "🛑 ${RED}Failed to get the current machine's public IP address.${RESET}\n" >&2
+
+  exit $CURRENT_IP_EXIT
+
+fi
+
+DIGITALOCEAN_DATABASE_CLUSTER_ID="$(ddev exec printenv DIGITALOCEAN_DATABASE_CLUSTER_ID)"
+
+printf "⏳ Attempting to add firewall rule allowing the current IP ($CURRENT_IP) to database cluster \"$DIGITALOCEAN_DATABASE_CLUSTER_ID\"...\n"
+
+# Remove any existing rule without outputting stdout.
+ddev do-db-firewall-remove-existing-rule 1>/dev/null
+
+RULES="$(ddev doctl databases firewalls append \
+  $DIGITALOCEAN_DATABASE_CLUSTER_ID \
+  --rule ip_addr:$CURRENT_IP --output json)"
+
+RULES_EXIT=$?
+
+if [ $RULES_EXIT -ne 0 ]; then
+
+  printf "🛑 ${RED}Failed to add a firewall rule allowing the current IP ($CURRENT_IP) to database cluster \"$DIGITALOCEAN_DATABASE_CLUSTER_ID\". Please make sure your DigitalOcean token has the \"database:read\", \"database:update\", \"firewall:read\", and \"firewall:update\" scopes.${RESET}\n" >&2
+
+  exit $RULES_EXIT
+
+fi
+
+# jq count query to verify only one rule for the current IP exists because
+# anything more is ambiguous.
+#
+# Note that we have escape $ip in this because bash in the DDEV container will
+# try to expand it as a variable that won't exist and thus fail.
+#
+# Also note the wrapping in an array before passing to length.
+JQ_COUNT_QUERY='[.[] | select(.type=="ip_addr" and .value==\$ip)] | length'
+
+RULES_COUNT="$(echo "$RULES" | ddev exec jq "$JQ_COUNT_QUERY" --arg ip $CURRENT_IP --raw-output)"
+
+if [ $RULES_COUNT -eq 0 ]; then
+
+  printf "🛑 ${RED}Could not find a firewall rule allowing the current IP ($CURRENT_IP) to database cluster \"$DIGITALOCEAN_DATABASE_CLUSTER_ID\".${RESET}\n" >&2
+
+  exit 1
+
+fi
+
+if [ $RULES_COUNT -gt 1 ]; then
+
+  printf "🛑 ${RED}Found multiple firewall rules allowing the current IP ($CURRENT_IP) to database cluster \"$DIGITALOCEAN_DATABASE_CLUSTER_ID\".${RESET}\n" >&2
+
+  exit 1
+
+fi
+
+# Note that we have escape $ip in this because bash in the DDEV container will
+# try to expand it as a variable that won't exist and thus fail.
+#
+# We shouldn't need to wrap the select() in an array and fetch the first index
+# but doing so just to be cautious in case there was a bug in our count query.
+JQ_QUERY='[.[] | select(.type=="ip_addr" and .value==\$ip)][0] | .uuid'
+
+RULE_UUID="$(echo "$RULES" | ddev exec jq "$JQ_QUERY" --arg ip $CURRENT_IP --raw-output)"
+
+ddev dotenv set .ddev/.env \
+  --digitalocean-database-current-ip-firewall-rule-uuid="$RULE_UUID" \
+  1>/dev/null
+
+printf "✅ ${GREEN}Successfully added firewall rule with UUID \"$RULE_UUID\" allowing the current IP ($CURRENT_IP) to database cluster \"$DIGITALOCEAN_DATABASE_CLUSTER_ID\".${RESET}\n"

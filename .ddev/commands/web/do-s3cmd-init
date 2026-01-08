@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+
+## Description: Set up S3cmd configuration inside the web container
+## Usage: do-s3cmd-init
+## Example: ddev do-s3cmd-init
+
+# @see https://superuser.com/questions/270214/how-can-i-change-the-colors-of-my-xterm-using-ansi-escape-sequences
+RED='\033[31m'
+GREEN='\033[32m'
+YELLOW='\033[33m'
+BLUE='\033[34m'
+MAGENTA='\033[35m'
+CYAN='\033[36m'
+RESET='\033[0m'
+
+if [[ -z "${S3CMD_CONFIG_FILE}" ]]; then
+
+  printf "🛑 ${RED}The \"S3CMD_CONFIG_FILE\" environment variable must be set to run this command!${RESET}\n" >&2
+
+  exit 1
+
+fi
+
+S3CMD_CONFIG_FILE_ABSOLUTE="$DDEV_APPROOT/$S3CMD_CONFIG_FILE"
+
+if [ -f "$S3CMD_CONFIG_FILE_ABSOLUTE" ]; then
+
+  # Double space required to compensate for Unicode variation selector for ⚠️.
+  printf "⚠️  ${YELLOW}\"$S3CMD_CONFIG_FILE_ABSOLUTE\" already exists; not modifying.${RESET}\n"
+
+  exit 0;
+
+fi
+
+# @see https://stackoverflow.com/questions/38622898/configuring-s3cmd-non-interactively-through-bash-script/70328700#70328700
+
+s3cmd \
+  --access_key="$SPACES_ACCESS" \
+  --secret_key="$SPACES_SECRET" \
+  --region="$S3FS_REGION" \
+  --host="$S3FS_REGION.digitaloceanspaces.com" \
+  --host-bucket="%(bucket).$S3FS_REGION.digitaloceanspaces.com" \
+  --no-encrypt \
+  --dump-config 2>&1 | tee "$S3CMD_CONFIG_FILE_ABSOLUTE" 1> /dev/null
+
+printf "✅ ${GREEN}\"$S3CMD_CONFIG_FILE_ABSOLUTE\" has been created.${RESET}\n"

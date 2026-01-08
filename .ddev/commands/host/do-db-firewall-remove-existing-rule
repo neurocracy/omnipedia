@@ -1,0 +1,54 @@
+#!/usr/bin/env bash
+
+## Description: Remove an existing current IP address firewall rules from the DigitalOcean database cluster's allow list
+## Usage: do-db-firewall-remove-existing-rule
+
+# @see https://superuser.com/questions/270214/how-can-i-change-the-colors-of-my-xterm-using-ansi-escape-sequences
+RED='\033[31m'
+GREEN='\033[32m'
+YELLOW='\033[33m'
+BLUE='\033[34m'
+MAGENTA='\033[35m'
+CYAN='\033[36m'
+RESET='\033[0m'
+
+RULE_UUID="$(ddev dotenv get .ddev/.env \
+  --digitalocean-database-current-ip-firewall-rule-uuid \
+  2>/dev/null)"
+
+RULE_UUID_EXIT=$?
+
+# If the variable does not exist in the .env file, ddev dotenv get will return a
+# non-zero exit code so we have to check for that in addition to whether the
+# value is empty.
+if [ $RULE_UUID_EXIT -ne 0 ] || [ -z $RULE_UUID ]; then
+
+  # Double space required to compensate for Unicode variation selector for ⚠️.
+  printf "⚠️  ${YELLOW}No firewall rule was found; nothing to remove.${RESET}\n"
+
+  exit 0;
+
+fi
+
+DIGITALOCEAN_DATABASE_CLUSTER_ID="$(ddev exec printenv DIGITALOCEAN_DATABASE_CLUSTER_ID)"
+
+printf "⏳ Attempting to remove firewall rule with UUID \"$RULE_UUID\" from database cluster \"$DIGITALOCEAN_DATABASE_CLUSTER_ID\"...\n"
+
+ddev doctl databases firewalls remove "$DIGITALOCEAN_DATABASE_CLUSTER_ID" --uuid "$RULE_UUID" 1>/dev/null
+
+DOCTL_EXIT=$?
+
+if [[ $DOCTL_EXIT -ne 0 ]]; then
+
+  printf "🛑 ${RED}Failed to remove firewall rule with UUID \"$RULE_UUID\" from database cluster \"$DIGITALOCEAN_DATABASE_CLUSTER_ID\"!${RESET}\n" >&2
+
+  exit $DOCTL_EXIT
+
+fi
+
+printf "✅ ${GREEN}Firewall rule with UUID \"$RULE_UUID\" was successfully removed from database cluster \"$DIGITALOCEAN_DATABASE_CLUSTER_ID\".${RESET}\n"
+
+# Once we've successfully removed the rule, remove the stored rule UUID.
+ddev dotenv set .ddev/.env \
+  --digitalocean-database-current-ip-firewall-rule-uuid="" \
+  1>/dev/null

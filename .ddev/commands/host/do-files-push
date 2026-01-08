@@ -1,0 +1,111 @@
+#!/usr/bin/env bash
+
+## Description: Push public files to remote file storage
+## Usage: do-files-push
+
+# @see https://superuser.com/questions/270214/how-can-i-change-the-colors-of-my-xterm-using-ansi-escape-sequences
+RED='\033[31m'
+GREEN='\033[32m'
+YELLOW='\033[33m'
+BLUE='\033[34m'
+MAGENTA='\033[35m'
+CYAN='\033[36m'
+RESET='\033[0m'
+
+# If set to "true", will assume yes for any confirmation prompts.
+#
+# Usage:
+#
+# (export YES="true"; ddev do-files-push)
+YES="${YES:-false}"
+
+# This can be set to "false" to sync image style derivatives as well.
+#
+# Usage:
+#
+# (export EXCLUDE_IMAGE_STYLES="false"; ddev do-files-push)
+#
+# Unless pushing the database as well, syncing image style derivatives can cause
+# a lot of headaches between Drupal and the S3FS module not knowing a
+# previously built derivative file has been deleted. If that happens by
+# mistake, the heavy-handed way to fix this is to completely flush derivatives
+# in the DigitalOcean app by logging in and running:
+#
+# drush image:flush --all && drush s3fs:refresh-cache && drush cr
+#
+# This ideally avoided as it forces a rebuild of derivatives and forces clients
+# to re-download them.
+EXCLUDE_IMAGE_STYLES="${EXCLUDE_IMAGE_STYLES:-true}"
+
+# Rclone exclude pattern list.
+#
+# We don't need to sync .gitkeep nor .htaccess files, the latter being entirely
+# useless here since that's only needed when files are being served by the same
+# web server on the same file system to avoid code execution. PHP files cannot
+# be executed from Spaces/S3 storage.
+#
+# Also note: filter patterns are evaluated against the remote paths, not the
+# local paths, and seem to be relative to the destination URI (i.e. shouldn't
+# start with '/public/' because that's already in the destination).
+#
+# @see https://rclone.org/filtering/
+EXCLUDES=".gitkeep,.htaccess"
+
+if ! [ $EXCLUDE_IMAGE_STYLES == "false" ]; then
+  EXCLUDES="$EXCLUDES,/styles/**"
+fi
+
+# Initialize configuration without outputting stdout.
+ddev do-rclone-init 1>/dev/null
+
+# Fail early if we couldn't initialize the Rclone config.
+if [[ $? -ne 0 ]]; then
+  exit $?
+fi
+
+ddev do-s3cmd-init 1>/dev/null
+
+# Fail early if we couldn't initialize the S3cmd config.
+if [[ $? -ne 0 ]]; then
+  exit $?
+fi
+
+if ! [ $YES == "true" ]; then
+
+  read -p "This will now sync local public files to the DigitalOcean Spaces bucket, replacing any existing files in the bucket. Are you sure you want to proceed? (y/n)" -n 1 -r -s
+
+  printf "\n"
+
+  if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+
+    printf "🛑 ${RED}Cancelled.${RESET}\n" >&2
+
+    exit 1
+
+  fi
+
+fi
+
+# Get the actual public files directory. Note that DDEV_FILES_DIR is deprecated,
+# and DDEV_FILES_DIRS is a comma-separated list which is annoying to try to
+# split in bash so doing this via Drush is less so by comparison.
+PUBLIC_FILES="$(ddev drush php:eval "echo \Drupal::service('settings')->get('file_public_path');")"
+
+printf "⏳ Starting file push...\n"
+
+ddev rclone sync "\$DDEV_APPROOT/\$DDEV_DOCROOT/$PUBLIC_FILES" "\$DIGITALOCEAN_SPACES_RCLONE_REMOTE_NAME:\$S3FS_BUCKET/public" --progress --exclude="{$EXCLUDES}"
+
+if [ $? -ne 0 ]; then
+  exit $?
+fi
+
+printf "✅ ${GREEN}Files have been pushed.${RESET}\n"
+
+printf "⏳ Setting public files' access to public...\n"
+
+# This recursively sets all files in the public files directory to public.
+#
+# @see https://stackoverflow.com/questions/52697745/how-to-change-all-the-folder-files-permission-private-into-public-in-digital-oce/52852181#52852181
+ddev s3cmd setacl "s3://\$S3FS_BUCKET/public" --acl-public --recursive
+
+printf "✅ ${GREEN}Finished setting public files' access to public.${RESET}\n"

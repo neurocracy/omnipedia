@@ -1,0 +1,61 @@
+#!/usr/bin/env bash
+
+## Description: Get the public IP address of current machine
+## Usage: get-current-public-ip
+
+# @see https://linuxconfig.org/how-to-use-curl-to-get-public-ip-address
+#
+# @see https://linuxvox.com/blog/methods-to-detect-public-ip-address-in-bash/
+#
+# @todo Port this to our DigitalOcean App Platform commands and use Symfony's
+#  validation component to ensure we only try to set a valid IP address.
+#
+# @see https://gitlab.com/neurocracy/digitalocean/app-platform-commands
+#
+# @see https://symfony.com/doc/current/validation.html
+#
+# @todo Can we create a simple DigitalOcean Function to return the detected
+#  public IP? This would be more secure since we would control the code.
+
+# @see https://superuser.com/questions/270214/how-can-i-change-the-colors-of-my-xterm-using-ansi-escape-sequences
+RED='\033[31m'
+GREEN='\033[32m'
+YELLOW='\033[33m'
+BLUE='\033[34m'
+MAGENTA='\033[35m'
+CYAN='\033[36m'
+RESET='\033[0m'
+
+URL1="checkip.amazonaws.com"
+
+URL2="icanhazip.com"
+
+RESPONSE1="$(ddev exec curl -4 -s $URL1)"
+
+if [ -z $RESPONSE1 ]; then
+
+  printf "🛑 ${RED}$URL1 did not return a response!${RESET}\n" >&2
+
+  exit 1
+
+fi
+
+RESPONSE2="$(ddev exec curl -4 -s $URL2)"
+
+if [ -z $RESPONSE2 ]; then
+
+  printf "🛑 ${RED}$URL2 did not return a response!${RESET}\n" >&2
+
+  exit 1
+
+fi
+
+if [ $RESPONSE1 != $RESPONSE2 ]; then
+
+  printf "🛑 ${RED}The IP address \"$RESPONSE1\" from $URL1 does not match the address \"$RESPONSE2\" from $URL2!${RESET}\n" >&2
+
+  exit 1
+
+fi
+
+echo $RESPONSE1

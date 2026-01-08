@@ -1,0 +1,162 @@
+#!/usr/bin/env bash
+
+## Description: Pull the database from the remote database server
+## Usage: do-db-pull
+
+# @see https://superuser.com/questions/270214/how-can-i-change-the-colors-of-my-xterm-using-ansi-escape-sequences
+RED='\033[31m'
+GREEN='\033[32m'
+YELLOW='\033[33m'
+BLUE='\033[34m'
+MAGENTA='\033[35m'
+CYAN='\033[36m'
+RESET='\033[0m'
+
+# If set to "true", will assume yes for any confirmation prompts.
+#
+# Usage:
+#
+# (export YES="true"; ddev do-db-pull)
+YES="${YES:-false}"
+
+# Initialize configuration without outputting stdout.
+ddev do-my-conf-init 1>/dev/null
+
+# Fail early if we couldn't initialize the defaults file.
+if [[ $? -ne 0 ]]; then
+  exit $?
+fi
+
+DUMP_DIR=".ddev/.downloads"
+
+DB_FILE="$DUMP_DIR/do-db-pull.sql"
+LOG_FILE="$DUMP_DIR/do-db-pull.log"
+
+ddev do-db-firewall-add-current-ip
+
+ADD_IP_EXIT=$?
+
+if [ $ADD_IP_EXIT -ne 0 ]; then
+
+  ddev do-db-firewall-remove-existing-rule
+
+  exit $ADD_IP_EXIT
+
+fi
+
+# This will have already been verified as set by do-my-conf-init if we got this
+# far.
+MYSQL_DEFAULTS_FILE="$(ddev exec printenv MYSQL_DEFAULTS_FILE 2>/dev/null)"
+
+printf "⏳ Checking database server connection...\n"
+
+# Note that we seem to have to do "ddev exec mysql" rather than "ddev mysql" as
+# the latter will fail with the error "Failed to open required defaults file".
+# This occurs both if we use the host $DDEV_APPROOT and the in-container one.
+# While we could just use the relative path, that might fail if this command is
+# executed in a sub-directory of the project.
+#
+# Also note that we have to escape the "\" in "\q" as otherwise it would get
+# stripped and interpreted as an escape and result in an SQL syntax error.
+#
+# @see https://stackoverflow.com/questions/34660374/how-to-test-connection-to-mysql-server/34661044#34661044
+ddev exec mysql --defaults-file="\$DDEV_APPROOT/\$MYSQL_DEFAULTS_FILE" -e '\\q'
+
+MYSQL_EXIT=$?
+
+if [ $MYSQL_EXIT -ne 0 ]; then
+
+  printf "🛑 ${RED}Failed to connect to the database server. Please check that your credentials are correct.${RESET}\n" >&2
+
+  ddev do-db-firewall-remove-existing-rule
+
+  # Fail early if we can't connect.
+  exit $MYSQL_EXIT
+
+fi
+
+printf "✅ ${GREEN}Database server connection successful.${RESET}\n"
+
+# Multiplier/factor to use to account for MySQL overhead.
+#
+# @see https://www.andymadge.com/2018/09/14/Show-Progress-when-using-mysqldump/
+DB_SIZE_FACTOR="0.8"
+
+# Gets rough total size of the table in bytes so that it can be provided to
+# pv --size to inform the total progress displayed.
+#
+# @see https://gist.github.com/o5/8bf57b3e5fa4649a81a4449787ba3691
+#
+# @see https://www.andymadge.com/2018/09/14/Show-Progress-when-using-mysqldump/
+DB_SIZE=$(ddev exec mysql \
+  --defaults-file="\$DDEV_APPROOT/$MYSQL_DEFAULTS_FILE" \
+  --silent \
+  --skip-column-names \
+  -e "SELECT ROUND(SUM(data_length + index_length) * $DB_SIZE_FACTOR) AS \
+  \"size_bytes\" \
+  FROM information_schema.TABLES \
+  WHERE table_schema='\$DIGITALOCEAN_DATABASE_NAME';"
+)
+
+printf "📥 Estimated download size: $(numfmt --to=iec-i --suffix=B "$DB_SIZE")\n"
+
+if ! [ $YES == "true" ]; then
+
+  read -p "This will now download and import the database, replacing the existing DDEV database. Are you sure you want to proceed? (y/n)" -n 1 -r -s
+
+  printf "\n"
+
+  if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+
+    printf "🛑 ${RED}Cancelled.${RESET}\n" >&2
+
+    ddev do-db-firewall-remove-existing-rule
+
+    exit 1
+
+  fi
+
+fi
+
+# If a dump file exists, remove it. This might happen if there was an error
+# during a previous use of this command and it had to exit early.
+ddev exec "rm -f \"\$DDEV_APPROOT/$DB_FILE\""
+
+# Ensure the directory exists.
+ddev exec "mkdir -p \"\$DDEV_APPROOT/$DUMP_DIR\""
+
+printf "⏳ Pulling database from database server. This may take several minutes...\n"
+
+ddev exec "mysqldump --defaults-file=\"\$DDEV_APPROOT/$MYSQL_DEFAULTS_FILE\" \"\$DIGITALOCEAN_DATABASE_NAME\" --single-transaction --set-gtid-purged=OFF 2> \"\$DDEV_APPROOT/$LOG_FILE\" | pv --progress --rate --bytes --size \"$DB_SIZE\" > \"\$DDEV_APPROOT/$DB_FILE\""
+
+MYSQL_EXIT=$?
+
+if [ $MYSQL_EXIT -ne 0 ]; then
+
+  printf "🛑 ${RED}Failed to pull database export from database server. Please check that your credentials are correct.${RESET}\n" >&2
+
+  ddev do-db-firewall-remove-existing-rule
+
+  exit $MYSQL_EXIT
+
+fi
+
+printf "✅ ${GREEN}Finished pulling database from database server.${RESET}\n"
+
+ddev do-db-firewall-remove-existing-rule
+
+ddev import-db --file="$DDEV_APPROOT/$DB_FILE"
+
+IMPORT_EXIT=$?
+
+if [ $IMPORT_EXIT -ne 0 ]; then
+
+  exit $IMPORT_EXIT
+
+fi
+
+ddev exec "rm -f \"\$DDEV_APPROOT/$DB_FILE\""
+
+ddev set-dev
+
+exit 0

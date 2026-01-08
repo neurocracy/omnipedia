@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+## Description: Initialize default Rclone configuration
+## Usage: do-rclone-init
+
+# @see https://superuser.com/questions/270214/how-can-i-change-the-colors-of-my-xterm-using-ansi-escape-sequences
+RED='\033[31m'
+GREEN='\033[32m'
+YELLOW='\033[33m'
+BLUE='\033[34m'
+MAGENTA='\033[35m'
+CYAN='\033[36m'
+RESET='\033[0m'
+
+if [[ -z "${DIGITALOCEAN_SPACES_RCLONE_REMOTE_NAME}" ]]; then
+
+  printf "🛑 ${RED}The \"DIGITALOCEAN_SPACES_RCLONE_REMOTE_NAME\" environment variable must be set to run this command!${RESET}\n" >&2
+
+  exit 1
+
+fi
+
+$DDEV_APPROOT/.ddev/commands/web/do-rclone-create-remote $DIGITALOCEAN_SPACES_RCLONE_REMOTE_NAME

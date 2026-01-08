@@ -1,0 +1,6 @@
+# This directory is used to store sensitive values for interacting with the
+# DigitalOcean database cluster and Spaces file storage.
+*
+
+# However, allow this file to be committed.
+!/.gitignore

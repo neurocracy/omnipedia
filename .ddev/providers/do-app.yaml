@@ -1,0 +1,36 @@
+# DigitalOcean App Platform DDEV provider.
+#
+# @see https://docs.ddev.com/en/stable/users/providers/
+
+db_import_command:
+  command: |
+    # set -x # Uncomment for debugging.
+    set -eu -o pipefail
+    (export YES="true"; ddev do-db-pull)
+  service: host
+
+files_pull_command:
+  # The import command handles pulling as well. We sync directly to the Drupal
+  # files directory from the Spaces bucket.
+  command: true
+
+files_import_command:
+  command: |
+    # set -x # Uncomment for debugging.
+    set -eu -o pipefail
+    (export YES="true"; export EXCLUDE_IMAGE_STYLES="false"; ddev do-files-pull)
+  service: host
+
+db_push_command:
+  command: |
+    # set -x # Uncomment for debugging.
+    set -eu -o pipefail
+    (export YES="true"; ddev do-db-push)
+  service: host
+
+files_push_command:
+  command: |
+    # set -x # Uncomment for debugging.
+    set -eu -o pipefail
+    (export YES="true"; export EXCLUDE_IMAGE_STYLES="false"; ddev do-files-push)
+  service: host

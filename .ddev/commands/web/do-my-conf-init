@@ -1,0 +1,106 @@
+#!/usr/bin/env bash
+
+## Description: Set up DigitalOcean MySQL configuration inside the web container
+## Usage: do-my-conf-init
+## Example: ddev do-my-conf-init
+
+# @see https://superuser.com/questions/270214/how-can-i-change-the-colors-of-my-xterm-using-ansi-escape-sequences
+RED='\033[31m'
+GREEN='\033[32m'
+YELLOW='\033[33m'
+BLUE='\033[34m'
+MAGENTA='\033[35m'
+CYAN='\033[36m'
+RESET='\033[0m'
+
+if [[ -z "${MYSQL_DEFAULTS_FILE}" ]]; then
+
+  printf "🛑 ${RED}The \"MYSQL_DEFAULTS_FILE\" environment variable must be set to run this command!${RESET}\n" >&2
+
+  exit 1
+
+fi
+
+MYSQL_DEFAULTS_FILE_ABSOLUTE="$DDEV_APPROOT/$MYSQL_DEFAULTS_FILE"
+
+if [ -f "$MYSQL_DEFAULTS_FILE_ABSOLUTE" ]; then
+
+  # Double space required to compensate for Unicode variation selector for ⚠️.
+  printf "⚠️  ${YELLOW}\"$MYSQL_DEFAULTS_FILE_ABSOLUTE\" already exists; not modifying.${RESET}\n"
+
+  exit 0;
+
+fi
+
+if [[ -z "${DIGITALOCEAN_DATABASE_CLUSTER_ID}" ]]; then
+
+  printf "🛑 ${RED}The \"DIGITALOCEAN_DATABASE_CLUSTER_ID\" environment variable must be set to run this command!${RESET}\n" >&2
+
+  exit 1
+
+fi
+
+if [[ -z "${DIGITALOCEAN_DATABASE_USER}" ]]; then
+
+  printf "🛑 ${RED}The \"DIGITALOCEAN_DATABASE_USER\" environment variable must be set to run this command!${RESET}\n" >&2
+
+  exit 1
+
+fi
+
+if [[ -z "${DIGITALOCEAN_DATABASE_NAME}" ]]; then
+
+  printf "🛑 ${RED}The \"DIGITALOCEAN_DATABASE_NAME\" environment variable must be set to run this command!${RESET}\n" >&2
+
+  exit 1
+
+fi
+
+printf "⏳ Attempting to retrieve database cluster connection information...\n"
+
+DIGITALOCEAN_DATABASE_HOST="$(doctl --access-token $DIGITALOCEAN_TOKEN databases connection $DIGITALOCEAN_DATABASE_CLUSTER_ID --format=Host --no-header)"
+
+if [ -z $DIGITALOCEAN_DATABASE_HOST ]; then
+
+  printf "🛑 ${RED}Could not retrieve the hostname for database cluster \"$DIGITALOCEAN_DATABASE_CLUSTER_ID\"! Please make sure your DigitalOcean token has the \"database:read\" and the \"database:view_credentials\" scopes.${RESET}\n" >&2
+
+  exit 1
+
+fi
+
+DIGITALOCEAN_DATABASE_PORT="$(doctl --access-token $DIGITALOCEAN_TOKEN databases connection $DIGITALOCEAN_DATABASE_CLUSTER_ID --format=Port --no-header)"
+
+if [ -z $DIGITALOCEAN_DATABASE_PORT ]; then
+
+  printf "🛑 ${RED}Could not retrieve the port for database cluster \"$DIGITALOCEAN_DATABASE_CLUSTER_ID\"! Please make sure your DigitalOcean token has the \"database:read\" and the \"database:view_credentials\" scopes.${RESET}\n" >&2
+
+  exit 1
+
+fi
+
+DIGITALOCEAN_DATABASE_PASSWORD="$(doctl --access-token $DIGITALOCEAN_TOKEN databases user get $DIGITALOCEAN_DATABASE_CLUSTER_ID $DIGITALOCEAN_DATABASE_USER --format=Password --no-header)"
+
+if [ -z $DIGITALOCEAN_DATABASE_PORT ]; then
+
+  printf "🛑 ${RED}Could not retrieve the password for the \"$DIGITALOCEAN_DATABASE_USER\" user in database cluster \"$DIGITALOCEAN_DATABASE_CLUSTER_ID\"! Please make sure your DigitalOcean token has the \"database:read\" and the \"database:view_credentials\" scopes.${RESET}\n" >&2
+
+  exit 1
+
+fi
+
+# Note that setting the database under [client] will cause mysqldump to try to
+# use it as well but it'll exit with an error because it doesn't support that
+# variable. We instead only set it under the [mysql] command.
+#
+# @see https://stackoverflow.com/questions/54024991/error-in-mysqldump-mysqldump-error-unknown-variable-database-somedb/55197291#55197291
+cat > $MYSQL_DEFAULTS_FILE_ABSOLUTE <<EOF
+[client]
+host="$DIGITALOCEAN_DATABASE_HOST"
+user="$DIGITALOCEAN_DATABASE_USER"
+password="$DIGITALOCEAN_DATABASE_PASSWORD"
+port="$DIGITALOCEAN_DATABASE_PORT"
+[mysql]
+database="$DIGITALOCEAN_DATABASE_NAME"
+EOF
+
+printf "✅ ${GREEN}\"$MYSQL_DEFAULTS_FILE_ABSOLUTE\" has been created.${RESET}\n"
