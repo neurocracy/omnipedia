@@ -336,10 +336,6 @@
           "append": "drupal_scaffold/gitattributes_append"
         },
         "[web-root]/.ht.router.php": false,
-        "[web-root]/.htaccess": {
-          "prepend": "drupal_scaffold/htaccess_prepend",
-          "append": "drupal_scaffold/htaccess_append"
-        },
         "[web-root]/robots.txt": {
           "append": "drupal_scaffold/robots_append.txt"
         },
