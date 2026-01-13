@@ -15,6 +15,44 @@ declare(strict_types=1);
  *   creating our own or reusing existing Drupal/Symfony classes.
  */
 
+use Symfony\Component\Dotenv\Dotenv;
+
+// If we're running under DDEV and any of the DDEV .env files exist, attempt to
+// load them to have the most up-to-date values. When these .env files are
+// updated, restarting the project would otherwise be required to use the
+// updated values.
+if (
+  getenv('IS_DDEV_PROJECT') === 'true' &&
+  !empty(getenv('DDEV_APPROOT')) &&
+  (
+    file_exists(getenv('DDEV_APPROOT') . '/.ddev/.env') ||
+    file_exists(getenv('DDEV_APPROOT') . '/.ddev/.env.web')
+  )
+) {
+
+  $dotenv = new Dotenv();
+
+  // We want the Dotenv component to to use putenv() so all the getenv()s in
+  // this file work as expected without having to change anything.
+  $dotenv->usePutenv(true);
+
+  if (file_exists(getenv('DDEV_APPROOT') . '/.ddev/.env')) {
+
+    $dotenv->overload(getenv('DDEV_APPROOT') . '/.ddev/.env');
+
+  }
+
+  # If there's a web container-specific .env file, also load those values.
+  #
+  # @see https://docs.ddev.com/en/stable/users/extend/customization-extendibility/#environment-variables-for-containers-and-services
+  if (file_exists(getenv('DDEV_APPROOT') . '/.ddev/.env.web')) {
+
+    $dotenv->overload(getenv('DDEV_APPROOT') . '/.ddev/.env.web');
+
+  }
+
+}
+
 /**
  * Database connection settings.
  *

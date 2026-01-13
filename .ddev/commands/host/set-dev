@@ -28,31 +28,11 @@ ddev dotenv set .ddev/.env \
   --drupal-config-splits="$DRUPAL_CONFIG_SPLITS_DEV" \
   1>/dev/null
 
-# Restarting is necessary for DDEV to use the new environment variable value.
-#
-# @todo Can we do this without restarting?
-if [ "$(ddev exec printenv DRUPAL_CONFIG_SPLITS)" != "$DRUPAL_CONFIG_SPLITS_DEV" ]; then
-
-  printf "⏳ Restarting project for changes to take effect...\n"
-
-  ddev restart
-
-fi
-
 printf "⏳ Importing Drupal configuration...\n"
 
 # We're only importing configuration and not doing "drush theme:dev on" because
 # that will disable the render cache and change other settings that may not
 # always be wanted.
 ddev drush --quiet -y config:import
-
-# This works when running the config import but does not persist so any
-# subsequent config import or export will still use the old value. This means
-# that restarting the project is still the most reliable way to ensure the
-# correct value is always used.
-#
-# @todo Can we "source .ddev/.env" in an in-container .bashrc or similar?
-#
-# (ddev exec "export DRUPAL_CONFIG_SPLITS=\"$DRUPAL_CONFIG_SPLITS_DEV\" && drush -y config:import")
 
 printf "✅ ${GREEN}Project is now in development configuration.${RESET}\n"
