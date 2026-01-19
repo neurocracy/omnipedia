@@ -163,6 +163,11 @@
     },
     {
       "type": "vcs",
+      "url": "https://git.drupalcode.org/issue/refreshless-3500115.git",
+      "only": ["drupal/refreshless"]
+    },
+    {
+      "type": "vcs",
       "url": "https://gitlab.com/neurocracy/omnipedia/modules/forks/trusted-reverse-proxy.git",
       "only": ["drupal/trusted_reverse_proxy"]
     },
@@ -245,7 +250,7 @@
     "drupal/purge_users": "^4.0@beta",
     "drupal/rebuilder": "1.x-dev as 1.2",
     "drupal/redirect": "^1.6",
-    "drupal/refreshless": "2.x-dev as 2.0@dev",
+    "drupal/refreshless": "dev-3500115-fouc-sorting as 2.0",
     "drupal/reroute_email": "^2.3@RC",
     "drupal/rules": "^3.0@alpha || ^4.0",
     "drupal/s3fs": "^3.6",
