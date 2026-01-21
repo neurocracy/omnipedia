@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+
+## Description: Set to dev
+## Usage: set-dev
+
+# @see https://superuser.com/questions/270214/how-can-i-change-the-colors-of-my-xterm-using-ansi-escape-sequences
+RED='\033[31m'
+GREEN='\033[32m'
+YELLOW='\033[33m'
+BLUE='\033[34m'
+MAGENTA='\033[35m'
+CYAN='\033[36m'
+RESET='\033[0m'
+
+DRUPAL_CONFIG_SPLITS_DEV="$(ddev exec printenv DRUPAL_CONFIG_SPLITS_DEV)"
+
+if [[ -z "${DRUPAL_CONFIG_SPLITS_DEV}" ]]; then
+
+  printf "🛑 ${RED}The \"DRUPAL_CONFIG_SPLITS_DEV\" environment variable must be set to run this command!${RESET}\n" >&2
+
+  exit 1
+
+fi
+
+printf "⏳ Setting project to development configuration...\n"
+
+ddev dotenv set .ddev/.env \
+  --drupal-config-splits="$DRUPAL_CONFIG_SPLITS_DEV" \
+  1>/dev/null
+
+printf "⏳ Importing Drupal configuration...\n"
+
+# We're only importing configuration and not doing "drush theme:dev on" because
+# that will disable the render cache and change other settings that may not
+# always be wanted.
+ddev drush --quiet -y config:import
+
+printf "✅ ${GREEN}Project is now in development configuration.${RESET}\n"

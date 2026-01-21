@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+## Description: Run S3cmd inside the web container
+## Usage: s3cmd [flags] [args]
+## Example: ddev s3cmd --help
+
+# @see https://s3tools.org/s3cmd
+
+# @see https://superuser.com/questions/270214/how-can-i-change-the-colors-of-my-xterm-using-ansi-escape-sequences
+RED='\033[31m'
+GREEN='\033[32m'
+YELLOW='\033[33m'
+BLUE='\033[34m'
+MAGENTA='\033[35m'
+CYAN='\033[36m'
+RESET='\033[0m'
+
+if [[ -z "${S3CMD_CONFIG_FILE}" ]]; then
+
+  printf "🛑 ${RED}The \"S3CMD_CONFIG_FILE\" environment variable must be set to run this command!${RESET}\n" >&2
+
+  exit 1
+
+fi
+
+s3cmd --config="$S3CMD_CONFIG_FILE" "$@"

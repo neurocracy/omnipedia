@@ -25,9 +25,62 @@ nfs_mount_enabled: false
 mutagen_enabled: false
 use_dns_when_possible: true
 composer_version: '2'
-web_environment: []
 nodejs_version: '22'
 # Required to use Yarn 4 without checking in the binary.
 #
 # @see https://yarnpkg.com/blog/release/4.0#installing-yarn
 corepack_enable: true
+
+web_environment:
+
+  # This is used in our settings.php to override the default auto-detected
+  # primary host which can sometimes get cached as the oEmbed host rather than
+  # the primary host.
+  - DRUPAL_PRIMARY_HOST=$DDEV_PROJECT.$DDEV_TLD
+
+  # Should match the format of the value set in additional_hostnames above.
+  - DRUPAL_OEMBED_HOST=$DDEV_PROJECT-oembed.$DDEV_TLD
+
+  # Comma-separated list of configuration splits for the dev environment.
+  - DRUPAL_CONFIG_SPLITS_DEV=refreshless,dev
+
+  # Comma-separated list of configuration splits for the production environment.
+  - DRUPAL_CONFIG_SPLITS_PRODUCTION=refreshless,paranoia
+
+  # MySQL configuration file for interacting with the DigitalOcean database.
+  #
+  # @see https://dev.mysql.com/doc/refman/8.4/en/password-security-user.html
+  - MYSQL_DEFAULTS_FILE=.do/config/my.conf
+
+  # Rclone configuration file for interacting with DigitalOcean Spaces.
+  #
+  # @see https://rclone.org/
+  - RCLONE_CONFIG_FILE=.do/config/rclone.conf
+
+  # S3cmd configuration file for interacting with DigitalOcean Spaces.
+  #
+  # @see https://s3tools.org/s3cmd
+  - S3CMD_CONFIG_FILE=.do/config/s3cmd.conf
+
+  # Disable Hux' optimized mode as we don't use DDEV in production.
+  #
+  # @see https://www.drupal.org/docs/contributed-modules/hux/hux-optimized-mode
+  - DRUPAL_HUX_OPTIMIZE=false
+
+  # If true, the S3 File System module will take over the public:// and
+  # private:// stream wrappers, serving all files from your DigitalOcean Spaces
+  # bucket. This can be useful to test during development, but most of the time
+  # you'll want this set to 'false' so that local files are served.
+  - S3FS_TAKEOVER=false
+
+webimage_extra_packages:
+
+  # Rclone is for interacting with DigitalOcean Spaces.
+  #
+  # @see https://rclone.org/
+  - rclone
+
+  # S3cmd is for interacting with DigitalOcean Spaces.
+  #
+  # @see https://s3tools.org/s3cmd
+  - s3cmd

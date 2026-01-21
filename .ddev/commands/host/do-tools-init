@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+## Description: Initialize configuration for tools for working with a DigitalOcean app
+## Usage: do-tools-init
+
+ddev do-my-conf-init
+
+ddev do-rclone-init
+
+ddev do-s3cmd-init

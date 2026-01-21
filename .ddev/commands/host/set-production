@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+
+## Description: Set to production
+## Usage: set-production
+
+# @see https://superuser.com/questions/270214/how-can-i-change-the-colors-of-my-xterm-using-ansi-escape-sequences
+RED='\033[31m'
+GREEN='\033[32m'
+YELLOW='\033[33m'
+BLUE='\033[34m'
+MAGENTA='\033[35m'
+CYAN='\033[36m'
+RESET='\033[0m'
+
+DRUPAL_CONFIG_SPLITS_PRODUCTION="$(ddev exec printenv DRUPAL_CONFIG_SPLITS_PRODUCTION)"
+
+if [[ -z "${DRUPAL_CONFIG_SPLITS_PRODUCTION}" ]]; then
+
+  printf "🛑 ${RED}The \"DRUPAL_CONFIG_SPLITS_PRODUCTION\" environment variable must be set to run this command!${RESET}\n" >&2
+
+  exit 1
+
+fi
+
+printf "⏳ Setting project to production configuration...\n"
+
+ddev dotenv set .ddev/.env \
+  --drupal-config-splits="$DRUPAL_CONFIG_SPLITS_PRODUCTION" \
+  1>/dev/null
+
+printf "⏳ Importing Drupal configuration and disabling Twig development...\n"
+
+# In case Twig development mode was enabled, this ensures it's disabled. We
+# don't currently enable it automatically in the set-dev command but it might
+# have been left enabled by accident during development.
+ddev drush --quiet theme:dev off
+ddev drush --quiet -y config:import
+
+printf "✅ ${GREEN}Project is now in production configuration.${RESET}\n"

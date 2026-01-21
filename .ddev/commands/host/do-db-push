@@ -1,0 +1,144 @@
+#!/usr/bin/env bash
+
+## Description: Push the database to the remote database server
+## Usage: do-db-push
+
+# @see https://superuser.com/questions/270214/how-can-i-change-the-colors-of-my-xterm-using-ansi-escape-sequences
+RED='\033[31m'
+GREEN='\033[32m'
+YELLOW='\033[33m'
+BLUE='\033[34m'
+MAGENTA='\033[35m'
+CYAN='\033[36m'
+RESET='\033[0m'
+
+# If set to "true", will assume yes for any confirmation prompts.
+#
+# Usage:
+#
+# (export YES="true"; ddev do-db-push)
+YES="${YES:-false}"
+
+# Initialize configuration without outputting stdout.
+ddev do-my-conf-init 1>/dev/null
+
+# Fail early if we couldn't initialize the defaults file.
+if [[ $? -ne 0 ]]; then
+  exit $?
+fi
+
+DUMPSTER=".ddev/.downloads"
+
+DB_FILE="$DUMPSTER/do-db-push.sql"
+LOG_FILE="$DUMPSTER/do-db-push.log"
+
+ddev do-db-firewall-add-current-ip
+
+ADD_IP_EXIT=$?
+
+if [ $ADD_IP_EXIT -ne 0 ]; then
+
+  ddev do-db-firewall-remove-existing-rule
+
+  exit $ADD_IP_EXIT
+
+fi
+
+# This will have already been verified as set by do-my-conf-init if we got this
+# far.
+MYSQL_DEFAULTS_FILE="$(ddev exec printenv MYSQL_DEFAULTS_FILE 2>/dev/null)"
+
+printf "⏳ Checking database server connection...\n"
+
+# Note that we seem to have to do "ddev exec mysql" rather than "ddev mysql" as
+# the latter will fail with the error "Failed to open required defaults file".
+# This occurs both if we use the host $DDEV_APPROOT and the in-container one.
+# While we could just use the relative path, that might fail if this command is
+# executed in a sub-directory of the project.
+#
+# Also note that we have to escape the "\" in "\q" as otherwise it would get
+# stripped and interpreted as an escape and result in an SQL syntax error.
+#
+# @see https://stackoverflow.com/questions/34660374/how-to-test-connection-to-mysql-server/34661044#34661044
+ddev exec mysql --defaults-file="\$DDEV_APPROOT/\$MYSQL_DEFAULTS_FILE" -e '\\q'
+
+MYSQL_EXIT=$?
+
+if [ $MYSQL_EXIT -ne 0 ]; then
+
+  printf "🛑 ${RED}Failed to connect to the database server. Please check that your credentials are correct.${RESET}\n" >&2
+
+  ddev do-db-firewall-remove-existing-rule
+
+  # Fail early if we can't connect.
+  exit $MYSQL_EXIT
+
+fi
+
+printf "✅ ${GREEN}Database server connection successful.${RESET}\n"
+
+if ! [ $YES == "true" ]; then
+
+  read -p "This will now push the current DDEV database to the remote server, replacing the existing remote database. Are you sure you want to proceed? (y/n)" -n 1 -r -s
+
+  printf "\n"
+
+  if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+
+    printf "🛑 ${RED}Cancelled.${RESET}\n" >&2
+
+    ddev do-db-firewall-remove-existing-rule
+
+    exit 1
+
+  fi
+
+fi
+
+ddev set-production
+
+# If a dump file exists, remove it. This might happen if there was an error
+# during a previous use of this command and it had to exit early.
+ddev exec "rm -f \"\$DDEV_APPROOT/$DB_FILE\""
+
+# Ensure the directory exists or ddev export-db will fail.
+ddev exec "mkdir -p \"\$DDEV_APPROOT/$DUMPSTER\""
+
+ddev export-db --file="$DDEV_APPROOT/$DB_FILE" --gzip=false
+
+printf "⏳ Pushing export to database server. This may take several minutes...\n"
+
+# Note the "ddev exec mysql"; see connection check above for reason.
+#
+# @see https://stackoverflow.com/questions/10719662/import-a-local-sql-file-to-mysql-on-a-remote-server-using-ssh-tunnel/20426611#20426611
+ddev exec "pv --progress --rate --bytes < \"\$DDEV_APPROOT/$DB_FILE\" | mysql --defaults-file="\$DDEV_APPROOT/\$MYSQL_DEFAULTS_FILE" > \"\$DDEV_APPROOT/$LOG_FILE\""
+
+MYSQL_EXIT=$?
+
+if [ $MYSQL_EXIT -ne 0 ]; then
+
+  printf "🛑 ${RED}Failed to push database export to database server. Please check that your credentials are correct.${RESET}\n" >&2
+
+else
+
+  printf "✅ ${GREEN}Finished pushing database export to database server.${RESET}\n"
+
+fi
+
+ddev do-db-firewall-remove-existing-rule
+
+ddev exec "rm -f \"\$DDEV_APPROOT/$DB_FILE\""
+
+ddev set-dev
+
+if [ $MYSQL_EXIT -eq 0 ]; then
+
+  printf "🖥️ Please open a console session using:\n\n"
+  printf "  ${CYAN}ddev do-app console web${RESET}\n\n"
+  printf "and then running:\n\n"
+  printf "  ${CYAN}drush s3fs:refresh-cache${RESET}\n\n"
+  printf "and clearing Drupal's cache after if necessary.\n"
+
+fi
+
+exit $MYSQL_EXIT

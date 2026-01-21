@@ -1,0 +1,53 @@
+#!/usr/bin/env bash
+
+## Description: Set up Rclone remote configuration inside the web container
+## Usage: do-rclone-create-remote [name]
+## Example: ddev do-rclone-create-remote production
+
+# @see https://rclone.org/
+
+# @see https://superuser.com/questions/270214/how-can-i-change-the-colors-of-my-xterm-using-ansi-escape-sequences
+RED='\033[31m'
+GREEN='\033[32m'
+YELLOW='\033[33m'
+BLUE='\033[34m'
+MAGENTA='\033[35m'
+CYAN='\033[36m'
+RESET='\033[0m'
+
+if [[ -z "${RCLONE_CONFIG_FILE}" ]]; then
+
+  printf "🛑 ${RED}The \"RCLONE_CONFIG_FILE\" environment variable must be set to run this command!${RESET}\n" >&2
+
+  exit 1
+
+fi
+
+RCLONE_CONFIG_FILE_ABSOLUTE="$DDEV_APPROOT/$RCLONE_CONFIG_FILE"
+
+# Create the file if it doesn't exist so Rclone doesn't output a distracting
+# notice that it doesn't exist.
+touch "$RCLONE_CONFIG_FILE_ABSOLUTE"
+
+# Annoyingly, even if the remote does not exist, rclone still prints
+# [remote-name] to stdout so we have grep.
+EXISTING_REMOTE=$(echo $(rclone config show "$1" --config="$RCLONE_CONFIG_FILE_ABSOLUTE" 2>/dev/null | grep 'type = s3'))
+
+if [ -n "$EXISTING_REMOTE" ]; then
+
+  # Double space required to compensate for Unicode variation selector for ⚠️.
+  printf "⚠️  ${YELLOW}\"$RCLONE_CONFIG_FILE_ABSOLUTE\" already contains a remote named \"$1\"; not modifying.${RESET}\n"
+
+  exit 0;
+
+fi
+
+rclone config create "$1" s3 \
+  provider="DigitalOcean" \
+  region="$S3FS_REGION" \
+  endpoint="$S3FS_REGION.digitaloceanspaces.com" \
+  access_key_id="$SPACES_ACCESS" \
+  secret_access_key="$SPACES_SECRET" \
+  --config="$RCLONE_CONFIG_FILE_ABSOLUTE" 1> /dev/null
+
+printf "✅ ${GREEN}\"$RCLONE_CONFIG_FILE_ABSOLUTE\" has been configured with new remote \"$1\".${RESET}\n"
