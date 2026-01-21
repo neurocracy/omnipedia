@@ -323,8 +323,7 @@
     "patches-ignore": {
       "drupal/refreshless": {
         "drupal/core": {
-          "We already have this patch for JS \"async\" and \"defer\" attributes": "https://git.drupalcode.org/project/refreshless/-/raw/9bd0325f415e95bfaa7adc29daaf26cc32bed673/modules/refreshless_turbo/patches/drupal/core/1587536-js-aggregation-async-defer-attributes.patch",
-          "Drupal 11.2 Navigation seems to no longer have issues displacing on re-attach?": "https://git.drupalcode.org/project/refreshless/-/raw/a9abd3f0581150115ce17dcf8d80891db6dbb84d/patches/drupal/core/3487905-navigation-displace-detach-attach.patch"
+          "We already have this patch for JS \"async\" and \"defer\" attributes": "https://git.drupalcode.org/project/refreshless/-/raw/9bd0325f415e95bfaa7adc29daaf26cc32bed673/modules/refreshless_turbo/patches/drupal/core/1587536-js-aggregation-async-defer-attributes.patch"
         }
       }
     },
