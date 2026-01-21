@@ -1,7 +1,77 @@
 {
-    "_hash": "1c2b2cee838c73d92faf32fe5a4e861cfe621b80566abdaec7ce30b0b2ed27eb",
+    "_hash": "c79c7dce479a223336b1f84c7bc9feb8fabf9ba5975a90a1244c1b1fdc6cf3ec",
     "patches": {
         "drupal/core": [
+            {
+                "package": "drupal/core",
+                "description": "Allow configurable cookie prefix [#1361742] (NOTE: edited to remove failing block on non-existent file in dist that exists in Drupal.org Git): https://www.drupal.org/project/drupal/issues/1361742",
+                "url": "patches/drupal/core/1361742-allow-configurable-cookie-prefix.patch",
+                "sha256": "22bfb9d0a09dfaa1c652c3a29dc4048d67e81ba42cb32a2f40149c0ea336426b",
+                "depth": 2,
+                "extra": {
+                    "provenance": "patches-file:composer.patches.json"
+                }
+            },
+            {
+                "package": "drupal/core",
+                "description": "JS aggregation should account for \"async\" and \"defer\" attributes [#1587536]: https://www.drupal.org/project/drupal/issues/1587536",
+                "url": "patches/drupal/core/1587536-js-aggregation-async-defer-attributes.patch",
+                "sha256": "9caf2a38cd376173c4d20de07ac7c68515582b30547041d470816ab9b555cc72",
+                "depth": 2,
+                "extra": {
+                    "provenance": "patches-file:composer.patches.json"
+                }
+            },
+            {
+                "package": "drupal/core",
+                "description": "Fix mismatch of $base_url with Symfony request object [#2753591]: https://www.drupal.org/project/drupal/issues/2753591",
+                "url": "patches/drupal/core/2753591-fix-mismatch-of-base-url.patch",
+                "sha256": "b0a5088fe8f00061a311139b147ec7798372b76ea9cc639dce1222dcc994006d",
+                "depth": 2,
+                "extra": {
+                    "provenance": "patches-file:composer.patches.json"
+                }
+            },
+            {
+                "package": "drupal/core",
+                "description": "Allow theme developers to add the default favicon filename to the theme's .info.yml [#3037922]: https://www.drupal.org/project/drupal/issues/3037922#mr4108-note181413",
+                "url": "patches/drupal/core/3037922-theme-info-favicon.patch",
+                "sha256": "5d46dc07543771709a5f2ccb16f509409f30087ab14a4ecf23d3f0b82a6dae6d",
+                "depth": 2,
+                "extra": {
+                    "provenance": "patches-file:composer.patches.json"
+                }
+            },
+            {
+                "package": "drupal/core",
+                "description": "Support setting service parameters via environment variables [#3249970]: https://www.drupal.org/project/drupal/issues/3249970#comment-14294955",
+                "url": "patches/drupal/core/3249970-2-support-service-parameter-env.patch",
+                "sha256": "0140c296e75486cbdf8659a0fd8145fe68fee58980abf54cc883c7b459482938",
+                "depth": 2,
+                "extra": {
+                    "provenance": "patches-file:composer.patches.json"
+                }
+            },
+            {
+                "package": "drupal/core",
+                "description": "Slow admin/config page load [#3336621]: https://www.drupal.org/project/drupal/issues/3336621#comment-14888211",
+                "url": "patches/drupal/core/3336621-3-remove-admin-config-status-report-check.patch",
+                "sha256": "f474c4aca3d8a2785d0a3eab6041697dca1c6f976df129d9fe6d7390e0bdc037",
+                "depth": 2,
+                "extra": {
+                    "provenance": "patches-file:composer.patches.json"
+                }
+            },
+            {
+                "package": "drupal/core",
+                "description": "Drupal.displace() only checks inline display: none; instead of computed styles, leading to incorrect visibility check [#3487907]: https://www.drupal.org/project/drupal/issues/3487907",
+                "url": "patches/drupal/core/3487907-drupal-displace-computed-style.patch",
+                "sha256": "a2a64aa62a2f2ddfae18b23c67e1f0397f8d0111c6a56a3f994d1d2709725f04",
+                "depth": 2,
+                "extra": {
+                    "provenance": "patches-file:composer.patches.json"
+                }
+            },
             {
                 "package": "drupal/core",
                 "description": "UrlGenerator improperly escapes a colon in the path [#3165305]: https://www.drupal.org/project/drupal/issues/3165305#comment-14058586",
@@ -30,6 +100,30 @@
                 "depth": 2,
                 "extra": {
                     "provenance": "dependency:drupal/core"
+                }
+            }
+        ],
+        "drupal/image_style_warmer": [
+            {
+                "package": "drupal/image_style_warmer",
+                "description": "Support webp images [#3319397]: https://www.drupal.org/project/image_style_warmer/issues/3319397#comment-14802527",
+                "url": "patches/drupal/image_style_warmer/webp-module-support-3319397-5.patch",
+                "sha256": "348149323672dda5c25fb5dbb088bcc5a87e5c4180bd19cdd14093ac8b3ddfb3",
+                "depth": 1,
+                "extra": {
+                    "provenance": "patches-file:composer.patches.json"
+                }
+            }
+        ],
+        "drupal/trusted_reverse_proxy": [
+            {
+                "package": "drupal/trusted_reverse_proxy",
+                "description": "Notice: Undefined index: severity in trusted_reverse_proxy_preprocess_status_report_page() [#3267588]: https://www.drupal.org/project/trusted_reverse_proxy/issues/3267588",
+                "url": "patches/drupal/trusted_reverse_proxy/3267588-trusted_reverse_proxy-undefined-severity.patch",
+                "sha256": "686f7b19d5e786d5cc6374d5f23d469911a8b0862b043ed8893201efa235c10a",
+                "depth": 1,
+                "extra": {
+                    "provenance": "patches-file:composer.patches.json"
                 }
             }
         ],
