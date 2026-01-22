@@ -138,6 +138,11 @@
     },
     {
       "type": "vcs",
+      "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-pitch.git",
+      "only": ["drupal/omnipedia_pitch"]
+    },
+    {
+      "type": "vcs",
       "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-search.git",
       "only": ["drupal/omnipedia_search"]
     },
@@ -234,6 +239,7 @@
     "drupal/omnipedia_media": "^7.0@dev",
     "drupal/omnipedia_menu": "^4.0@dev",
     "drupal/omnipedia_pipeline": "^1.0@dev",
+    "drupal/omnipedia_pitch": "^1.0@dev",
     "drupal/omnipedia_search": "^4.0@dev",
     "drupal/omnipedia_site_theme": "^8.0@dev",
     "drupal/omnipedia_user": "^6.0@dev",

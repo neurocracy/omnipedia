@@ -82,6 +82,7 @@ module:
   omnipedia_logger: 0
   omnipedia_media: 0
   omnipedia_media_csp: 0
+  omnipedia_pitch: 0
   omnipedia_user: 0
   omnipedia_warmer: 0
   options: 0

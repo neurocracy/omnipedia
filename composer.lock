@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "83bfe9758de7f72265a06e56bdde58d1",
+    "content-hash": "501d97d195768b79c7194c7249fbc221",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -4512,12 +4512,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-content.git",
-                "reference": "59ab44b8d02cbef0d503046bfb63cad5e8b079ac"
+                "reference": "6074a571467b11b58724676f32d5f0cfc033666a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-content/repository/archive.zip?sha=59ab44b8d02cbef0d503046bfb63cad5e8b079ac",
-                "reference": "59ab44b8d02cbef0d503046bfb63cad5e8b079ac",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-content/repository/archive.zip?sha=6074a571467b11b58724676f32d5f0cfc033666a",
+                "reference": "6074a571467b11b58724676f32d5f0cfc033666a",
                 "shasum": ""
             },
             "require": {
@@ -4554,7 +4554,7 @@
                 "source": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-content",
                 "issues": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-content/-/issues"
             },
-            "time": "2025-10-23T13:27:58-04:00"
+            "time": "2026-01-21T21:19:29-05:00"
         },
         {
             "name": "drupal/omnipedia_core",
@@ -4905,6 +4905,46 @@
             "time": "2025-06-20T12:47:42-04:00"
         },
         {
+            "name": "drupal/omnipedia_pitch",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-pitch.git",
+                "reference": "5b7140193a496773a30e7c6abe21e58f6a0b7f87"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-pitch/repository/archive.zip?sha=5b7140193a496773a30e7c6abe21e58f6a0b7f87",
+                "reference": "5b7140193a496773a30e7c6abe21e58f6a0b7f87",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/ambientimpact_core": "^3.0@dev",
+                "drupal/core": "^11.2",
+                "drupal/omnipedia_content": "^7.0@dev",
+                "php": "^8.1"
+            },
+            "default-branch": true,
+            "type": "drupal-custom-module",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ambient.Impact",
+                    "homepage": "https://ambientimpact.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Omnipedia - Pitch",
+            "support": {
+                "docs": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-pitch",
+                "source": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-pitch",
+                "issues": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-pitch/-/issues"
+            },
+            "time": "2026-01-21T21:14:39-05:00"
+        },
+        {
             "name": "drupal/omnipedia_search",
             "version": "4.x-dev",
             "source": {
@@ -4961,12 +5001,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/omnipedia-theme.git",
-                "reference": "2b86683295fa4aa53f05a16214607dcd5eeed32b"
+                "reference": "d59ec0e9c6cc2d2a8bd5174ca9167d87e6916658"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fomnipedia-theme/repository/archive.zip?sha=2b86683295fa4aa53f05a16214607dcd5eeed32b",
-                "reference": "2b86683295fa4aa53f05a16214607dcd5eeed32b",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fomnipedia-theme/repository/archive.zip?sha=d59ec0e9c6cc2d2a8bd5174ca9167d87e6916658",
+                "reference": "d59ec0e9c6cc2d2a8bd5174ca9167d87e6916658",
                 "shasum": ""
             },
             "require": {
@@ -5001,7 +5041,7 @@
                 "source": "https://gitlab.com/neurocracy/omnipedia/omnipedia-theme",
                 "issues": "https://gitlab.com/neurocracy/omnipedia/omnipedia-theme/-/issues"
             },
-            "time": "2025-11-05T17:56:33-05:00"
+            "time": "2026-01-21T21:24:45-05:00"
         },
         {
             "name": "drupal/omnipedia_user",
@@ -21046,6 +21086,7 @@
         "drupal/omnipedia_media": 20,
         "drupal/omnipedia_menu": 20,
         "drupal/omnipedia_pipeline": 20,
+        "drupal/omnipedia_pitch": 20,
         "drupal/omnipedia_search": 20,
         "drupal/omnipedia_site_theme": 20,
         "drupal/omnipedia_user": 20,
