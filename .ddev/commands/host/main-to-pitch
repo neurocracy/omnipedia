@@ -4,6 +4,9 @@
 ## Usage: main-to-pitch
 
 ddev snapshot --cleanup --name "main-current" -y
+# Required to fix error that the dump exists in /tmp, presumably by wiping out
+# /tmp.
+ddev restart
 ddev snapshot --name "main-current"
 git checkout pitch
 ddev snapshot restore "pitch-current"
