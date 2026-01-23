@@ -190,7 +190,7 @@
     "php": "^8.3 <8.4",
     "ext-apcu": "*",
     "composer/installers": "^2.0",
-    "cweagans/composer-patches": "^1.7 || ^2.0",
+    "cweagans/composer-patches": "^1.7",
     "drupal/action": "^0.2",
     "drupal/ambientimpact_core": "^3.0@dev",
     "drupal/ambientimpact_icon": "^1.0@dev",
