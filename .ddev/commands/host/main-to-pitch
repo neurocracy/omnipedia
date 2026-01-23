@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+## Description: Main to pitch
+## Usage: main-to-pitch
+
+ddev snapshot --cleanup --name "main-current" -y
+ddev snapshot --name "main-current"
+git checkout pitch
+ddev snapshot restore "pitch-current"
