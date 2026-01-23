@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "501d97d195768b79c7194c7249fbc221",
+    "content-hash": "d1b9317280f3386e0f2f1c835b90a0aa",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -5001,12 +5001,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/omnipedia-theme.git",
-                "reference": "6c366004ccbcbd5525b74b6f94db60fcb68a1a49"
+                "reference": "c6f86a18f030d26b1be9018668a05e2fd3099835"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fomnipedia-theme/repository/archive.zip?sha=6c366004ccbcbd5525b74b6f94db60fcb68a1a49",
-                "reference": "6c366004ccbcbd5525b74b6f94db60fcb68a1a49",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fomnipedia-theme/repository/archive.zip?sha=c6f86a18f030d26b1be9018668a05e2fd3099835",
+                "reference": "c6f86a18f030d26b1be9018668a05e2fd3099835",
                 "shasum": ""
             },
             "require": {
@@ -5041,7 +5041,7 @@
                 "source": "https://gitlab.com/neurocracy/omnipedia/omnipedia-theme",
                 "issues": "https://gitlab.com/neurocracy/omnipedia/omnipedia-theme/-/issues"
             },
-            "time": "2026-01-22T01:14:32-05:00"
+            "time": "2026-01-23T09:53:16-05:00"
         },
         {
             "name": "drupal/omnipedia_user",
