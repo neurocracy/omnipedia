@@ -10,3 +10,4 @@ ddev restart
 ddev snapshot --name "pitch-current"
 git checkout main
 ddev snapshot restore "main-current"
+ddev composer install
