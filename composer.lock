@@ -2148,16 +2148,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "11.2.8",
+            "version": "11.2.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "e9c111ea8f26f751797fbf6a918f845730fc95ee"
+                "reference": "68d46965d7ea84eef566624e889bf0421351958e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/e9c111ea8f26f751797fbf6a918f845730fc95ee",
-                "reference": "e9c111ea8f26f751797fbf6a918f845730fc95ee",
+                "url": "https://api.github.com/repos/drupal/core/zipball/68d46965d7ea84eef566624e889bf0421351958e",
+                "reference": "68d46965d7ea84eef566624e889bf0421351958e",
                 "shasum": ""
             },
             "require": {
@@ -2314,13 +2314,13 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "support": {
-                "source": "https://github.com/drupal/core/tree/11.2.8"
+                "source": "https://github.com/drupal/core/tree/11.2.10"
             },
-            "time": "2025-11-12T21:53:29+00:00"
+            "time": "2025-12-10T09:59:17+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "11.2.8",
+            "version": "11.2.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -2364,22 +2364,22 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-composer-scaffold/tree/11.2.8"
+                "source": "https://github.com/drupal/core-composer-scaffold/tree/11.2.10"
             },
             "time": "2025-05-05T16:18:58+00:00"
         },
         {
             "name": "drupal/core-recommended",
-            "version": "11.2.8",
+            "version": "11.2.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "96abf0e25d757131141c5997f5604011e13cfe01"
+                "reference": "b384c8986955874a4dab4aa740cca8afce244f6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/96abf0e25d757131141c5997f5604011e13cfe01",
-                "reference": "96abf0e25d757131141c5997f5604011e13cfe01",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/b384c8986955874a4dab4aa740cca8afce244f6a",
+                "reference": "b384c8986955874a4dab4aa740cca8afce244f6a",
                 "shasum": ""
             },
             "require": {
@@ -2388,7 +2388,7 @@
                 "doctrine/annotations": "~2.0.2",
                 "doctrine/deprecations": "~1.1.5",
                 "doctrine/lexer": "~2.1.1",
-                "drupal/core": "11.2.8",
+                "drupal/core": "11.2.10",
                 "egulias/email-validator": "~4.0.4",
                 "guzzlehttp/guzzle": "~7.9.3",
                 "guzzlehttp/promises": "~2.2.0",
@@ -2408,18 +2408,18 @@
                 "psr/log": "~3.0.2",
                 "ralouphie/getallheaders": "~3.0.3",
                 "revolt/event-loop": "~v1.0.7",
-                "symfony/console": "~v7.3.6",
-                "symfony/dependency-injection": "~v7.3.6",
+                "symfony/console": "~v7.3.8",
+                "symfony/dependency-injection": "~v7.3.8",
                 "symfony/deprecation-contracts": "~v3.6.0",
                 "symfony/error-handler": "~v7.3.6",
                 "symfony/event-dispatcher": "~v7.3.3",
                 "symfony/event-dispatcher-contracts": "~v3.6.0",
-                "symfony/filesystem": "~v7.3.6",
+                "symfony/filesystem": "~v7.3.8",
                 "symfony/finder": "~v7.3.5",
-                "symfony/http-foundation": "~v7.3.7",
-                "symfony/http-kernel": "~v7.3.7",
+                "symfony/http-foundation": "~v7.3.8",
+                "symfony/http-kernel": "~v7.3.8",
                 "symfony/mailer": "~v7.3.5",
-                "symfony/mime": "~v7.3.4",
+                "symfony/mime": "~v7.3.8",
                 "symfony/polyfill-ctype": "~v1.33.0",
                 "symfony/polyfill-iconv": "~v1.33.0",
                 "symfony/polyfill-intl-grapheme": "~v1.33.0",
@@ -2428,16 +2428,16 @@
                 "symfony/polyfill-mbstring": "~v1.33.0",
                 "symfony/polyfill-php84": "~v1.33.0",
                 "symfony/process": "~v7.3.4",
-                "symfony/psr-http-message-bridge": "~v7.3.0",
-                "symfony/routing": "~v7.3.6",
-                "symfony/serializer": "~v7.3.5",
+                "symfony/psr-http-message-bridge": "~v7.3.8",
+                "symfony/routing": "~v7.3.8",
+                "symfony/serializer": "~v7.3.8",
                 "symfony/service-contracts": "~v3.6.1",
-                "symfony/string": "~v7.3.4",
+                "symfony/string": "~v7.3.8",
                 "symfony/translation-contracts": "~v3.6.1",
-                "symfony/validator": "~v7.3.7",
+                "symfony/validator": "~v7.3.8",
                 "symfony/var-dumper": "~v7.3.5",
                 "symfony/var-exporter": "~v7.3.4",
-                "symfony/yaml": "~v7.3.5",
+                "symfony/yaml": "~v7.3.8",
                 "twig/twig": "~v3.21.1"
             },
             "conflict": {
@@ -2450,9 +2450,9 @@
             ],
             "description": "Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-recommended/tree/11.2.8"
+                "source": "https://github.com/drupal/core-recommended/tree/11.2.10"
             },
-            "time": "2025-11-12T21:53:29+00:00"
+            "time": "2025-12-10T09:59:17+00:00"
         },
         {
             "name": "drupal/csp",
@@ -15288,7 +15288,7 @@
         },
         {
             "name": "drupal/core-dev",
-            "version": "11.2.8",
+            "version": "11.2.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-dev.git",
@@ -15337,7 +15337,7 @@
             ],
             "description": "require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-dev/tree/11.2.8"
+                "source": "https://github.com/drupal/core-dev/tree/11.2.10"
             },
             "time": "2025-06-29T21:12:09+00:00"
         },
