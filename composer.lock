@@ -4604,12 +4604,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-date.git",
-                "reference": "78c47e09c890d5d35d2a2b9463fc669033f74bb5"
+                "reference": "c34739044b9c2547aebe71271c8a23ab1e0b580c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-date/repository/archive.zip?sha=78c47e09c890d5d35d2a2b9463fc669033f74bb5",
-                "reference": "78c47e09c890d5d35d2a2b9463fc669033f74bb5",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-date/repository/archive.zip?sha=c34739044b9c2547aebe71271c8a23ab1e0b580c",
+                "reference": "c34739044b9c2547aebe71271c8a23ab1e0b580c",
                 "shasum": ""
             },
             "require": {
@@ -4638,7 +4638,7 @@
                 "source": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-date",
                 "issues": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-date/-/issues"
             },
-            "time": "2025-09-21T16:50:10-04:00"
+            "time": "2026-01-25T13:34:50-05:00"
         },
         {
             "name": "drupal/omnipedia_discourse",
@@ -4730,12 +4730,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-main-page.git",
-                "reference": "078958e956203be155c8c734a8fc4a6a208d2d5f"
+                "reference": "8908d0ba01020ba234a1075b5522086f3d6fe61f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-main-page/repository/archive.zip?sha=078958e956203be155c8c734a8fc4a6a208d2d5f",
-                "reference": "078958e956203be155c8c734a8fc4a6a208d2d5f",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-main-page/repository/archive.zip?sha=8908d0ba01020ba234a1075b5522086f3d6fe61f",
+                "reference": "8908d0ba01020ba234a1075b5522086f3d6fe61f",
                 "shasum": ""
             },
             "require": {
@@ -4765,7 +4765,7 @@
                 "source": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-main-page",
                 "issues": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-main-page/-/issues"
             },
-            "time": "2025-05-04T19:27:04-04:00"
+            "time": "2026-01-25T13:34:56-05:00"
         },
         {
             "name": "drupal/omnipedia_media",
@@ -5002,12 +5002,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/omnipedia-theme.git",
-                "reference": "febc5db3b0a87676e3bd18a1e363b7633103702b"
+                "reference": "e5376e0baacf4c65ef8fa16dd053010fea2a7d4f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fomnipedia-theme/repository/archive.zip?sha=febc5db3b0a87676e3bd18a1e363b7633103702b",
-                "reference": "febc5db3b0a87676e3bd18a1e363b7633103702b",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fomnipedia-theme/repository/archive.zip?sha=e5376e0baacf4c65ef8fa16dd053010fea2a7d4f",
+                "reference": "e5376e0baacf4c65ef8fa16dd053010fea2a7d4f",
                 "shasum": ""
             },
             "require": {
@@ -5042,7 +5042,7 @@
                 "source": "https://gitlab.com/neurocracy/omnipedia/omnipedia-theme",
                 "issues": "https://gitlab.com/neurocracy/omnipedia/omnipedia-theme/-/issues"
             },
-            "time": "2026-01-24T10:50:50-05:00"
+            "time": "2026-01-25T13:34:20-05:00"
         },
         {
             "name": "drupal/omnipedia_user",
