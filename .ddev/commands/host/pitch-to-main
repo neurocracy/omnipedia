@@ -4,6 +4,10 @@
 ## Usage: pitch-to-main
 
 ddev snapshot --cleanup --name "pitch-current" -y
+
+ddev dotenv set .ddev/.env \
+  --digitalocean-app="$(ddev dotenv get .ddev/.env --digitalocean-app-production)"
+
 # Required to fix error that the dump exists in /tmp, presumably by wiping out
 # /tmp.
 ddev restart
