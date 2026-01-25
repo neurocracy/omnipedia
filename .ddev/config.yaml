@@ -84,3 +84,10 @@ webimage_extra_packages:
   #
   # @see https://s3tools.org/s3cmd
   - s3cmd
+
+# @todo This unconditionally resets TFA even for ignored roles. Fix that if
+#   possible and re-enable this.
+#
+# hooks:
+#   post-import-db:
+#     - exec: drush -y sql:sanitize --ignored-roles=developer
