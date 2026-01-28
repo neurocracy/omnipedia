@@ -4512,12 +4512,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-core.git",
-                "reference": "27f3b4a34efbf1ac4a4cb5c986062e17f143c0c4"
+                "reference": "a917c191877c1cc65e206fa47eb8889a69c2f6bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-core/repository/archive.zip?sha=27f3b4a34efbf1ac4a4cb5c986062e17f143c0c4",
-                "reference": "27f3b4a34efbf1ac4a4cb5c986062e17f143c0c4",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-core/repository/archive.zip?sha=a917c191877c1cc65e206fa47eb8889a69c2f6bf",
+                "reference": "a917c191877c1cc65e206fa47eb8889a69c2f6bf",
                 "shasum": ""
             },
             "require": {
@@ -4546,7 +4546,7 @@
                 "source": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-core",
                 "issues": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-core/-/issues"
             },
-            "time": "2026-01-27T17:54:15-05:00"
+            "time": "2026-01-27T19:28:29-05:00"
         },
         {
             "name": "drupal/omnipedia_date",
@@ -4554,12 +4554,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-date.git",
-                "reference": "896f83f85e82d175a331fb886bb32b2927248784"
+                "reference": "502b67af0a8e0d006207169f38c47ba5a7b9d57b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-date/repository/archive.zip?sha=896f83f85e82d175a331fb886bb32b2927248784",
-                "reference": "896f83f85e82d175a331fb886bb32b2927248784",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-date/repository/archive.zip?sha=502b67af0a8e0d006207169f38c47ba5a7b9d57b",
+                "reference": "502b67af0a8e0d006207169f38c47ba5a7b9d57b",
                 "shasum": ""
             },
             "require": {
@@ -4588,7 +4588,7 @@
                 "source": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-date",
                 "issues": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-date/-/issues"
             },
-            "time": "2026-01-27T17:54:19-05:00"
+            "time": "2026-01-27T19:28:33-05:00"
         },
         {
             "name": "drupal/omnipedia_discourse",
@@ -4680,12 +4680,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-main-page.git",
-                "reference": "86cd5f94303af94b5d510d1d8a3f600fbadb77a8"
+                "reference": "6a624dab6a1a401b6e6d6ebc12d0f96e3970aeb3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-main-page/repository/archive.zip?sha=86cd5f94303af94b5d510d1d8a3f600fbadb77a8",
-                "reference": "86cd5f94303af94b5d510d1d8a3f600fbadb77a8",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-main-page/repository/archive.zip?sha=6a624dab6a1a401b6e6d6ebc12d0f96e3970aeb3",
+                "reference": "6a624dab6a1a401b6e6d6ebc12d0f96e3970aeb3",
                 "shasum": ""
             },
             "require": {
@@ -4715,7 +4715,7 @@
                 "source": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-main-page",
                 "issues": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-main-page/-/issues"
             },
-            "time": "2026-01-27T17:54:23-05:00"
+            "time": "2026-01-27T19:28:40-05:00"
         },
         {
             "name": "drupal/omnipedia_media",
