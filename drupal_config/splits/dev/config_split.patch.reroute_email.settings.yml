@@ -1,6 +1,8 @@
 adding:
   enable: true
   address: ''
+  mailkeys: ''
 removing:
   enable: false
   address: contact@omnipedia.app
+  mailkeys: update_status_notify
