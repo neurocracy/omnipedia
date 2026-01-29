@@ -1,0 +1,20 @@
+uuid: 344b3abf-31a1-4b33-b7e4-34348f89b32f
+langcode: en
+status: true
+dependencies:
+  module:
+    - omnipedia_content
+  theme:
+    - omnipedia_site_theme
+id: omnipedia_site_theme_table_of_contents
+theme: omnipedia_site_theme
+region: sidebar_first
+weight: 0
+provider: null
+plugin: omnipedia_table_of_contents
+settings:
+  id: omnipedia_table_of_contents
+  label: 'Table of contents'
+  label_display: '0'
+  provider: omnipedia_content
+visibility: {  }
