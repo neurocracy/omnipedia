@@ -4407,17 +4407,17 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-block.git",
-                "reference": "caa379310ed20fd972b2fe33ca2bd5d154242a31"
+                "reference": "906919b3738af1a40d0808ca4d7e680030e44176"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-block/repository/archive.zip?sha=caa379310ed20fd972b2fe33ca2bd5d154242a31",
-                "reference": "caa379310ed20fd972b2fe33ca2bd5d154242a31",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-block/repository/archive.zip?sha=906919b3738af1a40d0808ca4d7e680030e44176",
+                "reference": "906919b3738af1a40d0808ca4d7e680030e44176",
                 "shasum": ""
             },
             "require": {
                 "drupal/ambientimpact_core": "^2.0@dev || ^3.0@dev",
-                "drupal/core": "^9.5 || ^10.0 || ^11.0",
+                "drupal/core": "^10.5 || ^11.2",
                 "drupal/hook_event_dispatcher": "^3.1 || ^4.0",
                 "drupal/omnipedia_changes": "^6.0@dev || ^7.0@dev",
                 "drupal/omnipedia_content": "^5.0@dev || ^6.0@dev || ^7.0@dev",
@@ -4425,7 +4425,7 @@
                 "drupal/omnipedia_date": "^4.0@dev || ^5.0@dev",
                 "drupal/omnipedia_main_page": "^1.0@dev",
                 "drupal/omnipedia_search": "^4.0@dev",
-                "php": "^8.1"
+                "php": "^8.2"
             },
             "default-branch": true,
             "type": "drupal-custom-module",
@@ -4445,7 +4445,7 @@
                 "source": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-block",
                 "issues": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-block/-/issues"
             },
-            "time": "2026-01-30T20:49:26-05:00"
+            "time": "2026-01-30T21:42:42-05:00"
         },
         {
             "name": "drupal/omnipedia_changes",
