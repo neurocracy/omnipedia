@@ -4407,12 +4407,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-block.git",
-                "reference": "79536c479caa00574ee323db6a961f6a0cb5283d"
+                "reference": "caa379310ed20fd972b2fe33ca2bd5d154242a31"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-block/repository/archive.zip?sha=79536c479caa00574ee323db6a961f6a0cb5283d",
-                "reference": "79536c479caa00574ee323db6a961f6a0cb5283d",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-block/repository/archive.zip?sha=caa379310ed20fd972b2fe33ca2bd5d154242a31",
+                "reference": "caa379310ed20fd972b2fe33ca2bd5d154242a31",
                 "shasum": ""
             },
             "require": {
@@ -4445,7 +4445,7 @@
                 "source": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-block",
                 "issues": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-block/-/issues"
             },
-            "time": "2025-09-13T09:23:25-04:00"
+            "time": "2026-01-30T20:49:26-05:00"
         },
         {
             "name": "drupal/omnipedia_changes",
@@ -18336,16 +18336,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "11.5.49",
+            "version": "11.5.50",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "4f1750675ba411dd6c2d5fa8a3cca07f6742020e"
+                "reference": "fdfc727f0fcacfeb8fcb30c7e5da173125b58be3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/4f1750675ba411dd6c2d5fa8a3cca07f6742020e",
-                "reference": "4f1750675ba411dd6c2d5fa8a3cca07f6742020e",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/fdfc727f0fcacfeb8fcb30c7e5da173125b58be3",
+                "reference": "fdfc727f0fcacfeb8fcb30c7e5da173125b58be3",
                 "shasum": ""
             },
             "require": {
@@ -18417,7 +18417,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/11.5.49"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/11.5.50"
             },
             "funding": [
                 {
@@ -18441,7 +18441,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-01-24T16:09:28+00:00"
+            "time": "2026-01-27T05:59:18+00:00"
         },
         {
             "name": "ramsey/collection",
