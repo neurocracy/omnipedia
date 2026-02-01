@@ -3888,17 +3888,17 @@
         },
         {
             "name": "drupal/login_security",
-            "version": "2.0.2",
+            "version": "2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/login_security.git",
-                "reference": "2.0.2"
+                "reference": "2.0.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/login_security-2.0.2.zip",
-                "reference": "2.0.2",
-                "shasum": "801c7588cac81fbadfd4ace0d6c2fd4e3032293c"
+                "url": "https://ftp.drupal.org/files/projects/login_security-2.0.3.zip",
+                "reference": "2.0.3",
+                "shasum": "dad46694234bfb81bc058e29c3e5c49b5ee04bf0"
             },
             "require": {
                 "drupal/core": "^8.9 || ^9 || ^10 || ^11"
@@ -3906,8 +3906,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.2",
-                    "datestamp": "1724058576",
+                    "version": "2.0.3",
+                    "datestamp": "1769701677",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4158,20 +4158,19 @@
         },
         {
             "name": "drupal/moderated_content_bulk_publish",
-            "version": "2.0.44",
+            "version": "2.0.45",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/moderated_content_bulk_publish.git",
-                "reference": "2.0.44"
+                "reference": "2.0.45"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/moderated_content_bulk_publish-2.0.44.zip",
-                "reference": "2.0.44",
-                "shasum": "91906c3f5b496d8d9c001d4f6753c8937969203c"
+                "url": "https://ftp.drupal.org/files/projects/moderated_content_bulk_publish-2.0.45.zip",
+                "reference": "2.0.45",
+                "shasum": "b9720ed44baa3f256b52c72f601e03cfaa9b8693"
             },
             "require": {
-                "drupal/action": "^0.2",
                 "drupal/core": "^10.3 || ^11",
                 "drupal/pathauto": "*",
                 "drupal/views_bulk_operations": "^4.0"
@@ -4179,8 +4178,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.44",
-                    "datestamp": "1763161872",
+                    "version": "2.0.45",
+                    "datestamp": "1769749061",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
