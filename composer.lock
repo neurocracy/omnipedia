@@ -4961,12 +4961,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/omnipedia-theme.git",
-                "reference": "e1e5282efeb62e44486dfcf43e7b7bb81f808eaf"
+                "reference": "f92521f89e42804c3502d65ae30b5a3096b6aab1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fomnipedia-theme/repository/archive.zip?sha=e1e5282efeb62e44486dfcf43e7b7bb81f808eaf",
-                "reference": "e1e5282efeb62e44486dfcf43e7b7bb81f808eaf",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fomnipedia-theme/repository/archive.zip?sha=f92521f89e42804c3502d65ae30b5a3096b6aab1",
+                "reference": "f92521f89e42804c3502d65ae30b5a3096b6aab1",
                 "shasum": ""
             },
             "require": {
@@ -5001,7 +5001,7 @@
                 "source": "https://gitlab.com/neurocracy/omnipedia/omnipedia-theme",
                 "issues": "https://gitlab.com/neurocracy/omnipedia/omnipedia-theme/-/issues"
             },
-            "time": "2026-01-30T20:48:54-05:00"
+            "time": "2026-01-31T20:32:26-05:00"
         },
         {
             "name": "drupal/omnipedia_user",
