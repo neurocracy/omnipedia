@@ -1,0 +1,20 @@
+uuid: 1d780254-9b23-4832-a34f-a98172413abe
+langcode: en
+status: true
+dependencies:
+  module:
+    - omnipedia_pitch
+  theme:
+    - omnipedia_site_theme
+id: omnipedia_site_theme_pitch_copyright
+theme: omnipedia_site_theme
+region: footer
+weight: 0
+provider: null
+plugin: omnipedia_pitch_copyright
+settings:
+  id: omnipedia_pitch_copyright
+  label: 'Pitch Copyright'
+  label_display: '0'
+  provider: omnipedia_pitch
+visibility: {  }
