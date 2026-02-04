@@ -1822,12 +1822,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-media.git",
-                "reference": "3d82bcf7733f34431c644c51739bdffd76b5aedf"
+                "reference": "146cc93d3fe337672e1257a94b51b1c893131324"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-media/zipball/3d82bcf7733f34431c644c51739bdffd76b5aedf",
-                "reference": "3d82bcf7733f34431c644c51739bdffd76b5aedf",
+                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-media/zipball/146cc93d3fe337672e1257a94b51b1c893131324",
+                "reference": "146cc93d3fe337672e1257a94b51b1c893131324",
                 "shasum": ""
             },
             "require": {
@@ -1859,7 +1859,7 @@
                 "source": "https://github.com/Ambient-Impact/drupal-ambientimpact-media",
                 "issues": "https://github.com/Ambient-Impact/drupal-ambientimpact-media/issues"
             },
-            "time": "2025-12-13T20:16:11+00:00"
+            "time": "2026-02-04T18:02:54+00:00"
         },
         {
             "name": "drupal/ambientimpact_ux",
@@ -4823,12 +4823,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-menu.git",
-                "reference": "551b54661fbabe309bb7daf0b058ac4b8663333f"
+                "reference": "4ce9165738ef02960c227133de2481f2c24c388b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-menu/repository/archive.zip?sha=551b54661fbabe309bb7daf0b058ac4b8663333f",
-                "reference": "551b54661fbabe309bb7daf0b058ac4b8663333f",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-menu/repository/archive.zip?sha=4ce9165738ef02960c227133de2481f2c24c388b",
+                "reference": "4ce9165738ef02960c227133de2481f2c24c388b",
                 "shasum": ""
             },
             "require": {
@@ -4866,7 +4866,7 @@
                 "source": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-menu",
                 "issues": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-menu/-/issues"
             },
-            "time": "2026-01-20T19:43:51-05:00"
+            "time": "2026-02-04T13:02:56-05:00"
         },
         {
             "name": "drupal/omnipedia_pipeline",
@@ -4913,12 +4913,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-search.git",
-                "reference": "1e6779cbb1d01c493f6faa480ecfaf9ec835d326"
+                "reference": "002bc321d70e18c2c2b636e07359786ee4e9bc4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-search/repository/archive.zip?sha=1e6779cbb1d01c493f6faa480ecfaf9ec835d326",
-                "reference": "1e6779cbb1d01c493f6faa480ecfaf9ec835d326",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-search/repository/archive.zip?sha=002bc321d70e18c2c2b636e07359786ee4e9bc4c",
+                "reference": "002bc321d70e18c2c2b636e07359786ee4e9bc4c",
                 "shasum": ""
             },
             "require": {
@@ -4956,7 +4956,7 @@
                 "source": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-search",
                 "issues": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-search/-/issues"
             },
-            "time": "2026-01-20T19:43:55-05:00"
+            "time": "2026-02-04T13:02:42-05:00"
         },
         {
             "name": "drupal/omnipedia_site_theme",
