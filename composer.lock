@@ -4913,23 +4913,23 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-search.git",
-                "reference": "002bc321d70e18c2c2b636e07359786ee4e9bc4c"
+                "reference": "420014063e17cc76d159461f9895d71f3e1e2481"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-search/repository/archive.zip?sha=002bc321d70e18c2c2b636e07359786ee4e9bc4c",
-                "reference": "002bc321d70e18c2c2b636e07359786ee4e9bc4c",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-search/repository/archive.zip?sha=420014063e17cc76d159461f9895d71f3e1e2481",
+                "reference": "420014063e17cc76d159461f9895d71f3e1e2481",
                 "shasum": ""
             },
             "require": {
                 "cweagans/composer-patches": "^1.7 || ^2.0",
-                "drupal/core": "^9.5 || ^10.0 || ^11.0",
+                "drupal/core": "^10.5 || ^11.2",
                 "drupal/omnipedia_content": "^6.0@dev || ^7.0@dev",
                 "drupal/omnipedia_core": "^5.0@dev || ^6.0@dev",
                 "drupal/omnipedia_date": "^5.0@dev",
                 "drupal/omnipedia_main_page": "^1.0@dev",
                 "drupal/search_api": "^1.15",
-                "php": "^8.1"
+                "php": "^8.2"
             },
             "default-branch": true,
             "type": "drupal-custom-module",
@@ -4956,7 +4956,7 @@
                 "source": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-search",
                 "issues": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-search/-/issues"
             },
-            "time": "2026-02-04T13:02:42-05:00"
+            "time": "2026-02-04T13:07:25-05:00"
         },
         {
             "name": "drupal/omnipedia_site_theme",
