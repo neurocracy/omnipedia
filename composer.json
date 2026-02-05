@@ -228,7 +228,7 @@
     "drupal/omnipedia_access": "^5.0@dev",
     "drupal/omnipedia_asset": "^2.0@dev",
     "drupal/omnipedia_attached_data": "^5.0@dev",
-    "drupal/omnipedia_block": "^6.0@dev",
+    "drupal/omnipedia_block": "^7.0@dev",
     "drupal/omnipedia_changes": "^7.0@dev",
     "drupal/omnipedia_content": "^7.0@dev",
     "drupal/omnipedia_core": "^6.0@dev",
