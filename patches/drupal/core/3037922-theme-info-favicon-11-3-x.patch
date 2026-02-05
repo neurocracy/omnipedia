@@ -1,0 +1,193 @@
+diff --git a/core/lib/Drupal/Core/Extension/ThemeSettingsProvider.php b/core/lib/Drupal/Core/Extension/ThemeSettingsProvider.php
+index 5cc00921196..a12eaf9dd74 100644
+--- a/core/lib/Drupal/Core/Extension/ThemeSettingsProvider.php
++++ b/core/lib/Drupal/Core/Extension/ThemeSettingsProvider.php
+@@ -105,9 +105,12 @@ protected function buildThemeSettings(string $theme): ThemeSettings {
+         }
+       }
+ 
++      /** @var \Drupal\Core\Theme\ActiveTheme $active_theme */
++      $active_theme = $this->themeInitialization->getActiveThemeByName($theme);
++
+       // Generate the path to the logo image.
+       if ($themeSettings->get('logo.use_default')) {
+-        $logo = $this->themeInitialization->getActiveThemeByName($theme)->getLogo();
++        $logo = $active_theme->getLogo();
+         $themeSettings->set('logo.url', $this->fileUrlGenerator->generateString($logo));
+       }
+       elseif ($logo_path = $themeSettings->get('logo.path')) {
+@@ -118,7 +121,7 @@ protected function buildThemeSettings(string $theme): ThemeSettings {
+       if ($themeSettings->get('features.favicon')) {
+         $faviconPath = $themeSettings->get('favicon.path');
+         if ($themeSettings->get('favicon.use_default')) {
+-          if (file_exists($favicon = $themeObject->getPath() . '/favicon.ico')) {
++          if (file_exists($favicon = $active_theme->getFavicon())) {
+             $themeSettings->set('favicon.url', $this->fileUrlGenerator->generateString($favicon));
+           }
+           else {
+diff --git a/core/lib/Drupal/Core/Theme/ActiveTheme.php b/core/lib/Drupal/Core/Theme/ActiveTheme.php
+index 10aa8fca148..325e399b718 100644
+--- a/core/lib/Drupal/Core/Theme/ActiveTheme.php
++++ b/core/lib/Drupal/Core/Theme/ActiveTheme.php
+@@ -26,6 +26,13 @@ class ActiveTheme {
+    */
+   protected $logo;
+ 
++  /**
++   * The path to the favicon.
++   *
++   * @var string
++   */
++  protected $favicon;
++
+   /**
+    * The path to the theme.
+    *
+@@ -47,7 +54,6 @@ class ActiveTheme {
+    */
+   protected $owner;
+ 
+-
+   /**
+    * An array of base theme extension objects keyed by name.
+    *
+@@ -102,6 +108,7 @@ public function __construct(array $values) {
+       'engine' => 'twig',
+       'owner' => 'twig',
+       'logo' => '',
++      'favicon' => '',
+       'libraries' => [],
+       'extension' => 'html.twig',
+       'base_theme_extensions' => [],
+@@ -112,6 +119,7 @@ public function __construct(array $values) {
+ 
+     $this->name = $values['name'];
+     $this->logo = $values['logo'];
++    $this->favicon = $values['favicon'];
+     $this->path = $values['path'];
+     $this->engine = $values['engine'];
+     $this->owner = $values['owner'];
+@@ -210,6 +218,16 @@ public function getLogo() {
+     return $this->logo;
+   }
+ 
++  /**
++   * Returns the favicon provided by the theme.
++   *
++   * @return string
++   *   The favicon path.
++   */
++  public function getFavicon() {
++    return $this->favicon;
++  }
++
+   /**
+    * The regions used by the theme.
+    *
+diff --git a/core/lib/Drupal/Core/Theme/ThemeInitialization.php b/core/lib/Drupal/Core/Theme/ThemeInitialization.php
+index ade7cfd8723..695fcbe057f 100644
+--- a/core/lib/Drupal/Core/Theme/ThemeInitialization.php
++++ b/core/lib/Drupal/Core/Theme/ThemeInitialization.php
+@@ -176,6 +176,15 @@ public function getActiveTheme(Extension $theme, array $base_themes = []) {
+       $values['logo'] = $theme->getPath() . '/logo.svg';
+     }
+ 
++    // Use the favicon declared in this themes info file, otherwise use
++    // favicon.ico from the themes root.
++    if (!empty($theme->info['favicon'])) {
++      $values['favicon'] = $theme->getPath() . '/' . $theme->info['favicon'];
++    }
++    else {
++      $values['favicon'] = $theme->getPath() . '/favicon.ico';
++    }
++
+     // Prepare libraries overrides from this theme and ancestor themes. This
+     // allows child themes to easily remove CSS files from base themes and
+     // modules.
+diff --git a/core/modules/system/tests/themes/test_theme/test_theme.info.yml b/core/modules/system/tests/themes/test_theme/test_theme.info.yml
+index 9086f91c515..1fd0c5f1def 100644
+--- a/core/modules/system/tests/themes/test_theme/test_theme.info.yml
++++ b/core/modules/system/tests/themes/test_theme/test_theme.info.yml
+@@ -14,6 +14,7 @@ description: 'Theme for testing the theme system'
+ version: VERSION
+ base theme: starterkit_theme
+ logo: images/logo2.svg
++favicon: images/favicon2.svg
+ libraries:
+   - test_theme/global-styling
+ libraries-override:
+diff --git a/core/tests/Drupal/KernelTests/Core/Theme/ThemeSettingsTest.php b/core/tests/Drupal/KernelTests/Core/Theme/ThemeSettingsTest.php
+index f417dd142fe..55a96eadcd9 100644
+--- a/core/tests/Drupal/KernelTests/Core/Theme/ThemeSettingsTest.php
++++ b/core/tests/Drupal/KernelTests/Core/Theme/ThemeSettingsTest.php
+@@ -120,4 +120,70 @@ public function testLogoConfig(): void {
+     $this->assertEquals($expected, \Drupal::service(ThemeSettingsProvider::class)->getSetting('logo.url', 'test_theme'));
+   }
+ 
++  /**
++   * Tests default favicon configuration can be overridden.
++   */
++  public function testFaviconConfig(): void {
++    /** @var \Drupal\Core\Extension\ThemeInstallerInterface $theme_installer */
++    $theme_installer = $this->container->get('theme_installer');
++    $theme_installer->install(['olivero']);
++    /** @var \Drupal\Core\Extension\ThemeHandler $theme_handler */
++    $theme_handler = $this->container->get('theme_handler');
++    $theme = $theme_handler->getTheme('olivero');
++
++    // Tests default behavior.
++    $expected = '/' . $theme->getPath() . '/favicon.ico';
++    $this->assertEquals($expected, theme_get_setting('favicon.url', 'olivero'));
++
++    $theme_installer->install(['stark']);
++    $theme = $theme_handler->getTheme('stark');
++
++    $config = $this->config('stark.settings');
++
++    drupal_static_reset('theme_get_setting');
++
++    // Test when the theme does not have a favicon configured.
++    $expected = '/core/misc/favicon.ico';
++    $this->assertEquals($expected, theme_get_setting('favicon.url', 'stark'));
++
++    drupal_static_reset('theme_get_setting');
++
++    $values = [
++      'default_favicon' => FALSE,
++      'favicon_path' => 'public://favicon_with_scheme.png',
++    ];
++    theme_settings_convert_to_config($values, $config)->save();
++
++    // Tests favicon path with scheme.
++    /** @var \Drupal\Core\File\FileUrlGeneratorInterface $file_url_generator */
++    $file_url_generator = \Drupal::service('file_url_generator');
++    $expected = $file_url_generator->generateString('public://favicon_with_scheme.png');
++    $this->assertEquals($expected, theme_get_setting('favicon.url', 'stark'));
++
++    $values = [
++      'default_favicon' => FALSE,
++      'favicon_path' => $theme->getPath() . '/favicon_relative_path.ico',
++    ];
++    theme_settings_convert_to_config($values, $config)->save();
++
++    drupal_static_reset('theme_get_setting');
++
++    // Tests relative path.
++    $expected = '/' . $theme->getPath() . '/favicon_relative_path.ico';
++    $this->assertEquals($expected, theme_get_setting('favicon.url', 'stark'));
++
++    $theme_installer->install(['test_theme']);
++    \Drupal::configFactory()
++      ->getEditable('system.theme')
++      ->set('default', 'test_theme')
++      ->save();
++    $theme = $theme_handler->getTheme('test_theme');
++
++    drupal_static_reset('theme_get_setting');
++
++    // Tests favicon set in test_theme.info.yml.
++    $expected = '/' . $theme->getPath() . '/images/favicon2.svg';
++    $this->assertEquals($expected, theme_get_setting('favicon.url', 'test_theme'));
++  }
++
+ }
