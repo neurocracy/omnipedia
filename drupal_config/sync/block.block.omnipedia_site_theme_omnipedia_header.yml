@@ -1,0 +1,20 @@
+uuid: 87e39022-d884-4704-ac52-528c505c0f54
+langcode: en
+status: true
+dependencies:
+  module:
+    - omnipedia_block
+  theme:
+    - omnipedia_site_theme
+id: omnipedia_site_theme_omnipedia_header
+theme: omnipedia_site_theme
+region: primary_menu
+weight: 0
+provider: null
+plugin: omnipedia_header
+settings:
+  id: omnipedia_header
+  label: Header
+  label_display: '0'
+  provider: omnipedia_block
+visibility: {  }

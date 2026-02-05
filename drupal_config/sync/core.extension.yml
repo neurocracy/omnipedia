@@ -75,6 +75,7 @@ module:
   omnipedia_access: 0
   omnipedia_asset: 0
   omnipedia_attached_data: 0
+  omnipedia_block: 0
   omnipedia_content: 0
   omnipedia_core: 0
   omnipedia_core_content_moderation: 0
