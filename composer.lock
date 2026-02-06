@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "af64b0c8dfc87504a5d2be5c73f0ac0b",
+    "content-hash": "e9e9ff6f217a49a34c730b0b76cfdbe7",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -3907,33 +3907,51 @@
         },
         {
             "name": "drupal/markdown",
-            "version": "dev-3.0.x-drupal-11",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
-                "url": "https://gitlab.com/neurocracy/omnipedia/modules/forks/markdown.git",
-                "reference": "7697cf2f0cc8e1987784e037dc71c51d27c9a4b7"
+                "url": "https://git.drupalcode.org/project/markdown.git",
+                "reference": "3.1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fforks%2Fmarkdown/repository/archive.zip?sha=7697cf2f0cc8e1987784e037dc71c51d27c9a4b7",
-                "reference": "7697cf2f0cc8e1987784e037dc71c51d27c9a4b7",
-                "shasum": ""
+                "url": "https://ftp.drupal.org/files/projects/markdown-3.1.0.zip",
+                "reference": "3.1.0",
+                "shasum": "bcea24188f889c530d24490e991c3803d0240217"
             },
             "require": {
                 "composer/semver": "^1.0 || ^2.0 || ^3.0",
-                "php": ">=5.5.9"
+                "drupal/core": "^10.4 || ^11",
+                "ext-dom": "*",
+                "ext-libxml": "*"
+            },
+            "require-dev": {
+                "drush/drush": "^12 || ^13",
+                "erusev/parsedown": "^1.7",
+                "erusev/parsedown-extra": "^0.8.1",
+                "league/commonmark": "^1.6 || ^2.7",
+                "michelf/php-markdown": "^2.0"
             },
             "suggest": {
                 "league/commonmark": "The PHP CommonMark parser is a robust, highly-extensible Markdown parser for PHP based on the CommonMark and Github-Flavored Markdown specifications."
             },
             "type": "drupal-module",
             "extra": {
+                "drupal": {
+                    "version": "3.1.0",
+                    "datestamp": "1767799978",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
                 "drush": {
                     "services": {
                         "drush.services.yml": "^9 || ^10"
                     }
                 }
             },
+            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0-or-later"
             ],
@@ -3947,15 +3965,26 @@
                     "name": "Gisle Hannemyr (gisle)",
                     "homepage": "https://www.drupal.org/u/gisle",
                     "role": "D7 Maintainer"
+                },
+                {
+                    "name": "joelpittet",
+                    "homepage": "https://www.drupal.org/user/160302"
+                },
+                {
+                    "name": "markdorison",
+                    "homepage": "https://www.drupal.org/user/346106"
+                },
+                {
+                    "name": "megachriz",
+                    "homepage": "https://www.drupal.org/user/654114"
                 }
             ],
             "description": "Provides Markdown integration for Drupal and allows content to be formatted in a simple plain-text syntax that is transformed into valid HTML.",
             "homepage": "https://www.drupal.org/project/markdown",
             "support": {
-                "issues": "https://www.drupal.org/project/markdown",
-                "source": "https://git.drupalcode.org/project/markdown"
-            },
-            "time": "2025-09-19T15:03:00-04:00"
+                "source": "https://git.drupalcode.org/project/markdown",
+                "issues": "https://www.drupal.org/project/markdown"
+            }
         },
         {
             "name": "drupal/media_entity_file_replace",
@@ -21047,12 +21076,6 @@
             "alias_normalized": "2.1.0.0"
         },
         {
-            "package": "drupal/markdown",
-            "version": "dev-3.0.x-drupal-11",
-            "alias": "3.0",
-            "alias_normalized": "3.0.0.0"
-        },
-        {
             "package": "drupal/paranoia",
             "version": "dev-8.x-1.x",
             "alias": "1.0-rc2",
@@ -21088,7 +21111,6 @@
         "drupal/entity_usage": 10,
         "drupal/image_style_warmer": 5,
         "drupal/maintenance200": 20,
-        "drupal/markdown": 20,
         "drupal/omnipedia_access": 20,
         "drupal/omnipedia_asset": 20,
         "drupal/omnipedia_attached_data": 20,
