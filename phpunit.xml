@@ -131,7 +131,7 @@
     </testsuite>
   </testsuites>
   <!-- Settings for coverage reports. -->
-  <source ignoreSuppressionOfDeprecations="true">
+  <!-- <source ignoreSuppressionOfDeprecations="true">
     <include>
       <directory>web/core/includes</directory>
       <directory>web/core/lib</directory>
@@ -148,6 +148,14 @@
       <directory>web/modules/*/*/src/Tests</directory>
       <directory>web/modules/*/*/tests</directory>
     </exclude>
+  </source> -->
+  <source ignoreIndirectDeprecations="true"
+    ignoreDirectDeprecations="true"
+    restrictNotices="true"
+    restrictWarnings="true">
+    <include>
+      <directory>web/modules/custom/*</directory>
+    </include>
   </source>
   <logging>
     <!-- Note that this is relative to the web root and not the root of the
