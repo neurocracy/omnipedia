@@ -63,11 +63,6 @@
     },
     {
       "type": "vcs",
-      "url": "https://gitlab.com/neurocracy/omnipedia/modules/forks/markdown.git",
-      "only": ["drupal/markdown"]
-    },
-    {
-      "type": "vcs",
       "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-access.git",
       "only": ["drupal/omnipedia_access"]
     },
@@ -198,10 +193,11 @@
     "drupal/ambientimpact_media": "^5.0@dev",
     "drupal/ambientimpact_ux": "^2.0@dev",
     "drupal/autoban": "^1.7",
+    "drupal/ban-ban": "^1.0",
     "drupal/config_ignore": "^3.3",
     "drupal/config_split": "^2.0",
-    "drupal/core-composer-scaffold": "^11.2 < 11.3",
-    "drupal/core-recommended": "^11.2 < 11.3",
+    "drupal/core-composer-scaffold": "^11.2",
+    "drupal/core-recommended": "^11.2",
     "drupal/csp": "^2.1",
     "drupal/dblog_persistent": "2.1.x-dev as 2.1.1",
     "drupal/diff": "^1.0",
@@ -221,7 +217,7 @@
     "drupal/login_history": "^2.0",
     "drupal/login_security": "^2.0",
     "drupal/maintenance200": "dev-8.x-2.x as 2.1",
-    "drupal/markdown": "dev-3.0.x-drupal-11 as 3.0",
+    "drupal/markdown": "^3.1",
     "drupal/media_entity_file_replace": "^1.0",
     "drupal/metatag": "^2.0",
     "drupal/moderated_content_bulk_publish": "^2.0",
@@ -283,7 +279,7 @@
     "drupal/config_delete": "^2.0",
     "drupal/config_devel": "^1.2",
     "drupal/config_inspector": "^2.1",
-    "drupal/core-dev": "^11.2 < 11.3",
+    "drupal/core-dev": "^11.2",
     "drupal/devel": "^5.0",
     "drupal/examples": "^4.0",
     "drupal/upgrade_status": "^4.3",

@@ -1,0 +1,22 @@
+uuid: 32db7d57-b1ae-44b6-ac7a-305314980c6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.wiki_page
+id: node.wiki_page.promote
+field_name: promote
+entity_type: node
+bundle: wiki_page
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

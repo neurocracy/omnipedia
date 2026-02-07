@@ -177,6 +177,7 @@ permissions:
   - 'perform batch updates entity usage'
   - 'process media_entity_thumbnail queue'
   - 'process warmer queue'
+  - 'rebuild node access permissions'
   - 'revert all revisions'
   - 'revert page revisions'
   - 'revert wiki_page revisions'
