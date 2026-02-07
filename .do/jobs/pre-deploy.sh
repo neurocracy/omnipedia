@@ -21,8 +21,5 @@ fi
 # Run any necessary database updates.
 drush -y updb
 
-# Temp for 11.3 upgrade.
-drush cr
-
 # Import any configuration changes. This should be run after database updates.
 drush -y config:import
