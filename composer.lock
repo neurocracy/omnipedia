@@ -1529,12 +1529,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-base.git",
-                "reference": "1dc12d9c7d40b935f5fa79101a7ceeb8ec349cbc"
+                "reference": "94dd45ede5041394c7d4174110f324a7a3c73acb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-base/zipball/1dc12d9c7d40b935f5fa79101a7ceeb8ec349cbc",
-                "reference": "1dc12d9c7d40b935f5fa79101a7ceeb8ec349cbc",
+                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-base/zipball/94dd45ede5041394c7d4174110f324a7a3c73acb",
+                "reference": "94dd45ede5041394c7d4174110f324a7a3c73acb",
                 "shasum": ""
             },
             "require": {
@@ -1561,7 +1561,7 @@
                 "source": "https://github.com/Ambient-Impact/drupal-ambientimpact-base",
                 "issues": "https://github.com/Ambient-Impact/drupal-ambientimpact-base/issues"
             },
-            "time": "2026-02-14T14:00:37+00:00"
+            "time": "2026-02-25T13:20:36+00:00"
         },
         {
             "name": "drupal/ambientimpact_core",
