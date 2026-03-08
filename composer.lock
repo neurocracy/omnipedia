@@ -2762,20 +2762,20 @@
         },
         {
             "name": "drupal/entity_usage",
-            "version": "2.0.0-beta26",
+            "version": "2.0.0-beta28",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entity_usage.git",
-                "reference": "8.x-2.0-beta26"
+                "reference": "8.x-2.0-beta28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity_usage-8.x-2.0-beta26.zip",
-                "reference": "8.x-2.0-beta26",
-                "shasum": "316adfeb7b17bafe7cdd0f6867a59825ee7bb7d2"
+                "url": "https://ftp.drupal.org/files/projects/entity_usage-8.x-2.0-beta28.zip",
+                "reference": "8.x-2.0-beta28",
+                "shasum": "7e97367d1c583a41dfab91226e4f688309ae2ce7"
             },
             "require": {
-                "drupal/core": "^10.2 || ^11"
+                "drupal/core": "^10.3 || ^11"
             },
             "require-dev": {
                 "drupal/block_field": "~1.0",
@@ -2793,8 +2793,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.0-beta26",
-                    "datestamp": "1770826893",
+                    "version": "8.x-2.0-beta28",
+                    "datestamp": "1771495229",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -2972,17 +2972,17 @@
         },
         {
             "name": "drupal/flood_control",
-            "version": "3.0.0",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/flood_control.git",
-                "reference": "3.0.0"
+                "reference": "3.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/flood_control-3.0.0.zip",
-                "reference": "3.0.0",
-                "shasum": "f453629f547a30670f9d5394b925b1895bb68615"
+                "url": "https://ftp.drupal.org/files/projects/flood_control-3.0.1.zip",
+                "reference": "3.0.1",
+                "shasum": "02f601483022c7defc057dab121180507d821d06"
             },
             "require": {
                 "drupal/core": "^10.2 || ^11"
@@ -2990,8 +2990,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0",
-                    "datestamp": "1727430687",
+                    "version": "3.0.1",
+                    "datestamp": "1771613535",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3808,17 +3808,17 @@
         },
         {
             "name": "drupal/login_security",
-            "version": "2.0.3",
+            "version": "2.0.7",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/login_security.git",
-                "reference": "2.0.3"
+                "reference": "2.0.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/login_security-2.0.3.zip",
-                "reference": "2.0.3",
-                "shasum": "dad46694234bfb81bc058e29c3e5c49b5ee04bf0"
+                "url": "https://ftp.drupal.org/files/projects/login_security-2.0.7.zip",
+                "reference": "2.0.7",
+                "shasum": "081f87e5fe14b7401992111b05004cd069168b52"
             },
             "require": {
                 "drupal/core": "^8.9 || ^9 || ^10 || ^11"
@@ -3826,8 +3826,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.3",
-                    "datestamp": "1769701677",
+                    "version": "2.0.7",
+                    "datestamp": "1771354457",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4107,17 +4107,17 @@
         },
         {
             "name": "drupal/moderated_content_bulk_publish",
-            "version": "2.0.46",
+            "version": "2.0.49",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/moderated_content_bulk_publish.git",
-                "reference": "2.0.46"
+                "reference": "2.0.49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/moderated_content_bulk_publish-2.0.46.zip",
-                "reference": "2.0.46",
-                "shasum": "046da8198f02f3a36d9896392de00b7e14391962"
+                "url": "https://ftp.drupal.org/files/projects/moderated_content_bulk_publish-2.0.49.zip",
+                "reference": "2.0.49",
+                "shasum": "a3b06f8969e9f280779f56f6c2517b7cd38838db"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11",
@@ -4127,8 +4127,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.46",
-                    "datestamp": "1770425601",
+                    "version": "2.0.49",
+                    "datestamp": "1772585780",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6849,17 +6849,17 @@
         },
         {
             "name": "drupal/userprotect",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/userprotect.git",
-                "reference": "8.x-1.3"
+                "reference": "8.x-1.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/userprotect-8.x-1.3.zip",
-                "reference": "8.x-1.3",
-                "shasum": "93a34941254e687e8ca0c0a131336867e426cbf5"
+                "url": "https://ftp.drupal.org/files/projects/userprotect-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "fec856255469590aa61882e6051891939f1391f4"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9 || ^10 || ^11"
@@ -6870,8 +6870,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.3",
-                    "datestamp": "1720107439",
+                    "version": "8.x-1.4",
+                    "datestamp": "1772647193",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6899,7 +6899,7 @@
                 "User Management"
             ],
             "support": {
-                "source": "http://cgit.drupalcode.org/userprotect",
+                "source": "https://git.drupalcode.org/project/userprotect",
                 "issues": "https://www.drupal.org/project/issues/userprotect"
             }
         },
@@ -15262,26 +15262,26 @@
         },
         {
             "name": "drupal/config_inspector",
-            "version": "2.1.9",
+            "version": "2.1.10",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/config_inspector.git",
-                "reference": "2.1.9"
+                "reference": "2.1.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_inspector-2.1.9.zip",
-                "reference": "2.1.9",
-                "shasum": "e5df3444f9e9aec82ff136b66a6707196ef1f7eb"
+                "url": "https://ftp.drupal.org/files/projects/config_inspector-2.1.10.zip",
+                "reference": "2.1.10",
+                "shasum": "7297e75be097ba431c810ddee00d30129ed5786d"
             },
             "require": {
-                "drupal/core": "^9.2 || ^10 || ^11"
+                "drupal/core": "^9.2 || ^10 || ^11 || ^12"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.1.9",
-                    "datestamp": "1714470278",
+                    "version": "2.1.10",
+                    "datestamp": "1772643611",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -15624,17 +15624,17 @@
         },
         {
             "name": "drupal/upgrade_status",
-            "version": "4.3.8",
+            "version": "4.3.9",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/upgrade_status.git",
-                "reference": "4.3.8"
+                "reference": "4.3.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/upgrade_status-4.3.8.zip",
-                "reference": "4.3.8",
-                "shasum": "4526741f6d0991f2165d4d79c8830602f5ac8bca"
+                "url": "https://ftp.drupal.org/files/projects/upgrade_status-4.3.9.zip",
+                "reference": "4.3.9",
+                "shasum": "bef9e5e08a3b6ecc6a5c380107e624fb4b5f03ef"
             },
             "require": {
                 "dekor/php-array-table": "^2.0",
@@ -15651,8 +15651,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "4.3.8",
-                    "datestamp": "1751485112",
+                    "version": "4.3.9",
+                    "datestamp": "1771841606",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
