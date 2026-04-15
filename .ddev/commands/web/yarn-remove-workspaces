@@ -1,4 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+## Description: Remove workspaces defined in composerDependencies & composerWorkspaces from package.json and yarn.lock.
+## Usage: yarn-remove-workspaces
 
 # @see https://superuser.com/questions/270214/how-can-i-change-the-colors-of-my-xterm-using-ansi-escape-sequences
 RED='\033[31m'
@@ -8,21 +11,6 @@ BLUE='\033[34m'
 MAGENTA='\033[35m'
 CYAN='\033[36m'
 RESET='\033[0m'
-
-# Because it's not yet possible to customize the order that autodetected
-# buildpacks run their builds on DigitalOcean App Platform, and because the PHP
-# buildpack always runs after the Node.js buildpack, we have to add these
-# workspace items after the fact because they're only present after Composer has
-# pulled them in and would otherwise stop the build with an error when Yarn
-# would try to find them. To accomplish this, they're instead listed in a
-# "composerDependencies" key and not under "dependencies" or "devDependencies",
-# and then during the build phase we parse that using jq, format it into the
-# syntax for yarn add, and use command substitution to provide it all to Yarn.
-#
-# @see https://jqlang.github.io/jq/
-#
-# @see Aptfile
-#   Tells App Platform to install jq for us.
 
 DEPENDENCIES_KEY='composerDependencies'
 
@@ -38,17 +26,11 @@ HAS_WORKSPACES="$(jq 'has($workspacesKey)' package.json \
   --raw-output \
 )"
 
-# Unlike the DDEV commands, we don't want to fail here but instead just print a
-# message and allow the build to continue without doing anything more. The
-# build pack will already have run yarn install for us.
 if [[ $HAS_DEPENDENCIES == 'false' ]] && [[ $HAS_WORKSPACES == 'false' ]]; then
 
-  # Double space required to compensate for Unicode variation selector for ⚠️.
-  printf "⚠️  ${YELLOW}Your package.json contains neither \"$DEPENDENCIES_KEY\" nor \"$WORKSPACES_KEY\"; nothing to do.${RESET}\n"
+  printf "🛑 ${RED}Your package.json contains neither \"$DEPENDENCIES_KEY\" nor \"$WORKSPACES_KEY\".${RESET}\n" >&2
 
-  yarn build:deploy
-
-  exit 0;
+  exit 1
 
 fi
 
@@ -94,29 +76,34 @@ if [[ $WORKSPACES_TYPE != "array" ]]; then
 
 fi
 
+# Keep a copy of the lockfile with workspaces if yarn.lock exists.
+if [ -f yarn.lock ]; then
+
+  cp -f yarn.lock yarn.with-workspaces.lock
+
+fi
+
 # jq can't read and write to the same file reliably, resulting in an empty file,
 # so we have to use a temp file to work around this.
 #
 # @see https://github.com/jqlang/jq/issues/2152#issuecomment-653634999
 cp -f package.json /tmp/package.temp.json
 
-jq '. * {"dependencies": .[$dependenciesKey], "workspaces": .[$workspacesKey]}' /tmp/package.temp.json \
+# This removes both dependencies and workspaces found in composerDependencies
+# and composerWorkspaces, respectively, leaving any other dependencies and
+# workspaces as-is.
+#
+# Note the use of the "//" alternative operator on both .dependencies
+# and .workspaces to ensure this doesn't fail if one or both are not present.
+# While it's unlikely .dependencies would be missing, .workspaces can often be
+# entirely omitted.
+#
+# @see https://jqlang.org/manual/#alternative-operator
+jq '.dependencies = ((.dependencies // {} | to_entries) - (.[$dependenciesKey] | to_entries) | from_entries) | .workspaces = (.workspaces // []) - .[$workspacesKey]' /tmp/package.temp.json \
   --arg dependenciesKey $DEPENDENCIES_KEY \
   --arg workspacesKey $WORKSPACES_KEY \
   > package.json
 
 rm -f /tmp/package.temp.json
 
-if [ -f yarn.with-workspaces.lock ]; then
-
-  cp -f yarn.with-workspaces.lock yarn.lock
-
-  yarn install --immutable
-
-else
-
-  yarn install --no-immutable
-
-fi
-
-yarn build:deploy
+yarn install

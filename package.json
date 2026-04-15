@@ -12,11 +12,6 @@
     "build:production": "cross-env NODE_ENV=production yarn build",
     "build:deploy": "cross-env NODE_ENV=production CI=true yarn build"
   },
-  "workspaces": [
-    "web/modules/contrib/refreshless/**!(vendor)/*",
-    "web/modules/custom/*",
-    "web/themes/custom/*"
-  ],
   "dependencies": {
     "corepack": "^0.30.0",
     "cross-env": "^7.0.3"
@@ -32,5 +27,10 @@
     "drupal-omnipedia-content": "workspace:^7",
     "drupal-omnipedia-media": "workspace:^7",
     "drupal-omnipedia-site-theme": "workspace:^8"
-  }
+  },
+  "composerWorkspaces": [
+    "web/modules/contrib/refreshless/**!(vendor)/*",
+    "web/modules/custom/*",
+    "web/themes/custom/*"
+  ]
 }
