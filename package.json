@@ -3,20 +3,15 @@
   "version": "10.0.0",
   "license": "GPL-3.0-or-later",
   "repository": "https://gitlab.com/neurocracy/omnipedia/omnipedia",
-  "packageManager": "yarn@4.9.2",
+  "packageManager": "yarn@4.15.0",
   "engines": {
     "node": ">=22 <23",
-    "yarn": ">=4.9.2"
+    "yarn": ">=4.15.0"
   },
   "scripts": {
     "build:production": "cross-env NODE_ENV=production yarn build",
     "build:deploy": "cross-env NODE_ENV=production CI=true yarn build"
   },
-  "workspaces": [
-    "web/modules/contrib/refreshless/**!(vendor)/*",
-    "web/modules/custom/*",
-    "web/themes/custom/*"
-  ],
   "dependencies": {
     "corepack": "^0.30.0",
     "cross-env": "^7.0.3"
@@ -32,5 +27,10 @@
     "drupal-omnipedia-content": "workspace:^7",
     "drupal-omnipedia-media": "workspace:^7",
     "drupal-omnipedia-site-theme": "workspace:^8"
-  }
+  },
+  "composerWorkspaces": [
+    "web/modules/contrib/refreshless/**!(vendor)/*",
+    "web/modules/custom/*",
+    "web/themes/custom/*"
+  ]
 }

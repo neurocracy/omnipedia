@@ -191,6 +191,7 @@ build:yarn:
 
   script:
     - ddev yarn install
+    - ddev yarn-restore-workspaces
     - ddev yarn build:deploy
 
 validate:composer:
