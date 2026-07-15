@@ -30,7 +30,6 @@ permissions:
   - 'access media overview'
   - 'access navigation'
   - 'access shortcuts'
-  - 'administer nodes'
   - 'delete media'
   - 'delete own files'
   - 'edit own wiki_page content'
