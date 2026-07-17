@@ -5,7 +5,9 @@ dependencies:
   config:
     - filter.format.wiki_html
     - node.type.wiki_page
+    - workflows.workflow.editorial
   module:
+    - content_moderation
     - contextual
     - file
     - filter
@@ -30,15 +32,17 @@ permissions:
   - 'access media overview'
   - 'access navigation'
   - 'access shortcuts'
-  - 'administer nodes'
   - 'delete media'
   - 'delete own files'
   - 'edit own wiki_page content'
   - 'omnipedia_access bypass not found'
   - 'setup own tfa'
   - 'update media'
+  - 'use editorial transition create_new_draft'
   - 'use text format wiki_html'
   - 'view all media revisions'
+  - 'view any unpublished content'
+  - 'view latest version'
   - 'view media'
   - 'view own unpublished content'
   - 'view own unpublished media'
