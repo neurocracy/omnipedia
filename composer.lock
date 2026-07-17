@@ -2768,17 +2768,17 @@
         },
         {
             "name": "drupal/entity_usage",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entity_usage.git",
-                "reference": "8.x-2.0"
+                "reference": "8.x-2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity_usage-8.x-2.0.zip",
-                "reference": "8.x-2.0",
-                "shasum": "344382eeeeee021cf4e7cea56bcacaeb83a03aea"
+                "url": "https://ftp.drupal.org/files/projects/entity_usage-8.x-2.1.zip",
+                "reference": "8.x-2.1",
+                "shasum": "6e581d6f8444584e810219918b811c543dae6d03"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11"
@@ -2794,13 +2794,14 @@
                 "drupal/paragraphs": "~1.0",
                 "drupal/redirect": "^1.11",
                 "drupal/trash": "~3.0",
-                "drupal/webform": "^6.0.0"
+                "drupal/webform": "^6.0.0",
+                "drush/drush": "^12.0 || ^13.0 || ^14.0"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.0",
-                    "datestamp": "1779863185",
+                    "version": "8.x-2.1",
+                    "datestamp": "1782902223",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3101,27 +3102,27 @@
         },
         {
             "name": "drupal/gin_everywhere",
-            "version": "1.4.0",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin_everywhere.git",
-                "reference": "1.4.0"
+                "reference": "1.5.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/gin_everywhere-1.4.0.zip",
-                "reference": "1.4.0",
-                "shasum": "1da3edee04f53453c6d9a3affea4638ee0e56d6b"
+                "url": "https://ftp.drupal.org/files/projects/gin_everywhere-1.5.0.zip",
+                "reference": "1.5.0",
+                "shasum": "f81dc665b472baa8ff695bcbb3afc4b01361e311"
             },
             "require": {
-                "drupal/core": "^10 || ^11",
+                "drupal/core": "^10.1 || ^11 || ^12",
                 "drupal/gin": "^3.0 || ^4.0 || ^5.0"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "1.4.0",
-                    "datestamp": "1754655626",
+                    "version": "1.5.0",
+                    "datestamp": "1783630721",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3130,7 +3131,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -3214,27 +3215,27 @@
         },
         {
             "name": "drupal/health_check",
-            "version": "3.1.0",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/health_check.git",
-                "reference": "3.1.0"
+                "reference": "3.2.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/health_check-3.1.0.zip",
-                "reference": "3.1.0",
-                "shasum": "7c72666fa1c0c688f7f27f5cad2a0e29a934d5d0"
+                "url": "https://ftp.drupal.org/files/projects/health_check-3.2.0.zip",
+                "reference": "3.2.0",
+                "shasum": "bd26c1853a45b6e2b599549cdd42d67f9e49960b"
             },
             "require": {
-                "drupal/core": "^9.4 || ^10 || ^11",
+                "drupal/core": "^9.4 || ^10 || ^11 || ^12",
                 "php": "^8.0"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.1.0",
-                    "datestamp": "1718772797",
+                    "version": "3.2.0",
+                    "datestamp": "1782553741",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6269,30 +6270,30 @@
         },
         {
             "name": "drupal/sodium",
-            "version": "3.0.0",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/sodium.git",
-                "reference": "3.0.0"
+                "reference": "3.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/sodium-3.0.0.zip",
-                "reference": "3.0.0",
-                "shasum": "a3d6b19e37721066893823e93a655b5acba9d50c"
+                "url": "https://ftp.drupal.org/files/projects/sodium-3.0.1.zip",
+                "reference": "3.0.1",
+                "shasum": "d2145816e157d853bdb021cfa83337ec4279caa5"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11",
                 "drupal/encrypt": "^3.2",
                 "drupal/key": "^1.0",
                 "paragonie/halite": "^5.1",
-                "php": ">=8.1"
+                "php": ">=8.3"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0",
-                    "datestamp": "1727770260",
+                    "version": "3.0.1",
+                    "datestamp": "1783292221",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6988,17 +6989,17 @@
         },
         {
             "name": "drupal/views_bulk_operations",
-            "version": "4.4.5",
+            "version": "4.4.7",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/views_bulk_operations.git",
-                "reference": "4.4.5"
+                "reference": "4.4.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views_bulk_operations-4.4.5.zip",
-                "reference": "4.4.5",
-                "shasum": "0f4a674e79149ad7306209ac90890d9ba6f60d14"
+                "url": "https://ftp.drupal.org/files/projects/views_bulk_operations-4.4.7.zip",
+                "reference": "4.4.7",
+                "shasum": "eacf78c01dba6dabb44a65db8761aabff504f88b"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11"
@@ -7007,10 +7008,10 @@
                 "drush/drush": "<12.5.1"
             },
             "require-dev": {
-                "drupal/coder": "^8.3.16",
+                "drupal/search_api": "^1.35",
                 "drush/drush": "^12 || ^13",
-                "phpstan/phpstan-deprecation-rules": "^2",
-                "phpstan/phpstan-strict-rules": "^2"
+                "phpstan/phpstan-deprecation-rules": "^1",
+                "phpstan/phpstan-strict-rules": "^1"
             },
             "suggest": {
                 "drush/drush": "^12 || ^13"
@@ -7018,8 +7019,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "4.4.5",
-                    "datestamp": "1778674066",
+                    "version": "4.4.7",
+                    "datestamp": "1784189101",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -15675,32 +15676,33 @@
         },
         {
             "name": "drupal/hal",
-            "version": "2.0.4",
+            "version": "2.0.5",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/hal.git",
-                "reference": "2.0.4"
+                "reference": "2.0.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/hal-2.0.4.zip",
-                "reference": "2.0.4",
-                "shasum": "5d98f2ebbc7952d183278351d24d3e51ea18c8ee"
+                "url": "https://ftp.drupal.org/files/projects/hal-2.0.5.zip",
+                "reference": "2.0.5",
+                "shasum": "a95b5af38061e580b51985cdfd20975e8f2f41ae"
             },
             "require": {
-                "drupal/core": "^10 || ^11"
+                "drupal/core": "^10 || ^11 || ^12"
             },
             "require-dev": {
                 "drupal/aggregator": "2.x-dev",
+                "drupal/contact": "^1",
                 "drupal/entity_reference_revisions": "1.x-dev",
-                "drupal/rdf": "^2.1 || 3.0.x-dev",
+                "drupal/rdf": "3.0.x-dev",
                 "drupal/tour": "^1"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.4",
-                    "datestamp": "1738532063",
+                    "version": "2.0.5",
+                    "datestamp": "1782694027",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
