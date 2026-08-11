@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5638187bd8ffa0f891e74a3fd1a2921b",
+    "content-hash": "3f3c937e23f33614d37c2f597a9da422",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -2088,6 +2088,58 @@
             }
         },
         {
+            "name": "drupal/contact",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/contact.git",
+                "reference": "1.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/contact-1.0.0.zip",
+                "reference": "1.0.0",
+                "shasum": "baf3c8f1cc56c5ecca513f646fd9aaa5c6db5295"
+            },
+            "require": {
+                "drupal/core": ">11.3"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0",
+                    "datestamp": "1769226328",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "andypost",
+                    "homepage": "https://www.drupal.org/user/118908"
+                },
+                {
+                    "name": "dave reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "larowlan",
+                    "homepage": "https://www.drupal.org/user/395439"
+                }
+            ],
+            "description": "Provides site-wide contact forms and forms to contact individual users.",
+            "homepage": "https://www.drupal.org/project/contact",
+            "support": {
+                "source": "https://git.drupalcode.org/project/contact"
+            }
+        },
+        {
             "name": "drupal/core",
             "version": "11.4.5",
             "source": {
@@ -3293,6 +3345,54 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/health_check",
                 "issues": "https://www.drupal.org/project/issues/health_check"
+            }
+        },
+        {
+            "name": "drupal/history",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/history.git",
+                "reference": "1.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/history-1.0.0.zip",
+                "reference": "1.0.0",
+                "shasum": "2e8d7034d0f54b9986d74a184397527d9be6623a"
+            },
+            "require": {
+                "drupal/core": ">11.3"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0",
+                    "datestamp": "1769182061",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "andypost",
+                    "homepage": "https://www.drupal.org/user/118908"
+                },
+                {
+                    "name": "nikolas.tatianenko",
+                    "homepage": "https://www.drupal.org/user/1579942"
+                }
+            ],
+            "description": "Records which content users have viewed and marks it as new or updated.",
+            "homepage": "https://www.drupal.org/project/history",
+            "support": {
+                "source": "https://git.drupalcode.org/project/history"
             }
         },
         {
