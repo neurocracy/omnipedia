@@ -2430,17 +2430,17 @@
         },
         {
             "name": "drupal/ctools",
-            "version": "4.1.0",
+            "version": "4.1.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/ctools.git",
-                "reference": "4.1.0"
+                "reference": "4.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ctools-4.1.0.zip",
-                "reference": "4.1.0",
-                "shasum": "69f5889cf557df9e55519390e6a95cfa31b67874"
+                "url": "https://ftp.drupal.org/files/projects/ctools-4.1.1.zip",
+                "reference": "4.1.1",
+                "shasum": "a04db6a0b6a22ddcfb9fe8f16955d55297b5da1c"
             },
             "require": {
                 "drupal/core": "^9.5 || ^10 || ^11"
@@ -2448,8 +2448,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "4.1.0",
-                    "datestamp": "1718144949",
+                    "version": "4.1.1",
+                    "datestamp": "1784926417",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2698,27 +2698,27 @@
         },
         {
             "name": "drupal/encrypt",
-            "version": "3.2.0",
+            "version": "3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/encrypt.git",
-                "reference": "8.x-3.2"
+                "reference": "8.x-3.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/encrypt-8.x-3.2.zip",
-                "reference": "8.x-3.2",
-                "shasum": "32a700eeb59aac51f6ce4651718243a1641d5ef0"
+                "url": "https://ftp.drupal.org/files/projects/encrypt-8.x-3.3.zip",
+                "reference": "8.x-3.3",
+                "shasum": "2c780b4da61bd3bcccafbd098a777c1fed75432e"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10 || ^11",
+                "drupal/core": "^10.3 || ^11",
                 "drupal/key": "^1"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.2",
-                    "datestamp": "1727640040",
+                    "version": "8.x-3.3",
+                    "datestamp": "1784634622",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2726,7 +2726,7 @@
                 },
                 "drush": {
                     "services": {
-                        "drush.services.yml": "^9 || ^10 || ^11"
+                        "drush.services.yml": "^10 || ^11"
                     }
                 }
             },
@@ -2746,6 +2746,10 @@
                 {
                     "name": "nerdstein",
                     "homepage": "https://www.drupal.org/user/1557710"
+                },
+                {
+                    "name": "ptmkenny",
+                    "homepage": "https://www.drupal.org/user/97885"
                 },
                 {
                     "name": "rlhawk",
@@ -2768,17 +2772,17 @@
         },
         {
             "name": "drupal/entity_usage",
-            "version": "2.1.0",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entity_usage.git",
-                "reference": "8.x-2.1"
+                "reference": "8.x-2.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity_usage-8.x-2.1.zip",
-                "reference": "8.x-2.1",
-                "shasum": "6e581d6f8444584e810219918b811c543dae6d03"
+                "url": "https://ftp.drupal.org/files/projects/entity_usage-8.x-2.2.zip",
+                "reference": "8.x-2.2",
+                "shasum": "1086b8893ed36602e7877f4fcf45232bf1504600"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11"
@@ -2800,8 +2804,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.1",
-                    "datestamp": "1782902223",
+                    "version": "8.x-2.2",
+                    "datestamp": "1784797651",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2916,17 +2920,17 @@
         },
         {
             "name": "drupal/fancy_file_delete",
-            "version": "2.0.10",
+            "version": "2.0.11",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/fancy_file_delete.git",
-                "reference": "2.0.10"
+                "reference": "2.0.11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/fancy_file_delete-2.0.10.zip",
-                "reference": "2.0.10",
-                "shasum": "55c0209d8c5d764e9471f9ca15f3d8d1388d7f7f"
+                "url": "https://ftp.drupal.org/files/projects/fancy_file_delete-2.0.11.zip",
+                "reference": "2.0.11",
+                "shasum": "6e2045f5330c5f6d9bb919cfe251919bb07d13de"
             },
             "require": {
                 "drupal/core": "^8.7.7 || ^9 || ^10 || ^11",
@@ -2935,8 +2939,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.10",
-                    "datestamp": "1726865522",
+                    "version": "2.0.11",
+                    "datestamp": "1785513730",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4169,24 +4173,25 @@
         },
         {
             "name": "drupal/monolog",
-            "version": "3.0.7",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/monolog.git",
-                "reference": "3.0.7"
+                "reference": "3.1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/monolog-3.0.7.zip",
-                "reference": "3.0.7",
-                "shasum": "d49c8ae325cd793834a66f083bea7ce823ae1cdd"
+                "url": "https://ftp.drupal.org/files/projects/monolog-3.1.0.zip",
+                "reference": "3.1.0",
+                "shasum": "45413b16c05e0ec17228cbcdc50924bead6dfe0b"
             },
             "require": {
-                "drupal/core": "^10 || ^11",
+                "drupal/core": "^10.1 || ^11 || ^12",
                 "monolog/monolog": "^3.2.0",
                 "php": "^8.1.0"
             },
             "require-dev": {
+                "drush/drush": "^13",
                 "mglaman/phpstan-drupal": "^1.2 || ^2",
                 "phpstan/extension-installer": "^1.3",
                 "phpstan/phpstan": "^1.11 || ^2",
@@ -4197,8 +4202,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.7",
-                    "datestamp": "1759154513",
+                    "version": "3.1.0",
+                    "datestamp": "1786366887",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5798,21 +5803,21 @@
         },
         {
             "name": "drupal/s3fs",
-            "version": "3.10.0",
+            "version": "3.11.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/s3fs.git",
-                "reference": "8.x-3.10"
+                "reference": "8.x-3.11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/s3fs-8.x-3.10.zip",
-                "reference": "8.x-3.10",
-                "shasum": "7728ff6428f74982a290f1888d4299077fcf0320"
+                "url": "https://ftp.drupal.org/files/projects/s3fs-8.x-3.11.zip",
+                "reference": "8.x-3.11",
+                "shasum": "4dbc77c8d396006a2bab2a77124ddd6fcef038a4"
             },
             "require": {
                 "aws/aws-sdk-php": "^3.18",
-                "drupal/core": ">=8.8 < 10.7 || >=11.0 < 11.2 || >=11.2.3 < 11.4",
+                "drupal/core": ">=8.8 < 10.7 || >=11.0 < 11.2 || >=11.2.3 < 11.4.0 || >=11.4.3 < 11.5",
                 "php": "^7.1 || ^8.0"
             },
             "require-dev": {
@@ -5830,8 +5835,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.10",
-                    "datestamp": "1768115550",
+                    "version": "8.x-3.11",
+                    "datestamp": "1784613899",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5851,18 +5856,6 @@
                 {
                     "name": "Juanen Bernal",
                     "homepage": "https://www.drupal.org/u/jansete"
-                },
-                {
-                    "name": "naveenvalecha",
-                    "homepage": "https://www.drupal.org/user/2665733"
-                },
-                {
-                    "name": "ram4nd",
-                    "homepage": "https://www.drupal.org/user/601534"
-                },
-                {
-                    "name": "Rhane",
-                    "homepage": "https://www.drupal.org/user/2655479"
                 }
             ],
             "description": "Adds an Amazon Simple Storage Service-based remote file system to Drupal.",
@@ -15306,26 +15299,26 @@
         },
         {
             "name": "drupal/config_devel",
-            "version": "1.11.0",
+            "version": "1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/config_devel.git",
-                "reference": "8.x-1.11"
+                "reference": "8.x-1.12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_devel-8.x-1.11.zip",
-                "reference": "8.x-1.11",
-                "shasum": "06e68921c2ab737d775445068280c23c176edf19"
+                "url": "https://ftp.drupal.org/files/projects/config_devel-8.x-1.12.zip",
+                "reference": "8.x-1.12",
+                "shasum": "6ccc6760cff4a8e4cfcf0c729acc64830d5c4904"
             },
             "require": {
-                "drupal/core": "^9.3 || ^10 || ^11"
+                "drupal/core": "^10 || ^11"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.11",
-                    "datestamp": "1763045911",
+                    "version": "8.x-1.12",
+                    "datestamp": "1785339742",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
