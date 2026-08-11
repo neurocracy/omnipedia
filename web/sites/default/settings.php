@@ -579,6 +579,16 @@ $settings['entity_update_backup'] = true;
 $settings['state_cache'] = true;
 
 /**
+ * Enable HTML5 form validation.
+ *
+ * @see https://www.drupal.org/node/3537128
+ *   This will default to false in Drupal 12 but we currently use it.
+ *
+ * @todo Remove this before Drupal 13 and implement our own as needed.
+ */
+$settings['enable_html5_validation'] = true;
+
+/**
  * Default to reporting all error levels, overriding current Drupal defaults.
  *
  * This is the default value for PHP, but Drupal sets a different value by
