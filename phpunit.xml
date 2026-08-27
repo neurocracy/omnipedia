@@ -131,12 +131,18 @@
     </testsuite>
   </testsuites>
   <!-- Settings for coverage reports. -->
-  <source ignoreSuppressionOfDeprecations="true">
+  <!-- @see https://stackoverflow.com/questions/79221828/phpunit-ignore-deprecation-in-dependencies/79223269#79223269 -->
+  <source
+    ignoreSuppressionOfDeprecations="true"
+    ignoreIndirectDeprecations="true">
     <include>
-      <directory>web/core/includes</directory>
+      <!-- <directory>web/core/includes</directory>
       <directory>web/core/lib</directory>
-      <directory>web/core/modules</directory>
-      <directory>web/modules</directory>
+      <directory>web/core/modules</directory> -->
+      <!-- <directory>web/modules</directory> -->
+      <directory>web/modules/custom</directory>
+      <directory>web/modules/contrib/rebuilder</directory>
+      <directory>web/modules/contrib/refreshless</directory>
       <directory>web/sites</directory>
     </include>
     <exclude>
