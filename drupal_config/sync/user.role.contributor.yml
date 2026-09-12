@@ -16,6 +16,7 @@ dependencies:
     - navigation
     - node
     - omnipedia_access
+    - omnipedia_attached_data
     - shortcut
     - system
     - tfa
@@ -32,8 +33,11 @@ permissions:
   - 'access media overview'
   - 'access navigation'
   - 'access shortcuts'
+  - 'add omnipedia_attached_data entity'
+  - 'administer omnipedia_attached_data entity'
   - 'delete media'
   - 'delete own files'
+  - 'edit omnipedia_attached_data entity'
   - 'edit own wiki_page content'
   - 'omnipedia_access bypass not found'
   - 'setup own tfa'
@@ -44,6 +48,7 @@ permissions:
   - 'view any unpublished content'
   - 'view latest version'
   - 'view media'
+  - 'view omnipedia_attached_data entity'
   - 'view own unpublished content'
   - 'view own unpublished media'
   - 'view the administration theme'
