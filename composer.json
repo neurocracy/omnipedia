@@ -259,7 +259,7 @@
     "drupal/warmer": "^2.0",
     "drupal/webp": "^1.0",
     "drush/drush": "^13.6",
-    "oomphinc/composer-installers-extender": "^2.0",
+    "mnsami/composer-custom-directory-installer": "^2.2",
     "react/async": "^4.1",
     "react/child-process": "^0.6.5",
     "react/event-loop": "^1.4",
@@ -290,11 +290,11 @@
     "allow-plugins": {
       "composer/installers": true,
       "cweagans/composer-patches": true,
-      "drupal/core-composer-scaffold": true,
-      "oomphinc/composer-installers-extender": true,
       "dealerdirect/phpcodesniffer-composer-installer": true,
-      "phpstan/extension-installer": true,
+      "drupal/core-composer-scaffold": true,
+      "mnsami/composer-custom-directory-installer": true,
       "php-http/discovery": true,
+      "phpstan/extension-installer": true,
       "tbachert/spi": true
     },
     "preferred-install": {
