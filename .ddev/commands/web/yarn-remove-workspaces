@@ -2,6 +2,7 @@
 
 ## Description: Remove workspaces defined in composerDependencies & composerWorkspaces from package.json and yarn.lock.
 ## Usage: yarn-remove-workspaces
+## Aliases: yarn-workspaces-remove
 
 # @see https://superuser.com/questions/270214/how-can-i-change-the-colors-of-my-xterm-using-ansi-escape-sequences
 RED='\033[31m'

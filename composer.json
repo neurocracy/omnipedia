@@ -18,32 +18,32 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-base.git",
+      "url": "https://forge.ambientimpact.com/drupal/ambientimpact-base.git",
       "only": ["drupal/ambientimpact_base"]
     },
     {
       "type": "vcs",
-      "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-core.git",
+      "url": "https://forge.ambientimpact.com/drupal/ambientimpact-core.git",
       "only": ["drupal/ambientimpact_core"]
     },
     {
       "type": "vcs",
-      "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-icon.git",
+      "url": "https://forge.ambientimpact.com/drupal/ambientimpact-icon.git",
       "only": ["drupal/ambientimpact_icon"]
     },
     {
       "type": "vcs",
-      "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-markdown.git",
+      "url": "https://forge.ambientimpact.com/drupal/ambientimpact-markdown.git",
       "only": ["drupal/ambientimpact_markdown"]
     },
     {
       "type": "vcs",
-      "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-media.git",
+      "url": "https://forge.ambientimpact.com/drupal/ambientimpact-media.git",
       "only": ["drupal/ambientimpact_media"]
     },
     {
       "type": "vcs",
-      "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-ux.git",
+      "url": "https://forge.ambientimpact.com/drupal/ambientimpact-ux.git",
       "only": ["drupal/ambientimpact_ux"]
     },
     {
@@ -265,7 +265,7 @@
     "drupal/warmer": "^2.0",
     "drupal/webp": "^1.0",
     "drush/drush": "^13.6",
-    "oomphinc/composer-installers-extender": "^2.0",
+    "mnsami/composer-custom-directory-installer": "^2.2",
     "react/async": "^4.1",
     "react/child-process": "^0.6.5",
     "react/event-loop": "^1.4",
@@ -296,11 +296,11 @@
     "allow-plugins": {
       "composer/installers": true,
       "cweagans/composer-patches": true,
-      "drupal/core-composer-scaffold": true,
-      "oomphinc/composer-installers-extender": true,
       "dealerdirect/phpcodesniffer-composer-installer": true,
-      "phpstan/extension-installer": true,
+      "drupal/core-composer-scaffold": true,
+      "mnsami/composer-custom-directory-installer": true,
       "php-http/discovery": true,
+      "phpstan/extension-installer": true,
       "tbachert/spi": true
     },
     "preferred-install": {
