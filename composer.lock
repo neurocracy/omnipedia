@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "60ef716aad95967c467646c7b0bf3484",
+    "content-hash": "72767f4d9ab6e89d438324f25d093e8e",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -1531,14 +1531,8 @@
             "version": "7.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-base.git",
+                "url": "https://forge.ambientimpact.com/drupal/ambientimpact-base.git",
                 "reference": "db76ab7426401f9fd4371469cab916e8e0ad8213"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-base/zipball/db76ab7426401f9fd4371469cab916e8e0ad8213",
-                "reference": "db76ab7426401f9fd4371469cab916e8e0ad8213",
-                "shasum": ""
             },
             "require": {
                 "drupal/ambientimpact_core": "^1.0@dev || ^2.0@dev || ^3.0@dev",
@@ -1561,8 +1555,7 @@
             "description": "Ambient.Impact - Base theme",
             "support": {
                 "docs": "https://github.com/Ambient-Impact/drupal-ambientimpact-base",
-                "source": "https://github.com/Ambient-Impact/drupal-ambientimpact-base",
-                "issues": "https://github.com/Ambient-Impact/drupal-ambientimpact-base/issues"
+                "source": "https://github.com/Ambient-Impact/drupal-ambientimpact-base"
             },
             "time": "2026-05-19T23:40:39+00:00"
         },
@@ -1571,14 +1564,8 @@
             "version": "3.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-core.git",
+                "url": "https://forge.ambientimpact.com/drupal/ambientimpact-core.git",
                 "reference": "e553b7639099e33222f2f8b8bc0cf40894f1d3a9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-core/zipball/e553b7639099e33222f2f8b8bc0cf40894f1d3a9",
-                "reference": "e553b7639099e33222f2f8b8bc0cf40894f1d3a9",
-                "shasum": ""
             },
             "require": {
                 "drupal/core": "^10.4 || ^11.1",
@@ -1608,8 +1595,7 @@
             "description": "Ambient.Impact - Core",
             "support": {
                 "docs": "https://github.com/Ambient-Impact/drupal-ambientimpact-core",
-                "source": "https://github.com/Ambient-Impact/drupal-ambientimpact-core",
-                "issues": "https://github.com/Ambient-Impact/drupal-ambientimpact-core/issues"
+                "source": "https://github.com/Ambient-Impact/drupal-ambientimpact-core"
             },
             "time": "2026-05-19T23:40:06+00:00"
         },
@@ -1618,14 +1604,8 @@
             "version": "1.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-icon.git",
+                "url": "https://forge.ambientimpact.com/drupal/ambientimpact-icon.git",
                 "reference": "b00a793a7796f68974e475016a7ac01f6b14a9a6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-icon/zipball/b00a793a7796f68974e475016a7ac01f6b14a9a6",
-                "reference": "b00a793a7796f68974e475016a7ac01f6b14a9a6",
-                "shasum": ""
             },
             "require": {
                 "drupal/ambientimpact_core": "^1.0@dev || ^2.0@dev || ^3.0@dev",
@@ -1647,8 +1627,7 @@
             "description": "Ambient.Impact - Icons",
             "support": {
                 "docs": "https://github.com/Ambient-Impact/drupal-ambientimpact-icon",
-                "source": "https://github.com/Ambient-Impact/drupal-ambientimpact-icon",
-                "issues": "https://github.com/Ambient-Impact/drupal-ambientimpact-icon/issues"
+                "source": "https://github.com/Ambient-Impact/drupal-ambientimpact-icon"
             },
             "time": "2026-07-24T00:04:44+00:00"
         },
@@ -1657,14 +1636,8 @@
             "version": "2.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-markdown.git",
+                "url": "https://forge.ambientimpact.com/drupal/ambientimpact-markdown.git",
                 "reference": "e00e27d1c6a34d34cec44d4676490bb3267eb72a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-markdown/zipball/e00e27d1c6a34d34cec44d4676490bb3267eb72a",
-                "reference": "e00e27d1c6a34d34cec44d4676490bb3267eb72a",
-                "shasum": ""
             },
             "require": {
                 "drupal/core": "^10.0 || ^11.0",
@@ -1688,24 +1661,17 @@
             "description": "Ambient.Impact - Markdown",
             "support": {
                 "docs": "https://github.com/Ambient-Impact/drupal-ambientimpact-markdown",
-                "source": "https://github.com/Ambient-Impact/drupal-ambientimpact-markdown",
-                "issues": "https://github.com/Ambient-Impact/drupal-ambientimpact-markdown/issues"
+                "source": "https://github.com/Ambient-Impact/drupal-ambientimpact-markdown"
             },
-            "time": "2024-10-04T19:32:36+00:00"
+            "time": "2024-10-04T19:30:37+00:00"
         },
         {
             "name": "drupal/ambientimpact_media",
             "version": "5.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-media.git",
+                "url": "https://forge.ambientimpact.com/drupal/ambientimpact-media.git",
                 "reference": "087e3f3d8956d2e6f27076e0c3c836e42de4eab1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-media/zipball/087e3f3d8956d2e6f27076e0c3c836e42de4eab1",
-                "reference": "087e3f3d8956d2e6f27076e0c3c836e42de4eab1",
-                "shasum": ""
             },
             "require": {
                 "drupal/ambientimpact_core": "^2.0@dev || ^3.0@dev",
@@ -1733,8 +1699,7 @@
             "description": "Ambient.Impact - Media",
             "support": {
                 "docs": "https://github.com/Ambient-Impact/drupal-ambientimpact-media",
-                "source": "https://github.com/Ambient-Impact/drupal-ambientimpact-media",
-                "issues": "https://github.com/Ambient-Impact/drupal-ambientimpact-media/issues"
+                "source": "https://github.com/Ambient-Impact/drupal-ambientimpact-media"
             },
             "time": "2026-08-08T14:33:47+00:00"
         },
@@ -1743,14 +1708,8 @@
             "version": "2.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-ux.git",
+                "url": "https://forge.ambientimpact.com/drupal/ambientimpact-ux.git",
                 "reference": "fc0a9e2cf35980e45816aacee5b43c6e6ce30fa1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Ambient-Impact/drupal-ambientimpact-ux/zipball/fc0a9e2cf35980e45816aacee5b43c6e6ce30fa1",
-                "reference": "fc0a9e2cf35980e45816aacee5b43c6e6ce30fa1",
-                "shasum": ""
             },
             "require": {
                 "drupal/ambientimpact_core": "^1.0@dev || ^2.0@dev || ^3.0@dev",
@@ -1775,8 +1734,7 @@
             "description": "Ambient.Impact - UX",
             "support": {
                 "docs": "https://github.com/Ambient-Impact/drupal-ambientimpact-ux",
-                "source": "https://github.com/Ambient-Impact/drupal-ambientimpact-ux",
-                "issues": "https://github.com/Ambient-Impact/drupal-ambientimpact-ux/issues"
+                "source": "https://github.com/Ambient-Impact/drupal-ambientimpact-ux"
             },
             "time": "2026-05-19T23:40:32+00:00"
         },

@@ -18,32 +18,32 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-base.git",
+      "url": "https://forge.ambientimpact.com/drupal/ambientimpact-base.git",
       "only": ["drupal/ambientimpact_base"]
     },
     {
       "type": "vcs",
-      "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-core.git",
+      "url": "https://forge.ambientimpact.com/drupal/ambientimpact-core.git",
       "only": ["drupal/ambientimpact_core"]
     },
     {
       "type": "vcs",
-      "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-icon.git",
+      "url": "https://forge.ambientimpact.com/drupal/ambientimpact-icon.git",
       "only": ["drupal/ambientimpact_icon"]
     },
     {
       "type": "vcs",
-      "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-markdown.git",
+      "url": "https://forge.ambientimpact.com/drupal/ambientimpact-markdown.git",
       "only": ["drupal/ambientimpact_markdown"]
     },
     {
       "type": "vcs",
-      "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-media.git",
+      "url": "https://forge.ambientimpact.com/drupal/ambientimpact-media.git",
       "only": ["drupal/ambientimpact_media"]
     },
     {
       "type": "vcs",
-      "url": "https://github.com/Ambient-Impact/drupal-ambientimpact-ux.git",
+      "url": "https://forge.ambientimpact.com/drupal/ambientimpact-ux.git",
       "only": ["drupal/ambientimpact_ux"]
     },
     {
