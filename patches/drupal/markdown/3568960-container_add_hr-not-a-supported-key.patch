@@ -1,0 +1,20 @@
+diff --git a/config/schema/markdown.schema.yml b/config/schema/markdown.schema.yml
+index 7401b01..ddbca13 100644
+--- a/config/schema/markdown.schema.yml
++++ b/config/schema/markdown.schema.yml
+@@ -304,6 +304,15 @@ markdown.extension_settings.commonmark-external-links:
+       constraints:
+         PrimitiveType: {}
+ 
++# Extension Settings: CommonMark Footnotes.
++markdown.extension_settings.commonmark-footnotes:
++  type: markdown.extension_settings
++  label: 'Footnotes'
++  mapping:
++    container_add_hr:
++      type: boolean
++      label: 'Container Add Horizontal Rule'
++
+ # Extension Settings: CommonMark Heading Permalink.
+ markdown.extension_settings.commonmark-heading-permalink:
+   type: markdown.extension_settings
