@@ -1656,7 +1656,7 @@
             "source": {
                 "type": "git",
                 "url": "https://forge.ambientimpact.com/drupal/ambientimpact-markdown.git",
-                "reference": "2a3c19896e50e93252f2799e81b459c4134216d1"
+                "reference": "5d848496c70dfb3e0a44bd02e722b0c71d1a34a7"
             },
             "require": {
                 "drupal/core": "^11.3",
@@ -1665,6 +1665,7 @@
                 "league/commonmark": "^2.0",
                 "php": "^8.1"
             },
+            "default-branch": true,
             "type": "drupal-custom-module",
             "license": [
                 "GPL-2.0-or-later"
@@ -1681,7 +1682,7 @@
                 "docs": "https://forge.ambientimpact.com/drupal/ambientimpact-markdown",
                 "source": "https://forge.ambientimpact.com/drupal/ambientimpact-markdown"
             },
-            "time": "2026-10-04T19:50:06+00:00"
+            "time": "2026-10-04T20:23:07+00:00"
         },
         {
             "name": "drupal/ambientimpact_media",
