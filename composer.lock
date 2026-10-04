@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "41a1b1a6ca33f84840f9d7045f07b753",
+    "content-hash": "4467d0e19c8132a6aaa9cef7016daa66",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -1652,17 +1652,17 @@
         },
         {
             "name": "drupal/ambientimpact_markdown",
-            "version": "dev-commonmark2",
+            "version": "3.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://forge.ambientimpact.com/drupal/ambientimpact-markdown.git",
-                "reference": "07f887a2b500e80fc871d4777c1734adfb706214"
+                "reference": "2a3c19896e50e93252f2799e81b459c4134216d1"
             },
             "require": {
-                "drupal/core": "^10.0 || ^11.0",
+                "drupal/core": "^11.3",
                 "drupal/hux": "^1.1",
-                "drupal/markdown": "^3.0@RC",
-                "league/commonmark": "^1.5 || ^2.0",
+                "drupal/markdown": "^3.0",
+                "league/commonmark": "^2.0",
                 "php": "^8.1"
             },
             "type": "drupal-custom-module",
@@ -1678,10 +1678,10 @@
             ],
             "description": "Ambient.Impact - Markdown",
             "support": {
-                "docs": "https://github.com/Ambient-Impact/drupal-ambientimpact-markdown",
-                "source": "https://github.com/Ambient-Impact/drupal-ambientimpact-markdown"
+                "docs": "https://forge.ambientimpact.com/drupal/ambientimpact-markdown",
+                "source": "https://forge.ambientimpact.com/drupal/ambientimpact-markdown"
             },
-            "time": "2026-10-02T21:49:55+00:00"
+            "time": "2026-10-04T19:50:06+00:00"
         },
         {
             "name": "drupal/ambientimpact_media",
@@ -4565,18 +4565,18 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-content.git",
-                "reference": "ec33e9c6a691042307dc2bd661d97cf1e6252a94"
+                "reference": "37dd7e2507b42c42bb9701637c8e8b1cb405e283"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-content/repository/archive.zip?sha=ec33e9c6a691042307dc2bd661d97cf1e6252a94",
-                "reference": "ec33e9c6a691042307dc2bd661d97cf1e6252a94",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-content/repository/archive.zip?sha=37dd7e2507b42c42bb9701637c8e8b1cb405e283",
+                "reference": "37dd7e2507b42c42bb9701637c8e8b1cb405e283",
                 "shasum": ""
             },
             "require": {
                 "8fold/commonmark-abbreviations": "^1.2 || ^2.1",
                 "drupal/ambientimpact_core": "^2.0@dev || ^3.0@dev",
-                "drupal/ambientimpact_markdown": "^2.0@dev",
+                "drupal/ambientimpact_markdown": "^3.0@dev",
                 "drupal/ambientimpact_ux": "^2.0@dev",
                 "drupal/core": "^10.3 || ^11.0",
                 "drupal/hook_event_dispatcher": "^3.1 || ^4.0",
@@ -4606,7 +4606,7 @@
                 "source": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-content",
                 "issues": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-content/-/issues"
             },
-            "time": "2026-10-03T18:51:49-04:00"
+            "time": "2026-10-04T15:53:46-04:00"
         },
         {
             "name": "drupal/omnipedia_core",
@@ -21476,12 +21476,6 @@
     ],
     "aliases": [
         {
-            "package": "drupal/ambientimpact_markdown",
-            "version": "dev-commonmark2",
-            "alias": "2.0",
-            "alias_normalized": "2.0.0.0"
-        },
-        {
             "package": "drupal/dblog_persistent",
             "version": "2.1.9999999.9999999-dev",
             "alias": "2.1.1",
@@ -21528,7 +21522,6 @@
     "stability-flags": {
         "drupal/ambientimpact_core": 20,
         "drupal/ambientimpact_icon": 20,
-        "drupal/ambientimpact_markdown": 20,
         "drupal/ambientimpact_media": 20,
         "drupal/ambientimpact_ux": 20,
         "drupal/dblog_persistent": 20,

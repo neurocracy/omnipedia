@@ -179,7 +179,6 @@
     "drupal/action": "^0.2",
     "drupal/ambientimpact_core": "^3.0@dev",
     "drupal/ambientimpact_icon": "^1.0@dev",
-    "drupal/ambientimpact_markdown": "dev-commonmark2 as 2.0",
     "drupal/ambientimpact_media": "^5.0@dev",
     "drupal/ambientimpact_ux": "^2.0@dev",
     "drupal/autoban": "^1.7",
