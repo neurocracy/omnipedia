@@ -217,7 +217,7 @@
     "drupal/omnipedia_attached_data": "^5.0@dev",
     "drupal/omnipedia_block": "^7.0@dev",
     "drupal/omnipedia_changes": "^7.0@dev",
-    "drupal/omnipedia_content": "dev-14-commonmark-2 as 7.0",
+    "drupal/omnipedia_content": "^8.0@dev",
     "drupal/omnipedia_core": "^6.0@dev",
     "drupal/omnipedia_date": "^5.0@dev",
     "drupal/omnipedia_discourse": "^1.0@dev",
