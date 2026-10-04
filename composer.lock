@@ -1656,7 +1656,7 @@
             "source": {
                 "type": "git",
                 "url": "https://forge.ambientimpact.com/drupal/ambientimpact-markdown.git",
-                "reference": "5d848496c70dfb3e0a44bd02e722b0c71d1a34a7"
+                "reference": "5c5aa282fa3b4bceeeacbede3b265c80895272c4"
             },
             "require": {
                 "drupal/core": "^11.3",
@@ -1682,7 +1682,7 @@
                 "docs": "https://forge.ambientimpact.com/drupal/ambientimpact-markdown",
                 "source": "https://forge.ambientimpact.com/drupal/ambientimpact-markdown"
             },
-            "time": "2026-10-04T20:23:07+00:00"
+            "time": "2026-10-04T21:37:21+00:00"
         },
         {
             "name": "drupal/ambientimpact_media",
@@ -4566,12 +4566,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-content.git",
-                "reference": "bcb901db7f72ab8864a94b01e5d50f1ae8ce5c48"
+                "reference": "61ed99671d3ed70a96cf93e43fd5c69fa9866acb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-content/repository/archive.zip?sha=bcb901db7f72ab8864a94b01e5d50f1ae8ce5c48",
-                "reference": "bcb901db7f72ab8864a94b01e5d50f1ae8ce5c48",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-content/repository/archive.zip?sha=61ed99671d3ed70a96cf93e43fd5c69fa9866acb",
+                "reference": "61ed99671d3ed70a96cf93e43fd5c69fa9866acb",
                 "shasum": ""
             },
             "require": {
@@ -4607,7 +4607,7 @@
                 "source": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-content",
                 "issues": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-content/-/issues"
             },
-            "time": "2026-10-04T16:36:03-04:00"
+            "time": "2026-10-04T17:37:59-04:00"
         },
         {
             "name": "drupal/omnipedia_core",
