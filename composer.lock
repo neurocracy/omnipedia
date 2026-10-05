@@ -4,29 +4,30 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aea5086e85edfd62818e14644f25eb9a",
+    "content-hash": "68a966a88428520e08266937452495bb",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
-            "version": "1.2.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/8fold/commonmark-abbreviations.git",
-                "reference": "6b25eaa8281368cb9d96d56bc610ffb060cadf18"
+                "reference": "ad5d77db1809a1ec3ad8e068f525f8a47dad2c7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/8fold/commonmark-abbreviations/zipball/6b25eaa8281368cb9d96d56bc610ffb060cadf18",
-                "reference": "6b25eaa8281368cb9d96d56bc610ffb060cadf18",
+                "url": "https://api.github.com/repos/8fold/commonmark-abbreviations/zipball/ad5d77db1809a1ec3ad8e068f525f8a47dad2c7a",
+                "reference": "ad5d77db1809a1ec3ad8e068f525f8a47dad2c7a",
                 "shasum": ""
             },
             "require": {
-                "league/commonmark": "~1.5",
+                "league/commonmark": "^2.0.2",
                 "php": "^7.2|^8.0"
             },
             "require-dev": {
-                "8fold/php-shoop": "^0.10.17@dev",
-                "phpunit/phpunit": "^9.1"
+                "phpstan/phpstan": "^1.2.0",
+                "phpunit/phpunit": "^9.5",
+                "squizlabs/php_codesniffer": "^3.6"
             },
             "type": "library",
             "autoload": {
@@ -47,7 +48,7 @@
             "description": "An extension of PHP League's CommonMark library to enable abbreviation usage.",
             "support": {
                 "issues": "https://github.com/8fold/commonmark-abbreviations/issues",
-                "source": "https://github.com/8fold/commonmark-abbreviations/tree/1.2.0"
+                "source": "https://github.com/8fold/commonmark-abbreviations/tree/2.1.0"
             },
             "funding": [
                 {
@@ -59,7 +60,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-05-11T00:23:49+00:00"
+            "time": "2021-12-23T02:40:08+00:00"
         },
         {
             "name": "asm89/stack-cors",
@@ -1651,17 +1652,17 @@
         },
         {
             "name": "drupal/ambientimpact_markdown",
-            "version": "2.x-dev",
+            "version": "3.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://forge.ambientimpact.com/drupal/ambientimpact-markdown.git",
-                "reference": "e00e27d1c6a34d34cec44d4676490bb3267eb72a"
+                "reference": "5c5aa282fa3b4bceeeacbede3b265c80895272c4"
             },
             "require": {
-                "drupal/core": "^10.0 || ^11.0",
+                "drupal/core": "^11.3",
                 "drupal/hux": "^1.1",
-                "drupal/markdown": "^3.0@RC",
-                "league/commonmark": "^1.5",
+                "drupal/markdown": "^3.0",
+                "league/commonmark": "^2.0",
                 "php": "^8.1"
             },
             "default-branch": true,
@@ -1678,10 +1679,10 @@
             ],
             "description": "Ambient.Impact - Markdown",
             "support": {
-                "docs": "https://github.com/Ambient-Impact/drupal-ambientimpact-markdown",
-                "source": "https://github.com/Ambient-Impact/drupal-ambientimpact-markdown"
+                "docs": "https://forge.ambientimpact.com/drupal/ambientimpact-markdown",
+                "source": "https://forge.ambientimpact.com/drupal/ambientimpact-markdown"
             },
-            "time": "2024-10-04T19:30:37+00:00"
+            "time": "2026-10-04T21:37:21+00:00"
         },
         {
             "name": "drupal/ambientimpact_media",
@@ -4434,12 +4435,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-attached-data.git",
-                "reference": "544876848e295392cb98689bd5c6707bd35acc9d"
+                "reference": "ad238dff4d5f281b0a90c436808fc2de2c308026"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-attached-data/repository/archive.zip?sha=544876848e295392cb98689bd5c6707bd35acc9d",
-                "reference": "544876848e295392cb98689bd5c6707bd35acc9d",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-attached-data/repository/archive.zip?sha=ad238dff4d5f281b0a90c436808fc2de2c308026",
+                "reference": "ad238dff4d5f281b0a90c436808fc2de2c308026",
                 "shasum": ""
             },
             "require": {
@@ -4448,7 +4449,7 @@
                 "drupal/core": "^10.0 || ^11.0",
                 "drupal/hook_event_dispatcher": "^3.1 || ^4.0",
                 "drupal/hux": "^1.1",
-                "drupal/omnipedia_content": "^7.0@dev",
+                "drupal/omnipedia_content": "^7.0@dev || ^8.0@dev",
                 "drupal/omnipedia_core": "^5.0@dev || ^6.0@dev",
                 "drupal/omnipedia_date": "^5.0@dev",
                 "php": "^8.1",
@@ -4473,7 +4474,7 @@
                 "source": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-attached-data",
                 "issues": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-attached-data/-/issues"
             },
-            "time": "2025-09-19T17:28:57-04:00"
+            "time": "2026-10-04T16:23:15-04:00"
         },
         {
             "name": "drupal/omnipedia_block",
@@ -4481,18 +4482,18 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-block.git",
-                "reference": "2d4dbe8983a61b3435876d87a84df9f863e1a752"
+                "reference": "760598b726bfb4ad845f14b8a00116967e8ea8de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-block/repository/archive.zip?sha=2d4dbe8983a61b3435876d87a84df9f863e1a752",
-                "reference": "2d4dbe8983a61b3435876d87a84df9f863e1a752",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-block/repository/archive.zip?sha=760598b726bfb4ad845f14b8a00116967e8ea8de",
+                "reference": "760598b726bfb4ad845f14b8a00116967e8ea8de",
                 "shasum": ""
             },
             "require": {
                 "drupal/ambientimpact_core": "^2.0@dev || ^3.0@dev",
                 "drupal/core": "^11.2",
-                "drupal/omnipedia_content": "^5.0@dev || ^6.0@dev || ^7.0@dev",
+                "drupal/omnipedia_content": "^5.0@dev || ^6.0@dev || ^7.0@dev || ^8.0@dev",
                 "drupal/omnipedia_core": "^4.0@dev || ^5.0@dev || ^6.0@dev",
                 "drupal/omnipedia_date": "^4.0@dev || ^5.0@dev",
                 "php": "^8.2"
@@ -4515,7 +4516,7 @@
                 "source": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-block",
                 "issues": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-block/-/issues"
             },
-            "time": "2026-05-20T17:18:30-04:00"
+            "time": "2026-10-04T16:23:19-04:00"
         },
         {
             "name": "drupal/omnipedia_changes",
@@ -4578,35 +4579,34 @@
         },
         {
             "name": "drupal/omnipedia_content",
-            "version": "7.x-dev",
+            "version": "8.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-content.git",
-                "reference": "6cef724fc754024c6522b6fa941d0ac968fb3000"
+                "reference": "61ed99671d3ed70a96cf93e43fd5c69fa9866acb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-content/repository/archive.zip?sha=6cef724fc754024c6522b6fa941d0ac968fb3000",
-                "reference": "6cef724fc754024c6522b6fa941d0ac968fb3000",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-content/repository/archive.zip?sha=61ed99671d3ed70a96cf93e43fd5c69fa9866acb",
+                "reference": "61ed99671d3ed70a96cf93e43fd5c69fa9866acb",
                 "shasum": ""
             },
             "require": {
-                "8fold/commonmark-abbreviations": "^1.2",
+                "8fold/commonmark-abbreviations": "^2.1",
                 "drupal/ambientimpact_core": "^2.0@dev || ^3.0@dev",
-                "drupal/ambientimpact_markdown": "^2.0@dev",
+                "drupal/ambientimpact_markdown": "^3.0@dev",
                 "drupal/ambientimpact_ux": "^2.0@dev",
-                "drupal/core": "^10.3 || ^11.0",
-                "drupal/hook_event_dispatcher": "^3.1 || ^4.0",
+                "drupal/core": "^11.3",
+                "drupal/hook_event_dispatcher": "^4.0",
                 "drupal/hux": "^1.1",
                 "drupal/markdown": "^3.0",
                 "drupal/omnipedia_core": "^4.0@dev || ^5.0@dev || ^6.0@dev",
                 "drupal/omnipedia_date": "^4.0@dev || ^5.0@dev",
-                "league/commonmark": "^1.6.1",
+                "league/commonmark": "^2.0",
                 "php": "^8.1",
-                "symfony/css-selector": "^6.2 || ^7.3",
-                "symfony/dom-crawler": "^6.2 || ^7.3"
+                "symfony/css-selector": "^7.3",
+                "symfony/dom-crawler": "^7.3"
             },
-            "default-branch": true,
             "type": "drupal-custom-module",
             "license": [
                 "GPL-3.0-or-later"
@@ -4624,7 +4624,7 @@
                 "source": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-content",
                 "issues": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-content/-/issues"
             },
-            "time": "2026-09-26T20:12:12-04:00"
+            "time": "2026-10-04T17:37:59-04:00"
         },
         {
             "name": "drupal/omnipedia_core",
@@ -4844,12 +4844,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-media.git",
-                "reference": "0e6ca713ae8efb45401131092a74737d4c220d28"
+                "reference": "7e35b0f82244db8f680b84d7ab105bc40502b1b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-media/repository/archive.zip?sha=0e6ca713ae8efb45401131092a74737d4c220d28",
-                "reference": "0e6ca713ae8efb45401131092a74737d4c220d28",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-media/repository/archive.zip?sha=7e35b0f82244db8f680b84d7ab105bc40502b1b6",
+                "reference": "7e35b0f82244db8f680b84d7ab105bc40502b1b6",
                 "shasum": ""
             },
             "require": {
@@ -4858,7 +4858,7 @@
                 "drupal/core": "^10.0 || ^11.0",
                 "drupal/hook_event_dispatcher": "^4.0",
                 "drupal/hux": "^1.1",
-                "drupal/omnipedia_content": "^6.0@dev || ^7.0@dev",
+                "drupal/omnipedia_content": "^6.0@dev || ^7.0@dev || ^8.0@dev",
                 "drupal/omnipedia_core": "^4.0@dev || ^5.0@dev || ^6.0@dev",
                 "drupal/webp": "^1.0",
                 "php": "^8.1",
@@ -4883,7 +4883,7 @@
                 "source": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-media",
                 "issues": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-media/-/issues"
             },
-            "time": "2026-05-20T17:18:43-04:00"
+            "time": "2026-10-04T16:24:12-04:00"
         },
         {
             "name": "drupal/omnipedia_menu",
@@ -4981,18 +4981,18 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-search.git",
-                "reference": "0590e70f5a5e0787ade45579152659d9240a4a5a"
+                "reference": "4ef12cd3edd46390bd21a92ee69fe8a3ace9f410"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-search/repository/archive.zip?sha=0590e70f5a5e0787ade45579152659d9240a4a5a",
-                "reference": "0590e70f5a5e0787ade45579152659d9240a4a5a",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-search/repository/archive.zip?sha=4ef12cd3edd46390bd21a92ee69fe8a3ace9f410",
+                "reference": "4ef12cd3edd46390bd21a92ee69fe8a3ace9f410",
                 "shasum": ""
             },
             "require": {
                 "cweagans/composer-patches": "^1.7 || ^2.0",
                 "drupal/core": "^10.5 || ^11.2",
-                "drupal/omnipedia_content": "^6.0@dev || ^7.0@dev",
+                "drupal/omnipedia_content": "^6.0@dev || ^7.0@dev || ^8.0@dev",
                 "drupal/omnipedia_core": "^5.0@dev || ^6.0@dev",
                 "drupal/omnipedia_date": "^5.0@dev",
                 "drupal/omnipedia_main_page": "^1.0@dev",
@@ -5024,7 +5024,7 @@
                 "source": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-search",
                 "issues": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-search/-/issues"
             },
-            "time": "2026-02-04T15:29:14-05:00"
+            "time": "2026-10-04T16:24:31-04:00"
         },
         {
             "name": "drupal/omnipedia_site_theme",
@@ -5032,12 +5032,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/omnipedia-theme.git",
-                "reference": "df2199e66ebfd132d172db063393a5b74d79ba55"
+                "reference": "f6b6cac742fe80df9df4bdce76a5013f0d44dfd9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fomnipedia-theme/repository/archive.zip?sha=df2199e66ebfd132d172db063393a5b74d79ba55",
-                "reference": "df2199e66ebfd132d172db063393a5b74d79ba55",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fomnipedia-theme/repository/archive.zip?sha=f6b6cac742fe80df9df4bdce76a5013f0d44dfd9",
+                "reference": "f6b6cac742fe80df9df4bdce76a5013f0d44dfd9",
                 "shasum": ""
             },
             "require": {
@@ -5047,7 +5047,7 @@
                 "drupal/ambientimpact_ux": "^2.0@dev",
                 "drupal/core": "^10.3 || ^11.0",
                 "drupal/omnipedia_block": "^5.0@dev || ^6.0@dev || ^7.0@dev",
-                "drupal/omnipedia_content": "^7.0@dev",
+                "drupal/omnipedia_content": "^7.0@dev || ^8.0@dev",
                 "drupal/omnipedia_main_page": "^1.0@dev",
                 "drupal/omnipedia_media": "^6.0@dev || ^7.0@dev",
                 "php": "^8.1",
@@ -5072,7 +5072,7 @@
                 "source": "https://gitlab.com/neurocracy/omnipedia/omnipedia-theme",
                 "issues": "https://gitlab.com/neurocracy/omnipedia/omnipedia-theme/-/issues"
             },
-            "time": "2026-09-02T19:15:34-04:00"
+            "time": "2026-10-04T16:24:56-04:00"
         },
         {
             "name": "drupal/omnipedia_user",
@@ -8226,42 +8226,55 @@
         },
         {
             "name": "league/commonmark",
-            "version": "1.6.x-dev",
+            "version": "2.10.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/commonmark.git",
-                "reference": "b7a2aedcca80659fac31b92f525b7837b15d45aa"
+                "reference": "6efbd9c472b91db0a3350fcd601c8332c2382e1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/b7a2aedcca80659fac31b92f525b7837b15d45aa",
-                "reference": "b7a2aedcca80659fac31b92f525b7837b15d45aa",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/6efbd9c472b91db0a3350fcd601c8332c2382e1f",
+                "reference": "6efbd9c472b91db0a3350fcd601c8332c2382e1f",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
-                "php": "^7.1 || ^8.0"
-            },
-            "conflict": {
-                "scrutinizer/ocular": "1.7.*"
+                "league/config": "^1.1.1",
+                "php": "^7.4 || ^8.0",
+                "psr/event-dispatcher": "^1.0",
+                "symfony/deprecation-contracts": "^2.1 || ^3.0",
+                "symfony/polyfill-php80": "^1.16"
             },
             "require-dev": {
-                "cebe/markdown": "~1.0",
-                "commonmark/commonmark.js": "0.29.2",
-                "erusev/parsedown": "~1.0",
+                "cebe/markdown": "^1.0",
+                "commonmark/cmark": "0.31.1",
+                "commonmark/commonmark.js": "0.31.1",
+                "composer/package-versions-deprecated": "^1.8",
+                "embed/embed": "^4.4",
+                "erusev/parsedown": "^1.0",
                 "ext-json": "*",
                 "github/gfm": "0.29.0",
-                "michelf/php-markdown": "~1.4",
-                "mikehaertl/php-shellcommand": "^1.4",
-                "phpstan/phpstan": "^0.12.90",
-                "phpunit/phpunit": "^7.5 || ^8.5 || ^9.2",
-                "scrutinizer/ocular": "^1.5",
-                "symfony/finder": "^4.2"
+                "michelf/php-markdown": "^1.4 || ^2.0",
+                "nyholm/psr7": "^1.5",
+                "phpstan/phpstan": "^2.0.0",
+                "phpunit/phpunit": "^9.5.21 || ^10.5.9 || ^11.0.0 || ^12.0.0 || ^13.0.0",
+                "scrutinizer/ocular": "^1.8.1",
+                "symfony/finder": "^5.3 | ^6.0 | ^7.0 || ^8.0",
+                "symfony/process": "^5.4 | ^6.0 | ^7.0 || ^8.0",
+                "symfony/yaml": "^2.3 | ^3.0 | ^4.0 | ^5.0 | ^6.0 | ^7.0 || ^8.0",
+                "unleashedtech/php-coding-standard": "^3.1.1",
+                "vimeo/psalm": "^4.24.0 || ^5.0.0 || ^6.0.0"
             },
-            "bin": [
-                "bin/commonmark"
-            ],
+            "suggest": {
+                "symfony/yaml": "v2.3+ required if using the Front Matter extension"
+            },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "2.11-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "League\\CommonMark\\": "src"
@@ -8279,7 +8292,7 @@
                     "role": "Lead Developer"
                 }
             ],
-            "description": "Highly-extensible PHP Markdown parser which fully supports the CommonMark spec and Github-Flavored Markdown (GFM)",
+            "description": "Highly-extensible PHP Markdown parser which fully supports the CommonMark spec and GitHub-Flavored Markdown (GFM)",
             "homepage": "https://commonmark.thephpleague.com",
             "keywords": [
                 "commonmark",
@@ -8293,6 +8306,7 @@
             ],
             "support": {
                 "docs": "https://commonmark.thephpleague.com/",
+                "forum": "https://github.com/thephpleague/commonmark/discussions",
                 "issues": "https://github.com/thephpleague/commonmark/issues",
                 "rss": "https://github.com/thephpleague/commonmark/releases.atom",
                 "source": "https://github.com/thephpleague/commonmark"
@@ -8315,7 +8329,89 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-01-13T17:17:14+00:00"
+            "time": "2026-09-21T13:07:34+00:00"
+        },
+        {
+            "name": "league/config",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/config.git",
+                "reference": "754b3604fb2984c71f4af4a9cbe7b57f346ec1f3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/config/zipball/754b3604fb2984c71f4af4a9cbe7b57f346ec1f3",
+                "reference": "754b3604fb2984c71f4af4a9cbe7b57f346ec1f3",
+                "shasum": ""
+            },
+            "require": {
+                "dflydev/dot-access-data": "^3.0.1",
+                "nette/schema": "^1.2",
+                "php": "^7.4 || ^8.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^1.8.2",
+                "phpunit/phpunit": "^9.5.5",
+                "scrutinizer/ocular": "^1.8.1",
+                "unleashedtech/php-coding-standard": "^3.1",
+                "vimeo/psalm": "^4.7.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Config\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Colin O'Dell",
+                    "email": "colinodell@gmail.com",
+                    "homepage": "https://www.colinodell.com",
+                    "role": "Lead Developer"
+                }
+            ],
+            "description": "Define configuration arrays with strict schemas and access values with dot notation",
+            "homepage": "https://config.thephpleague.com",
+            "keywords": [
+                "array",
+                "config",
+                "configuration",
+                "dot",
+                "dot-access",
+                "nested",
+                "schema"
+            ],
+            "support": {
+                "docs": "https://config.thephpleague.com/",
+                "issues": "https://github.com/thephpleague/config/issues",
+                "rss": "https://github.com/thephpleague/config/releases.atom",
+                "source": "https://github.com/thephpleague/config"
+            },
+            "funding": [
+                {
+                    "url": "https://www.colinodell.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.paypal.me/colinpodell/10.00",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/colinodell",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-12-11T20:36:23+00:00"
         },
         {
             "name": "league/container",
@@ -8871,6 +8967,164 @@
                 "source": "https://github.com/jmespath/jmespath.php/tree/2.9.2"
             },
             "time": "2026-07-06T18:56:19+00:00"
+        },
+        {
+            "name": "nette/schema",
+            "version": "v1.3.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nette/schema.git",
+                "reference": "c54350438cd6914616f790a49cb424605f421562"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nette/schema/zipball/c54350438cd6914616f790a49cb424605f421562",
+                "reference": "c54350438cd6914616f790a49cb424605f421562",
+                "shasum": ""
+            },
+            "require": {
+                "nette/utils": "^4.0",
+                "php": "8.1 - 8.5"
+            },
+            "require-dev": {
+                "nette/phpstan-rules": "^1.0",
+                "nette/tester": "^2.6",
+                "phpstan/extension-installer": "^1.4@stable",
+                "phpstan/phpstan": "^2.1.39@stable",
+                "tracy/tracy": "^2.8"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Nette\\": "src"
+                },
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0-only",
+                "GPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "https://davidgrudl.com"
+                },
+                {
+                    "name": "Nette Community",
+                    "homepage": "https://nette.org/contributors"
+                }
+            ],
+            "description": "📐 Nette Schema: validating data structures against a given Schema.",
+            "homepage": "https://nette.org",
+            "keywords": [
+                "config",
+                "nette"
+            ],
+            "support": {
+                "issues": "https://github.com/nette/schema/issues",
+                "source": "https://github.com/nette/schema/tree/v1.3.6"
+            },
+            "time": "2026-08-16T21:58:41+00:00"
+        },
+        {
+            "name": "nette/utils",
+            "version": "v4.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nette/utils.git",
+                "reference": "b043439dbdf954e6c28b5ea7e34b0100f83165e0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nette/utils/zipball/b043439dbdf954e6c28b5ea7e34b0100f83165e0",
+                "reference": "b043439dbdf954e6c28b5ea7e34b0100f83165e0",
+                "shasum": ""
+            },
+            "require": {
+                "php": "8.2 - 8.5"
+            },
+            "conflict": {
+                "nette/finder": "<3",
+                "nette/schema": "<1.2.2"
+            },
+            "require-dev": {
+                "jetbrains/phpstorm-attributes": "^1.2",
+                "nette/phpstan-rules": "^1.0",
+                "nette/tester": "^2.5",
+                "phpstan/extension-installer": "^1.4@stable",
+                "phpstan/phpstan": "^2.1@stable",
+                "tracy/tracy": "^2.9"
+            },
+            "suggest": {
+                "ext-gd": "to use Image",
+                "ext-iconv": "to use Strings::chr(), ord() and reverse()",
+                "ext-intl": "to use Strings::webalize(), toAscii(), normalize() and compare()",
+                "ext-json": "to use Nette\\Utils\\Json",
+                "ext-mbstring": "to use Strings::lower() etc...",
+                "ext-tokenizer": "to use Nette\\Utils\\Reflection::getUseStatements()"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Nette\\": "src"
+                },
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0-only",
+                "GPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "https://davidgrudl.com"
+                },
+                {
+                    "name": "Nette Community",
+                    "homepage": "https://nette.org/contributors"
+                }
+            ],
+            "description": "🛠  Nette Utils: lightweight utilities for string & array manipulation, image handling, safe JSON encoding/decoding, validation, slug or strong password generating etc.",
+            "homepage": "https://nette.org",
+            "keywords": [
+                "array",
+                "core",
+                "datetime",
+                "images",
+                "json",
+                "nette",
+                "paginator",
+                "password",
+                "slugify",
+                "string",
+                "unicode",
+                "utf-8",
+                "utility",
+                "validation"
+            ],
+            "support": {
+                "issues": "https://github.com/nette/utils/issues",
+                "source": "https://github.com/nette/utils/tree/v4.1.5"
+            },
+            "time": "2026-07-17T23:02:45+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -21528,7 +21782,6 @@
     "stability-flags": {
         "drupal/ambientimpact_core": 20,
         "drupal/ambientimpact_icon": 20,
-        "drupal/ambientimpact_markdown": 20,
         "drupal/ambientimpact_media": 20,
         "drupal/ambientimpact_ux": 20,
         "drupal/dblog_persistent": 20,

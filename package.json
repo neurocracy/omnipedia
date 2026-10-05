@@ -24,7 +24,7 @@
     "drupal-ambientimpact-ux": "workspace:^2",
     "drupal-omnipedia-block": "workspace:^7",
     "drupal-omnipedia-changes": "workspace:^7",
-    "drupal-omnipedia-content": "workspace:^7",
+    "drupal-omnipedia-content": "workspace:^8",
     "drupal-omnipedia-media": "workspace:^7",
     "drupal-omnipedia-site-theme": "workspace:^8"
   },
