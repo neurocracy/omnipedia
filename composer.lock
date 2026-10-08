@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "77ab2d015ed808bbe10599893f1d386c",
+    "content-hash": "d9599c905d1e6f293a5f8d3da83f4d22",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -4954,18 +4954,18 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-pitch.git",
-                "reference": "06c6dd5a4bc8cc1458c78b6bb156f228ba026868"
+                "reference": "5528241dce0b0a4cb829a54ee6687686161a911b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-pitch/repository/archive.zip?sha=06c6dd5a4bc8cc1458c78b6bb156f228ba026868",
-                "reference": "06c6dd5a4bc8cc1458c78b6bb156f228ba026868",
+                "url": "https://gitlab.com/api/v4/projects/neurocracy%2Fomnipedia%2Fmodules%2Fomnipedia-pitch/repository/archive.zip?sha=5528241dce0b0a4cb829a54ee6687686161a911b",
+                "reference": "5528241dce0b0a4cb829a54ee6687686161a911b",
                 "shasum": ""
             },
             "require": {
                 "drupal/ambientimpact_core": "^3.0@dev",
                 "drupal/core": "^11.2",
-                "drupal/omnipedia_content": "^7.0@dev",
+                "drupal/omnipedia_content": "^7.0@dev || ^8.0@dev",
                 "drupal/omnipedia_media": "^7.0@dev",
                 "php": "^8.1"
             },
@@ -4987,7 +4987,7 @@
                 "source": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-pitch",
                 "issues": "https://gitlab.com/neurocracy/omnipedia/modules/omnipedia-pitch/-/issues"
             },
-            "time": "2026-02-03T09:36:03-05:00"
+            "time": "2026-10-07T20:26:24-04:00"
         },
         {
             "name": "drupal/omnipedia_search",
