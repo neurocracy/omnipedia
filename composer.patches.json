@@ -15,6 +15,9 @@
     "drupal/image_style_warmer": {
       "Support webp images [#3319397]: https://www.drupal.org/project/image_style_warmer/issues/3319397#comment-14802527": "patches/drupal/image_style_warmer/webp-module-support-3319397-5.patch"
     },
+    "drupal/markdown": {
+      "Error \"'container_add_hr' is not a supported key\" when activating Footnotes [#3568960]: https://www.drupal.org/project/markdown/issues/3568960": "patches/drupal/markdown/3568960-container_add_hr-not-a-supported-key.patch"
+    },
     "drupal/trusted_reverse_proxy": {
       "Notice: Undefined index: severity in trusted_reverse_proxy_preprocess_status_report_page() [#3267588]: https://www.drupal.org/project/trusted_reverse_proxy/issues/3267588": "patches/drupal/trusted_reverse_proxy/3267588-trusted_reverse_proxy-undefined-severity.patch"
     }

@@ -38,11 +38,6 @@ extensions:
     enabled: false
     weight: 0
   -
-    id: commonmark-emoji
-    enabled: false
-    weight: 0
-    settings: {  }
-  -
     id: commonmark-external-links
     enabled: false
     weight: 0
@@ -52,14 +47,14 @@ extensions:
     enabled: true
     weight: 0
     settings:
-      container_add_hr: 0
+      container_add_hr: false
   -
     id: commonmark-heading-permalink
     enabled: true
     weight: 0
     settings:
       id_prefix: ''
-      inner_contents: '[icon:libricons:link:Permalink:standalone&text=hidden]'
+      symbol: '[icon:libricons:link:Permalink:standalone]'
       insert: after
   -
     id: commonmark-mention
