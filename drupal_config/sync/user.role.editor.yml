@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - filter.format.attached_data
     - filter.format.wiki_html
     - node.type.page
     - node.type.wiki_page
@@ -81,6 +82,7 @@ permissions:
   - 'use editorial transition archived_published'
   - 'use editorial transition create_new_draft'
   - 'use editorial transition publish'
+  - 'use text format attached_data'
   - 'use text format wiki_html'
   - 'view all media revisions'
   - 'view all revisions'

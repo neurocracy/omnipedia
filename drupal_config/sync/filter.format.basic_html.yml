@@ -9,7 +9,7 @@ _core:
   default_config_hash: P8ddpAIKtawJDi5SzOwCzVnnNYqONewSTJ6Xn0dW_aQ
 name: 'Basic HTML'
 format: basic_html
-weight: -9
+weight: -8
 filters:
   editor_file_reference:
     id: editor_file_reference
@@ -56,4 +56,4 @@ filters:
     status: false
     weight: 0
     settings:
-      replace_empty: '0'
+      replace_empty: false

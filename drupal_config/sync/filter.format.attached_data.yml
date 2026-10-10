@@ -1,0 +1,34 @@
+uuid: 036e1271-c3c3-4340-ad58-2a4b45801bee
+langcode: en
+status: true
+dependencies:
+  module:
+    - markdown
+name: 'Attached data'
+format: attached_data
+weight: -9
+filters:
+  markdown:
+    id: markdown
+    provider: markdown
+    status: true
+    weight: -15
+    settings:
+      id: commonmark
+      enabled: true
+      render_strategy:
+        type: filter_output
+        custom_allowed_html: ''
+        plugins:
+          commonmark: true
+          commonmark-external-links: false
+          commonmark-footnotes: false
+          commonmark-heading-permalink: false
+          commonmark-strikethrough: false
+          commonmark-table: false
+          commonmark-task-list: false
+          filter_align: false
+          filter_caption: false
+          media_embed: false
+      override: false
+    filterFormat: attached_data
