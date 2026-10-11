@@ -298,6 +298,7 @@
     },
     "preferred-install": {
       "drupal/ambientimpact_*": "source",
+      "drupal/dblog_persistent": "source",
       "drupal/omnipedia_*": "source",
       "drupal/rebuilder": "source",
       "drupal/refreshless": "source",
