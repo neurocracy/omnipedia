@@ -1,0 +1,13 @@
+diff --git a/src/Annotation/AnnotationObject.php b/src/Annotation/AnnotationObject.php
+index 11c41be..74d33a7 100644
+--- a/src/Annotation/AnnotationObject.php
++++ b/src/Annotation/AnnotationObject.php
+@@ -242,7 +242,7 @@ public function getId() {
+    * {@inheritdoc}
+    */
+   public function getIterator(): \Traversable {
+-    $iterator = new \ArrayIterator($this);
++    $iterator = new \ArrayIterator(get_object_vars($this));
+     foreach ($this->_deprecated as $key => $value) {
+       $iterator->offsetSet($key, $value);
+     }
