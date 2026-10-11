@@ -21,6 +21,9 @@
     },
     "drupal/trusted_reverse_proxy": {
       "Notice: Undefined index: severity in trusted_reverse_proxy_preprocess_status_report_page() [#3267588]: https://www.drupal.org/project/trusted_reverse_proxy/issues/3267588": "patches/drupal/trusted_reverse_proxy/3267588-trusted_reverse_proxy-undefined-severity.patch"
+    },
+    "drupal/typed_entity": {
+      "Deprecated notice on PHP 8.4: implicitly nullable parameter in _typed_entity_build_render_context() (#3568589): https://git.drupalcode.org/project/typed_entity/-/work_items/3568589": "patches/drupal/typed_entity/mr-24-php-8-4-deprecated-fixes.patch"
     }
   }
 }
