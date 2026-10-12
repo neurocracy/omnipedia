@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - filter.format.attached_data
     - filter.format.wiki_html
     - node.type.wiki_page
     - workflows.workflow.editorial
@@ -43,6 +44,7 @@ permissions:
   - 'setup own tfa'
   - 'update media'
   - 'use editorial transition create_new_draft'
+  - 'use text format attached_data'
   - 'use text format wiki_html'
   - 'view all media revisions'
   - 'view any unpublished content'

@@ -16,10 +16,14 @@
       "Support webp images [#3319397]: https://www.drupal.org/project/image_style_warmer/issues/3319397#comment-14802527": "patches/drupal/image_style_warmer/webp-module-support-3319397-5.patch"
     },
     "drupal/markdown": {
-      "Error \"'container_add_hr' is not a supported key\" when activating Footnotes [#3568960]: https://www.drupal.org/project/markdown/issues/3568960": "patches/drupal/markdown/3568960-container_add_hr-not-a-supported-key.patch"
+      "Error \"'container_add_hr' is not a supported key\" when activating Footnotes [#3568960]: https://www.drupal.org/project/markdown/issues/3568960": "patches/drupal/markdown/3568960-container_add_hr-not-a-supported-key.patch",
+      "PHP 8.5: Using an object for ArrayIterator is deprecated [#3622983]: https://www.drupal.org/project/markdown/issues/3622983#comment-16769752": "patches/drupal/markdown/3622983-3-php-8-5-array-iterator-deprecated.patch"
     },
     "drupal/trusted_reverse_proxy": {
       "Notice: Undefined index: severity in trusted_reverse_proxy_preprocess_status_report_page() [#3267588]: https://www.drupal.org/project/trusted_reverse_proxy/issues/3267588": "patches/drupal/trusted_reverse_proxy/3267588-trusted_reverse_proxy-undefined-severity.patch"
+    },
+    "drupal/typed_entity": {
+      "Deprecated notice on PHP 8.4: implicitly nullable parameter in _typed_entity_build_render_context() (#3568589): https://git.drupalcode.org/project/typed_entity/-/work_items/3568589": "patches/drupal/typed_entity/mr-24-php-8-4-deprecated-fixes.patch"
     }
   }
 }

@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - filter.format.attached_data
     - filter.format.basic_html
     - filter.format.full_html
     - filter.format.restricted_html
@@ -195,6 +196,7 @@ permissions:
   - 'use editorial transition archived_published'
   - 'use editorial transition create_new_draft'
   - 'use editorial transition publish'
+  - 'use text format attached_data'
   - 'use text format basic_html'
   - 'use text format full_html'
   - 'use text format restricted_html'
