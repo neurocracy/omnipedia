@@ -2,6 +2,7 @@
 
 ## Description: Set to production
 ## Usage: set-production
+## Aliases: set-prod
 
 # @see https://superuser.com/questions/270214/how-can-i-change-the-colors-of-my-xterm-using-ansi-escape-sequences
 RED='\033[31m'

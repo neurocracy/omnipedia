@@ -1,0 +1,65 @@
+diff --git a/modules/typed_entity_example/README.md b/modules/typed_entity_example/README.md
+index d48e22c76a070a72af2c725f09b636ff14ab1ee1..46ae1133bd3ffd8ca6fe967e79c4c6259fd46a6a 100644
+--- a/modules/typed_entity_example/README.md
++++ b/modules/typed_entity_example/README.md
+@@ -66,7 +66,7 @@ Then implemented in the `ArticleRepository` as:
+ ```php
+   public function access(
+     $operation,
+-    AccountInterface $account = NULL,
++    ?AccountInterface $account = NULL,
+     $return_as_object = FALSE
+   ) {
+     return $this->countPublishedEntities() > 8
+diff --git a/modules/typed_entity_example/src/WrappedEntities/Article.php b/modules/typed_entity_example/src/WrappedEntities/Article.php
+index c6342e7050d1477e6b0aebe54ed9d0fb3c951e69..8df0864546ca0cecdf1e1aebf6910cdd85f354b5 100644
+--- a/modules/typed_entity_example/src/WrappedEntities/Article.php
++++ b/modules/typed_entity_example/src/WrappedEntities/Article.php
+@@ -64,7 +64,7 @@ class Article extends WrappedEntityBase implements AccessibleInterface {
+   /**
+    * {@inheritdoc}
+    */
+-  public function access($operation, AccountInterface $account = NULL, $return_as_object = FALSE) {
++  public function access($operation, ?AccountInterface $account = NULL, $return_as_object = FALSE) {
+     $owner = $this->owner();
+     \assert($owner instanceof User);
+     $nickname = $owner->nickname();
+diff --git a/src/Annotation/ClassWithVariants.php b/src/Annotation/ClassWithVariants.php
+index 72aad2cbb1a48e363b987d56abff40c13e808153..5435122216b30247d776a4642e8d6e878248c9d0 100644
+--- a/src/Annotation/ClassWithVariants.php
++++ b/src/Annotation/ClassWithVariants.php
+@@ -76,7 +76,7 @@ class ClassWithVariants extends AnnotationBase implements ClassWithVariantsInter
+   /**
+    * {@inheritdoc}
+    */
+-  public function negotiateVariant(TypedEntityContext $context = NULL, string $base_class = ''): ?string {
++  public function negotiateVariant(?TypedEntityContext $context = NULL, string $base_class = ''): ?string {
+     $variants = $this->getVariants($base_class);
+     // If there is a base class to further restrict the variants apply it now.
+     if (!empty($base_class) && class_exists($base_class)) {
+diff --git a/src/WrappedEntityVariants/VariantConditionBase.php b/src/WrappedEntityVariants/VariantConditionBase.php
+index 50585c575f13e8629b9bd5b92ee1363e3a920352..179f00c9630515ea56e69c799e2b563233ea4a73 100644
+--- a/src/WrappedEntityVariants/VariantConditionBase.php
++++ b/src/WrappedEntityVariants/VariantConditionBase.php
+@@ -36,7 +36,7 @@ abstract class VariantConditionBase implements VariantConditionInterface {
+    *
+    * @SuppressWarnings(PHPMD.BooleanArgumentFlag)
+    */
+-  public function __construct(TypedEntityContext $context = NULL, bool $is_negated = FALSE) {
++  public function __construct(?TypedEntityContext $context = NULL, bool $is_negated = FALSE) {
+     $this->isNegated = $is_negated;
+     $this->context = $context ?: new TypedEntityContext();
+   }
+diff --git a/typed_entity.module b/typed_entity.module
+index 304910afa40ead666757f4db22c139724f53f201..9c0b6ff0e92761bce08e8fbde9e9c670f497983f 100644
+--- a/typed_entity.module
++++ b/typed_entity.module
+@@ -109,7 +109,7 @@ function _typed_entity_find_renderer(EntityInterface $entity, array $build): arr
+  * @return \Drupal\typed_entity\TypedEntityContext
+  *   The render context.
+  */
+-function _typed_entity_build_render_context(array $variables, EntityInterface $entity = NULL): TypedEntityContext {
++function _typed_entity_build_render_context(array $variables, ?EntityInterface $entity = NULL): TypedEntityContext {
+   // Get only the properties that start by a '#'.
+   $context = new TypedEntityContext();
+   foreach ($variables as $key => $value) {
