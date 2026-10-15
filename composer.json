@@ -162,11 +162,6 @@
       "only": ["neurocracy/digitalocean-app-platform-commands"]
     },
     {
-      "type": "vcs",
-      "url": "https://github.com/neurocracy/DigitalOceanPHPClient.git",
-      "only": ["toin0u/digitalocean-v2"]
-    },
-    {
       "type": "composer",
       "url": "https://packages.drupal.org/8"
     }
@@ -276,8 +271,7 @@
     "lloople/phpunit-extensions": "^2.1",
     "neurocracy/digitalocean-app-platform-commands": "dev-main",
     "phpspec/prophecy-phpunit": "^2",
-    "symfony/var-dumper": "^7.3",
-    "toin0u/digitalocean-v2": "5.0.x-dev as 5.0.5"
+    "symfony/var-dumper": "^7.3"
   },
   "conflict": {
     "drupal/drupal": "*"
