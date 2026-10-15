@@ -162,6 +162,11 @@
       "only": ["neurocracy/digitalocean-app-platform-commands"]
     },
     {
+      "type": "vcs",
+      "url": "https://github.com/neurocracy/react-adapter.git",
+      "only": ["php-http/react-adapter"]
+    },
+    {
       "type": "composer",
       "url": "https://packages.drupal.org/8"
     }
@@ -270,6 +275,7 @@
     "drupal/upgrade_status": "^4.3",
     "lloople/phpunit-extensions": "^2.1",
     "neurocracy/digitalocean-app-platform-commands": "dev-main",
+    "php-http/react-adapter": "4.x-dev as 4.0",
     "phpspec/prophecy-phpunit": "^2",
     "symfony/var-dumper": "^7.3"
   },
