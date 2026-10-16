@@ -30,7 +30,7 @@ composer_version: '2'
 # due to Yarn's patching of node:fs conflicting with a recent Node update.
 #
 # @see https://github.com/yarnpkg/berry/issues/7065
-nodejs_version: "24.14"
+nodejs_version: '24.14'
 # Required to use Yarn 4 without checking in the binary.
 #
 # @see https://yarnpkg.com/blog/release/4.0#installing-yarn
