@@ -16,9 +16,6 @@ additional_hostnames:
   - omnipedia-oembed
 additional_fqdns: []
 database:
-  # DigitalOcean uses newer collation for some tables that will fail with errors
-  # if attempted to import into the current latest MariaDB (10.4) available in
-  # DDEV.
   type: mysql
   version: '8.4'
 nfs_mount_enabled: false
