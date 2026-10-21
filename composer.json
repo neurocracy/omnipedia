@@ -168,8 +168,8 @@
     },
     {
       "type": "vcs",
-      "url": "https://github.com/neurocracy/DigitalOceanPHPClient.git",
-      "only": ["toin0u/digitalocean-v2"]
+      "url": "https://github.com/neurocracy/react-adapter.git",
+      "only": ["php-http/react-adapter"]
     },
     {
       "type": "composer",
@@ -281,9 +281,9 @@
     "drupal/upgrade_status": "^4.3",
     "lloople/phpunit-extensions": "^2.1",
     "neurocracy/digitalocean-app-platform-commands": "dev-main",
+    "php-http/react-adapter": "4.x-dev as 4.0",
     "phpspec/prophecy-phpunit": "^2",
-    "symfony/var-dumper": "^7.3",
-    "toin0u/digitalocean-v2": "5.0.x-dev as 5.0.5"
+    "symfony/var-dumper": "^7.3"
   },
   "conflict": {
     "drupal/drupal": "*"
@@ -309,8 +309,7 @@
       "drupal/omnipedia_*": "source",
       "drupal/rebuilder": "source",
       "drupal/refreshless": "source",
-      "neurocracy/*": "auto",
-      "toin0u/digitalocean-v2": "source"
+      "neurocracy/*": "auto"
     }
   },
   "autoload": {
