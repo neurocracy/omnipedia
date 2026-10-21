@@ -303,8 +303,7 @@
       "drupal/omnipedia_*": "source",
       "drupal/rebuilder": "source",
       "drupal/refreshless": "source",
-      "neurocracy/*": "auto",
-      "toin0u/digitalocean-v2": "source"
+      "neurocracy/*": "auto"
     }
   },
   "autoload": {
