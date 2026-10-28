@@ -3169,17 +3169,17 @@
         },
         {
             "name": "drupal/gin_everywhere",
-            "version": "1.5.0",
+            "version": "1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin_everywhere.git",
-                "reference": "1.5.0"
+                "reference": "1.5.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/gin_everywhere-1.5.0.zip",
-                "reference": "1.5.0",
-                "shasum": "f81dc665b472baa8ff695bcbb3afc4b01361e311"
+                "url": "https://ftp.drupal.org/files/projects/gin_everywhere-1.5.1.zip",
+                "reference": "1.5.1",
+                "shasum": "953104f139706587d759a68e75fb2138f43c6e50"
             },
             "require": {
                 "drupal/core": "^10.1 || ^11 || ^12",
@@ -3188,8 +3188,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "1.5.0",
-                    "datestamp": "1783630721",
+                    "version": "1.5.1",
+                    "datestamp": "1793019368",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4163,17 +4163,17 @@
         },
         {
             "name": "drupal/metatag",
-            "version": "2.2.1",
+            "version": "2.2.3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/metatag.git",
-                "reference": "2.2.1"
+                "reference": "2.2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/metatag-2.2.1.zip",
-                "reference": "2.2.1",
-                "shasum": "ee75572be28017b7b5a9c4ecf7b643e6ce806e16"
+                "url": "https://ftp.drupal.org/files/projects/metatag-2.2.3.zip",
+                "reference": "2.2.3",
+                "shasum": "e9dae2295557c07ed688b0025e208b3e908f8b8e"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11",
@@ -4195,8 +4195,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.2.1",
-                    "datestamp": "1792864792",
+                    "version": "2.2.3",
+                    "datestamp": "1793108775",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5963,17 +5963,17 @@
         },
         {
             "name": "drupal/s3fs",
-            "version": "3.11.0",
+            "version": "3.12.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/s3fs.git",
-                "reference": "8.x-3.11"
+                "reference": "8.x-3.12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/s3fs-8.x-3.11.zip",
-                "reference": "8.x-3.11",
-                "shasum": "4dbc77c8d396006a2bab2a77124ddd6fcef038a4"
+                "url": "https://ftp.drupal.org/files/projects/s3fs-8.x-3.12.zip",
+                "reference": "8.x-3.12",
+                "shasum": "16a9436a318be8c8fd004da7f647cf788625b0f5"
             },
             "require": {
                 "aws/aws-sdk-php": "^3.18",
@@ -5995,8 +5995,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.11",
-                    "datestamp": "1784613899",
+                    "version": "8.x-3.12",
+                    "datestamp": "1793208769",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6027,17 +6027,17 @@
         },
         {
             "name": "drupal/search_api",
-            "version": "1.42.0",
+            "version": "1.43.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/search_api.git",
-                "reference": "8.x-1.42"
+                "reference": "8.x-1.43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/search_api-8.x-1.42.zip",
-                "reference": "8.x-1.42",
-                "shasum": "a8f18e5873f50551eadfe03c4454bcb8e85eacce"
+                "url": "https://ftp.drupal.org/files/projects/search_api-8.x-1.43.zip",
+                "reference": "8.x-1.43",
+                "shasum": "2176deccfe21141e357c9002ea8e6a7560e91a23"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11 || ^12"
@@ -6059,8 +6059,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.42",
-                    "datestamp": "1791743454",
+                    "version": "8.x-1.43",
+                    "datestamp": "1793194856",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
