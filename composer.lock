@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "66ed6012c2a14ab5046f2de3b4c8492f",
+    "content-hash": "7d42887b442641cc6fd74962b18aeb40",
     "packages": [
         {
             "name": "8fold/commonmark-abbreviations",
@@ -18130,16 +18130,16 @@
         },
         {
             "name": "php-http/react-adapter",
-            "version": "4.x-dev",
+            "version": "4.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/neurocracy/react-adapter.git",
-                "reference": "5091ed58fe5b491a1a800dd33037bee3ca9890f0"
+                "url": "https://github.com/php-http/react-adapter.git",
+                "reference": "7edd236779cbad95dfac7793c355b635946bfd18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neurocracy/react-adapter/zipball/5091ed58fe5b491a1a800dd33037bee3ca9890f0",
-                "reference": "5091ed58fe5b491a1a800dd33037bee3ca9890f0",
+                "url": "https://api.github.com/repos/php-http/react-adapter/zipball/7edd236779cbad95dfac7793c355b635946bfd18",
+                "reference": "7edd236779cbad95dfac7793c355b635946bfd18",
                 "shasum": ""
             },
             "require": {
@@ -18160,26 +18160,13 @@
                 "php-http/message": "^1.0",
                 "phpunit/phpunit": "^9.5"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "Http\\Adapter\\React\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Http\\Adapter\\React\\Tests\\": "tests/"
-                }
-            },
-            "scripts": {
-                "test": [
-                    "vendor/bin/phpunit"
-                ],
-                "test-ci": [
-                    "vendor/bin/phpunit --coverage-clover build/coverage.xml"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -18197,9 +18184,10 @@
                 "react"
             ],
             "support": {
-                "source": "https://github.com/neurocracy/react-adapter/tree/4.x"
+                "issues": "https://github.com/php-http/react-adapter/issues",
+                "source": "https://github.com/php-http/react-adapter/tree/4.0.1"
             },
-            "time": "2026-10-15T23:09:47+00:00"
+            "time": "2026-10-30T08:23:14+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -21797,12 +21785,6 @@
             "version": "2.9999999.9999999.9999999-dev",
             "alias": "2.0@dev",
             "alias_normalized": "2.0.0.0"
-        },
-        {
-            "package": "php-http/react-adapter",
-            "version": "4.9999999.9999999.9999999-dev",
-            "alias": "4.0",
-            "alias_normalized": "4.0.0.0"
         }
     ],
     "minimum-stability": "dev",
@@ -21840,8 +21822,7 @@
         "drupal/refreshless": 20,
         "drupal/reroute_email": 5,
         "drupal/rules": 15,
-        "neurocracy/digitalocean-app-platform-commands": 20,
-        "php-http/react-adapter": 20
+        "neurocracy/digitalocean-app-platform-commands": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
