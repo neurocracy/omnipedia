@@ -96,6 +96,9 @@ cache:
   interruptible: true
 
   rules:
+    # Set pitch branch to not run automatically but be manual.
+    - if: $CI_COMMIT_BRANCH == "pitch"
+      when: manual
     # Run only on these path patterns having changes.
     #
     # @see https://docs.gitlab.com/ci/yaml/#ruleschanges
